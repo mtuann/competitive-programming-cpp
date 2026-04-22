@@ -2,11 +2,15 @@
 
 .idea/
 .vscode/
+.venv/
+__pycache__/
 
 build/
 dist/
 out/
 bin/
+site/
+site-docs/
 
 *.o
 *.obj

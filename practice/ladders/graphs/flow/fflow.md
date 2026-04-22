@@ -8,7 +8,7 @@
 - Likely subtype: `Maximum flow / minimum cut`
 - Secondary topics: `Dinic`, `Undirected capacity graph`
 - Status: `solved`
-- Solution file: [fflow.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/graphs/flow/fflow.cpp)
+- Solution file: [fflow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp)
 
 ## Why This Folder
 

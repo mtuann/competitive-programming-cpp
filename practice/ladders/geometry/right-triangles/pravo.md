@@ -8,9 +8,9 @@
 - Likely subtype: `Counting right triangles`
 - Secondary topics: `Normalized direction vectors`, `Sorting`, `Perpendicular directions`
 - Status: `solved`
-- Solution file: [pravo.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/geometry/right-triangles/pravo.cpp)
-- Buffered-input variant: [pravo-buffered.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/geometry/right-triangles/pravo-buffered.cpp)
-- Macro-buffered variant: [pravo-macro-buffer.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/geometry/right-triangles/pravo-macro-buffer.cpp)
+- Solution file: [pravo.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp)
+- Buffered-input variant: [pravo-buffered.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo-buffered.cpp)
+- Macro-buffered variant: [pravo-macro-buffer.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo-macro-buffer.cpp)
 
 ## Why This Folder
 

@@ -1,8 +1,10 @@
-# cp-cpp
+# competitive-programming-cpp
 
 A C++ competitive programming and algorithms hub built to teach theory, implementation, and practice as one system.
 
 This repository is being designed as more than a template dump. The goal is to combine the algorithmic depth of top university syllabi, the problem-solving habits of major contests, and the practicality of the best community learning platforms into one coherent roadmap.
+
+Project site: [mtuann.github.io/competitive-programming-cpp](https://mtuann.github.io/competitive-programming-cpp/)
 
 ## Quick Links
 

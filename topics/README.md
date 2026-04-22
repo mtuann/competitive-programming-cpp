@@ -10,4 +10,4 @@ Each major area gets concise pages that explain:
 - common mistakes
 - what to solve next
 
-Use [docs/topic-template.md](/Users/mitu/Desktop/work/cp-cpp/docs/topic-template.md) as the standard format.
+Use [docs/topic-template.md](../docs/topic-template.md) as the standard format.

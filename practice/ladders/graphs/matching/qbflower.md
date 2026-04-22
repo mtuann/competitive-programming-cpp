@@ -6,7 +6,7 @@
 - Main topic: `Graphs -> Matching`
 - Likely subtype: `General graph matching`
 - Status: `solved`
-- Solution file: [qbflower.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/graphs/matching/qbflower.cpp)
+- Solution file: [qbflower.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp)
 
 ## Why This Folder
 
@@ -51,7 +51,7 @@ The accepted submission for this repository follows the judge-facing formula dir
 
 `answer = N - maximum_matching`
 
-That is the version kept in [qbflower.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/graphs/matching/qbflower.cpp).
+That is the version kept in [qbflower.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp).
 
 ## Why The Formula Works
 
@@ -74,8 +74,8 @@ So the optimal count becomes:
 
 For this repository, this problem is recorded in two pieces:
 
-- practice note: [qbflower.md](/Users/mitu/Desktop/work/cp-cpp/practice/ladders/graphs/matching/qbflower.md)
-- code submission: [qbflower.cpp](/Users/mitu/Desktop/work/cp-cpp/solutions/graphs/matching/qbflower.cpp)
+- practice note: [qbflower.md](qbflower.md)
+- code submission: [qbflower.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp)
 
 The note format I used for this problem is:
 

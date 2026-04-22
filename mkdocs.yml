@@ -1,0 +1,45 @@
+site_name: competitive-programming-cpp
+site_description: Algorithms, C++ templates, and competitive programming practice ladders.
+site_url: https://mtuann.github.io/competitive-programming-cpp/
+repo_url: https://github.com/mtuann/competitive-programming-cpp
+repo_name: mtuann/competitive-programming-cpp
+edit_uri: edit/main/
+
+theme:
+  name: mkdocs
+
+docs_dir: site-docs
+site_dir: site
+use_directory_urls: true
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - fenced_code
+
+nav:
+  - Home: README.md
+  - Curriculum:
+      - Research Backbone: docs/source-map.md
+      - Content Blueprint: docs/content-blueprint.md
+      - Topic Template: docs/topic-template.md
+  - Topics:
+      - Overview: topics/README.md
+      - Foundations: topics/foundations/README.md
+      - Data Structures: topics/data-structures/README.md
+      - Graphs: topics/graphs/README.md
+      - Dynamic Programming: topics/dp/README.md
+      - Math: topics/math/README.md
+      - Strings: topics/strings/README.md
+      - Geometry: topics/geometry/README.md
+      - Advanced: topics/advanced/README.md
+  - Practice:
+      - Overview: practice/README.md
+      - QBFLOWER: practice/ladders/graphs/matching/qbflower.md
+      - FFLOW: practice/ladders/graphs/flow/fflow.md
+      - PRAVO: practice/ladders/geometry/right-triangles/pravo.md
+      - Mixed Rounds: practice/mixed-rounds/README.md
+      - Contest Playbooks: practice/contest-playbooks/README.md
+  - Templates: template-library.md
+  - Notebook: notebook/README.md

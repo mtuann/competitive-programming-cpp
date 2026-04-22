@@ -40,6 +40,6 @@ Each problem note should record:
 
 ## Current Example
 
-- [QBFLOWER](/Users/mitu/Desktop/work/cp-cpp/practice/ladders/graphs/matching/qbflower.md)
-- [FFLOW](/Users/mitu/Desktop/work/cp-cpp/practice/ladders/graphs/flow/fflow.md)
-- [PRAVO](/Users/mitu/Desktop/work/cp-cpp/practice/ladders/geometry/right-triangles/pravo.md)
+- [QBFLOWER](ladders/graphs/matching/qbflower.md)
+- [FFLOW](ladders/graphs/flow/fflow.md)
+- [PRAVO](ladders/geometry/right-triangles/pravo.md)
