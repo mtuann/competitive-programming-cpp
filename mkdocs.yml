@@ -1,87 +1,30 @@
 site_name: competitive-programming-cpp
-site_description: A curriculum-driven C++ algorithms guide for competitive programming and contest training.
+site_description: Algorithms, C++ templates, and competitive programming practice ladders.
 site_url: https://mtuann.github.io/competitive-programming-cpp/
 repo_url: https://github.com/mtuann/competitive-programming-cpp
 repo_name: mtuann/competitive-programming-cpp
 edit_uri: edit/main/
 
 theme:
-  name: material
-  language: en
-  icon:
-    logo: material/code-braces-box
-    repo: fontawesome/brands/github
-  font:
-    text: IBM Plex Sans
-    code: JetBrains Mono
-  features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.sections
-    - navigation.expand
-    - navigation.path
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - toc.follow
-    - content.code.copy
-  palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+  name: mkdocs
 
 docs_dir: site-docs
 site_dir: site
 use_directory_urls: true
 
-plugins:
-  - search
-
 markdown_extensions:
-  - admonition
-  - attr_list
-  - md_in_html
   - tables
   - toc:
       permalink: true
-  - pymdownx.details
-  - pymdownx.inlinehilite
-  - pymdownx.superfences
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-extra_css:
-  - assets/stylesheets/extra.css
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/mtuann/competitive-programming-cpp
-      name: GitHub repository
-    - icon: material/web
-      link: https://mtuann.github.io/competitive-programming-cpp/
-      name: Project website
+  - fenced_code
 
 nav:
-  - Home: index.md
-  - Start Here:
-      - Project Overview: project-readme.md
+  - Home: README.md
+  - Curriculum:
       - Research Backbone: docs/source-map.md
       - Content Blueprint: docs/content-blueprint.md
       - Topic Template: docs/topic-template.md
-  - Learn:
+  - Topics:
       - Overview: topics/README.md
       - Foundations: topics/foundations/README.md
       - Data Structures: topics/data-structures/README.md
@@ -98,6 +41,5 @@ nav:
       - PRAVO: practice/ladders/geometry/right-triangles/pravo.md
       - Mixed Rounds: practice/mixed-rounds/README.md
       - Contest Playbooks: practice/contest-playbooks/README.md
-  - Build Kit:
-      - Template Library: template-library.md
-      - Notebook: notebook/README.md
+  - Templates: template-library.md
+  - Notebook: notebook/README.md
