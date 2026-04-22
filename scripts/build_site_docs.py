@@ -6,7 +6,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE_DOCS = ROOT / "site-docs"
 
 FILES = {
-    "README.md": "README.md",
+    "docs/site-home.md": "index.md",
+    "README.md": "project-readme.md",
     "docs/source-map.md": "docs/source-map.md",
     "docs/content-blueprint.md": "docs/content-blueprint.md",
     "docs/topic-template.md": "docs/topic-template.md",
@@ -29,6 +30,10 @@ FILES = {
     "notebook/README.md": "notebook/README.md",
 }
 
+DIRECTORIES = {
+    "docs-assets": "assets",
+}
+
 
 def main() -> None:
     if SITE_DOCS.exists():
@@ -39,6 +44,12 @@ def main() -> None:
         dst = SITE_DOCS / dst_rel
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
+
+    for src_rel, dst_rel in DIRECTORIES.items():
+        src = ROOT / src_rel
+        dst = SITE_DOCS / dst_rel
+        if src.exists():
+            shutil.copytree(src, dst)
 
 
 if __name__ == "__main__":
