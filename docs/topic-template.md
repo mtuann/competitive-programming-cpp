@@ -1,6 +1,8 @@
 # Topic Template
 
-Use this shape for mature topic pages in `topics/`.
+Use this as the source of truth for mature topic pages in `topics/`.
+
+If the README, topic hubs, or planning docs ever phrase the structure differently, this file wins.
 
 ## 1. Summary
 

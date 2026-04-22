@@ -1,14 +1,46 @@
 # Data Structures
 
-Build first:
+This area covers the reusable tools that turn repeated work into fast queries, updates, or connectivity checks. It is the bridge between basic implementation patterns and serious contest problem solving.
 
-- DSU
-- Fenwick tree
+## Entry
+
+- Prereqs: [Foundations](../foundations/README.md)
+- Defer for later: flow, matching, and advanced tree techniques
+
+## Learn In Order
+
+1. Core now
+- heaps and priority queues
+- DSU for connectivity and component maintenance
+- Fenwick tree for simple prefix/range aggregation
+
+2. Contest core
 - segment tree
 - sparse table
-- heaps and ordered sets
+- ordered sets and offline query habits
 
-Go deeper:
+3. Advanced later
+- lazy propagation variants
+- coordinate compression patterns
+- persistent and rollback-style structures
+
+## Recognition Cues
+
+- the problem asks for many updates and queries on the same array or set
+- recomputing from scratch is too slow but the operation structure is repetitive
+- connectivity or component merging is changing over time
+
+## Common Pitfalls
+
+- choosing a heavy structure when a lighter one is enough
+- using a segment tree without first checking whether Fenwick or sparse table is simpler
+- mixing 0-based and 1-based indexing inside reusable templates
+
+## Exit Criteria
+
+After this section, you should know which standard structure to reach for in common query/update problems and be able to implement the core ones quickly in contest conditions.
+
+## Go Deeper
 
 - Course: [Princeton COS 226](https://www.cs.princeton.edu/~cos226)
 - Course: [MIT 6.1210 / 6.1220](https://student.mit.edu/catalog/archive/fall/m6a.html)

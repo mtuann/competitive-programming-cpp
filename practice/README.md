@@ -1,45 +1,51 @@
-# Practice Organization
+# Practice
 
-This repository should organize practice problems `by topic first`, not only by online judge.
+Practice is organized `by topic first`, not only by judge. That keeps the repo aligned with the teaching goal: learn an idea, then train it deliberately.
 
-That keeps the repo aligned with the tutorial goal:
+## How To Use This Folder
 
-- theory lives with related practice
-- one topic can mix problems from many judges
-- learners can train a concept instead of memorizing one platform
+- [Ladders](ladders/README.md): focused topic-first problem sequences
+- [Mixed Rounds](mixed-rounds/README.md): review packs that mix areas on purpose
+- [Contest Playbooks](contest-playbooks/README.md): contest-specific prep guides and workflows
 
-## Recommended Pattern
-
-Use this path shape for individual practice entries:
+## Path Shapes
 
 ```text
 practice/ladders/<area>/<subtopic>/<problem-code>.md
+practice/mixed-rounds/<pack>.md
+practice/contest-playbooks/<track>.md
 ```
 
-Examples:
+## Problem Note Template
 
-- `practice/ladders/graphs/matching/qbflower.md`
-- `practice/ladders/graphs/flow/fflow.md`
-- `practice/ladders/geometry/right-triangles/pravo.md`
-- `practice/ladders/graphs/shortest-paths/qbbuild.md`
-- `practice/ladders/dp/knapsack/knapsack-01.md`
+Required fields:
 
-## What A Problem Note Should Contain
+- `Title`
+- `Judge / source`
+- `Original URL`
+- `Main topic`
+- `Secondary topics`
+- `Difficulty`
+- `Status`: `todo`, `attempted`, `solved`, `reviewed`
+- `Solution file`
 
-Each problem note should record:
+Optional fields:
 
-- problem code
-- title
-- original URL
-- judge / source
-- main topic
-- secondary topics
-- difficulty
-- status: `todo`, `attempted`, `solved`, `reviewed`
-- short notes about the key idea
+- `Subtype`
+- `Mirror / English URL`
+- `Source contest`
+- `Alternate solution variants`
 
-## Current Example
+Suggested section order:
 
-- [QBFLOWER](ladders/graphs/matching/qbflower.md)
-- [FFLOW](ladders/graphs/flow/fflow.md)
-- [PRAVO](ladders/geometry/right-triangles/pravo.md)
+1. `Why practice this`
+2. `Core idea`
+3. `Complexity`
+4. `Pitfalls / judge notes`
+5. `Solutions`
+
+## Current Examples
+
+- [QBFLOWER - Tặng hoa](ladders/graphs/matching/qbflower.md)
+- [FFLOW - Fast Maximum Flow](ladders/graphs/flow/fflow.md)
+- [PRAVO - Tam giác vuông](ladders/geometry/right-triangles/pravo.md)

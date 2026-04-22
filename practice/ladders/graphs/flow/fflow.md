@@ -1,20 +1,19 @@
 # FFLOW
 
 - Title: `Fast Maximum Flow`
-- Judge: `VN SPOJ`
+- Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/FFLOW/](https://vn.spoj.com/problems/FFLOW/)
-- English URL: [https://vn.spoj.com/problems/FFLOW/en/](https://vn.spoj.com/problems/FFLOW/en/)
+- Mirror / English URL: [https://vn.spoj.com/problems/FFLOW/en/](https://vn.spoj.com/problems/FFLOW/en/)
 - Main topic: `Graphs -> Flow`
-- Likely subtype: `Maximum flow / minimum cut`
 - Secondary topics: `Dinic`, `Undirected capacity graph`
+- Difficulty: `medium`
+- Subtype: `Maximum flow / minimum cut`
 - Status: `solved`
 - Solution file: [fflow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp)
 
-## Why This Folder
+## Why Practice This
 
-This problem is placed under `practice/ladders/graphs/flow/` because the main skill is modeling and solving an `s-t maximum flow` problem.
-
-The official `vn.spoj` statement describes an undirected weighted graph and asks for the maximum flow / minimum cut from vertex `1` to vertex `N`.
+This is a useful flow problem because the statement looks like an undirected weighted graph problem, but the clean solution is still a standard `s-t` max-flow model with careful edge construction.
 
 ## Key Idea
 
@@ -34,7 +33,12 @@ For `vn.spoj`, the implementation uses a more performance-oriented version:
 - manual BFS queue
 - capacity scaling
 
-## Undirected Edge Modeling
+## Complexity
+
+- Dinic is fast enough for the judge limits here
+- capacities use `long long`
+
+## Pitfalls / Judge Notes
 
 For one undirected edge with capacity `c` between `u` and `v`, we add:
 
@@ -45,25 +49,12 @@ In the residual graph implementation, each of those directed edges also gets its
 
 Self-loops can be ignored because they never help send flow from `1` to `N`, and they never affect an `s-t` cut.
 
-## Why This Works
-
-The statement already phrases the answer as:
-
-- maximum flow
-- or equivalently minimum cut
-
-So once the graph is modeled correctly, the max-flow min-cut theorem gives the desired value.
-
-## Implementation Notes
-
 - `N <= 5000`, `M <= 30000`
 - capacities can be up to `1e9`
 - the answer may exceed `32-bit`, so the implementation uses `long long`
 - duplicate edges are allowed and can be added directly
 - the solution uses a capacity-scaling version of `Dinic's algorithm`
 
-## Judge Note
+## Solutions
 
-No special judge mismatch was needed here.
-
-The direct max-flow model matches the official statement, so the submission code follows the statement exactly.
+- Code: [fflow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp)

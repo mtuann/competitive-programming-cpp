@@ -20,10 +20,6 @@ markdown_extensions:
 
 nav:
   - Home: README.md
-  - Curriculum:
-      - Research Backbone: docs/source-map.md
-      - Content Blueprint: docs/content-blueprint.md
-      - Topic Template: docs/topic-template.md
   - Topics:
       - Overview: topics/README.md
       - Foundations: topics/foundations/README.md
@@ -35,11 +31,13 @@ nav:
       - Geometry: topics/geometry/README.md
       - Advanced: topics/advanced/README.md
   - Practice:
-      - Overview: practice/README.md
-      - QBFLOWER: practice/ladders/graphs/matching/qbflower.md
-      - FFLOW: practice/ladders/graphs/flow/fflow.md
-      - PRAVO: practice/ladders/geometry/right-triangles/pravo.md
+      - How Practice Works: practice/README.md
+      - Ladders: practice/ladders/README.md
       - Mixed Rounds: practice/mixed-rounds/README.md
       - Contest Playbooks: practice/contest-playbooks/README.md
   - Templates: template-library.md
   - Notebook: notebook/README.md
+  - Project Docs:
+      - Source Map: docs/source-map.md
+      - Content Blueprint: docs/content-blueprint.md
+      - Topic Template: docs/topic-template.md

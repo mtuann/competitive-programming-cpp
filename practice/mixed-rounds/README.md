@@ -1,10 +1,14 @@
 # Mixed Rounds
 
-Use this folder for review sets that intentionally mix topics.
+Mixed rounds are for `breadth and retrieval`, not first exposure.
 
-Examples:
+Use them when you already know the basics of several areas and want to practice switching gears under light contest pressure.
 
-- beginner review pack
-- graph + DP mixed pack
-- ICPC-style breadth pack
-- pre-contest warm-up pack
+Each mixed round should state:
+
+- who it is for
+- what topic mix it uses
+- how many problems it contains
+- whether it is a warm-up pack, review pack, or contest-style drill
+
+Current state: this folder is a scaffold and should grow only after the core topic ladders are stronger.

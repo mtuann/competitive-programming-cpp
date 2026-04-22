@@ -26,7 +26,9 @@ Each topic page should be short enough to scan quickly, but complete enough to a
 
 ## Build Order
 
-### Phase 1: Foundations
+Use `stages` as the progression language across the repo. This file is the maintainer-facing build plan, not a second public taxonomy.
+
+### Stage 0: Foundations
 
 Build first:
 
@@ -42,7 +44,7 @@ Deep links:
 - [CP-Algorithms](https://cp-algorithms.com/)
 - [CSES Problem Set](https://cses.fi/)
 
-### Phase 2: Data Structures
+### Stage 1: Data Structures
 
 Build next:
 
@@ -59,7 +61,7 @@ Deep links:
 - [USACO Guide](https://usaco.guide/)
 - [KACTL](https://github.com/kth-competitive-programming/kactl)
 
-### Phase 3: Graphs
+### Stage 2: Graphs
 
 Build next:
 
@@ -77,7 +79,7 @@ Deep links:
 - [ICPC Curriculum](https://curriculum.u.icpc.global/curriculum/)
 - [CP-Algorithms](https://cp-algorithms.com/)
 
-### Phase 4: Dynamic Programming and Math
+### Stage 3: Dynamic Programming and Math
 
 Build next:
 
@@ -97,7 +99,7 @@ Deep links:
 - [AtCoder](https://atcoder.jp/)
 - [OI Wiki](https://en.oi-wiki.org/)
 
-### Phase 5: Strings and Geometry
+### Stage 4: Strings and Geometry
 
 Build next:
 
@@ -115,7 +117,7 @@ Deep links:
 - [ICPC Problem Archive](https://foundation.icpc.global/archive/)
 - [KACTL](https://github.com/kth-competitive-programming/kactl)
 
-### Phase 6: Advanced Theory
+### Stage 5: Advanced Theory
 
 Build after the core is stable:
 
@@ -133,7 +135,7 @@ Deep links:
 - [Cornell CS 6820](https://www.cs.cornell.edu/courses/cs6820/2025fa/syllabus.html)
 - [Berkeley CS174](https://people.eecs.berkeley.edu/~sinclair/cs174/s25.html)
 
-### Phase 7: Contest Engineering
+### Stage 6: Contest Engineering
 
 Build continuously:
 
