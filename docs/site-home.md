@@ -8,9 +8,9 @@
     contests, and implementation habits that hold up in real competition.
   </p>
   <div class="hero-actions">
-    [Start with the topic map](topics/README.md){ .md-button .md-button--primary }
-    [Browse practice ladders](practice/README.md){ .md-button }
-    [Read the project overview](project-readme.md){ .md-button }
+    <a class="md-button md-button--primary" href="topics/">Start with the topic map</a>
+    <a class="md-button" href="practice/">Browse practice ladders</a>
+    <a class="md-button" href="project-readme/">Read the project overview</a>
   </div>
   <div class="chip-row">
     <span class="chip">Beginner friendly</span>
@@ -24,25 +24,25 @@
 
 <div class="grid cards" markdown>
 
--   :material-school-outline: __Learn the core curriculum__
+-   __Learn the core curriculum__
 
     Start with foundations, then move through data structures, graphs, dynamic programming, math, strings, and geometry.
 
     [Open the topic map](topics/README.md)
 
--   :material-trophy-outline: __Train like a contestant__
+-   __Train like a contestant__
 
     Use ladders, mixed rounds, and contest playbooks to move from reading an idea to solving targeted problems.
 
     [Browse practice](practice/README.md)
 
--   :material-code-braces-box: __Build a reusable contest kit__
+-   __Build a reusable contest kit__
 
     Keep a compact library of templates and notebook-ready references that are easy to adapt under pressure.
 
     [Open the build kit](template-library.md)
 
--   :material-book-open-page-variant-outline: __Go deeper when a topic clicks__
+-   __Go deeper when a topic clicks__
 
     Follow links to courses, references, blogs, and official contest material when you want more theory or context.
 
@@ -54,19 +54,19 @@
 
 <div class="grid cards" markdown>
 
--   :material-layers-triple-outline: __Curriculum first__
+-   __Curriculum first__
 
     The repo is organized as a staged path from foundations to advanced topics instead of a random archive of solutions.
 
--   :material-brain: __Proof-aware teaching__
+-   __Proof-aware teaching__
 
     Topic pages are designed to answer when to use an idea, why it works, and how to code it cleanly in C++.
 
--   :material-flag-checkered: __Practice close to the concept__
+-   __Practice close to the concept__
 
     Problems sit near the topic they train, so learning, implementation, and repetition reinforce each other.
 
--   :material-link-variant: __Source-backed reading__
+-   __Source-backed reading__
 
     The project keeps outward links to official syllabi, contest documents, and serious community references.
 

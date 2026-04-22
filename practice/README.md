@@ -1,12 +1,65 @@
 # Practice
 
-Practice is organized `by topic first`, not only by judge. That keeps the repo aligned with the teaching goal: learn an idea, then train it deliberately.
+<div class="home-hero" markdown>
+  <p class="hero-kicker">Deliberate repetition, not random grinding</p>
+  <p class="hero-copy">
+    Practice is organized <code>by topic first</code>, not only by judge. The goal is to help you learn an idea,
+    solve targeted problems, and come back for repetition without losing the connection between concept and use.
+  </p>
+  <div class="hero-actions">
+    <a class="md-button md-button--primary" href="ladders/">Open ladders</a>
+    <a class="md-button" href="mixed-rounds/">Open mixed rounds</a>
+    <a class="md-button" href="contest-playbooks/">Open contest playbooks</a>
+  </div>
+  <div class="chip-row">
+    <span class="chip">Topic-first</span>
+    <span class="chip">Judge-linked</span>
+    <span class="chip">Review-friendly</span>
+    <span class="chip">Contest-aware</span>
+  </div>
+</div>
 
-## How To Use This Folder
+## Choose A Practice Mode
 
-- [Ladders](ladders/README.md): focused topic-first problem sequences
-- [Mixed Rounds](mixed-rounds/README.md): review packs that mix areas on purpose
-- [Contest Playbooks](contest-playbooks/README.md): contest-specific prep guides and workflows
+<div class="grid cards" markdown>
+
+-   __Ladders__
+
+    Stay inside one topic long enough to build recognition and clean execution.
+
+    [Open ladders](ladders/README.md)
+
+-   __Mixed Rounds__
+
+    Mix areas on purpose when you want retrieval practice, breadth, and contest-style switching.
+
+    [Open mixed rounds](mixed-rounds/README.md)
+
+-   __Contest Playbooks__
+
+    Train toward a contest style such as `ICPC`, `USACO`, or olympiad-style prep with clearer workflow guidance.
+
+    [Open contest playbooks](contest-playbooks/README.md)
+
+</div>
+
+## How To Use Problem Notes
+
+<div class="grid cards" markdown>
+
+-   __Read the classification first__
+
+    Check the main topic, subtype, and difficulty before you jump into code. That keeps your practice intentional.
+
+-   __Use the idea section actively__
+
+    Try to restate the key idea in your own words before comparing with the stored solution.
+
+-   __Track status honestly__
+
+    Keep `todo`, `attempted`, `solved`, and `reviewed` meaningful so the repo becomes a real training log.
+
+</div>
 
 ## Path Shapes
 
@@ -16,7 +69,7 @@ practice/mixed-rounds/<pack>.md
 practice/contest-playbooks/<track>.md
 ```
 
-## Problem Note Template
+## Problem Note Contract
 
 Required fields:
 
@@ -43,6 +96,9 @@ Suggested section order:
 3. `Complexity`
 4. `Pitfalls / judge notes`
 5. `Solutions`
+
+!!! tip "Best way to use this section"
+    Read one topic page, solve one focused problem note, then write or adapt one clean implementation before moving on.
 
 ## Current Examples
 

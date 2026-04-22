@@ -58,6 +58,11 @@ body {
   background: transparent;
 }
 
+.md-header__button.md-logo,
+.md-nav__button.md-logo {
+  display: none;
+}
+
 .md-main__inner {
   margin-top: 1rem;
 }
@@ -152,6 +157,10 @@ body {
   flex-wrap: wrap;
   gap: 0.7rem;
   margin: 1.4rem 0 1rem;
+}
+
+.hero-actions .md-button {
+  margin: 0;
 }
 
 .chip-row {
