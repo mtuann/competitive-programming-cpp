@@ -13,6 +13,8 @@ This repository is being designed as more than a template dump. The goal is to c
 - [Topic Index](#topic-index)
 - [Research Backbone](#research-backbone)
 - [Featured References](#featured-references)
+- [Content Blueprint](docs/content-blueprint.md)
+- [Topic Template](docs/topic-template.md)
 - [Repository Map](#repository-map)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
@@ -148,7 +150,9 @@ The repository is greenfield right now. The structure below is the intended targ
 .
 ├── README.md
 ├── docs/
-│   └── source-map.md
+│   ├── content-blueprint.md
+│   ├── source-map.md
+│   └── topic-template.md
 ├── topics/
 │   ├── foundations/
 │   ├── data-structures/
