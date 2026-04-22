@@ -8,7 +8,8 @@ SITE_DOCS = ROOT / "site-docs"
 # This mirrors the source markdown tree into `site-docs/`, which MkDocs uses
 # as its docs root. Keep these paths aligned with `mkdocs.yml`.
 FILES = {
-    "README.md": "README.md",
+    "README.md": "project-readme.md",
+    "docs/site-home.md": "index.md",
     "docs/source-map.md": "docs/source-map.md",
     "docs/content-blueprint.md": "docs/content-blueprint.md",
     "docs/topic-template.md": "docs/topic-template.md",
@@ -30,6 +31,7 @@ FILES = {
     "practice/contest-playbooks/README.md": "practice/contest-playbooks/README.md",
     "template-library.md": "template-library.md",
     "notebook/README.md": "notebook/README.md",
+    "docs-assets/stylesheets/extra.css": "assets/stylesheets/extra.css",
 }
 
 

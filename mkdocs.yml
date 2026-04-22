@@ -6,21 +6,73 @@ repo_name: mtuann/competitive-programming-cpp
 edit_uri: edit/main/
 
 theme:
-  name: mkdocs
+  name: material
+  language: en
+  logo: material/code-braces-box
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 docs_dir: site-docs
 site_dir: site
 use_directory_urls: true
 
+plugins:
+  - search
+
 markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
   - tables
   - toc:
       permalink: true
-  - fenced_code
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mtuann/competitive-programming-cpp
+      name: GitHub repository
+    - icon: material/web
+      link: https://mtuann.github.io/competitive-programming-cpp/
+      name: Project website
 
 nav:
-  - Home: README.md
-  - Topics:
+  - Home: index.md
+  - Learn:
       - Overview: topics/README.md
       - Foundations: topics/foundations/README.md
       - Data Structures: topics/data-structures/README.md
@@ -33,10 +85,17 @@ nav:
   - Practice:
       - How Practice Works: practice/README.md
       - Ladders: practice/ladders/README.md
+      - Example Notes:
+          - QBFLOWER - Tặng hoa: practice/ladders/graphs/matching/qbflower.md
+          - FFLOW - Fast Maximum Flow: practice/ladders/graphs/flow/fflow.md
+          - PRAVO - Tam giác vuông: practice/ladders/geometry/right-triangles/pravo.md
       - Mixed Rounds: practice/mixed-rounds/README.md
       - Contest Playbooks: practice/contest-playbooks/README.md
-  - Templates: template-library.md
-  - Notebook: notebook/README.md
+  - Build Kit:
+      - Template Library: template-library.md
+      - Notebook: notebook/README.md
+  - Start Here:
+      - Project Overview: project-readme.md
   - Project Docs:
       - Source Map: docs/source-map.md
       - Content Blueprint: docs/content-blueprint.md
