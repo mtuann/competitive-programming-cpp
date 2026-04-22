@@ -8,8 +8,8 @@ edit_uri: edit/main/
 theme:
   name: material
   language: en
-  logo: material/code-braces-box
   icon:
+    logo: material/code-braces-box
     repo: fontawesome/brands/github
   font:
     text: IBM Plex Sans
