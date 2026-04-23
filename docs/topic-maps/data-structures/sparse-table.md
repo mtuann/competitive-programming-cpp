@@ -1,0 +1,58 @@
+# Data Structures -> Sparse Table
+
+Static range query structure for idempotent operations such as RMQ and LCA reductions.
+
+- Topic slug: `data-structures/sparse-table`
+- Tutorial page: [Open tutorial](../topics/data-structures/sparse-table/README.md)
+- Ladder page: [Open ladder](../practice/ladders/data-structures/sparse-table/README.md)
+- Repo problems currently tagged here: `0`
+- Curated external problems: `3`
+
+## Microtopics
+
+- rmq
+- idempotent
+- immutable-array
+- log-table
+- overlapping-blocks
+- lca-reduction
+
+## Learning Sources
+
+| Source | Type |
+| --- | --- |
+| [cp-algorithms sparse table](https://cp-algorithms.com/data_structures/sparse-table.html) | `trusted guide` |
+| [OI Wiki sparse table](https://en.oi-wiki.org/ds/sparse-table/) | `trusted guide` |
+| [USACO Guide Euler Tour / Static RMQ](https://usaco.guide/gold/tree-euler/) | `trusted guide` |
+
+## Practice Sources
+
+| Source | Type |
+| --- | --- |
+| [CSES Static Range Minimum Queries](https://cses.fi/problemset/task/1647/) | `problem` |
+| [SPOJ RMQSQ](https://www.spoj.com/problems/RMQSQ/) | `problem` |
+
+## Curated External Problems
+
+### Core
+
+| Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Static Range Minimum Queries](https://cses.fi/problemset/task/1647) | `CSES` | `Easy` | - | Query-Heavy; Data-Structure-Heavy | Idempotent Operations; Range Queries; Preprocessing | Range-Min; Static-Queries; Idempotent | The textbook static RMQ problem that sparse tables are built for. |
+| [Range GCD Query](https://judge.yosupo.jp/problem/range_gcd_query) | `Library Checker` | `Medium` | - | - | - | GCD; Idempotent | Same sparse-table idea with gcd aggregation. |
+
+### Classics
+
+| Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [Static RMQ](https://judge.yosupo.jp/problem/staticrmq) | `Library Checker` | `Easy` | - | Query-Heavy | Sparse Table; Idempotent Queries; Preprocessing | Range-Min; Idempotent | A concise official benchmark for validating a sparse table implementation. |
+
+## Repo Problems
+
+_No repo note has been tagged to this topic yet._
+
+## Regeneration
+
+```bash
+python3 scripts/generate_problem_catalog.py
+```

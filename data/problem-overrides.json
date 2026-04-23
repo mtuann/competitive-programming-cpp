@@ -1,0 +1,323 @@
+{
+  "C11XU": {
+    "topic_tags": [
+      "advanced/optimization-and-duality"
+    ],
+    "patterns": [
+      "xor-independence",
+      "forest selection",
+      "augmenting exchange"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "CRYPTKEY": {
+    "topic_tags": [
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "gcd-lcm closure",
+      "prime-power characterization",
+      "constructibility"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "CVP00001": {
+    "topic_tags": [
+      "foundations/prefix-sums"
+    ],
+    "patterns": [
+      "circular updates",
+      "range-add point-query",
+      "query-from-initial-state"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "FFLOW": {
+    "topic_tags": [],
+    "patterns": [
+      "maximum flow",
+      "undirected capacities",
+      "capacity scaling"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ]
+  },
+  "KINGDOMS": {
+    "topic_tags": [
+      "graphs/trees",
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "laminar regions",
+      "sweep events",
+      "containment tree"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "LAMP": {
+    "topic_tags": [
+      "math/gcd-lcm",
+      "combinatorics/inclusion-exclusion"
+    ],
+    "patterns": [
+      "density formula",
+      "pairwise coprime products",
+      "big integer fractions"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "MCQUERY": {
+    "topic_tags": [
+      "data-structures/dsu",
+      "graphs/trees",
+      "graphs/gomory-hu"
+    ],
+    "patterns": [
+      "all-pairs min-cut",
+      "cut tree",
+      "count pairs by threshold"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ]
+  },
+  "MINCOST": {
+    "topic_tags": [
+      "graphs/min-cost-flow"
+    ],
+    "patterns": [
+      "transportation network",
+      "flow reconstruction",
+      "duplicate-edge overwrite"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ]
+  },
+  "MTREECOL": {
+    "topic_tags": [],
+    "patterns": [
+      "ratio greedy",
+      "tree contraction",
+      "exchange argument"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "POST2": {
+    "topic_tags": [],
+    "patterns": [
+      "convolution",
+      "digit aggregation",
+      "big integer addition"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ]
+  },
+  "PRAVO": {
+    "topic_tags": [
+      "geometry/counting-geometry",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "count right triangles",
+      "normalized directions",
+      "perpendicular pairing"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "QBFLOWER": {
+    "topic_tags": [],
+    "patterns": [
+      "minimum edge cover",
+      "general matching",
+      "graph transformation"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "QOS": {
+    "topic_tags": [
+      "dp/foundations"
+    ],
+    "patterns": [
+      "shortest path plus dp",
+      "kth lexicographic path",
+      "bounded slack states"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "TFIELD": {
+    "topic_tags": [
+      "foundations/two-pointers",
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "nested polygons",
+      "weighted sliding window",
+      "shoelace preprocessing"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VMMARBLE": {
+    "topic_tags": [
+      "advanced/constructive"
+    ],
+    "patterns": [
+      "final-color assignment",
+      "residual-state dp",
+      "capacity-2 moves"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VMCOINS": {
+    "topic_tags": [
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "promise-driven constructive",
+      "translation matching",
+      "small residual search"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VMSCALE": {
+    "topic_tags": [
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "budget dp",
+      "balanced ternary",
+      "decision-tree optimization"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VMWTREE": {
+    "topic_tags": [
+      "data-structures/segment-tree",
+      "graphs/hld"
+    ],
+    "patterns": [
+      "path reverse",
+      "path sequence queries",
+      "heavy-light decomposition"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VODIVIDE": {
+    "topic_tags": [],
+    "patterns": [
+      "prefix quota greedy",
+      "heap maintenance",
+      "pair reconstruction"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VOITSORT": {
+    "topic_tags": [
+      "graphs/trees"
+    ],
+    "patterns": [
+      "lexicographic enumeration",
+      "stack-sortability",
+      "cartesian tree view"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VOSFENCE": {
+    "topic_tags": [
+      "combinatorics/counting-basics",
+      "combinatorics/inclusion-exclusion"
+    ],
+    "patterns": [
+      "bounded compositions",
+      "run decomposition",
+      "gap distribution"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VOSTRIP": {
+    "topic_tags": [
+      "dp/tree-dp",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "tree endpoint pairing",
+      "path decomposition",
+      "local imbalance formula"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ]
+  },
+  "VOTELPH": {
+    "topic_tags": [
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "piecewise maximum",
+      "endpoint preprocessing",
+      "parabola envelopes"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ]
+  }
+}
