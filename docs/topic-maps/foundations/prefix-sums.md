@@ -3,8 +3,8 @@
 Turn many range questions into subtraction of precomputed aggregates, then layer counting tricks on top.
 
 - Topic slug: `foundations/prefix-sums`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/prefix-sums/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/prefix-sums/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/prefix-sums/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/prefix-sums/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -63,7 +63,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `CVP00001` | Ô ăn quan | `secondary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `CVP00001` | Ô ăn quan | `secondary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
 
 ## Regeneration
 

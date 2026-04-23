@@ -3,8 +3,8 @@
 Sort events and maintain an active structure while a conceptual line moves across the plane.
 
 - Topic slug: `geometry/sweep-line`
-- Tutorial page: [Open tutorial](../topics/geometry/sweep-line/README.md)
-- Ladder page: [Open ladder](../practice/ladders/geometry/sweep-line/README.md)
+- Tutorial page: [Open tutorial](../../../topics/geometry/sweep-line/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/geometry/sweep-line/README.md)
 - Repo problems currently tagged here: `2`
 - Curated external problems: `6`
 
@@ -55,8 +55,8 @@ Sort events and maintain an active structure while a conceptual line moves acros
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `KINGDOMS` | KINGDOMS | `primary` | `hard` | laminar regions; sweep events; containment tree | [Note](../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
-| `VOTELPH` | Bà Nà | `primary` | `hard` | piecewise maximum; endpoint preprocessing; parabola envelopes | [Note](../practice/ladders/geometry/sweep-line/votelph.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp) |
+| `KINGDOMS` | KINGDOMS | `primary` | `hard` | laminar regions; sweep events; containment tree | [Note](../../../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
+| `VOTELPH` | Bà Nà | `primary` | `hard` | piecewise maximum; endpoint preprocessing; parabola envelopes | [Note](../../../practice/ladders/geometry/sweep-line/votelph.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp) |
 
 ## Regeneration
 

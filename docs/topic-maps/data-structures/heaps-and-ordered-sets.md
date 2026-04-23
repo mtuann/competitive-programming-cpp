@@ -3,8 +3,8 @@
 Use heaps, sets, and multisets to maintain online minima/maxima, medians, and active sets.
 
 - Topic slug: `data-structures/heaps-and-ordered-sets`
-- Tutorial page: [Open tutorial](../topics/data-structures/heaps-and-ordered-sets/README.md)
-- Ladder page: [Open ladder](../practice/ladders/data-structures/heaps-and-ordered-sets/README.md)
+- Tutorial page: [Open tutorial](../../../topics/data-structures/heaps-and-ordered-sets/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/data-structures/heaps-and-ordered-sets/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `7`
 

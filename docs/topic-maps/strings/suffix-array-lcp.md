@@ -3,8 +3,8 @@
 Sorted suffix views and LCP arrays for substring order, uniqueness, and offline pattern search.
 
 - Topic slug: `strings/suffix-array-lcp`
-- Tutorial page: [Open tutorial](../topics/strings/suffix-array-lcp/README.md)
-- Ladder page: [Open ladder](../practice/ladders/strings/suffix-array-lcp/README.md)
+- Tutorial page: [Open tutorial](../../../topics/strings/suffix-array-lcp/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/strings/suffix-array-lcp/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `9`
 

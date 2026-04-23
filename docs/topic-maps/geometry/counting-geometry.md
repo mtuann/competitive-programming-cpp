@@ -3,8 +3,8 @@
 Count intersections, lattice points, or union areas by mixing geometry primitives with combinatorics and data structures.
 
 - Topic slug: `geometry/counting-geometry`
-- Tutorial page: [Open tutorial](../topics/geometry/counting-geometry/README.md)
-- Ladder page: [Open ladder](../practice/ladders/geometry/counting-geometry/README.md)
+- Tutorial page: [Open tutorial](../../../topics/geometry/counting-geometry/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/geometry/counting-geometry/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -55,7 +55,7 @@ Count intersections, lattice points, or union areas by mixing geometry primitive
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
+| `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 
 ## Regeneration
 

@@ -3,8 +3,8 @@
 Build hulls with monotone chain or Graham scan, then exploit hull order for rotating-calipers style tasks.
 
 - Topic slug: `geometry/convex-hull`
-- Tutorial page: [Open tutorial](../topics/geometry/convex-hull/README.md)
-- Ladder page: [Open ladder](../practice/ladders/geometry/convex-hull/README.md)
+- Tutorial page: [Open tutorial](../../../topics/geometry/convex-hull/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/geometry/convex-hull/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `6`
 

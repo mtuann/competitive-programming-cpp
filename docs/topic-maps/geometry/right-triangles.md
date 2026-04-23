@@ -3,8 +3,8 @@
 A focused counting-geometry subtopic around perpendicular vectors, normalized slopes, and pivot-based counting.
 
 - Topic slug: `geometry/right-triangles`
-- Tutorial page: [Open tutorial](../topics/geometry/counting-geometry/README.md)
-- Ladder page: [Open ladder](../practice/ladders/geometry/right-triangles/README.md)
+- Tutorial page: [Open tutorial](../../../topics/geometry/counting-geometry/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/geometry/right-triangles/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `5`
 
@@ -54,7 +54,7 @@ A focused counting-geometry subtopic around perpendicular vectors, normalized sl
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `PRAVO` | Tam giác vuông | `primary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
+| `PRAVO` | Tam giác vuông | `primary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 
 ## Regeneration
 

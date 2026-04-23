@@ -3,7 +3,7 @@
 Greedy selection under prefix or feasibility quotas, usually proved with exchange arguments and heap maintenance.
 
 - Topic slug: `greedy/prefix-constraints`
-- Ladder page: [Open ladder](../practice/ladders/greedy/prefix-constraints/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/greedy/prefix-constraints/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `8`
 
@@ -86,7 +86,7 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VODIVIDE` | Chia phần | `primary` | `hard` | prefix quota greedy; heap maintenance; pair reconstruction | [Note](../practice/ladders/greedy/prefix-constraints/vodivide.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp) |
+| `VODIVIDE` | Chia phần | `primary` | `hard` | prefix quota greedy; heap maintenance; pair reconstruction | [Note](../../../practice/ladders/greedy/prefix-constraints/vodivide.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp) |
 
 ## Regeneration
 

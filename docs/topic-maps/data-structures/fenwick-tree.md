@@ -3,8 +3,8 @@
 Low-level prefix structure for point updates, range sums, compressed coordinates, and order statistics.
 
 - Topic slug: `data-structures/fenwick-tree`
-- Tutorial page: [Open tutorial](../topics/data-structures/fenwick-tree/README.md)
-- Ladder page: [Open ladder](../practice/ladders/data-structures/fenwick-tree/README.md)
+- Tutorial page: [Open tutorial](../../../topics/data-structures/fenwick-tree/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/data-structures/fenwick-tree/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -59,7 +59,7 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `CVP00001` | Ô ăn quan | `primary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `CVP00001` | Ô ăn quan | `primary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
 
 ## Regeneration
 

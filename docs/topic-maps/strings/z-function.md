@@ -3,8 +3,8 @@
 Maintain a Z-box to measure longest prefix matches at every position and solve period/border problems efficiently.
 
 - Topic slug: `strings/z-function`
-- Tutorial page: [Open tutorial](../topics/strings/z-function/README.md)
-- Ladder page: [Open ladder](../practice/ladders/strings/z-function/README.md)
+- Tutorial page: [Open tutorial](../../../topics/strings/z-function/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/strings/z-function/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

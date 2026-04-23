@@ -3,8 +3,8 @@
 Residual graphs, augmenting paths, and cut structure for max-flow and min-cut modeling.
 
 - Topic slug: `graphs/flow`
-- Tutorial page: [Open tutorial](../topics/graphs/flow/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/flow/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/flow/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `3`
 - Curated external problems: `8`
 
@@ -67,9 +67,9 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `FFLOW` | Fast Maximum Flow | `primary` | `medium` | maximum flow; undirected capacities; capacity scaling | [Note](../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
-| `MCQUERY` | MinCut Query | `primary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
-| `MINCOST` | Luồng với chi phí nhỏ nhất | `primary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
+| `FFLOW` | Fast Maximum Flow | `primary` | `medium` | maximum flow; undirected capacities; capacity scaling | [Note](../../../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
+| `MCQUERY` | MinCut Query | `primary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MINCOST` | Luồng với chi phí nhỏ nhất | `primary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../../../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
 
 ## Regeneration
 

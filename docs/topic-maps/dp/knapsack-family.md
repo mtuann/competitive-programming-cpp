@@ -3,8 +3,8 @@
 Choose the state dimension and transition order that matches 0-1, complete, bounded, or value-based knapsack.
 
 - Topic slug: `dp/knapsack-family`
-- Tutorial page: [Open tutorial](../topics/dp/knapsack-family/README.md)
-- Ladder page: [Open ladder](../practice/ladders/dp/knapsack-family/README.md)
+- Tutorial page: [Open tutorial](../../../topics/dp/knapsack-family/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/dp/knapsack-family/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `15`
 

@@ -3,8 +3,8 @@
 Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagates through arrays and constructions.
 
 - Topic slug: `math/gcd-lcm`
-- Tutorial page: [Open tutorial](../topics/math/number-theory-basics/README.md)
-- Ladder page: [Open ladder](../practice/ladders/math/gcd-lcm/README.md)
+- Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/math/gcd-lcm/README.md)
 - Repo problems currently tagged here: `2`
 - Curated external problems: `11`
 
@@ -60,8 +60,8 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `CRYPTKEY` | Chìa khóa mã số | `primary` | `hard` | gcd-lcm closure; prime-power characterization; constructibility | [Note](../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
-| `LAMP` | Dàn đèn màu | `secondary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
+| `CRYPTKEY` | Chìa khóa mã số | `primary` | `hard` | gcd-lcm closure; prime-power characterization; constructibility | [Note](../../../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
+| `LAMP` | Dàn đèn màu | `secondary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../../../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
 
 ## Regeneration
 

@@ -3,8 +3,8 @@
 Prefix trees for dictionary queries, prefix counting, lexicographic traversal, and automaton building blocks.
 
 - Topic slug: `strings/trie`
-- Tutorial page: [Open tutorial](../topics/strings/trie/README.md)
-- Ladder page: [Open ladder](../practice/ladders/strings/trie/README.md)
+- Tutorial page: [Open tutorial](../../../topics/strings/trie/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/strings/trie/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

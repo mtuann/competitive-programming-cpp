@@ -3,8 +3,8 @@
 Reasoning tools for contests: estimate time honestly, define loop invariants, and learn to justify greedy and implementation choices before coding.
 
 - Topic slug: `foundations/complexity-and-invariants`
-- Tutorial page: [Open tutorial](../topics/foundations/reasoning/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/complexity-and-invariants/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/reasoning/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/complexity-and-invariants/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `8`
 

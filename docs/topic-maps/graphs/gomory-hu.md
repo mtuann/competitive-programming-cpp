@@ -3,7 +3,7 @@
 Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 
 - Topic slug: `graphs/gomory-hu`
-- Ladder page: [Open ladder](../practice/ladders/graphs/flow/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
@@ -63,7 +63,7 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 
 ## Regeneration
 

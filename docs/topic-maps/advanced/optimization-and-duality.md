@@ -3,8 +3,8 @@
 LP duality, convex relaxation, and the optimization language that later feeds into flow, DP tricks, and aliens-style reasoning.
 
 - Topic slug: `advanced/optimization-and-duality`
-- Tutorial page: [Open tutorial](../topics/advanced/optimization-and-duality/README.md)
-- Ladder page: [Open ladder](../practice/ladders/advanced/optimization-and-duality/README.md)
+- Tutorial page: [Open tutorial](../../../topics/advanced/optimization-and-duality/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/advanced/optimization-and-duality/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -57,7 +57,7 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `C11XU` | Bộ sưu tập đồng xu | `secondary` | `hard` | xor-independence; forest selection; augmenting exchange | [Note](../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
+| `C11XU` | Bộ sưu tập đồng xu | `secondary` | `hard` | xor-independence; forest selection; augmenting exchange | [Note](../../../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
 
 ## Regeneration
 

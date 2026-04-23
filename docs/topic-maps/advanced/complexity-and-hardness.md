@@ -3,8 +3,8 @@
 Reductions, hardness classes, and the language for understanding when exact efficient algorithms are unlikely.
 
 - Topic slug: `advanced/complexity-and-hardness`
-- Tutorial page: [Open tutorial](../topics/advanced/complexity-and-hardness/README.md)
-- Ladder page: [Open ladder](../practice/ladders/advanced/complexity-and-hardness/README.md)
+- Tutorial page: [Open tutorial](../../../topics/advanced/complexity-and-hardness/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/advanced/complexity-and-hardness/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

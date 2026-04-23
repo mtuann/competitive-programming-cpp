@@ -3,7 +3,7 @@
 Decompose tree paths into logarithmically many chains so path queries and updates reduce to range structures.
 
 - Topic slug: `graphs/hld`
-- Ladder page: [Open ladder](../practice/ladders/graphs/trees/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `8`
 
@@ -62,7 +62,7 @@ Decompose tree paths into logarithmically many chains so path queries and update
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VMWTREE` | Lại là cây khung | `secondary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
+| `VMWTREE` | Lại là cây khung | `secondary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../../../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
 
 ## Regeneration
 

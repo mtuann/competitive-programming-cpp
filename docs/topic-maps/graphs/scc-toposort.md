@@ -3,8 +3,8 @@
 Compress directed graphs into DAGs, reason about dependencies, and detect strongly connected structure.
 
 - Topic slug: `graphs/scc-toposort`
-- Tutorial page: [Open tutorial](../topics/graphs/scc-toposort/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/scc-toposort/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/scc-toposort/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/scc-toposort/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `9`
 

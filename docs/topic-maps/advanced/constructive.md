@@ -3,8 +3,8 @@
 Output-sensitive problems where the main work is proving the existence and structure of a valid construction.
 
 - Topic slug: `advanced/constructive`
-- Tutorial page: [Open tutorial](../topics/advanced/constructive/README.md)
-- Ladder page: [Open ladder](../practice/ladders/advanced/constructive/README.md)
+- Tutorial page: [Open tutorial](../../../topics/advanced/constructive/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/advanced/constructive/README.md)
 - Repo problems currently tagged here: `2`
 - Curated external problems: `10`
 
@@ -56,8 +56,8 @@ Output-sensitive problems where the main work is proving the existence and struc
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VMCOINS` | Trò chơi với những đồng xu | `primary` | `hard` | promise-driven constructive; translation matching; small residual search | [Note](../practice/ladders/advanced/constructive/vmcoins.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp) |
-| `VMMARBLE` | Phân loại bi | `secondary` | `medium` | final-color assignment; residual-state dp; capacity-2 moves | [Note](../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
+| `VMCOINS` | Trò chơi với những đồng xu | `primary` | `hard` | promise-driven constructive; translation matching; small residual search | [Note](../../../practice/ladders/advanced/constructive/vmcoins.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp) |
+| `VMMARBLE` | Phân loại bi | `secondary` | `medium` | final-color assignment; residual-state dp; capacity-2 moves | [Note](../../../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
 
 ## Regeneration
 

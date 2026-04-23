@@ -3,8 +3,8 @@
 Tree-rooted dynamic programming from local subtree states to rerooting and path decomposition.
 
 - Topic slug: `graphs/tree-dp`
-- Tutorial page: [Open tutorial](../topics/dp/tree-dp/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/tree-dp/README.md)
+- Tutorial page: [Open tutorial](../../../topics/dp/tree-dp/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/tree-dp/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
@@ -61,7 +61,7 @@ Tree-rooted dynamic programming from local subtree states to rerooting and path 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VOSTRIP` | VOSTRIP | `primary` | `hard` | tree endpoint pairing; path decomposition; local imbalance formula | [Note](../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
+| `VOSTRIP` | VOSTRIP | `primary` | `hard` | tree endpoint pairing; path decomposition; local imbalance formula | [Note](../../../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
 
 ## Regeneration
 

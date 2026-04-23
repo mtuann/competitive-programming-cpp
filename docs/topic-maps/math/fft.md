@@ -3,8 +3,8 @@
 Polynomial multiplication and convolution with roots of unity, integer-friendly NTTs, and transform implementation details.
 
 - Topic slug: `math/fft`
-- Tutorial page: [Open tutorial](../topics/math/fft-ntt/README.md)
-- Ladder page: [Open ladder](../practice/ladders/math/fft/README.md)
+- Tutorial page: [Open tutorial](../../../topics/math/fft-ntt/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/math/fft/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `8`
 
@@ -58,7 +58,7 @@ Polynomial multiplication and convolution with roots of unity, integer-friendly 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `POST2` | A cộng B version 2 | `primary` | `medium` | convolution; digit aggregation; big integer addition | [Note](../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
+| `POST2` | A cộng B version 2 | `primary` | `medium` | convolution; digit aggregation; big integer addition | [Note](../../../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
 
 ## Regeneration
 

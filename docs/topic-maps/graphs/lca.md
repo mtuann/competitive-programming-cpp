@@ -3,8 +3,8 @@
 Lowest common ancestor as a reusable primitive for ancestor checks and path queries on rooted trees.
 
 - Topic slug: `graphs/lca`
-- Tutorial page: [Open tutorial](../topics/graphs/lca/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/lca/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/lca/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/lca/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `6`
 

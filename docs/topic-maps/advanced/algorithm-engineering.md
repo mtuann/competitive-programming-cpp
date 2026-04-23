@@ -3,8 +3,8 @@
 Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, and reproducible measurements.
 
 - Topic slug: `advanced/algorithm-engineering`
-- Tutorial page: [Open tutorial](../topics/advanced/algorithm-engineering/README.md)
-- Ladder page: [Open ladder](../practice/ladders/advanced/algorithm-engineering/README.md)
+- Tutorial page: [Open tutorial](../../../topics/advanced/algorithm-engineering/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/advanced/algorithm-engineering/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `8`
 

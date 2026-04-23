@@ -3,8 +3,8 @@
 Prefix-function reasoning for exact pattern matching, borders, periods, and automaton interpretations.
 
 - Topic slug: `strings/kmp`
-- Tutorial page: [Open tutorial](../topics/strings/kmp/README.md)
-- Ladder page: [Open ladder](../practice/ladders/strings/kmp/README.md)
+- Tutorial page: [Open tutorial](../../../topics/strings/kmp/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/strings/kmp/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

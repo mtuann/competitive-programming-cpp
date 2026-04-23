@@ -3,8 +3,8 @@
 Use cut and cycle properties to build minimum spanning forests with Kruskal or Prim.
 
 - Topic slug: `graphs/mst`
-- Tutorial page: [Open tutorial](../topics/graphs/mst/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/mst/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/mst/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/mst/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `6`
 

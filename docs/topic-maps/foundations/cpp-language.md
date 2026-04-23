@@ -3,8 +3,8 @@
 Core C++ contest toolkit: fast I/O, references and value semantics, STL primitives, and the subset of the language that matters most under time pressure.
 
 - Topic slug: `foundations/cpp-language`
-- Tutorial page: [Open tutorial](../topics/foundations/cpp-language/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/cpp-language/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/cpp-language/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/cpp-language/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `6`
 

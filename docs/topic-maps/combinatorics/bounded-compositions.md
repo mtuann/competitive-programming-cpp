@@ -3,8 +3,8 @@
 Distribute sums under lower and upper bounds using stars and bars, generating functions, or inclusion-exclusion.
 
 - Topic slug: `combinatorics/bounded-compositions`
-- Tutorial page: [Open tutorial](../topics/combinatorics/bounded-compositions/README.md)
-- Ladder page: [Open ladder](../practice/ladders/combinatorics/bounded-compositions/README.md)
+- Tutorial page: [Open tutorial](../../../topics/combinatorics/bounded-compositions/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/combinatorics/bounded-compositions/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -55,7 +55,7 @@ Distribute sums under lower and upper bounds using stars and bars, generating fu
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VOSFENCE` | Xay hang rao | `primary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
+| `VOSFENCE` | Xay hang rao | `primary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../../../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
 
 ## Regeneration
 

@@ -3,8 +3,8 @@
 Before running graph algorithms, decide what the nodes, edges, states, and weights actually represent.
 
 - Topic slug: `graphs/graph-modeling`
-- Tutorial page: [Open tutorial](../topics/graphs/graph-modeling/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/graph-modeling/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/graph-modeling/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/graph-modeling/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `9`
 

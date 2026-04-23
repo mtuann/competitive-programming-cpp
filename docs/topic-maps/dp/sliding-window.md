@@ -3,8 +3,8 @@
 Problems where a moving window carries state, costs, or feasibility information that updates incrementally.
 
 - Topic slug: `dp/sliding-window`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/two-pointers/README.md)
-- Ladder page: [Open ladder](../practice/ladders/dp/sliding-window/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/dp/sliding-window/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `16`
 
@@ -123,7 +123,7 @@ Problems where a moving window carries state, costs, or feasibility information 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `TFIELD` | Ruộng bậc thang | `primary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
+| `TFIELD` | Ruộng bậc thang | `primary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../../../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 
 ## Regeneration
 

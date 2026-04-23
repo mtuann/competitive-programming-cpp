@@ -3,8 +3,8 @@
 Count by overlaps, complements, and Möbius-style corrections when direct counting double-counts structure.
 
 - Topic slug: `combinatorics/inclusion-exclusion`
-- Tutorial page: [Open tutorial](../topics/combinatorics/inclusion-exclusion/README.md)
-- Ladder page: [Open ladder](../practice/ladders/combinatorics/inclusion-exclusion/README.md)
+- Tutorial page: [Open tutorial](../../../topics/combinatorics/inclusion-exclusion/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/combinatorics/inclusion-exclusion/README.md)
 - Repo problems currently tagged here: `2`
 - Curated external problems: `6`
 
@@ -65,8 +65,8 @@ Count by overlaps, complements, and Möbius-style corrections when direct counti
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `LAMP` | Dàn đèn màu | `secondary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
-| `VOSFENCE` | Xay hang rao | `secondary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
+| `LAMP` | Dàn đèn màu | `secondary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../../../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
+| `VOSFENCE` | Xay hang rao | `secondary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../../../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
 
 ## Regeneration
 

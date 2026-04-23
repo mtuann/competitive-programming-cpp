@@ -3,8 +3,8 @@
 Compact automaton of all substrings, with endpos classes, clones, and counting applications.
 
 - Topic slug: `strings/suffix-automaton`
-- Tutorial page: [Open tutorial](../topics/strings/suffix-automaton/README.md)
-- Ladder page: [Open ladder](../practice/ladders/strings/suffix-automaton/README.md)
+- Tutorial page: [Open tutorial](../../../topics/strings/suffix-automaton/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/strings/suffix-automaton/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `8`
 

@@ -3,8 +3,8 @@
 State design, transitions, and the discipline of converting brute force recurrence thinking into efficient DP.
 
 - Topic slug: `dp/foundations`
-- Tutorial page: [Open tutorial](../topics/dp/foundations/README.md)
-- Ladder page: [Open ladder](../practice/ladders/dp/foundations/README.md)
+- Tutorial page: [Open tutorial](../../../topics/dp/foundations/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/dp/foundations/README.md)
 - Repo problems currently tagged here: `2`
 - Curated external problems: `12`
 
@@ -107,8 +107,8 @@ State design, transitions, and the discipline of converting brute force recurren
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `QOS` | Chất lượng dịch vụ | `secondary` | `hard` | shortest path plus dp; kth lexicographic path; bounded slack states | [Note](../practice/ladders/graphs/shortest-paths/qos.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp) |
-| `VMSCALE` | Chiếc cân kỳ diệu | `primary` | `hard` | budget dp; balanced ternary; decision-tree optimization | [Note](../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |
+| `QOS` | Chất lượng dịch vụ | `secondary` | `hard` | shortest path plus dp; kth lexicographic path; bounded slack states | [Note](../../../practice/ladders/graphs/shortest-paths/qos.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp) |
+| `VMSCALE` | Chiếc cân kỳ diệu | `primary` | `hard` | budget dp; balanced ternary; decision-tree optimization | [Note](../../../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |
 
 ## Regeneration
 

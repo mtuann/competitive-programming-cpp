@@ -3,8 +3,8 @@
 A range-update perspective on prefix sums: store changes at boundaries, then recover the real array by taking prefixes.
 
 - Topic slug: `foundations/difference-arrays`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/difference-arrays/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/difference-arrays/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/difference-arrays/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/difference-arrays/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

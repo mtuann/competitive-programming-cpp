@@ -3,8 +3,8 @@
 Exploit monotone movement to replace nested loops with linear scans, sliding windows, or opposite-end sweeps.
 
 - Topic slug: `foundations/two-pointers`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/two-pointers/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/two-pointers/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/two-pointers/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
@@ -58,7 +58,7 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `TFIELD` | Ruộng bậc thang | `secondary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
+| `TFIELD` | Ruộng bậc thang | `secondary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../../../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 
 ## Regeneration
 

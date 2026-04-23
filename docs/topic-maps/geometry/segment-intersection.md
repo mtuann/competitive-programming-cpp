@@ -3,8 +3,8 @@
 Robust orientation tests, on-segment handling, and degenerate cases for line and segment intersection.
 
 - Topic slug: `geometry/segment-intersection`
-- Tutorial page: [Open tutorial](../topics/geometry/segment-intersection/README.md)
-- Ladder page: [Open ladder](../practice/ladders/geometry/segment-intersection/README.md)
+- Tutorial page: [Open tutorial](../../../topics/geometry/segment-intersection/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/geometry/segment-intersection/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

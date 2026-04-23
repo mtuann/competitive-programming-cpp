@@ -3,8 +3,8 @@
 From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool that matches the edge model.
 
 - Topic slug: `graphs/shortest-paths`
-- Tutorial page: [Open tutorial](../topics/graphs/shortest-paths/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/shortest-paths/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/shortest-paths/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/shortest-paths/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `9`
 
@@ -94,7 +94,7 @@ From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool th
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `QOS` | Chất lượng dịch vụ | `primary` | `hard` | shortest path plus dp; kth lexicographic path; bounded slack states | [Note](../practice/ladders/graphs/shortest-paths/qos.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp) |
+| `QOS` | Chất lượng dịch vụ | `primary` | `hard` | shortest path plus dp; kth lexicographic path; bounded slack states | [Note](../../../practice/ladders/graphs/shortest-paths/qos.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp) |
 
 ## Regeneration
 

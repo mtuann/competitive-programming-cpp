@@ -643,6 +643,10 @@ def relative_for_docs(path: str) -> str:
     return "../" + path
 
 
+def relative_for_topic_maps(path: str) -> str:
+    return "../../../" + path
+
+
 def primary_slug_from_note(note_rel: Path) -> str:
     parts = note_rel.parts
     return f"{parts[2]}/{parts[3]}"
@@ -1021,9 +1025,9 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
             lines.append("")
         lines.append(f"- Topic slug: `{slug}`")
         if entry.get("topic_path"):
-            lines.append(f"- Tutorial page: [Open tutorial]({relative_for_docs(entry['topic_path'])})")
+            lines.append(f"- Tutorial page: [Open tutorial]({relative_for_topic_maps(entry['topic_path'])})")
         if entry.get("ladder_path"):
-            lines.append(f"- Ladder page: [Open ladder]({relative_for_docs(entry['ladder_path'])})")
+            lines.append(f"- Ladder page: [Open ladder]({relative_for_topic_maps(entry['ladder_path'])})")
         lines.append(f"- Repo problems currently tagged here: `{len(problems)}`")
         lines.append(f"- Curated external problems: `{len(external_problems)}`")
         lines.append("")
@@ -1095,7 +1099,7 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
             lines.append("| --- | --- | --- | --- | --- | --- | --- |")
             for row in problems:
                 fit = "primary" if row["primary_slug"] == slug else "secondary"
-                note_link = f"[Note]({relative_for_docs(row['note_path'])})"
+                note_link = f"[Note]({relative_for_topic_maps(row['note_path'])})"
                 code_link = f"[Code]({row['solution_url']})" if row["solution_url"] else "-"
                 lines.append(
                     f"| `{row['code']}` | {row['title']} | `{fit}` | `{row['difficulty']}` | "

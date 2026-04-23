@@ -3,8 +3,8 @@
 Traversal for reachability, layering, components, bipartiteness, and DFS-tree structure.
 
 - Topic slug: `graphs/bfs-dfs`
-- Tutorial page: [Open tutorial](../topics/graphs/bfs-dfs/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/bfs-dfs/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/bfs-dfs/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/bfs-dfs/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `7`
 

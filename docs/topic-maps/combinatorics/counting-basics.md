@@ -3,8 +3,8 @@
 Factorials, binomials, arrangements, stars and bars, and the basic models that recur across counting problems.
 
 - Topic slug: `combinatorics/counting-basics`
-- Tutorial page: [Open tutorial](../topics/combinatorics/counting-basics/README.md)
-- Ladder page: [Open ladder](../practice/ladders/combinatorics/counting-basics/README.md)
+- Tutorial page: [Open tutorial](../../../topics/combinatorics/counting-basics/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/combinatorics/counting-basics/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `13`
 
@@ -67,7 +67,7 @@ Factorials, binomials, arrangements, stars and bars, and the basic models that r
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VOSFENCE` | Xay hang rao | `secondary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
+| `VOSFENCE` | Xay hang rao | `secondary` | `hard` | bounded compositions; run decomposition; gap distribution | [Note](../../../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
 
 ## Regeneration
 

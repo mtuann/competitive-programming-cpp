@@ -3,8 +3,8 @@
 Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, or make greedy decisions provable.
 
 - Topic slug: `foundations/sorting`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/sorting/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/sorting/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/sorting/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/sorting/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `7`
 

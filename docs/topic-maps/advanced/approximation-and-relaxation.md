@@ -3,8 +3,8 @@
 Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary between exact and near-optimal algorithms.
 
 - Topic slug: `advanced/approximation-and-relaxation`
-- Tutorial page: [Open tutorial](../topics/advanced/approximation-and-relaxation/README.md)
-- Ladder page: [Open ladder](../practice/ladders/advanced/approximation-and-relaxation/README.md)
+- Tutorial page: [Open tutorial](../../../topics/advanced/approximation-and-relaxation/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/advanced/approximation-and-relaxation/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `5`
 

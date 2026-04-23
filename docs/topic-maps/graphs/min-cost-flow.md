@@ -3,8 +3,8 @@
 Successive shortest augmenting paths, potentials, and reduced costs for transportation-style optimization.
 
 - Topic slug: `graphs/min-cost-flow`
-- Tutorial page: [Open tutorial](../topics/graphs/min-cost-flow/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/flow/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/min-cost-flow/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `10`
 
@@ -69,7 +69,7 @@ Successive shortest augmenting paths, potentials, and reduced costs for transpor
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `MINCOST` | Luồng với chi phí nhỏ nhất | `secondary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
+| `MINCOST` | Luồng với chi phí nhỏ nhất | `secondary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../../../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
 
 ## Regeneration
 

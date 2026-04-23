@@ -3,8 +3,8 @@
 Compress small subsets into bitmasks and reason about transitions over subsets, submasks, or profiles.
 
 - Topic slug: `dp/bitmask-dp`
-- Tutorial page: [Open tutorial](../topics/dp/bitmask-dp/README.md)
-- Ladder page: [Open ladder](../practice/ladders/dp/bitmask-dp/README.md)
+- Tutorial page: [Open tutorial](../../../topics/dp/bitmask-dp/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/dp/bitmask-dp/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `11`
 
@@ -105,7 +105,7 @@ Compress small subsets into bitmasks and reason about transitions over subsets, 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VMMARBLE` | Phân loại bi | `primary` | `medium` | final-color assignment; residual-state dp; capacity-2 moves | [Note](../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
+| `VMMARBLE` | Phân loại bi | `primary` | `medium` | final-color assignment; residual-state dp; capacity-2 moves | [Note](../../../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
 
 ## Regeneration
 

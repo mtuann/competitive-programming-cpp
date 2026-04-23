@@ -3,8 +3,8 @@
 Tree structure, rooting, Euler tours, diameters, and decomposition ideas that power most advanced tree problems.
 
 - Topic slug: `graphs/trees`
-- Tutorial page: [Open tutorial](../topics/graphs/trees/README.md)
-- Ladder page: [Open ladder](../practice/ladders/graphs/trees/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/trees/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
 - Repo problems currently tagged here: `6`
 - Curated external problems: `10`
 
@@ -99,12 +99,12 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `KINGDOMS` | KINGDOMS | `secondary` | `hard` | laminar regions; sweep events; containment tree | [Note](../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
-| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
-| `MTREECOL` | Color a tree | `primary` | `hard` | ratio greedy; tree contraction; exchange argument | [Note](../practice/ladders/graphs/trees/mtreecol.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp) |
-| `VMWTREE` | Lại là cây khung | `primary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
-| `VOITSORT` | Cây hoán vị | `secondary` | `hard` | lexicographic enumeration; stack-sortability; cartesian tree view | [Note](../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |
-| `VOSTRIP` | VOSTRIP | `secondary` | `hard` | tree endpoint pairing; path decomposition; local imbalance formula | [Note](../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
+| `KINGDOMS` | KINGDOMS | `secondary` | `hard` | laminar regions; sweep events; containment tree | [Note](../../../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
+| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MTREECOL` | Color a tree | `primary` | `hard` | ratio greedy; tree contraction; exchange argument | [Note](../../../practice/ladders/graphs/trees/mtreecol.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp) |
+| `VMWTREE` | Lại là cây khung | `primary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../../../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
+| `VOITSORT` | Cây hoán vị | `secondary` | `hard` | lexicographic enumeration; stack-sortability; cartesian tree view | [Note](../../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |
+| `VOSTRIP` | VOSTRIP | `secondary` | `hard` | tree endpoint pairing; path decomposition; local imbalance formula | [Note](../../../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
 
 ## Regeneration
 

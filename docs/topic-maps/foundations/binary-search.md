@@ -3,8 +3,8 @@
 Search on sorted data and on monotone answers: learn the invariant-first template before memorizing implementations.
 
 - Topic slug: `foundations/binary-search`
-- Tutorial page: [Open tutorial](../topics/foundations/patterns/binary-search/README.md)
-- Ladder page: [Open ladder](../practice/ladders/foundations/binary-search/README.md)
+- Tutorial page: [Open tutorial](../../../topics/foundations/patterns/binary-search/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/foundations/binary-search/README.md)
 - Repo problems currently tagged here: `0`
 - Curated external problems: `6`
 

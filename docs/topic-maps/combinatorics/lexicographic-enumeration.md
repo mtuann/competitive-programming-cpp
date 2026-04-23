@@ -3,8 +3,8 @@
 Generate, count, or skip combinatorial objects in lexicographic order using ranks, next-state transitions, and pruning.
 
 - Topic slug: `combinatorics/lexicographic-enumeration`
-- Tutorial page: [Open tutorial](../topics/combinatorics/lexicographic-enumeration/README.md)
-- Ladder page: [Open ladder](../practice/ladders/combinatorics/lexicographic-enumeration/README.md)
+- Tutorial page: [Open tutorial](../../../topics/combinatorics/lexicographic-enumeration/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/combinatorics/lexicographic-enumeration/README.md)
 - Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
@@ -60,7 +60,7 @@ Generate, count, or skip combinatorial objects in lexicographic order using rank
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `VOITSORT` | Cây hoán vị | `primary` | `hard` | lexicographic enumeration; stack-sortability; cartesian tree view | [Note](../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |
+| `VOITSORT` | Cây hoán vị | `primary` | `hard` | lexicographic enumeration; stack-sortability; cartesian tree view | [Note](../../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |
 
 ## Regeneration
 
