@@ -49,6 +49,10 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 
 After this section, you should know which standard structure to reach for in common query/update problems and be able to implement the core ones quickly in contest conditions.
 
+## Solved Examples In This Repo
+
+- [CVP00001 - Ô ăn quan](../../practice/ladders/data-structures/fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
+
 ## Go Deeper
 
 - Course: [Princeton COS 226](https://www.cs.princeton.edu/~cos226)

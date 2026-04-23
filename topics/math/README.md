@@ -46,6 +46,11 @@ Math gives you the compact facts and transforms that keep many contest solutions
 
 After this section, you should be able to use modular arithmetic and standard counting tools confidently, recognize common number-theory substructures, and know when advanced transforms are actually justified.
 
+## Solved Examples In This Repo
+
+- [CRYPTKEY - Chìa khóa mã số](../../practice/ladders/math/gcd-lcm/cryptkey.md): gcd/lcm construction through prime-exponent reasoning
+- [POST2 - A cộng B version 2](../../practice/ladders/math/fft/post2.md): convolution modeling with FFT
+
 ## Go Deeper
 
 - Course: [MIT 6.1210 / 6.1220](https://student.mit.edu/catalog/archive/fall/m6a.html)

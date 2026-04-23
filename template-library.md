@@ -78,6 +78,14 @@ Each template should stay compact, contest-usable, and linked back to the teachi
 
 ## Utility Notes
 
+## Representative Uses In This Repo
+
+- Fenwick tree -> [CVP00001](practice/ladders/data-structures/fenwick-tree/cvp00001.md)
+- Dijkstra / path reconstruction -> [QOS](practice/ladders/graphs/shortest-paths/qos.md)
+- Max flow / min-cost flow -> [FFLOW](practice/ladders/graphs/flow/fflow.md), [MINCOST](practice/ladders/graphs/flow/mincost.md)
+- Number theory helpers -> [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md)
+- Geometry primitives -> [PRAVO](practice/ladders/geometry/right-triangles/pravo.md), [KINGDOMS](practice/ladders/geometry/sweep-line/kingdoms.md)
+
 ### `__int128` helper
 
 Use `__int128` when a single multiplication may already be near `10^18`, or when many such products are accumulated exactly.

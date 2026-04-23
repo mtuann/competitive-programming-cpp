@@ -1,0 +1,30 @@
+# Advanced Ladders
+
+This section is for enrichment after the contest core feels stable.
+
+These ladders are not the first place to spend time if your foundations, data structures, graphs, DP, strings, and geometry are still shaky.
+
+## Current Ladders
+
+- [Randomized Algorithms](randomized-algorithms/README.md)
+- [Algorithm Engineering](algorithm-engineering/README.md)
+- [Complexity And Hardness](complexity-and-hardness/README.md)
+- [Approximation And Relaxation](approximation-and-relaxation/README.md)
+- [Optimization And Duality](optimization-and-duality/README.md)
+- [Contest Engineering](contest-engineering/README.md)
+
+## Recommended Order
+
+1. algorithm engineering
+2. contest engineering
+3. randomized algorithms
+4. complexity and hardness
+5. approximation and relaxation
+6. optimization and duality
+
+## How To Use This Section
+
+- study one topic at a time
+- tie every theory page back to a concrete code habit or problem pattern
+- stop if the topic is interesting but not yet high-ROI for your current level
+- treat this section as maturity training, not a replacement for core practice

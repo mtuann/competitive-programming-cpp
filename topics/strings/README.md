@@ -2,6 +2,21 @@
 
 Strings matter because many pattern problems are really about structure in sequences. This area should move from lightweight tools to exact matching and then to suffix-style machinery.
 
+## What This Area Covers
+
+This section is about three different levels of string thinking:
+
+- lightweight fingerprints and exact one-pattern tools
+- dictionary and automaton structures for many patterns
+- suffix-style structures for global substring reasoning
+
+The goal is not to memorize every named algorithm. It is to learn which *view of a string* fits the problem:
+
+- prefix view
+- pattern-matching view
+- trie/automaton view
+- suffix/substring view
+
 ## Subtopics
 
 - [Hashing](hashing/README.md)
@@ -15,39 +30,48 @@ Strings matter because many pattern problems are really about structure in seque
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)
+- Start here if: array reasoning is comfortable and repeated substring/pattern questions are starting to show up
 - Defer for later: suffix structures until exact matching tools feel familiar
 
 ## Learn In Order
 
 1. Core now
 - string hashing
-- KMP and Z-function
+- KMP
+- Z-function
 
 2. Contest core
 - trie
 - Aho-Corasick
-- suffix array
+- suffix array and LCP
 
 3. Advanced later
 - suffix automaton
 - palindromic and border-heavy variants
-- advanced substring data-structure combinations
+- substring data-structure combinations
 
 ## Recognition Cues
 
 - the problem asks for repeated pattern checks, substring relations, or many string queries
 - exact matching matters more than character-by-character simulation
-- naive scanning is too slow but preprocessing one string could help many queries
+- naive scanning is too slow but preprocessing one string or one pattern set could help many queries
+- the problem is about borders, prefixes, suffixes, or repeated substrings
 
 ## Common Pitfalls
 
 - using hashing where exact matching is required without collision discussion
 - learning suffix structures before the simpler pattern tools are automatic
 - forgetting that many string problems become array problems after encoding
+- choosing a heavy structure when one linear-time exact tool already solves the task
 
 ## Exit Criteria
 
-After this section, you should be able to choose between lightweight matching tools, trie-based preprocessing, and suffix-style structures based on what the query pattern actually needs.
+After this section, you should be able to:
+
+- choose between hashing, KMP, and Z for one-pattern or substring-comparison tasks
+- recognize when a trie or Aho-Corasick is the right many-pattern structure
+- use suffix array for static-string substring structure
+- know when suffix automaton is worth the extra conceptual weight
 
 ## Go Deeper
 
@@ -55,3 +79,4 @@ After this section, you should be able to choose between lightweight matching to
 - Reference: [OI Wiki](https://en.oi-wiki.org/)
 - Practice: [ICPC Problem Archive](https://foundation.icpc.global/archive/)
 - Practice: [CSES Problem Set](https://cses.fi/)
+- Reference: [KACTL](https://github.com/kth-competitive-programming/kactl)

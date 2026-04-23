@@ -24,4 +24,14 @@ Each area page should help you answer:
 - what mistakes appear often
 - what to study next
 
+## Representative Solved Notes
+
+Use these if you want one concrete repo-native anchor before diving into a whole area:
+
+- Data Structures: [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
+- Graphs: [QOS](../practice/ladders/graphs/shortest-paths/qos.md), [MINCOST](../practice/ladders/graphs/flow/mincost.md)
+- Dynamic Programming: [TFIELD](../practice/ladders/dp/sliding-window/tfield.md)
+- Math: [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md), [POST2](../practice/ladders/math/fft/post2.md)
+- Geometry: [PRAVO](../practice/ladders/geometry/right-triangles/pravo.md), [KINGDOMS](../practice/ladders/geometry/sweep-line/kingdoms.md)
+
 Use [docs/topic-template.md](../docs/topic-template.md) as the source of truth for mature single-topic pages. The area hubs in this folder should stay lighter and focus on scope, sequencing, and navigation.

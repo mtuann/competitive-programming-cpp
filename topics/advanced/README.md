@@ -2,51 +2,78 @@
 
 This area is for topics that sit above the usual contest core: algorithm-design ideas, deeper theory, and tools that explain why many standard techniques exist.
 
+## What This Area Covers
+
+These topics are not the first place to spend time if your foundations, graphs, DP, strings, and geometry are still unstable.
+
+They matter because they teach a broader way to think:
+
+- what kinds of guarantees are realistic
+- when randomness is principled
+- why relaxations and hardness matter
+- how strong contestants turn knowledge into reliable contest process
+
+This section is about maturity, not early speed.
+
 ## Subtopics
 
 - [Randomized Algorithms](randomized-algorithms/README.md)
 - [Algorithm Engineering](algorithm-engineering/README.md)
 - [Complexity And Hardness](complexity-and-hardness/README.md)
 - [Approximation And Relaxation](approximation-and-relaxation/README.md)
+- [Optimization And Duality](optimization-and-duality/README.md)
 - [Contest Engineering](contest-engineering/README.md)
 
 ## Entry
 
 - Prereqs: stable comfort with the core topic areas
+- Start here if: you want stronger modeling judgment and more reliable contest execution
 - Defer for later: this entire section if you are still building routine contest coverage
 
 ## Learn In Order
 
 1. Core now
-- randomized algorithms
 - algorithm engineering habits
-- complexity awareness
+- contest engineering habits
+- randomized algorithms
 
-2. Contest-adjacent depth
-- approximation
-- LP duality
-- convex and spectral viewpoints
+2. Modeling depth
+- complexity awareness
+- hardness as a signal
+- approximation and relaxation ideas
+- optimization and duality viewpoints
 
 3. Theory-first later
-- hardness and reductions
-- probabilistic and design-technique depth
+- richer reductions
+- deeper probabilistic design techniques
 - reading-heavy topics that inform, rather than dominate, contest prep
 
 ## Recognition Cues
 
 - the standard toolkit works, but you want to understand the design idea behind it
 - the problem or editorial points toward randomness, optimization relaxations, or hardness
-- you are studying beyond contest necessity and want stronger algorithmic maturity
+- your bottleneck is increasingly process, modeling, or algorithm judgment
 
 ## Common Pitfalls
 
 - treating advanced theory as required before the contest core is stable
 - reading many theory topics without connecting them back to concrete problems
 - expecting every advanced topic to produce immediate contest rating gains
+- replacing practice with reading instead of letting each reinforce the other
 
 ## Exit Criteria
 
-After this section, you should be able to place standard CP techniques inside a broader algorithm-design landscape and know which deeper topics are enrichment versus high-ROI contest tools.
+After this section, you should be able to:
+
+- place standard CP techniques inside a broader algorithm-design landscape
+- tell which deeper topics are enrichment versus high-ROI contest tools
+- reason more clearly about feasibility, randomness, relaxations, and process
+
+## Repo-Native Anchors
+
+- [Template Library](../../template-library.md)
+- [Notebook](../../notebook/README.md)
+- [Contest Playbooks](../../practice/contest-playbooks/README.md)
 
 ## Go Deeper
 

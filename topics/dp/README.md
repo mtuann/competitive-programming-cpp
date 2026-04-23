@@ -50,6 +50,10 @@ Dynamic programming is about choosing a state that captures exactly what still m
 
 After this section, you should be able to define states deliberately, justify transition correctness, and move from classic DP to structured variants without treating each one as a separate trick.
 
+## Solved Examples In This Repo
+
+- [TFIELD - Ruộng bậc thang](../../practice/ladders/dp/sliding-window/tfield.md): weighted window reasoning over sorted polygon layers
+
 ## Go Deeper
 
 - Course: [Stanford CS161](https://cs161-stanford.github.io)

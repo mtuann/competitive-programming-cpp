@@ -55,6 +55,14 @@ Graphs are one of the central contest areas because many problems are really abo
 
 After this section, you should be able to recognize the common graph models, choose the standard algorithm family quickly, and explain why a chosen graph representation is the right one.
 
+## Solved Examples In This Repo
+
+- [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
+- [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
+- [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
+- [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling
+- [VOSTRIP - VOSTRIP](../../practice/ladders/graphs/tree-dp/vostrip.md): tree usage aggregation and endpoint accounting
+
 ## Go Deeper
 
 - Course: [Stanford CS161](https://cs161-stanford.github.io)

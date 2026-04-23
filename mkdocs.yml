@@ -147,6 +147,7 @@ nav:
           - Algorithm Engineering: topics/advanced/algorithm-engineering/README.md
           - Complexity And Hardness: topics/advanced/complexity-and-hardness/README.md
           - Approximation And Relaxation: topics/advanced/approximation-and-relaxation/README.md
+          - Optimization And Duality: topics/advanced/optimization-and-duality/README.md
           - Contest Engineering: topics/advanced/contest-engineering/README.md
   - Practice:
       - How Practice Works: practice/README.md
@@ -189,10 +190,12 @@ nav:
           - Tree DP: practice/ladders/dp/tree-dp/README.md
           - Digit DP: practice/ladders/dp/digit-dp/README.md
           - Interval DP: practice/ladders/dp/interval-dp/README.md
+          - Sliding Window: practice/ladders/dp/sliding-window/README.md
       - Math Ladders:
           - Overview: practice/ladders/math/README.md
           - Modular Arithmetic: practice/ladders/math/modular-arithmetic/README.md
           - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
+          - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
           - FFT: practice/ladders/math/fft/README.md
       - Combinatorics Ladders:
           - Overview: practice/ladders/combinatorics/README.md
@@ -217,6 +220,18 @@ nav:
           - Convex Hull: practice/ladders/geometry/convex-hull/README.md
           - Sweep Line: practice/ladders/geometry/sweep-line/README.md
           - Counting Geometry: practice/ladders/geometry/counting-geometry/README.md
+          - Right Triangles: practice/ladders/geometry/right-triangles/README.md
+      - Greedy Ladders:
+          - Overview: practice/ladders/greedy/README.md
+          - Prefix Constraints: practice/ladders/greedy/prefix-constraints/README.md
+      - Advanced Ladders:
+          - Overview: practice/ladders/advanced/README.md
+          - Randomized Algorithms: practice/ladders/advanced/randomized-algorithms/README.md
+          - Algorithm Engineering: practice/ladders/advanced/algorithm-engineering/README.md
+          - Complexity And Hardness: practice/ladders/advanced/complexity-and-hardness/README.md
+          - Approximation And Relaxation: practice/ladders/advanced/approximation-and-relaxation/README.md
+          - Optimization And Duality: practice/ladders/advanced/optimization-and-duality/README.md
+          - Contest Engineering: practice/ladders/advanced/contest-engineering/README.md
       - Example Notes:
           - QBFLOWER - Tặng hoa: practice/ladders/graphs/matching/qbflower.md
           - FFLOW - Fast Maximum Flow: practice/ladders/graphs/flow/fflow.md
