@@ -5,7 +5,7 @@ Count or optimize over numeric ranges by scanning digits left-to-right with tigh
 - Topic slug: `dp/digit-dp`
 - Tutorial page: [Open tutorial](../../../topics/dp/digit-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/digit-dp/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `15`
 
 ## Microtopics
@@ -111,7 +111,9 @@ Count or optimize over numeric ranges by scanning digits left-to-right with tigh
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `COUNTINGNUMBERS` | Counting Numbers | `primary` | `medium` | digit dp; previous digit state; range counting | [Note](../../../practice/ladders/dp/digit-dp/countingnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp) |
 
 ## Regeneration
 

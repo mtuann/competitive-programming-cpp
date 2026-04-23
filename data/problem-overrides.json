@@ -67,6 +67,18 @@
       "ICPC-style"
     ]
   },
+  "COUNTINGNUMBERS": {
+    "topic_tags": [],
+    "patterns": [
+      "digit dp",
+      "previous digit state",
+      "range counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ]
+  },
   "FACTORYMACHINES": {
     "topic_tags": [],
     "patterns": [
@@ -77,6 +89,32 @@
     "tracks": [
       "CSES",
       "Sorting and searching"
+    ]
+  },
+  "FINDINGBORDERS": {
+    "topic_tags": [],
+    "patterns": [
+      "rolling hash",
+      "prefix-suffix equality",
+      "proper borders enumeration"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
+  "FINDINGPATTERNS": {
+    "topic_tags": [
+      "strings/trie"
+    ],
+    "patterns": [
+      "aho-corasick automaton",
+      "failure links",
+      "multi-pattern presence queries"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
     ]
   },
   "KINGDOMS": {
@@ -153,6 +191,18 @@
       "Graph algorithms"
     ]
   },
+  "COURSESCHEDULE": {
+    "topic_tags": [],
+    "patterns": [
+      "kahn topological sort",
+      "indegree peeling",
+      "cycle by failed ordering"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ]
+  },
   "MTREECOL": {
     "topic_tags": [],
     "patterns": [
@@ -218,12 +268,38 @@
       "OI-style"
     ]
   },
+  "ROADREPARATION": {
+    "topic_tags": [],
+    "patterns": [
+      "kruskal mst",
+      "connectivity check",
+      "cut property greedy"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ]
+  },
   "STRINGMATCHING": {
     "topic_tags": [],
     "patterns": [
       "prefix function",
       "border fallback",
       "overlapping occurrence counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
+  "STRINGFUNCTIONS": {
+    "topic_tags": [
+      "strings/kmp"
+    ],
+    "patterns": [
+      "z function",
+      "prefix function",
+      "prefix structure diagnostics"
     ],
     "tracks": [
       "CSES",

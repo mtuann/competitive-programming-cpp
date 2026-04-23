@@ -5,7 +5,7 @@ Rolling hashes for substring equality, borders, Rabin-Karp style matching, and c
 - Topic slug: `strings/hashing`
 - Tutorial page: [Open tutorial](../../../topics/strings/hashing/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/hashing/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -54,7 +54,9 @@ Rolling hashes for substring equality, borders, Rabin-Karp style matching, and c
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FINDINGBORDERS` | Finding Borders | `primary` | `easy` | rolling hash; prefix-suffix equality; proper borders enumeration | [Note](../../../practice/ladders/strings/hashing/findingborders.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp) |
 
 ## Regeneration
 

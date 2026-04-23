@@ -5,7 +5,7 @@ Maintain a Z-box to measure longest prefix matches at every position and solve p
 - Topic slug: `strings/z-function`
 - Tutorial page: [Open tutorial](../../../topics/strings/z-function/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/z-function/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -46,7 +46,9 @@ Maintain a Z-box to measure longest prefix matches at every position and solve p
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `STRINGFUNCTIONS` | String Functions | `primary` | `easy` | z function; prefix function; prefix structure diagnostics | [Note](../../../practice/ladders/strings/z-function/stringfunctions.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/stringfunctions.cpp) |
 
 ## Regeneration
 

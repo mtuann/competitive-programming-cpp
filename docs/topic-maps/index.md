@@ -26,13 +26,13 @@ These pages collect trusted learning sources, official practice sources, curated
 | Graphs -> LCA | 1 | 6 | [Open](graphs/lca.md) |
 | Graphs -> Matching | 1 | 11 | [Open](graphs/matching.md) |
 | Graphs -> Min-Cost Flow | 1 | 10 | [Open](graphs/min-cost-flow.md) |
-| Graphs -> Minimum Spanning Tree | 0 | 6 | [Open](graphs/mst.md) |
-| Graphs -> Topological Sort And SCC | 0 | 9 | [Open](graphs/scc-toposort.md) |
+| Graphs -> Minimum Spanning Tree | 1 | 6 | [Open](graphs/mst.md) |
+| Graphs -> Topological Sort And SCC | 1 | 9 | [Open](graphs/scc-toposort.md) |
 | Graphs -> Shortest Paths | 1 | 9 | [Open](graphs/shortest-paths.md) |
 | Graphs -> Tree DP | 1 | 7 | [Open](graphs/tree-dp.md) |
 | Graphs -> Trees | 7 | 10 | [Open](graphs/trees.md) |
 | DP -> Bitmask DP | 1 | 11 | [Open](dp/bitmask-dp.md) |
-| DP -> Digit DP | 0 | 15 | [Open](dp/digit-dp.md) |
+| DP -> Digit DP | 1 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 12 | [Open](dp/foundations.md) |
 | DP -> Interval DP | 0 | 12 | [Open](dp/interval-dp.md) |
 | DP -> Knapsack Family | 0 | 15 | [Open](dp/knapsack-family.md) |
@@ -47,13 +47,13 @@ These pages collect trusted learning sources, official practice sources, curated
 | Combinatorics -> Counting Basics | 1 | 13 | [Open](combinatorics/counting-basics.md) |
 | Combinatorics -> Inclusion-Exclusion | 2 | 6 | [Open](combinatorics/inclusion-exclusion.md) |
 | Combinatorics -> Lexicographic Enumeration | 1 | 7 | [Open](combinatorics/lexicographic-enumeration.md) |
-| Strings -> Aho-Corasick | 0 | 7 | [Open](strings/aho-corasick.md) |
-| Strings -> Hashing | 0 | 7 | [Open](strings/hashing.md) |
-| Strings -> KMP | 1 | 5 | [Open](strings/kmp.md) |
+| Strings -> Aho-Corasick | 1 | 7 | [Open](strings/aho-corasick.md) |
+| Strings -> Hashing | 1 | 7 | [Open](strings/hashing.md) |
+| Strings -> KMP | 2 | 5 | [Open](strings/kmp.md) |
 | Strings -> Suffix Array And LCP | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 0 | 8 | [Open](strings/suffix-automaton.md) |
-| Strings -> Trie | 1 | 5 | [Open](strings/trie.md) |
-| Strings -> Z-Function | 0 | 5 | [Open](strings/z-function.md) |
+| Strings -> Trie | 2 | 5 | [Open](strings/trie.md) |
+| Strings -> Z-Function | 1 | 5 | [Open](strings/z-function.md) |
 | Geometry -> Convex Hull | 0 | 6 | [Open](geometry/convex-hull.md) |
 | Geometry -> Counting Geometry | 1 | 6 | [Open](geometry/counting-geometry.md) |
 | Geometry -> Polygon Area And Point Location | 3 | 4 | [Open](geometry/polygon-area-point-location.md) |

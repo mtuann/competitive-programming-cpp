@@ -199,6 +199,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp"
   },
   {
+    "code": "COUNTINGNUMBERS",
+    "title": "Counting Numbers",
+    "full_title": "Counting Numbers",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2220",
+    "main_topic": "DP -> Digit DP",
+    "secondary_topics": [
+      "Previous digit state",
+      "Leading zeros",
+      "Range counting"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/digit-dp",
+    "topic_tags": [
+      "dp/digit-dp"
+    ],
+    "patterns": [
+      "digit dp",
+      "previous digit state",
+      "range counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ],
+    "note_path": "practice/ladders/dp/digit-dp/countingnumbers.md",
+    "ladder_path": "practice/ladders/dp/digit-dp/README.md",
+    "tutorial_path": "topics/dp/digit-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp"
+  },
+  {
     "code": "VMSCALE",
     "title": "Chiếc cân kỳ diệu",
     "full_title": "VMSCALE - Chiếc cân kỳ diệu",
@@ -595,6 +627,70 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp"
   },
   {
+    "code": "ROADREPARATION",
+    "title": "Road Reparation",
+    "full_title": "Road Reparation",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1675",
+    "main_topic": "Graphs -> Minimum Spanning Tree",
+    "secondary_topics": [
+      "Kruskal",
+      "DSU",
+      "Connectivity check"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/mst",
+    "topic_tags": [
+      "graphs/mst"
+    ],
+    "patterns": [
+      "kruskal mst",
+      "connectivity check",
+      "cut property greedy"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/mst/roadreparation.md",
+    "ladder_path": "practice/ladders/graphs/mst/README.md",
+    "tutorial_path": "topics/graphs/mst/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/mst/roadreparation.cpp"
+  },
+  {
+    "code": "COURSESCHEDULE",
+    "title": "Course Schedule",
+    "full_title": "Course Schedule",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1679",
+    "main_topic": "Graphs -> Topological Sort And SCC",
+    "secondary_topics": [
+      "Kahn topological sort",
+      "Indegree counting",
+      "Directed cycle detection"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/scc-toposort",
+    "topic_tags": [
+      "graphs/scc-toposort"
+    ],
+    "patterns": [
+      "kahn topological sort",
+      "indegree peeling",
+      "cycle by failed ordering"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/scc-toposort/courseschedule.md",
+    "ladder_path": "practice/ladders/graphs/scc-toposort/README.md",
+    "tutorial_path": "topics/graphs/scc-toposort/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/scc-toposort/courseschedule.cpp"
+  },
+  {
     "code": "QOS",
     "title": "Chất lượng dịch vụ",
     "full_title": "Chất lượng dịch vụ",
@@ -858,6 +954,71 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
   },
   {
+    "code": "FINDINGPATTERNS",
+    "title": "Finding Patterns",
+    "full_title": "Finding Patterns",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2102",
+    "main_topic": "Strings -> Aho-Corasick",
+    "secondary_topics": [
+      "Trie automaton",
+      "Failure links",
+      "Failure-tree propagation"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/aho-corasick",
+    "topic_tags": [
+      "strings/aho-corasick",
+      "strings/trie"
+    ],
+    "patterns": [
+      "aho-corasick automaton",
+      "failure links",
+      "multi-pattern presence queries"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/aho-corasick/findingpatterns.md",
+    "ladder_path": "practice/ladders/strings/aho-corasick/README.md",
+    "tutorial_path": "topics/strings/aho-corasick/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp"
+  },
+  {
+    "code": "FINDINGBORDERS",
+    "title": "Finding Borders",
+    "full_title": "Finding Borders",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1732",
+    "main_topic": "Strings -> Hashing",
+    "secondary_topics": [
+      "Prefix-suffix equality",
+      "Proper borders",
+      "Collision awareness"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "strings/hashing",
+    "topic_tags": [
+      "strings/hashing"
+    ],
+    "patterns": [
+      "rolling hash",
+      "prefix-suffix equality",
+      "proper borders enumeration"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/hashing/findingborders.md",
+    "ladder_path": "practice/ladders/strings/hashing/README.md",
+    "tutorial_path": "topics/strings/hashing/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp"
+  },
+  {
     "code": "STRINGMATCHING",
     "title": "String Matching",
     "full_title": "String Matching",
@@ -920,5 +1081,38 @@
     "ladder_path": "practice/ladders/strings/trie/README.md",
     "tutorial_path": "topics/strings/trie/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp"
+  },
+  {
+    "code": "STRINGFUNCTIONS",
+    "title": "String Functions",
+    "full_title": "String Functions",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2107",
+    "main_topic": "Strings -> Z-Function",
+    "secondary_topics": [
+      "Prefix function",
+      "Borders",
+      "Prefix structure diagnostics"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "strings/z-function",
+    "topic_tags": [
+      "strings/z-function",
+      "strings/kmp"
+    ],
+    "patterns": [
+      "z function",
+      "prefix function",
+      "prefix structure diagnostics"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/z-function/stringfunctions.md",
+    "ladder_path": "practice/ladders/strings/z-function/README.md",
+    "tutorial_path": "topics/strings/z-function/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/stringfunctions.cpp"
   }
 ]

@@ -5,7 +5,7 @@ Use cut and cycle properties to build minimum spanning forests with Kruskal or P
 - Topic slug: `graphs/mst`
 - Tutorial page: [Open tutorial](../../../topics/graphs/mst/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/mst/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -67,7 +67,9 @@ Use cut and cycle properties to build minimum spanning forests with Kruskal or P
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `ROADREPARATION` | Road Reparation | `primary` | `medium` | kruskal mst; connectivity check; cut property greedy | [Note](../../../practice/ladders/graphs/mst/roadreparation.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/mst/roadreparation.cpp) |
 
 ## Regeneration
 

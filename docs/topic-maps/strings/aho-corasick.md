@@ -5,7 +5,7 @@ Dictionary automaton for multi-pattern matching with failure and output links.
 - Topic slug: `strings/aho-corasick`
 - Tutorial page: [Open tutorial](../../../topics/strings/aho-corasick/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/aho-corasick/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -53,7 +53,9 @@ Dictionary automaton for multi-pattern matching with failure and output links.
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FINDINGPATTERNS` | Finding Patterns | `primary` | `medium` | aho-corasick automaton; failure links; multi-pattern presence queries | [Note](../../../practice/ladders/strings/aho-corasick/findingpatterns.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp) |
 
 ## Regeneration
 
