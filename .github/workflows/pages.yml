@@ -33,6 +33,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Byte-compile support scripts
+        run: python -m py_compile scripts/generate_problem_catalog.py scripts/build_site_docs.py
+
+      - name: Validate generated catalogs are in sync
+        run: python scripts/generate_problem_catalog.py --check
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:

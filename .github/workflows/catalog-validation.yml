@@ -1,0 +1,39 @@
+name: Validate Problem Catalogs
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Byte-compile support scripts
+        run: python -m py_compile scripts/generate_problem_catalog.py scripts/build_site_docs.py
+
+      - name: Validate catalog source data
+        run: python scripts/generate_problem_catalog.py --validate-only
+
+      - name: Check generated catalog outputs
+        run: python scripts/generate_problem_catalog.py --check
+
+      - name: Prepare docs tree
+        run: python scripts/build_site_docs.py
+
+      - name: Build docs strictly
+        run: mkdocs build --strict

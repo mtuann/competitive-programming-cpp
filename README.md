@@ -51,6 +51,19 @@ Each mature topic page should help a reader answer four questions quickly:
 
 The source of truth for finished topic pages is [docs/topic-template.md](docs/topic-template.md).
 
+## Catalog Maintenance
+
+When you change topic metadata, problem overrides, ladder notes, or external pools, run the catalog checks before pushing:
+
+```bash
+python3 scripts/generate_problem_catalog.py --validate-only
+python3 scripts/generate_problem_catalog.py --check
+python3 scripts/build_site_docs.py
+mkdocs build --strict
+```
+
+`--validate-only` checks the raw data schema and note metadata. `--check` regenerates the tracked catalog outputs and fails if anything needs to be committed.
+
 ## References And Standards
 
 The curriculum is grounded in public official sources current through `April 22, 2026`, including university algorithms syllabi, official contest documents, and major CP references.

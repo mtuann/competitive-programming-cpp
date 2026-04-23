@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import re
+import subprocess
 from collections import Counter, defaultdict
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +27,15 @@ EXTERNAL_OUTPUT_CSV = DOCS_DIR / "external-problem-catalog.csv"
 EXTERNAL_OUTPUT_MD = DOCS_DIR / "external-problem-index.md"
 TOPIC_MAPS_DIR = DOCS_DIR / "topic-maps"
 TOPIC_MAPS_INDEX = TOPIC_MAPS_DIR / "index.md"
+GENERATED_OUTPUT_PATHS = [
+    PROBLEM_JSON,
+    EXTERNAL_PROBLEM_JSON,
+    OUTPUT_CSV,
+    OUTPUT_MD,
+    EXTERNAL_OUTPUT_CSV,
+    EXTERNAL_OUTPUT_MD,
+    TOPIC_MAPS_DIR,
+]
 
 
 AREA_ORDER = [
@@ -89,6 +101,7 @@ LADDER_TO_TUTORIAL_OVERRIDES = {
 
 METADATA_RE = re.compile(r"^- ([^:]+):\s*(.*)$")
 MD_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
+HTTP_URL_RE = re.compile(r"^https?://", re.IGNORECASE)
 
 
 SOURCE_ALIASES = {
@@ -292,6 +305,26 @@ DIFFICULTY_ORDER = [
     "very-hard",
     "theory",
 ]
+
+
+class ValidationError(RuntimeError):
+    """Raised when catalog source data violates repository invariants."""
+
+
+def is_http_url(value: object) -> bool:
+    return bool(HTTP_URL_RE.match(clean_value(value)))
+
+
+def canonical_problem_url(value: object) -> str:
+    text = clean_value(value)
+    if not text:
+        return ""
+
+    parts = urlsplit(text)
+    scheme = parts.scheme.lower()
+    netloc = parts.netloc.lower()
+    path = re.sub(r"/+$", "", parts.path) or "/"
+    return urlunsplit((scheme, netloc, path, parts.query, ""))
 
 
 def clean_value(value: object) -> str:
@@ -676,6 +709,574 @@ def display_label_for_slug(slug: str, topic_resources: dict[str, dict]) -> str:
         return topic_resources[slug]["title"]
     area, sub = slug.split("/", 1)
     return f"{AREA_LABELS.get(area, area.title())} -> {sub.replace('-', ' ').title()}"
+
+
+def iter_problem_note_paths() -> list[Path]:
+    return sorted(path for path in NOTES_ROOT.rglob("*.md") if path.name != "README.md")
+
+
+def append_issue(issues: list[str], message: str) -> None:
+    issues.append(message)
+
+
+def raise_for_issues(issues: list[str]) -> None:
+    if not issues:
+        return
+
+    message_lines = ["Catalog input validation failed:"]
+    for issue in issues:
+        message_lines.append(f"- {issue}")
+    raise ValidationError("\n".join(message_lines))
+
+
+def validate_slug_reference(label: str, slug: object, topic_resources: dict[str, dict], issues: list[str]) -> None:
+    text = clean_value(slug)
+    if not text:
+        append_issue(issues, f"{label} must be a non-empty topic slug.")
+        return
+
+    parts = text.split("/", 1)
+    if len(parts) != 2 or not parts[0] or not parts[1]:
+        append_issue(issues, f"{label} must have the form '<area>/<subtopic>', got {text!r}.")
+        return
+
+    area = parts[0]
+    if area not in AREA_ORDER:
+        append_issue(issues, f"{label} uses unknown area {area!r}.")
+    if text not in topic_resources:
+        append_issue(issues, f"{label} references unknown topic slug {text!r}.")
+
+
+def validate_repo_markdown_path(
+    label: str,
+    rel_path: object,
+    *,
+    expected_prefix: str,
+    issues: list[str],
+    allow_blank: bool = False,
+) -> None:
+    text = clean_value(rel_path)
+    if not text:
+        if not allow_blank:
+            append_issue(issues, f"{label} must not be blank.")
+        return
+
+    if not text.startswith(expected_prefix):
+        append_issue(issues, f"{label} must start with {expected_prefix!r}, got {text!r}.")
+    if not text.endswith(".md"):
+        append_issue(issues, f"{label} must point to a markdown file, got {text!r}.")
+    if not (ROOT / text).exists():
+        append_issue(issues, f"{label} points to missing path {text!r}.")
+
+
+def validate_string_list(
+    label: str,
+    value: object,
+    issues: list[str],
+    *,
+    aliases: dict[str, str] | None = None,
+    allow_empty: bool = True,
+) -> list[str]:
+    if not isinstance(value, list):
+        append_issue(issues, f"{label} must be a list of strings.")
+        return []
+
+    cleaned_values: list[str] = []
+    seen_keys: dict[str, str] = {}
+    normalized_keys: dict[str, str] = {}
+    for idx, item in enumerate(value):
+        text = clean_value(item)
+        item_label = f"{label}[{idx}]"
+        if not text:
+            append_issue(issues, f"{item_label} must be a non-empty string.")
+            continue
+
+        key = comparison_key(text)
+        if key in seen_keys:
+            append_issue(issues, f"{label} contains duplicate values {seen_keys[key]!r} and {text!r}.")
+        else:
+            seen_keys[key] = text
+
+        canonical = normalize_phrase(text, aliases)
+        canonical_key = comparison_key(canonical)
+        previous = normalized_keys.get(canonical_key)
+        if previous and previous != text:
+            append_issue(
+                issues,
+                f"{label} contains alias-colliding values {previous!r} and {text!r}; keep only one canonical spelling.",
+            )
+        else:
+            normalized_keys[canonical_key] = text
+
+        cleaned_values.append(text)
+
+    if not cleaned_values and not allow_empty:
+        append_issue(issues, f"{label} must contain at least one item.")
+    return cleaned_values
+
+
+def validate_source_items(label: str, items: object, issues: list[str], *, allow_empty: bool = False) -> None:
+    if not isinstance(items, list):
+        append_issue(issues, f"{label} must be a list of source objects.")
+        return
+
+    if not items and not allow_empty:
+        append_issue(issues, f"{label} must contain at least one source.")
+        return
+
+    seen_urls: dict[str, str] = {}
+    for idx, item in enumerate(items):
+        item_label = f"{label}[{idx}]"
+        if not isinstance(item, dict):
+            append_issue(issues, f"{item_label} must be an object with label/url/kind.")
+            continue
+
+        allowed_keys = {"kind", "label", "url"}
+        extra_keys = sorted(set(item) - allowed_keys)
+        missing_keys = sorted(allowed_keys - set(item))
+        if missing_keys:
+            append_issue(issues, f"{item_label} is missing expected keys: {', '.join(missing_keys)}.")
+        if extra_keys:
+            append_issue(issues, f"{item_label} has unknown keys: {', '.join(extra_keys)}.")
+
+        source_label = clean_value(item.get("label", ""))
+        source_url = clean_value(item.get("url", ""))
+        source_kind = clean_value(item.get("kind", ""))
+
+        if not source_label:
+            append_issue(issues, f"{item_label}.label must be non-empty.")
+        if not source_kind:
+            append_issue(issues, f"{item_label}.kind must be non-empty.")
+        if not source_url:
+            append_issue(issues, f"{item_label}.url must be non-empty.")
+            continue
+        if not is_http_url(source_url):
+            append_issue(issues, f"{item_label}.url must be http(s), got {source_url!r}.")
+            continue
+
+        canonical = canonical_problem_url(source_url)
+        previous = seen_urls.get(canonical)
+        if previous and previous != source_url:
+            append_issue(
+                issues,
+                f"{label} contains duplicate source URLs {previous!r} and {source_url!r} after canonicalization.",
+            )
+        else:
+            seen_urls[canonical] = source_url
+
+
+def collect_note_records(topic_resources: dict[str, dict], issues: list[str]) -> list[dict[str, str]]:
+    required_fields = [
+        "Title",
+        "Judge / source",
+        "Original URL",
+        "Main topic",
+        "Difficulty",
+        "Status",
+    ]
+
+    records: list[dict[str, str]] = []
+    seen_codes: dict[str, str] = {}
+    for note_path in iter_problem_note_paths():
+        note_rel = note_path.relative_to(ROOT)
+        path_label = note_rel.as_posix()
+        parts = note_rel.parts
+        if len(parts) != 5 or parts[0] != "practice" or parts[1] != "ladders":
+            append_issue(
+                issues,
+                f"Problem note {path_label!r} must live at practice/ladders/<area>/<subtopic>/<file>.md.",
+            )
+            continue
+
+        meta = parse_metadata(note_path)
+        for field in required_fields:
+            if not clean_value(meta.get(field, "")):
+                append_issue(issues, f"{path_label!r} is missing required metadata field {field!r}.")
+
+        primary_slug = primary_slug_from_note(note_rel)
+        validate_slug_reference(f"{path_label} primary slug", primary_slug, topic_resources, issues)
+
+        ladder_path = (note_rel.parent / "README.md").as_posix()
+        validate_repo_markdown_path(
+            f"{path_label} ladder page",
+            ladder_path,
+            expected_prefix="practice/ladders/",
+            issues=issues,
+        )
+
+        title_value = meta.get("Title", note_path.stem.upper())
+        code, _ = note_title_fields(title_value, note_path)
+        if not code:
+            append_issue(issues, f"{path_label!r} could not derive a problem code from metadata.")
+        elif code in seen_codes:
+            append_issue(issues, f"Problem code {code!r} is duplicated in {seen_codes[code]!r} and {path_label!r}.")
+        else:
+            seen_codes[code] = path_label
+
+        original_url = extract_url(meta.get("Original URL", ""))
+        if original_url and not is_http_url(original_url):
+            append_issue(issues, f"{path_label!r} has non-http Original URL {original_url!r}.")
+        mirror_url = extract_url(meta.get("Mirror URL", ""))
+        if mirror_url and not is_http_url(mirror_url):
+            append_issue(issues, f"{path_label!r} has non-http Mirror URL {mirror_url!r}.")
+        solution_url = extract_url(meta.get("Solution file", ""))
+        if solution_url and not is_http_url(solution_url):
+            append_issue(issues, f"{path_label!r} has non-http Solution file URL {solution_url!r}.")
+
+        secondary_topics = split_csvish(meta.get("Secondary topics", ""))
+        secondary_keys: dict[str, str] = {}
+        for topic in secondary_topics:
+            key = comparison_key(topic)
+            previous = secondary_keys.get(key)
+            if previous and previous != topic:
+                append_issue(
+                    issues,
+                    f"{path_label!r} repeats secondary topic labels {previous!r} and {topic!r}.",
+                )
+            else:
+                secondary_keys[key] = topic
+
+        records.append(
+            {
+                "code": code,
+                "note_path": path_label,
+                "primary_slug": primary_slug,
+            }
+        )
+
+    return records
+
+
+def validate_topic_resources(topic_resources: dict[str, dict], issues: list[str]) -> None:
+    if not isinstance(topic_resources, dict) or not topic_resources:
+        append_issue(issues, "topic-resources.json must be a non-empty object keyed by slug.")
+        return
+
+    seen_titles: dict[str, str] = {}
+    for slug, entry in topic_resources.items():
+        validate_slug_reference("topic-resources slug", slug, topic_resources, issues)
+        if not isinstance(entry, dict):
+            append_issue(issues, f"topic-resources[{slug!r}] must be an object.")
+            continue
+
+        allowed_keys = {
+            "ladder_path",
+            "learning_sources",
+            "microtopics",
+            "practice_sources",
+            "summary",
+            "title",
+            "topic_path",
+        }
+        extra_keys = sorted(set(entry) - allowed_keys)
+        missing_keys = sorted(allowed_keys - set(entry))
+        if missing_keys:
+            append_issue(issues, f"topic-resources[{slug!r}] is missing expected keys: {', '.join(missing_keys)}.")
+        if extra_keys:
+            append_issue(issues, f"topic-resources[{slug!r}] has unknown keys: {', '.join(extra_keys)}.")
+
+        title = clean_value(entry.get("title", ""))
+        if not title:
+            append_issue(issues, f"topic-resources[{slug!r}].title must be non-empty.")
+        else:
+            title_key = comparison_key(title)
+            previous = seen_titles.get(title_key)
+            if previous and previous != slug:
+                append_issue(issues, f"topic-resources titles for {previous!r} and {slug!r} collide at {title!r}.")
+            else:
+                seen_titles[title_key] = slug
+
+        if not clean_value(entry.get("summary", "")):
+            append_issue(issues, f"topic-resources[{slug!r}].summary must be non-empty.")
+
+        validate_repo_markdown_path(
+            f"topic-resources[{slug!r}].ladder_path",
+            entry.get("ladder_path", ""),
+            expected_prefix="practice/ladders/",
+            issues=issues,
+        )
+        validate_repo_markdown_path(
+            f"topic-resources[{slug!r}].topic_path",
+            entry.get("topic_path", ""),
+            expected_prefix="topics/",
+            issues=issues,
+            allow_blank=True,
+        )
+
+        validate_string_list(
+            f"topic-resources[{slug!r}].microtopics",
+            entry.get("microtopics", []),
+            issues,
+            allow_empty=False,
+        )
+        validate_source_items(
+            f"topic-resources[{slug!r}].learning_sources",
+            entry.get("learning_sources", []),
+            issues,
+        )
+        validate_source_items(
+            f"topic-resources[{slug!r}].practice_sources",
+            entry.get("practice_sources", []),
+            issues,
+        )
+
+
+def validate_problem_overrides(
+    problem_overrides: dict[str, dict],
+    note_records: list[dict[str, str]],
+    topic_resources: dict[str, dict],
+    issues: list[str],
+) -> None:
+    if not isinstance(problem_overrides, dict):
+        append_issue(issues, "problem-overrides.json must be a top-level object keyed by problem code.")
+        return
+
+    note_by_code = {record["code"]: record for record in note_records if record.get("code")}
+    allowed_keys = {"topic_tags", "patterns", "tracks"}
+    for code, entry in problem_overrides.items():
+        if code not in note_by_code:
+            append_issue(issues, f"problem-overrides[{code!r}] does not match any repo note code.")
+        if not isinstance(entry, dict):
+            append_issue(issues, f"problem-overrides[{code!r}] must be an object.")
+            continue
+
+        extra_keys = sorted(set(entry) - allowed_keys)
+        missing_keys = sorted(allowed_keys - set(entry))
+        if missing_keys:
+            append_issue(
+                issues,
+                f"problem-overrides[{code!r}] is missing expected keys: {', '.join(missing_keys)}.",
+            )
+        if extra_keys:
+            append_issue(
+                issues,
+                f"problem-overrides[{code!r}] has unknown keys: {', '.join(extra_keys)}.",
+            )
+
+        topic_tags = validate_string_list(
+            f"problem-overrides[{code!r}].topic_tags",
+            entry.get("topic_tags", []),
+            issues,
+        )
+        patterns = validate_string_list(
+            f"problem-overrides[{code!r}].patterns",
+            entry.get("patterns", []),
+            issues,
+        )
+        tracks = validate_string_list(
+            f"problem-overrides[{code!r}].tracks",
+            entry.get("tracks", []),
+            issues,
+        )
+
+        del patterns, tracks  # kept for validation side effects only
+
+        primary_slug = note_by_code.get(code, {}).get("primary_slug", "")
+        for slug in topic_tags:
+            validate_slug_reference(f"problem-overrides[{code!r}].topic_tags", slug, topic_resources, issues)
+            if slug == primary_slug:
+                append_issue(
+                    issues,
+                    f"problem-overrides[{code!r}].topic_tags redundantly repeats primary slug {slug!r}.",
+                )
+
+
+def validate_external_problem_pools(
+    external_problem_pools: dict[str, list[dict]],
+    topic_resources: dict[str, dict],
+    issues: list[str],
+) -> None:
+    if not isinstance(external_problem_pools, dict):
+        append_issue(issues, "external-problem-pools.json must be a top-level object keyed by topic slug.")
+        return
+
+    missing_slugs = sorted(set(topic_resources) - set(external_problem_pools))
+    extra_slugs = sorted(set(external_problem_pools) - set(topic_resources))
+    if missing_slugs:
+        append_issue(
+            issues,
+            f"external-problem-pools.json is missing topic keys for: {', '.join(missing_slugs[:10])}"
+            + ("..." if len(missing_slugs) > 10 else ""),
+        )
+    if extra_slugs:
+        append_issue(
+            issues,
+            f"external-problem-pools.json has unknown topic keys: {', '.join(extra_slugs[:10])}"
+            + ("..." if len(extra_slugs) > 10 else ""),
+        )
+
+    for slug, rows in external_problem_pools.items():
+        validate_slug_reference("external-problem-pools slug", slug, topic_resources, issues)
+        if not isinstance(rows, list):
+            append_issue(issues, f"external-problem-pools[{slug!r}] must be a list of problem objects.")
+            continue
+
+        required_keys = {
+            "bucket",
+            "difficulty",
+            "prerequisites",
+            "source",
+            "styles",
+            "tags",
+            "title",
+            "tracks",
+            "url",
+            "why_fit",
+        }
+        seen_urls: dict[str, str] = {}
+        for idx, row in enumerate(rows):
+            row_label = f"external-problem-pools[{slug!r}][{idx}]"
+            if not isinstance(row, dict):
+                append_issue(issues, f"{row_label} must be an object.")
+                continue
+
+            extra_keys = sorted(set(row) - required_keys)
+            missing_keys = sorted(required_keys - set(row))
+            if missing_keys:
+                append_issue(issues, f"{row_label} is missing expected keys: {', '.join(missing_keys)}.")
+            if extra_keys:
+                append_issue(issues, f"{row_label} has unknown keys: {', '.join(extra_keys)}.")
+
+            title = clean_value(row.get("title", ""))
+            source = clean_value(row.get("source", ""))
+            difficulty = clean_value(row.get("difficulty", ""))
+            url = clean_value(row.get("url", ""))
+            why_fit = clean_value(row.get("why_fit", ""))
+            bucket = clean_value(row.get("bucket", ""))
+
+            if not title:
+                append_issue(issues, f"{row_label}.title must be non-empty.")
+            if not source:
+                append_issue(issues, f"{row_label}.source must be non-empty.")
+            if not difficulty:
+                append_issue(issues, f"{row_label}.difficulty must be non-empty.")
+            if not why_fit:
+                append_issue(issues, f"{row_label}.why_fit must be non-empty.")
+            if not bucket:
+                append_issue(issues, f"{row_label}.bucket must be non-empty.")
+
+            if not url:
+                append_issue(issues, f"{row_label}.url must be non-empty.")
+            elif not is_http_url(url):
+                append_issue(issues, f"{row_label}.url must be http(s), got {url!r}.")
+            else:
+                canonical_url = canonical_problem_url(url)
+                previous = seen_urls.get(canonical_url)
+                if previous and previous != url:
+                    append_issue(
+                        issues,
+                        f"{row_label}.url duplicates another URL in {slug!r}: {previous!r} vs {url!r}.",
+                    )
+                else:
+                    seen_urls[canonical_url] = url
+
+            if source and not normalize_source(source):
+                append_issue(issues, f"{row_label}.source {source!r} normalizes to an empty value.")
+            if difficulty and normalize_difficulty(difficulty) not in DIFFICULTY_ORDER:
+                append_issue(
+                    issues,
+                    f"{row_label}.difficulty {difficulty!r} does not normalize to a supported difficulty label.",
+                )
+
+            validate_string_list(f"{row_label}.tracks", row.get("tracks", []), issues, aliases=TRACK_ALIASES)
+            validate_string_list(f"{row_label}.tags", row.get("tags", []), issues, aliases=TAG_ALIASES)
+            validate_string_list(f"{row_label}.styles", row.get("styles", []), issues, aliases=STYLE_ALIASES)
+            validate_string_list(
+                f"{row_label}.prerequisites",
+                row.get("prerequisites", []),
+                issues,
+                aliases=PREREQUISITE_ALIASES,
+            )
+
+
+def validate_generated_problem_rows(rows: list[dict], topic_resources: dict[str, dict], issues: list[str]) -> None:
+    seen_codes: dict[str, str] = {}
+    for row in rows:
+        code = clean_value(row.get("code", ""))
+        note_path = clean_value(row.get("note_path", ""))
+        if not code:
+            append_issue(issues, f"Generated repo row for {note_path!r} is missing a code.")
+            continue
+
+        previous = seen_codes.get(code)
+        if previous and previous != note_path:
+            append_issue(issues, f"Generated repo rows duplicate code {code!r} in {previous!r} and {note_path!r}.")
+        else:
+            seen_codes[code] = note_path
+
+        validate_slug_reference(f"Generated repo row {code!r} primary_slug", row.get("primary_slug", ""), topic_resources, issues)
+        for idx, slug in enumerate(row.get("topic_tags", [])):
+            validate_slug_reference(f"Generated repo row {code!r} topic_tags[{idx}]", slug, topic_resources, issues)
+
+        validate_repo_markdown_path(
+            f"Generated repo row {code!r} note_path",
+            row.get("note_path", ""),
+            expected_prefix="practice/ladders/",
+            issues=issues,
+        )
+        validate_repo_markdown_path(
+            f"Generated repo row {code!r} ladder_path",
+            row.get("ladder_path", ""),
+            expected_prefix="practice/ladders/",
+            issues=issues,
+        )
+        validate_repo_markdown_path(
+            f"Generated repo row {code!r} tutorial_path",
+            row.get("tutorial_path", ""),
+            expected_prefix="topics/",
+            issues=issues,
+            allow_blank=True,
+        )
+
+
+def validate_catalog_inputs() -> None:
+    required_files = [
+        PROBLEM_OVERRIDES,
+        TOPIC_RESOURCES,
+        EXTERNAL_PROBLEM_POOLS,
+    ]
+
+    issues: list[str] = []
+    for path in required_files:
+        if not path.exists():
+            append_issue(issues, f"Required data file is missing: {path.relative_to(ROOT).as_posix()}")
+
+    topic_resources = load_json(TOPIC_RESOURCES)
+    problem_overrides = load_json(PROBLEM_OVERRIDES)
+    external_problem_pools = load_json(EXTERNAL_PROBLEM_POOLS)
+
+    validate_topic_resources(topic_resources, issues)
+    note_records = collect_note_records(topic_resources, issues)
+    validate_problem_overrides(problem_overrides, note_records, topic_resources, issues)
+    validate_external_problem_pools(external_problem_pools, topic_resources, issues)
+
+    if not issues:
+        generated_rows = build_problem_rows()
+        validate_generated_problem_rows(generated_rows, topic_resources, issues)
+
+    raise_for_issues(issues)
+
+
+def generated_output_relpaths() -> list[str]:
+    return [path.relative_to(ROOT).as_posix() for path in GENERATED_OUTPUT_PATHS]
+
+
+def ensure_generated_outputs_are_in_sync() -> None:
+    command = ["git", "diff", "--exit-code", "--"] + generated_output_relpaths()
+    try:
+        result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, check=False)
+    except FileNotFoundError as exc:
+        raise ValidationError("git is required for --check but was not found in PATH.") from exc
+
+    if result.returncode == 0:
+        return
+
+    diff_output = "\n".join(part for part in [result.stdout.strip(), result.stderr.strip()] if part)
+    raise ValidationError(
+        "Generated catalog outputs are out of date. "
+        "Run `python3 scripts/generate_problem_catalog.py` and commit the updated files.\n"
+        + diff_output
+    )
 
 
 def build_problem_rows() -> list[dict]:
@@ -1120,7 +1721,7 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
     TOPIC_MAPS_INDEX.write_text("\n".join(index_lines) + "\n", encoding="utf-8")
 
 
-def main() -> None:
+def generate_catalog_outputs() -> None:
     rows = build_problem_rows()
     topic_resources = load_json(TOPIC_RESOURCES)
     external_problem_pools = load_json(EXTERNAL_PROBLEM_POOLS)
@@ -1132,6 +1733,34 @@ def main() -> None:
     write_problem_index(rows, topic_resources)
     write_external_problem_index(external_rows)
     write_topic_maps(rows, topic_resources, external_problem_pools)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Validate, generate, and check the repo's problem catalogs and topic maps."
+    )
+    parser.add_argument(
+        "--validate-only",
+        action="store_true",
+        help="Validate catalog inputs and generated-row invariants without writing output files.",
+    )
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="Regenerate outputs and fail if tracked generated files change.",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    validate_catalog_inputs()
+    if args.validate_only:
+        return
+
+    generate_catalog_outputs()
+    if args.check:
+        ensure_generated_outputs_are_in_sync()
 
 
 if __name__ == "__main__":
