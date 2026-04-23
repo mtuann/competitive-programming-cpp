@@ -159,6 +159,7 @@ nav:
           - Sorting: practice/ladders/foundations/sorting/README.md
           - Binary Search: practice/ladders/foundations/binary-search/README.md
           - Prefix Sums: practice/ladders/foundations/prefix-sums/README.md
+          - Difference Arrays: practice/ladders/foundations/difference-arrays/README.md
           - Two Pointers: practice/ladders/foundations/two-pointers/README.md
       - Data Structures Ladders:
           - Overview: practice/ladders/data-structures/README.md

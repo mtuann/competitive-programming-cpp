@@ -17,6 +17,7 @@ Use a ladder when you want to stay inside one topic long enough to build recogni
 - [Foundations -> Sorting](foundations/sorting/README.md)
 - [Foundations -> Binary Search](foundations/binary-search/README.md)
 - [Foundations -> Prefix Sums](foundations/prefix-sums/README.md)
+- [Foundations -> Difference Arrays](foundations/difference-arrays/README.md)
 - [Foundations -> Two Pointers](foundations/two-pointers/README.md)
 - [Data Structures -> DSU](data-structures/dsu/README.md)
 - [Data Structures -> Fenwick Tree -> CVP00001](data-structures/fenwick-tree/cvp00001.md)

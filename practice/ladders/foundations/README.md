@@ -11,6 +11,7 @@ Use them after reading the matching tutorial pages in `topics/foundations/`.
 - [Sorting](sorting/README.md)
 - [Binary search](binary-search/README.md)
 - [Prefix sums](prefix-sums/README.md)
+- [Difference arrays](difference-arrays/README.md)
 - [Two pointers](two-pointers/README.md)
 - [Complexity and invariants](complexity-and-invariants/README.md)
 
