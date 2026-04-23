@@ -10,6 +10,7 @@ STATIC_FILES = {
     "docs/site-home.md": "index.md",
     "template-library.md": "template-library.md",
     "docs-assets/stylesheets/extra.css": "assets/stylesheets/extra.css",
+    "docs-assets/javascripts/problem-finder.js": "assets/javascripts/problem-finder.js",
 }
 
 DIRECTORIES = [

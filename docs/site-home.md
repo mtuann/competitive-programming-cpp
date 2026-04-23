@@ -105,5 +105,6 @@
 - [Foundations](topics/foundations/README.md) for asymptotics, STL workflow, binary search, and proof basics
 - [Graphs](topics/graphs/README.md) for BFS, DFS, shortest paths, MST, flow, and matching
 - [Dynamic Programming](topics/dp/README.md) for state design, transitions, and classic contest patterns
+- [Problem Finder](docs/problem-finder.md) for filtering repo notes and curated external problems from one place
 - [Practice Notes](practice/README.md) for problem classifications, judge links, and solution writeups
 - [Project Overview](project-readme.md) for the staged learning path and repo structure

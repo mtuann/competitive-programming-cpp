@@ -4,7 +4,7 @@ These pages collect trusted learning sources, official practice sources, curated
 
 | Topic | Repo Problems | External Problems | Map |
 | --- | ---: | ---: | --- |
-| Foundations -> Binary Search | 0 | 6 | [Open](foundations/binary-search.md) |
+| Foundations -> Binary Search | 1 | 6 | [Open](foundations/binary-search.md) |
 | Foundations -> Complexity And Invariants | 0 | 8 | [Open](foundations/complexity-and-invariants.md) |
 | Foundations -> C++ Language | 0 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 0 | 5 | [Open](foundations/difference-arrays.md) |
@@ -18,19 +18,19 @@ These pages collect trusted learning sources, official practice sources, curated
 | Data Structures -> Offline Tricks | 0 | 7 | [Open](data-structures/offline-tricks.md) |
 | Data Structures -> Segment Tree | 1 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Sparse Table | 0 | 3 | [Open](data-structures/sparse-table.md) |
-| Graphs -> BFS And DFS | 0 | 7 | [Open](graphs/bfs-dfs.md) |
+| Graphs -> BFS And DFS | 1 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Maximum Flow | 3 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 7 | [Open](graphs/gomory-hu.md) |
-| Graphs -> Graph Modeling | 0 | 9 | [Open](graphs/graph-modeling.md) |
+| Graphs -> Graph Modeling | 1 | 9 | [Open](graphs/graph-modeling.md) |
 | Graphs -> Heavy-Light Decomposition | 1 | 8 | [Open](graphs/hld.md) |
-| Graphs -> LCA | 0 | 6 | [Open](graphs/lca.md) |
+| Graphs -> LCA | 1 | 6 | [Open](graphs/lca.md) |
 | Graphs -> Matching | 1 | 11 | [Open](graphs/matching.md) |
 | Graphs -> Min-Cost Flow | 1 | 10 | [Open](graphs/min-cost-flow.md) |
 | Graphs -> Minimum Spanning Tree | 0 | 6 | [Open](graphs/mst.md) |
 | Graphs -> Topological Sort And SCC | 0 | 9 | [Open](graphs/scc-toposort.md) |
 | Graphs -> Shortest Paths | 1 | 9 | [Open](graphs/shortest-paths.md) |
 | Graphs -> Tree DP | 1 | 7 | [Open](graphs/tree-dp.md) |
-| Graphs -> Trees | 6 | 10 | [Open](graphs/trees.md) |
+| Graphs -> Trees | 7 | 10 | [Open](graphs/trees.md) |
 | DP -> Bitmask DP | 1 | 11 | [Open](dp/bitmask-dp.md) |
 | DP -> Digit DP | 0 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 12 | [Open](dp/foundations.md) |
@@ -49,10 +49,10 @@ These pages collect trusted learning sources, official practice sources, curated
 | Combinatorics -> Lexicographic Enumeration | 1 | 7 | [Open](combinatorics/lexicographic-enumeration.md) |
 | Strings -> Aho-Corasick | 0 | 7 | [Open](strings/aho-corasick.md) |
 | Strings -> Hashing | 0 | 7 | [Open](strings/hashing.md) |
-| Strings -> KMP | 0 | 5 | [Open](strings/kmp.md) |
+| Strings -> KMP | 1 | 5 | [Open](strings/kmp.md) |
 | Strings -> Suffix Array And LCP | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 0 | 8 | [Open](strings/suffix-automaton.md) |
-| Strings -> Trie | 0 | 5 | [Open](strings/trie.md) |
+| Strings -> Trie | 1 | 5 | [Open](strings/trie.md) |
 | Strings -> Z-Function | 0 | 5 | [Open](strings/z-function.md) |
 | Geometry -> Convex Hull | 0 | 6 | [Open](geometry/convex-hull.md) |
 | Geometry -> Counting Geometry | 1 | 6 | [Open](geometry/counting-geometry.md) |

@@ -5,7 +5,7 @@ Prefix-function reasoning for exact pattern matching, borders, periods, and auto
 - Topic slug: `strings/kmp`
 - Tutorial page: [Open tutorial](../../../topics/strings/kmp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/kmp/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -47,7 +47,9 @@ Prefix-function reasoning for exact pattern matching, borders, periods, and auto
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `STRINGMATCHING` | String Matching | `primary` | `easy` | prefix function; border fallback; overlapping occurrence counting | [Note](../../../practice/ladders/strings/kmp/stringmatching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp) |
 
 ## Regeneration
 

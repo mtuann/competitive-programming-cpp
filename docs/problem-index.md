@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `23`
+- Total tracked problem notes: `28`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - External companion index: [external-problem-index.md](external-problem-index.md)
 - Topic maps: [topic-maps/index.md](topic-maps/index.md)
@@ -12,16 +12,24 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Area | Count |
 | --- | ---: |
+| Foundations | 1 |
 | Data Structures | 2 |
-| Graphs | 8 |
+| Graphs | 10 |
 | DP | 3 |
 | Greedy | 1 |
 | Math | 3 |
 | Combinatorics | 2 |
+| Strings | 2 |
 | Geometry | 3 |
 | Advanced | 1 |
 
 ## Current Catalog
+
+### Foundations
+
+| Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `FACTORYMACHINES` | Factory Machines | `Foundations -> Binary Search` | - | answer binary search; monotone feasibility; production rate accumulation | `medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/binary-search.md) / [Ladder](../practice/ladders/foundations/binary-search/README.md) / [Tutorial](../topics/foundations/patterns/binary-search/README.md) | [Note](../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
 
 ### Data Structures
 
@@ -34,9 +42,11 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `MESSAGEROUTE` | Message Route | `Graphs -> BFS And DFS` | Graphs -> Graph Modeling | breadth-first search; unweighted shortest path; parent reconstruction | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/bfs-dfs.md) / [Ladder](../practice/ladders/graphs/bfs-dfs/README.md) / [Tutorial](../topics/graphs/bfs-dfs/README.md) | [Note](../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 | `FFLOW` | Fast Maximum Flow | `Graphs -> Maximum Flow` | - | maximum flow; undirected capacities; capacity scaling | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
 | `MCQUERY` | MinCut Query | `Graphs -> Maximum Flow` | Data Structures -> DSU; Graphs -> Trees; Graphs -> Gomory-Hu Tree | all-pairs min-cut; cut tree; count pairs by threshold | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MINCOST` | Luồng với chi phí nhỏ nhất | `Graphs -> Maximum Flow` | Graphs -> Min-Cost Flow | transportation network; flow reconstruction; duplicate-edge overwrite | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
+| `COMPANYQUERIES2` | Company Queries II | `Graphs -> LCA` | Graphs -> Trees | binary lifting; depth equalization; lowest common ancestor | `medium` | CSES, Tree algorithms | [Map](topic-maps/graphs/lca.md) / [Ladder](../practice/ladders/graphs/lca/README.md) / [Tutorial](../topics/graphs/lca/README.md) | [Note](../practice/ladders/graphs/lca/companyqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp) |
 | `QBFLOWER` | Tặng hoa | `Graphs -> Matching` | - | minimum edge cover; general matching; graph transformation | `medium` | VN SPOJ, OI-style | [Map](topic-maps/graphs/matching.md) / [Ladder](../practice/ladders/graphs/matching/README.md) / [Tutorial](../topics/graphs/matching/README.md) | [Note](../practice/ladders/graphs/matching/qbflower.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp) |
 | `QOS` | Chất lượng dịch vụ | `Graphs -> Shortest Paths` | DP -> Foundations | shortest path plus dp; kth lexicographic path; bounded slack states | `hard` | VN SPOJ, OI-style | [Map](topic-maps/graphs/shortest-paths.md) / [Ladder](../practice/ladders/graphs/shortest-paths/README.md) / [Tutorial](../topics/graphs/shortest-paths/README.md) | [Note](../practice/ladders/graphs/shortest-paths/qos.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp) |
 | `VOSTRIP` | VOSTRIP | `Graphs -> Tree DP` | DP -> Tree DP; Graphs -> Trees | tree endpoint pairing; path decomposition; local imbalance formula | `hard` | VN SPOJ, OI-style | [Map](topic-maps/graphs/tree-dp.md) / [Ladder](../practice/ladders/graphs/tree-dp/README.md) / [Tutorial](../topics/dp/tree-dp/README.md) | [Note](../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
@@ -71,6 +81,13 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `VOSFENCE` | Xay hang rao | `Combinatorics -> Bounded Compositions` | Combinatorics -> Counting Basics; Combinatorics -> Inclusion-Exclusion | bounded compositions; run decomposition; gap distribution | `hard` | VN SPOJ, OI-style | [Map](topic-maps/combinatorics/bounded-compositions.md) / [Ladder](../practice/ladders/combinatorics/bounded-compositions/README.md) / [Tutorial](../topics/combinatorics/bounded-compositions/README.md) | [Note](../practice/ladders/combinatorics/bounded-compositions/vosfence.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp) |
 | `VOITSORT` | Cây hoán vị | `Combinatorics -> Lexicographic Enumeration` | Graphs -> Trees | lexicographic enumeration; stack-sortability; cartesian tree view | `hard` | VN SPOJ, OI-style | [Map](topic-maps/combinatorics/lexicographic-enumeration.md) / [Ladder](../practice/ladders/combinatorics/lexicographic-enumeration/README.md) / [Tutorial](../topics/combinatorics/lexicographic-enumeration/README.md) | [Note](../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |
+
+### Strings
+
+| Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `STRINGMATCHING` | String Matching | `Strings -> KMP` | - | prefix function; border fallback; overlapping occurrence counting | `easy` | CSES, String algorithms | [Map](topic-maps/strings/kmp.md) / [Ladder](../practice/ladders/strings/kmp/README.md) / [Tutorial](../topics/strings/kmp/README.md) | [Note](../practice/ladders/strings/kmp/stringmatching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp) |
+| `WORDCOMBINATIONS` | Word Combinations | `Strings -> Trie` | - | trie plus dp; dictionary segmentation; suffix counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/trie.md) / [Ladder](../practice/ladders/strings/trie/README.md) / [Tutorial](../topics/strings/trie/README.md) | [Note](../practice/ladders/strings/trie/wordcombinations.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp) |
 
 ### Geometry
 

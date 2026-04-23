@@ -27,6 +27,20 @@
       "OI-style"
     ]
   },
+  "COMPANYQUERIES2": {
+    "topic_tags": [
+      "graphs/trees"
+    ],
+    "patterns": [
+      "binary lifting",
+      "depth equalization",
+      "lowest common ancestor"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ]
+  },
   "CVP00001": {
     "topic_tags": [
       "foundations/prefix-sums"
@@ -51,6 +65,18 @@
     "tracks": [
       "VN SPOJ",
       "ICPC-style"
+    ]
+  },
+  "FACTORYMACHINES": {
+    "topic_tags": [],
+    "patterns": [
+      "answer binary search",
+      "monotone feasibility",
+      "production rate accumulation"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
     ]
   },
   "KINGDOMS": {
@@ -111,6 +137,20 @@
     "tracks": [
       "VN SPOJ",
       "ICPC-style"
+    ]
+  },
+  "MESSAGEROUTE": {
+    "topic_tags": [
+      "graphs/graph-modeling"
+    ],
+    "patterns": [
+      "breadth-first search",
+      "unweighted shortest path",
+      "parent reconstruction"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
     ]
   },
   "MTREECOL": {
@@ -176,6 +216,18 @@
     "tracks": [
       "VN SPOJ",
       "OI-style"
+    ]
+  },
+  "STRINGMATCHING": {
+    "topic_tags": [],
+    "patterns": [
+      "prefix function",
+      "border fallback",
+      "overlapping occurrence counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
     ]
   },
   "TFIELD": {
@@ -318,6 +370,18 @@
     "tracks": [
       "VN SPOJ",
       "ICPC-style"
+    ]
+  },
+  "WORDCOMBINATIONS": {
+    "topic_tags": [],
+    "patterns": [
+      "trie plus dp",
+      "dictionary segmentation",
+      "suffix counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
     ]
   }
 }

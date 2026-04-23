@@ -5,7 +5,7 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 - Topic slug: `graphs/bfs-dfs`
 - Tutorial page: [Open tutorial](../../../topics/graphs/bfs-dfs/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/bfs-dfs/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -79,7 +79,9 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `MESSAGEROUTE` | Message Route | `primary` | `easy` | breadth-first search; unweighted shortest path; parent reconstruction | [Note](../../../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 
 ## Regeneration
 

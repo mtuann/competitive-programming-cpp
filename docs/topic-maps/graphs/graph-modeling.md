@@ -5,7 +5,7 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 - Topic slug: `graphs/graph-modeling`
 - Tutorial page: [Open tutorial](../../../topics/graphs/graph-modeling/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/graph-modeling/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `9`
 
 ## Microtopics
@@ -81,7 +81,9 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `MESSAGEROUTE` | Message Route | `secondary` | `easy` | breadth-first search; unweighted shortest path; parent reconstruction | [Note](../../../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 
 ## Regeneration
 

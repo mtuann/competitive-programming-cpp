@@ -266,6 +266,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp"
   },
   {
+    "code": "FACTORYMACHINES",
+    "title": "Factory Machines",
+    "full_title": "Factory Machines",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1620",
+    "main_topic": "Foundations -> Binary Search",
+    "secondary_topics": [
+      "Answer binary search",
+      "Monotone feasibility",
+      "Saturating accumulation"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "foundations/binary-search",
+    "topic_tags": [
+      "foundations/binary-search"
+    ],
+    "patterns": [
+      "answer binary search",
+      "monotone feasibility",
+      "production rate accumulation"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/binary-search/factorymachines.md",
+    "ladder_path": "practice/ladders/foundations/binary-search/README.md",
+    "tutorial_path": "topics/foundations/patterns/binary-search/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp"
+  },
+  {
     "code": "PRAVO",
     "title": "Tam giác vuông",
     "full_title": "Tam giác vuông",
@@ -367,6 +399,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp"
   },
   {
+    "code": "MESSAGEROUTE",
+    "title": "Message Route",
+    "full_title": "Message Route",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1667",
+    "main_topic": "Graphs -> BFS And DFS",
+    "secondary_topics": [
+      "Unweighted shortest path",
+      "Parent reconstruction",
+      "Layered BFS"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "graphs/bfs-dfs",
+    "topic_tags": [
+      "graphs/bfs-dfs",
+      "graphs/graph-modeling"
+    ],
+    "patterns": [
+      "breadth-first search",
+      "unweighted shortest path",
+      "parent reconstruction"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/bfs-dfs/messageroute.md",
+    "ladder_path": "practice/ladders/graphs/bfs-dfs/README.md",
+    "tutorial_path": "topics/graphs/bfs-dfs/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp"
+  },
+  {
     "code": "FFLOW",
     "title": "Fast Maximum Flow",
     "full_title": "Fast Maximum Flow",
@@ -464,6 +529,39 @@
     "ladder_path": "practice/ladders/graphs/flow/README.md",
     "tutorial_path": "topics/graphs/flow/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp"
+  },
+  {
+    "code": "COMPANYQUERIES2",
+    "title": "Company Queries II",
+    "full_title": "COMPANYQUERIES2 - Company Queries II",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1688",
+    "main_topic": "Graphs -> LCA",
+    "secondary_topics": [
+      "Binary lifting",
+      "Depth equalization",
+      "Tree path queries"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/lca",
+    "topic_tags": [
+      "graphs/lca",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "binary lifting",
+      "depth equalization",
+      "lowest common ancestor"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/lca/companyqueries2.md",
+    "ladder_path": "practice/ladders/graphs/lca/README.md",
+    "tutorial_path": "topics/graphs/lca/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp"
   },
   {
     "code": "QBFLOWER",
@@ -758,5 +856,69 @@
     "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
+  },
+  {
+    "code": "STRINGMATCHING",
+    "title": "String Matching",
+    "full_title": "String Matching",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1753",
+    "main_topic": "Strings -> KMP",
+    "secondary_topics": [
+      "Prefix function",
+      "Border fallback",
+      "Overlapping matches"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "strings/kmp",
+    "topic_tags": [
+      "strings/kmp"
+    ],
+    "patterns": [
+      "prefix function",
+      "border fallback",
+      "overlapping occurrence counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/kmp/stringmatching.md",
+    "ladder_path": "practice/ladders/strings/kmp/README.md",
+    "tutorial_path": "topics/strings/kmp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp"
+  },
+  {
+    "code": "WORDCOMBINATIONS",
+    "title": "Word Combinations",
+    "full_title": "Word Combinations",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1731",
+    "main_topic": "Strings -> Trie",
+    "secondary_topics": [
+      "DP on suffixes",
+      "Dictionary segmentation",
+      "Duplicate words"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/trie",
+    "topic_tags": [
+      "strings/trie"
+    ],
+    "patterns": [
+      "trie plus dp",
+      "dictionary segmentation",
+      "suffix counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/trie/wordcombinations.md",
+    "ladder_path": "practice/ladders/strings/trie/README.md",
+    "tutorial_path": "topics/strings/trie/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp"
   }
 ]

@@ -5,7 +5,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 - Topic slug: `graphs/trees`
 - Tutorial page: [Open tutorial](../../../topics/graphs/trees/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
-- Repo problems currently tagged here: `6`
+- Repo problems currently tagged here: `7`
 - Curated external problems: `10`
 
 ## Microtopics
@@ -99,6 +99,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `COMPANYQUERIES2` | Company Queries II | `secondary` | `medium` | binary lifting; depth equalization; lowest common ancestor | [Note](../../../practice/ladders/graphs/lca/companyqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp) |
 | `KINGDOMS` | KINGDOMS | `secondary` | `hard` | laminar regions; sweep events; containment tree | [Note](../../../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
 | `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MTREECOL` | Color a tree | `primary` | `hard` | ratio greedy; tree contraction; exchange argument | [Note](../../../practice/ladders/graphs/trees/mtreecol.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp) |

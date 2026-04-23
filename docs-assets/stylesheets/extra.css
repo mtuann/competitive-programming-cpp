@@ -223,3 +223,146 @@ body {
     text-align: center;
   }
 }
+
+.problem-finder-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.problem-finder-toolbar {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.15rem;
+  border: 1px solid var(--site-border);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, var(--site-surface-soft), var(--site-surface-strong));
+  box-shadow: var(--site-shadow);
+}
+
+.problem-finder-toolbar h2,
+.problem-finder-results h2 {
+  margin: 0;
+}
+
+.problem-finder-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.problem-finder-field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.problem-finder-field label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+}
+
+.problem-finder-field input,
+.problem-finder-field select {
+  width: 100%;
+  padding: 0.72rem 0.8rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--site-border);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+}
+
+.problem-finder-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.problem-finder-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.finder-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--site-border);
+  background: rgba(255, 255, 255, 0.56);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .finder-chip {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.problem-finder-results {
+  padding: 1.15rem;
+  border: 1px solid var(--site-border);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, var(--site-surface-soft), var(--site-surface-strong));
+  box-shadow: var(--site-shadow);
+}
+
+.problem-finder-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.problem-finder-table th,
+.problem-finder-table td {
+  padding: 0.8rem 0.75rem;
+  border-bottom: 1px solid var(--site-border);
+  vertical-align: top;
+}
+
+.problem-finder-table th {
+  text-align: left;
+  font-size: 0.82rem;
+}
+
+.problem-finder-table td code {
+  white-space: nowrap;
+}
+
+.finder-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.finder-empty {
+  padding: 1rem 0.25rem 0.25rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media screen and (max-width: 59.9375em) {
+  .problem-finder-table,
+  .problem-finder-table thead,
+  .problem-finder-table tbody,
+  .problem-finder-table tr,
+  .problem-finder-table th,
+  .problem-finder-table td {
+    display: block;
+  }
+
+  .problem-finder-table thead {
+    display: none;
+  }
+
+  .problem-finder-table tr {
+    padding: 0.9rem 0;
+    border-bottom: 1px solid var(--site-border);
+  }
+
+  .problem-finder-table td {
+    padding: 0.35rem 0;
+    border: 0;
+  }
+}

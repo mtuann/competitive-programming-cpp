@@ -5,7 +5,7 @@ Lowest common ancestor as a reusable primitive for ancestor checks and path quer
 - Topic slug: `graphs/lca`
 - Tutorial page: [Open tutorial](../../../topics/graphs/lca/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/lca/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -68,7 +68,9 @@ Lowest common ancestor as a reusable primitive for ancestor checks and path quer
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `COMPANYQUERIES2` | Company Queries II | `primary` | `medium` | binary lifting; depth equalization; lowest common ancestor | [Note](../../../practice/ladders/graphs/lca/companyqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp) |
 
 ## Regeneration
 

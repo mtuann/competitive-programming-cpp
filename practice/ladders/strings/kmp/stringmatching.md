@@ -1,0 +1,68 @@
+# String Matching
+
+- Title: `String Matching`
+- Judge / source: `CSES`
+- Original URL: [https://cses.fi/problemset/task/1753](https://cses.fi/problemset/task/1753)
+- Main topic: `Strings -> KMP`
+- Secondary topics: `Prefix function`, `Border fallback`, `Overlapping matches`
+- Difficulty: `easy`
+- Subtype: `Count all exact occurrences of one pattern in a text`
+- Status: `solved`
+- Solution file: [stringmatching.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp)
+
+## Why Practice This
+
+This is the cleanest first KMP problem because the task is exactly what the algorithm was built for: scan one long text, count every occurrence of one pattern, and do it without ever moving the text pointer backward.
+
+## Key Idea
+
+Let `pi[i]` be the length of the longest proper prefix of the pattern that is also a suffix ending at position `i`.
+
+That one array answers the key mismatch question:
+
+```text
+we matched j characters, then pattern[j] != current_text_char
+```
+
+Where should we continue?
+
+We do **not** restart from zero immediately. The prefix of length `pi[j - 1]` is already known to match the suffix of what we just matched, so it is the longest valid fallback state. Therefore:
+
+```text
+j = pi[j - 1]
+```
+
+and we try the same text character again from that shorter border.
+
+While scanning the text:
+
+- if characters match, extend `j`
+- if they mismatch, follow border links through `pi`
+- if `j == m`, we found one full occurrence
+
+After a full match, set:
+
+```text
+j = pi[m - 1]
+```
+
+instead of zero, because matches are allowed to overlap.
+
+## Complexity
+
+- prefix-function build: `O(m)`
+- text scan: `O(n)`
+- total: `O(n + m)`
+
+Each character participates in only a constant number of pointer movements across the whole run.
+
+## Pitfalls / Judge Notes
+
+- Count overlapping matches, so do not reset `j` to zero after a full occurrence unless `pi[m - 1]` is zero anyway.
+- The fallback on mismatch is `pi[j - 1]`, not `pi[j]`.
+- Handle the pattern and text as plain strings; no separator trick is required here.
+- With input sizes up to about `10^6`, use iterative logic and fast I/O.
+
+## Solutions
+
+- Code: [stringmatching.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp)

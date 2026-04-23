@@ -42,6 +42,10 @@ theme:
 docs_dir: site-docs
 site_dir: site
 use_directory_urls: true
+not_in_nav: |
+  /docs/topic-maps/*/*.md
+  /practice/ladders/*/*/*.md
+  !/practice/ladders/*/*/README.md
 
 plugins:
   - search
@@ -62,6 +66,9 @@ markdown_extensions:
 
 extra_css:
   - assets/stylesheets/extra.css
+
+extra_javascript:
+  - assets/javascripts/problem-finder.js
 
 extra:
   social:
@@ -152,6 +159,7 @@ nav:
           - Contest Engineering: topics/advanced/contest-engineering/README.md
   - Practice:
       - How Practice Works: practice/README.md
+      - Problem Finder: docs/problem-finder.md
       - Problem Index: docs/problem-index.md
       - External Problem Index: docs/external-problem-index.md
       - Topic Maps: docs/topic-maps/index.md

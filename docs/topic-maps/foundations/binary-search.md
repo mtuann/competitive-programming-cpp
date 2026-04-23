@@ -5,7 +5,7 @@ Search on sorted data and on monotone answers: learn the invariant-first templat
 - Topic slug: `foundations/binary-search`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/binary-search/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/binary-search/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -53,7 +53,9 @@ Search on sorted data and on monotone answers: learn the invariant-first templat
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FACTORYMACHINES` | Factory Machines | `primary` | `medium` | answer binary search; monotone feasibility; production rate accumulation | [Note](../../../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
 
 ## Regeneration
 
