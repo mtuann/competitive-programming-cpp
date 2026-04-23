@@ -2,6 +2,15 @@
 
 Dynamic programming is about choosing a state that captures exactly what still matters. This area matters because many contest problems look different on the surface but collapse into the same state-transition mindset.
 
+## Subtopics
+
+- [DP Foundations](foundations/README.md)
+- [Knapsack Family](knapsack-family/README.md)
+- [Bitmask DP](bitmask-dp/README.md)
+- [Tree DP](tree-dp/README.md)
+- [Digit DP](digit-dp/README.md)
+- [Interval DP](interval-dp/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)
@@ -18,6 +27,7 @@ Dynamic programming is about choosing a state that captures exactly what still m
 - bitmask DP
 - tree DP
 - digit DP
+- interval DP
 
 3. Advanced later
 - optimization techniques

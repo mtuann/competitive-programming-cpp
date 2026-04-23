@@ -1,16 +1,54 @@
 # Templates
 
-This folder should contain reusable contest-ready code, not full tutorials.
+This folder contains reusable contest-ready code, not full tutorials.
 
-Good candidates for the first wave:
+## Current Template Groups
 
-- DSU
-- Fenwick tree
-- segment tree
-- Dijkstra
-- Kruskal / Prim
-- flow starter kit
-- string hashing
-- modular arithmetic helpers
+- `foundations/`
+  - contest main
+  - fast I/O
+  - sort / comparator
+  - binary search
+  - prefix sum
+  - difference array
+  - two pointers
+- `data-structures/`
+  - DSU
+  - Fenwick tree
+  - segment tree
+  - sparse table
+  - heaps / lazy deletion
+  - offline-query skeleton
+- `graphs/`
+  - BFS
+  - iterative DFS
+  - Dijkstra
+  - Kruskal
+  - topological sort
+  - SCC
+  - LCA
+  - Dinic
+  - min-cost flow
+  - Hopcroft-Karp
+- `dp/`
+  - `0/1` knapsack
+  - bitmask DP
+  - tree DP
+  - digit DP
+  - interval DP
+- `math/`
+  - modular arithmetic
+  - number theory basics
+  - FFT
+- `strings/`
+  - rolling hash
+  - KMP
+  - Z-function
+  - trie
+  - Aho-Corasick
+  - suffix array
+- `geometry/`
+  - geometry primitives
+  - convex hull
 
-Each template should link back to its teaching page in `topics/` once that page exists.
+Each template should stay compact, compile on its own, and link back to the teaching page in `topics/`.

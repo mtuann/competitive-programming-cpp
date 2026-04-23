@@ -11,6 +11,7 @@ Start with the area that matches your current gap:
 | `Graphs` | modeling, traversals, shortest paths, trees, flow, and matching | [Graphs](graphs/README.md) |
 | `Dynamic Programming` | state design, transitions, and optimization over structure | [Dynamic Programming](dp/README.md) |
 | `Math` | modular arithmetic, combinatorics, and number theory tools | [Math](math/README.md) |
+| `Combinatorics` | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
 | `Strings` | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
 | `Geometry` | vectors, orientation, hulls, and geometric counting | [Geometry](geometry/README.md) |
 | `Advanced` | randomized algorithms, approximation, complexity, and algorithm design depth | [Advanced](advanced/README.md) |

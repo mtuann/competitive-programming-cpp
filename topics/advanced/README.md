@@ -2,6 +2,14 @@
 
 This area is for topics that sit above the usual contest core: algorithm-design ideas, deeper theory, and tools that explain why many standard techniques exist.
 
+## Subtopics
+
+- [Randomized Algorithms](randomized-algorithms/README.md)
+- [Algorithm Engineering](algorithm-engineering/README.md)
+- [Complexity And Hardness](complexity-and-hardness/README.md)
+- [Approximation And Relaxation](approximation-and-relaxation/README.md)
+- [Contest Engineering](contest-engineering/README.md)
+
 ## Entry
 
 - Prereqs: stable comfort with the core topic areas

@@ -2,6 +2,19 @@
 
 Graphs are one of the central contest areas because many problems are really about states and transitions in disguise. This section should teach graph modeling first, then standard algorithms, then deeper tree, cut, and matching ideas.
 
+## Subtopics
+
+- [Graph Modeling](graph-modeling/README.md)
+- [BFS And DFS](bfs-dfs/README.md)
+- [Shortest Paths](shortest-paths/README.md)
+- [Minimum Spanning Tree](mst/README.md)
+- [Topological Sort And SCC](scc-toposort/README.md)
+- [Trees](trees/README.md)
+- [LCA](lca/README.md)
+- [Maximum Flow](flow/README.md)
+- [Min-Cost Flow](min-cost-flow/README.md)
+- [Matching](matching/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md), [Data Structures](../data-structures/README.md)

@@ -2,6 +2,12 @@
 
 Math gives you the compact facts and transforms that keep many contest solutions short, fast, and correct. The challenge is sequencing it so the basics arrive early and the heavier tools do not bury the learner.
 
+## Subtopics
+
+- [Modular Arithmetic](modular-arithmetic/README.md)
+- [Number Theory Basics](number-theory-basics/README.md)
+- [FFT And NTT](fft-ntt/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)

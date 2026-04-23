@@ -2,6 +2,15 @@
 
 This area covers the reusable tools that turn repeated work into fast queries, updates, or connectivity checks. It is the bridge between basic implementation patterns and serious contest problem solving.
 
+## Subtopics
+
+- [DSU](dsu/README.md)
+- [Fenwick Tree](fenwick-tree/README.md)
+- [Segment Tree](segment-tree/README.md)
+- [Sparse Table](sparse-table/README.md)
+- [Heaps And Ordered Sets](heaps-and-ordered-sets/README.md)
+- [Offline Tricks](offline-tricks/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)

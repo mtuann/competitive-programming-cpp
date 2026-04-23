@@ -9,4 +9,10 @@ Each playbook should be tied to a specific contest style such as `USACO`, `IOI/O
 - what to review before a contest
 - how to upsolve afterward
 
-Current state: this folder is still a scaffold. It should stay small and practical, with one real guide per contest track before adding more.
+## Current Playbooks
+
+- [USACO](usaco.md)
+- [IOI / OI](ioi-oi.md)
+- [ICPC](icpc.md)
+
+These pages should stay practical: what to train, how to review, and how to adapt the repo's topic ladders and notebook to a specific contest style.

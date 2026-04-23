@@ -25,7 +25,7 @@ The repo uses `stages` as the main progression language.
 | `Stage 0` | Foundations: C++ workflow, STL, asymptotics, proof habits, sorting, binary search, prefix ideas | `topics/foundations/` |
 | `Stage 1` | Core data structures and query/update tools | `topics/data-structures/` |
 | `Stage 2` | Graphs and dynamic programming as contest core | `topics/graphs/`, `topics/dp/` |
-| `Stage 3` | Math, strings, and geometry for broader coverage | `topics/math/`, `topics/strings/`, `topics/geometry/` |
+| `Stage 3` | Math, combinatorics, strings, and geometry for broader coverage | `topics/math/`, `topics/combinatorics/`, `topics/strings/`, `topics/geometry/` |
 | `Stage 4` | Advanced algorithms and theory | `topics/advanced/` |
 | `Stage 5` | Contest engineering: notebooks, drills, workflows, and upsolving discipline | `notebook/`, `practice/contest-playbooks/` |
 

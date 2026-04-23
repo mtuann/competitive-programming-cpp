@@ -2,6 +2,16 @@
 
 Strings matter because many pattern problems are really about structure in sequences. This area should move from lightweight tools to exact matching and then to suffix-style machinery.
 
+## Subtopics
+
+- [Hashing](hashing/README.md)
+- [KMP](kmp/README.md)
+- [Z-Function](z-function/README.md)
+- [Trie](trie/README.md)
+- [Aho-Corasick](aho-corasick/README.md)
+- [Suffix Array And LCP](suffix-array-lcp/README.md)
+- [Suffix Automaton](suffix-automaton/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)

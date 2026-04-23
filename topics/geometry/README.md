@@ -2,6 +2,15 @@
 
 Geometry is rewarding but unforgiving. This section should start with robust integer geometry and only later expand into broader continuous or implementation-heavy ideas.
 
+## Subtopics
+
+- [Vector And Orientation](vector-orientation/README.md)
+- [Segment Intersection](segment-intersection/README.md)
+- [Polygon Area And Point Location](polygon-area-point-location/README.md)
+- [Convex Hull](convex-hull/README.md)
+- [Sweep Line](sweep-line/README.md)
+- [Counting Geometry](counting-geometry/README.md)
+
 ## Entry
 
 - Prereqs: [Foundations](../foundations/README.md)

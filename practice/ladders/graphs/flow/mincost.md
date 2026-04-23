@@ -55,6 +55,6 @@ With `n <= 100`, the standard implementation is fast enough:
 ## Judge Note
 
 - `VN SPOJ` hidden tests may contain duplicate undirected edges.
-- For the accepted version in [mincost.cpp](/Users/mitu/Desktop/work/competitive-programming-cpp/solutions/graphs/flow/mincost.cpp), only the **last occurrence** of each undirected pair is kept before building the flow network.
+- For the accepted version in [mincost.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp), only the **last occurrence** of each undirected pair is kept before building the flow network.
 - The min-cost flow model itself is still the standard one: each undirected road becomes two directed edges with the same capacity and cost.
 - The earlier `WA` came from treating repeated roads as separate parallel edges when this judge expects overwrite-by-last-input behavior.

@@ -2,6 +2,17 @@
 
 Foundations are the entry point for the whole repo. This area is about writing contest C++ comfortably, recognizing standard patterns, and building the proof habits that later topics assume.
 
+## Subtopics
+
+- [C++ Language For Contests](cpp-language/README.md)
+- [Reasoning And Implementation Discipline](reasoning/README.md)
+- Patterns:
+  - [Sorting](patterns/sorting/README.md)
+  - [Binary Search](patterns/binary-search/README.md)
+  - [Prefix Sums](patterns/prefix-sums/README.md)
+  - [Difference Arrays](patterns/difference-arrays/README.md)
+  - [Two Pointers](patterns/two-pointers/README.md)
+
 ## Entry
 
 - Prereqs: none beyond basic programming

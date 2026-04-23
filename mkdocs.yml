@@ -76,29 +76,173 @@ nav:
   - Home: index.md
   - Learn:
       - Overview: topics/README.md
-      - Foundations: topics/foundations/README.md
-      - Data Structures: topics/data-structures/README.md
-      - Graphs: topics/graphs/README.md
-      - Dynamic Programming: topics/dp/README.md
-      - Math: topics/math/README.md
-      - Strings: topics/strings/README.md
-      - Geometry: topics/geometry/README.md
-      - Advanced: topics/advanced/README.md
+      - Foundations:
+          - Overview: topics/foundations/README.md
+          - C++ Language: topics/foundations/cpp-language/README.md
+          - Reasoning: topics/foundations/reasoning/README.md
+          - Sorting: topics/foundations/patterns/sorting/README.md
+          - Binary Search: topics/foundations/patterns/binary-search/README.md
+          - Prefix Sums: topics/foundations/patterns/prefix-sums/README.md
+          - Difference Arrays: topics/foundations/patterns/difference-arrays/README.md
+          - Two Pointers: topics/foundations/patterns/two-pointers/README.md
+      - Data Structures:
+          - Overview: topics/data-structures/README.md
+          - DSU: topics/data-structures/dsu/README.md
+          - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
+          - Segment Tree: topics/data-structures/segment-tree/README.md
+          - Sparse Table: topics/data-structures/sparse-table/README.md
+          - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
+          - Offline Tricks: topics/data-structures/offline-tricks/README.md
+      - Graphs:
+          - Overview: topics/graphs/README.md
+          - Graph Modeling: topics/graphs/graph-modeling/README.md
+          - BFS And DFS: topics/graphs/bfs-dfs/README.md
+          - Shortest Paths: topics/graphs/shortest-paths/README.md
+          - Minimum Spanning Tree: topics/graphs/mst/README.md
+          - Topological Sort And SCC: topics/graphs/scc-toposort/README.md
+          - Trees: topics/graphs/trees/README.md
+          - LCA: topics/graphs/lca/README.md
+          - Maximum Flow: topics/graphs/flow/README.md
+          - Min-Cost Flow: topics/graphs/min-cost-flow/README.md
+          - Matching: topics/graphs/matching/README.md
+      - Dynamic Programming:
+          - Overview: topics/dp/README.md
+          - DP Foundations: topics/dp/foundations/README.md
+          - Knapsack Family: topics/dp/knapsack-family/README.md
+          - Bitmask DP: topics/dp/bitmask-dp/README.md
+          - Tree DP: topics/dp/tree-dp/README.md
+          - Digit DP: topics/dp/digit-dp/README.md
+          - Interval DP: topics/dp/interval-dp/README.md
+      - Math:
+          - Overview: topics/math/README.md
+          - Modular Arithmetic: topics/math/modular-arithmetic/README.md
+          - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - FFT And NTT: topics/math/fft-ntt/README.md
+      - Combinatorics:
+          - Overview: topics/combinatorics/README.md
+          - Counting Basics: topics/combinatorics/counting-basics/README.md
+          - Inclusion-Exclusion: topics/combinatorics/inclusion-exclusion/README.md
+          - Bounded Compositions: topics/combinatorics/bounded-compositions/README.md
+          - Lexicographic Enumeration: topics/combinatorics/lexicographic-enumeration/README.md
+      - Strings:
+          - Overview: topics/strings/README.md
+          - Hashing: topics/strings/hashing/README.md
+          - KMP: topics/strings/kmp/README.md
+          - Z-Function: topics/strings/z-function/README.md
+          - Trie: topics/strings/trie/README.md
+          - Aho-Corasick: topics/strings/aho-corasick/README.md
+          - Suffix Array And LCP: topics/strings/suffix-array-lcp/README.md
+          - Suffix Automaton: topics/strings/suffix-automaton/README.md
+      - Geometry:
+          - Overview: topics/geometry/README.md
+          - Vector And Orientation: topics/geometry/vector-orientation/README.md
+          - Segment Intersection: topics/geometry/segment-intersection/README.md
+          - Polygon Area And Point Location: topics/geometry/polygon-area-point-location/README.md
+          - Convex Hull: topics/geometry/convex-hull/README.md
+          - Sweep Line: topics/geometry/sweep-line/README.md
+          - Counting Geometry: topics/geometry/counting-geometry/README.md
+      - Advanced:
+          - Overview: topics/advanced/README.md
+          - Randomized Algorithms: topics/advanced/randomized-algorithms/README.md
+          - Algorithm Engineering: topics/advanced/algorithm-engineering/README.md
+          - Complexity And Hardness: topics/advanced/complexity-and-hardness/README.md
+          - Approximation And Relaxation: topics/advanced/approximation-and-relaxation/README.md
+          - Contest Engineering: topics/advanced/contest-engineering/README.md
   - Practice:
       - How Practice Works: practice/README.md
       - Ladders: practice/ladders/README.md
+      - Foundations Ladders:
+          - Overview: practice/ladders/foundations/README.md
+          - C++ Language: practice/ladders/foundations/cpp-language/README.md
+          - STL Basics: practice/ladders/foundations/stl/README.md
+          - Complexity And Invariants: practice/ladders/foundations/complexity-and-invariants/README.md
+          - Sorting: practice/ladders/foundations/sorting/README.md
+          - Binary Search: practice/ladders/foundations/binary-search/README.md
+          - Prefix Sums: practice/ladders/foundations/prefix-sums/README.md
+          - Two Pointers: practice/ladders/foundations/two-pointers/README.md
+      - Data Structures Ladders:
+          - Overview: practice/ladders/data-structures/README.md
+          - DSU: practice/ladders/data-structures/dsu/README.md
+          - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
+          - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
+          - Sparse Table: practice/ladders/data-structures/sparse-table/README.md
+          - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
+          - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
+      - Graph Ladders:
+          - Overview: practice/ladders/graphs/README.md
+          - Graph Modeling: practice/ladders/graphs/graph-modeling/README.md
+          - BFS / DFS: practice/ladders/graphs/bfs-dfs/README.md
+          - Shortest Paths: practice/ladders/graphs/shortest-paths/README.md
+          - MST: practice/ladders/graphs/mst/README.md
+          - SCC / Toposort: practice/ladders/graphs/scc-toposort/README.md
+          - Trees: practice/ladders/graphs/trees/README.md
+          - LCA: practice/ladders/graphs/lca/README.md
+          - Flow: practice/ladders/graphs/flow/README.md
+          - Matching: practice/ladders/graphs/matching/README.md
+          - Tree DP Notes: practice/ladders/graphs/tree-dp/README.md
+      - DP Ladders:
+          - Overview: practice/ladders/dp/README.md
+          - Foundations: practice/ladders/dp/foundations/README.md
+          - Knapsack Family: practice/ladders/dp/knapsack-family/README.md
+          - Bitmask DP: practice/ladders/dp/bitmask-dp/README.md
+          - Tree DP: practice/ladders/dp/tree-dp/README.md
+          - Digit DP: practice/ladders/dp/digit-dp/README.md
+          - Interval DP: practice/ladders/dp/interval-dp/README.md
+      - Math Ladders:
+          - Overview: practice/ladders/math/README.md
+          - Modular Arithmetic: practice/ladders/math/modular-arithmetic/README.md
+          - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
+          - FFT: practice/ladders/math/fft/README.md
+      - Combinatorics Ladders:
+          - Overview: practice/ladders/combinatorics/README.md
+          - Counting Basics: practice/ladders/combinatorics/counting-basics/README.md
+          - Inclusion-Exclusion: practice/ladders/combinatorics/inclusion-exclusion/README.md
+          - Bounded Compositions: practice/ladders/combinatorics/bounded-compositions/README.md
+          - Lexicographic Enumeration: practice/ladders/combinatorics/lexicographic-enumeration/README.md
+      - String Ladders:
+          - Overview: practice/ladders/strings/README.md
+          - Hashing: practice/ladders/strings/hashing/README.md
+          - KMP: practice/ladders/strings/kmp/README.md
+          - Z-Function: practice/ladders/strings/z-function/README.md
+          - Trie: practice/ladders/strings/trie/README.md
+          - Aho-Corasick: practice/ladders/strings/aho-corasick/README.md
+          - Suffix Array And LCP: practice/ladders/strings/suffix-array-lcp/README.md
+          - Suffix Automaton: practice/ladders/strings/suffix-automaton/README.md
+      - Geometry Ladders:
+          - Overview: practice/ladders/geometry/README.md
+          - Vector And Orientation: practice/ladders/geometry/vector-orientation/README.md
+          - Segment Intersection: practice/ladders/geometry/segment-intersection/README.md
+          - Polygon Area And Point Location: practice/ladders/geometry/polygon-area-point-location/README.md
+          - Convex Hull: practice/ladders/geometry/convex-hull/README.md
+          - Sweep Line: practice/ladders/geometry/sweep-line/README.md
+          - Counting Geometry: practice/ladders/geometry/counting-geometry/README.md
       - Example Notes:
           - QBFLOWER - Tặng hoa: practice/ladders/graphs/matching/qbflower.md
           - FFLOW - Fast Maximum Flow: practice/ladders/graphs/flow/fflow.md
           - PRAVO - Tam giác vuông: practice/ladders/geometry/right-triangles/pravo.md
       - Mixed Rounds: practice/mixed-rounds/README.md
-      - Contest Playbooks: practice/contest-playbooks/README.md
+      - Contest Playbooks:
+          - Overview: practice/contest-playbooks/README.md
+          - USACO: practice/contest-playbooks/usaco.md
+          - IOI / OI: practice/contest-playbooks/ioi-oi.md
+          - ICPC: practice/contest-playbooks/icpc.md
   - Build Kit:
       - Template Library: template-library.md
-      - Notebook: notebook/README.md
+      - Notebook:
+          - Overview: notebook/README.md
+          - Data Structures Cheatsheet: notebook/data-structures-cheatsheet.md
+          - Graph Cheatsheet: notebook/graph-cheatsheet.md
+          - DP Cheatsheet: notebook/dp-cheatsheet.md
+          - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md
+          - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
+          - String Cheatsheet: notebook/string-cheatsheet.md
+          - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
+          - Contest Checklist: notebook/contest-checklist.md
   - Start Here:
       - Project Overview: project-readme.md
-  - Project Docs:
+  - References:
       - Source Map: docs/source-map.md
+  - Contributing:
       - Content Blueprint: docs/content-blueprint.md
       - Topic Template: docs/topic-template.md
+      - Markdown Math Style: docs/authoring/markdown-math-style.md
