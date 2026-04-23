@@ -24,4 +24,5 @@ These ladders follow the DP path from state design to structured variants.
 
 ## Representative Solved Note
 
+- [VMSCALE](foundations/vmscale.md): exact budget DP for a non-uniform comparison tree
 - [TFIELD](sliding-window/tfield.md): weighted window reasoning over sorted polygon layers

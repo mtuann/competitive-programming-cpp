@@ -109,6 +109,10 @@ When vertices, not edges, have capacity limits:
 
 This is a good repo example of the standard max-flow layer before moving into costed flow.
 
+### Example 4: Gomory-Hu compression
+
+- [MCQUERY](../../../practice/ladders/graphs/flow/mcquery.md) is the right next step when the statement asks about many pairwise min-cuts instead of one single source-sink flow
+
 ## Recognition Cues
 
 Strong clues:
@@ -146,6 +150,7 @@ Suggested order:
 
 - Reference: [CP-Algorithms - Dinic](https://cp-algorithms.com/graph/dinic.html)
 - Practice: [FFLOW note](../../../practice/ladders/graphs/flow/fflow.md)
+- Practice: [MCQUERY note](../../../practice/ladders/graphs/flow/mcquery.md)
 - Practice: [MINCOST note](../../../practice/ladders/graphs/flow/mincost.md)
 - Next step: [Min-Cost Flow](../min-cost-flow/README.md)
 

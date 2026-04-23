@@ -31,12 +31,14 @@ Target skill:
 
 ## Stretch
 
+- [MCQUERY](mcquery.md)
 - [MINCOST](mincost.md)
 - compare bipartite matching reductions with plain flow reductions
 
 Target skill:
 
 - see flow as a modeling language, not just one algorithm
+- recognize when a whole family of min-cuts can be compressed into one tree
 
 ## Exit Criteria
 

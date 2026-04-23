@@ -33,11 +33,14 @@ Target skill:
 ## Stretch
 
 - [VOSTRIP](../tree-dp/vostrip.md)
+- [MTREECOL](mtreecol.md)
+- [VMWTREE](vmwtree.md)
 - flatten subtree logic into range-like orderings
 
 Target skill:
 
-- prepare tree problems for LCA, tree DP, and range-based reductions
+- prepare tree problems for LCA, tree DP, path queries, and range-based reductions
+- recognize when a rooted tree is really a precedence structure for a greedy schedule
 
 ## Exit Criteria
 

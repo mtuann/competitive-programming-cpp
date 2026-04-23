@@ -56,3 +56,7 @@ You are ready to move on when:
 ## Tutorial Link
 
 - [DP Foundations](../../../../topics/dp/foundations/README.md)
+
+## Representative Solved Note
+
+- [VMSCALE](vmscale.md): a minimax decision-tree DP where the transition cost comes from balanced ternary rather than a uniform comparison price

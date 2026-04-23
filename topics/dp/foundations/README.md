@@ -141,6 +141,7 @@ Counting DP:
 ### Example 3: structured optimization
 
 - [TFIELD](../../../practice/ladders/dp/sliding-window/tfield.md) is a later example where the “real” work is designing the right compressed state rather than applying a standard textbook recurrence
+- [VMSCALE](../../../practice/ladders/dp/foundations/vmscale.md) is a clean minimax example: the state is not “position in an array” but “interval start plus remaining total budget”
 
 ## Recognition Cues
 

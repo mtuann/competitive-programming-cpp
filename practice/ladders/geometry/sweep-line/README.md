@@ -17,6 +17,7 @@ Use this ladder when pairwise checking is too slow and you are ready to think in
 ## Example Notes
 
 - [KINGDOMS](kingdoms.md)
+- [VOTELPH](votelph.md)
 
 ## Exit Criteria
 

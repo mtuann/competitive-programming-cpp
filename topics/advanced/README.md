@@ -17,6 +17,7 @@ This section is about maturity, not early speed.
 
 ## Subtopics
 
+- [Constructive](constructive/README.md)
 - [Randomized Algorithms](randomized-algorithms/README.md)
 - [Algorithm Engineering](algorithm-engineering/README.md)
 - [Complexity And Hardness](complexity-and-hardness/README.md)
@@ -35,6 +36,7 @@ This section is about maturity, not early speed.
 1. Core now
 - algorithm engineering habits
 - contest engineering habits
+- constructive habits
 - randomized algorithms
 
 2. Modeling depth
@@ -51,6 +53,7 @@ This section is about maturity, not early speed.
 ## Recognition Cues
 
 - the standard toolkit works, but you want to understand the design idea behind it
+- the statement promises a solution and asks you to build one explicit witness
 - the problem or editorial points toward randomness, optimization relaxations, or hardness
 - your bottleneck is increasingly process, modeling, or algorithm judgment
 

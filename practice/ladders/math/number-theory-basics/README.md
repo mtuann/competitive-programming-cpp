@@ -20,6 +20,8 @@ Use this ladder when divisibility, gcd/lcm, and prime factors show up often enou
 
 - gcd/lcm construction problems
 - [CRYPTKEY](../gcd-lcm/cryptkey.md)
+- asymptotic density with pairwise-coprime divisibility
+- [LAMP](lamp.md)
 
 ## Exit Criteria
 

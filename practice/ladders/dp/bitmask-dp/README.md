@@ -33,6 +33,7 @@ Target skill:
 
 - SOS / subset-over-subset ideas later
 - combine with shortest paths or BFS on subsets
+- [VMMARBLE](vmmarble.md)
 
 Target skill:
 

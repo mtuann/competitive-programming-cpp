@@ -105,28 +105,40 @@ Suggested section order:
 ### Data Structures
 
 - [CVP00001 - Ô ăn quan](ladders/data-structures/fenwick-tree/cvp00001.md)
+- [C11XU - Bộ sưu tập đồng xu](ladders/data-structures/dsu/c11xu.md)
 
 ### Graphs
 
 - [QBFLOWER - Tặng hoa](ladders/graphs/matching/qbflower.md)
 - [FFLOW - Fast Maximum Flow](ladders/graphs/flow/fflow.md)
+- [MCQUERY - MinCut Query](ladders/graphs/flow/mcquery.md)
 - [MINCOST - Luồng với chi phí nhỏ nhất](ladders/graphs/flow/mincost.md)
 - [QOS - Chất lượng dịch vụ](ladders/graphs/shortest-paths/qos.md)
+- [MTREECOL - Color a tree](ladders/graphs/trees/mtreecol.md)
+- [VMWTREE - Lại là cây khung](ladders/graphs/trees/vmwtree.md)
 - [VOSTRIP - VOSTRIP](ladders/graphs/tree-dp/vostrip.md)
 
 ### DP / Greedy
 
+- [VMSCALE - Chiếc cân kỳ diệu](ladders/dp/foundations/vmscale.md)
 - [TFIELD - Ruộng bậc thang](ladders/dp/sliding-window/tfield.md)
+- [VMMARBLE - Phân loại bi](ladders/dp/bitmask-dp/vmmarble.md)
 - [VODIVIDE - Chia phần](ladders/greedy/prefix-constraints/vodivide.md)
 
 ### Math / Combinatorics
 
 - [POST2 - A cộng B version 2](ladders/math/fft/post2.md)
 - [CRYPTKEY - Chìa khóa mã số](ladders/math/gcd-lcm/cryptkey.md)
+- [LAMP - Dàn đèn màu](ladders/math/number-theory-basics/lamp.md)
 - [VOSFENCE - Xay hang rao](ladders/combinatorics/bounded-compositions/vosfence.md)
 - [VOITSORT - Cây hoán vị](ladders/combinatorics/lexicographic-enumeration/voitsort.md)
 
 ### Geometry
 
 - [KINGDOMS - Các vương quốc lồng nhau](ladders/geometry/sweep-line/kingdoms.md)
+- [VOTELPH - Bà Nà](ladders/geometry/sweep-line/votelph.md)
 - [PRAVO - Tam giác vuông](ladders/geometry/right-triangles/pravo.md)
+
+### Advanced / Constructive
+
+- [VMCOINS - Trò chơi với những đồng xu](ladders/advanced/constructive/vmcoins.md)

@@ -143,6 +143,7 @@ nav:
           - Counting Geometry: topics/geometry/counting-geometry/README.md
       - Advanced:
           - Overview: topics/advanced/README.md
+          - Constructive: topics/advanced/constructive/README.md
           - Randomized Algorithms: topics/advanced/randomized-algorithms/README.md
           - Algorithm Engineering: topics/advanced/algorithm-engineering/README.md
           - Complexity And Hardness: topics/advanced/complexity-and-hardness/README.md
@@ -226,6 +227,7 @@ nav:
           - Prefix Constraints: practice/ladders/greedy/prefix-constraints/README.md
       - Advanced Ladders:
           - Overview: practice/ladders/advanced/README.md
+          - Constructive: practice/ladders/advanced/constructive/README.md
           - Randomized Algorithms: practice/ladders/advanced/randomized-algorithms/README.md
           - Algorithm Engineering: practice/ladders/advanced/algorithm-engineering/README.md
           - Complexity And Hardness: practice/ladders/advanced/complexity-and-hardness/README.md
@@ -235,6 +237,8 @@ nav:
       - Example Notes:
           - QBFLOWER - Tặng hoa: practice/ladders/graphs/matching/qbflower.md
           - FFLOW - Fast Maximum Flow: practice/ladders/graphs/flow/fflow.md
+          - VMWTREE - Lại là cây khung: practice/ladders/graphs/trees/vmwtree.md
+          - VMCOINS - Trò chơi với những đồng xu: practice/ladders/advanced/constructive/vmcoins.md
           - PRAVO - Tam giác vuông: practice/ladders/geometry/right-triangles/pravo.md
       - Mixed Rounds: practice/mixed-rounds/README.md
       - Contest Playbooks:

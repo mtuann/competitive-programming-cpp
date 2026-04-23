@@ -124,7 +124,9 @@ Tree problems often aggregate child information upward, then sometimes reroot it
 
 A strong stretch example in the repo:
 
+- [MTREECOL](../../../practice/ladders/graphs/trees/mtreecol.md)
 - [VOSTRIP](../../../practice/ladders/graphs/tree-dp/vostrip.md)
+- [VMWTREE](../../../practice/ladders/graphs/trees/vmwtree.md)
 
 ## Recognition Cues
 
