@@ -1,0 +1,762 @@
+[
+  {
+    "code": "VMCOINS",
+    "title": "Trò chơi với những đồng xu",
+    "full_title": "VMCOINS - Trò chơi với những đồng xu",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VMCOINS/",
+    "main_topic": "Advanced -> Constructive",
+    "secondary_topics": [
+      "Promise-driven search",
+      "Translation matching",
+      "State BFS"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "advanced/constructive",
+    "topic_tags": [
+      "advanced/constructive",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "promise-driven constructive",
+      "translation matching",
+      "small residual search"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/advanced/constructive/vmcoins.md",
+    "ladder_path": "practice/ladders/advanced/constructive/README.md",
+    "tutorial_path": "topics/advanced/constructive/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp"
+  },
+  {
+    "code": "VOSFENCE",
+    "title": "Xay hang rao",
+    "full_title": "Xay hang rao",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VOSFENCE/",
+    "main_topic": "Combinatorics -> Bounded Compositions",
+    "secondary_topics": [
+      "Run counting",
+      "DP counting",
+      "Stars and bars with upper bounds"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "combinatorics/bounded-compositions",
+    "topic_tags": [
+      "combinatorics/bounded-compositions",
+      "combinatorics/counting-basics",
+      "combinatorics/inclusion-exclusion"
+    ],
+    "patterns": [
+      "bounded compositions",
+      "run decomposition",
+      "gap distribution"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/combinatorics/bounded-compositions/vosfence.md",
+    "ladder_path": "practice/ladders/combinatorics/bounded-compositions/README.md",
+    "tutorial_path": "topics/combinatorics/bounded-compositions/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp"
+  },
+  {
+    "code": "VOITSORT",
+    "title": "Cây hoán vị",
+    "full_title": "Cây hoán vị",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/VOITSORT/",
+    "main_topic": "Combinatorics -> Lexicographic Enumeration",
+    "secondary_topics": [
+      "Cartesian tree",
+      "Stack-sortable permutations",
+      "Next permutation"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "combinatorics/lexicographic-enumeration",
+    "topic_tags": [
+      "combinatorics/lexicographic-enumeration",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "lexicographic enumeration",
+      "stack-sortability",
+      "cartesian tree view"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md",
+    "ladder_path": "practice/ladders/combinatorics/lexicographic-enumeration/README.md",
+    "tutorial_path": "topics/combinatorics/lexicographic-enumeration/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp"
+  },
+  {
+    "code": "C11XU",
+    "title": "Bộ sưu tập đồng xu",
+    "full_title": "C11XU - Bộ sưu tập đồng xu",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/C11XU/",
+    "main_topic": "Data Structures -> DSU",
+    "secondary_topics": [
+      "Graphic matroid",
+      "Forest independence",
+      "Augmenting path"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/dsu",
+    "topic_tags": [
+      "data-structures/dsu",
+      "advanced/optimization-and-duality"
+    ],
+    "patterns": [
+      "xor-independence",
+      "forest selection",
+      "augmenting exchange"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/data-structures/dsu/c11xu.md",
+    "ladder_path": "practice/ladders/data-structures/dsu/README.md",
+    "tutorial_path": "topics/data-structures/dsu/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp"
+  },
+  {
+    "code": "CVP00001",
+    "title": "Ô ăn quan",
+    "full_title": "Ô ăn quan",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/CVP00001/",
+    "main_topic": "Data Structures -> Fenwick Tree",
+    "secondary_topics": [
+      "Simulation",
+      "Circular range updates",
+      "Judge edge cases"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/fenwick-tree",
+    "topic_tags": [
+      "data-structures/fenwick-tree",
+      "foundations/prefix-sums"
+    ],
+    "patterns": [
+      "circular updates",
+      "range-add point-query",
+      "query-from-initial-state"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/data-structures/fenwick-tree/cvp00001.md",
+    "ladder_path": "practice/ladders/data-structures/fenwick-tree/README.md",
+    "tutorial_path": "topics/data-structures/fenwick-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp"
+  },
+  {
+    "code": "VMMARBLE",
+    "title": "Phân loại bi",
+    "full_title": "VMMARBLE - Phân loại bi",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/VMMARBLE/",
+    "main_topic": "DP -> Bitmask DP",
+    "secondary_topics": [
+      "Assignment",
+      "Lower bound equals construction",
+      "Keeper-box selection"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/bitmask-dp",
+    "topic_tags": [
+      "dp/bitmask-dp",
+      "advanced/constructive"
+    ],
+    "patterns": [
+      "final-color assignment",
+      "residual-state dp",
+      "capacity-2 moves"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/dp/bitmask-dp/vmmarble.md",
+    "ladder_path": "practice/ladders/dp/bitmask-dp/README.md",
+    "tutorial_path": "topics/dp/bitmask-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp"
+  },
+  {
+    "code": "VMSCALE",
+    "title": "Chiếc cân kỳ diệu",
+    "full_title": "VMSCALE - Chiếc cân kỳ diệu",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VMSCALE/",
+    "main_topic": "DP -> Foundations",
+    "secondary_topics": [
+      "Decision tree",
+      "Balanced ternary",
+      "Minimax DP"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/foundations",
+    "topic_tags": [
+      "dp/foundations",
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "budget dp",
+      "balanced ternary",
+      "decision-tree optimization"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/dp/foundations/vmscale.md",
+    "ladder_path": "practice/ladders/dp/foundations/README.md",
+    "tutorial_path": "topics/dp/foundations/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp"
+  },
+  {
+    "code": "TFIELD",
+    "title": "Ruộng bậc thang",
+    "full_title": "Ruộng bậc thang",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/TFIELD/",
+    "main_topic": "DP -> Sliding Window",
+    "secondary_topics": [
+      "Polygon area",
+      "Sorting nested polygons",
+      "Two pointers"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/sliding-window",
+    "topic_tags": [
+      "dp/sliding-window",
+      "foundations/two-pointers",
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "nested polygons",
+      "weighted sliding window",
+      "shoelace preprocessing"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/dp/sliding-window/tfield.md",
+    "ladder_path": "practice/ladders/dp/sliding-window/README.md",
+    "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp"
+  },
+  {
+    "code": "PRAVO",
+    "title": "Tam giác vuông",
+    "full_title": "Tam giác vuông",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/PRAVO/",
+    "main_topic": "Geometry -> Right Triangles",
+    "secondary_topics": [
+      "Normalized direction vectors",
+      "Sorting",
+      "Perpendicular directions"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "geometry/right-triangles",
+    "topic_tags": [
+      "geometry/right-triangles",
+      "geometry/counting-geometry",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "count right triangles",
+      "normalized directions",
+      "perpendicular pairing"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/geometry/right-triangles/pravo.md",
+    "ladder_path": "practice/ladders/geometry/right-triangles/README.md",
+    "tutorial_path": "topics/geometry/counting-geometry/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp"
+  },
+  {
+    "code": "KINGDOMS",
+    "title": "KINGDOMS",
+    "full_title": "VM 10 Bài 14 - KINGDOMS",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/ranks/KINGDOMS/",
+    "main_topic": "Geometry -> Sweep Line",
+    "secondary_topics": [
+      "Nested convex polygons",
+      "Laminar intervals",
+      "Point location"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "geometry/sweep-line",
+    "topic_tags": [
+      "geometry/sweep-line",
+      "graphs/trees",
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "laminar regions",
+      "sweep events",
+      "containment tree"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/geometry/sweep-line/kingdoms.md",
+    "ladder_path": "practice/ladders/geometry/sweep-line/README.md",
+    "tutorial_path": "topics/geometry/sweep-line/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp"
+  },
+  {
+    "code": "VOTELPH",
+    "title": "Bà Nà",
+    "full_title": "VOTELPH - Bà Nà",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VOTELPH/",
+    "main_topic": "Geometry -> Sweep Line",
+    "secondary_topics": [
+      "Concave quadratics",
+      "Offline preprocessing",
+      "Range maximum query"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "geometry/sweep-line",
+    "topic_tags": [
+      "geometry/sweep-line",
+      "geometry/polygon-area-point-location"
+    ],
+    "patterns": [
+      "piecewise maximum",
+      "endpoint preprocessing",
+      "parabola envelopes"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/geometry/sweep-line/votelph.md",
+    "ladder_path": "practice/ladders/geometry/sweep-line/README.md",
+    "tutorial_path": "topics/geometry/sweep-line/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp"
+  },
+  {
+    "code": "FFLOW",
+    "title": "Fast Maximum Flow",
+    "full_title": "Fast Maximum Flow",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/FFLOW/",
+    "main_topic": "Graphs -> Flow",
+    "secondary_topics": [
+      "Dinic",
+      "Undirected capacity graph"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/flow",
+    "topic_tags": [
+      "graphs/flow"
+    ],
+    "patterns": [
+      "maximum flow",
+      "undirected capacities",
+      "capacity scaling"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/graphs/flow/fflow.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "tutorial_path": "topics/graphs/flow/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp"
+  },
+  {
+    "code": "MCQUERY",
+    "title": "MinCut Query",
+    "full_title": "MCQUERY - MinCut Query",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/MCQUERY/",
+    "main_topic": "Graphs -> Flow",
+    "secondary_topics": [
+      "Gomory-Hu tree",
+      "DSU",
+      "All-pairs min-cut"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/flow",
+    "topic_tags": [
+      "graphs/flow",
+      "data-structures/dsu",
+      "graphs/trees",
+      "graphs/gomory-hu"
+    ],
+    "patterns": [
+      "all-pairs min-cut",
+      "cut tree",
+      "count pairs by threshold"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/graphs/flow/mcquery.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "tutorial_path": "topics/graphs/flow/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp"
+  },
+  {
+    "code": "MINCOST",
+    "title": "Luồng với chi phí nhỏ nhất",
+    "full_title": "Luồng với chi phí nhỏ nhất",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/MINCOST/",
+    "main_topic": "Graphs -> Flow",
+    "secondary_topics": [
+      "Min-cost max-flow",
+      "Shortest augmenting path",
+      "Flow reconstruction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/flow",
+    "topic_tags": [
+      "graphs/flow",
+      "graphs/min-cost-flow"
+    ],
+    "patterns": [
+      "transportation network",
+      "flow reconstruction",
+      "duplicate-edge overwrite"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/graphs/flow/mincost.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "tutorial_path": "topics/graphs/flow/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp"
+  },
+  {
+    "code": "QBFLOWER",
+    "title": "Tặng hoa",
+    "full_title": "Tặng hoa",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/QBFLOWER/",
+    "main_topic": "Graphs -> Matching",
+    "secondary_topics": [
+      "Minimum edge cover",
+      "Edmonds blossom"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/matching",
+    "topic_tags": [
+      "graphs/matching"
+    ],
+    "patterns": [
+      "minimum edge cover",
+      "general matching",
+      "graph transformation"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/graphs/matching/qbflower.md",
+    "ladder_path": "practice/ladders/graphs/matching/README.md",
+    "tutorial_path": "topics/graphs/matching/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp"
+  },
+  {
+    "code": "QOS",
+    "title": "Chất lượng dịch vụ",
+    "full_title": "Chất lượng dịch vụ",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/QOS/",
+    "main_topic": "Graphs -> Shortest Paths",
+    "secondary_topics": [
+      "Reverse Dijkstra",
+      "DP with slack",
+      "K-th lexicographic path"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/shortest-paths",
+    "topic_tags": [
+      "graphs/shortest-paths",
+      "dp/foundations"
+    ],
+    "patterns": [
+      "shortest path plus dp",
+      "kth lexicographic path",
+      "bounded slack states"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/graphs/shortest-paths/qos.md",
+    "ladder_path": "practice/ladders/graphs/shortest-paths/README.md",
+    "tutorial_path": "topics/graphs/shortest-paths/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp"
+  },
+  {
+    "code": "VOSTRIP",
+    "title": "VOSTRIP",
+    "full_title": "VOSTRIP",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VOSTRIP/",
+    "main_topic": "Graphs -> Tree DP",
+    "secondary_topics": [
+      "Path decomposition",
+      "Degree pairing",
+      "Counting endpoints"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/tree-dp",
+    "topic_tags": [
+      "graphs/tree-dp",
+      "dp/tree-dp",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "tree endpoint pairing",
+      "path decomposition",
+      "local imbalance formula"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/graphs/tree-dp/vostrip.md",
+    "ladder_path": "practice/ladders/graphs/tree-dp/README.md",
+    "tutorial_path": "topics/dp/tree-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp"
+  },
+  {
+    "code": "MTREECOL",
+    "title": "Color a tree",
+    "full_title": "MTREECOL - Color a tree",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/MTREECOL/",
+    "main_topic": "Graphs -> Trees",
+    "secondary_topics": [
+      "Greedy scheduling",
+      "Precedence constraints",
+      "Tree contraction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/trees",
+    "topic_tags": [
+      "graphs/trees"
+    ],
+    "patterns": [
+      "ratio greedy",
+      "tree contraction",
+      "exchange argument"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/graphs/trees/mtreecol.md",
+    "ladder_path": "practice/ladders/graphs/trees/README.md",
+    "tutorial_path": "topics/graphs/trees/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp"
+  },
+  {
+    "code": "VMWTREE",
+    "title": "Lại là cây khung",
+    "full_title": "VMWTREE - Lại là cây khung",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/VMWTREE/",
+    "main_topic": "Graphs -> Trees",
+    "secondary_topics": [
+      "Heavy-light decomposition",
+      "Implicit treap",
+      "Path sequence updates"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/trees",
+    "topic_tags": [
+      "graphs/trees",
+      "data-structures/segment-tree",
+      "graphs/hld"
+    ],
+    "patterns": [
+      "path reverse",
+      "path sequence queries",
+      "heavy-light decomposition"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/graphs/trees/vmwtree.md",
+    "ladder_path": "practice/ladders/graphs/trees/README.md",
+    "tutorial_path": "topics/graphs/trees/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp"
+  },
+  {
+    "code": "VODIVIDE",
+    "title": "Chia phần",
+    "full_title": "Chia phần",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/VODIVIDE/",
+    "main_topic": "Greedy -> Prefix Constraints",
+    "secondary_topics": [
+      "Sorting",
+      "Laminar constraints",
+      "Pair reconstruction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "greedy/prefix-constraints",
+    "topic_tags": [
+      "greedy/prefix-constraints"
+    ],
+    "patterns": [
+      "prefix quota greedy",
+      "heap maintenance",
+      "pair reconstruction"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/greedy/prefix-constraints/vodivide.md",
+    "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
+    "tutorial_path": "",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
+  },
+  {
+    "code": "POST2",
+    "title": "A cộng B version 2",
+    "full_title": "A cộng B version 2",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/POST2/",
+    "main_topic": "Math -> FFT",
+    "secondary_topics": [
+      "Polynomial convolution",
+      "Frequency counting"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/fft",
+    "topic_tags": [
+      "math/fft"
+    ],
+    "patterns": [
+      "convolution",
+      "digit aggregation",
+      "big integer addition"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/math/fft/post2.md",
+    "ladder_path": "practice/ladders/math/fft/README.md",
+    "tutorial_path": "topics/math/fft-ntt/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp"
+  },
+  {
+    "code": "CRYPTKEY",
+    "title": "Chìa khóa mã số",
+    "full_title": "Chìa khóa mã số",
+    "judge": "VN SPOJ",
+    "judge_url": "https://vn.spoj.com/problems/CRYPTKEY/",
+    "main_topic": "Math -> GCD / LCM",
+    "secondary_topics": [
+      "Prime factorization",
+      "Closure under operations",
+      "Necessary and sufficient condition"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/gcd-lcm",
+    "topic_tags": [
+      "math/gcd-lcm",
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "gcd-lcm closure",
+      "prime-power characterization",
+      "constructibility"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/math/gcd-lcm/cryptkey.md",
+    "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp"
+  },
+  {
+    "code": "LAMP",
+    "title": "Dàn đèn màu",
+    "full_title": "LAMP - Dàn đèn màu",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/LAMP/",
+    "main_topic": "Math -> Number Theory Basics",
+    "secondary_topics": [
+      "Asymptotic density",
+      "Pairwise coprime numbers",
+      "Exact big fractions"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/number-theory-basics",
+    "topic_tags": [
+      "math/number-theory-basics",
+      "math/gcd-lcm",
+      "combinatorics/inclusion-exclusion"
+    ],
+    "patterns": [
+      "density formula",
+      "pairwise coprime products",
+      "big integer fractions"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "OI-style"
+    ],
+    "note_path": "practice/ladders/math/number-theory-basics/lamp.md",
+    "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
+  }
+]

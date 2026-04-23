@@ -13,6 +13,7 @@ STATIC_FILES = {
 }
 
 DIRECTORIES = [
+    "data",
     "docs",
     "topics",
     "practice",

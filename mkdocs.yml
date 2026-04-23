@@ -152,6 +152,9 @@ nav:
           - Contest Engineering: topics/advanced/contest-engineering/README.md
   - Practice:
       - How Practice Works: practice/README.md
+      - Problem Index: docs/problem-index.md
+      - External Problem Index: docs/external-problem-index.md
+      - Topic Maps: docs/topic-maps/index.md
       - Ladders: practice/ladders/README.md
       - Foundations Ladders:
           - Overview: practice/ladders/foundations/README.md

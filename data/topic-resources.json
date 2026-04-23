@@ -1,0 +1,2947 @@
+{
+  "foundations/cpp-language": {
+    "title": "Foundations -> C++ Language",
+    "summary": "Core C++ contest toolkit: fast I/O, references and value semantics, STL primitives, and the subset of the language that matters most under time pressure.",
+    "topic_path": "topics/foundations/cpp-language/README.md",
+    "ladder_path": "practice/ladders/foundations/cpp-language/README.md",
+    "microtopics": [
+      "fast-io",
+      "value-vs-reference",
+      "const-correctness",
+      "vector-and-pair",
+      "sort-and-lower_bound",
+      "maps-and-sets",
+      "priority_queue",
+      "overflow-discipline"
+    ],
+    "learning_sources": [
+      {
+        "label": "cppreference language",
+        "url": "https://en.cppreference.com/w/cpp/language",
+        "kind": "official docs"
+      },
+      {
+        "label": "cppreference containers",
+        "url": "https://en.cppreference.com/w/cpp/container",
+        "kind": "official docs"
+      },
+      {
+        "label": "cppreference algorithms",
+        "url": "https://en.cppreference.com/w/cpp/algorithm",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces sortings tag",
+        "url": "https://codeforces.com/problemset?tags=sortings",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/stl": {
+    "title": "Foundations -> STL Basics",
+    "summary": "Container and algorithm fluency: build the habit of reaching for `vector`, `set`, `map`, iterators, and standard algorithms before writing custom machinery.",
+    "topic_path": "topics/foundations/cpp-language/README.md",
+    "ladder_path": "practice/ladders/foundations/stl/README.md",
+    "microtopics": [
+      "vector",
+      "pair-and-tuple",
+      "iterators",
+      "sort",
+      "lower_bound",
+      "set-and-multiset",
+      "map",
+      "priority_queue"
+    ],
+    "learning_sources": [
+      {
+        "label": "cppreference containers",
+        "url": "https://en.cppreference.com/w/cpp/container",
+        "kind": "official docs"
+      },
+      {
+        "label": "cppreference algorithms",
+        "url": "https://en.cppreference.com/w/cpp/algorithm",
+        "kind": "official docs"
+      },
+      {
+        "label": "USACO Guide",
+        "url": "https://usaco.guide/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces data structures tag",
+        "url": "https://codeforces.com/problemset?tags=data+structures",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/complexity-and-invariants": {
+    "title": "Foundations -> Complexity And Invariants",
+    "summary": "Reasoning tools for contests: estimate time honestly, define loop invariants, and learn to justify greedy and implementation choices before coding.",
+    "topic_path": "topics/foundations/reasoning/README.md",
+    "ladder_path": "practice/ladders/foundations/complexity-and-invariants/README.md",
+    "microtopics": [
+      "asymptotic-estimation",
+      "worst-case-thinking",
+      "amortized-analysis",
+      "loop-invariants",
+      "exchange-arguments",
+      "counterexamples",
+      "proof-by-induction"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.006",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+        "kind": "course"
+      },
+      {
+        "label": "Principles of Algorithmic Problem Solving",
+        "url": "https://usaco.guide/PAPS.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "foundations/sorting": {
+    "title": "Foundations -> Sorting",
+    "summary": "Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, or make greedy decisions provable.",
+    "topic_path": "topics/foundations/patterns/sorting/README.md",
+    "ladder_path": "practice/ladders/foundations/sorting/README.md",
+    "microtopics": [
+      "custom-comparator",
+      "stable-sort",
+      "pair-sorting",
+      "event-sorting",
+      "coordinate-compression"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki sorting intro",
+        "url": "https://en.oi-wiki.org/basic/sort-intro/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cppreference std::sort",
+        "url": "https://en.cppreference.com/w/cpp/algorithm/sort",
+        "kind": "official docs"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces sortings tag",
+        "url": "https://codeforces.com/problemset?tags=sortings",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/binary-search": {
+    "title": "Foundations -> Binary Search",
+    "summary": "Search on sorted data and on monotone answers: learn the invariant-first template before memorizing implementations.",
+    "topic_path": "topics/foundations/patterns/binary-search/README.md",
+    "ladder_path": "practice/ladders/foundations/binary-search/README.md",
+    "microtopics": [
+      "lower_bound",
+      "upper_bound",
+      "first-true",
+      "last-true",
+      "answer-search",
+      "overflow",
+      "continuous-bsearch"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms binary search",
+        "url": "https://cp-algorithms.com/num_methods/binary_search.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide binary search",
+        "url": "https://usaco.guide/silver/binary-search",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Codeforces EDU binary search",
+        "url": "https://codeforces.com/blog/entry/81729",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces binary-search tag",
+        "url": "https://codeforces.com/problemset?tags=binary+search",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/prefix-sums": {
+    "title": "Foundations -> Prefix Sums",
+    "summary": "Turn many range questions into subtraction of precomputed aggregates, then layer counting tricks on top.",
+    "topic_path": "topics/foundations/patterns/prefix-sums/README.md",
+    "ladder_path": "practice/ladders/foundations/prefix-sums/README.md",
+    "microtopics": [
+      "1d-prefix",
+      "2d-prefix",
+      "prefix-xor",
+      "subarray-sum",
+      "frequency-prefix",
+      "mod-prefix"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide intro prefix sums",
+        "url": "https://usaco.guide/silver/prefix-sums",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide more prefix sums",
+        "url": "https://usaco.guide/silver/more-prefix-sums",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki prefix sum and adjacent difference",
+        "url": "https://en.oi-wiki.org/basic/prefix-sum/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/difference-arrays": {
+    "title": "Foundations -> Difference Arrays",
+    "summary": "A range-update perspective on prefix sums: store changes at boundaries, then recover the real array by taking prefixes.",
+    "topic_path": "topics/foundations/patterns/difference-arrays/README.md",
+    "ladder_path": "practice/ladders/foundations/difference-arrays/README.md",
+    "microtopics": [
+      "difference-array",
+      "range-add",
+      "point-query",
+      "restore-by-prefix",
+      "2d-difference",
+      "imos"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki prefix sum and adjacent difference",
+        "url": "https://en.oi-wiki.org/basic/prefix-sum/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide more prefix sums",
+        "url": "https://usaco.guide/silver/more-prefix-sums",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cppreference adjacent_difference",
+        "url": "https://en.cppreference.com/w/cpp/algorithm/adjacent_difference",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Range Update Queries",
+        "url": "https://cses.fi/problemset/task/1651/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "foundations/two-pointers": {
+    "title": "Foundations -> Two Pointers",
+    "summary": "Exploit monotone movement to replace nested loops with linear scans, sliding windows, or opposite-end sweeps.",
+    "topic_path": "topics/foundations/patterns/two-pointers/README.md",
+    "ladder_path": "practice/ladders/foundations/two-pointers/README.md",
+    "microtopics": [
+      "opposite-ends",
+      "sliding-window",
+      "sorted-two-sum",
+      "monotone-window",
+      "amortized-linear",
+      "longest-valid-segment"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide two pointers",
+        "url": "https://usaco.guide/silver/two-pointers",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces two-pointers tag",
+        "url": "https://codeforces.com/problemset?tags=two+pointers",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/dsu": {
+    "title": "Data Structures -> DSU",
+    "summary": "Union-find for component maintenance, offline connectivity, and Kruskal-style structure building.",
+    "topic_path": "topics/data-structures/dsu/README.md",
+    "ladder_path": "practice/ladders/data-structures/dsu/README.md",
+    "microtopics": [
+      "union-find",
+      "path-compression",
+      "union-by-size",
+      "component-query",
+      "kruskal-ready",
+      "rollback-prep"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ACL DSU",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/dsu.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "cp-algorithms DSU",
+        "url": "https://cp-algorithms.com/data_structures/disjoint_set_union.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide DSU",
+        "url": "https://usaco.guide/gold/dsu",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder Library Practice Contest",
+        "url": "https://atcoder.jp/contests/practice2/tasks?lang=en",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/fenwick-tree": {
+    "title": "Data Structures -> Fenwick Tree",
+    "summary": "Low-level prefix structure for point updates, range sums, compressed coordinates, and order statistics.",
+    "topic_path": "topics/data-structures/fenwick-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/fenwick-tree/README.md",
+    "microtopics": [
+      "lowbit",
+      "point-add",
+      "prefix-sum",
+      "range-sum",
+      "coordinate-compression",
+      "kth-order-statistic"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ACL Fenwick",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/fenwicktree.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "cp-algorithms Fenwick",
+        "url": "https://cp-algorithms.com/data_structures/fenwick.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Fenwick",
+        "url": "https://en.oi-wiki.org/ds/fenwick/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder Library Practice Contest",
+        "url": "https://atcoder.jp/contests/practice2/tasks?lang=en",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/segment-tree": {
+    "title": "Data Structures -> Segment Tree",
+    "summary": "General range query/update structure built on monoids and lazy propagation, with tree walking for advanced queries.",
+    "topic_path": "topics/data-structures/segment-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/segment-tree/README.md",
+    "microtopics": [
+      "monoid",
+      "build",
+      "point-update",
+      "range-query",
+      "lazy-propagation",
+      "tree-walking",
+      "max_right"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ACL Segtree",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/segtree.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "cp-algorithms segment tree",
+        "url": "https://cp-algorithms.com/data_structures/segment_tree.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki segment tree",
+        "url": "https://en.oi-wiki.org/ds/seg/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder Library Practice Contest",
+        "url": "https://atcoder.jp/contests/practice2/tasks?lang=en",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/sparse-table": {
+    "title": "Data Structures -> Sparse Table",
+    "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",
+    "topic_path": "topics/data-structures/sparse-table/README.md",
+    "ladder_path": "practice/ladders/data-structures/sparse-table/README.md",
+    "microtopics": [
+      "rmq",
+      "idempotent",
+      "immutable-array",
+      "log-table",
+      "overlapping-blocks",
+      "lca-reduction"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms sparse table",
+        "url": "https://cp-algorithms.com/data_structures/sparse-table.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki sparse table",
+        "url": "https://en.oi-wiki.org/ds/sparse-table/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Euler Tour / Static RMQ",
+        "url": "https://usaco.guide/gold/tree-euler/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Static Range Minimum Queries",
+        "url": "https://cses.fi/problemset/task/1647/",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ RMQSQ",
+        "url": "https://www.spoj.com/problems/RMQSQ/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "data-structures/heaps-and-ordered-sets": {
+    "title": "Data Structures -> Heaps And Ordered Sets",
+    "summary": "Use heaps, sets, and multisets to maintain online minima/maxima, medians, and active sets.",
+    "topic_path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+    "ladder_path": "practice/ladders/data-structures/heaps-and-ordered-sets/README.md",
+    "microtopics": [
+      "max-heap",
+      "min-heap",
+      "multiset",
+      "lower_bound",
+      "erase-one",
+      "ordered-iteration",
+      "median-maintenance"
+    ],
+    "learning_sources": [
+      {
+        "label": "cppreference priority_queue",
+        "url": "https://en.cppreference.com/w/cpp/container/priority_queue",
+        "kind": "official docs"
+      },
+      {
+        "label": "cppreference set",
+        "url": "https://en.cppreference.com/w/cpp/container/set",
+        "kind": "official docs"
+      },
+      {
+        "label": "USACO Guide sorted sets",
+        "url": "https://usaco.guide/gold/intro-sorted-sets",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces data structures tag",
+        "url": "https://codeforces.com/problemset?tags=data+structures",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/offline-tricks": {
+    "title": "Data Structures -> Offline Tricks",
+    "summary": "Sort events, reorder queries, and use rollback or CDQ to trade interactivity for structure.",
+    "topic_path": "topics/data-structures/offline-tricks/README.md",
+    "ladder_path": "practice/ladders/data-structures/offline-tricks/README.md",
+    "microtopics": [
+      "offline-sort",
+      "sweep-line",
+      "event-processing",
+      "cdq",
+      "rollback-dsu",
+      "compress-coordinates"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide offline deletion",
+        "url": "https://usaco.guide/adv/offline-del",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide range queries with sweep line",
+        "url": "https://usaco.guide/plat/range-sweep",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki CDQ divide and conquer",
+        "url": "https://en.oi-wiki.org/misc/cdq-divide/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Range Interval Queries",
+        "url": "https://cses.fi/problemset/task/3163",
+        "kind": "problem"
+      }
+    ]
+  },
+  "graphs/graph-modeling": {
+    "title": "Graphs -> Graph Modeling",
+    "summary": "Before running graph algorithms, decide what the nodes, edges, states, and weights actually represent.",
+    "topic_path": "topics/graphs/graph-modeling/README.md",
+    "ladder_path": "practice/ladders/graphs/graph-modeling/README.md",
+    "microtopics": [
+      "adjacency-list",
+      "adjacency-matrix",
+      "directed",
+      "undirected",
+      "weighted",
+      "multigraph",
+      "state-graph"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton Graphs",
+        "url": "https://algs4.cs.princeton.edu/40graphs",
+        "kind": "course"
+      },
+      {
+        "label": "IOI 2025 syllabus PDF",
+        "url": "https://ioinformatics.org/files/ioi-syllabus-2025.pdf",
+        "kind": "official curriculum"
+      },
+      {
+        "label": "OI Wiki graph intro",
+        "url": "https://en.oi-wiki.org/graph/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/bfs-dfs": {
+    "title": "Graphs -> BFS And DFS",
+    "summary": "Traversal for reachability, layering, components, bipartiteness, and DFS-tree structure.",
+    "topic_path": "topics/graphs/bfs-dfs/README.md",
+    "ladder_path": "practice/ladders/graphs/bfs-dfs/README.md",
+    "microtopics": [
+      "reachability",
+      "connected-components",
+      "layering",
+      "dfs-tree",
+      "cycle-detection",
+      "bipartite-check"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.006 notes page",
+        "url": "https://courses.csail.mit.edu/6.006/fall10/notes.shtml",
+        "kind": "course"
+      },
+      {
+        "label": "cp-algorithms BFS",
+        "url": "https://cp-algorithms.com/graph/breadth-first-search.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide graph traversal",
+        "url": "https://usaco.guide/silver/graph-traversal?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/shortest-paths": {
+    "title": "Graphs -> Shortest Paths",
+    "summary": "From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool that matches the edge model.",
+    "topic_path": "topics/graphs/shortest-paths/README.md",
+    "ladder_path": "practice/ladders/graphs/shortest-paths/README.md",
+    "microtopics": [
+      "unweighted",
+      "dijkstra",
+      "bellman-ford",
+      "dag-sp",
+      "0-1-bfs",
+      "negative-cycle",
+      "all-pairs"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton Shortest Paths",
+        "url": "https://algs4.cs.princeton.edu/44sp/",
+        "kind": "course"
+      },
+      {
+        "label": "MIT 6.006 Dijkstra and DAG shortest paths",
+        "url": "https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture16.pdf",
+        "kind": "course"
+      },
+      {
+        "label": "OI Wiki shortest path",
+        "url": "https://en.oi-wiki.org/graph/shortest-path/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Library Checker shortest path",
+        "url": "https://judge.yosupo.jp/problem/shortest_path",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/mst": {
+    "title": "Graphs -> Minimum Spanning Tree",
+    "summary": "Use cut and cycle properties to build minimum spanning forests with Kruskal or Prim.",
+    "topic_path": "topics/graphs/mst/README.md",
+    "ladder_path": "practice/ladders/graphs/mst/README.md",
+    "microtopics": [
+      "kruskal",
+      "prim",
+      "dsu",
+      "cut-property",
+      "cycle-property",
+      "minimum-spanning-forest"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton MST",
+        "url": "https://algs4.cs.princeton.edu/43mst/index.php",
+        "kind": "course"
+      },
+      {
+        "label": "cp-algorithms Kruskal",
+        "url": "https://cp-algorithms.com/graph/mst_kruskal.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms Prim",
+        "url": "https://cp-algorithms.com/graph/mst_prim.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/scc-toposort": {
+    "title": "Graphs -> Topological Sort And SCC",
+    "summary": "Compress directed graphs into DAGs, reason about dependencies, and detect strongly connected structure.",
+    "topic_path": "topics/graphs/scc-toposort/README.md",
+    "ladder_path": "practice/ladders/graphs/scc-toposort/README.md",
+    "microtopics": [
+      "dag",
+      "indegree",
+      "kahn",
+      "kosaraju",
+      "tarjan",
+      "condensation-graph",
+      "2-sat"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton Directed Graphs",
+        "url": "https://algs4.cs.princeton.edu/42directed/index.php",
+        "kind": "course"
+      },
+      {
+        "label": "cp-algorithms topological sort",
+        "url": "https://cp-algorithms.com/graph/topological-sort.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide SCC",
+        "url": "https://usaco.guide/adv/SCC",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Library Checker SCC",
+        "url": "https://judge.yosupo.jp/problem/scc",
+        "kind": "problem"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/trees": {
+    "title": "Graphs -> Trees",
+    "summary": "Tree structure, rooting, Euler tours, diameters, and decomposition ideas that power most advanced tree problems.",
+    "topic_path": "topics/graphs/trees/README.md",
+    "ladder_path": "practice/ladders/graphs/trees/README.md",
+    "microtopics": [
+      "rooted-tree",
+      "subtree",
+      "depth",
+      "parent-child",
+      "diameter",
+      "centroid",
+      "euler-tour"
+    ],
+    "learning_sources": [
+      {
+        "label": "IOI 2025 syllabus PDF",
+        "url": "https://ioinformatics.org/files/ioi-syllabus-2025.pdf",
+        "kind": "official curriculum"
+      },
+      {
+        "label": "OI Wiki tree basics",
+        "url": "https://en.oi-wiki.org/graph/tree-basic/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/lca": {
+    "title": "Graphs -> LCA",
+    "summary": "Lowest common ancestor as a reusable primitive for ancestor checks and path queries on rooted trees.",
+    "topic_path": "topics/graphs/lca/README.md",
+    "ladder_path": "practice/ladders/graphs/lca/README.md",
+    "microtopics": [
+      "binary-lifting",
+      "euler-tour",
+      "rmq-reduction",
+      "tin-tout",
+      "ancestor-query",
+      "path-query"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms binary lifting",
+        "url": "https://cp-algorithms.com/graph/lca_binary_lifting.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki LCA",
+        "url": "https://en.oi-wiki.org/graph/lca/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Euler tour technique",
+        "url": "https://usaco.guide/gold/tree-euler/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker LCA",
+        "url": "https://judge.yosupo.jp/problem/lca",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/tree-dp": {
+    "title": "Graphs -> Tree DP",
+    "summary": "Tree-rooted dynamic programming from local subtree states to rerooting and path decomposition.",
+    "topic_path": "topics/dp/tree-dp/README.md",
+    "ladder_path": "practice/ladders/graphs/tree-dp/README.md",
+    "microtopics": [
+      "subtree-dp",
+      "rerooting",
+      "independent-set",
+      "tree-knapsack",
+      "diameter-dp",
+      "states-on-rooting"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.006 structural DP on trees",
+        "url": "https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture21.pdf",
+        "kind": "course"
+      },
+      {
+        "label": "OI Wiki tree DP",
+        "url": "https://en.oi-wiki.org/dp/tree/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide DP on trees",
+        "url": "https://usaco.guide/gold/dp-trees",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/flow": {
+    "title": "Graphs -> Maximum Flow",
+    "summary": "Residual graphs, augmenting paths, and cut structure for max-flow and min-cut modeling.",
+    "topic_path": "topics/graphs/flow/README.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "microtopics": [
+      "residual-graph",
+      "augmenting-path",
+      "dinic",
+      "push-relabel",
+      "maxflow-mincut",
+      "edge-disjoint-paths"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton Max Flow",
+        "url": "https://algs4.cs.princeton.edu/64maxflow/",
+        "kind": "course"
+      },
+      {
+        "label": "MIT 6.854 flow notes",
+        "url": "https://courses.csail.mit.edu/6.854/21/Notes/n06-flow.html",
+        "kind": "course"
+      },
+      {
+        "label": "OI Wiki max flow",
+        "url": "https://en.oi-wiki.org/graph/flow/max-flow/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/min-cost-flow": {
+    "title": "Graphs -> Min-Cost Flow",
+    "summary": "Successive shortest augmenting paths, potentials, and reduced costs for transportation-style optimization.",
+    "topic_path": "topics/graphs/min-cost-flow/README.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "microtopics": [
+      "potentials",
+      "reduced-cost",
+      "successive-shortest-path",
+      "negative-cycle",
+      "assignment",
+      "circulation"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.854 min-cost flow notes",
+        "url": "https://courses.csail.mit.edu/6.854/20/Notes/n09-mincostflow.html",
+        "kind": "course"
+      },
+      {
+        "label": "cp-algorithms min-cost flow",
+        "url": "https://cp-algorithms.com/graph/min_cost_flow.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide min-cost flow",
+        "url": "https://usaco.guide/adv/min-cost-flow?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker min_cost_b_flow",
+        "url": "https://judge.yosupo.jp/problem/min_cost_b_flow",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/matching": {
+    "title": "Graphs -> Matching",
+    "summary": "Augmenting-path techniques for bipartite matching and reductions to cover and assignment problems.",
+    "topic_path": "topics/graphs/matching/README.md",
+    "ladder_path": "practice/ladders/graphs/matching/README.md",
+    "microtopics": [
+      "bipartite",
+      "augmenting-path",
+      "kuhn",
+      "hopcroft-karp",
+      "konig",
+      "assignment-reduction"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki max bipartite matching",
+        "url": "https://en.oi-wiki.org/graph/graph-matching/bigraph-match/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms Kuhn",
+        "url": "https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki augmenting path",
+        "url": "https://en.oi-wiki.org/graph/graph-matching/augment/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker bipartite matching",
+        "url": "https://judge.yosupo.jp/problem/bipartitematching",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/hld": {
+    "title": "Graphs -> Heavy-Light Decomposition",
+    "summary": "Decompose tree paths into logarithmically many chains so path queries and updates reduce to range structures.",
+    "topic_path": "",
+    "ladder_path": "practice/ladders/graphs/trees/README.md",
+    "microtopics": [
+      "heavy-edge",
+      "light-edge",
+      "chain-head",
+      "base-array",
+      "segment-tree",
+      "path-query",
+      "path-update"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms HLD",
+        "url": "https://cp-algorithms.com/graph/hld.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki HLD",
+        "url": "https://en.oi-wiki.org/graph/hld/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide HLD",
+        "url": "https://usaco.guide/plat/hld?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker vertex_add_path_sum",
+        "url": "https://judge.yosupo.jp/problem/vertex_add_path_sum",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/gomory-hu": {
+    "title": "Graphs -> Gomory-Hu Tree",
+    "summary": "Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.",
+    "topic_path": "",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "microtopics": [
+      "all-pairs-mincut",
+      "cut-tree",
+      "gusfield",
+      "maxflow-calls",
+      "undirected-cuts",
+      "mincut-query"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT Gomory-Hu paper mirror",
+        "url": "https://web.mit.edu/tabbott/www/papers/gomory-hu.pdf",
+        "kind": "paper"
+      },
+      {
+        "label": "UC Davis advanced algorithms",
+        "url": "https://www.cs.ucdavis.edu/~martel/222b/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker problem bank",
+        "url": "https://github.com/yosupo06/library-checker-problems",
+        "kind": "problem bank"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "dp/foundations": {
+    "title": "DP -> Foundations",
+    "summary": "State design, transitions, and the discipline of converting brute force recurrence thinking into efficient DP.",
+    "topic_path": "topics/dp/foundations/README.md",
+    "ladder_path": "practice/ladders/dp/foundations/README.md",
+    "microtopics": [
+      "state-definition",
+      "transition-design",
+      "base-cases",
+      "memoization",
+      "tabulation",
+      "push-vs-pull",
+      "counting-dp"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide intro DP",
+        "url": "https://usaco.guide/gold/intro-dp",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms intro to DP",
+        "url": "https://cp-algorithms.com/dynamic_programming/intro-to-dp.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki DP basics",
+        "url": "https://en.oi-wiki.org/dp/basic/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP Contest",
+        "url": "https://atcoder.jp/contests/dp?lang=en",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Grid Paths I",
+        "url": "https://cses.fi/problemset/task/1638/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Array Description",
+        "url": "https://cses.fi/problemset/task/1746/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "dp/knapsack-family": {
+    "title": "DP -> Knapsack Family",
+    "summary": "Choose the state dimension and transition order that matches 0-1, complete, bounded, or value-based knapsack.",
+    "topic_path": "topics/dp/knapsack-family/README.md",
+    "ladder_path": "practice/ladders/dp/knapsack-family/README.md",
+    "microtopics": [
+      "0-1-knapsack",
+      "complete-knapsack",
+      "bounded-knapsack",
+      "value-dp",
+      "weight-dp",
+      "rolling-array"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Knapsack",
+        "url": "https://usaco.guide/gold/knapsack",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms knapsack",
+        "url": "https://cp-algorithms.com/dynamic_programming/knapsack.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki knapsack DP",
+        "url": "https://en.oi-wiki.org/dp/knapsack/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP D",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_d",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Money Sums",
+        "url": "https://cses.fi/problemset/task/1745/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "dp/bitmask-dp": {
+    "title": "DP -> Bitmask DP",
+    "summary": "Compress small subsets into bitmasks and reason about transitions over subsets, submasks, or profiles.",
+    "topic_path": "topics/dp/bitmask-dp/README.md",
+    "ladder_path": "practice/ladders/dp/bitmask-dp/README.md",
+    "microtopics": [
+      "subset-dp",
+      "submask-enumeration",
+      "hamiltonian-dp",
+      "matching-dp",
+      "profile-dp",
+      "sos-dp"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Bitmask DP",
+        "url": "https://usaco.guide/gold/dp-bitmasks",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki state compression DP",
+        "url": "https://en.oi-wiki.org/dp/state/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide broken profile",
+        "url": "https://usaco.guide/adv/dp-broken-profile",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP O",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_o",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Elevator Rides",
+        "url": "https://cses.fi/problemset/task/1653/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Tilings",
+        "url": "https://cses.fi/problemset/task/2181/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "dp/tree-dp": {
+    "title": "DP -> Tree DP",
+    "summary": "DP on rooted trees, rerooting, subtree merges, and local state design for hierarchical structures.",
+    "topic_path": "topics/dp/tree-dp/README.md",
+    "ladder_path": "practice/ladders/dp/tree-dp/README.md",
+    "microtopics": [
+      "subtree-dp",
+      "include-exclude",
+      "rerooting",
+      "tree-knapsack",
+      "merge-small-to-large-dp",
+      "edge-vs-node-states"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide DP on Trees",
+        "url": "https://usaco.guide/gold/dp-trees",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki tree DP",
+        "url": "https://en.oi-wiki.org/dp/tree/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Combining Subtrees",
+        "url": "https://usaco.guide/adv/comb-sub",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP P",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_p",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Tree Matching",
+        "url": "https://cses.fi/problemset/task/1130/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide tree DP modules",
+        "url": "https://usaco.guide/gold/dp-trees",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "dp/digit-dp": {
+    "title": "DP -> Digit DP",
+    "summary": "Count or optimize over numeric ranges by scanning digits left-to-right with tight and leading-zero flags.",
+    "topic_path": "topics/dp/digit-dp/README.md",
+    "ladder_path": "practice/ladders/dp/digit-dp/README.md",
+    "microtopics": [
+      "tight-flag",
+      "leading-zero",
+      "position-dp",
+      "digit-sum-mod",
+      "range-f(b)-f(a-1)",
+      "state-augmentation"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Digit DP",
+        "url": "https://usaco.guide/gold/digit-dp",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Digit DP",
+        "url": "https://en.oi-wiki.org/dp/number/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP S",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_s",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Numbers",
+        "url": "https://cses.fi/problemset/task/2220/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide digit DP problems",
+        "url": "https://usaco.guide/gold/digit-dp",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "dp/interval-dp": {
+    "title": "DP -> Interval DP",
+    "summary": "Reason over contiguous ranges and split points when the optimal structure is built by merging intervals.",
+    "topic_path": "topics/dp/interval-dp/README.md",
+    "ladder_path": "practice/ladders/dp/interval-dp/README.md",
+    "microtopics": [
+      "interval-state",
+      "split-point-enumeration",
+      "merge-cost",
+      "prefix-sum-cost",
+      "game-dp",
+      "circular-interval-dp"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Range DP",
+        "url": "https://usaco.guide/gold/dp-ranges",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Interval DP",
+        "url": "https://en.oi-wiki.org/dp/interval/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder DP N",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_n",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Removal Game",
+        "url": "https://cses.fi/problemset/task/1097/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide range DP problems",
+        "url": "https://usaco.guide/gold/dp-ranges",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "dp/sliding-window": {
+    "title": "DP -> Sliding Window And Window DP",
+    "summary": "Problems where a moving window carries state, costs, or feasibility information that updates incrementally.",
+    "topic_path": "topics/foundations/patterns/two-pointers/README.md",
+    "ladder_path": "practice/ladders/dp/sliding-window/README.md",
+    "microtopics": [
+      "window-cost",
+      "monotone-window",
+      "two-multiset-maintenance",
+      "amortized-updates",
+      "window-dp-state",
+      "nested-intervals"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide two pointers",
+        "url": "https://usaco.guide/silver/two-pointers",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces two-pointers tag",
+        "url": "https://codeforces.com/problemset?tags=two+pointers",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "math/modular-arithmetic": {
+    "title": "Math -> Modular Arithmetic",
+    "summary": "Safe modular computation: powers, inverses, congruences, and the algebra needed to avoid overflow and mistakes.",
+    "topic_path": "topics/math/modular-arithmetic/README.md",
+    "ladder_path": "practice/ladders/math/modular-arithmetic/README.md",
+    "microtopics": [
+      "modpow",
+      "modinv",
+      "Fermat",
+      "Euler-theorem",
+      "congruences",
+      "mod-division"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.857 modular arithmetic review",
+        "url": "https://courses.csail.mit.edu/6.857/current/",
+        "kind": "course"
+      },
+      {
+        "label": "USACO Guide modular arithmetic",
+        "url": "https://usaco.guide/gold/modular",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms modular inverse",
+        "url": "https://cp-algorithms.com/algebra/module-inverse.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Exponentiation",
+        "url": "https://cses.fi/problemset/task/1095/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Exponentiation II",
+        "url": "https://cses.fi/problemset/task/1712/",
+        "kind": "problem"
+      },
+      {
+        "label": "Kattis Modular Arithmetic",
+        "url": "https://open.kattis.com/problems/modulararithmetic",
+        "kind": "problem"
+      }
+    ]
+  },
+  "math/number-theory-basics": {
+    "title": "Math -> Number Theory Basics",
+    "summary": "Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.",
+    "topic_path": "topics/math/number-theory-basics/README.md",
+    "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
+    "microtopics": [
+      "divisibility",
+      "primes",
+      "coprime",
+      "totient",
+      "multiplicative-functions",
+      "divisor-functions"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT Mathematics for Computer Science",
+        "url": "https://courses.csail.mit.edu/6.042/spring18/mcs.pdf",
+        "kind": "textbook"
+      },
+      {
+        "label": "OI Wiki number theory basics",
+        "url": "https://en.oi-wiki.org/math/number-theory/basic/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Counting Divisors",
+        "url": "https://cses.fi/problemset/task/1713/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Common Divisors",
+        "url": "https://cses.fi/problemset/task/1081/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Coprime Pairs",
+        "url": "https://cses.fi/problemset/task/2417/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "math/gcd-lcm": {
+    "title": "Math -> GCD And LCM",
+    "summary": "Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagates through arrays and constructions.",
+    "topic_path": "topics/math/number-theory-basics/README.md",
+    "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
+    "microtopics": [
+      "euclid",
+      "extended-gcd",
+      "bezout",
+      "lcm-formula",
+      "coprime",
+      "prefix-suffix-gcd"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Euclidean Algorithm",
+        "url": "https://cp-algorithms.com/algebra/euclid-algorithm.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki GCD",
+        "url": "https://en.oi-wiki.org/math/number-theory/gcd/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Principles of Algorithmic Problem Solving",
+        "url": "https://usaco.guide/PAPS.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Common Divisors",
+        "url": "https://cses.fi/problemset/task/1081/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide GCD on Blackboard",
+        "url": "https://usaco.guide/problems/cf-gcd-on-blackboard/solution",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "USACO Guide Orac and LCM",
+        "url": "https://usaco.guide/problems/cf-orac-and-lcm/solution",
+        "kind": "problem writeup"
+      }
+    ]
+  },
+  "math/fft": {
+    "title": "Math -> FFT And NTT",
+    "summary": "Polynomial multiplication and convolution with roots of unity, integer-friendly NTTs, and transform implementation details.",
+    "topic_path": "topics/math/fft-ntt/README.md",
+    "ladder_path": "practice/ladders/math/fft/README.md",
+    "microtopics": [
+      "convolution",
+      "DFT",
+      "roots-of-unity",
+      "bit-reversal",
+      "polynomial-multiplication",
+      "NTT-prime",
+      "primitive-root"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms FFT",
+        "url": "https://cp-algorithms.com/algebra/fft.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki FFT",
+        "url": "https://en.oi-wiki.org/math/poly/fft/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "AtCoder ACL Convolution",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/convolution.html",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder Practice2 F",
+        "url": "https://atcoder.jp/contests/practice2/tasks/practice2_f",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Signal Processing",
+        "url": "https://cses.fi/problemset/task/2113/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Apples and Bananas",
+        "url": "https://cses.fi/problemset/task/2112/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "combinatorics/counting-basics": {
+    "title": "Combinatorics -> Counting Basics",
+    "summary": "Factorials, binomials, arrangements, stars and bars, and the basic models that recur across counting problems.",
+    "topic_path": "topics/combinatorics/counting-basics/README.md",
+    "ladder_path": "practice/ladders/combinatorics/counting-basics/README.md",
+    "microtopics": [
+      "permutations",
+      "combinations",
+      "binomial",
+      "factorials",
+      "pascal-triangle",
+      "catalan"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT Mathematics for Computer Science",
+        "url": "https://courses.csail.mit.edu/6.042/spring18/mcs.pdf",
+        "kind": "textbook"
+      },
+      {
+        "label": "cp-algorithms binomial coefficients",
+        "url": "https://cp-algorithms.com/combinatorics/binomial-coefficients.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki combinations",
+        "url": "https://en.oi-wiki.org/math/combinatorics/combination/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Binomial Coefficients",
+        "url": "https://cses.fi/problemset/task/1079/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Distributing Apples",
+        "url": "https://cses.fi/problemset/task/1716/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide Catalan Numbers",
+        "url": "https://usaco.guide/gold/combo?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ]
+  },
+  "combinatorics/inclusion-exclusion": {
+    "title": "Combinatorics -> Inclusion-Exclusion",
+    "summary": "Count by overlaps, complements, and Möbius-style corrections when direct counting double-counts structure.",
+    "topic_path": "topics/combinatorics/inclusion-exclusion/README.md",
+    "ladder_path": "practice/ladders/combinatorics/inclusion-exclusion/README.md",
+    "microtopics": [
+      "PIE",
+      "mobius",
+      "subset-enumeration",
+      "complement-counting",
+      "squarefree",
+      "coprime-pairs"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms inclusion-exclusion",
+        "url": "https://cp-algorithms.com/combinatorics/inclusion-exclusion.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide PIE",
+        "url": "https://usaco.guide/plat/PIE",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki PIE",
+        "url": "https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Prime Multiples",
+        "url": "https://cses.fi/problemset/task/2185/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Cowpatibility",
+        "url": "https://usaco.org/index.php?page=viewproblem2&cpid=862",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Coprime Pairs",
+        "url": "https://cses.fi/problemset/task/2417/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "combinatorics/bounded-compositions": {
+    "title": "Combinatorics -> Bounded Compositions",
+    "summary": "Distribute sums under lower and upper bounds using stars and bars, generating functions, or inclusion-exclusion.",
+    "topic_path": "topics/combinatorics/bounded-compositions/README.md",
+    "ladder_path": "practice/ladders/combinatorics/bounded-compositions/README.md",
+    "microtopics": [
+      "stars-and-bars",
+      "lower-bounds",
+      "upper-bounds",
+      "bounded-sums",
+      "compositions",
+      "generating-functions",
+      "PIE"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms stars and bars",
+        "url": "https://cp-algorithms.com/combinatorics/stars_and_bars.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki combinations",
+        "url": "https://en.oi-wiki.org/math/combinatorics/combination/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki PIE",
+        "url": "https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Distributing Apples",
+        "url": "https://cses.fi/problemset/task/1716/",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder DP M",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_m",
+        "kind": "problem"
+      }
+    ]
+  },
+  "combinatorics/lexicographic-enumeration": {
+    "title": "Combinatorics -> Lexicographic Enumeration",
+    "summary": "Generate, count, or skip combinatorial objects in lexicographic order using ranks, next-state transitions, and pruning.",
+    "topic_path": "topics/combinatorics/lexicographic-enumeration/README.md",
+    "ladder_path": "practice/ladders/combinatorics/lexicographic-enumeration/README.md",
+    "microtopics": [
+      "next_permutation",
+      "ranking",
+      "unranking",
+      "lexicographic-skip",
+      "windowed-enumeration",
+      "combinatorial-generation"
+    ],
+    "learning_sources": [
+      {
+        "label": "cppreference next_permutation",
+        "url": "https://en.cppreference.com/w/cpp/algorithm/next_permutation",
+        "kind": "official docs"
+      },
+      {
+        "label": "cp-algorithms generating combinations",
+        "url": "https://cp-algorithms.com/combinatorics/generating_combinations.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki enumerate",
+        "url": "https://en.oi-wiki.org/basic/enumerate/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Creating Strings",
+        "url": "https://cses.fi/problemset/task/1622/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ]
+  },
+  "strings/hashing": {
+    "title": "Strings -> Hashing",
+    "summary": "Rolling hashes for substring equality, borders, Rabin-Karp style matching, and collision-aware verification.",
+    "topic_path": "topics/strings/hashing/README.md",
+    "ladder_path": "practice/ladders/strings/hashing/README.md",
+    "microtopics": [
+      "rolling-hash",
+      "prefix-hash",
+      "substring-equality",
+      "double-hash",
+      "Rabin-Karp",
+      "collision-analysis"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms string hashing",
+        "url": "https://cp-algorithms.com/string/string-hashing.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide hashing",
+        "url": "https://usaco.guide/gold/hashing",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton substring search",
+        "url": "https://algs4.cs.princeton.edu/53substring/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Finding Periods",
+        "url": "https://cses.fi/problemset/task/1733",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Finding Borders",
+        "url": "https://cses.fi/problemset/task/1732",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide hashing problems",
+        "url": "https://usaco.guide/gold/hashing",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "strings/kmp": {
+    "title": "Strings -> KMP",
+    "summary": "Prefix-function reasoning for exact pattern matching, borders, periods, and automaton interpretations.",
+    "topic_path": "topics/strings/kmp/README.md",
+    "ladder_path": "practice/ladders/strings/kmp/README.md",
+    "microtopics": [
+      "prefix-function",
+      "failure-links",
+      "borders",
+      "periodicity",
+      "online-matching",
+      "automaton-view"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms prefix function",
+        "url": "https://cp-algorithms.com/string/prefix-function.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton substring search",
+        "url": "https://algs4.cs.princeton.edu/53substring/",
+        "kind": "course"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES String Matching",
+        "url": "https://cses.fi/problemset/task/1753",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES String Functions",
+        "url": "https://cses.fi/problemset/task/2107",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "strings/z-function": {
+    "title": "Strings -> Z-Function",
+    "summary": "Maintain a Z-box to measure longest prefix matches at every position and solve period/border problems efficiently.",
+    "topic_path": "topics/strings/z-function/README.md",
+    "ladder_path": "practice/ladders/strings/z-function/README.md",
+    "microtopics": [
+      "z-function",
+      "z-box",
+      "prefix-occurrences",
+      "pattern-search",
+      "string-periods",
+      "border-array"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Z-function",
+        "url": "https://cp-algorithms.com/string/z-function.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Z Algorithm",
+        "url": "https://judge.yosupo.jp/problem/zalgorithm",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES String Functions",
+        "url": "https://cses.fi/problemset/task/2107",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Finding Periods",
+        "url": "https://cses.fi/problemset/task/1733",
+        "kind": "problem"
+      }
+    ]
+  },
+  "strings/trie": {
+    "title": "Strings -> Trie",
+    "summary": "Prefix trees for dictionary queries, prefix counting, lexicographic traversal, and automaton building blocks.",
+    "topic_path": "topics/strings/trie/README.md",
+    "ladder_path": "practice/ladders/strings/trie/README.md",
+    "microtopics": [
+      "prefix-tree",
+      "dictionary-queries",
+      "terminal-nodes",
+      "alphabet-optimization",
+      "lexicographic-traversal",
+      "compressed-trie"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton Tries",
+        "url": "https://algs4.cs.princeton.edu/52trie/",
+        "kind": "course"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Word Combinations",
+        "url": "https://cses.fi/problemset/task/1731",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Finding Patterns",
+        "url": "https://cses.fi/problemset/task/2102/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "strings/aho-corasick": {
+    "title": "Strings -> Aho-Corasick",
+    "summary": "Dictionary automaton for multi-pattern matching with failure and output links.",
+    "topic_path": "topics/strings/aho-corasick/README.md",
+    "ladder_path": "practice/ladders/strings/aho-corasick/README.md",
+    "microtopics": [
+      "multi-pattern-matching",
+      "failure-links",
+      "output-links",
+      "dictionary-automaton",
+      "occurrence-counting",
+      "stream-processing"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Aho-Corasick",
+        "url": "https://cp-algorithms.com/string/aho_corasick.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide string searching",
+        "url": "https://usaco.guide/adv/string-search",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Finding Patterns",
+        "url": "https://cses.fi/problemset/task/2102/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Patterns",
+        "url": "https://cses.fi/problemset/task/2103/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Pattern Positions",
+        "url": "https://cses.fi/problemset/task/2104",
+        "kind": "problem"
+      }
+    ]
+  },
+  "strings/suffix-array-lcp": {
+    "title": "Strings -> Suffix Array And LCP",
+    "summary": "Sorted suffix views and LCP arrays for substring order, uniqueness, and offline pattern search.",
+    "topic_path": "topics/strings/suffix-array-lcp/README.md",
+    "ladder_path": "practice/ladders/strings/suffix-array-lcp/README.md",
+    "microtopics": [
+      "doubling",
+      "radix-sort",
+      "kasai",
+      "lcp-array",
+      "substring-order",
+      "pattern-search"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms suffix array",
+        "url": "https://cp-algorithms.com/string/suffix-array.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton suffix arrays",
+        "url": "https://algs4.cs.princeton.edu/63suffix/",
+        "kind": "course"
+      },
+      {
+        "label": "USACO Guide suffix array",
+        "url": "https://usaco.guide/adv/suffix-array?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Suffix Array",
+        "url": "https://judge.yosupo.jp/problem/suffixarray",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker LCP Array",
+        "url": "https://judge.yosupo.jp/problem/lcp_array",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Distinct Substrings",
+        "url": "https://cses.fi/problemset/task/2105/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "strings/suffix-automaton": {
+    "title": "Strings -> Suffix Automaton",
+    "summary": "Compact automaton of all substrings, with endpos classes, clones, and counting applications.",
+    "topic_path": "topics/strings/suffix-automaton/README.md",
+    "ladder_path": "practice/ladders/strings/suffix-automaton/README.md",
+    "microtopics": [
+      "endpos-equivalence",
+      "suffix-links",
+      "clone-states",
+      "distinct-substrings",
+      "occurrence-counts",
+      "kth-substring"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms suffix automaton",
+        "url": "https://cp-algorithms.com/string/suffix-automaton.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide string suffix structures",
+        "url": "https://usaco.guide/adv/string-suffix",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Distinct Substrings",
+        "url": "https://cses.fi/problemset/task/2105/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Substring Order I",
+        "url": "https://cses.fi/problemset/task/2108",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide string suffix structures",
+        "url": "https://usaco.guide/adv/string-suffix",
+        "kind": "problem bank"
+      }
+    ]
+  },
+  "geometry/vector-orientation": {
+    "title": "Geometry -> Vector And Orientation",
+    "summary": "Dot, cross, orientation, signed area, and exact integer geometry as the basis of most planar algorithms.",
+    "topic_path": "topics/geometry/vector-orientation/README.md",
+    "ladder_path": "practice/ladders/geometry/vector-orientation/README.md",
+    "microtopics": [
+      "dot-product",
+      "cross-product",
+      "ccw",
+      "signed-area",
+      "collinearity",
+      "integer-geometry"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms basic geometry",
+        "url": "https://cp-algorithms.com/geometry/basic-geometry.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms oriented area",
+        "url": "https://cp-algorithms.com/geometry/oriented-triangle-area.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton geometric primitives",
+        "url": "https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Point Location Test",
+        "url": "https://cses.fi/problemset/task/2189/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Polygon Area",
+        "url": "https://cses.fi/problemset/task/2191/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Line Segment Intersection",
+        "url": "https://cses.fi/problemset/task/2190",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/segment-intersection": {
+    "title": "Geometry -> Segment Intersection",
+    "summary": "Robust orientation tests, on-segment handling, and degenerate cases for line and segment intersection.",
+    "topic_path": "topics/geometry/segment-intersection/README.md",
+    "ladder_path": "practice/ladders/geometry/segment-intersection/README.md",
+    "microtopics": [
+      "orientation-test",
+      "on-segment",
+      "collinear-overlap",
+      "degeneracies",
+      "integer-robustness",
+      "line-vs-segment"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms segment intersection",
+        "url": "https://cp-algorithms.com/geometry/check-segments-intersection.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Topcoder geometry concepts part 2",
+        "url": "https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/",
+        "kind": "trusted tutorial"
+      },
+      {
+        "label": "Princeton geometric primitives",
+        "url": "https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Line Segment Intersection",
+        "url": "https://cses.fi/problemset/task/2190",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Point in Polygon",
+        "url": "https://cses.fi/problemset/task/2192",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Point Location Test",
+        "url": "https://cses.fi/problemset/task/2189/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/polygon-area-point-location": {
+    "title": "Geometry -> Polygon Area And Point Location",
+    "summary": "Shoelace formula, point-in-polygon logic, and careful boundary handling in planar geometry.",
+    "topic_path": "topics/geometry/polygon-area-point-location/README.md",
+    "ladder_path": "practice/ladders/geometry/polygon-area-point-location/README.md",
+    "microtopics": [
+      "shoelace",
+      "ray-casting",
+      "winding-number",
+      "boundary-handling",
+      "planar-point-location",
+      "simple-polygon"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms area of simple polygon",
+        "url": "https://cp-algorithms.com/geometry/area-of-simple-polygon.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton geometric primitives",
+        "url": "https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf",
+        "kind": "course"
+      },
+      {
+        "label": "cp-algorithms point location",
+        "url": "https://cp-algorithms.com/geometry/point-location.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Polygon Area",
+        "url": "https://cses.fi/problemset/task/2191/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Point in Polygon",
+        "url": "https://cses.fi/problemset/task/2192",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Point Location Test",
+        "url": "https://cses.fi/problemset/task/2189/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/convex-hull": {
+    "title": "Geometry -> Convex Hull",
+    "summary": "Build hulls with monotone chain or Graham scan, then exploit hull order for rotating-calipers style tasks.",
+    "topic_path": "topics/geometry/convex-hull/README.md",
+    "ladder_path": "practice/ladders/geometry/convex-hull/README.md",
+    "microtopics": [
+      "graham-scan",
+      "monotone-chain",
+      "sorting-by-angle",
+      "collinear-points",
+      "upper-lower-hull",
+      "rotating-calipers"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms convex hull",
+        "url": "https://cp-algorithms.com/geometry/convex-hull.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide convex hull",
+        "url": "https://usaco.guide/plat/convex-hull",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Topcoder geometry concepts part 2",
+        "url": "https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/",
+        "kind": "trusted tutorial"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Convex Hull",
+        "url": "https://cses.fi/problemset/task/2195",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide convex hull",
+        "url": "https://usaco.guide/plat/convex-hull",
+        "kind": "problem bank"
+      },
+      {
+        "label": "CSES Polygon Area",
+        "url": "https://cses.fi/problemset/task/2191/",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/sweep-line": {
+    "title": "Geometry -> Sweep Line",
+    "summary": "Sort events and maintain an active structure while a conceptual line moves across the plane.",
+    "topic_path": "topics/geometry/sweep-line/README.md",
+    "ladder_path": "practice/ladders/geometry/sweep-line/README.md",
+    "microtopics": [
+      "event-sorting",
+      "active-set",
+      "closest-pair",
+      "interval-union",
+      "segment-intersections",
+      "range-counting"
+    ],
+    "learning_sources": [
+      {
+        "label": "Topcoder line sweep algorithms",
+        "url": "https://www.topcoder.com/thrive/articles/Line%20Sweep%20Algorithms",
+        "kind": "trusted tutorial"
+      },
+      {
+        "label": "USACO Guide sweep line",
+        "url": "https://usaco.guide/plat/sweep-line?lang=cpp",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Intersection Points",
+        "url": "https://cses.fi/problemset/task/1740",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Minimum Euclidean Distance",
+        "url": "https://cses.fi/problemset/task/2194/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Area of Rectangles",
+        "url": "https://cses.fi/problemset/task/1741",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/counting-geometry": {
+    "title": "Geometry -> Counting Geometry",
+    "summary": "Count intersections, lattice points, or union areas by mixing geometry primitives with combinatorics and data structures.",
+    "topic_path": "topics/geometry/counting-geometry/README.md",
+    "ladder_path": "practice/ladders/geometry/counting-geometry/README.md",
+    "microtopics": [
+      "Pick-theorem",
+      "lattice-points",
+      "intersection-counting",
+      "union-area",
+      "coordinate-compression",
+      "fenwick-or-segtree"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Pick's theorem",
+        "url": "https://cp-algorithms.com/geometry/picks-theorem.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms lattice points",
+        "url": "https://cp-algorithms.com/geometry/lattice-points.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide range queries with sweep line",
+        "url": "https://usaco.guide/plat/range-sweep",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Polygon Lattice Points",
+        "url": "https://cses.fi/problemset/task/2193/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Intersection Points",
+        "url": "https://cses.fi/problemset/task/1740",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Area of Rectangles",
+        "url": "https://cses.fi/problemset/task/1741",
+        "kind": "problem"
+      }
+    ]
+  },
+  "geometry/right-triangles": {
+    "title": "Geometry -> Right Triangles",
+    "summary": "A focused counting-geometry subtopic around perpendicular vectors, normalized slopes, and pivot-based counting.",
+    "topic_path": "topics/geometry/counting-geometry/README.md",
+    "ladder_path": "practice/ladders/geometry/right-triangles/README.md",
+    "microtopics": [
+      "right-angle detection",
+      "normalized-slope",
+      "perpendicular-vectors",
+      "pivot-counting",
+      "integer-geometry",
+      "direction-bucketing"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms basic geometry",
+        "url": "https://cp-algorithms.com/geometry/basic-geometry.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms oriented area",
+        "url": "https://cp-algorithms.com/geometry/oriented-triangle-area.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Princeton geometric primitives",
+        "url": "https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Point Location Test",
+        "url": "https://cses.fi/problemset/task/2189/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Polygon Area",
+        "url": "https://cses.fi/problemset/task/2191/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "greedy/prefix-constraints": {
+    "title": "Greedy -> Prefix Constraints",
+    "summary": "Greedy selection under prefix or feasibility quotas, usually proved with exchange arguments and heap maintenance.",
+    "topic_path": "",
+    "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
+    "microtopics": [
+      "prefix-quota",
+      "feasible-prefix",
+      "heap-greedy",
+      "exchange-proof",
+      "offline-selection",
+      "representative-reconstruction"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki greedy",
+        "url": "https://en.oi-wiki.org/basic/greedy/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Principles of Algorithmic Problem Solving",
+        "url": "https://usaco.guide/PAPS.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "advanced/constructive": {
+    "title": "Advanced -> Constructive",
+    "summary": "Output-sensitive problems where the main work is proving the existence and structure of a valid construction.",
+    "topic_path": "topics/advanced/constructive/README.md",
+    "ladder_path": "practice/ladders/advanced/constructive/README.md",
+    "microtopics": [
+      "invariants",
+      "parity-constructions",
+      "extremal-arguments",
+      "witness-building",
+      "greedy-construction",
+      "output-sensitive-construction",
+      "case-splits",
+      "existence-proofs"
+    ],
+    "learning_sources": [
+      {
+        "label": "IOI Syllabus 2025",
+        "url": "https://ioinformatics.org/files/ioi-syllabus-2025.pdf",
+        "kind": "official curriculum"
+      },
+      {
+        "label": "Tips on Constructive Algorithms",
+        "url": "https://codeforces.com/blog/entry/80317",
+        "kind": "trusted tutorial"
+      },
+      {
+        "label": "CSES books",
+        "url": "https://www.cses.fi/book/index.html",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces constructive algorithms tag",
+        "url": "https://codeforces.com/problemset?locale=en&tags=constructive+algorithms",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "BOI task archive",
+        "url": "https://boi.cses.fi/tasks.php",
+        "kind": "contest archive"
+      }
+    ]
+  },
+  "advanced/randomized-algorithms": {
+    "title": "Advanced -> Randomized Algorithms",
+    "summary": "Monte Carlo and Las Vegas design, amplification, randomized rounding, and probability-backed correctness guarantees.",
+    "topic_path": "topics/advanced/randomized-algorithms/README.md",
+    "ladder_path": "practice/ladders/advanced/randomized-algorithms/README.md",
+    "microtopics": [
+      "Las-Vegas",
+      "Monte-Carlo",
+      "amplification",
+      "concentration-bounds",
+      "universal-hashing",
+      "min-cut",
+      "randomized-rounding",
+      "Yao-minimax"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.856 Randomized Algorithms",
+        "url": "https://courses.csail.mit.edu/6.856/current/",
+        "kind": "course"
+      },
+      {
+        "label": "MIT OCW 6.856J",
+        "url": "https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/",
+        "kind": "course"
+      },
+      {
+        "label": "CMU 15-756 Randomized Algorithms",
+        "url": "https://csd.cs.cmu.edu/course/15756/f24",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "MIT 6.856 notes and problem sets",
+        "url": "https://courses.csail.mit.edu/6.856/current/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "MIT OCW 6.856J lecture notes",
+        "url": "https://www.ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/resources/lecture-notes/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "CMU 15-359 Probability and Computing",
+        "url": "https://www.csd.cmu.edu/course/15359/f24",
+        "kind": "course exercises"
+      }
+    ]
+  },
+  "advanced/algorithm-engineering": {
+    "title": "Advanced -> Algorithm Engineering",
+    "summary": "Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, and reproducible measurements.",
+    "topic_path": "topics/advanced/algorithm-engineering/README.md",
+    "ladder_path": "practice/ladders/advanced/algorithm-engineering/README.md",
+    "microtopics": [
+      "benchmarking",
+      "profiling",
+      "cache-locality",
+      "SIMD",
+      "memory-hierarchy",
+      "external-memory",
+      "parallelism",
+      "reproducibility"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.506 Algorithm Engineering",
+        "url": "https://people.csail.mit.edu/jshun/6506-s23/",
+        "kind": "course"
+      },
+      {
+        "label": "MIT OCW 6.5060",
+        "url": "https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/",
+        "kind": "course"
+      },
+      {
+        "label": "TU/e Algorithms Engineering",
+        "url": "https://research.tue.nl/en/courses/algorithms-engineering/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "PBBS benchmark suite",
+        "url": "https://www.cs.cmu.edu/~pbbs/",
+        "kind": "benchmark suite"
+      },
+      {
+        "label": "Sort Benchmark",
+        "url": "https://sortbenchmark.org/",
+        "kind": "benchmark suite"
+      },
+      {
+        "label": "AtCoder Introduction to Heuristics",
+        "url": "https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a",
+        "kind": "practice"
+      }
+    ]
+  },
+  "advanced/complexity-and-hardness": {
+    "title": "Advanced -> Complexity And Hardness",
+    "summary": "Reductions, hardness classes, and the language for understanding when exact efficient algorithms are unlikely.",
+    "topic_path": "topics/advanced/complexity-and-hardness/README.md",
+    "ladder_path": "practice/ladders/advanced/complexity-and-hardness/README.md",
+    "microtopics": [
+      "reductions",
+      "NP-completeness",
+      "hardness-vs-completeness",
+      "lower-bounds",
+      "P-NP-EXP-BPP",
+      "decision-vs-optimization",
+      "approximation-barriers"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 18.404J Theory of Computation",
+        "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/",
+        "kind": "course"
+      },
+      {
+        "label": "Computational Complexity: A Modern Approach",
+        "url": "https://theory.cs.princeton.edu/complexity/",
+        "kind": "textbook"
+      },
+      {
+        "label": "MIT 6.006 Lecture 19 Complexity",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-19-complexity/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "MIT 18.404J assignments and exams",
+        "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "MIT 6.045J",
+        "url": "https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "Princeton textbook exercises",
+        "url": "https://theory.cs.princeton.edu/complexity/",
+        "kind": "course exercises"
+      }
+    ]
+  },
+  "advanced/approximation-and-relaxation": {
+    "title": "Advanced -> Approximation And Relaxation",
+    "summary": "Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary between exact and near-optimal algorithms.",
+    "topic_path": "topics/advanced/approximation-and-relaxation/README.md",
+    "ladder_path": "practice/ladders/advanced/approximation-and-relaxation/README.md",
+    "microtopics": [
+      "approximation-ratio",
+      "LP-relaxation",
+      "SDP-relaxation",
+      "randomized-rounding",
+      "primal-dual-method",
+      "integrality-gap",
+      "local-search",
+      "inapproximability"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT 6.854 approximation algorithms",
+        "url": "https://ocw.mit.edu/courses/6-854j-advanced-algorithms-fall-2008/resources/lect11_07/",
+        "kind": "course"
+      },
+      {
+        "label": "CMU 15-854 Approximation Algorithms",
+        "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15854-f05/www/",
+        "kind": "course"
+      },
+      {
+        "label": "Williamson-Shmoys",
+        "url": "https://www.cambridge.org/core/books/design-of-approximation-algorithms/88E0AEAEFF2382681A103EEA572B83C6",
+        "kind": "textbook"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CMU 15-854 notes and homeworks",
+        "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15854-f05/www/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "MIT 6.854 problem sets",
+        "url": "https://courses.csail.mit.edu/6.854/16/",
+        "kind": "course exercises"
+      },
+      {
+        "label": "CMU 15-854B",
+        "url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/",
+        "kind": "course exercises"
+      }
+    ]
+  },
+  "advanced/optimization-and-duality": {
+    "title": "Advanced -> Optimization And Duality",
+    "summary": "LP duality, convex relaxation, and the optimization language that later feeds into flow, DP tricks, and aliens-style reasoning.",
+    "topic_path": "topics/advanced/optimization-and-duality/README.md",
+    "ladder_path": "practice/ladders/advanced/optimization-and-duality/README.md",
+    "microtopics": [
+      "LP-duality",
+      "complementary-slackness",
+      "convex-relaxation",
+      "Lagrangian-relaxation",
+      "KKT-conditions",
+      "subgradient-methods",
+      "primal-dual-schema",
+      "aliens-trick"
+    ],
+    "learning_sources": [
+      {
+        "label": "Stanford EE364a",
+        "url": "https://web.stanford.edu/class/ee364a/",
+        "kind": "course"
+      },
+      {
+        "label": "Boyd-Vandenberghe Convex Optimization",
+        "url": "https://stanford.edu/~boyd/cvxbook/",
+        "kind": "textbook"
+      },
+      {
+        "label": "Stanford CS261",
+        "url": "https://theory.stanford.edu/~tim/cs261/cs261.html",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "EE364a duality notes",
+        "url": "https://web.stanford.edu/class/ee364a/lectures/duality.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "EE364b",
+        "url": "https://web.stanford.edu/class/ee364b",
+        "kind": "course"
+      },
+      {
+        "label": "MS&E 310 Conic Linear Optimization",
+        "url": "https://web.stanford.edu/class/msande310/course.shtml",
+        "kind": "course"
+      }
+    ]
+  },
+  "advanced/contest-engineering": {
+    "title": "Advanced -> Contest Engineering",
+    "summary": "Operational discipline for contests: local testing, checkers, interactive handling, notebook curation, and environment parity.",
+    "topic_path": "topics/advanced/contest-engineering/README.md",
+    "ladder_path": "practice/ladders/advanced/contest-engineering/README.md",
+    "microtopics": [
+      "stress-testing",
+      "local-judging",
+      "interactive-io",
+      "checkers-graders",
+      "notebook-templates",
+      "build-flags",
+      "profiling",
+      "submission-workflow"
+    ],
+    "learning_sources": [
+      {
+        "label": "ICPC World Finals Programming Environment",
+        "url": "https://docs.icpc.global/worldfinals-programming-environment/",
+        "kind": "official docs"
+      },
+      {
+        "label": "ICPC Tools",
+        "url": "https://tools.icpc.global/",
+        "kind": "official docs"
+      },
+      {
+        "label": "ICPC Contest Utilities",
+        "url": "https://tools.icpc.global/contest-utils/",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "ICPC Foundation Problem Archive",
+        "url": "https://foundation.icpc.global/archive/",
+        "kind": "contest archive"
+      },
+      {
+        "label": "AtCoder Introduction to Heuristics",
+        "url": "https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a",
+        "kind": "practice"
+      },
+      {
+        "label": "IOI tasks archive",
+        "url": "https://stats.ioinformatics.org/tasks/",
+        "kind": "contest archive"
+      }
+    ]
+  }
+}

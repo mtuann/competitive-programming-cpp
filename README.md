@@ -35,6 +35,9 @@ Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages.
 
 - [Topics](topics/README.md): concise teaching pages and area hubs
 - [Practice](practice/README.md): topic-first ladders, mixed rounds, and contest playbooks
+- [Problem Index](docs/problem-index.md): current solved problem notes mapped back to their learning hubs
+- [External Problem Index](docs/external-problem-index.md): curated official and trusted problems grouped by topic, microtopic, and contest track
+- [Topic Maps](docs/topic-maps/index.md): trusted learning sources, official practice sources, and repo coverage for each subtopic
 - [Templates](template-library.md): reusable contest-ready code
 - [Notebook](notebook/README.md): dense reference material for contest use
 - [Source Map](docs/source-map.md): the research appendix behind the curriculum choices
