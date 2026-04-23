@@ -1,5 +1,9 @@
 # Inclusion-Exclusion Ladder
 
+## Who This Is For
+
+Use this ladder when you can already do direct constructive counting, but overlapping forbidden conditions are starting to defeat simpler casework.
+
 ## Warm-Up
 
 - one forbidden set
@@ -14,9 +18,19 @@
 
 - combine with bitmask DP or number theory
 
+## Exit Criteria
+
+You are ready to move on when you can:
+
+- write the sign pattern without hesitation
+- define what each subset means
+- compute an intersection size cleanly
+- tell when inclusion-exclusion is overkill and a direct count is simpler
+
 ## External Practice
 
 - [CP-Algorithms - Inclusion-Exclusion Principle](https://cp-algorithms.com/combinatorics/inclusion-exclusion.html)
+- [USACO Guide - PIE](https://usaco.guide/plat/PIE?lang=cpp)
 
 ## Tutorial Link
 
