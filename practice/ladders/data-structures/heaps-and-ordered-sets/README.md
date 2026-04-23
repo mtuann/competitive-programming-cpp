@@ -1,9 +1,23 @@
 # Heaps And Ordered Sets Ladder
 
+This ladder is about operation choice: learn to pick heap, set, or multiset from what the problem needs, not from whatever container you used last.
+
+## Who This Is For
+
+Use this ladder if:
+
+- you know the syntax, but still choose the wrong structure
+- duplicates and stale values still trip you up
+- active-set problems feel ad hoc
+
 ## Warm-Up
 
 - current minimum / maximum maintenance
 - scheduling with a heap
+
+Target skill:
+
+- recognize when “only the best candidate matters”
 
 ## Core
 
@@ -11,14 +25,33 @@
 - sliding median style maintenance
 - predecessor / successor queries
 
+Target skill:
+
+- reason from operations: insert, erase, top, predecessor, successor, duplicates
+
 ## Stretch
 
 - lazy deletion patterns
 - compare heap and set solutions on the same task
+- decide when PBDS or order-statistics logic is actually needed
+
+Target skill:
+
+- avoid overengineering while still choosing the right dynamic ordered structure
+
+## Exit Criteria
+
+You are ready to move on when:
+
+- you know when `multiset` is required
+- you can explain why lazy deletion is often the easiest heap cleanup strategy
+- you no longer use ordered sets when a plain heap is enough
 
 ## External Practice
 
 - [CSES Sorting and Searching](https://cses.fi/problemset/)
+- [USACO Guide](https://usaco.guide/)
+- [CPPReference](https://en.cppreference.com/w/)
 
 ## Tutorial Link
 
