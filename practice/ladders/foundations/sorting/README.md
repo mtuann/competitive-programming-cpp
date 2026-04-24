@@ -35,6 +35,16 @@ Target skill:
 
 - [Movie Festival](moviefestival.md): the clean internal anchor for greedy-after-sorting plus exchange-argument reasoning.
 
+## Repo Anchors
+
+- [Movie Festival](moviefestival.md)
+- [Ferris Wheel](ferriswheel.md)
+
+Those two notes complement each other well:
+
+- `Movie Festival` shows finish-time ordering plus exchange-argument greedy
+- `Ferris Wheel` shows sorting as the setup for an opposite-end scan
+
 ## Stretch
 
 - comparator-heavy problems with careful tie rules

@@ -14,6 +14,16 @@ Use this ladder when prefix-match problems keep showing up and you want a cleane
 - prefix-match reasoning
 - periodicity and borders
 
+## Repo Anchors
+
+- [String Functions](stringfunctions.md)
+- [Finding Periods](findingperiods.md)
+
+These two notes give a nice progression:
+
+- `String Functions` stabilizes the Z-array mechanics
+- `Finding Periods` turns that array into a real structure-detection tool
+
 ## Exit Criteria
 
 You are ready to move on when you can:

@@ -64,6 +64,7 @@ If you want the first internal notes to open in this section, start with:
 - [Distinct Numbers](stl/distinctnumbers.md)
 - [Increasing Array](complexity-and-invariants/increasingarray.md)
 - [Movie Festival](sorting/moviefestival.md)
+- [Ferris Wheel](sorting/ferriswheel.md)
 - [Factory Machines](binary-search/factorymachines.md)
 - [Static Range Sum Queries](prefix-sums/staticrangesumqueries.md)
 - [Apartments](two-pointers/apartments.md)

@@ -93,9 +93,10 @@ If you want actual internal notes instead of only theory pages, start with:
 2. [Distinct Numbers](../../practice/ladders/foundations/stl/distinctnumbers.md)
 3. [Increasing Array](../../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
 4. [Movie Festival](../../practice/ladders/foundations/sorting/moviefestival.md)
-5. [Factory Machines](../../practice/ladders/foundations/binary-search/factorymachines.md)
-6. [Static Range Sum Queries](../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
-7. [Apartments](../../practice/ladders/foundations/two-pointers/apartments.md)
+5. [Ferris Wheel](../../practice/ladders/foundations/sorting/ferriswheel.md)
+6. [Factory Machines](../../practice/ladders/foundations/binary-search/factorymachines.md)
+7. [Static Range Sum Queries](../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+8. [Apartments](../../practice/ladders/foundations/two-pointers/apartments.md)
 
 That order gives a smoother beginner climb than jumping straight into harder multi-pattern tasks.
 

@@ -687,6 +687,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp"
   },
   {
+    "code": "FERRISWHEEL",
+    "title": "Ferris Wheel",
+    "full_title": "Ferris Wheel",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1090",
+    "main_topic": "Foundations -> Sorting",
+    "secondary_topics": [
+      "Opposite-end two pointers",
+      "Greedy pairing",
+      "Lightest-heaviest matching"
+    ],
+    "difficulty": "easy-medium",
+    "status": "solved",
+    "primary_slug": "foundations/sorting",
+    "topic_tags": [
+      "foundations/sorting",
+      "foundations/two-pointers"
+    ],
+    "patterns": [
+      "opposite end pointers",
+      "greedy pairing",
+      "sorted capacity matching"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/sorting/ferriswheel.md",
+    "ladder_path": "practice/ladders/foundations/sorting/README.md",
+    "tutorial_path": "topics/foundations/patterns/sorting/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/ferriswheel.cpp"
+  },
+  {
     "code": "MOVIEFESTIVAL",
     "title": "Movie Festival",
     "full_title": "Movie Festival",
@@ -1802,6 +1835,39 @@
     "ladder_path": "practice/ladders/strings/trie/README.md",
     "tutorial_path": "topics/strings/trie/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp"
+  },
+  {
+    "code": "FINDINGPERIODS",
+    "title": "Finding Periods",
+    "full_title": "Finding Periods",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1733",
+    "main_topic": "Strings -> Z-Function",
+    "secondary_topics": [
+      "String periodicity",
+      "Prefix alignment",
+      "Suffix covered by prefix"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "strings/z-function",
+    "topic_tags": [
+      "strings/z-function",
+      "strings/kmp"
+    ],
+    "patterns": [
+      "period detection",
+      "z function prefix matches",
+      "suffix prefix coverage"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/z-function/findingperiods.md",
+    "ladder_path": "practice/ladders/strings/z-function/README.md",
+    "tutorial_path": "topics/strings/z-function/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/findingperiods.cpp"
   },
   {
     "code": "STRINGFUNCTIONS",

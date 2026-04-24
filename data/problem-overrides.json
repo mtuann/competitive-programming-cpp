@@ -189,6 +189,20 @@
       "Sorting and searching"
     ]
   },
+  "FERRISWHEEL": {
+    "topic_tags": [
+      "foundations/two-pointers"
+    ],
+    "patterns": [
+      "opposite end pointers",
+      "greedy pairing",
+      "sorted capacity matching"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ]
+  },
   "APARTMENTS": {
     "topic_tags": [
       "foundations/sorting"
@@ -237,6 +251,20 @@
       "aho-corasick automaton",
       "failure links",
       "multi-pattern presence queries"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
+  "FINDINGPERIODS": {
+    "topic_tags": [
+      "strings/kmp"
+    ],
+    "patterns": [
+      "period detection",
+      "z function prefix matches",
+      "suffix prefix coverage"
     ],
     "tracks": [
       "CSES",

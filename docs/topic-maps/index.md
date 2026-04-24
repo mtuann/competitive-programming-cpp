@@ -9,9 +9,9 @@ These pages collect trusted learning sources, official practice sources, repo co
 | Foundations -> C++ Language | 2 | 3 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 1 | 0 | 5 | [Open](foundations/difference-arrays.md) |
 | Foundations -> Prefix Sums | 2 | 3 | 6 | [Open](foundations/prefix-sums.md) |
-| Foundations -> Sorting | 3 | 0 | 7 | [Open](foundations/sorting.md) |
+| Foundations -> Sorting | 4 | 0 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
-| Foundations -> Two Pointers | 3 | 3 | 6 | [Open](foundations/two-pointers.md) |
+| Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
 | Data Structures -> DSU | 2 | 0 | 5 | [Open](data-structures/dsu.md) |
 | Data Structures -> Fenwick Tree | 3 | 0 | 6 | [Open](data-structures/fenwick-tree.md) |
 | Data Structures -> Heaps And Ordered Sets | 1 | 2 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
@@ -49,11 +49,11 @@ These pages collect trusted learning sources, official practice sources, repo co
 | Combinatorics -> Lexicographic Enumeration | 1 | 0 | 7 | [Open](combinatorics/lexicographic-enumeration.md) |
 | Strings -> Aho-Corasick | 1 | 0 | 7 | [Open](strings/aho-corasick.md) |
 | Strings -> Hashing | 1 | 0 | 7 | [Open](strings/hashing.md) |
-| Strings -> KMP | 2 | 0 | 5 | [Open](strings/kmp.md) |
+| Strings -> KMP | 3 | 0 | 5 | [Open](strings/kmp.md) |
 | Strings -> Suffix Array And LCP | 2 | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 1 | 0 | 8 | [Open](strings/suffix-automaton.md) |
 | Strings -> Trie | 2 | 0 | 5 | [Open](strings/trie.md) |
-| Strings -> Z-Function | 1 | 0 | 5 | [Open](strings/z-function.md) |
+| Strings -> Z-Function | 2 | 0 | 5 | [Open](strings/z-function.md) |
 | Geometry -> Convex Hull | 1 | 0 | 6 | [Open](geometry/convex-hull.md) |
 | Geometry -> Counting Geometry | 1 | 0 | 6 | [Open](geometry/counting-geometry.md) |
 | Geometry -> Polygon Area And Point Location | 3 | 2 | 4 | [Open](geometry/polygon-area-point-location.md) |

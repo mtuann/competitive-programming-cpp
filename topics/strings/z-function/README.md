@@ -53,6 +53,10 @@ Template in this repo:
 
 - [z-function.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/z-function.cpp)
 
+Notebook:
+
+- [String cheatsheet](../../../notebook/string-cheatsheet.md)
+
 Standard workflow:
 
 1. initialize `l = r = 0`
@@ -79,6 +83,11 @@ The Z array directly tells how strongly the prefix appears at every shift.
 Example 3: detecting periodic structure
 
 If `i + z[i] = n` and `n % i = 0`, then `i` is a candidate period.
+
+Repo anchors:
+
+- [String Functions](../../../practice/ladders/strings/z-function/stringfunctions.md)
+- [Finding Periods](../../../practice/ladders/strings/z-function/findingperiods.md)
 
 ## Recognition Cues
 

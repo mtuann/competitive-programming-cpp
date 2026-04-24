@@ -127,6 +127,19 @@ Before trusting a custom comparator, ask:
 
 If the proof depends on a tie rule, make that rule explicit in code instead of leaving equal keys unspecified.
 
+## Newbie Retrieval Layer
+
+If you feel "I can sort, but I still do not see why sorting solves the problem", use this path:
+
+- [Sorting ladder](../../../../practice/ladders/foundations/sorting/README.md)
+- [Movie Festival](../../../../practice/ladders/foundations/sorting/moviefestival.md)
+- [Ferris Wheel](../../../../practice/ladders/foundations/sorting/ferriswheel.md)
+
+That trio covers the two most common beginner wins:
+
+- sorting to justify a greedy choice
+- sorting to unlock a clean two-pointer scan
+
 ## Standard Patterns
 
 ### 1. Greedy After Sorting

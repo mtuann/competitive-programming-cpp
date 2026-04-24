@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `56`
+- Total tracked problem notes: `58`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -13,14 +13,14 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Area | Count |
 | --- | ---: |
-| Foundations | 9 |
+| Foundations | 10 |
 | Data Structures | 6 |
 | Graphs | 13 |
 | DP | 7 |
 | Greedy | 1 |
 | Math | 4 |
 | Combinatorics | 2 |
-| Strings | 7 |
+| Strings | 8 |
 | Geometry | 6 |
 | Advanced | 1 |
 
@@ -35,6 +35,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `MISSINGNUMBER` | Missing Number | `Foundations -> C++ Language` | - | running total subtraction; arithmetic series sum; type safe warm-up | `easy` | CSES, Introductory problems | [Map](topic-maps/foundations/cpp-language.md) / [Ladder](../practice/ladders/foundations/cpp-language/README.md) / [Tutorial](../topics/foundations/cpp-language/README.md) | [Note](../practice/ladders/foundations/cpp-language/missingnumber.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/missingnumber.cpp) |
 | `RANGEUPDATEQUERIES` | Range Update Queries | `Foundations -> Difference Arrays` | Data Structures -> Fenwick Tree | difference array updates; fenwick on diff; range add point query | `medium` | CSES, Range queries | [Map](topic-maps/foundations/difference-arrays.md) / [Ladder](../practice/ladders/foundations/difference-arrays/README.md) / [Tutorial](../topics/foundations/patterns/difference-arrays/README.md) | [Note](../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp) |
 | `STATICRANGESUMQUERIES` | Static Range Sum Queries | `Foundations -> Prefix Sums` | - | prefix sum build; range sum by subtraction; immutable array queries | `easy` | CSES, Range queries | [Map](topic-maps/foundations/prefix-sums.md) / [Ladder](../practice/ladders/foundations/prefix-sums/README.md) / [Tutorial](../topics/foundations/patterns/prefix-sums/README.md) | [Note](../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp) |
+| `FERRISWHEEL` | Ferris Wheel | `Foundations -> Sorting` | Foundations -> Two Pointers | opposite end pointers; greedy pairing; sorted capacity matching | `easy-medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/sorting.md) / [Ladder](../practice/ladders/foundations/sorting/README.md) / [Tutorial](../topics/foundations/patterns/sorting/README.md) | [Note](../practice/ladders/foundations/sorting/ferriswheel.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/ferriswheel.cpp) |
 | `MOVIEFESTIVAL` | Movie Festival | `Foundations -> Sorting` | Foundations -> Complexity And Invariants | finish-time sorting; interval scheduling; exchange argument greedy | `easy` | CSES, Sorting and searching | [Map](topic-maps/foundations/sorting.md) / [Ladder](../practice/ladders/foundations/sorting/README.md) / [Tutorial](../topics/foundations/patterns/sorting/README.md) | [Note](../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
 | `DISTINCTNUMBERS` | Distinct Numbers | `Foundations -> STL Basics` | Foundations -> C++ Language | sort unique; container deduplication; stl algorithms | `easy` | CSES, Sorting and searching | [Map](topic-maps/foundations/stl.md) / [Ladder](../practice/ladders/foundations/stl/README.md) / [Tutorial](../topics/foundations/cpp-language/README.md) | [Note](../practice/ladders/foundations/stl/distinctnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp) |
 | `APARTMENTS` | Apartments | `Foundations -> Two Pointers` | Foundations -> Sorting | two sorted pointers; tolerance matching; greedy monotone scan | `easy-medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/two-pointers.md) / [Ladder](../practice/ladders/foundations/two-pointers/README.md) / [Tutorial](../topics/foundations/patterns/two-pointers/README.md) | [Note](../practice/ladders/foundations/two-pointers/apartments.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/apartments.cpp) |
@@ -113,6 +114,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `REPEATINGSUBSTRING` | Repeating Substring | `Strings -> Suffix Array And LCP` | - | suffix array doubling; kasai lcp; maximum adjacent lcp | `medium` | CSES, String algorithms | [Map](topic-maps/strings/suffix-array-lcp.md) / [Ladder](../practice/ladders/strings/suffix-array-lcp/README.md) / [Tutorial](../topics/strings/suffix-array-lcp/README.md) | [Note](../practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp) |
 | `DISTINCTSUBSTRINGS` | Distinct Substrings | `Strings -> Suffix Automaton` | Strings -> Suffix Array And LCP | suffix automaton construction; clone states; state contribution counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/suffix-automaton.md) / [Ladder](../practice/ladders/strings/suffix-automaton/README.md) / [Tutorial](../topics/strings/suffix-automaton/README.md) | [Note](../practice/ladders/strings/suffix-automaton/distinctsubstrings.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp) |
 | `WORDCOMBINATIONS` | Word Combinations | `Strings -> Trie` | - | trie plus dp; dictionary segmentation; suffix counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/trie.md) / [Ladder](../practice/ladders/strings/trie/README.md) / [Tutorial](../topics/strings/trie/README.md) | [Note](../practice/ladders/strings/trie/wordcombinations.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp) |
+| `FINDINGPERIODS` | Finding Periods | `Strings -> Z-Function` | Strings -> KMP | period detection; z function prefix matches; suffix prefix coverage | `easy` | CSES, String algorithms | [Map](topic-maps/strings/z-function.md) / [Ladder](../practice/ladders/strings/z-function/README.md) / [Tutorial](../topics/strings/z-function/README.md) | [Note](../practice/ladders/strings/z-function/findingperiods.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/findingperiods.cpp) |
 | `STRINGFUNCTIONS` | String Functions | `Strings -> Z-Function` | Strings -> KMP | z function; prefix function; prefix structure diagnostics | `easy` | CSES, String algorithms | [Map](topic-maps/strings/z-function.md) / [Ladder](../practice/ladders/strings/z-function/README.md) / [Tutorial](../topics/strings/z-function/README.md) | [Note](../practice/ladders/strings/z-function/stringfunctions.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/stringfunctions.cpp) |
 
 ### Geometry
