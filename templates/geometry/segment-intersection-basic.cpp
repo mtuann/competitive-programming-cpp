@@ -3,6 +3,7 @@
 // Complexity: O(1).
 
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -48,4 +49,9 @@ bool segments_intersect(const Point &a, const Point &b, const Point &c, const Po
     if (cd_b == 0 && on_segment(c, d, b)) return true;
 
     return ab_c * ab_d < 0 && cd_a * cd_b < 0;
+}
+
+int main() {
+    cout << segments_intersect({0, 0}, {4, 4}, {0, 4}, {4, 0}) << '\n';
+    return 0;
 }

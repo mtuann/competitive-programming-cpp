@@ -2,6 +2,8 @@
 // Invariant: vertices are in boundary order; twice_signed_area() is positive for CCW order.
 // Complexity: O(n).
 
+#include <iomanip>
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -27,4 +29,15 @@ long double polygon_area(const vector<Point> &poly) {
     i128 area2 = twice_signed_area(poly);
     if (area2 < 0) area2 = -area2;
     return static_cast<long double>(area2) / 2.0L;
+}
+
+int main() {
+    vector<Point> poly = {
+        {0, 0},
+        {4, 0},
+        {4, 4},
+        {0, 4}
+    };
+    cout << fixed << setprecision(1) << polygon_area(poly) << '\n';
+    return 0;
 }

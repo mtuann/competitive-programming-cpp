@@ -418,7 +418,11 @@ So scanning another string through the automaton is the substring analogue of "r
 
 ## Algorithm And Pseudocode
 
-There is not yet a dedicated `templates/strings/suffix-automaton.cpp` starter in this repo, so the best current anchor implementation is:
+Repo starter template:
+
+- [suffix-automaton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-automaton.cpp)
+
+Best practice anchor for a full solved note:
 
 - [distinctsubstrings.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp)
 
@@ -663,6 +667,7 @@ Repo anchors:
 
 - practice ladder: [Suffix Automaton ladder](../../../practice/ladders/strings/suffix-automaton/README.md)
 - practice note: [Distinct Substrings](../../../practice/ladders/strings/suffix-automaton/distinctsubstrings.md)
+- starter template: [suffix-automaton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-automaton.cpp)
 - starter example: [distinctsubstrings.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp)
 - notebook refresher: [String cheatsheet](../../../notebook/string-cheatsheet.md)
 

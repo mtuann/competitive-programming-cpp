@@ -2,6 +2,7 @@
 // Invariant: mod is prime and every query satisfies 0 <= k <= n <= max_n < mod.
 // Complexity: build O(max_n + log mod), query O(1).
 
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -40,3 +41,10 @@ struct Comb {
         return fact[n] * inv_fact[k] % mod * inv_fact[n - k] % mod;
     }
 };
+
+int main() {
+    const long long MOD = 1000000007LL;
+    Comb comb(5, MOD);
+    cout << comb.binom(5, 2) << '\n';
+    return 0;
+}

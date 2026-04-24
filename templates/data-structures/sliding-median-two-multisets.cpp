@@ -2,6 +2,7 @@
 // Invariant: lo stores the smaller half, hi the larger half, |lo| = |hi| or |lo| = |hi| + 1, and every lo <= every hi.
 // Complexity: O(log n) per add/erase, O(1) for the lower median.
 
+#include <iostream>
 #include <iterator>
 #include <set>
 #include <vector>
@@ -68,4 +69,13 @@ vector<T> sliding_median(const vector<T> &a, int k) {
         }
     }
     return medians;
+}
+
+int main() {
+    vector<int> a = {1, 3, -1, -3, 5, 3, 6, 7};
+    vector<int> medians = sliding_median(a, 3);
+    for (int i = 0; i < static_cast<int>(medians.size()); ++i) {
+        cout << medians[i] << (i + 1 == static_cast<int>(medians.size()) ? '\n' : ' ');
+    }
+    return 0;
 }

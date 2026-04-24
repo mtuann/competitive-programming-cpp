@@ -3,6 +3,7 @@
 // Complexity: O(n).
 
 #include <algorithm>
+#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -48,4 +49,17 @@ int point_in_polygon(const vector<Point> &poly, const Point &p) {
         }
     }
     return inside ? 2 : 0;
+}
+
+int main() {
+    vector<Point> poly = {
+        {0, 0},
+        {4, 0},
+        {4, 4},
+        {0, 4}
+    };
+    cout << point_in_polygon(poly, {2, 2}) << '\n';
+    cout << point_in_polygon(poly, {4, 2}) << '\n';
+    cout << point_in_polygon(poly, {5, 2}) << '\n';
+    return 0;
 }

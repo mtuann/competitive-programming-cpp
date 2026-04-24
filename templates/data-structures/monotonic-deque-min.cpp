@@ -3,6 +3,7 @@
 // Complexity: amortized O(1) per push/expire, O(1) to read the minimum.
 
 #include <deque>
+#include <iostream>
 #include <utility>
 #include <vector>
 
@@ -49,4 +50,13 @@ vector<T> sliding_window_min(const vector<T> &a, int k) {
         }
     }
     return mins;
+}
+
+int main() {
+    vector<int> a = {1, 3, -1, -3, 5, 3, 6, 7};
+    vector<int> mins = sliding_window_min(a, 3);
+    for (int i = 0; i < static_cast<int>(mins.size()); ++i) {
+        cout << mins[i] << (i + 1 == static_cast<int>(mins.size()) ? '\n' : ' ');
+    }
+    return 0;
 }

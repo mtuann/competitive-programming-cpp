@@ -444,8 +444,7 @@ Repo starter templates:
 - [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
 - [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
-
-There is not yet a dedicated Floyd-Warshall starter template in this repo.
+- [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp)
 
 ### BFS
 
@@ -648,6 +647,7 @@ Repo anchors:
 - starter template: [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - starter template: [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
 - starter template: [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
+- starter template: [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp)
 - notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
 ## Related Topics

@@ -321,9 +321,10 @@ This is valuable because it teaches a healthy boundary:
 
 ## Algorithm And Pseudocode
 
-Repo starter template:
+Repo starter templates:
 
 - [tree-dp-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-subtree.cpp)
+- [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp)
 
 ### Generic Postorder Tree DP
 
@@ -517,6 +518,7 @@ Repo anchors:
 - practice note: [Tree Matching](../../../practice/ladders/dp/tree-dp/treematching.md)
 - practice note: [VOSTRIP](../../../practice/ladders/graphs/tree-dp/vostrip.md)
 - starter template: [tree-dp-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-subtree.cpp)
+- starter template: [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp)
 - notebook refresher: [DP cheatsheet](../../../notebook/dp-cheatsheet.md)
 
 ## Related Topics

@@ -3,6 +3,7 @@
 // Complexity: O(log(min(|a|, |b|))).
 
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
@@ -40,4 +41,14 @@ void shift_solution(long long &x, long long &y,
                     long long a_div_g, long long b_div_g, long long t) {
     x += t * b_div_g;
     y -= t * a_div_g;
+}
+
+int main() {
+    long long x = 0, y = 0, g = 0;
+    bool ok = find_any_diophantine(6, 9, 15, x, y, g);
+    cout << ok << '\n';
+    if (ok) {
+        cout << x << ' ' << y << ' ' << g << '\n';
+    }
+    return 0;
 }
