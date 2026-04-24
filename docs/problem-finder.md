@@ -9,6 +9,25 @@ You can filter by topic, difficulty, source, bucket, and content type without ho
 
 If you want the fastest way to narrow a practice set, start here first. Use the static indexes afterward when you want a full inventory view.
 
+## Best Use Cases
+
+Use this page when:
+
+- you know the weak topic but not the next good problem
+- you want to build a short ladder for one subtopic
+- a mixed round or contest exposed a weak slot and you want the next follow-up set quickly
+
+Do **not** stay here forever. After you narrow the list, jump into a real workflow.
+
+## After You Narrow The List
+
+| If you found... | Go next |
+| --- | --- |
+| one weak subtopic | [Practice hub](../practice/README.md) or the matching ladder |
+| one weak contest skill | [Contest Playbooks](../practice/contest-playbooks/README.md) |
+| one weak retrieval family | [Notebook](../notebook/README.md) |
+| one weak implementation family | [Build Kit](build-kit.md) |
+
 <div id="problem-finder-root" class="problem-finder-shell">
   <div class="problem-finder-toolbar">
     <h2>Filter The Catalog</h2>
@@ -57,6 +76,11 @@ If you want the fastest way to narrow a practice set, start here first. Use the 
     <div class="problem-finder-meta">
       <div id="finder-stats" class="problem-finder-stats"></div>
       <div class="finder-shortcuts">
+        <a href="../practice/">Practice hub</a>
+        <a href="../practice/mixed-rounds/">Mixed rounds</a>
+        <a href="../practice/contest-playbooks/">Contest playbooks</a>
+        <a href="../notebook/">Notebook</a>
+        <a href="../template-library/">Template library</a>
         <a href="../problem-index/">Repo index</a>
         <a href="../external-problem-index/">External index</a>
         <a href="../topic-maps/">Topic maps</a>

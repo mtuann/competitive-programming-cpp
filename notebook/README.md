@@ -11,6 +11,12 @@ Use it for:
 
 It should stay denser and shorter than `topics/`.
 
+## Quick Split
+
+- `Notebook` = recall the main invariant, signal, or trap fast
+- `Template Library` = retrieve the smallest reusable snippet fast
+- `Build Kit` = route between notebook, templates, and workflow pages
+
 ## Contract
 
 This layer answers one question:
@@ -95,8 +101,18 @@ The shortest useful scan order is:
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
 - interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)
 
+## Learn -> Practice -> Retrieve
+
+Use this layer as the `Retrieve` step, not the first step:
+
+| If you need... | Open first | Then |
+| --- | --- | --- |
+| proof or slower explanation | [Topics](../topics/README.md) | come back here after the idea is trusted |
+| a concrete next problem | [Problem Finder](../docs/problem-finder.md) | then reopen the matching sheet |
+| a pasteable snippet | [Build Kit](../docs/build-kit.md) | then the matching template |
+
 ## Reopen Rules
 
 - if you need proofs, go to `topics/`
 - if you need a pasteable skeleton, go to [Template library](../template-library.md)
-- if you need the exact next problem, go to `practice/ladders/`
+- if you need the exact next problem or next short set, go to [Problem Finder](../docs/problem-finder.md)

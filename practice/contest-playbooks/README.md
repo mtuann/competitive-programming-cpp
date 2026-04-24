@@ -39,6 +39,14 @@ first.
 | [IOI / OI](ioi-oi.md) | deep modeling, proof confidence, partial-score planning | fewer tasks, deeper review, subtask-first thinking | you see the full idea too late or throw away safe partial points | [Reasoning](../../topics/foundations/reasoning/README.md) |
 | [ICPC](icpc.md) | breadth, switching, team workflow, one-machine execution | mixed rounds, live triage, notebook retrieval | your team burns time on one hard problem or loses solves to bad handoff/debug loops | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 
+## Start Today
+
+| If your current format target is... | Start with |
+| --- | --- |
+| solo progression with archive problems | [USACO](usaco.md) |
+| partial scoring and proof-heavy tasks | [IOI / OI](ioi-oi.md) |
+| breadth, switching, and one-machine teamwork | [ICPC](icpc.md) |
+
 ## Shared Repo Kit
 
 Every mature playbook should route through the same repo layers:
@@ -47,10 +55,19 @@ Every mature playbook should route through the same repo layers:
 | --- | --- | --- |
 | `topics/` | teach the reusable idea | [Topic Maps](../../docs/topic-maps/index.md) |
 | `practice/ladders/` | sequence one subtopic on purpose | [Practice Hub](../README.md) |
+| `docs/problem-finder` | choose the next concrete problem set quickly | [Problem Finder](../../docs/problem-finder.md) |
 | `practice/mixed-rounds/` | retrieval and switching after topics are known | [Mixed Rounds](../mixed-rounds/README.md) |
 | `notebook/` | short contest-time recall | [Notebook](../../notebook/README.md), [Contest Checklist](../../notebook/contest-checklist.md) |
 | `templates/` | reusable code you can retrieve on demand | [Template Library](../../template-library.md) |
 | `workflow pages` | exact operational loops | [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
+
+## Open This Next
+
+| If today's question is... | Open |
+| --- | --- |
+| what should I practice next? | [Problem Finder](../../docs/problem-finder.md) |
+| what format am I training for? | one track page below |
+| what do I reopen during implementation? | [Build Kit](../../docs/build-kit.md) |
 
 ## Playbook Contract
 

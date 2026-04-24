@@ -7,9 +7,10 @@
     solve targeted problems, and come back for repetition without losing the connection between concept and use.
   </p>
   <div class="hero-actions">
-    <a class="md-button md-button--primary" href="ladders/">Open ladders</a>
-    <a class="md-button" href="mixed-rounds/">Open mixed rounds</a>
-    <a class="md-button" href="contest-playbooks/">Open contest playbooks</a>
+    <a class="md-button md-button--primary" href="../docs/problem-finder/">Open problem finder</a>
+    <a class="md-button" href="ladders/">Open ladders</a>
+    <a class="md-button" href="mixed-rounds/">Mixed rounds (later)</a>
+    <a class="md-button" href="contest-playbooks/">Contest playbooks (later)</a>
   </div>
   <div class="chip-row">
     <span class="chip">Topic-first</span>
@@ -29,6 +30,12 @@
 
     [Open ladders](ladders/README.md)
 
+-   __Problem Finder__
+
+    Use one searchable doorway when you know the weak topic or want the next good set quickly.
+
+    [Open problem finder](../docs/problem-finder.md)
+
 -   __Mixed Rounds__
 
     Mix areas on purpose when you want retrieval practice, breadth, and contest-style switching.
@@ -43,6 +50,15 @@
     [Open contest playbooks](contest-playbooks/README.md)
 
 </div>
+
+## Choose By Bottleneck
+
+| If your bottleneck is... | Best first door | Then |
+| --- | --- | --- |
+| I need the next good problems | [Problem Finder](../docs/problem-finder.md) | the matching ladder or playbook |
+| I am still learning one topic | [Ladders](ladders/README.md) | one topic page in `topics/` |
+| I know several topics but switch badly | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) |
+| I care about one contest format now | [Contest Playbooks](contest-playbooks/README.md) | [Problem Finder](../docs/problem-finder.md) |
 
 ## How To Use Problem Notes
 
@@ -68,6 +84,13 @@
 - [External problem index](../docs/external-problem-index.md): curated official and trusted problems outside the repo, organized by topic and usable as the next practice queue
 - [Topic maps](../docs/topic-maps/index.md): source-backed pages for each subtopic, including trusted learning references, official practice banks, and every repo problem tagged there
 
+## After One Practice Session
+
+- weak topic recognition -> reopen [Topics](../topics/README.md)
+- weak implementation trust -> reopen [Build Kit](../docs/build-kit.md)
+- weak retrieval under pressure -> reopen [Notebook](../notebook/README.md)
+- weak contest-time behavior -> reopen [Contest Playbooks](contest-playbooks/README.md)
+
 ## Path Shapes
 
 ```text
@@ -76,46 +99,9 @@ practice/mixed-rounds/<pack>.md
 practice/contest-playbooks/<track>.md
 ```
 
-## Problem Note Contract
+Contributor note contract lives here:
 
-Required fields:
-
-- `Title`
-- `Judge / source`
-- `Original URL`
-- `Secondary topics`
-- `Difficulty`
-- `Status`: `todo`, `attempted`, `solved`, `reviewed`
-- `Solution file`
-
-Derived fields:
-
-- `Main topic`: generated from the note path `practice/ladders/<area>/<subtopic>/...` and the canonical title in `data/topic-resources.json`
-
-Optional fields:
-
-- `Subtype`
-- `Mirror / English URL`
-- `Source contest`
-- `Alternate solution variants`
-
-Suggested section order:
-
-1. `Why practice this`
-2. `Recognition Cue`
-3. `Problem-Specific Transformation`
-4. `Core Idea`
-5. `Complexity`
-6. `Pitfalls / Judge Notes`
-7. `Reusable Pattern`
-8. `Solutions`
-
-Writing rule:
-
-- solved notes should emphasize the delta from the topic page, not reteach the entire topic from scratch
-- `Recognition Cue` should help you notice the right pattern next time
-- `Problem-Specific Transformation` should explain how the raw statement was rewritten into that pattern
-- `Reusable Pattern` should point back to the best internal topic, template, and notebook refreshers
+- [Problem Note Contract](../docs/authoring/problem-note-contract.md)
 
 !!! tip "Best way to use this section"
     Read one topic page, pause at `Recognition Cue`, solve or re-solve the problem, then compare your transformation against the stored note before reading the code.

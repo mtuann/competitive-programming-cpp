@@ -16,6 +16,17 @@ Use this page if any of these sound like you:
 - you know some syntax, but do not yet have a stable practice loop
 - the repo looks rich, but you are not sure which page is the real first page
 
+## Quick Audience Fork
+
+Use the smallest route that matches your situation:
+
+- completely new:
+  stay on this page and follow the `First 3 Pages` and `First 3 Repo Notes`
+- returning after a break:
+  reopen [Foundations cheatsheet](../notebook/foundations-cheatsheet.md), solve one short ladder note, then continue from `Your First Week`
+- you already know the weak topic:
+  do not force the full beginner loop; go to [Route Map](route-map.md) or [Problem Finder](problem-finder.md)
+
 ## What To Ignore For Now
 
 Do not start with these unless you already know why you need them:
@@ -79,7 +90,7 @@ Optional next two if you still feel good:
 
 If you want a concrete seven-day rhythm:
 
-1. Day 1: read [C++ Language](../topics/foundations/cpp-language/README.md), open [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp), compile it once with the release build, rerun it once with the debug build, optionally glance at [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp), then solve [Weird Algorithm](../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
+1. Day 1: read [C++ Language](../topics/foundations/cpp-language/README.md), open [Build Kit](build-kit.md), use [Template Library](../template-library.md) to find `contest-main.cpp` and `fast-io.cpp`, compile the starter once with the release build, rerun it once with the debug build, then solve [Weird Algorithm](../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 2. Day 2: solve [Missing Number](../practice/ladders/foundations/cpp-language/missingnumber.md) and [Distinct Numbers](../practice/ladders/foundations/stl/distinctnumbers.md)
 3. Day 3: read [Reasoning](../topics/foundations/reasoning/README.md) and solve [Increasing Array](../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
 4. Day 4: read [Sorting](../topics/foundations/patterns/sorting/README.md) and solve [Ferris Wheel](../practice/ladders/foundations/sorting/ferriswheel.md)
@@ -113,8 +124,17 @@ Use the smallest workflow that matches the task:
 
 Do not escalate too early. Most beginner problems should stay in the first bucket.
 
-## After This Page
+## Continue Here Next
 
-- If you want the main curriculum, go to [Topics](../topics/README.md)
-- If you want the practice-first route, go to [Practice](../practice/README.md)
-- If you already know what topic you need, go to [Problem Finder](problem-finder.md)
+If the first week went well, use this exact next route:
+
+1. [Foundations ladders](../practice/ladders/foundations/README.md)
+2. [Data Structures overview](../topics/data-structures/README.md)
+3. [DSU](../topics/data-structures/dsu/README.md) or [Fenwick Tree](../topics/data-structures/fenwick-tree/README.md)
+4. [Practice hub](../practice/README.md) only after you want more than the foundations ladder
+
+If you want a broader chooser instead of that default handoff:
+
+- [Route Map](route-map.md)
+- [Problem Finder](problem-finder.md)
+- [Build Kit](build-kit.md)

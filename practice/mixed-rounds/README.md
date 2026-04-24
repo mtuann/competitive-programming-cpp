@@ -44,6 +44,15 @@ Default operating loop:
 3. if you are still blocked after about `25-30 minutes`, log the missed recognition cue and move on
 4. after the full pack, only then read the stored note and code carefully
 
+## Recovery Doors
+
+When one slot exposes a weak point, do not guess where to go next:
+
+- weak topic understanding -> [Practice hub](../README.md) or the matching ladder
+- weak problem selection -> [Problem Finder](../../docs/problem-finder.md)
+- weak retrieval of invariant/template -> [Notebook](../../notebook/README.md) or [Template Library](../../template-library.md)
+- weak contest behavior -> [Contest Playbooks](../contest-playbooks/README.md)
+
 Minimal pack contract:
 
 - `Who This Is For`
@@ -57,6 +66,13 @@ Minimal pack contract:
 - `Go Back Next`
 
 ## Starter Packs
+
+| If your bottleneck is... | Start with |
+| --- | --- |
+| first retrieval session after the beginner route | [Stage 0 Review Pack 01](stage0-review-pack-01.md) |
+| broad contest-core switching | [Contest Core Switching 01](contest-core-switching-01.md) |
+| switching between graph modeling and DP state design | [Graphs And DP Switching 01](graphs-dp-switching-01.md) |
+| switching between string processing, modular reasoning, and counting | [Strings, Math, And Counting 01](strings-math-counting-01.md) |
 
 - [Stage 0 Review Pack 01](stage0-review-pack-01.md): first retrieval session after the beginner route
 - [Contest Core Switching 01](contest-core-switching-01.md): five-topic contest-core drill

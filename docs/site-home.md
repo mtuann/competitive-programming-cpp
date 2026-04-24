@@ -9,8 +9,7 @@
   </p>
   <div class="hero-actions">
     <a class="md-button md-button--primary" href="docs/start-here/">Start Here</a>
-    <a class="md-button" href="docs/problem-finder/">Open Problem Finder</a>
-    <a class="md-button" href="practice/">Browse practice ladders</a>
+    <a class="md-button" href="docs/route-map/">Open Route Map</a>
   </div>
   <div class="chip-row">
     <span class="chip">Beginner friendly</span>
@@ -34,7 +33,7 @@
 
     Start with foundations, then move through data structures, graphs, dynamic programming, math, strings, and geometry.
 
-    [Open the topic map](topics/README.md)
+    [Open the curriculum overview](topics/README.md)
 
 -   __Train like a contestant__
 
@@ -46,13 +45,13 @@
 
     Keep a compact library of templates and notebook-ready references that are easy to adapt under pressure.
 
-    [Open the build kit](template-library.md)
+    [Open the build kit](docs/build-kit.md)
 
 -   __Go deeper when a topic clicks__
 
     Follow links to courses, references, blogs, and official contest material when you want more theory or context.
 
-    [Open the source map](docs/source-map.md)
+    [Open Explore](docs/explore.md)
 
 </div>
 
@@ -78,27 +77,27 @@
 
 </div>
 
-## Start In 15 Minutes
+## Choose By Bottleneck
 
 <div class="grid cards" markdown>
 
--   __1. Pick your current level__
+-   __I need a first route__
 
-    Use the curriculum map to decide whether you should begin with foundations, the contest core, or targeted practice.
+    Use one guided route instead of choosing between topics, ladders, and tools too early.
 
-    [See the curriculum map](project-readme.md#curriculum-map)
+    [Open Start Here](docs/start-here.md)
 
--   __2. Stay in one topic family__
+-   __I need today's next problem set__
 
-    Work inside one area long enough to build recognition. Graphs, DP, strings, and math all reward repetition.
+    Use filters first, then jump into a ladder, mixed round, or playbook on purpose.
 
-    [Open the learning sections](topics/README.md)
+    [Open Problem Finder](docs/problem-finder.md)
 
--   __3. Solve one anchored problem__
+-   __I know the topic but need the snippet or invariant__
 
-    After reading the idea, solve one practice note and compare your approach with a clean repository solution.
+    Reopen the smallest useful tool: template, cheatsheet, or workflow page.
 
-    [Go to practice ladders](practice/ladders/README.md)
+    [Open Build Kit](docs/build-kit.md)
 
 </div>
 
@@ -109,8 +108,10 @@
 ## Featured Doors Into The Repo
 
 - [Start Here](docs/start-here.md) for one guided route through the first useful pages and problems
+- [Route Map](docs/route-map.md) for the fastest level/bottleneck/track-based routing page
 - [Foundations](topics/foundations/README.md) for asymptotics, STL workflow, binary search, and proof basics
 - [Problem Finder](docs/problem-finder.md) for the fastest filtered view across repo notes and curated external practice
+- [Build Kit](docs/build-kit.md) for templates, notebook pages, and local-debug workflows
 - [Graphs](topics/graphs/README.md) for BFS, DFS, shortest paths, MST, flow, and matching
 - [Dynamic Programming](topics/dp/README.md) for state design, transitions, and classic contest patterns
 - [Practice Notes](practice/README.md) for problem classifications, judge links, and solution writeups

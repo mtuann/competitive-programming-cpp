@@ -1,4 +1,4 @@
-# Topics
+# Learning Areas
 
 This folder is the teaching-first layer of the repository.
 
@@ -24,6 +24,18 @@ Each area page should help you answer:
 - what problem cues should trigger it
 - what mistakes appear often
 - what to study next
+
+## Learn -> Practice -> Retrieve
+
+Use the repo layers in this order whenever possible:
+
+| Layer | Main question | Best door |
+| --- | --- | --- |
+| `Learn` | what is the idea and why does it work? | one area page here, then one leaf topic |
+| `Practice` | where do I solve the idea on purpose? | [Practice hub](../practice/README.md) |
+| `Retrieve` | what is the shortest way back under pressure? | [Build Kit](../docs/build-kit.md) |
+
+If you already know the weak topic and just need the next problem set, jump to [Problem Finder](../docs/problem-finder.md) instead of browsing area pages.
 
 ## Representative Solved Notes
 

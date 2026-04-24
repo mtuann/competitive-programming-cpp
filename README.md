@@ -7,14 +7,15 @@ This repo is meant to be more than a template dump and more than a solutions arc
 Project site: [mtuann.github.io/competitive-programming-cpp](https://mtuann.github.io/competitive-programming-cpp/)
 
 If you want one guided first door instead of browsing sections, start with [Start Here](docs/start-here.md).
+If you want the repo organized by routes instead of folders, open the [Route Map](docs/route-map.md).
 
 ## Start Here
 
 | If you are... | Start with | Goal |
 | --- | --- | --- |
-| New to competitive programming | [Foundations](topics/foundations/README.md) | Build C++ fluency, asymptotics, and the core toolkit |
+| New to competitive programming | [Start Here](docs/start-here.md) | Build C++ fluency, asymptotics, and the core toolkit without self-routing too early |
 | Comfortable with basics but inconsistent in contests | [Data Structures](topics/data-structures/README.md), [Graphs](topics/graphs/README.md), [Dynamic Programming](topics/dp/README.md) | Build the standard contest toolbox and learn when to use it |
-| Preparing for `USACO` / olympiad-style contests | [Topics](topics/README.md) + [Practice](practice/README.md) | Train topic by topic with stronger modeling and proof habits |
+| Preparing for `USACO` / olympiad-style contests | [Learning Areas](topics/README.md) + [Practice](practice/README.md) | Train topic by topic with stronger modeling and proof habits |
 | Preparing for `ICPC` / team contests | [Practice](practice/README.md) + [Notebook](notebook/README.md) | Build breadth, workflow, and contest-ready references |
 | Contributing content later | [Topic Template](docs/topic-template.md) + [Content Blueprint](docs/content-blueprint.md) | Follow one stable teaching format instead of adding ad hoc notes |
 
@@ -35,11 +36,14 @@ Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages.
 
 ## How This Repo Works
 
-- [Topics](topics/README.md): layered topic tutorials and area hubs
+- [Learning Areas](topics/README.md): layered topic tutorials and area hubs
 - [Practice](practice/README.md): topic-first ladders, mixed rounds, and contest playbooks
+- [Route Map](docs/route-map.md): pick the next door by level, bottleneck, or contest goal
+- [Explore](docs/explore.md): topic maps, indexes, and research-backed coverage lookup
 - [Problem Index](docs/problem-index.md): current solved problem notes mapped back to their learning hubs
 - [External Problem Index](docs/external-problem-index.md): curated official and trusted problems grouped by topic, microtopic, and contest track
 - [Topic Maps](docs/topic-maps/index.md): trusted learning sources, official practice sources, and repo coverage for each subtopic
+- [Build Kit](docs/build-kit.md): templates, notebook pages, and debugging workflows
 - [Templates](template-library.md): reusable contest-ready code
 - [Notebook](notebook/README.md): dense reference material for contest use
 - [Source Map](docs/source-map.md): the research appendix behind the curriculum choices

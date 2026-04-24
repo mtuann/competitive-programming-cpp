@@ -1,5 +1,13 @@
 # Topic Maps
 
+Use this section for:
+
+- source-backed reading
+- official practice banks outside the repo
+- repo coverage lookup by topic
+
+Do **not** use this as the first practice door if what you really need is the next problem set. In that case start with [Problem Finder](../problem-finder.md) or [Practice](../../practice/README.md).
+
 These pages collect trusted learning sources, official practice sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.
 
 | Topic | Repo Problems | Repo Companions | External Problems | Map |
