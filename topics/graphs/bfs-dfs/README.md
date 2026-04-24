@@ -369,7 +369,22 @@ Because every traversed edge forces opposite parity relative to the start of the
 
 You do not need shortest distance here, so BFS and DFS are both valid. But BFS makes the "parity by layers" intuition especially visible.
 
-### Example 3: Cycle Detection In A Directed Graph
+### Example 3: Cycle Detection In An Undirected Graph
+
+Suppose the graph is undirected and you need to know whether a cycle exists.
+
+Run DFS (or BFS) and remember the parent edge used to enter each vertex.
+
+When exploring an edge `(u, v)`:
+
+- if `v` is unvisited, continue traversal
+- if `v` is visited and `v != parent[u]`, a cycle exists
+
+Why is the parent check necessary?
+
+Because in an undirected graph every tree edge appears twice in adjacency lists. Seeing the parent again is normal; seeing any other visited neighbor means there is another path already connecting the two vertices.
+
+### Example 4: Cycle Detection In A Directed Graph
 
 Suppose you need to know whether a directed graph has a cycle.
 
@@ -387,7 +402,21 @@ When DFS explores an edge `(u, v)`:
 
 This is a pure DFS-style invariant. BFS does not naturally expose the active-branch structure needed for this proof.
 
-### Example 4: Why DFS Fails For Unweighted Shortest Path
+### Example 5: Multi-Source BFS
+
+Suppose several starting cells all spread simultaneously.
+
+Push all of them into the queue at distance `0` before the BFS starts.
+
+Then the same BFS invariant gives:
+
+$$
+\mathrm{dist}[v] = \text{distance from } v \text{ to the nearest source}.
+$$
+
+This is not a new algorithm. It is still BFS, just with multiple layer-0 vertices.
+
+### Example 6: Why DFS Fails For Unweighted Shortest Path
 
 Consider:
 
@@ -432,6 +461,27 @@ Default interpretation:
 - `dist[v] == -1` means undiscovered
 - first push fixes both discovery and shortest distance
 
+### Multi-Source BFS
+
+```text
+multi_source_bfs(all_sources):
+    set dist[*] = -1
+    queue q
+
+    for s in all_sources:
+        dist[s] = 0
+        q.push(s)
+
+    while q not empty:
+        u = q.front()
+        q.pop()
+        for v in adj[u]:
+            if dist[v] != -1:
+                continue
+            dist[v] = dist[u] + 1
+            q.push(v)
+```
+
 ### DFS (Recursive Shape)
 
 ```text
@@ -447,6 +497,20 @@ dfs(u, p):
             dfs(v, u)
 
     tout[u] = timer++
+```
+
+### DFS Cycle Detection In An Undirected Graph
+
+```text
+dfs_cycle(u, p):
+    visited[u] = true
+    for v in adj[u]:
+        if v == p:
+            continue
+        if visited[v]:
+            found_cycle = true
+        else:
+            dfs_cycle(v, u)
 ```
 
 ### DFS (3-Color Cycle Detection In Directed Graph)

@@ -215,13 +215,15 @@ This is why lexicographic enumeration often looks like:
 
 ### Use Closed-Form Unranking When
 
-- the objects are unrestricted permutations / combinations / multisets
-- block sizes come from factorials or binomials
+- the objects are unrestricted permutations or combinations
+- or duplicates exist, but the block sizes still come from a clean multiplicity-aware count
+- block sizes come from factorials, binomials, or multinomial-style counts you can evaluate directly
 
 Canonical examples:
 
 - `k`-th permutation
 - rank/unrank combinations
+- multiset permutations only when you explicitly account for repeated-symbol multiplicities
 
 ### Use Prefix-DP Enumeration When
 
@@ -350,6 +352,8 @@ This is the whole unranking mechanic in miniature:
 - inspect blocks in order
 - subtract skipped block sizes
 - recurse on the surviving block
+
+The same block-skipping idea is what you use in constrained problems too. The only thing that changes is how `count(prefix + c)` is computed.
 
 ### Example 2: Binary Strings With A Constraint
 
@@ -549,6 +553,7 @@ Repo anchors:
 - practice note: [VOITSORT](../../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md)
 - notebook refresher: [Combinatorics Cheatsheet](../../../notebook/combinatorics-cheatsheet.md)
 - adjacent topic: [Counting Basics](../counting-basics/README.md)
+- adjacent topic: [Bounded Compositions](../bounded-compositions/README.md)
 - adjacent topic: [Bitmask DP](../../dp/bitmask-dp/README.md)
 
 ## Related Topics

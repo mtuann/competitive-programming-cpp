@@ -287,6 +287,23 @@ This is the base pattern behind:
 - offline query sweeps
 - many greedy scheduling problems
 
+One subtle but important detail is tie policy.
+
+Suppose intervals are closed and you want to detect whether an interval ending at `x` overlaps one starting at `x`.
+
+Then on equal coordinate `x`:
+
+- processing `start` before `end` treats them as overlapping
+- processing `end` before `start` treats them as non-overlapping
+
+So "sort events by coordinate" is not yet a full algorithm.
+
+You also need:
+
+- the correct equal-coordinate event order
+
+and that tie rule must match the statement's boundary convention.
+
 ## Algorithms And Pseudocode
 
 ### Generic Sort With Tie Rule

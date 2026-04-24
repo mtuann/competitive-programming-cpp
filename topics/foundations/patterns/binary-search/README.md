@@ -327,6 +327,17 @@ Then `good(i)` is monotone on indices:
 
 This is exactly the `lower_bound` pattern.
 
+The cleanest invariant bridge to code is:
+
+- let `l = -1` be a virtual bad index
+- let `r = n` be a virtual good boundary candidate
+
+and interpret:
+
+- `r = n` as "no good index exists inside the array"
+
+Then the same first-true template works on array boundaries without any special casing.
+
 ### Example 2: `Factory Machines`
 
 The repo anchor here is:

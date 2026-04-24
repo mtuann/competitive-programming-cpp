@@ -274,7 +274,33 @@ Using zero-based indexing:
 - first update contributes `diff[1] += 2`, `diff[4] -= 2`
 - second update contributes `diff[0] += 1`, `diff[3] -= 1`
 
-Then one prefix pass gives the final values.
+So the difference array becomes:
+
+```text
+index:  0  1  2  3  4
+diff :  1  2  0 -1 -2
+```
+
+Now reconstruct by prefix sums:
+
+```text
+final[0] = 1
+final[1] = 1 + 2 = 3
+final[2] = 3 + 0 = 3
+final[3] = 3 - 1 = 2
+final[4] = 2 - 2 = 0
+```
+
+So the final array is:
+
+```text
+[1, 3, 3, 2, 0]
+```
+
+This is the exact moment the technique should stop feeling magical:
+
+- endpoint marks do not directly look like the final array
+- but one prefix pass turns them into the right running effect
 
 This is exactly what the repo starter template demonstrates.
 

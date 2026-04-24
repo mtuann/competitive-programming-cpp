@@ -359,6 +359,37 @@ Instead, prefix sums are the cheap helper that feeds another idea:
 
 That is why prefix sums are often a support tool rather than the whole solution.
 
+### Example 5: Prefix Sums Modulo `m`
+
+Suppose you want to count subarrays whose sum is divisible by `m`.
+
+Let:
+
+$$
+\mathrm{pref}[i] = a_0 + a_1 + \cdots + a_{i-1}.
+$$
+
+Then the subarray sum on `[l, r)` is divisible by `m` exactly when:
+
+$$
+(\mathrm{pref}[r] - \mathrm{pref}[l]) \bmod m = 0,
+$$
+
+which is equivalent to:
+
+$$
+\mathrm{pref}[r] \equiv \mathrm{pref}[l] \pmod m.
+$$
+
+So the problem becomes:
+
+- count pairs of equal prefix-sum remainders
+
+This is the first important jump beyond direct range queries:
+
+- you are still using prefix sums
+- but the answer comes from comparing prefix **classes**, not subtracting one explicit interval query
+
 ## Algorithms And Pseudocode
 
 ### Standard 1D Build

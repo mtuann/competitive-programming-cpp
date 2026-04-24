@@ -245,6 +245,20 @@ Those differences are forced tail values of the sorted array, so they must alrea
 
 Then check whether the unknown first block can fit under the smallest forced tail value.
 
+If:
+
+- the first unknown block has length `len`
+- its total required sum is `s[first]`
+- the next forced tail value is `x`
+
+then every element in that first block must be at most `x`, so the decisive inequality is:
+
+$$
+s[\text{first}] \le len \cdot x.
+$$
+
+If that fails, no sorted hidden sequence can exist.
+
 This is greedy reasoning over prefix data, even though no explicit subset is chosen.
 
 ### Example 3: VODIVIDE
@@ -265,6 +279,16 @@ The greedy scan:
 - if the current prefix is over capacity, remove the chosen item with largest `b`
 
 works because prefix capacities are nested.
+
+Tiny trace:
+
+- suppose the current prefix cap is `2`
+- the chosen costs after tentative inclusion are `{4, 7, 10}`
+- then the prefix is over capacity by exactly one item
+
+The only legal repair is to remove one chosen item from this prefix.
+
+Removing `10` is always at least as good as removing `7` or `4`, because every later solution must still respect this same prefix cap while using exactly two kept items here.
 
 ## Algorithms And Pseudocode
 

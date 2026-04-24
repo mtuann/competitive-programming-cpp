@@ -349,6 +349,67 @@ The transition discipline still follows the same family classification:
 
 So the recurrence target changes, but the usage logic does not.
 
+But there is one more boundary that matters just as much:
+
+- are you counting **unordered combinations**
+- or **ordered sequences**?
+
+The loop rules on this page assume the standard knapsack interpretation:
+
+- items are processed one family member at a time
+- two solutions using the same multiset of items are the same answer even if their pick order differs
+
+If the statement counts:
+
+```text
+1 + 2
+```
+
+and:
+
+```text
+2 + 1
+```
+
+as different answers, then you are no longer in the standard knapsack counting model. Reusing the usual item-outer-loop update blindly will often give the wrong count.
+
+### Example 6: Bounded Knapsack Via Binary Splitting
+
+Suppose an item has:
+
+- weight `3`
+- value `5`
+- count `13`
+
+Split the multiplicity into bundles:
+
+```text
+1, 2, 4, 6
+```
+
+because:
+
+```text
+1 + 2 + 4 + 6 = 13
+```
+
+Now replace the original bounded item by four `0/1` items:
+
+- one bundle of `1` copy: weight `3`, value `5`
+- one bundle of `2` copies: weight `6`, value `10`
+- one bundle of `4` copies: weight `12`, value `20`
+- one bundle of `6` copies: weight `18`, value `30`
+
+Any number of copies from `0` through `13` can now be formed by choosing a subset of these bundles.
+
+That is why binary splitting converts one bounded item into only:
+
+$$
+O(\log c)
+$$
+
+`0/1` items.
+
 ## Algorithms And Pseudocode
 
 Repo starter template:
@@ -493,6 +554,8 @@ For bounded multiplicity, always check:
 Small counts may allow direct transitions.
 
 Large counts often want binary splitting or stronger optimizations.
+
+Also check whether the problem is really counting unordered choices or ordered sequences. That boundary changes the recurrence model before loop direction even matters.
 
 ## Practice Archetypes
 

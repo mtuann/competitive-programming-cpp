@@ -399,6 +399,20 @@ Repo starter template:
 
 - [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
 
+This starter is intentionally a **sorted-sweep baseline**.
+
+It is the right place to begin when the invariant is:
+
+- "all events with key up to the current query have been activated"
+
+It is **not** a universal starter for:
+
+- Mo's algorithm
+- parallel binary search
+- rollback-over-time frameworks
+
+Those branches need different control flow, even though the modeling move is still "go offline first."
+
 ### Generic Sorted Sweep
 
 ```text
@@ -569,6 +583,7 @@ Research:
 
 Reference:
 
+- [CF Step: Answering Queries Offline with Sweepline](https://cfstep.com/training/tutorials/general-techniques/answering-queries-offline-with-sweepline/)
 - [CP-Algorithms: Deleting from a data structure in $O(T(n)\log n)$](https://cp-algorithms.com/data_structures/deleting_in_log_n.html)
 - [USACO Guide: Offline Deletion](https://usaco.guide/adv/offline-del)
 - [OI Wiki: Mo's Algorithm](https://en.oi-wiki.org/misc/mo-algo-intro/)
@@ -586,6 +601,7 @@ Repo anchors:
 - practice note: [Distinct Values Queries](../../../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - starter template: [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
 - notebook refresher: [Data Structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
+- adjacent practice note: [Road Reparation](../../../practice/ladders/graphs/mst/roadreparation.md) for threshold-style DSU sweeps
 - adjacent topic: [Fenwick Tree](../fenwick-tree/README.md)
 - adjacent topic: [DSU](../dsu/README.md)
 

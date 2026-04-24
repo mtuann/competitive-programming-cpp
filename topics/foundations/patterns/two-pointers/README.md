@@ -465,6 +465,12 @@ For longest-valid-window tasks, update after the shrink loop, when the window is
 
 For shortest-valid-window tasks, update while shrinking as long as validity is preserved.
 
+Tiny example:
+
+- suppose you need the shortest subarray with sum at least `K`
+- once the current window becomes valid, the interesting action is no longer "expand more"
+- it is "record this valid window, then keep shrinking until it would become invalid"
+
 The answer-update point is part of the algorithm, not a cosmetic placement detail.
 
 ### 3. Sorting Changes The Problem Model

@@ -399,6 +399,21 @@ Second DFS:
 
 ### Standard Path Query Loop
 
+The skeleton below is the default for:
+
+- node-valued or edge-valued HLD
+- **commutative** aggregates such as sum, min, max, xor, gcd
+
+To avoid the most common API confusion, write the range query using one convention explicitly.
+
+Here we use:
+
+- `seg.query_inclusive(l, r)` for a closed interval `[l, r]`
+
+If your segment-tree API uses half-open ranges `[l, r)`, replace every call below by:
+
+- `seg.query(l, r + 1)`
+
 ```text
 query_path(u, v):
     ans = identity
@@ -406,23 +421,62 @@ query_path(u, v):
     while head[u] != head[v]:
         if depth[head[u]] < depth[head[v]]:
             swap(u, v)
-        ans = merge(ans, seg.query(pos[head[u]], pos[u]))
+        ans = merge(ans, seg.query_inclusive(pos[head[u]], pos[u]))
         u = parent[head[u]]
 
     if depth[u] > depth[v]:
         swap(u, v)
 
-    ans = merge(ans, seg.query(pos[u], pos[v]))
+    ans = merge(ans, seg.query_inclusive(pos[u], pos[v]))
     return ans
 ```
 
 For edge-valued queries, the final same-chain segment becomes:
 
 ```text
-seg.query(pos[u] + 1, pos[v])
+seg.query_inclusive(pos[u] + 1, pos[v])
 ```
 
 if `u` is the LCA-side endpoint on that chain.
+
+### Ordered Path Query Skeleton
+
+If the aggregate is **non-commutative**, the path order matters, so one accumulator is no longer enough.
+
+The standard fix is:
+
+- `left_acc` gathers pieces climbed from the `u` side
+- `right_acc` gathers pieces climbed from the `v` side
+- the final answer concatenates them in true path order
+
+```text
+query_path_ordered(u, v):
+    left_acc = identity
+    right_acc = identity
+
+    while head[u] != head[v]:
+        if depth[head[u]] >= depth[head[v]]:
+            left_acc = merge(
+                left_acc,
+                query_chain_reversed(pos[head[u]], pos[u])
+            )
+            u = parent[head[u]]
+        else:
+            right_acc = merge(
+                query_chain_forward(pos[head[v]], pos[v]),
+                right_acc
+            )
+            v = parent[head[v]]
+
+    if depth[u] > depth[v]:
+        middle = query_chain_reversed(pos[v], pos[u])
+    else:
+        middle = query_chain_forward(pos[u], pos[v])
+
+    return merge(left_acc, merge(middle, right_acc))
+```
+
+The exact `query_chain_forward` / `query_chain_reversed` interface depends on your segment structure, but the path-order idea is always the same.
 
 ### Point Update
 
@@ -448,6 +502,7 @@ Some special cases can be pushed to `O(\log n)` by storing richer prefix informa
 - The repo's first practical path-query implementation is node-valued, which is the best entry point.
 - The heavy child is usually chosen by largest subtree size. Ties do not affect correctness.
 - The segment tree size does **not** require `n` to be a power of two if your implementation already handles arbitrary `n`.
+- State your range-query convention explicitly: either closed `[l, r]` or half-open `[l, r)`. HLD off-by-one bugs are very often API-convention bugs.
 - For non-commutative merges, keep two accumulators and combine them in the correct path order.
 - If recursion depth is risky, both DFS passes can be made iterative, but a recursive version is usually easier to understand first.
 

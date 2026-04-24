@@ -294,6 +294,47 @@ Then the answer on `[l, r]` is:
 
 That is the archetypal `O(n^3)` interval DP.
 
+Here is the smallest concrete trace worth internalizing.
+
+Suppose the interval is:
+
+```text
+[0, 3]
+```
+
+and the recurrence is:
+
+$$
+\mathrm{dp}[l][r]
+=
+\min_{l \le k < r}
+\bigl(
+\mathrm{dp}[l][k] + \mathrm{dp}[k+1][r] + \mathrm{cost}(l, k, r)
+\bigr).
+$$
+
+Then `[0, 3]` has exactly three first-split candidates:
+
+- `k = 0`: split into `[0, 0]` and `[1, 3]`
+- `k = 1`: split into `[0, 1]` and `[2, 3]`
+- `k = 2`: split into `[0, 2]` and `[3, 3]`
+
+So:
+
+$$
+\mathrm{dp}[0][3] =
+\min \begin{cases}
+\mathrm{dp}[0][0] + \mathrm{dp}[1][3] + \mathrm{cost}(0, 0, 3), \\
+\mathrm{dp}[0][1] + \mathrm{dp}[2][3] + \mathrm{cost}(0, 1, 3), \\
+\mathrm{dp}[0][2] + \mathrm{dp}[3][3] + \mathrm{cost}(0, 2, 3).
+\end{cases}
+$$
+
+This is the right mental model for split-point interval DP:
+
+- do not think "one complicated recurrence"
+- think "try every legal first split, then recurse on the two resulting intervals"
+
 ### Example 3: Interval Cost From Prefix Sums
 
 Suppose merging `[l, r]` costs the total sum on that interval.
@@ -346,10 +387,12 @@ for len from 2 to n:
 ## Implementation Notes
 
 - Write the state meaning in words before coding.
+- Decide explicitly whether `dp[l][r]` is defined only for `l <= r`, or whether empty intervals are real states in your recurrence.
 - Check base cases separately for:
   - empty intervals if they exist
   - length `1`
   - sometimes length `2`
+- The repo default mental model is: `dp[l][r]` is defined for valid non-empty intervals, and empty intervals are introduced only if the recurrence truly needs them.
 - The most common loop bug is getting `len`, `l`, `r` ordering wrong.
 - If the recurrence depends on interval sums, precompute them first.
 - `O(n^3)` is normal for classic interval DP. Do not panic if the structure is correct and constraints allow it.
