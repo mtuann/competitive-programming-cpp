@@ -436,6 +436,20 @@ With ties:
 - there may be multiple MSTs
 - Kruskal and Prim may output different valid MSTs
 
+If a statement asks for:
+
+- only the minimum total cost
+- or any valid MST
+
+that is fine.
+
+But if it asks for:
+
+- the lexicographically smallest chosen edges
+- or a specific deterministic reconstruction under ties
+
+then tie-breaking policy becomes part of the implementation, not just a cosmetic detail.
+
 ### 3. DSU Is The Helper, Not The Idea
 
 Kruskal is not "the DSU algorithm."
