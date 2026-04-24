@@ -1,4 +1,12 @@
-// Template: subtree DP with one postorder DFS.
+// Template: subtree DP
+// Signal: child-to-parent subtree states solved in one postorder DFS.
+// Assumes: all needed information flows only from children to parent in a rooted tree.
+// Exposes: one postorder dfs(u, parent) skeleton with sub_size as the sample state.
+// Complexity: O(n).
+// Main trap: using a pure subtree DP when each node also needs parent-side information.
+// Links:
+//   Topic: topics/dp/tree-dp/README.md
+//   Note: practice/ladders/dp/tree-dp/treematching.md
 
 #include <iostream>
 #include <vector>

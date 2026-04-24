@@ -1,4 +1,12 @@
-// Template: monotonic chain convex hull.
+// Template: convex hull
+// Signal: static planar point set, need the corner-only convex hull.
+// Assumes: this monotone-chain variant discards collinear boundary points on edges.
+// Exposes: Point, cross(a, b), and convex_hull(pts).
+// Complexity: O(n log n) for sorting plus linear hull construction.
+// Main trap: using it in a keep-all-boundary-points task without changing the <= 0 pop rule.
+// Links:
+//   Topic: topics/geometry/convex-hull/README.md
+//   Note: practice/ladders/geometry/convex-hull/convexhull.md
 
 #include <algorithm>
 #include <iostream>

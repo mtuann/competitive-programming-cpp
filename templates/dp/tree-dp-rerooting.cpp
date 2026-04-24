@@ -1,6 +1,12 @@
-// Use: compute one answer for every root when child-subtree information must be complemented by parent-side information.
-// Invariant: first DFS collects subtree data; second DFS pushes the outside contribution into each child.
+// Template: tree DP rerooting
+// Signal: every root needs an answer and parent-side contribution must complement child subtrees.
+// Assumes: the reroot transition is O(1) per edge; this concrete skeleton computes sum of distances to all nodes.
+// Exposes: dfs_down / dfs_up plus sub_size, sub_dist, all_dist arrays.
 // Complexity: O(n).
+// Main trap: treating this sum-of-distances skeleton as a fully generic rerooting framework.
+// Links:
+//   Topic: topics/dp/tree-dp/README.md
+//   Template: templates/dp/tree-dp-subtree.cpp
 
 #include <iostream>
 #include <vector>

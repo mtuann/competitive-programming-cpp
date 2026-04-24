@@ -50,7 +50,7 @@ For mature templates, this repo uses six short metadata fields:
 - `Main trap`: the bug most likely to survive hand tests
 - `Links`: the strongest reopening path when trust is low
 
-The library page carries the fuller cards. The template file itself only keeps the compact version.
+The library page carries fuller cards for the pilot family and chooser tables for the rest. The template file itself only keeps the compact version.
 
 ## Foundations Pilot Cards
 
@@ -172,21 +172,29 @@ The library page carries the fuller cards. The template file itself only keeps t
 
 ### Dynamic Programming
 
-- [knapsack-01.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/knapsack-01.cpp)
-- [bitmask-subset-iterate.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/bitmask-subset-iterate.cpp)
-- [tree-dp-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-subtree.cpp)
-- [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp)
-- [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp)
-- [interval-dp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/interval-dp.cpp)
+## Dynamic Programming Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [knapsack-01.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/knapsack-01.cpp) | `0/1` item choices with one capacity axis | items are unbounded or the state is not a capacity DP | [Knapsack Family](topics/dp/knapsack-family/README.md) | [Book Shop](practice/ladders/dp/knapsack-family/bookshop.md) |
+| [bitmask-subset-iterate.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/bitmask-subset-iterate.cpp) | forward subset DP that adds one missing bit at a time | `n` is too large for `2^n`, or transitions need arbitrary submasks instead of one added bit | [Bitmask DP](topics/dp/bitmask-dp/README.md) | [VMMARBLE](practice/ladders/dp/bitmask-dp/vmmarble.md) |
+| [tree-dp-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-subtree.cpp) | child-to-parent subtree states solved in one postorder DFS | each node also needs parent-side information | [Tree DP](topics/dp/tree-dp/README.md) | [Tree Matching](practice/ladders/dp/tree-dp/treematching.md) |
+| [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp) | every root needs an answer and parent-side contribution matters | the state is not rerootable or you only need one rooted answer | [Tree DP](topics/dp/tree-dp/README.md) | [Tree DP Ladder](practice/ladders/dp/tree-dp/README.md) |
+| [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp) | count over digits with `tight` and `started` flags | the state is not prefix-closed by decimal digits | [Digit DP](topics/dp/digit-dp/README.md) | [Counting Numbers](practice/ladders/dp/digit-dp/countingnumbers.md) |
+| [interval-dp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/interval-dp.cpp) | split-point interval DP with contiguous intervals `[l, r]` | transitions are endpoint-choice style or dependencies are not interval-shaped | [Interval DP](topics/dp/interval-dp/README.md) | [Interval DP Ladder](practice/ladders/dp/interval-dp/README.md) |
 
 ### Math
 
-- [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
-- [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
-- [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
-- [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
-- [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp)
-- [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp)
+## Math Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp) | repeated `powmod` and inverse under one fixed prime modulus | modulus is composite or changes per query | [Modular Arithmetic](topics/math/modular-arithmetic/README.md) | [Exponentiation](practice/ladders/math/modular-arithmetic/exponentiation.md) |
+| [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp) | one or many `nCk mod prime` queries after one precompute | `max_n >= mod` or the modulus is not prime | [Counting Basics](topics/combinatorics/counting-basics/README.md) | [Distributing Apples](practice/ladders/combinatorics/counting-basics/distributingapples.md) |
+| [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp) | need Bezout coefficients, one inverse under composite modulus, or solve `ax + by = c` | prime-mod inverses with many queries are the real task | [Modular Arithmetic](topics/math/modular-arithmetic/README.md) | [GCD / LCM Ladder](practice/ladders/math/gcd-lcm/README.md) |
+| [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp) | gcd/lcm, SPF sieve, and factorization are the real primitives | you mainly need modular inverses or convolution | [Number Theory Basics](topics/math/number-theory-basics/README.md) | [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md) |
+| [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp) | approximate real/complex FFT or integer convolution with acceptable floating error | you need exact modular/integer convolution guarantees | [FFT / NTT](topics/math/fft-ntt/README.md) | [POST2](practice/ladders/math/fft/post2.md) |
+| [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) | exact convolution modulo `998244353` | modulus is incompatible or convolution is over reals | [FFT / NTT](topics/math/fft-ntt/README.md) | [FFT Ladder](practice/ladders/math/fft/README.md) |
 
 ### Strings
 
@@ -194,11 +202,15 @@ The library page carries the fuller cards. The template file itself only keeps t
 
 ### Geometry
 
-- [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
-- [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
-- [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp)
-- [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp)
-- [convex-hull.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/convex-hull.cpp)
+## Geometry Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp) | orientation, cross/dot, and exact integer predicates are the real base layer | the problem is already at polygon or hull level and a higher template fits directly | [Vector And Orientation](topics/geometry/vector-orientation/README.md) | [Point Location Test](practice/ladders/geometry/vector-orientation/pointlocationtest.md) |
+| [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp) | closed-segment intersection with endpoints and overlap counted | you need sweep-line over many segments, not one pair predicate | [Segment Intersection](topics/geometry/segment-intersection/README.md) | [Line Segment Intersection](practice/ladders/geometry/segment-intersection/linesegmentintersection.md) |
+| [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp) | polygon area from ordered boundary vertices | vertices are not in boundary order or the polygon is self-intersecting | [Polygon Area And Point Location](topics/geometry/polygon-area-point-location/README.md) | [Polygon Area](practice/ladders/geometry/polygon-area-point-location/polygonarea.md) |
+| [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp) | classify `outside / boundary / inside` for a simple polygon | the polygon is not simple or you need a higher-dimensional predicate | [Polygon Area And Point Location](topics/geometry/polygon-area-point-location/README.md) | [Point in Polygon](practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md) |
+| [convex-hull.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/convex-hull.cpp) | hull of static points in the plane | dynamic hull maintenance or keep-all-collinear-boundary policy is required | [Convex Hull](topics/geometry/convex-hull/README.md) | [Convex Hull](practice/ladders/geometry/convex-hull/convexhull.md) |
 
 ## Standard
 
@@ -215,7 +227,7 @@ Each template should stay compact, contest-usable, and linked back to the teachi
 - ordered multiset / predecessor -> [Concert Tickets](practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - shortest-path family -> [Message Route](practice/ladders/graphs/bfs-dfs/messageroute.md), [QOS](practice/ladders/graphs/shortest-paths/qos.md)
 - max flow / min-cost flow -> [FFLOW](practice/ladders/graphs/flow/fflow.md), [MINCOST](practice/ladders/graphs/flow/mincost.md)
-- modular arithmetic helpers -> [Exponentiation II](practice/ladders/math/modular-arithmetic/exponentiation2.md), [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md)
+- modular arithmetic helpers -> [Exponentiation](practice/ladders/math/modular-arithmetic/exponentiation.md), [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md)
 - segment / polygon geometry -> [Point Location Test](practice/ladders/geometry/vector-orientation/pointlocationtest.md), [Line Segment Intersection](practice/ladders/geometry/segment-intersection/linesegmentintersection.md)
 
 ### `__int128` helper

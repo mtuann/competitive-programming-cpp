@@ -1,4 +1,12 @@
-// Template: modular arithmetic helpers for prime MOD.
+// Template: modular arithmetic helpers
+// Signal: repeated powmod and inverse queries under one fixed prime modulus.
+// Assumes: MOD is prime and all inverses are only requested for values coprime to MOD.
+// Exposes: mod_pow(a, e) and mod_inv(a) under the fixed global MOD.
+// Complexity: O(log e) for mod_pow, O(log MOD) for mod_inv.
+// Main trap: copying the helpers into a composite-modulus problem and trusting Fermat anyway.
+// Links:
+//   Topic: topics/math/modular-arithmetic/README.md
+//   Note: practice/ladders/math/modular-arithmetic/exponentiation2.md
 
 #include <iostream>
 

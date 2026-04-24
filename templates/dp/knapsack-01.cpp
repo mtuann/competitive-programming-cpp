@@ -1,5 +1,13 @@
 // Template: 0/1 knapsack
-// dp[j] = best value with capacity j
+// Signal: each item can be taken at most once and capacity is the only DP axis.
+// Assumes: reverse capacity loop is required so each item is used at most once.
+// Exposes: one 1D dp[j] skeleton for maximizing value under capacity.
+// Complexity: O(n * capacity).
+// Main trap: iterating j upward and silently turning the template into unbounded knapsack.
+// Links:
+//   Topic: topics/dp/knapsack-family/README.md
+//   Note: practice/ladders/dp/knapsack-family/bookshop.md
+// dp[j] = best value with capacity limit j
 
 #include <algorithm>
 #include <iostream>

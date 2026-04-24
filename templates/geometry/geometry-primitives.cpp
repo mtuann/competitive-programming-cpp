@@ -1,4 +1,12 @@
-// Template: integer geometry primitives with __int128-safe cross product.
+// Template: geometry primitives
+// Signal: orientation, cross, and exact integer predicates are the real base layer.
+// Assumes: coordinates fit in long long and exact cross products may need __int128.
+// Exposes: Point, dot(a, b), cross(a, b), cross(a, b, c), orientation(a, b, c).
+// Complexity: O(1) per primitive.
+// Main trap: dropping back to long long multiplication and overflowing before the sign test.
+// Links:
+//   Topic: topics/geometry/vector-orientation/README.md
+//   Note: practice/ladders/geometry/vector-orientation/pointlocationtest.md
 
 #include <iostream>
 
@@ -10,6 +18,10 @@ struct Point {
 
 Point operator-(const Point &a, const Point &b) {
     return {a.x - b.x, a.y - b.y};
+}
+
+__int128 dot(const Point &a, const Point &b) {
+    return static_cast<__int128>(a.x) * b.x + static_cast<__int128>(a.y) * b.y;
 }
 
 __int128 cross(const Point &a, const Point &b) {

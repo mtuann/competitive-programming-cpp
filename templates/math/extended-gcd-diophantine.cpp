@@ -1,6 +1,12 @@
-// Use when: solving ax + by = c or needing Bezout coefficients.
-// Invariant: returned g is gcd(|a|, |b|); if solvable, (x, y) satisfies ax + by = c.
+// Template: extended gcd and Diophantine
+// Signal: need Bezout coefficients, one inverse under composite modulus, or solve ax + by = c.
+// Assumes: coefficients fit in long long and one witness solution is enough.
+// Exposes: ext_gcd(a, b, x, y) and find_any_diophantine(a, b, c, x, y, g).
 // Complexity: O(log(min(|a|, |b|))).
+// Main trap: assuming every solvable equation has the returned witness in the desired sign/range already.
+// Links:
+//   Topic: topics/math/modular-arithmetic/README.md
+//   Note: practice/ladders/math/gcd-lcm/README.md
 
 #include <cstdlib>
 #include <iostream>

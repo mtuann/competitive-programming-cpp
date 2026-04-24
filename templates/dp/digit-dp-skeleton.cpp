@@ -1,4 +1,12 @@
-// Template: memoized digit DP skeleton.
+// Template: digit DP skeleton
+// Signal: count over digits with tight/started flags and one previous-digit state.
+// Assumes: decimal digits, top-down memoization, and prev_digit is part of the state.
+// Exposes: solve(pos, tight, started, prev_digit) over a global digits string.
+// Complexity: O(number of states * 10).
+// Main trap: copying the skeleton as if it were fully generic and forgetting the prev_digit dimension is baked in.
+// Links:
+//   Topic: topics/dp/digit-dp/README.md
+//   Note: practice/ladders/dp/digit-dp/countingnumbers.md
 
 #include <cstring>
 #include <iostream>

@@ -1,4 +1,12 @@
-// Template: iterative radix-2 NTT-based convolution modulo 998244353.
+// Template: NTT convolution
+// Signal: exact convolution modulo 998244353.
+// Assumes: transform length is a power of two supported by MOD - 1 and coefficients live modulo 998244353.
+// Exposes: ntt(a, invert) and convolution(a, b).
+// Complexity: O(n log n).
+// Main trap: copying it to a modulus without the required primitive root structure.
+// Links:
+//   Topic: topics/math/fft-ntt/README.md
+//   Note: practice/ladders/math/fft/post2.md
 
 #include <iostream>
 #include <vector>

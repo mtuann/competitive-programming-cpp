@@ -1,9 +1,16 @@
-// Use when: computing the area of a simple polygon from ordered vertices.
-// Invariant: vertices are in boundary order; twice_signed_area() is positive for CCW order.
+// Template: shoelace area
+// Signal: compute polygon area from ordered boundary vertices.
+// Assumes: vertices are in boundary order and the polygon is simple.
+// Exposes: twice_signed_area(poly) and print_area_exact(area2).
 // Complexity: O(n).
+// Main trap: feeding vertices in arbitrary order and blaming the formula for the wrong area.
+// Links:
+//   Topic: topics/geometry/polygon-area-point-location/README.md
+//   Note: practice/ladders/geometry/polygon-area-point-location/polygonarea.md
 
-#include <iomanip>
+#include <algorithm>
 #include <iostream>
+#include <string>
 #include <vector>
 
 using namespace std;
@@ -25,10 +32,28 @@ i128 twice_signed_area(const vector<Point> &poly) {
     return area2;
 }
 
-long double polygon_area(const vector<Point> &poly) {
-    i128 area2 = twice_signed_area(poly);
+static void print_i128(i128 x) {
+    if (x == 0) {
+        cout << '0';
+        return;
+    }
+    if (x < 0) {
+        cout << '-';
+        x = -x;
+    }
+    string s;
+    while (x > 0) {
+        s.push_back(char('0' + x % 10));
+        x /= 10;
+    }
+    reverse(s.begin(), s.end());
+    cout << s;
+}
+
+void print_area_exact(i128 area2) {
     if (area2 < 0) area2 = -area2;
-    return static_cast<long double>(area2) / 2.0L;
+    print_i128(area2 / 2);
+    cout << (area2 % 2 == 0 ? ".0" : ".5");
 }
 
 int main() {
@@ -38,6 +63,7 @@ int main() {
         {4, 4},
         {0, 4}
     };
-    cout << fixed << setprecision(1) << polygon_area(poly) << '\n';
+    print_area_exact(twice_signed_area(poly));
+    cout << '\n';
     return 0;
 }

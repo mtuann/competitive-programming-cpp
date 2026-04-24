@@ -1,6 +1,12 @@
-// Use when: checking whether two closed segments intersect, including endpoints/overlap.
-// Invariant: coordinates are integers; cross products use __int128 for long long safety.
+// Template: segment intersection
+// Signal: check whether two closed segments intersect, including endpoints and overlap.
+// Assumes: coordinates are integers and the policy is closed segments, not strict crossing only.
+// Exposes: Point, on_segment(a, b, p), and segments_intersect(a, b, c, d).
 // Complexity: O(1).
+// Main trap: reusing it for strict intersection without removing the endpoint / overlap cases.
+// Links:
+//   Topic: topics/geometry/segment-intersection/README.md
+//   Note: practice/ladders/geometry/segment-intersection/linesegmentintersection.md
 
 #include <algorithm>
 #include <iostream>

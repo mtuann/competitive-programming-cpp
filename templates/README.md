@@ -84,6 +84,9 @@ The compact contract now covers these groups:
 - `foundations/`
 - `data-structures/`
 - `graphs/`
+- `dp/`
+- `math/`
 - `strings/`
+- `geometry/`
 
-Use those folders as the reference pattern before rolling the metadata style further into `dp/`, `math/`, and `geometry/`.
+Use those folders as the reference pattern for any future template additions.

@@ -1,4 +1,12 @@
-// Template: interval DP skeleton.
+// Template: interval DP skeleton
+// Signal: split-point interval DP over contiguous intervals [l, r].
+// Assumes: transitions depend only on smaller intervals and len-order iteration is valid.
+// Exposes: one len / l / r / k interval-DP skeleton over dp[l][r].
+// Complexity: O(n^3) in this split-point form.
+// Main trap: forcing interval DP when the real dependency graph is not interval-shaped.
+// Links:
+//   Topic: topics/dp/interval-dp/README.md
+//   Note: practice/ladders/dp/interval-dp/removalgame.md
 
 #include <algorithm>
 #include <iostream>

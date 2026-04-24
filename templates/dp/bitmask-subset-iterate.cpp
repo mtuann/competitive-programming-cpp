@@ -1,4 +1,12 @@
-// Template: subset iteration and simple bitmask DP skeleton.
+// Template: bitmask subset iterate
+// Signal: state is a subset of up to about 20 items, and transitions add one missing bit at a time.
+// Assumes: O(n * 2^n) is acceptable and the DP state is subset-closed.
+// Exposes: one forward bitmask DP skeleton over dp[mask].
+// Complexity: O(n * 2^n).
+// Main trap: using it after n grows past the feasible subset frontier.
+// Links:
+//   Topic: topics/dp/bitmask-dp/README.md
+//   Note: practice/ladders/dp/bitmask-dp/vmmarble.md
 
 #include <algorithm>
 #include <iostream>

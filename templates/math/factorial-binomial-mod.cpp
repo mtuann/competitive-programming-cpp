@@ -1,6 +1,12 @@
-// Use when: prime-mod nCk with many queries after one precompute.
-// Invariant: mod is prime and every query satisfies 0 <= k <= n <= max_n < mod.
+// Template: factorial binomial mod
+// Signal: many nCk mod prime queries after one precompute.
+// Assumes: mod is prime and every query satisfies 0 <= k <= n <= max_n < mod.
+// Exposes: Comb(max_n, mod) with binom(n, k).
 // Complexity: build O(max_n + log mod), query O(1).
+// Main trap: using it when max_n >= mod and expecting Lucas-like behavior for free.
+// Links:
+//   Topic: topics/combinatorics/counting-basics/README.md
+//   Note: practice/ladders/combinatorics/counting-basics/distributingapples.md
 
 #include <iostream>
 #include <vector>

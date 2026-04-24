@@ -1,4 +1,12 @@
-// Template: iterative FFT-based convolution.
+// Template: FFT convolution
+// Signal: convolution over reals or integers when small floating error is acceptable.
+// Assumes: power-of-two padding is fine and rounding the inverse FFT is numerically safe for the target bounds.
+// Exposes: fft(a, invert) and convolution(a, b).
+// Complexity: O(n log n).
+// Main trap: using floating FFT where exact integer or modular convolution is required.
+// Links:
+//   Topic: topics/math/fft-ntt/README.md
+//   Note: practice/ladders/math/fft/post2.md
 
 #include <cmath>
 #include <complex>

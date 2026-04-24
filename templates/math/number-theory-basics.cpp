@@ -1,5 +1,12 @@
 // Template: number theory basics
-// Includes gcd, lcm, SPF sieve, and factorization.
+// Signal: gcd/lcm, SPF sieve, and factorization are the real primitives.
+// Assumes: preprocessing up to n is acceptable and the task is integer-arithmetic, not modular-combinatorics heavy.
+// Exposes: gcd_ll, lcm_ll, build_spf(n), factorize_with_spf(x, spf).
+// Complexity: O(n log log n) style SPF build here, then O(log x) factorization by SPF.
+// Main trap: forgetting lcm can overflow before division if you reorder the formula.
+// Links:
+//   Topic: topics/math/number-theory-basics/README.md
+//   Note: practice/ladders/math/number-theory-basics/countingdivisors.md
 
 #include <iostream>
 #include <vector>

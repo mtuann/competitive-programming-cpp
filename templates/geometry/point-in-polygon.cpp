@@ -1,6 +1,12 @@
-// Use when: classifying a point against a simple polygon (outside/boundary/inside).
-// Invariant: polygon vertices are in boundary order; returns 0 = outside, 1 = boundary, 2 = inside.
+// Template: point in polygon
+// Signal: classify a point against a simple polygon as outside / boundary / inside.
+// Assumes: polygon vertices are in boundary order and the polygon is simple.
+// Exposes: point_in_polygon(poly, p) returning 0 = outside, 1 = boundary, 2 = inside.
 // Complexity: O(n).
+// Main trap: using it on a self-intersecting polygon and trusting parity semantics anyway.
+// Links:
+//   Topic: topics/geometry/polygon-area-point-location/README.md
+//   Note: practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md
 
 #include <algorithm>
 #include <iostream>
