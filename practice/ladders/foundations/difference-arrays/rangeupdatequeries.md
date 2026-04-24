@@ -22,7 +22,45 @@ Offline difference arrays say:
 
 This problem asks for point values in the middle of the process, so we need that same difference-array view, but maintained dynamically.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this pattern when:
+
+- updates affect whole ranges
+- queries ask for one position or one prefix state
+- the array starts with initial values, but updates and queries are interleaved
+- the offline difference-array trick feels almost right except that you must answer before all updates finish
+
+The key smell is:
+
+- "range add, point query"
+
+That is usually a hint to store updates at the boundaries and reconstruct one point by taking a prefix.
+
+## Problem-Specific Transformation
+
+The raw statement sounds dynamic, but the right rewrite is:
+
+- stop thinking about the values `a[i]` directly
+- maintain the difference array `diff`
+
+One update on `[l, r]` becomes only:
+
+- `diff[l] += u`
+- `diff[r + 1] -= u`
+
+Then a point query at `k` is just:
+
+- prefix sum of `diff[1..k]`
+
+So the problem is no longer "dynamic range updates on the array." It becomes:
+
+- point updates on `diff`
+- prefix queries on `diff`
+
+That is exactly the Fenwick-friendly formulation.
+
+## Core Idea
 
 Let the original array be `a[1..n]`. Define the difference array:
 

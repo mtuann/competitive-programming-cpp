@@ -21,7 +21,40 @@ becomes much simpler once we notice that all queries are known in advance.
 
 Then we can sort queries by `r` and sweep once from left to right.
 
-## Key Idea
+## Recognition Cue
+
+Reach for an offline right-endpoint sweep when:
+
+- all range queries are known up front
+- the answer for `[l, r]` becomes easy if the sweep is already at `r`
+- one monotone pass can keep enough state to answer every query ending here
+- trying to support the same query online feels heavier than the difficulty suggests
+
+For this problem, the key structural smell is:
+
+- "static array, many range queries, distinct-count statistic"
+
+That is a strong hint to sort queries and maintain last occurrences instead of answering online in input order.
+
+## Problem-Specific Transformation
+
+The statement asks for the number of distinct values in many subarrays. The reusable rewrite is:
+
+- while sweeping left to right, keep exactly one active occurrence per value
+- specifically, keep only the latest occurrence seen so far
+
+Then by the time we reach a query's right endpoint `r`, the answer on `[l, r]` is just:
+
+- how many active marks lie in that range
+
+So the original distinct-values question becomes:
+
+- point updates when a latest occurrence changes
+- range-sum queries over active marks
+
+That is why `Fenwick + offline sweep` is the clean formulation.
+
+## Core Idea
 
 Process the array from left to right. At position `i`, imagine marking exactly one active occurrence for each value:
 

@@ -19,7 +19,37 @@ This is one of the best first digit-DP problems because the extra state is tiny 
 
 Once those three ideas click, much larger digit-DP problems feel far less mysterious.
 
-## Key Idea
+## Recognition Cue
+
+Reach for digit DP when:
+
+- you need to count numbers in a range
+- the property depends on decimal digits, not arithmetic over the whole value
+- a brute-force loop over every number in `[a, b]` is too large
+- the condition can be checked while building the number left to right
+
+The classic top-level smell is:
+
+- "count valid numbers in `[L, R]`"
+
+That is often a signal to compute `solve(R) - solve(L - 1)`.
+
+## Problem-Specific Transformation
+
+The statement asks for a range count with a local digit rule: adjacent digits cannot be equal.
+
+The reusable rewrite is:
+
+- compute `solve(x)` = valid numbers in `[0, x]`
+- build the number digit by digit
+- carry only the information that affects the next digit:
+  - previous real digit
+  - whether the number has started
+  - whether the current prefix is still tight to the bound
+
+That turns the original range question into one memoized DFS over digit states, with a final subtraction for `[a, b]`.
+
+## Core Idea
 
 Let `solve(x)` be the number of valid integers in `[0, x]`.
 

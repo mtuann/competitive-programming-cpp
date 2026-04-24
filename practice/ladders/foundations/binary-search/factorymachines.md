@@ -13,7 +13,35 @@
 
 This is one of the cleanest "binary search on the answer" problems in the whole topic. The monotone predicate is easy to state, but the implementation still forces careful thinking about search boundaries, overflow, and what exactly `mid` means.
 
-## Key Idea
+## Recognition Cue
+
+Reach for answer-space binary search when:
+
+- the asked quantity is a minimum or first time threshold
+- checking one candidate answer is much easier than constructing the exact answer directly
+- feasibility only moves one way as the candidate grows
+- the brute-force search space is numeric and huge, but the checker is linear or near-linear
+
+The strongest wording smell here is:
+
+- "minimum time so that production reaches at least `t`"
+
+That is almost a request for the first true value of a monotone predicate.
+
+## Problem-Specific Transformation
+
+The statement talks about machines producing products over time. The reusable rewrite is:
+
+- guess a time `x`
+- ask whether the machines can produce at least `t` items by time `x`
+
+For one machine with speed `k[i]`, the contribution under that guess is `floor(x / k[i])`. So the raw scheduling story collapses into one monotone boolean checker:
+
+- `can_make(x) := sum floor(x / k[i]) >= t`
+
+Once the problem is in that form, we are no longer searching over schedules. We are only searching for the first feasible time.
+
+## Core Idea
 
 Let `can_make(x)` mean:
 

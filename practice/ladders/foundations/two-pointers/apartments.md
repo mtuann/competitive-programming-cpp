@@ -21,7 +21,38 @@ After sorting both lists:
 
 That is a great beginner example of why two pointers is really about monotone scans, not just copy-pasting a sliding-window loop.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this pattern when:
+
+- two collections can both be sorted
+- you want the maximum number of compatible pairs
+- compatibility is monotone once one side becomes too small or too large
+- each item can be used at most once
+
+The most useful smell is a tolerance window:
+
+- "match `x` with anything in `[x-k, x+k]`"
+
+That usually means sorted scan, not brute-force matching.
+
+## Problem-Specific Transformation
+
+The statement sounds like matching applicants to apartments, but the reusable version is:
+
+- one sorted stream of desired sizes
+- one sorted stream of actual sizes
+- decide greedily which current item must be discarded
+
+For one applicant and one apartment, there are only three meaningful cases:
+
+- apartment too small
+- apartment too large
+- apartment fits
+
+So instead of exploring matchings globally, we rewrite the task as a monotone two-pointer elimination process.
+
+## Core Idea
 
 Sort both arrays.
 

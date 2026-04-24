@@ -19,7 +19,29 @@ This is one of the cleanest interval-DP games in the standard curriculum:
 
 It is also a great example of a useful DP modeling trick: instead of storing the absolute score of the first player, store the **score difference** between the current player and the other player. That turns a minimax-looking game into a short recurrence.
 
-## Key Idea
+## Recognition Cue
+
+Reach for interval DP here because:
+
+- the remaining game state is always one contiguous interval
+- each move removes one endpoint
+- after one move, the opponent faces the same kind of interval state
+- brute-force minimax branches exponentially, but the subproblems repeat heavily
+
+The special modeling smell is:
+
+- a two-player take-from-ends game often gets much cleaner if you store score difference instead of absolute score
+
+## Problem-Specific Transformation
+
+The raw statement sounds like game theory, but the reusable rewrite is:
+
+- state = current remaining interval `[l, r]`
+- value = best achievable `(current player score - other player score)`
+
+That transformation removes the need to alternate explicit "max for me / min for opponent" logic. After taking one end, the opponent's optimal response is already summarized by the same DP on the smaller interval, so the recurrence becomes subtraction against a reused subproblem.
+
+## Core Idea
 
 Let:
 

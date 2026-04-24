@@ -19,7 +19,35 @@ This is the smallest useful geometry predicate in the whole track:
 
 If this test feels automatic, a lot of later geometry gets much less scary.
 
-## Key Idea
+## Recognition Cue
+
+Reach for orientation when:
+
+- the task asks which side of a directed line or segment a point lies on
+- only the sign matters, not the exact distance
+- later geometry primitives will be built on top of the same predicate
+
+The strongest smell is:
+
+- `LEFT / RIGHT / TOUCH`
+
+That is almost a direct request for one cross-product sign.
+
+## Problem-Specific Transformation
+
+The statement sounds like point classification, but the reusable rewrite is:
+
+- build the vectors `b-a` and `p-a`
+- compute one determinant
+- interpret only its sign
+
+So the whole problem is not about segments or distances. It is just:
+
+- positive determinant -> left turn
+- negative determinant -> right turn
+- zero determinant -> collinear
+
+## Core Idea
 
 For points `a`, `b`, and `p`, look at the directed segment `a -> b`.
 

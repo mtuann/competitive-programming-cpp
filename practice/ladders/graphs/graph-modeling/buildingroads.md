@@ -21,7 +21,37 @@ The real step is to notice:
 
 After that, the minimum construction is almost forced.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this pattern when:
+
+- the graph is undirected
+- you are asked to add the minimum number of extra edges to make it connected
+- there are no weights or secondary costs on the new edges
+- the natural first object to compute is connected components
+
+The strongest reduction is:
+
+- "connect all components" instead of "build some special road network"
+
+## Problem-Specific Transformation
+
+The statement is about roads between cities, but the reusable rewrite is:
+
+- existing roads define connected components
+- every new road can merge at most two components
+
+So the optimization question becomes purely structural:
+
+- if there are `k` components, at least `k - 1` new roads are necessary
+- one representative per component is enough to explicitly build such a set
+
+That turns the problem from graph construction into:
+
+- find representatives
+- connect them in a chain
+
+## Core Idea
 
 Build the undirected graph of the existing road network and find its connected components.
 

@@ -20,7 +20,37 @@ You have to decide that:
 
 Once that model is fixed, the rest is just counting connected components with a standard flood fill.
 
-## Key Idea
+## Recognition Cue
+
+Reach for graph modeling when:
+
+- the statement is about a grid, board, or state space rather than explicit vertices and edges
+- local moves define which positions can reach which others
+- the final question is about reachability, component count, or shortest path
+- the traversal itself feels standard once the graph is made visible
+
+Here the strongest smell is:
+
+- "count how many separate floor regions exist in a blocked grid"
+
+That is usually just connected components on an implicit graph.
+
+## Problem-Specific Transformation
+
+The statement never says "graph", but the reusable rewrite is:
+
+- one floor cell `.` = one vertex
+- one 4-neighbor move between floor cells = one edge
+
+After that, a room is no longer a room-shaped story object. It is simply one connected component of the floor-cell graph.
+
+So the whole problem becomes:
+
+- scan the grid
+- launch one flood fill from each unvisited component
+- count how many fills are needed
+
+## Core Idea
 
 Treat the grid as an implicit unweighted graph:
 

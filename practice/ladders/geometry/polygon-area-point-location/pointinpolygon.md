@@ -21,7 +21,36 @@ You need to get three things right:
 
 That makes it the natural second anchor after `Polygon Area`.
 
-## Key Idea
+## Recognition Cue
+
+Reach for point-in-polygon logic when:
+
+- the polygon is static
+- many query points must be classified
+- the first real decision is boundary policy, not optimization
+- a ray-casting or winding-number test is the intended primitive
+
+The strongest smell is:
+
+- `INSIDE / OUTSIDE / BOUNDARY`
+
+That means your classification convention must be fixed before you start coding.
+
+## Problem-Specific Transformation
+
+The statement sounds like full geometric reasoning, but the reusable rewrite is:
+
+- check boundary first with orientation + on-segment
+- otherwise reduce the question to parity of ray crossings
+
+So the problem becomes:
+
+- one exact boundary predicate
+- one consistent half-open crossing rule
+
+The implementation difficulty is almost entirely in making those two rules agree.
+
+## Core Idea
 
 For each query point `p`, do two checks.
 

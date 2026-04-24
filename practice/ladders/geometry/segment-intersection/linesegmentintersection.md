@@ -19,7 +19,36 @@ This is the standard first segment-intersection problem:
 
 If this note feels annoyingly case-heavy, that is normal. Segment intersection is exactly where "just use cross products" turns into "define the touching policy and handle degeneracies carefully".
 
-## Key Idea
+## Recognition Cue
+
+Reach for this predicate when:
+
+- the geometry object is exactly two segments
+- the task is only YES/NO, not intersection-point construction
+- touching counts as success
+- the hard part is degeneracies, not asymptotic complexity
+
+The strongest smell is:
+
+- "do these two closed segments intersect or touch?"
+
+That usually means one orientation primitive plus one inclusive `on_segment` rule.
+
+## Problem-Specific Transformation
+
+The statement sounds like general geometry, but the reusable rewrite is:
+
+- classify each endpoint by which side of the other segment's supporting line it lies on
+- handle collinear endpoints with one bounding-box predicate
+
+So the original problem becomes one constant-size case split:
+
+- proper crossing via opposite signs
+- endpoint touching or collinear overlap via `on_segment`
+
+That is why no floating point and no line-equation algebra are needed.
+
+## Core Idea
 
 For segments `ab` and `cd`, compute the orientation signs:
 

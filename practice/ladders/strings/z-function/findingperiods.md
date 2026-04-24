@@ -21,7 +21,34 @@ That is exactly what `z[p]` measures.
 
 It is also a good trap to learn from: the last repetition may be partial, so this is **not** the usual "minimal period divides `n`" test.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this Z-function pattern when:
+
+- the question asks whether a suffix agrees fully with the prefix
+- valid lengths are about periodicity or repeated prefix structure
+- the last repetition may be partial, so divisibility is suspicious
+
+The strongest smell is:
+
+- "for which shifts does the suffix match the prefix all the way to the end?"
+
+That is exactly what `i + z[i] == n` detects.
+
+## Problem-Specific Transformation
+
+The statement talks about periods, but the reusable rewrite is:
+
+- for each candidate length `p`, compare the suffix `s[p..n)` with the prefix `s[0..n-p)`
+
+That removes the repetition story and reduces the problem to one exact prefix-match query per shift.
+
+Then the whole task is:
+
+- build `z`
+- print every `p` where the suffix beginning at `p` is fully covered by the prefix
+
+## Core Idea
 
 The statement says that a period is a prefix that can generate the whole string by repetition, and the **last repetition may be partial**.
 

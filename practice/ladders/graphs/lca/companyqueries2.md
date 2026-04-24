@@ -21,6 +21,34 @@ You are given a rooted company hierarchy and many queries asking for the lowest 
 
 If binary lifting still feels like a memorized trick, this is the problem that usually turns it into a reusable tool.
 
+## Recognition Cue
+
+Reach for LCA when:
+
+- the graph is a rooted tree
+- many queries ask for the meeting point of two nodes in that rooted hierarchy
+- path or ancestor formulas become easy once the common ancestor is known
+- preprocessing once is clearly allowed and reused by many queries
+
+The strongest wording smell is:
+
+- "lowest common boss", "lowest common ancestor", or "meeting node in a rooted tree"
+
+## Problem-Specific Transformation
+
+The company story is just a rooted tree:
+
+- employee `1` is the root
+- every other employee has one direct boss
+
+So the whole task becomes:
+
+- preprocess powers-of-two ancestors
+- equalize depths
+- lift both nodes together until they almost meet
+
+That reframes the problem from hierarchy language into the standard binary-lifting query template.
+
 ## Core Idea
 
 Root the tree at employee `1`.

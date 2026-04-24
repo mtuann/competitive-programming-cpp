@@ -18,7 +18,37 @@ This is a strong trie problem because the trie is not the whole answer by itself
 
 That split is exactly why this problem is worth learning.
 
-## Key Idea
+## Recognition Cue
+
+Reach for `trie + DP` when:
+
+- the target is one long string
+- the dictionary contains many overlapping prefixes
+- the answer counts or optimizes segmentations, not only yes/no membership
+- checking every word at every position feels too wasteful
+
+The strongest smell is:
+
+- "for each starting index, many dictionary words may match here"
+
+That is where the trie prunes the candidate set and DP counts the rest.
+
+## Problem-Specific Transformation
+
+The statement sounds like pure dictionary matching, but the reusable rewrite is:
+
+- DP state = number of ways to finish from one starting index
+- trie = fast way to enumerate exactly the dictionary words that begin there
+
+So the whole task becomes:
+
+- walk the target from position `i`
+- follow trie edges as long as possible
+- every terminal node contributes one DP transition
+
+The trie is therefore a transition generator, not the answer by itself.
+
+## Core Idea
 
 Let `dp[i]` be the number of ways to split the suffix `s[i..n-1]` into dictionary words.
 

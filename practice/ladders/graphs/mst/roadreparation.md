@@ -17,7 +17,35 @@ This is the canonical first MST problem on CSES. Nothing fancy is hiding behind 
 - only take an edge if it connects two different components
 - verify the graph actually becomes one connected tree
 
-## Key Idea
+## Recognition Cue
+
+Reach for MST / Kruskal when:
+
+- the graph is weighted and undirected
+- you need minimum total connection cost over all vertices
+- shortest paths from one source are irrelevant
+- cycle-avoidance plus cheap edge choice feels more natural than path relaxation
+
+The strongest anti-cue is:
+
+- "distance from source"
+
+That points toward shortest paths, not spanning trees.
+
+## Problem-Specific Transformation
+
+The statement is about repairing roads cheaply, but the reusable rewrite is:
+
+- choose edges so every city becomes connected
+- minimize total chosen weight
+- never pay for an edge that only creates a cycle
+
+So the story reduces directly to MST. Then the constructive question is:
+
+- sort edges by weight
+- let DSU tell us whether one edge actually merges two components
+
+## Core Idea
 
 For an undirected weighted graph, Kruskal's algorithm says:
 

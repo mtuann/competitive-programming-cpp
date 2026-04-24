@@ -19,7 +19,33 @@ This is the cleanest `0/1` knapsack in the whole CSES set:
 
 If this recurrence feels natural, the rest of the knapsack family becomes much easier to organize.
 
-## Key Idea
+## Recognition Cue
+
+Reach for `0/1` knapsack when:
+
+- each item may be taken at most once
+- there is one budget or capacity dimension
+- the objective is to maximize value under that budget
+- the obvious brute force is "take or skip each item"
+
+The decisive implementation smell is:
+
+- one downward loop over capacity
+
+That is usually the marker that you are compressing a `0/1` item DP correctly.
+
+## Problem-Specific Transformation
+
+The statement is about buying books, but the reusable rewrite is:
+
+- item weight = book price
+- item value = book pages
+- capacity = total budget
+- each item is usable at most once
+
+So the task stops being a shopping story and becomes the textbook `0/1` knapsack recurrence. The only problem-specific work left is to choose the loop order that preserves the "use each book once" constraint.
+
+## Core Idea
 
 Let:
 

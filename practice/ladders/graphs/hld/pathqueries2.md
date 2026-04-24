@@ -20,6 +20,37 @@ You need exactly the two operations that make HLD useful:
 
 Nothing extra is hiding in the statement, so the main skill is learning how to turn a tree path into a few segment-tree intervals.
 
+## Recognition Cue
+
+Reach for HLD when:
+
+- updates happen on a tree online
+- queries ask for an aggregate on an arbitrary path, not only one subtree
+- each query must be answered much faster than walking the whole path
+- the aggregate is something a segment tree can already answer on an array
+
+The strong smell is:
+
+- "point update + path query on a tree"
+
+That is often exactly the place where heavy-light decomposition enters.
+
+## Problem-Specific Transformation
+
+The statement sounds like tree-specific query machinery, but the reusable rewrite is:
+
+- flatten the tree into a base array by heavy chains
+- reduce every path query into a small number of contiguous array intervals
+- let a segment tree handle the array primitive
+
+So the hard part is not the `max` query itself. It is the path decomposition that turns:
+
+- arbitrary tree path
+
+into:
+
+- `O(log N)` segment-tree intervals
+
 ## Core Idea
 
 Heavy-light decomposition groups every node into a heavy chain.

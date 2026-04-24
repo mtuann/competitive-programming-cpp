@@ -21,7 +21,32 @@ The problem statement gives exactly the pattern we want to recognize early:
 
 If this problem does not feel automatic yet, prefix-sum indexing discipline probably still needs a bit more repetition.
 
-## Key Idea
+## Recognition Cue
+
+Reach for plain prefix sums when:
+
+- the array never changes
+- there are many range-sum queries
+- each query asks for an aggregate over one contiguous interval
+- the intended answer should be `O(1)` after one preprocessing pass
+
+The strongest anti-cue is any update operation. Once updates appear, this exact tool is usually no longer enough.
+
+## Problem-Specific Transformation
+
+The statement is already close to the final pattern. The only real rewrite is indexing:
+
+- build `pref[i] = sum of first i elements`
+- answer `[l, r]` by subtracting away the prefix before `l`
+
+So the whole task becomes:
+
+- preprocess one cumulative array once
+- convert every inclusive range into one subtraction
+
+This is why the problem is such a good first anchor: almost all of the work is choosing a clean indexing convention and staying faithful to it.
+
+## Core Idea
 
 Build a prefix array where:
 

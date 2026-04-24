@@ -23,7 +23,32 @@ After sorting by finishing time, it becomes:
 
 That is exactly the instinct the sorting topic is meant to build.
 
-## Key Idea
+## Recognition Cue
+
+Reach for finish-time sorting when:
+
+- the objects are intervals
+- every chosen interval contributes the same value `1`
+- the goal is to maximize how many intervals can be taken
+- overlap is the only real constraint
+
+This is the classic interval-scheduling smell. If intervals have weights or profits, this greedy is usually no longer enough.
+
+## Problem-Specific Transformation
+
+The statement is about movies, but the reusable rewrite is:
+
+- each movie is an interval `[start, end]`
+- we want the largest subset of pairwise non-overlapping intervals
+
+That strips away the story and exposes the core scheduling question. Then the problem becomes:
+
+- sort by ending time
+- always keep the earliest-finishing compatible interval
+
+So the hard-looking subset search turns into one greedy scan with an exchange argument.
+
+## Core Idea
 
 Sort all movies by:
 

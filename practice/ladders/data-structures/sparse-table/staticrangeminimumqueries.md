@@ -19,7 +19,36 @@ This is the canonical sparse-table problem. Nothing is hidden behind the stateme
 
 That makes it the cleanest place to learn why sparse table is lighter than a segment tree on static data.
 
-## Key Idea
+## Recognition Cue
+
+Reach for sparse table when:
+
+- the array is immutable
+- there are many range queries
+- the operation is idempotent, such as `min`, `max`, or `gcd`
+- you want `O(1)` query time after `O(n log n)` preprocessing
+
+The strongest anti-cues are:
+
+- updates
+- non-idempotent operations like sum
+
+Those push you away from this exact tool.
+
+## Problem-Specific Transformation
+
+The statement is really asking one repeated primitive:
+
+- `RMQ(l, r)` on static data
+
+So the reusable rewrite is:
+
+- precompute answers on power-of-two intervals
+- answer each query by stitching together two largest equal-size blocks
+
+That reduces a seemingly arbitrary interval query to one fixed table lookup pattern.
+
+## Core Idea
 
 Precompute answers for all intervals whose length is a power of two:
 

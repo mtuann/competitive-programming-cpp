@@ -17,7 +17,35 @@ This is the cleanest topological-sort problem on CSES. It teaches the exact reas
 - removing such a node preserves the same structure on the smaller graph
 - if the process gets stuck early, a cycle must exist
 
-## Key Idea
+## Recognition Cue
+
+Reach for topological sort when:
+
+- the graph is directed
+- edges mean prerequisites or dependencies
+- you need one valid order that respects all dependencies
+- a cycle should make the task impossible
+
+The cleanest wording smell is:
+
+- "take course/task `b` only after course/task `a`"
+
+That is usually a DAG-ordering question.
+
+## Problem-Specific Transformation
+
+The course story hides a simple directed graph:
+
+- `a -> b` means `a` must come before `b`
+
+Then the task becomes:
+
+- either produce one topological order of this directed graph
+- or prove no such order exists because a directed cycle remains
+
+That is exactly the statement Kahn's indegree process was built for.
+
+## Core Idea
 
 For each course, store its current indegree.
 

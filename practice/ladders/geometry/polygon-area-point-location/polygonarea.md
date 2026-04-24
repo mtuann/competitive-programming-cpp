@@ -19,7 +19,34 @@ This is the cleanest first polygon-area problem:
 
 It is the right first anchor for this topic because it turns cross products into a full closed-shape invariant.
 
-## Key Idea
+## Recognition Cue
+
+Reach for shoelace when:
+
+- polygon vertices are already given in cyclic order
+- you need area or doubled area
+- the polygon is static and simple
+- the intended solution should stay entirely in integer arithmetic
+
+The strongest smell is:
+
+- "compute area from boundary vertices"
+
+That usually means summing oriented edge contributions, not triangulating explicitly.
+
+## Problem-Specific Transformation
+
+The statement is about one polygon, but the reusable rewrite is:
+
+- treat every directed edge `(p[i], p[i+1])` as contributing one signed cross product
+- sum these contributions around the boundary
+
+So instead of thinking about area as a global shape quantity, we turn it into:
+
+- one linear pass over edges
+- one final absolute value
+
+## Core Idea
 
 For polygon vertices `p[0], p[1], ..., p[n-1]`, the shoelace formula says:
 

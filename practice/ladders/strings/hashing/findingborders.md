@@ -17,7 +17,35 @@ This is a clean first hashing exercise because the whole problem reduces to one 
 
 There is no DP or automaton wrapped around it. If your `get(l, r)` function is correct, the rest is just looping over candidate border lengths.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this hashing pattern when:
+
+- you need to compare many prefix/suffix or substring pairs quickly
+- equality checks dominate the task
+- the whole problem becomes easy once `get(l, r)` is trustworthy
+
+The strongest smell is:
+
+- "for every length `len`, is the prefix of length `len` equal to the suffix of length `len`?"
+
+That is a textbook fit for prefix hashes.
+
+## Problem-Specific Transformation
+
+The border story collapses to one substring-equality loop:
+
+- prefix = `s[0..len)`
+- suffix = `s[n-len..n)`
+
+So the reusable rewrite is:
+
+- preprocess rolling hashes once
+- compare these two substrings for every candidate `len`
+
+That turns the problem from string-structure language into a clean equality-filtering task.
+
+## Core Idea
 
 A border is a **proper** prefix that is also a suffix.
 
