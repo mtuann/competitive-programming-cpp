@@ -5,7 +5,7 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 - Topic slug: `geometry/vector-orientation`
 - Tutorial page: [Open tutorial](../../../topics/geometry/vector-orientation/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/vector-orientation/README.md)
-- Repo problems currently tagged here: `2`
+- Repo problems currently tagged here: `3`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -49,6 +49,7 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `LINESEGMENTINTERSECTION` | Line Segment Intersection | `secondary` | `easy` | orientation test; on segment inclusion; collinear overlap handling | [Note](../../../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
 | `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 | `VMCOINS` | Trò chơi với những đồng xu | `secondary` | `hard` | promise-driven constructive; translation matching; small residual search | [Note](../../../practice/ladders/advanced/constructive/vmcoins.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp) |
 

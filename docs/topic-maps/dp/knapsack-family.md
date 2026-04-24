@@ -5,7 +5,7 @@ Choose the state dimension and transition order that matches 0-1, complete, boun
 - Topic slug: `dp/knapsack-family`
 - Tutorial page: [Open tutorial](../../../topics/dp/knapsack-family/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/knapsack-family/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `15`
 
 ## Microtopics
@@ -127,7 +127,9 @@ Choose the state dimension and transition order that matches 0-1, complete, boun
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `BOOKSHOP` | Book Shop | `primary` | `easy` | 0 1 knapsack; downward capacity loop; budget value maximization | [Note](../../../practice/ladders/dp/knapsack-family/bookshop.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp) |
 
 ## Regeneration
 

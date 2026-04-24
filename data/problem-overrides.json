@@ -79,6 +79,18 @@
       "Dynamic programming"
     ]
   },
+  "BOOKSHOP": {
+    "topic_tags": [],
+    "patterns": [
+      "0 1 knapsack",
+      "downward capacity loop",
+      "budget value maximization"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ]
+  },
   "CONCERTTICKETS": {
     "topic_tags": [],
     "patterns": [
@@ -183,6 +195,20 @@
     "tracks": [
       "VN SPOJ",
       "OI-style"
+    ]
+  },
+  "LINESEGMENTINTERSECTION": {
+    "topic_tags": [
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "orientation test",
+      "on segment inclusion",
+      "collinear overlap handling"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
     ]
   },
   "MCQUERY": {
@@ -330,6 +356,18 @@
       "Graph algorithms"
     ]
   },
+  "REPEATINGSUBSTRING": {
+    "topic_tags": [],
+    "patterns": [
+      "suffix array doubling",
+      "kasai lcp",
+      "maximum adjacent lcp"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
   "STRINGMATCHING": {
     "topic_tags": [],
     "patterns": [
@@ -340,6 +378,18 @@
     "tracks": [
       "CSES",
       "String algorithms"
+    ]
+  },
+  "STATICRANGEMINIMUMQUERIES": {
+    "topic_tags": [],
+    "patterns": [
+      "sparse table rmq",
+      "idempotent overlap query",
+      "log table preprocessing"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
     ]
   },
   "STRINGFUNCTIONS": {

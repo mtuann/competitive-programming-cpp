@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `38`
+- Total tracked problem notes: `42`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - External companion index: [external-problem-index.md](external-problem-index.md)
 - Topic maps: [topic-maps/index.md](topic-maps/index.md)
@@ -13,14 +13,14 @@ This page lists every current solved problem note in the repo and maps it back t
 | Area | Count |
 | --- | ---: |
 | Foundations | 2 |
-| Data Structures | 4 |
+| Data Structures | 5 |
 | Graphs | 12 |
-| DP | 4 |
+| DP | 5 |
 | Greedy | 1 |
 | Math | 4 |
 | Combinatorics | 2 |
-| Strings | 5 |
-| Geometry | 3 |
+| Strings | 6 |
+| Geometry | 4 |
 | Advanced | 1 |
 
 ## Current Catalog
@@ -40,6 +40,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `CVP00001` | Ô ăn quan | `Data Structures -> Fenwick Tree` | Foundations -> Prefix Sums | circular updates; range-add point-query; query-from-initial-state | `hard` | VN SPOJ, OI-style | [Map](topic-maps/data-structures/fenwick-tree.md) / [Ladder](../practice/ladders/data-structures/fenwick-tree/README.md) / [Tutorial](../topics/data-structures/fenwick-tree/README.md) | [Note](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
 | `CONCERTTICKETS` | Concert Tickets | `Data Structures -> Heaps And Ordered Sets` | - | multiset predecessor; erase one occurrence; greedy ticket assignment | `medium` | CSES, Sorting and searching | [Map](topic-maps/data-structures/heaps-and-ordered-sets.md) / [Ladder](../practice/ladders/data-structures/heaps-and-ordered-sets/README.md) / [Tutorial](../topics/data-structures/heaps-and-ordered-sets/README.md) | [Note](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp) |
 | `DISTINCTVALUESQUERIES` | Distinct Values Queries | `Data Structures -> Offline Tricks` | Data Structures -> Fenwick Tree | offline right-endpoint sweep; last occurrence activation; fenwick range count | `hard` | CSES, Range queries | [Map](topic-maps/data-structures/offline-tricks.md) / [Ladder](../practice/ladders/data-structures/offline-tricks/README.md) / [Tutorial](../topics/data-structures/offline-tricks/README.md) | [Note](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp) |
+| `STATICRANGEMINIMUMQUERIES` | Static Range Minimum Queries | `Data Structures -> Sparse Table` | - | sparse table rmq; idempotent overlap query; log table preprocessing | `easy` | CSES, Range queries | [Map](topic-maps/data-structures/sparse-table.md) / [Ladder](../practice/ladders/data-structures/sparse-table/README.md) / [Tutorial](../topics/data-structures/sparse-table/README.md) | [Note](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp) |
 
 ### Graphs
 
@@ -65,6 +66,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `VMMARBLE` | Phân loại bi | `DP -> Bitmask DP` | Advanced -> Constructive | final-color assignment; residual-state dp; capacity-2 moves | `medium` | VN SPOJ, OI-style | [Map](topic-maps/dp/bitmask-dp.md) / [Ladder](../practice/ladders/dp/bitmask-dp/README.md) / [Tutorial](../topics/dp/bitmask-dp/README.md) | [Note](../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
 | `COUNTINGNUMBERS` | Counting Numbers | `DP -> Digit DP` | - | digit dp; previous digit state; range counting | `medium` | CSES, Dynamic programming | [Map](topic-maps/dp/digit-dp.md) / [Ladder](../practice/ladders/dp/digit-dp/README.md) / [Tutorial](../topics/dp/digit-dp/README.md) | [Note](../practice/ladders/dp/digit-dp/countingnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp) |
 | `VMSCALE` | Chiếc cân kỳ diệu | `DP -> Foundations` | Math -> Number Theory Basics | budget dp; balanced ternary; decision-tree optimization | `hard` | VN SPOJ, OI-style | [Map](topic-maps/dp/foundations.md) / [Ladder](../practice/ladders/dp/foundations/README.md) / [Tutorial](../topics/dp/foundations/README.md) | [Note](../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |
+| `BOOKSHOP` | Book Shop | `DP -> Knapsack Family` | - | 0 1 knapsack; downward capacity loop; budget value maximization | `easy` | CSES, Dynamic programming | [Map](topic-maps/dp/knapsack-family.md) / [Ladder](../practice/ladders/dp/knapsack-family/README.md) / [Tutorial](../topics/dp/knapsack-family/README.md) | [Note](../practice/ladders/dp/knapsack-family/bookshop.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp) |
 | `TFIELD` | Ruộng bậc thang | `DP -> Sliding Window And Window DP` | Foundations -> Two Pointers; Geometry -> Polygon Area And Point Location | nested polygons; weighted sliding window; shoelace preprocessing | `hard` | VN SPOJ, OI-style | [Map](topic-maps/dp/sliding-window.md) / [Ladder](../practice/ladders/dp/sliding-window/README.md) / [Tutorial](../topics/foundations/patterns/two-pointers/README.md) | [Note](../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 
 ### Greedy
@@ -96,6 +98,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `FINDINGPATTERNS` | Finding Patterns | `Strings -> Aho-Corasick` | Strings -> Trie | aho-corasick automaton; failure links; multi-pattern presence queries | `medium` | CSES, String algorithms | [Map](topic-maps/strings/aho-corasick.md) / [Ladder](../practice/ladders/strings/aho-corasick/README.md) / [Tutorial](../topics/strings/aho-corasick/README.md) | [Note](../practice/ladders/strings/aho-corasick/findingpatterns.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp) |
 | `FINDINGBORDERS` | Finding Borders | `Strings -> Hashing` | - | rolling hash; prefix-suffix equality; proper borders enumeration | `easy` | CSES, String algorithms | [Map](topic-maps/strings/hashing.md) / [Ladder](../practice/ladders/strings/hashing/README.md) / [Tutorial](../topics/strings/hashing/README.md) | [Note](../practice/ladders/strings/hashing/findingborders.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp) |
 | `STRINGMATCHING` | String Matching | `Strings -> KMP` | - | prefix function; border fallback; overlapping occurrence counting | `easy` | CSES, String algorithms | [Map](topic-maps/strings/kmp.md) / [Ladder](../practice/ladders/strings/kmp/README.md) / [Tutorial](../topics/strings/kmp/README.md) | [Note](../practice/ladders/strings/kmp/stringmatching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp) |
+| `REPEATINGSUBSTRING` | Repeating Substring | `Strings -> Suffix Array And LCP` | - | suffix array doubling; kasai lcp; maximum adjacent lcp | `medium` | CSES, String algorithms | [Map](topic-maps/strings/suffix-array-lcp.md) / [Ladder](../practice/ladders/strings/suffix-array-lcp/README.md) / [Tutorial](../topics/strings/suffix-array-lcp/README.md) | [Note](../practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp) |
 | `WORDCOMBINATIONS` | Word Combinations | `Strings -> Trie` | - | trie plus dp; dictionary segmentation; suffix counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/trie.md) / [Ladder](../practice/ladders/strings/trie/README.md) / [Tutorial](../topics/strings/trie/README.md) | [Note](../practice/ladders/strings/trie/wordcombinations.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp) |
 | `STRINGFUNCTIONS` | String Functions | `Strings -> Z-Function` | Strings -> KMP | z function; prefix function; prefix structure diagnostics | `easy` | CSES, String algorithms | [Map](topic-maps/strings/z-function.md) / [Ladder](../practice/ladders/strings/z-function/README.md) / [Tutorial](../topics/strings/z-function/README.md) | [Note](../practice/ladders/strings/z-function/stringfunctions.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/stringfunctions.cpp) |
 
@@ -104,6 +107,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `PRAVO` | Tam giác vuông | `Geometry -> Right Triangles` | Geometry -> Counting Geometry; Geometry -> Vector And Orientation | count right triangles; normalized directions; perpendicular pairing | `medium` | VN SPOJ, OI-style | [Map](topic-maps/geometry/right-triangles.md) / [Ladder](../practice/ladders/geometry/right-triangles/README.md) / [Tutorial](../topics/geometry/counting-geometry/README.md) | [Note](../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
+| `LINESEGMENTINTERSECTION` | Line Segment Intersection | `Geometry -> Segment Intersection` | Geometry -> Vector And Orientation | orientation test; on segment inclusion; collinear overlap handling | `easy` | CSES, Geometry | [Map](topic-maps/geometry/segment-intersection.md) / [Ladder](../practice/ladders/geometry/segment-intersection/README.md) / [Tutorial](../topics/geometry/segment-intersection/README.md) | [Note](../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
 | `KINGDOMS` | KINGDOMS | `Geometry -> Sweep Line` | Graphs -> Trees; Geometry -> Polygon Area And Point Location | laminar regions; sweep events; containment tree | `hard` | VN SPOJ, OI-style | [Map](topic-maps/geometry/sweep-line.md) / [Ladder](../practice/ladders/geometry/sweep-line/README.md) / [Tutorial](../topics/geometry/sweep-line/README.md) | [Note](../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
 | `VOTELPH` | Bà Nà | `Geometry -> Sweep Line` | Geometry -> Polygon Area And Point Location | piecewise maximum; endpoint preprocessing; parabola envelopes | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/geometry/sweep-line.md) / [Ladder](../practice/ladders/geometry/sweep-line/README.md) / [Tutorial](../topics/geometry/sweep-line/README.md) | [Note](../practice/ladders/geometry/sweep-line/votelph.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp) |
 

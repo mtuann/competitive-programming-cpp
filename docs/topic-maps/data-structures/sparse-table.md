@@ -5,7 +5,7 @@ Static range query structure for idempotent operations such as RMQ and LCA reduc
 - Topic slug: `data-structures/sparse-table`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/sparse-table/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/sparse-table/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `3`
 
 ## Microtopics
@@ -49,7 +49,9 @@ Static range query structure for idempotent operations such as RMQ and LCA reduc
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `STATICRANGEMINIMUMQUERIES` | Static Range Minimum Queries | `primary` | `easy` | sparse table rmq; idempotent overlap query; log table preprocessing | [Note](../../../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp) |
 
 ## Regeneration
 

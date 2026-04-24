@@ -17,7 +17,7 @@ These pages collect trusted learning sources, official practice sources, curated
 | Data Structures -> Heaps And Ordered Sets | 1 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Offline Tricks | 1 | 7 | [Open](data-structures/offline-tricks.md) |
 | Data Structures -> Segment Tree | 1 | 8 | [Open](data-structures/segment-tree.md) |
-| Data Structures -> Sparse Table | 0 | 3 | [Open](data-structures/sparse-table.md) |
+| Data Structures -> Sparse Table | 1 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 1 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Maximum Flow | 3 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 7 | [Open](graphs/gomory-hu.md) |
@@ -35,7 +35,7 @@ These pages collect trusted learning sources, official practice sources, curated
 | DP -> Digit DP | 1 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 12 | [Open](dp/foundations.md) |
 | DP -> Interval DP | 0 | 12 | [Open](dp/interval-dp.md) |
-| DP -> Knapsack Family | 0 | 15 | [Open](dp/knapsack-family.md) |
+| DP -> Knapsack Family | 1 | 15 | [Open](dp/knapsack-family.md) |
 | DP -> Sliding Window And Window DP | 1 | 16 | [Open](dp/sliding-window.md) |
 | DP -> Tree DP | 1 | 10 | [Open](dp/tree-dp.md) |
 | Greedy -> Prefix Constraints | 1 | 8 | [Open](greedy/prefix-constraints.md) |
@@ -50,7 +50,7 @@ These pages collect trusted learning sources, official practice sources, curated
 | Strings -> Aho-Corasick | 1 | 7 | [Open](strings/aho-corasick.md) |
 | Strings -> Hashing | 1 | 7 | [Open](strings/hashing.md) |
 | Strings -> KMP | 2 | 5 | [Open](strings/kmp.md) |
-| Strings -> Suffix Array And LCP | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
+| Strings -> Suffix Array And LCP | 1 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 0 | 8 | [Open](strings/suffix-automaton.md) |
 | Strings -> Trie | 2 | 5 | [Open](strings/trie.md) |
 | Strings -> Z-Function | 1 | 5 | [Open](strings/z-function.md) |
@@ -58,9 +58,9 @@ These pages collect trusted learning sources, official practice sources, curated
 | Geometry -> Counting Geometry | 1 | 6 | [Open](geometry/counting-geometry.md) |
 | Geometry -> Polygon Area And Point Location | 3 | 4 | [Open](geometry/polygon-area-point-location.md) |
 | Geometry -> Right Triangles | 1 | 5 | [Open](geometry/right-triangles.md) |
-| Geometry -> Segment Intersection | 0 | 5 | [Open](geometry/segment-intersection.md) |
+| Geometry -> Segment Intersection | 1 | 5 | [Open](geometry/segment-intersection.md) |
 | Geometry -> Sweep Line | 2 | 6 | [Open](geometry/sweep-line.md) |
-| Geometry -> Vector And Orientation | 2 | 5 | [Open](geometry/vector-orientation.md) |
+| Geometry -> Vector And Orientation | 3 | 5 | [Open](geometry/vector-orientation.md) |
 | Advanced -> Algorithm Engineering | 0 | 8 | [Open](advanced/algorithm-engineering.md) |
 | Advanced -> Approximation And Relaxation | 0 | 5 | [Open](advanced/approximation-and-relaxation.md) |
 | Advanced -> Complexity And Hardness | 0 | 5 | [Open](advanced/complexity-and-hardness.md) |

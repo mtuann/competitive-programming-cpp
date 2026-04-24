@@ -231,6 +231,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp"
   },
   {
+    "code": "STATICRANGEMINIMUMQUERIES",
+    "title": "Static Range Minimum Queries",
+    "full_title": "Static Range Minimum Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1647",
+    "main_topic": "Data Structures -> Sparse Table",
+    "secondary_topics": [
+      "Idempotent queries",
+      "Overlapping blocks",
+      "Log-table preprocessing"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "data-structures/sparse-table",
+    "topic_tags": [
+      "data-structures/sparse-table"
+    ],
+    "patterns": [
+      "sparse table rmq",
+      "idempotent overlap query",
+      "log table preprocessing"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md",
+    "ladder_path": "practice/ladders/data-structures/sparse-table/README.md",
+    "tutorial_path": "topics/data-structures/sparse-table/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp"
+  },
+  {
     "code": "VMMARBLE",
     "title": "Phân loại bi",
     "full_title": "VMMARBLE - Phân loại bi",
@@ -327,6 +359,38 @@
     "ladder_path": "practice/ladders/dp/foundations/README.md",
     "tutorial_path": "topics/dp/foundations/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp"
+  },
+  {
+    "code": "BOOKSHOP",
+    "title": "Book Shop",
+    "full_title": "Book Shop",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1158",
+    "main_topic": "DP -> Knapsack Family",
+    "secondary_topics": [
+      "0/1 knapsack",
+      "Downward capacity loop",
+      "Budget maximization"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "dp/knapsack-family",
+    "topic_tags": [
+      "dp/knapsack-family"
+    ],
+    "patterns": [
+      "0 1 knapsack",
+      "downward capacity loop",
+      "budget value maximization"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ],
+    "note_path": "practice/ladders/dp/knapsack-family/bookshop.md",
+    "ladder_path": "practice/ladders/dp/knapsack-family/README.md",
+    "tutorial_path": "topics/dp/knapsack-family/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp"
   },
   {
     "code": "TFIELD",
@@ -459,6 +523,39 @@
     "ladder_path": "practice/ladders/geometry/right-triangles/README.md",
     "tutorial_path": "topics/geometry/counting-geometry/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp"
+  },
+  {
+    "code": "LINESEGMENTINTERSECTION",
+    "title": "Line Segment Intersection",
+    "full_title": "Line Segment Intersection",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2190",
+    "main_topic": "Geometry -> Segment Intersection",
+    "secondary_topics": [
+      "Orientation test",
+      "On-segment check",
+      "Collinear overlap"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "geometry/segment-intersection",
+    "topic_tags": [
+      "geometry/segment-intersection",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "orientation test",
+      "on segment inclusion",
+      "collinear overlap handling"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/geometry/segment-intersection/linesegmentintersection.md",
+    "ladder_path": "practice/ladders/geometry/segment-intersection/README.md",
+    "tutorial_path": "topics/geometry/segment-intersection/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp"
   },
   {
     "code": "KINGDOMS",
@@ -1178,6 +1275,38 @@
     "ladder_path": "practice/ladders/strings/kmp/README.md",
     "tutorial_path": "topics/strings/kmp/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp"
+  },
+  {
+    "code": "REPEATINGSUBSTRING",
+    "title": "Repeating Substring",
+    "full_title": "Repeating Substring",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2106",
+    "main_topic": "Strings -> Suffix Array And LCP",
+    "secondary_topics": [
+      "Doubling suffix array",
+      "Kasai LCP",
+      "Longest repeated substring"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/suffix-array-lcp",
+    "topic_tags": [
+      "strings/suffix-array-lcp"
+    ],
+    "patterns": [
+      "suffix array doubling",
+      "kasai lcp",
+      "maximum adjacent lcp"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md",
+    "ladder_path": "practice/ladders/strings/suffix-array-lcp/README.md",
+    "tutorial_path": "topics/strings/suffix-array-lcp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp"
   },
   {
     "code": "WORDCOMBINATIONS",

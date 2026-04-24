@@ -5,7 +5,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 - Topic slug: `geometry/segment-intersection`
 - Tutorial page: [Open tutorial](../../../topics/geometry/segment-intersection/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/segment-intersection/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -52,7 +52,9 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `LINESEGMENTINTERSECTION` | Line Segment Intersection | `primary` | `easy` | orientation test; on segment inclusion; collinear overlap handling | [Note](../../../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
 
 ## Regeneration
 
