@@ -54,6 +54,7 @@ What success looks like after studying this page:
 - you can explain why reverse edges are logically necessary
 - you can extract a min cut from the final residual graph
 - you know when Dinic is the right default and when the problem is really matching or min-cost flow instead
+- you can tell whether the statement wants a flow value, a cut certificate, or a reduction target such as matching
 
 ## Prerequisites
 
@@ -284,6 +285,7 @@ Why Dinic is the first implementation to internalize:
 | edge-disjoint paths | max flow with unit capacities | integrality gives path count | using plain graph search greedily |
 | vertex-disjoint paths | node splitting + max flow | vertex capacities become edge capacities | splitting source/sink incorrectly |
 | blocking / removal certificate | max flow then residual cut extraction | theorem gives the certificate directly | printing residual edges instead of original edges |
+| simple one-to-one bipartite compatibility | matching first | the statement is already a matching model | overbuilding a full flow reduction too early |
 | bipartite matching with capacities | flow reduction | source-left-right-sink structure is natural | using plain matching when capacities exceed `1` |
 | minimum cost under capacities | min-cost flow | cost matters, not just amount | using plain max flow and losing the objective |
 | many pairwise min-cuts | Gomory-Hu on top of max flow | compresses all pair min-cuts into one tree | thinking repeated independent flow is the only route |
@@ -359,6 +361,12 @@ Then:
 
 This is one of the highest-value reductions in the whole topic.
 
+In practice, always pause for one more question:
+
+- are `s` and `t` also capacity-limited, or only the internal vertices?
+
+That small semantic check is where many otherwise-correct reductions go wrong.
+
 ### Example 4: `Police Chase` Is Really A Min-Cut Certificate Problem
 
 In [Police Chase](../../../practice/ladders/graphs/flow/policechase.md), the object you finally print is not:
@@ -396,6 +404,11 @@ This is extremely useful conceptually, but in contest practice:
 
 - if the problem is plain bipartite matching, use matching language first
 - if capacities or extra supply constraints appear, flow often becomes the cleaner model
+
+That is the right boundary to remember:
+
+- matching is often the cleaner first story
+- flow is the more general capacity language sitting behind it
 
 ### Example 6: Gomory-Hu Is "Many Cuts" On Top Of Max Flow
 
@@ -559,6 +572,12 @@ Many contest tasks continue after the base engine:
 So after finding a valid max-flow reduction, always ask:
 
 - is the theorem asking me for the value, the certificate, or a richer structure on top?
+
+This one question often determines whether you should stop at Dinic or keep going into:
+
+- cut extraction
+- decomposition
+- or min-cost / Gomory-Hu style extensions
 
 ## Beyond Plain Max Flow
 

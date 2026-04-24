@@ -50,6 +50,7 @@ What success looks like after studying this page:
 - you know when Kahn is cleaner than DFS finishing-order toposort
 - you know when Kosaraju is cleaner than Tarjan for contest implementation
 - you naturally switch from "graph with cycles" to "DAG of components"
+- you can tell whether the task wants an order on vertices, an SCC partition, or a DAG on components
 
 ## Prerequisites
 
@@ -285,6 +286,7 @@ Why:
 | Situation | Best first tool | Why it fits | Main danger |
 | --- | --- | --- | --- |
 | DAG order or "print any valid schedule" | Kahn | indegree-`0` means ready now | forgetting cycle check |
+| DAG order with lexicographically smallest requirement | Kahn + priority queue | preserves the same invariant with different tie-breaking | using plain queue and missing the ordering requirement |
 | detect whether a directed cycle exists | Kahn or DFS cycle logic | failed full order is a cycle witness | assuming queue order itself proves correctness |
 | graph has cycles but you want DAG DP after compression | SCC first | condensation DAG is the real object | doing DP on original cyclic graph |
 | you need explicit SCC ids and a clean proof story | Kosaraju | two-pass structure is transparent | building reverse graph incorrectly |
@@ -346,6 +348,10 @@ The right move is:
 This is the core pattern behind problems like `Coin Collector`:
 
 - the true state graph is the DAG of components, not the original graph
+
+That sentence is the whole repair pattern:
+
+- if vertex-level DAG DP fails because cycles are real, move the DP to component level
 
 ### Example 4: Why Condensation Helps Even When You Only Care About Reachability
 
@@ -436,6 +442,11 @@ If the graph may have cycles, a produced DFS order is not automatically a valid 
 
 Always keep the theorem boundary explicit.
 
+In practice, this means:
+
+- use Kahn when the statement naturally asks for "possible or impossible"
+- or add explicit DFS cycle detection if you prefer the finishing-order route
+
 ### 2. Kahn's Queue Order Is Not Unique
 
 Different queue tie-breaking gives different valid topological orders.
@@ -467,6 +478,11 @@ If you need an order on components:
 
 - explicitly build the condensation DAG
 - and topologically sort that DAG if needed
+
+This is especially important when component ids come from Kosaraju or Tarjan:
+
+- the ids are labels
+- the condensation DAG is the structure
 
 ### 5. Condensation DAG Often Needs Deduplication Only For Performance
 
