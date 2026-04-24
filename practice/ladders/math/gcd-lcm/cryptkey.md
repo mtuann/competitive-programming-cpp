@@ -15,7 +15,28 @@
 
 This is a strong number-theory problem because the closure under `gcd` and `lcm` looks abstract at first, but the right viewpoint turns it into a tiny check over the prime powers of `k`.
 
-## Key Idea
+## Recognition Cue
+
+This is a `closure under gcd/lcm -> prime-power feasibility` signal:
+
+- the set is defined by repeated `gcd` and `lcm`
+- the query asks whether one target number can be generated
+- trying to simulate all closures is impossible
+- the target number `k` is small enough to factor, and prime exponents matter more than raw values
+
+When a number-theory closure problem asks about one target, factor the target first and ask what each prime power would need locally.
+
+## Problem-Specific Transformation
+
+The statement is rewritten prime-by-prime:
+
+- factor `k`
+- for each prime power `p^e` dividing `k`, collect all input numbers divisible by `p^e`
+- take the gcd of that eligible set and test whether it contains exactly the right amount of `p` and no forbidden extra baggage
+
+If one witness gcd exists for every prime power of `k`, then taking the lcm of those witnesses reconstructs `k`. So the global closure question becomes a small family of local prime-power tests.
+
+## Core Idea
 
 Let `S` be the smallest set containing the input numbers and closed under:
 
@@ -35,7 +56,7 @@ For one fixed prime power `pj^ej`, look at **all** input numbers divisible by `p
 Then:
 
 - if no input number is divisible by `pj^ej`, we can never create that prime power in `k`
-- if `gj` still contains some extra prime factor not in `k`, or a too-large exponent for another prime of `k`, then every gcd built while preserving `pj^ej` keeps that extra baggage
+- if `gj` still contains a prime factor that should not divide `k`, or an exponent that stays too large for another prime of `k`, then every gcd built while preserving `pj^ej` still keeps that unwanted divisibility
 - if `v_pj(gj) > ej`, then we also cannot reduce that exponent without losing `pj^ej`
 
 So the condition for prime `pj` is:
@@ -53,6 +74,14 @@ so `k` belongs to `S`.
 Special case:
 
 - if `k = 1`, then the answer is `YES` iff `gcd(a1, a2, ..., an) = 1`
+
+### Why GCD Of All Eligible Numbers Is Decisive
+
+For one target prime power `p^e`, every constructible witness that still keeps `p^e` must be the gcd of some subset of eligible numbers. Taking the gcd of **all** eligible numbers gives the smallest object you can hope for while preserving that divisibility requirement.
+
+So if even this all-eligible gcd still contains a forbidden extra prime or too much of some exponent, no smaller subset-gcd can repair the issue in the right direction. That is why the global closure test reduces to one gcd check per target prime power.
+
+Mini-example: if `k` needs `2^3` and the eligible numbers are `24 = 2^3 * 3` and `40 = 2^3 * 5`, then their gcd is `8`, which is perfect. But if every eligible number were also divisible by `3`, then every possible gcd witness would still be divisible by `3`, so no closure process could isolate the exact factor wanted for `k`.
 
 ## Complexity
 

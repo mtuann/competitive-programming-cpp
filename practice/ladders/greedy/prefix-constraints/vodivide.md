@@ -14,7 +14,28 @@
 
 This is a good greedy problem because the pairing story hides a clean ordered-selection model. After sorting by `a[i]`, the hard part is no longer matching itself, but choosing which coins should go to Vinh while respecting prefix feasibility.
 
-## Key Idea
+## Recognition Cue
+
+This is a `sort first, then enforce prefix feasibility` greedy pattern:
+
+- the pairing relation is determined by an order key `a[i]`
+- one side of every pair must come earlier after sorting
+- the objective depends on choosing a subset with minimum or maximum weight
+- feasibility can be stated on every prefix, not on arbitrary subsets
+
+When a pairing problem becomes a laminar family of prefix capacities after sorting, a heap-based greedy is often the right tool.
+
+## Problem-Specific Transformation
+
+After sorting by increasing `a[i]`, the pairing story is rewritten as:
+
+- choose exactly `N / 2` positions that will belong to Vinh
+- in every prefix of length `p`, at most `floor(p / 2)` chosen positions may belong to Vinh
+- minimize the total `b[i]` on those chosen positions
+
+That turns the problem into a minimum-weight selection under nested prefix constraints. The actual pair list is reconstructed only after the role set is fixed.
+
+## Core Idea
 
 Sort the coins by increasing `a[i]`.
 
@@ -48,8 +69,24 @@ Use a max-heap for that.
 
 After deciding which positions belong to Vinh, reconstruct an actual pairing by scanning left to right:
 
-- if a position belongs to Sơn, push it into a stack
-- if a position belongs to Vinh, pop one earlier Sơn position and pair them
+- if a position belongs to Sơn, store it as one available earlier partner
+- if a position belongs to Vinh, match it with any still-unused earlier Sơn position
+
+### Why The Heap Greedy Is Safe
+
+The prefix constraints are nested: every later prefix contains every earlier one. So whenever the current chosen set becomes too large for the current prefix, we must delete **some** chosen coin from that prefix.
+
+Removing the chosen coin with largest `b` is always optimal, because every feasible solution for later prefixes must still respect this current prefix cap. Keeping a larger `b` coin can only make the objective worse while using the same amount of prefix capacity.
+
+That is exactly the exchange argument behind the max-heap repair step.
+
+### Why Reconstruction Is Guaranteed
+
+The prefix condition is not only necessary. It is also sufficient.
+
+While scanning left to right, suppose we arrive at one position chosen for Vinh. The prefix rule says that among all positions seen so far, at most half belong to Vinh. Therefore there must be at least one earlier unused Sơn position available to pair with this Vinh position.
+
+So any structure that stores earlier unused Sơn positions works for reconstruction; a stack is just one convenient implementation choice.
 
 ## Complexity
 
@@ -68,6 +105,7 @@ With `n <= 5000`, this is easily fast enough.
 
 ## Reusable Pattern
 
+- Topic page: [Prefix Constraints](../../../../topics/greedy/prefix-constraints/README.md)
 - Practice ladder: [Prefix Constraints ladder](README.md)
 - Starter template: [Template library overview](../../../../template-library.md)
 - Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)

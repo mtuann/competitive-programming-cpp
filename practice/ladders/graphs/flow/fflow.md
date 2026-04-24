@@ -14,7 +14,28 @@
 
 This is a useful flow problem because the statement looks like an undirected weighted graph problem, but the clean solution is still a standard `s-t` max-flow model with careful edge construction.
 
-## Key Idea
+## Recognition Cue
+
+This is a straightforward `throughput on a sparse capacitated network` signal:
+
+- the statement asks for a maximum amount that can move from `1` to `N`
+- every edge has a capacity
+- the graph is undirected in the statement, but direction is not the hard part
+- the right question is global flow feasibility, not path-by-path greedy routing
+
+If the problem asks for the largest transferable quantity through capacity-constrained connections, model first and only then choose the flow engine.
+
+## Problem-Specific Transformation
+
+The statement is rewritten into a standard `s-t` flow network:
+
+- source `s = 1`
+- sink `t = N`
+- each undirected edge `(u, v, c)` becomes capacity `c` in both directions
+
+After that, nothing problem-specific remains except judge-friendly implementation choices such as flat arrays and capacity scaling. The whole task becomes "run max flow on the correctly modeled network."
+
+## Core Idea
 
 Treat the graph as a flow network with:
 

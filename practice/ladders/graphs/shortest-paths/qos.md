@@ -15,7 +15,33 @@
 
 This is a strong shortest-paths practice problem because the shortest-path computation is only the first step. The real work is turning the QoS bound into a tiny extra-state DP, then using those counts to recover the `k`-th valid path in lexicographic order.
 
-## Key Idea
+## Recognition Cue
+
+This is a strong `shortest path first, tiny extra-state DP later` signal:
+
+- the path bound is only slightly above the shortest path
+- the problem asks for the `k`-th lexicographic valid path, not just one optimum
+- a direct path enumeration would explode
+- one global minimum edge weight gives a very small slack budget
+
+Whenever a path constraint is "shortest path plus a tiny allowance," try to express the remaining freedom as a small integer state.
+
+## Problem-Specific Transformation
+
+The statement is rewritten in two stages:
+
+1. run reverse Dijkstra to compute `dist[u]`, the shortest suffix cost from `u` to `t`
+2. replace the path-length limit `<= Tmin + Cmin` with a slack parameter `p` that measures how far above `dist[u]` we may still spend
+
+Then:
+
+- `dp[u][p]` counts valid suffixes from `u`
+- outgoing edges are filtered by whether they keep the next slack nonnegative
+- the counted subtrees let us skip lexicographically whole groups during reconstruction
+
+So the hard part is not shortest paths alone. It is shortest paths plus a tiny bounded-slack DP.
+
+## Core Idea
 
 Let:
 
@@ -42,6 +68,20 @@ For an edge `u -> v` with weight `w`, the remaining slack becomes:
 If `next_p >= 0`, then that edge can still lead to a valid path, and we add `dp[v][next_p]`.
 
 Because `Cmin < 100`, the slack dimension is tiny. After counting all valid paths, we reconstruct the answer lexicographically by scanning outgoing edges in increasing destination order and skipping entire groups of suffixes using the DP counts.
+
+### Why The Slack DP Is Exact
+
+For every edge `u -> v` with weight `w`, shortest-path optimality gives:
+
+`dist[u] <= w + dist[v]`
+
+So the quantity:
+
+`w + dist[v] - dist[u]`
+
+is the extra cost paid by taking that edge instead of following a shortest suffix immediately. It is always nonnegative.
+
+That means the whole path budget can be tracked as a small nonnegative slack variable, and once the total allowed overhead is only `Cmin`, the DP needs only states `0..Cmin`.
 
 ## Complexity
 

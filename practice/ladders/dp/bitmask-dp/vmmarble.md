@@ -15,6 +15,27 @@ This is a nice example of converting a movement story into a much smaller assign
 
 At first glance it looks like a transportation problem, but the real structure is simpler: each box only needs to decide which color it will keep.
 
+## Recognition Cue
+
+This is a good `story -> assignment DP` signal:
+
+- the statement talks about moving grouped items between containers
+- each container only needs one local final role
+- the number of colors is small
+- the exact movement geometry matters less than which color each box decides to keep
+
+If the cost can be written independently for each source-color group once the final keeper is known, the right model is often a compact DP over covered colors.
+
+## Problem-Specific Transformation
+
+Instead of planning every move directly, we rewrite the task as:
+
+- each box chooses one color to keep, or effectively keeps none
+- every color that appears anywhere must be kept by at least one box
+- any source-color group not kept in its original box pays exactly `ceil(A[i][j] / K)` moves
+
+So the optimization target is to maximize the cost saved by groups that stay put. That turns the problem into a bitmask DP where the mask means "which colors already have at least one keeper."
+
 ## Core Idea
 
 Fix a final plan where each box keeps at most one color.

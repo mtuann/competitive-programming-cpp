@@ -14,7 +14,33 @@
 
 This is a nice mixed problem because the geometry part is only there to extract the real data model. After sorting the nested polygons and turning them into terrace-ring areas, the core task becomes a weighted recoloring problem on a line.
 
-## Key Idea
+## Recognition Cue
+
+This is a classic `geometry first, line problem later` disguise:
+
+- the input objects are nested polygons
+- the scoring depends only on visible ring areas after sorting
+- after geometric preprocessing, every object becomes one weighted position on a line
+- the final optimization is "best contiguous segment with at most k bad elements"
+
+When nested geometry only serves to extract ordered ring weights, treat the geometry as preprocessing and solve the real one-dimensional problem afterward.
+
+## Problem-Specific Transformation
+
+The statement becomes much cleaner after two rewrites:
+
+1. sort polygons by area and replace them with terrace-ring weights `W[i]`
+2. for each target color `x`, scan for the maximum-weight contiguous segment containing at most `k` rings whose color is not `x`
+
+So the final model is:
+
+- one color per ring
+- one positive weight per ring
+- one sliding window per chosen target color
+
+That is why the actual core is not geometry-heavy DP, but a weighted same-color window after geometric normalization.
+
+## Core Idea
 
 Each input polygon is the **outer boundary** of one terrace compartment. Since the polygons are convex and nested but listed in arbitrary order, we:
 
@@ -46,6 +72,20 @@ Because all ring weights are positive, the best window for each right endpoint i
 
 Run this two-pointer scan for every color that appears.
 
+### Why The One-Dimensional Reduction Is Safe
+
+Because the polygons are nested, after sorting by area every visible terrace is exactly one ring between two consecutive boundaries. Any monochromatic visible region therefore occupies consecutive rings only; it cannot skip an inner ring and reappear outside it.
+
+So once the geometry is compressed into ring weights, the rest of the problem is genuinely a contiguous-segment problem on a line, not an approximation.
+
+For example, if the sorted visible rings have colors:
+
+```text
+red, blue, blue, red
+```
+
+then any visible all-blue region must be one contiguous subarray such as rings `2..3`. It cannot use rings `2` and `4` while skipping ring `3`, because the terraces are nested annuli.
+
 ## Complexity
 
 - polygon area computation: `O(sum n_i)`
@@ -69,7 +109,7 @@ With `m, n_i <= 1000`, this is easily fast enough.
 - Starter template: [Template library overview](../../../../template-library.md)
 - Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
 - Carry forward: make the window or frontier monotone before you optimize the DP transitions.
-- This note adds: the DP state and queue maintenance specific to this sliding-window variant.
+- This note adds: the geometry normalization and weighted sliding-window logic specific to this terrace model.
 
 ## Solutions
 

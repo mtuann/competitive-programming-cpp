@@ -13,7 +13,34 @@
 
 This is a good practice problem because it turns a story problem into a clean graph formulation. The important step is realizing that the statement is asking for a minimum edge cover in a general graph, not a bipartite matching problem.
 
-## Key Idea
+## Recognition Cue
+
+This is a `minimum cover in a general graph` disguise:
+
+- people or objects in the story naturally become vertices
+- each available helper or pair becomes one edge
+- every vertex must be covered at least once
+- the graph is not guaranteed to be bipartite
+
+If the statement asks for the fewest chosen relationships so every vertex is touched, think edge cover before thinking matching implementation.
+
+## Problem-Specific Transformation
+
+We rewrite the story as:
+
+- each girl is one vertex
+- each boy who likes two girls is one undirected edge between those girls
+- we need the minimum number of chosen edges that cover all vertices
+
+That is exactly minimum edge cover. Since the graph is general, the reusable formula is:
+
+```text
+minimum edge cover = number of vertices - maximum matching
+```
+
+So the problem reduces to one blossom-based maximum matching computation.
+
+## Core Idea
 
 Treat each girl as a vertex and each boy as an undirected edge connecting the two girls on his list.
 

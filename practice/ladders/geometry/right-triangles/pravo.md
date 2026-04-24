@@ -15,7 +15,28 @@
 
 This is a strong geometry practice problem because the winning idea is a transformation, not a formula hunt: fix the right-angle vertex and count perpendicular directions efficiently.
 
-## Key Idea
+## Recognition Cue
+
+This is the standard `fix one vertex and count perpendicular directions` shape:
+
+- you need to count many right triangles among points
+- a brute-force triple loop is too large
+- the right angle can be anchored at one chosen vertex
+- angle checks can be turned into direction comparisons
+
+Whenever a triangle condition is local to one vertex, try fixing that vertex and reducing the rest to a counting problem on vectors.
+
+## Problem-Specific Transformation
+
+For one pivot `P`, the question "how many right triangles have right angle at `P`?" becomes:
+
+- build every direction from `P` to another point
+- normalize directions so opposite rays on the same line are merged
+- count how many normalized directions have perpendicular partners
+
+So the original geometric counting task becomes "for each pivot, count perpendicular line directions efficiently."
+
+## Core Idea
 
 For each point `P`, count how many right triangles have their right angle at `P`.
 

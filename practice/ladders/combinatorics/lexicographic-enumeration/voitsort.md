@@ -14,7 +14,31 @@
 
 This is a strong permutation problem because the tree definition looks specialized, but the real key is recognizing a known permutation operator. After that, the second trick is to exploit the small bound `k <= 10^6 < 10!`.
 
-## Key Idea
+## Recognition Cue
+
+This is a strong disguise problem for `permutation operator + tiny moving suffix`:
+
+- the statement defines a custom tree or traversal on permutations
+- the real property often matches a known permutation machine
+- the interval length `k` is large but still much smaller than `n!`
+- only a short lexicographic suffix can vary across the queried block
+
+If a permutation problem gives both a structural definition and a short lexicographic window, try to identify the hidden operator first and only then optimize the enumeration.
+
+## Problem-Specific Transformation
+
+Two rewrites unlock the whole solution:
+
+1. convert the `TSort` tree condition into the standard one-stack-sortable test
+2. use `k <= 10^6 < 10!` to freeze the first `n - d` positions and enumerate only the last `d = min(n, 10)` positions
+
+So the problem stops being "count good permutations in a huge interval" and becomes:
+
+- inside each lexicographic block, test one fixed prefix once
+- iterate over a very small lexicographic suffix block
+- finish the stack simulation on that suffix
+
+## Core Idea
 
 The binary tree `T(pi)` is the max-Cartesian tree of the permutation `pi`, and the required listing order is its postorder traversal.
 
@@ -51,6 +75,19 @@ So:
    - finishing the stack simulation on the small suffix
 
 That gives `O(n + k * d)` with `d <= 10`.
+
+### Why Only The Last `10` Positions Matter
+
+Fix the first `n - d` positions of a permutation. The remaining suffix has exactly `d!` lexicographic completions.
+
+Choosing `d = 10` works because:
+
+- `10! > 10^6`
+- the interval length is only `k <= 10^6`
+
+So a lexicographic interval of length `k` can cross at most one boundary between such suffix blocks. That is why the count splits into at most two manageable suffix-enumeration chunks.
+
+This is a block-local statement: after splitting by block boundary, each chunk has one fixed prefix and one moving suffix. The entire original interval does **not** necessarily share one fixed prefix.
 
 ## Complexity
 
