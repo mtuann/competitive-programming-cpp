@@ -1,45 +1,337 @@
 # C++ Language For Contests
 
-This page is about getting C++ out of your way. In competitive programming, the language is not the goal, but weak language habits create enough friction to hide good algorithmic ideas.
+This page is not "learn all of C++."
 
-## Summary
+It is:
 
-Study this topic if:
+- learn the small subset that keeps contest code fast to write
+- stable to debug
+- and easy to trust under time pressure
 
-- you know the idea but lose time to syntax, container choice, or indexing bugs
-- you are unsure when to use `int`, `long long`, `vector`, `pair`, `struct`, `map`, or `set`
-- your wrong answers come from implementation mistakes more often than from bad modeling
+In competitive programming, the language is rarely the real bottleneck by itself.
 
-What success looks like:
+The bottleneck is usually one of these:
 
-- you can write a clean contest skeleton from memory
-- you choose containers based on needed operations, not habit
-- you can compile, run, debug, and trust small local programs without hesitation
-- you can read and modify standard CP templates without fear
+- the compile / run / debug loop is not automatic yet
+- types and containers are chosen by habit instead of by required operations
+- helper code hides logic instead of clarifying it
+- local tooling is weak enough that trivial bugs survive until submission
+
+So the real goal of this page is not syntax accumulation.
+
+It is implementation fluency.
+
+## At A Glance
+
+- **Use when:** the algorithm is mostly known, but coding still feels slower or less reliable than the actual thinking.
+- **Core worldview:** contest C++ is a small trusted subset plus one boring local workflow you can repeat without hesitation.
+- **Main tools:** `vector`, `string`, `pair`, `struct`, `sort`, `lower_bound`, `set`, `map`, `priority_queue`, one release build, one debug/sanitizer build.
+- **Strongest trap:** using more language or tooling than you can currently trust.
+- **Success after studying this page:** you can compile and run from memory, choose a container by required operations, pick a safe numeric type, and debug small failures systematically instead of randomly.
+
+## Quick Route
+
+Use this page as a router for implementation friction.
+
+```text
+1. I know the idea but coding still feels noisy.
+   Learn the trusted language subset and one contest skeleton.
+
+2. I keep choosing the wrong container or type.
+   Use the operation-first chooser below.
+
+3. The code compiles, but I do not trust it.
+   Switch from release loop to debug / sanitizer loop.
+
+4. stdin/stdout handling is still shaky.
+   Start with the first local loop and Weird Algorithm.
+
+5. The problem is interactive or validator-heavy.
+   Leave this page and open Local Judge Workflow.
+```
 
 ## Prerequisites
 
 - basic programming experience in any language
 
-## Start In 5 Minutes
+Helpful neighboring layers:
 
-If you only want one default local loop, use these two commands:
+- [Reasoning, Invariants, And Proof Discipline](../reasoning/README.md)
+- [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)
+- [Build Kit](../../../docs/build-kit.md)
+- [Template Library](../../../template-library.md)
 
-Release-style build:
+## Problem Model And Notation
+
+This page uses one implementation contract.
+
+For any solution, write down four things early:
+
+1. **data model**
+   - what objects exist in the solution?
+   - array, graph, interval, record, frequency table?
+2. **operation contract**
+   - what operations must be fast?
+   - append, lookup, predecessor, min extraction, sorting?
+3. **type contract**
+   - what numeric range is safe?
+   - `int`, `long long`, or rarely `__int128`?
+4. **tooling mode**
+   - release run, debug/sanitizer run, or local-judge workflow?
+
+That is the language analogue of an algorithm invariant:
+
+> your code structure, types, and tools should match the operations the problem actually needs.
+
+This page will use:
+
+- **release build** for ordinary local runs
+- **debug build** for sanitizer-assisted or debugger-assisted diagnosis
+- **LOCAL mode** for local-only `cerr` logs or assertions guarded behind `#ifdef LOCAL`
+
+## From "I Know C++ A Bit" To The Right Contest Subset
+
+### The Naive Path
+
+The unstable beginner path is:
+
+- search syntax on demand
+- accumulate many STL names
+- copy a big template
+- improvise build flags
+- debug only after submission pain
+
+That path creates too much moving surface area.
+
+### The Better Compression
+
+The better path is:
+
+1. choose one boring compile / run loop
+2. learn one small language subset really well
+3. choose containers by operations, not by aesthetics
+4. choose numeric types by range, not hope
+5. escalate debugging cleanly instead of guessing
+
+That is enough for a surprisingly large fraction of accepted contest code.
+
+### The Trusted Subset
+
+A very high-ROI subset is:
+
+- `vector`, `string`, `pair`, `struct`
+- range-for loops
+- `auto` where the type is obvious from the right-hand side
+- lambdas for small local comparators or predicates
+- `sort`, `lower_bound`, `upper_bound`
+- `set`, `map`, `priority_queue`
+- `const &` for large read-only objects
+
+Most beginner-to-intermediate contest programs do not need more language surface than that.
+
+## Core Invariant And Why It Works
+
+This page is really about six implementation invariants.
+
+### 1. Every Variable Should Have One Stable Meaning
+
+This is the first bridge to [Reasoning](../reasoning/README.md).
+
+Good examples:
+
+- `sum` is the current prefix sum
+- `dist[v]` is the current best known distance
+- `freq[x]` is the current count of value `x`
+
+Bad examples:
+
+- `tmp`, `cur2`, `ans2` without a stable meaning
+- one variable reused for two unrelated roles because it "seems convenient"
+
+The more overloaded the variable meanings are, the harder the code becomes to debug.
+
+### 2. Container Choice Should Follow Operations
+
+The first question is not:
+
+- "which STL container do I remember?"
+
+It is:
+
+- "which operations need to be efficient and simple?"
+
+Examples:
+
+- append and iterate -> `vector`
+- ordered membership / predecessor / successor -> `set`
+- key -> value with sorted keys -> `map`
+- average-case hash lookup with no ordered iteration requirement -> `unordered_map`
+- current min or max only -> `priority_queue`
+- small dense frequency domain -> `vector<int>` often beats any map
+
+That is why the right invariant is:
+
+> the chosen container should make the needed operations natural, not merely possible.
+
+### 3. Type Width Is Part Of Correctness
+
+Many C++ bugs are not syntax bugs.
+
+They are type-contract bugs.
+
+Good rules of thumb:
+
+- `int` for indices and small counters
+- `long long` for sums, products, weights, and most answers
+- cast before multiplying if overflow is plausible
+- use `__int128` only when one multiplication can already exceed `long long`
+
+Example:
+
+```cpp
+long long area2 = 1LL * x1 * y2 - 1LL * y1 * x2;
+```
+
+This is not "extra caution." It is the type contract matching the arithmetic.
+
+### 4. One Trusted Local Loop Beats Five Fancy Ones
+
+Until local workflow is boring, keep exactly one default release loop:
 
 ```bash
 c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp -o main
-./main < input.txt
+./main < input.txt > output.txt
+diff -u expected.txt output.txt
 ```
 
-Debug-style build:
+and one debug loop:
 
 ```bash
 c++ -std=c++20 -O0 -g -Wall -Wextra -Wshadow -fsanitize=address,undefined -DLOCAL main.cpp -o main_dbg
 ./main_dbg < input.txt
 ```
 
-The fastest first exercise is one tiny sum program:
+Why this works:
+
+- release loop approximates ordinary judge behavior
+- debug loop catches many memory and UB mistakes locally
+- `-DLOCAL` gives one clean switch for logs and assertions
+
+The invariant here is:
+
+> do not keep changing the workflow while still learning the workflow.
+
+### 5. Helpers Should Remove Repetition, Not Hide Logic
+
+Good helper functions:
+
+- parse or build one clear object
+- compute one primitive
+- encapsulate one reusable data structure operation
+
+Bad helpers:
+
+- hide the main recurrence or sweep logic
+- force the reader to jump around just to understand one local step
+
+This is why a small `struct` often beats anonymous `pair<pair<int,int>,int>`-style code.
+
+Example:
+
+```cpp
+struct Interval {
+    int left;
+    int right;
+    int id;
+};
+```
+
+The fields document the data model directly.
+
+### 6. Tooling Escalation Should Be Predictable
+
+Do not treat all failures the same.
+
+Use this escalation:
+
+1. compile error -> read the first real compiler error
+2. wrong answer on saved sample -> shrink the case and inspect the invariant
+3. crash / impossible state / weird memory behavior -> rerun under sanitizers
+4. samples pass but trust is low -> use [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
+5. judge/protocol quirks -> use [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
+
+That predictable escalation is more valuable than memorizing debugger commands too early.
+
+## Complexity And Tradeoffs
+
+Good C++ habits do not change asymptotic complexity by themselves, but they strongly affect:
+
+- constant factors
+- memory usage
+- bug rate
+- implementation speed under contest pressure
+
+Important tradeoffs:
+
+| Choice | Benefit | Main risk |
+| --- | --- | --- |
+| `vector` over tree/hash containers | tiny constants, simple iteration | wrong if you truly need ordered queries |
+| `struct` over nested `pair` | readable fields, easier debugging | slightly more typing |
+| `map` / `set` | ordered behavior is explicit | slower than dense arrays or direct sorting when order is unnecessary |
+| `unordered_map` / `unordered_set` | faster average lookup | iteration order is unusable for logic, behavior less predictable |
+| release build | realistic local performance | weaker at exposing UB or memory bugs |
+| debug/sanitizer build | catches many local mistakes | slower, higher memory overhead |
+| compact clever code | faster to type sometimes | much harder to trust under pressure |
+
+The best contest code is usually not the shortest code.
+
+It is the shortest code whose invariants remain obvious.
+
+## Variant Chooser
+
+### Build-Mode Chooser
+
+| Situation | Use first | Why |
+| --- | --- | --- |
+| ordinary batch task, sample already clear | release build | closest to normal contest loop |
+| crash, impossible branch, suspicious memory behavior | debug/sanitizer build | strongest local clue for UB and bounds bugs |
+| noisy local tracing needed | debug build with `-DLOCAL` | keeps logs out of judged output |
+| interactive / validator-heavy task | local judge workflow | stdin/stdout diff loop is no longer enough |
+
+### Type Chooser
+
+| Need | Default type | Main caveat |
+| --- | --- | --- |
+| indices, small counts | `int` | do not multiply blindly |
+| sums, weights, answers | `long long` | cast before mixed-width products |
+| exact very large intermediate product | `__int128` | keep usage local and deliberate |
+
+### Representation Chooser
+
+| Signal | Default choice | Avoid when |
+| --- | --- | --- |
+| sequence with append + scan | `vector` | you need order statistics / predecessor queries |
+| tiny record with named fields | `struct` | never; this is usually the clearer choice |
+| obviously local 2-tuple | `pair` | field meaning matters later |
+| ordered keys matter | `map` / `set` | order is irrelevant |
+| min/max only | `priority_queue` | you also need arbitrary erase or predecessor |
+| small dense counts | `vector<int>` freq table | key range is huge or sparse |
+
+### Input-Pattern Chooser
+
+| Pattern | Canonical form |
+| --- | --- |
+| one case | read once, solve once |
+| `t` cases | `while (t--) solve();` |
+| until EOF | `while (cin >> x) { ... }` |
+
+Choosing the input pattern early reduces a surprising amount of implementation noise.
+
+## Worked Examples
+
+### Example 1: The First Trusted Local Loop
+
+Start with one tiny sum file:
 
 ```cpp
 #include <iostream>
@@ -61,618 +353,25 @@ int main() {
 }
 ```
 
-Use it with:
+Why is this a good first exercise?
 
-```text
-input.txt
-5
-1 2 3 4 5
-```
+- it forces one input pattern
+- it uses `long long` for the first meaningful overflow-sensitive accumulator
+- it establishes the local compile / run loop without extra algorithm noise
 
-and expect output `15`.
+If this loop is not comfortable yet, the blocker is implementation workflow, not advanced STL.
 
-If you can write, compile, and run that loop without searching for commands, you already have the first useful local habit.
+### Example 2: `pair` Versus `struct`
 
-## One Canonical Local Loop
+Suppose a problem stores intervals.
 
-Until the local workflow becomes automatic, do not keep changing the commands.
-
-Use exactly this release loop:
-
-```bash
-c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp -o main
-./main < input.txt > output.txt
-diff -u expected.txt output.txt
-```
-
-and exactly this debug loop:
-
-```bash
-c++ -std=c++20 -O0 -g -Wall -Wextra -Wshadow -fsanitize=address,undefined -DLOCAL main.cpp -o main_dbg
-./main_dbg < input.txt
-```
-
-The main beginner goal is not “know many shell commands.” It is “have one boring loop you trust.”
-
-## Tooling Contract
-
-This repo assumes a very small toolchain contract:
-
-- `c++` or `g++` as the compiler command
-- `-std=c++20` as the language level
-- one release build for normal runs
-- one debug build with sanitizers when behavior feels suspicious
-
-The usual flags mean:
-
-- `-std=c++20`: use the language level assumed across the repo
-- `-O2`: optimize roughly like a normal judge build
-- `-Wall -Wextra`: surface many common mistakes early
-- `-pedantic`: warn when the code drifts toward non-standard behavior
-- `-O0 -g`: keep debug builds easy to inspect
-- `-Wshadow`: catch accidental variable shadowing
-- `-fsanitize=address,undefined`: catch many memory and UB mistakes that otherwise hide as random wrong answers
-
-Rule of thumb:
-
-- use the release build when the program is conceptually stable
-- use the debug build when you are still chasing crashes, memory bugs, or suspicious branch behavior
-
-## Release, Debug, And `LOCAL`
-
-In practice, beginners only need three build modes:
-
-- release build: what you trust for normal local runs
-- debug / sanitizer build: what you switch to when behavior stops making sense
-- optional `LOCAL` build: the same local binary, but with temporary debug-only logging enabled
-
-The repo examples keep the debug route at:
-
-```bash
-c++ -std=c++20 -O0 -g -Wall -Wextra -Wshadow -fsanitize=address,undefined -DLOCAL main.cpp -o main_dbg
-```
-
-That choice is intentional:
-
-- `-O0 -g` keeps line-by-line stepping simple
-- sanitizers catch many memory and UB bugs early
-- `-DLOCAL` gives you one switch for `cerr`, assertions, or temporary file hooks that should never leak into the judged build
-
-GCC's official optimize-options documentation also recommends `-Og` as a debug-friendly optimization level. That is a reasonable second step once the local loop already feels stable. This repo keeps `-O0 -g` in the beginner path because it is easier to reason about while learning the tools.
-
-## Core Idea
-
-Contest C++ is mostly about four habits:
-
-1. choose the simplest representation that matches the problem
-2. keep variable meanings explicit
-3. use standard-library tools you can trust
-4. reduce repetition without hiding logic
-
-The right mental model is:
-
-```text
-algorithm first
-representation second
-syntax last
-```
-
-When the representation is clean, correctness arguments and debugging both get easier.
-
-## Theory / Proof Sketch
-
-There is no theorem here, but there is a useful invariant:
-
-- each variable should have one stable meaning
-- each helper should remove repetition, not hide important decisions
-- each container should match the operations you actually need
-
-If that invariant breaks, bugs spread quickly:
-
-- wrong type choice leads to overflow
-- wrong container choice leads to awkward or slow code
-- unclear helper behavior makes debugging much harder
-
-## Complexity And Tradeoffs
-
-Good C++ habits do not change big-O by themselves, but they matter a lot for:
-
-- constant factors
-- memory usage
-- bug rate
-- speed of implementation under pressure
-
-Useful defaults:
-
-- `vector` is the normal dynamic sequence container
-- `array` is good for fixed-size small structures
-- `pair` is fine when the meaning is obvious
-- `struct` is better when named fields improve clarity
-- `map` and `set` keep order
-- `unordered_map` and `unordered_set` are hash-based and faster on average, but less predictable
-- `priority_queue` is good when you only need the current extremum
-
-Type defaults:
-
-- `int` for indexes and small counts
-- `long long` for sums, products, weights, and answers that may exceed about `2e9`
-- `__int128` only when one multiplication can already exceed `long long`
-
-## Canonical C++ Pattern
-
-Start from a small contest skeleton and add helpers only when they remove real repetition.
-
-Templates in this repo:
-
-- [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
-- [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
-- [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
-
-Good contest habits:
-
-- keep input parsing close to the data model
-- prefer `struct` when field names explain the problem
-- pass large objects by `const &` when read-only
-- write comparators and helper functions with one clear job
-- choose one indexing convention and keep it
-
-Small example:
-
-```cpp
-struct Edge {
-    int to;
-    int weight;
-};
-
-long long total_weight(const vector<Edge> &edges) {
-    long long sum = 0;
-    for (const Edge &e : edges) sum += e.weight;
-    return sum;
-}
-```
-
-This is better than anonymous nested pairs if the fields matter later.
-
-## Tiny Template Walkthrough
-
-The two first templates to actually understand are:
-
-- [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
-- [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
-
-When you open them through the [Template Library](../../../template-library.md), scan the short contract first:
-
-- `Signal`
-- `Assumes`
-- `Exposes`
-- `Complexity`
-- `Main trap`
-
-What they are teaching is modest but important:
-
-- initialize the stream settings once
-- keep `main()` visually empty until real logic arrives
-- separate “boilerplate I always want” from “problem logic I still need to think about”
-
-The beginner mistake is not “using too small a template.” The beginner mistake is copying a big template whose invariants you do not actually understand.
-
-One discipline to keep in mind:
-
-- once you call `ios::sync_with_stdio(false);`, do not casually mix C++ streams with `scanf` / `printf`
-- keep `cout` reserved for judged output
-- keep temporary logs on `cerr`, ideally under `#ifdef LOCAL`
-
-## Build, Run, And Compare
-
-The baseline loop should stay boring:
-
-1. write the smallest correct version you can
-2. compile until the warnings make sense, not just until the binary exists
-3. run one tiny handmade `input.txt`
-4. compare against the expected output before touching bigger tests
-
-Named-binary version:
-
-```bash
-c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp -o main
-./main < input.txt > output.txt
-diff -u expected.txt output.txt
-```
-
-If your machine prefers `g++` instead of `c++`, keep the same flags and only swap the compiler command.
-
-When the bug feels like memory misuse, stale state, or one branch silently going wrong, switch to the debug build instead of guessing.
-
-## How To Read The First Real Compiler Error
-
-Do not read compiler output as one giant wall of text.
-
-Read it in this order:
-
-1. find the first line that says `error:`
-2. look at the source location attached to that first error
-3. read the one or two diagnostic notes immediately under it
-4. only after that look at the rest of the output
-
-Useful beginner pattern matches:
-
-- `expected ';'` or `expected '}'`: suspect the line above, not the line below
-- `no matching function for call`: the argument types do not match what the function expects
-- `invalid operands` or `cannot convert`: suspect a type mismatch, often between container element types, `string` vs number, or signed width
-- `comparison of integer expressions of different signedness` or narrowing warnings: stop and think about the type contract before pushing forward
-
-Treat warnings seriously when they mention:
-
-- shadowing
-- narrowing
-- unused but set variables
-- suspicious signed/unsigned conversions
-
-The goal is not to memorize every diagnostic. The goal is to stop letting the first real error drown inside the tenth consequence.
-
-## Your First Problem Folder
-
-For a normal batch problem, keep the first local workspace tiny:
-
-```text
-problem/
-  main.cpp
-  input.txt
-  expected.txt
-```
-
-Recommended ritual:
-
-1. copy or rewrite the smallest skeleton from [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
-2. write only enough code to read the input and print one obviously correct answer
-3. save one tiny `input.txt`
-4. save one matching `expected.txt`
-5. compile, run, and compare before adding any optimization or helper layer
-
-Only reach for [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp) once the problem is still ordinary batch stdin/stdout but the input size is large enough that you want the stream setup extracted cleanly.
-
-## First Syntax Worth Internalizing
-
-Do not try to learn all of modern C++ at once. The highest-ROI early subset is:
-
-- `vector`, `string`, `pair`, and `struct`
-- `sort`, `lower_bound`, and simple lambdas
-- range-for loops
-- `auto` for iterators and long obvious types
-- structured bindings for local unpacking
-- `const &` for large read-only objects
-- `set`, `map`, and `priority_queue`
-
-If those five feel stable, most beginner CP solutions stop feeling like language puzzles.
-
-## Three Input Patterns You Must Recognize
-
-Most beginner contest problems fit one of these three shapes.
-
-### 1. One case
-
-Read once, solve once:
-
-```cpp
-int n;
-cin >> n;
-```
-
-Examples: `Missing Number`, `Weird Algorithm`.
-
-### 2. `t` test cases
-
-Read `t`, then repeat the solve routine:
-
-```cpp
-int t;
-cin >> t;
-while (t--) {
-    solve();
-}
-```
-
-The most common beginner mistake here is forgetting to reinitialize per-test-case state.
-
-### 3. Read until EOF
-
-Keep reading while input succeeds:
-
-```cpp
-int x;
-while (cin >> x) {
-    // process one record
-}
-```
-
-This appears less often early on, but the pattern is simple enough that it should already feel familiar.
-
-Whenever a statement looks confusing, first ask: which of these three input shapes is this?
-
-## Standard Toolkit
-
-### Types
-
-- prefer `int` until the range is not safe
-- cast before multiplying if overflow is possible:
-
-```cpp
-long long area2 = 1LL * x1 * y2 - 1LL * y1 * x2;
-```
-
-- avoid mixing signed and unsigned types casually
-
-### Containers
-
-Ask which operations matter:
-
-- append and iterate: `vector`
-- FIFO: `queue`
-- LIFO: `stack`
-- min or max retrieval: `priority_queue`
-- ordered membership / predecessor / successor: `set`
-- key-value dictionary with order: `map`
-- frequency table over small integer range: usually `vector<int>` beats any map
-
-### Functions And Helpers
-
-Use helpers for:
-
-- repeated transitions
-- geometry primitives
-- compare / check predicates
-- reusable data structures
-
-Avoid helpers that force the reader to jump around just to understand the main algorithm.
-
-## Debugging Discipline
-
-Do not treat every failure as the same class of bug.
-
-The first useful split is:
-
-- compile error: the program does not build
-- runtime error: the program crashes or trips sanitizer checks
-- wrong answer: the program runs but violates the intended invariant
-- time limit: the algorithm or one implementation choice is too slow
-
-Good local habits:
-
-- shrink to the smallest failing input first
-- print variables by meaning, not randomly
-- write down the invariant you expect before adding debug output
-- if behavior looks impossible, recompile with the debug build and sanitizers
-
-Typical signs:
-
-- crash on a tiny case: suspect indexing, uninitialized state, or out-of-bounds access
-- wrong only on bigger numbers: suspect overflow
-- output almost correct but shifted: suspect off-by-one or wrong half-open / closed interval convention
-- accepted brute force but broken optimized version: suspect the optimization invariant, not syntax
-
-Sanitizers are especially valuable early. They are not a contest submission tool, but they are often the fastest local route from “something weird happened” to the first real clue.
-
-## Minimal Debugging Toolkit
-
-Before reaching for a full debugger, get comfortable with three tools:
-
-- `cerr` for temporary state logging
-- `assert(...)` for conditions that should be impossible if your invariant is right
-- the debug build with sanitizers for memory and UB mistakes
-
-Minimal pattern:
-
-```cpp
-#include <cassert>
-
-#ifdef LOCAL
-cerr << "i=" << i << " sum=" << sum << '\n';
-#endif
-assert(0 <= l && l <= r && r < n);
-```
-
-Use them with discipline:
-
-- print to `cerr`, not `cout`, so you do not pollute judged output
-- guard noisy local-only prints behind `#ifdef LOCAL` once the amount of logging grows
-- assert invariants you genuinely believe should always hold
-- keep the first failing input instead of hoping you will rediscover it later
-
-The right escalation order is usually:
-
-1. smallest failing case
-2. `cerr` by meaning
-3. `assert`
-4. debug / sanitizer build
-5. debugger
-
-## Short Modern C++ Wins
-
-The goal is not to memorize the whole language. It is to internalize a few short constructs that remove friction.
-
-Structured bindings for pairs or tuples:
-
-```cpp
-pair<int, int> seg{l, r};
-auto [left, right] = seg;
-```
-
-Range-for loops when you only need values:
-
-```cpp
-long long sum = 0;
-for (int x : values) sum += x;
-```
-
-`auto` when the type is obvious from the right-hand side:
-
-```cpp
-auto it = lower_bound(a.begin(), a.end(), target);
-```
-
-Lambda comparators for local ordering rules:
-
-```cpp
-sort(intervals.begin(), intervals.end(), [](const Interval &a, const Interval &b) {
-    return a.right < b.right;
-});
-```
-
-Use these to shorten boilerplate, not to hide meaning. If `auto` or a lambda makes the code harder to read, step back and name the concept more clearly.
-
-## Local Run And Judge Workflow
-
-For ordinary batch problems, the smallest stable loop is:
-
-```bash
-./main < input.txt > output.txt
-diff -u expected.txt output.txt
-```
-
-When there are several saved samples:
-
-```bash
-for f in tests/*.in; do
-  ./main < "$f" > out.txt || break
-  diff -u "${f%.in}.out" out.txt || break
-done
-```
-
-Escalate only when needed:
-
-- if one saved sample already fails, stay here
-- if all saved samples pass but the code still feels risky, move to [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
-- if the task is interactive or validator-heavy, move to [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
-
-## GDB / LLDB First Step
-
-Use a debugger only after you already have a tiny reproducible failing case.
-
-For `gdb`, the smallest useful loop is:
-
-```bash
-gdb ./main_dbg
-```
-
-then:
-
-```text
-(gdb) break main
-(gdb) run < input.txt
-(gdb) next
-(gdb) print sum
-(gdb) backtrace
-```
-
-For `lldb`, the smallest useful loop is:
-
-```bash
-lldb ./main_dbg
-```
-
-then:
-
-```text
-(lldb) breakpoint set --name main
-(lldb) run
-(lldb) next
-(lldb) frame variable sum
-(lldb) bt
-```
-
-For beginner use, keep the debugger job narrow:
-
-- stop near the first wrong state
-- inspect one or two important variables
-- confirm where the invariant breaks
-
-If you are still searching for the failing input, the debugger is often too early. Stay with saved samples or stress testing first.
-
-## Tiny Debug Failure Walkthrough
-
-Suppose the intended code is:
-
-```cpp
-vector<int> a(n);
-for (int i = 0; i < n; ++i) cin >> a[i];
-```
-
-but you accidentally write:
-
-```cpp
-vector<int> a(n);
-for (int i = 0; i <= n; ++i) cin >> a[i];
-```
-
-The release build may only “behave strangely.” The debug build is much more useful:
-
-```bash
-c++ -std=c++20 -O0 -g -Wall -Wextra -Wshadow -fsanitize=address,undefined -DLOCAL main.cpp -o main_dbg
-./main_dbg < input.txt
-```
-
-What you should expect from that loop is not a mysterious wrong answer, but a concrete sanitizer complaint pointing at an out-of-bounds access near `a[n]`.
-
-The learning pattern is:
-
-1. freeze the smallest failing input
-2. rerun under the debug build
-3. trust the first real memory or UB report
-4. repair the violated invariant before adding more print statements
-
-For logic bugs that do not trip sanitizers, the next move is usually one `cerr` under `#ifdef LOCAL` or one short debugger session, not blind refactoring.
-
-## Newbie Retrieval Layer
-
-When you are stuck on "how do I even start coding this?", open these in order:
-
-- [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)
-- [Local Judge Workflow](../../../notebook/local-judge-workflow.md) when stdin/stdout alone is not enough
-- [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md) when samples pass but trust is still low
-- [Template Library](../../../template-library.md)
-- [Weird Algorithm](../../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
-- [Missing Number](../../../practice/ladders/foundations/cpp-language/missingnumber.md)
-- [STL ladder](../../../practice/ladders/foundations/stl/README.md)
-
-That route is usually faster than searching random syntax online mid-problem.
-
-## Worked Examples
-
-### Example 1: compile, run, and trust one tiny sum file
-
-If the first local file reads `n`, sums `n` integers, and prints the answer, the important things you are practicing are:
-
-- reading from `cin` with fast I/O enabled
-- choosing `long long` for the accumulator
-- compiling with warnings before submission
-- running from redirected stdin instead of typing everything manually
-
-That is enough to build a stable first loop before any STL sophistication.
-
-### Example 1.5: first real judged loop with `Weird Algorithm`
-
-The first repo note that exercises this local loop directly is:
-
-- [Weird Algorithm](../../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
-
-It is valuable because the algorithm is almost trivial, so the main practice is elsewhere:
-
-- read one number cleanly
-- keep the loop invariant simple
-- print a sequence without corrupting spacing
-- use `long long` because values can grow on the Collatz path
-
-If even that note feels noisy, the real blocker is usually the compile / run / inspect loop, not algorithmic difficulty.
-
-### Example 2: `pair` vs `struct`
-
-Use `pair<int, int>` when the meaning is obvious and local:
+This is acceptable when the meaning is very local:
 
 ```cpp
 vector<pair<int, int>> intervals;
 ```
 
-Use a `struct` when fields carry meaning or there are more than two of them:
+But once fields matter later, a `struct` is better:
 
 ```cpp
 struct Interval {
@@ -682,17 +381,17 @@ struct Interval {
 };
 ```
 
-### Example 2: passing vectors
+Why?
 
-Use:
+- sort keys become clearer
+- debug prints become more meaningful
+- later extensions do not require mentally decoding `.first` and `.second`
 
-- `const vector<int>& a` when only reading
-- `vector<int>& a` when mutating
-- plain `vector<int> a` only when you intentionally want a copy
+This is exactly the kind of local clarity that reduces contest mistakes.
 
-This matters because accidental copies of `O(n)` containers are a common hidden slowdown.
+### Example 3: Choosing A Frequency Structure
 
-### Example 3: choosing a frequency structure
+Suppose you need frequencies.
 
 If values are small and dense:
 
@@ -706,15 +405,17 @@ If values are large or arbitrary:
 unordered_map<int, int> freq;
 ```
 
-If you also need ordered iteration over keys:
+If ordered iteration over keys matters:
 
 ```cpp
 map<int, int> freq;
 ```
 
-The right choice comes from operations, not style.
+The important lesson is not the syntax.
 
-### Example 4: catching an overflow before submission
+It is that the container comes from the operations contract.
+
+### Example 4: Overflow Before Submission
 
 Suppose you write:
 
@@ -724,85 +425,132 @@ cin >> x1 >> y1 >> x2 >> y2;
 int area2 = x1 * y2 - y1 * x2;
 ```
 
-This may overflow even when the final mathematical expression is conceptually simple.
+That may overflow even though the math expression looks simple.
 
-The minimal repair is:
+The repair is:
 
 ```cpp
 long long area2 = 1LL * x1 * y2 - 1LL * y1 * x2;
 ```
 
-The debugging lesson is larger than this one line:
+The larger debugging lesson is:
 
-- if a result is “nonsensical only on larger values”, suspect type width early
-- fix the type before printing ten random variables
-- if you are unsure, build once with the debug flags and test a boundary-shaped case deliberately
+- when results become nonsense only on larger values, suspect type width early
+- fix the type contract before printing random state everywhere
 
-## Recognition Cues
+### Example 5: First Real Judged Loop
 
-You should revisit this topic when:
+The first repo note that should feel mechanically easy after this page is:
 
-- coding time dominates thinking time
-- you often patch the same syntax mistakes repeatedly
-- your accepted solutions look much messier than editorial ones
-- you cannot explain why you chose one container over another
+- [Weird Algorithm](../../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 
-This topic is often confused with “just learn more STL”. That is only part of it. The real goal is implementation fluency and representation discipline.
+Its value is that the algorithm is almost trivial, so the actual practice is:
 
-## Common Mistakes
+- read one number cleanly
+- choose `long long`
+- print a sequence without spacing bugs
+- trust the local compile / run loop
 
-- mixing `int` and `long long` carelessly in products
-- using `unordered_map` when ordered iteration is part of the logic
-- overusing macros that hide control flow or types
-- copying large containers by value accidentally
-- switching between 0-based and 1-based indexing mid-solution
-- writing clever one-liners that are hard to debug under contest pressure
+That is exactly the right first checkpoint for this topic.
 
-## A Good First Week
+## Algorithm And Pseudocode
 
-If you are rebuilding C++ fluency from scratch, a strong first week is:
+For this page, the reusable "algorithm" is an implementation checklist.
 
-1. compile and run one tiny file every day with the same flags
-2. rewrite one small loop using range-for, `auto`, and a lambda comparator
-3. practice the release build and the debug build until both feel ordinary
-4. solve one easy note with `vector` + `sort`
-5. only after that, touch `set`, `map`, and `priority_queue`
+```text
+ContestImplementationContract(problem):
+    classify the input pattern
+    define the data model
+    list the operations that must be efficient
+    choose:
+        container by operations
+        type by range
+        build mode by risk
+    write the smallest contest skeleton
+    run one tiny saved case
+    if behavior is suspicious:
+        escalate to debug/sanitizer build
+        then stress or local-judge workflow if needed
+```
 
-## Practice Ladder
+For normal batch tasks, the executable loop is:
 
-- [Foundations ladder overview](../../../practice/ladders/foundations/README.md)
-- [C++ language ladder](../../../practice/ladders/foundations/cpp-language/README.md)
-- [STL ladder](../../../practice/ladders/foundations/stl/README.md)
+```text
+write smallest correct version
+compile with warnings
+run tiny saved case
+compare with expected output
+only then add optimization or helpers
+```
 
-Suggested order:
+## Implementation Notes
 
-1. basic I/O and vector manipulation
-2. local compile / run / diff workflow
-3. pairs, structs, and sorting records
-4. maps, sets, queues, and stacks
-5. rewriting one messy solution into a clean version
+- After `ios::sync_with_stdio(false);`, do not casually mix C++ streams with `scanf` / `printf`.
+- Use `cout` for judged output and `cerr` for local debug information.
+- Guard noisy logs behind `#ifdef LOCAL`.
+- Read compiler output in this order:
+  1. first `error:` line
+  2. source location
+  3. one or two notes immediately under it
+- Warnings worth taking seriously early:
+  - shadowing
+  - narrowing
+  - suspicious signed/unsigned conversions
+  - unused-but-set values
+- Use `const vector<int>& a` for large read-only containers and `vector<int>& a` when intentional mutation is part of the contract.
+- Avoid macros that hide control flow or types in beginner/intermediate contest code.
+- If you need a debugger, start only after you already have a reproducible failing case.
 
-## Go Deeper
+## Practice Archetypes
 
-Workflow/tool references in this section were reviewed against official docs current through `April 24, 2026`.
+- **Warm-up**
+  - [Weird Algorithm](../../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
+    Why: pure compile/run/type/printing fluency with almost no algorithmic load.
+  - [Missing Number](../../../practice/ladders/foundations/cpp-language/missingnumber.md)
+    Why: small clean loop, simple accumulation, early type-discipline practice.
+- **Core**
+  - [Distinct Numbers](../../../practice/ladders/foundations/stl/distinctnumbers.md)
+    Why: first real container-choice and `sort + unique` judgment.
+  - [Movie Festival](../../../practice/ladders/foundations/sorting/moviefestival.md)
+    Why: records, comparators, and readable `struct`-driven implementation.
+- **Stretch**
+  - [Factory Machines](../../../practice/ladders/foundations/binary-search/factorymachines.md)
+    Why: combines implementation discipline with type width and check-function hygiene.
+  - [Apartments](../../../practice/ladders/foundations/two-pointers/apartments.md)
+    Why: good test of whether the language has stopped being the bottleneck for invariant-driven code.
 
-- Course: [Princeton COS 226](https://www.cs.princeton.edu/~cos226)
-- Primary: [GCC warning options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html)
-- Primary: [GCC diagnostic message formatting options](https://gcc.gnu.org/onlinedocs/gcc/Diagnostic-Message-Formatting-Options.html)
-- Primary: [GCC optimize options](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html)
-- Primary: [Clang AddressSanitizer documentation](https://clang.llvm.org/docs/AddressSanitizer.html)
-- Primary: [Clang diagnostics reference](https://clang.llvm.org/docs/DiagnosticsReference.html)
-- Primary: [Clang UndefinedBehaviorSanitizer documentation](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
-- Primary: [GDB input/output and redirection](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Input_002fOutput.html)
-- Primary: [LLDB tutorial](https://lldb.llvm.org/use/tutorial.html)
-- Reference: [CPPReference](https://en.cppreference.com/w/)
-- Reference: [CP-Algorithms](https://cp-algorithms.com/)
-- Practice: [CSES Problem Set](https://cses.fi/)
-- Repo anchor: [Template Library](https://github.com/mtuann/competitive-programming-cpp/blob/main/template-library.md)
+## References And Repo Anchors
+
+Tooling references in this section were reviewed against official docs current through **April 24, 2026**.
+
+- **Primary**
+  - [GCC Warning Options](https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html)
+  - [GCC Optimize Options](https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html)
+  - [Clang AddressSanitizer documentation](https://clang.llvm.org/docs/AddressSanitizer.html)
+  - [Clang UndefinedBehaviorSanitizer documentation](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
+  - [GDB: program input/output redirection](https://sourceware.org/gdb/current/onlinedocs/gdb.html/Input_002fOutput.html)
+  - [LLDB tutorial](https://lldb.llvm.org/use/tutorial.html)
+- **Reference**
+  - [cppreference: `std::ios_base::sync_with_stdio`](https://en.cppreference.com/w/cpp/io/ios_base/sync_with_stdio)
+  - [cppreference](https://en.cppreference.com/w/)
+- **Practice**
+  - [CSES Problem Set](https://cses.fi/problemset/)
+  - [USACO Guide](https://usaco.guide/)
+- **Repo anchors**
+  - [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)
+  - [Build Kit](../../../docs/build-kit.md)
+  - [Template Library](../../../template-library.md)
+  - [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
+  - [C++ Language Ladder](../../../practice/ladders/foundations/cpp-language/README.md)
+  - [STL Ladder](../../../practice/ladders/foundations/stl/README.md)
+  - [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
+  - [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
+  - [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
 
 ## Related Topics
 
-- [Reasoning](../reasoning/README.md)
+- [Reasoning, Invariants, And Proof Discipline](../reasoning/README.md)
 - [Sorting](../patterns/sorting/README.md)
 - [Binary Search](../patterns/binary-search/README.md)
 - [Prefix Sums](../patterns/prefix-sums/README.md)
+- [Build Kit](../../../docs/build-kit.md)
