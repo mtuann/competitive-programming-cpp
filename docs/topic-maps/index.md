@@ -9,13 +9,13 @@ These pages collect trusted learning sources, official practice sources, curated
 | Foundations -> C++ Language | 0 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 0 | 5 | [Open](foundations/difference-arrays.md) |
 | Foundations -> Prefix Sums | 1 | 6 | [Open](foundations/prefix-sums.md) |
-| Foundations -> Sorting | 0 | 7 | [Open](foundations/sorting.md) |
+| Foundations -> Sorting | 1 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 1 | 6 | [Open](foundations/two-pointers.md) |
 | Data Structures -> DSU | 2 | 5 | [Open](data-structures/dsu.md) |
-| Data Structures -> Fenwick Tree | 1 | 6 | [Open](data-structures/fenwick-tree.md) |
-| Data Structures -> Heaps And Ordered Sets | 0 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
-| Data Structures -> Offline Tricks | 0 | 7 | [Open](data-structures/offline-tricks.md) |
+| Data Structures -> Fenwick Tree | 2 | 6 | [Open](data-structures/fenwick-tree.md) |
+| Data Structures -> Heaps And Ordered Sets | 1 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
+| Data Structures -> Offline Tricks | 1 | 7 | [Open](data-structures/offline-tricks.md) |
 | Data Structures -> Segment Tree | 1 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Sparse Table | 0 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 1 | 7 | [Open](graphs/bfs-dfs.md) |
@@ -41,7 +41,7 @@ These pages collect trusted learning sources, official practice sources, curated
 | Greedy -> Prefix Constraints | 1 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> FFT And NTT | 1 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 2 | 11 | [Open](math/gcd-lcm.md) |
-| Math -> Modular Arithmetic | 0 | 10 | [Open](math/modular-arithmetic.md) |
+| Math -> Modular Arithmetic | 1 | 10 | [Open](math/modular-arithmetic.md) |
 | Math -> Number Theory Basics | 3 | 13 | [Open](math/number-theory-basics.md) |
 | Combinatorics -> Bounded Compositions | 1 | 6 | [Open](combinatorics/bounded-compositions.md) |
 | Combinatorics -> Counting Basics | 1 | 13 | [Open](combinatorics/counting-basics.md) |

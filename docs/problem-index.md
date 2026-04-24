@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `34`
+- Total tracked problem notes: `38`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - External companion index: [external-problem-index.md](external-problem-index.md)
 - Topic maps: [topic-maps/index.md](topic-maps/index.md)
@@ -12,12 +12,12 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Area | Count |
 | --- | ---: |
-| Foundations | 1 |
-| Data Structures | 2 |
+| Foundations | 2 |
+| Data Structures | 4 |
 | Graphs | 12 |
 | DP | 4 |
 | Greedy | 1 |
-| Math | 3 |
+| Math | 4 |
 | Combinatorics | 2 |
 | Strings | 5 |
 | Geometry | 3 |
@@ -30,6 +30,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `FACTORYMACHINES` | Factory Machines | `Foundations -> Binary Search` | - | answer binary search; monotone feasibility; production rate accumulation | `medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/binary-search.md) / [Ladder](../practice/ladders/foundations/binary-search/README.md) / [Tutorial](../topics/foundations/patterns/binary-search/README.md) | [Note](../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
+| `MOVIEFESTIVAL` | Movie Festival | `Foundations -> Sorting` | - | finish-time sorting; interval scheduling; exchange argument greedy | `easy` | CSES, Sorting and searching | [Map](topic-maps/foundations/sorting.md) / [Ladder](../practice/ladders/foundations/sorting/README.md) / [Tutorial](../topics/foundations/patterns/sorting/README.md) | [Note](../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
 
 ### Data Structures
 
@@ -37,6 +38,8 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `C11XU` | Bộ sưu tập đồng xu | `Data Structures -> DSU` | Advanced -> Optimization And Duality | xor-independence; forest selection; augmenting exchange | `hard` | VN SPOJ, OI-style | [Map](topic-maps/data-structures/dsu.md) / [Ladder](../practice/ladders/data-structures/dsu/README.md) / [Tutorial](../topics/data-structures/dsu/README.md) | [Note](../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
 | `CVP00001` | Ô ăn quan | `Data Structures -> Fenwick Tree` | Foundations -> Prefix Sums | circular updates; range-add point-query; query-from-initial-state | `hard` | VN SPOJ, OI-style | [Map](topic-maps/data-structures/fenwick-tree.md) / [Ladder](../practice/ladders/data-structures/fenwick-tree/README.md) / [Tutorial](../topics/data-structures/fenwick-tree/README.md) | [Note](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `CONCERTTICKETS` | Concert Tickets | `Data Structures -> Heaps And Ordered Sets` | - | multiset predecessor; erase one occurrence; greedy ticket assignment | `medium` | CSES, Sorting and searching | [Map](topic-maps/data-structures/heaps-and-ordered-sets.md) / [Ladder](../practice/ladders/data-structures/heaps-and-ordered-sets/README.md) / [Tutorial](../topics/data-structures/heaps-and-ordered-sets/README.md) | [Note](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp) |
+| `DISTINCTVALUESQUERIES` | Distinct Values Queries | `Data Structures -> Offline Tricks` | Data Structures -> Fenwick Tree | offline right-endpoint sweep; last occurrence activation; fenwick range count | `hard` | CSES, Range queries | [Map](topic-maps/data-structures/offline-tricks.md) / [Ladder](../practice/ladders/data-structures/offline-tricks/README.md) / [Tutorial](../topics/data-structures/offline-tricks/README.md) | [Note](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp) |
 
 ### Graphs
 
@@ -76,6 +79,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `POST2` | A cộng B version 2 | `Math -> FFT And NTT` | - | convolution; digit aggregation; big integer addition | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
 | `CRYPTKEY` | Chìa khóa mã số | `Math -> GCD And LCM` | Math -> Number Theory Basics | gcd-lcm closure; prime-power characterization; constructibility | `hard` | VN SPOJ, OI-style | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
+| `EXPONENTIATION2` | Exponentiation II | `Math -> Modular Arithmetic` | - | binary exponentiation; fermat exponent reduction; zero exponent edge case | `medium` | CSES, Mathematics | [Map](topic-maps/math/modular-arithmetic.md) / [Ladder](../practice/ladders/math/modular-arithmetic/README.md) / [Tutorial](../topics/math/modular-arithmetic/README.md) | [Note](../practice/ladders/math/modular-arithmetic/exponentiation2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp) |
 | `LAMP` | Dàn đèn màu | `Math -> Number Theory Basics` | Math -> GCD And LCM; Combinatorics -> Inclusion-Exclusion | density formula; pairwise coprime products; big integer fractions | `hard` | VN SPOJ, OI-style | [Map](topic-maps/math/number-theory-basics.md) / [Ladder](../practice/ladders/math/number-theory-basics/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
 
 ### Combinatorics

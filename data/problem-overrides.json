@@ -79,6 +79,32 @@
       "Dynamic programming"
     ]
   },
+  "CONCERTTICKETS": {
+    "topic_tags": [],
+    "patterns": [
+      "multiset predecessor",
+      "erase one occurrence",
+      "greedy ticket assignment"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ]
+  },
+  "DISTINCTVALUESQUERIES": {
+    "topic_tags": [
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "offline right-endpoint sweep",
+      "last occurrence activation",
+      "fenwick range count"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ]
+  },
   "FACTORYMACHINES": {
     "topic_tags": [],
     "patterns": [
@@ -89,6 +115,18 @@
     "tracks": [
       "CSES",
       "Sorting and searching"
+    ]
+  },
+  "EXPONENTIATION2": {
+    "topic_tags": [],
+    "patterns": [
+      "binary exponentiation",
+      "fermat exponent reduction",
+      "zero exponent edge case"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
     ]
   },
   "FINDINGBORDERS": {
@@ -213,6 +251,18 @@
     "tracks": [
       "VN SPOJ",
       "OI-style"
+    ]
+  },
+  "MOVIEFESTIVAL": {
+    "topic_tags": [],
+    "patterns": [
+      "finish-time sorting",
+      "interval scheduling",
+      "exchange argument greedy"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
     ]
   },
   "POST2": {

@@ -5,7 +5,7 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 - Topic slug: `data-structures/heaps-and-ordered-sets`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/heaps-and-ordered-sets/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/heaps-and-ordered-sets/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -59,7 +59,9 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `CONCERTTICKETS` | Concert Tickets | `primary` | `medium` | multiset predecessor; erase one occurrence; greedy ticket assignment | [Note](../../../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp) |
 
 ## Regeneration
 

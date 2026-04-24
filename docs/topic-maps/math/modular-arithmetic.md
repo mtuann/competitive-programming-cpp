@@ -5,7 +5,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 - Topic slug: `math/modular-arithmetic`
 - Tutorial page: [Open tutorial](../../../topics/math/modular-arithmetic/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `10`
 
 ## Microtopics
@@ -62,7 +62,9 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `EXPONENTIATION2` | Exponentiation II | `primary` | `medium` | binary exponentiation; fermat exponent reduction; zero exponent edge case | [Note](../../../practice/ladders/math/modular-arithmetic/exponentiation2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp) |
 
 ## Regeneration
 

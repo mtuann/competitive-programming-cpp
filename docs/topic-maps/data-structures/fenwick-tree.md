@@ -5,7 +5,7 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 - Topic slug: `data-structures/fenwick-tree`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/fenwick-tree/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/fenwick-tree/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -60,6 +60,7 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `CVP00001` | Ô ăn quan | `primary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `DISTINCTVALUESQUERIES` | Distinct Values Queries | `secondary` | `hard` | offline right-endpoint sweep; last occurrence activation; fenwick range count | [Note](../../../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp) |
 
 ## Regeneration
 

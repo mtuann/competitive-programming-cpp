@@ -166,6 +166,71 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp"
   },
   {
+    "code": "CONCERTTICKETS",
+    "title": "Concert Tickets",
+    "full_title": "Concert Tickets",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1091",
+    "main_topic": "Data Structures -> Heaps And Ordered Sets",
+    "secondary_topics": [
+      "Multiset predecessor",
+      "Erase one occurrence",
+      "Greedy matching"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/heaps-and-ordered-sets",
+    "topic_tags": [
+      "data-structures/heaps-and-ordered-sets"
+    ],
+    "patterns": [
+      "multiset predecessor",
+      "erase one occurrence",
+      "greedy ticket assignment"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md",
+    "ladder_path": "practice/ladders/data-structures/heaps-and-ordered-sets/README.md",
+    "tutorial_path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp"
+  },
+  {
+    "code": "DISTINCTVALUESQUERIES",
+    "title": "Distinct Values Queries",
+    "full_title": "Distinct Values Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1734",
+    "main_topic": "Data Structures -> Offline Tricks",
+    "secondary_topics": [
+      "Offline sweep by right endpoint",
+      "Fenwick tree",
+      "Last occurrence"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/offline-tricks",
+    "topic_tags": [
+      "data-structures/offline-tricks",
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "offline right-endpoint sweep",
+      "last occurrence activation",
+      "fenwick range count"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md",
+    "ladder_path": "practice/ladders/data-structures/offline-tricks/README.md",
+    "tutorial_path": "topics/data-structures/offline-tricks/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp"
+  },
+  {
     "code": "VMMARBLE",
     "title": "Phân loại bi",
     "full_title": "VMMARBLE - Phân loại bi",
@@ -328,6 +393,38 @@
     "ladder_path": "practice/ladders/foundations/binary-search/README.md",
     "tutorial_path": "topics/foundations/patterns/binary-search/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp"
+  },
+  {
+    "code": "MOVIEFESTIVAL",
+    "title": "Movie Festival",
+    "full_title": "Movie Festival",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1629",
+    "main_topic": "Foundations -> Sorting",
+    "secondary_topics": [
+      "Interval scheduling",
+      "Finish-time ordering",
+      "Exchange argument"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/sorting",
+    "topic_tags": [
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "finish-time sorting",
+      "interval scheduling",
+      "exchange argument greedy"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/sorting/moviefestival.md",
+    "ladder_path": "practice/ladders/foundations/sorting/README.md",
+    "tutorial_path": "topics/foundations/patterns/sorting/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp"
   },
   {
     "code": "PRAVO",
@@ -918,6 +1015,38 @@
     "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp"
+  },
+  {
+    "code": "EXPONENTIATION2",
+    "title": "Exponentiation II",
+    "full_title": "Exponentiation II",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1712",
+    "main_topic": "Math -> Modular Arithmetic",
+    "secondary_topics": [
+      "Binary exponentiation",
+      "Fermat reduction",
+      "Zero-exponent edge case"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/modular-arithmetic",
+    "topic_tags": [
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "binary exponentiation",
+      "fermat exponent reduction",
+      "zero exponent edge case"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/math/modular-arithmetic/exponentiation2.md",
+    "ladder_path": "practice/ladders/math/modular-arithmetic/README.md",
+    "tutorial_path": "topics/math/modular-arithmetic/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp"
   },
   {
     "code": "LAMP",

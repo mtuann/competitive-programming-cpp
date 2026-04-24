@@ -5,7 +5,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 - Topic slug: `foundations/sorting`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/sorting/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/sorting/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -57,7 +57,9 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `MOVIEFESTIVAL` | Movie Festival | `primary` | `easy` | finish-time sorting; interval scheduling; exchange argument greedy | [Note](../../../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
 
 ## Regeneration
 
