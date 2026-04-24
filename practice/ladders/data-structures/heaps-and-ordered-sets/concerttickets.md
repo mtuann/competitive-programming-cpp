@@ -85,7 +85,7 @@ Because duplicate ticket prices matter. If the input contains two tickets with p
 
 - Topic page: [Heaps And Ordered Sets](../../../../topics/data-structures/heaps-and-ordered-sets/README.md)
 - Practice ladder: [Heaps And Ordered Sets ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
 - Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
 - Carry forward: choose the container by operation set, not by the story in the statement.
 - This note adds: the exact predecessor / erase / balancing logic needed by this problem.

@@ -6,7 +6,7 @@
 // Main trap: using it when the valid set is not a contiguous forward-moving window.
 // Links:
 //   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
-//   Note: practice/ladders/dp/sliding-window/tfield.md
+//   Note: practice/ladders/dp/sliding-window/README.md
 
 #include <deque>
 #include <iostream>

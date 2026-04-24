@@ -83,7 +83,7 @@ This fits the small time limit only because we avoid checking polygons one by on
 
 - Topic page: [Sweep Line](../../../../topics/geometry/sweep-line/README.md)
 - Practice ladder: [Sweep Line ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
 - Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
 - Carry forward: sort events first, then make the active-set invariant explicit.
 - This note adds: the event meaning and state maintenance for this geometric sweep.

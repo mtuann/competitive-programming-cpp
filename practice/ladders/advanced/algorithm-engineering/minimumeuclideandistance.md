@@ -97,8 +97,8 @@ The candidate scan inside the strip is bounded by the standard closest-pair pack
 
 - Topic page: [Algorithm Engineering](../../../../topics/advanced/algorithm-engineering/README.md)
 - Practice ladder: [Algorithm Engineering ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
-- Notebook refresher: [Contest checklist](../../../../notebook/contest-checklist.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
 - Carry forward: keep the active structure as small as the proof allows, and stay in integer arithmetic when the judge already wants a squared metric.
 - This note adds: the exact sweep-line invariant and pruning rules for closest-pair code that is both fast and trustworthy.
 

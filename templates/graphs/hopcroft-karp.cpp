@@ -6,7 +6,7 @@
 // Main trap: feeding it a graph that is not actually bipartite and trusting the answer anyway.
 // Links:
 //   Topic: topics/graphs/matching/README.md
-//   Note: practice/ladders/graphs/matching/qbflower.md
+//   Note: practice/ladders/graphs/matching/README.md
 
 #include <iostream>
 #include <queue>

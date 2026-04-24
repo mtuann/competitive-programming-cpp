@@ -106,8 +106,8 @@ With `m, n_i <= 1000`, this is easily fast enough.
 
 - Topic page: [Sliding Window And Window DP](../../../../topics/foundations/patterns/two-pointers/README.md)
 - Practice ladder: [Sliding Window And Window DP ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
-- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Starter template: [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
+- Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
 - Carry forward: make the window or frontier monotone before you optimize the DP transitions.
 - This note adds: the geometry normalization and weighted sliding-window logic specific to this terrace model.
 

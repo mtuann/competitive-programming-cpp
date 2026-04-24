@@ -39,6 +39,18 @@ struct Trie {
         }
         nodes[cur].end_count++;
     }
+
+    bool contains(const string &s) const {
+        int cur = 0;
+        for (char ch : s) {
+            int c = ch - 'a';
+            cur = nodes[cur].next[c];
+            if (cur == -1) {
+                return false;
+            }
+        }
+        return nodes[cur].end_count > 0;
+    }
 };
 
 int main() {
@@ -46,5 +58,6 @@ int main() {
     trie.insert("cat");
     trie.insert("car");
     cout << trie.nodes[0].pass_count << '\n';
+    cout << trie.contains("car") << '\n';
     return 0;
 }

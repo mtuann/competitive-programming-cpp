@@ -104,7 +104,7 @@ This is optimal.
 
 - Topic page: [Complexity And Invariants](../../../../topics/foundations/reasoning/README.md)
 - Practice ladder: [Complexity And Invariants ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
 - Carry forward: state the loop invariant in words before you trust the one-pass solution.
 - This note adds: the exact invariant or exchange argument that makes this scan or greedy step safe.

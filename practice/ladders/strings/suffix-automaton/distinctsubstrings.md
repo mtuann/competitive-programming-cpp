@@ -102,7 +102,7 @@ Once the automaton is correct, the final count is just one linear pass over the 
 
 - Topic page: [Suffix Automaton](../../../../topics/strings/suffix-automaton/README.md)
 - Practice ladder: [Suffix Automaton ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [suffix-automaton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-automaton.cpp)
 - Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
 - Carry forward: track what each automaton state summarizes before relying on clone logic.
 - This note adds: the counting or aggregation performed on top of the suffix-automaton states.

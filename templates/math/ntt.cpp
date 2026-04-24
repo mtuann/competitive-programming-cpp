@@ -6,7 +6,7 @@
 // Main trap: copying it to a modulus without the required primitive root structure.
 // Links:
 //   Topic: topics/math/fft-ntt/README.md
-//   Note: practice/ladders/math/fft/post2.md
+//   Note: practice/ladders/math/fft/README.md
 
 #include <iostream>
 #include <vector>

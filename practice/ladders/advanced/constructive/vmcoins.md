@@ -91,8 +91,7 @@ This is fine for `N <= 30`.
 
 - Topic page: [Constructive](../../../../topics/advanced/constructive/README.md)
 - Practice ladder: [Constructive ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
-- Notebook refresher: [Contest checklist](../../../../notebook/contest-checklist.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - Carry forward: look for the smallest invariant that forces the construction to succeed.
 - This note adds: a problem-specific constructive argument instead of a reusable code skeleton.
 

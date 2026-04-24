@@ -124,7 +124,7 @@ That is fast enough even for `Q <= 10^6`.
 
 - Topic page: [Foundations](../../../../topics/dp/foundations/README.md)
 - Practice ladder: [Foundations ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
 - Carry forward: write the state meaning in one sentence before you derive any recurrence.
 - This note adds: the recurrence shape and optimization that belong to this specific problem.

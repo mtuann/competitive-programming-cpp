@@ -107,7 +107,7 @@ With `n <= 5000`, this is easily fast enough.
 
 - Topic page: [Prefix Constraints](../../../../topics/greedy/prefix-constraints/README.md)
 - Practice ladder: [Prefix Constraints ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
 - Carry forward: turn the prefix condition into a local invariant you can check after each decision.
 - This note adds: the greedy commitment rule and repair logic for this prefix-constrained setting.

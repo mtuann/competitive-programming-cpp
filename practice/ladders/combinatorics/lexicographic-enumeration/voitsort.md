@@ -108,7 +108,7 @@ This is fast enough for `n <= 1000`, `k <= 10^6`.
 
 - Topic page: [Lexicographic Enumeration](../../../../topics/combinatorics/lexicographic-enumeration/README.md)
 - Practice ladder: [Lexicographic Enumeration ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter template: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - Notebook refresher: [Combinatorics cheatsheet](../../../../notebook/combinatorics-cheatsheet.md)
 - Carry forward: make the order relation precise before you try to rank, unrank, or enumerate.
 - This note adds: the ordering rule and state transitions that are unique to this enumeration problem.

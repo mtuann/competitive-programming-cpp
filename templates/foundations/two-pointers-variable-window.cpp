@@ -1,13 +1,13 @@
 // Template: two pointers / sliding window
 // Signal: one window boundary grows, the other only moves forward to restore validity.
-// Assumption: all values are nonnegative.
+// Assumes: all values are nonnegative.
 // Exposes: one variable-window loop with l, r, current_sum, and best.
 // Complexity: O(n) pointer movement after O(1) summary updates.
 // Main trap: applying the same loop when negative values break monotonicity.
 // Links:
 //   Topic: topics/foundations/patterns/two-pointers/README.md
-//   Note: practice/ladders/foundations/two-pointers/apartments.md
-//   Note: practice/ladders/foundations/two-pointers/sumoftwovalues.md
+//   Note: practice/ladders/dp/sliding-window/tfield.md
+//   Note: practice/ladders/foundations/two-pointers/README.md
 // Example task: longest subarray with sum <= limit.
 
 #include <algorithm>
