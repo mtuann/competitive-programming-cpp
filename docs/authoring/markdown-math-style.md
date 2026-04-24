@@ -40,14 +40,14 @@ Example:
 Inline:
 
 ```md
-The Fenwick node at index $i$ stores the sum over the block of length $\operatorname{lowbit}(i)$.
+The Fenwick node at index $i$ stores the sum over the block of length $\mathrm{lowbit}(i)$.
 ```
 
 Display:
 
 ```md
 $$
-\operatorname{bit}[i] = \sum_{j=i-\operatorname{lowbit}(i)+1}^{i} a_j
+\mathrm{bit}[i] = \sum_{j=i-\mathrm{lowbit}(i)+1}^{i} a_j
 $$
 ```
 
@@ -67,7 +67,7 @@ Example:
 
 ```md
 $$
-\sum_{k=l}^{r} a_k = \operatorname{pref}[r] - \operatorname{pref}[l - 1]
+\sum_{k=l}^{r} a_k = \mathrm{pref}[r] - \mathrm{pref}[l - 1]
 $$
 ```
 

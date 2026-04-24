@@ -43,16 +43,16 @@ Assume a one-based array $a_1, a_2, \dots, a_n$.
 
 Define:
 
-- $\operatorname{lowbit}(i) = i \mathbin{\&} (-i)$
+- $\mathrm{lowbit}(i) = i \mathbin{\&} (-i)$
 - `bit[i]`: the Fenwick node stored at index `i`
 
 The core invariant is:
 
 $$
-\operatorname{bit}[i] = \sum_{j=i-\operatorname{lowbit}(i)+1}^{i} a_j
+\mathrm{bit}[i] = \sum_{j=i-\mathrm{lowbit}(i)+1}^{i} a_j
 $$
 
-So `bit[i]` stores the sum of the suffix block of length $\operatorname{lowbit}(i)$ ending at $i$.
+So `bit[i]` stores the sum of the suffix block of length $\mathrm{lowbit}(i)$ ending at $i$.
 
 For the first few indices, the stored blocks are:
 
@@ -88,7 +88,7 @@ This is too slow when both updates and queries are frequent.
 Static prefix sums fix the query:
 
 $$
-\sum_{k=l}^{r} a_k = \operatorname{pref}[r] - \operatorname{pref}[l - 1]
+\sum_{k=l}^{r} a_k = \mathrm{pref}[r] - \mathrm{pref}[l - 1]
 $$
 
 but a point update now forces every later prefix to change, so the update becomes `O(n)`.
@@ -122,6 +122,33 @@ So the algorithmic idea becomes:
 
 That gives logarithmic time in both directions.
 
+### Frequency View: The Same Prefix Machine In Disguise
+
+Fenwick tree is not only for numeric sums.
+
+Suppose you scan an array left to right and want, for each value, to know how many previous values are greater than it.
+
+The naive way is:
+
+- keep all previous elements
+- count one by one how many are `> current`
+
+That is `O(n^2)`.
+
+After coordinate compression, let `freq[v]` mean "how many processed elements currently have rank `v`".
+
+Then:
+
+- "how many processed elements are `<= x`?" becomes a prefix query
+- "how many are `> x`?" becomes `seen - prefix(x)`
+
+So the same data structure solves both:
+
+- dynamic range sums on an array
+- dynamic prefix frequencies on compressed values
+
+This is why inversion counting, k-th statistics on alive elements, and frequency sweeps all feel like "Fenwick problems" even when the statement never mentions prefix sums.
+
 ## Core Invariant And Why It Works
 
 ### The Invariant
@@ -129,7 +156,7 @@ That gives logarithmic time in both directions.
 Fenwick tree is correct because every node `bit[i]` stores exactly one interval:
 
 $$
-I(i) = [i-\operatorname{lowbit}(i)+1, i]
+I(i) = [i-\mathrm{lowbit}(i)+1, i]
 $$
 
 and all operations preserve and exploit that invariant.
@@ -139,7 +166,7 @@ and all operations preserve and exploit that invariant.
 Let $r_0 = r$, and define:
 
 $$
-r_{k+1} = r_k - \operatorname{lowbit}(r_k)
+r_{k+1} = r_k - \mathrm{lowbit}(r_k)
 $$
 
 The query loop visits the intervals:
@@ -163,7 +190,7 @@ $$
 and the process ends when $r_m = 0$. Therefore:
 
 $$
-\sum_{k=1}^{r} a_k = \sum_{\text{visited } x} \operatorname{bit}[x]
+\sum_{k=1}^{r} a_k = \sum_{\text{visited } x} \mathrm{bit}[x]
 $$
 
 That is exactly what the prefix-query loop computes.
@@ -172,15 +199,28 @@ That is exactly what the prefix-query loop computes.
 
 Suppose position $p$ changes by $\Delta$. We must add $\Delta$ to every Fenwick node whose interval contains $p$.
 
+A node `bit[x]` must be updated exactly when
+
+$$
+x - \mathrm{lowbit}(x) < p \le x.
+$$
+
 The update loop visits:
 
 $$
-p,\; p + \operatorname{lowbit}(p),\; p + \operatorname{lowbit}(p + \operatorname{lowbit}(p)), \dots
+p,\; p + \mathrm{lowbit}(p),\; p + \mathrm{lowbit}(p + \mathrm{lowbit}(p)), \dots
 $$
 
 Each jump moves to the next larger suffix block that still ends at or after $p$. Those are precisely the blocks whose stored interval contains $p$, so adding $\Delta$ to every visited node restores the invariant.
 
 You can think of the query loop as "strip the lowest block" and the update loop as "add the position into every larger cached block that covers it". They are inverse views of the same block system.
+
+More concretely:
+
+- the query loop repeatedly removes the rightmost Fenwick block from a prefix
+- the update loop repeatedly climbs to the next ancestor block in the same implicit tree
+
+So query and update are dual traversals over the same family of blocks. That is why the two loops look almost like mirror images.
 
 ## Complexity And Tradeoffs
 
@@ -214,10 +254,77 @@ Use Fenwick instead of nearby tools when:
 The two-`BIT` prefix formula is:
 
 $$
-\operatorname{pref}(x) = x \cdot \operatorname{sum}(B_1, x) - \operatorname{sum}(B_2, x)
+\mathrm{pref}(x) = x \cdot \mathrm{sum}(B_1, x) - \mathrm{sum}(B_2, x)
 $$
 
 after encoding a range add through the difference array. This is powerful, but the standard one-`BIT` version should feel automatic first.
+
+### How The Range-Update Variants Are Derived
+
+Let the difference array be:
+
+$$
+d_1 = a_1,
+\qquad
+d_i = a_i - a_{i-1} \text{ for } i \ge 2.
+$$
+
+Then:
+
+$$
+a_x = \sum_{i=1}^{x} d_i.
+$$
+
+So if we store `d` inside one Fenwick tree, then a range add
+
+$$
+[l, r] \mathrel{+}= \Delta
+$$
+
+becomes only two point updates on `d`:
+
+$$
+d_l \mathrel{+}= \Delta,
+\qquad
+d_{r+1} \mathrel{-}= \Delta.
+$$
+
+That is why `range add + point query` collapses to one standard `BIT` over the difference array.
+
+For `range add + range sum`, take one more prefix:
+
+$$
+\mathrm{pref}(x)
+=
+\sum_{t=1}^{x} a_t
+=
+\sum_{t=1}^{x} \sum_{i=1}^{t} d_i
+=
+\sum_{i=1}^{x} (x-i+1)d_i.
+$$
+
+Rearrange:
+
+$$
+\mathrm{pref}(x)
+=
+x \sum_{i=1}^{x} d_i
+-
+\sum_{i=1}^{x} (i-1)d_i.
+$$
+
+So if:
+
+- `B1` stores `d_i`
+- `B2` stores `(i-1)d_i`
+
+then:
+
+$$
+\mathrm{pref}(x) = x \cdot \mathrm{sum}(B_1, x) - \mathrm{sum}(B_2, x).
+$$
+
+This is the cleanest way to remember the two-`BIT` formula: it is just double-prefix algebra.
 
 ## Worked Examples
 
@@ -255,7 +362,7 @@ The loop visits:
 Total:
 
 $$
-\operatorname{sum\_prefix}(7) = 2 + 6 + 10 = 18
+\mathrm{sumPrefix}(7) = 2 + 6 + 10 = 18
 $$
 
 which is exactly:
@@ -313,6 +420,39 @@ Recognition lesson:
 - it is "about online prefix counts after compression"
 - that is exactly where Fenwick tree shines
 
+### Variant Micro-Trace: Range Add Via One Difference `BIT`
+
+Start from all zeros on indices `1..7`.
+
+Apply:
+
+- `[2, 5] += 3`
+- `[4, 7] += 2`
+
+The difference updates are:
+
+- `d[2] += 3`, `d[6] -= 3`
+- `d[4] += 2`, and the `r+1` update for `7` falls outside the array
+
+So the effective difference array is:
+
+$$
+d = [0,\; 3,\; 0,\; 2,\; 0,\; -3,\; 0].
+$$
+
+Taking prefix sums gives the real values:
+
+$$
+a = [0,\; 3,\; 3,\; 5,\; 5,\; 2,\; 2].
+$$
+
+Therefore:
+
+- point query at `5` is `5`
+- point query at `6` is `2`
+
+The important mental shift is that the Fenwick tree is now storing the dynamic difference array, not the original array directly.
+
 ## Algorithm And Pseudocode
 
 For the standard point-add / prefix-sum version:
@@ -340,6 +480,35 @@ sum_range(l, r):
 The repository template for this version is:
 
 - [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp)
+
+For the `range add + point query` variant, the pseudocode is:
+
+```text
+range_add(l, r, delta):
+    add(B, l, delta)
+    if r + 1 <= n:
+        add(B, r + 1, -delta)
+
+point_query(x):
+    return sum_prefix(B, x)
+```
+
+For the `k-th` prefix-frequency variant, the standard binary-lifting search is:
+
+```text
+find_kth(k):
+    idx <- 0
+    step <- highest power of two <= n
+    while step > 0:
+        next <- idx + step
+        if next <= n and bit[next] < k:
+            k <- k - bit[next]
+            idx <- next
+        step <- step / 2
+    return idx + 1
+```
+
+This works only when prefix sums are monotone, which is why the stored frequencies must stay nonnegative.
 
 ## Implementation Notes
 
@@ -381,6 +550,20 @@ For range add plus point query, think in terms of a difference array:
 
 For range add plus range sum, combine two `BIT`s and use the prefix formula from the variant table above.
 
+### Fenwick vs Segment Tree
+
+Use Fenwick when:
+
+- the structure is fundamentally prefix-additive
+- you care about sums, counts, or cumulative frequencies
+- you want the lightest correct tool with small constants
+
+Move to segment tree when:
+
+- the merge is not naturally a prefix sum
+- you need general range aggregates with updates
+- you need richer lazy propagation than the difference-array trick gives comfortably
+
 ## Common Mistakes
 
 - mixing zero-based and one-based indexing
@@ -415,13 +598,16 @@ For range add plus range sum, combine two `BIT`s and use the prefix formula from
 
 ## References And Repo Anchors
 
-- Practice ladder: [Fenwick Tree ladder](../../../practice/ladders/data-structures/fenwick-tree/README.md)
-- Notebook refresher: [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
-- Canonical template: [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp)
-- Strong repo note: [CVP00001](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
+- Repo anchor: [Fenwick Tree ladder](../../../practice/ladders/data-structures/fenwick-tree/README.md)
+- Repo anchor: [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
+- Repo anchor: [Canonical template - fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp)
+- Repo anchor: [Strong repo note - CVP00001](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
+- Primary: [Fenwick, 1994 - A New Data Structure for Cumulative Frequency Tables](https://dblp.org/rec/journals/spe/Fenwick94)
+- Course: [UIUC CS 491 CAP - Fenwick Trees](https://courses.grainger.illinois.edu/cs491cap/fa2019/files/slides/fenwick-trees.pdf)
 - Reference: [CP-Algorithms - Fenwick Tree](https://cp-algorithms.com/data_structures/fenwick.html)
 - Reference: [USACO Guide - BIT / Fenwick Tree](https://usaco.guide/gold/PURS)
-- Practice source: [CSES Problem Set](https://cses.fi/problemset/)
+- Essay / Blog: [Brent Yorgey - You could have invented Fenwick trees](https://www.cambridge.org/core/journals/journal-of-functional-programming/article/you-could-have-invented-fenwick-trees/B4628279D4E54229CED97249E96F721D)
+- Practice: [CSES Problem Set](https://cses.fi/problemset/)
 
 ## Related Topics
 

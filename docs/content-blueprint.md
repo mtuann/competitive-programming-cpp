@@ -10,10 +10,10 @@ Each finished topic should eventually include:
 2. one or more reusable implementations in `templates/` or `solutions/`
 3. a small practice ladder in `practice/ladders/`
 4. a `go deeper` block with:
-   - one `course` link
+   - one `primary` or `course` link
    - one `reference` link
    - one `practice` link
-   - one optional `paper / lecture notes / blog` link
+   - one optional `essay / blog` link when it adds real insight
 
 ## Writing Rule
 
@@ -43,6 +43,22 @@ Not every page has the same role:
 - `theory-led page`: concept, theorem, or modeling page where code is secondary
 
 The full deep template is the default for `technique leaf` pages. Family and theory-led pages may compress or rearrange sections, but they should still preserve the same teaching promises.
+
+Canonical mature `technique leaf` examples in this repo:
+
+- [Fenwick Tree](../topics/data-structures/fenwick-tree/README.md)
+- [FFT And NTT](../topics/math/fft-ntt/README.md)
+
+Before writing a new deep topic page, copy the pacing and section depth from one of those two pages instead of starting from a blank outline.
+
+For references, use this taxonomy consistently:
+
+- `Primary`: paper, official docs, or source-closest record
+- `Course`: lecture notes or slides
+- `Reference`: contest-friendly reference page
+- `Essay / Blog`: optional intuition or derivation piece
+- `Practice`: official platform/archive
+- `Repo anchors`: internal ladder, template, notebook, note
 
 ## Build Order
 

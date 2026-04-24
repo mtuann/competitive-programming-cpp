@@ -42,6 +42,23 @@ These pages may compress the pseudocode and implementation blocks, but they shou
 
 The section contract below is the source of truth for `Technique Leaf` pages and the strongest default for anchor topics.
 
+## Canonical Examples
+
+When in doubt, imitate an existing strong page instead of inventing a new structure.
+
+Current canonical `Technique Leaf` examples:
+
+- [Fenwick Tree](../topics/data-structures/fenwick-tree/README.md):
+  model page for "one data structure, one invariant, several contest variants"
+- [FFT And NTT](../topics/math/fft-ntt/README.md):
+  model page for "one core algebraic idea, two implementation variants, stronger math narrative"
+
+Use these pages to calibrate:
+
+- how deep the proof should go
+- how explicit the worked examples should be
+- how to connect topic -> template -> ladder note -> references
+
 ## 1. At A Glance
 
 - what the technique solves
@@ -118,10 +135,28 @@ The reader should leave this section knowing not only what to solve next, but wh
 
 ## 11. References And Repo Anchors
 
-- `Course`: official or course-primary link
-- `Reference`: CP-Algorithms / OI Wiki / project-primary link
+- `Primary`: original paper, official documentation, or source-closest record
+- `Course`: official lecture notes, slides, or course-primary exposition
+- `Reference`: CP-Algorithms, OI Wiki, USACO Guide, ACL docs, or similar high-signal reference pages
+- `Essay / Blog`: optional, but valuable when it adds intuition, derivation, debugging insight, or implementation judgment that the reference pages do not
 - `Practice`: official platform or archive
 - `Repo anchors`: ladder, notebook, template, and strongest internal problem notes
+
+Minimum expectation for a mature deep topic page:
+
+- one `Primary` or `Course` source
+- one `Reference`
+- one `Practice`
+- the repo anchors that let the reader stay inside this repository
+
+Add an `Essay / Blog` only when it is genuinely high-signal. Do not add blogs just to pad the list.
+
+Priority rule:
+
+1. prefer `Primary` and `Course` for facts, proofs, and definitions
+2. use `Reference` for compact contest-oriented recall
+3. use `Essay / Blog` for intuition, derivation, pitfalls, and implementation judgment
+4. never make the reference list carry the main teaching load; the page itself must remain self-contained
 
 References should support the page, not replace it. The page itself should carry the main teaching load.
 
