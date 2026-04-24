@@ -37,18 +37,84 @@ If you are still stabilizing the local C++ loop itself, pair these first:
 - [Foundations Cheatsheet](notebook/foundations-cheatsheet.md)
 - [Weird Algorithm](practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 
+## Template Card Contract
+
+For mature templates, this repo uses six short metadata fields:
+
+- `Signal`: the fastest cue that this template is the right family
+- `Assumes`: the boundary meaning, invariant, or data-shape contract already baked in
+- `Exposes`: the function, struct, or return contract you are expected to reuse
+- `Complexity`: the standard operation cost you should keep in your head while using it
+- `Main trap`: the bug most likely to survive hand tests
+- `Links`: the strongest reopening path when trust is low
+
+The library page carries the fuller cards. The template file itself only keeps the compact version.
+
+## Foundations Pilot Cards
+
+### [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
+
+- `Signal`: start a normal single-file batch solution with the smallest clean skeleton
+- `Assumes`: standard C++ streams, one-file submission, logic still needs to be written from scratch
+- `Exposes`: one minimal `main()` with fast iostream setup already in place
+- `Complexity`: no algorithmic cost; this is a starter scaffold
+- `Main trap`: copying the skeleton and then letting local debug prints leak into judged output
+- `Links`: [C++ Language For Contests](topics/foundations/cpp-language/README.md), [Foundations Cheatsheet](notebook/foundations-cheatsheet.md), [Weird Algorithm](practice/ladders/foundations/cpp-language/weirdalgorithm.md)
+
+### [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
+
+- `Signal`: large ordinary stdin/stdout input, but still no interactive or custom-judge behavior
+- `Assumes`: C++ streams only; no casual mixing with `scanf` / `printf` after disabling sync
+- `Exposes`: one reusable `init_fast_io()` helper plus a minimal `main()`
+- `Complexity`: same asymptotic complexity as ordinary iostream code; this is about constant-factor stream setup
+- `Main trap`: mixing unsynchronized iostreams with C stdio and then debugging ghosts that are really I/O policy bugs
+- `Links`: [C++ Language For Contests](topics/foundations/cpp-language/README.md), [Foundations Cheatsheet](notebook/foundations-cheatsheet.md)
+
+### [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
+
+- `Signal`: records need to be ordered by one main key plus an explicit tie rule
+- `Assumes`: the comparator is a strict weak ordering and the tie behavior matters enough to spell out
+- `Exposes`: one record `struct` plus one lambda comparator pattern
+- `Complexity`: `O(n log n)` sorting plus linear scan after sorting in the common use case
+- `Main trap`: incomplete or inconsistent comparator logic that makes the proof and the implementation quietly disagree
+- `Links`: [Sorting](topics/foundations/patterns/sorting/README.md), [Ferris Wheel](practice/ladders/foundations/sorting/ferriswheel.md), [Movie Festival](practice/ladders/foundations/sorting/moviefestival.md)
+
+### [prefix-sum-1d.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/prefix-sum-1d.cpp)
+
+- `Signal`: many static range sums or counts, no updates
+- `Assumes`: one stable indexing convention and `pref[0] = 0`
+- `Exposes`: a `PrefixSum1D` struct with `sum(l, r)` over a half-open-style internal prefix layout
+- `Complexity`: `O(n)` preprocessing, `O(1)` per query
+- `Main trap`: mixing inclusive and half-open interval formulas in the same solution
+- `Links`: [Prefix Sums](topics/foundations/patterns/prefix-sums/README.md), [Static Range Sum Queries](practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+
+### [binary-search-first-true.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-first-true.cpp)
+
+- `Signal`: monotone predicate, want the first feasible answer
+- `Assumes`: `l` is bad, `r` is good, and the answer stays in `(l, r]`
+- `Exposes`: a `first_true(l, r, is_good)` helper that returns the first good integer
+- `Complexity`: `O(log range)` predicate calls
+- `Main trap`: writing a check that is not really monotone, or forgetting what `l` and `r` mean after two iterations
+- `Links`: [Binary Search](topics/foundations/patterns/binary-search/README.md), [Factory Machines](practice/ladders/foundations/binary-search/factorymachines.md), [Foundations Cheatsheet](notebook/foundations-cheatsheet.md)
+
+## Foundations Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp) | start a clean single-file batch solution | you already need a protocol harness or a real reusable data structure | [C++ Language](topics/foundations/cpp-language/README.md) | [Weird Algorithm](practice/ladders/foundations/cpp-language/weirdalgorithm.md) |
+| [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp) | large ordinary stdin/stdout input | interactive tasks or mixed stdio policy | [C++ Language](topics/foundations/cpp-language/README.md) | [Missing Number](practice/ladders/foundations/cpp-language/missingnumber.md) |
+| [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp) | sort records by one main key plus ties | the proof does not depend on sorted order yet | [Sorting](topics/foundations/patterns/sorting/README.md) | [Movie Festival](practice/ladders/foundations/sorting/moviefestival.md) |
+| [binary-search-first-true.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-first-true.cpp) | monotone predicate, first feasible answer | the predicate is not monotone | [Binary Search](topics/foundations/patterns/binary-search/README.md) | [Factory Machines](practice/ladders/foundations/binary-search/factorymachines.md) |
+| [binary-search-last-false.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-last-false.cpp) | monotone predicate, want the last bad point | you are really reasoning in first-true semantics | [Binary Search](topics/foundations/patterns/binary-search/README.md) | [Factory Machines](practice/ladders/foundations/binary-search/factorymachines.md) |
+| [prefix-sum-1d.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/prefix-sum-1d.cpp) | many static range sums or counts | updates happen between queries | [Prefix Sums](topics/foundations/patterns/prefix-sums/README.md) | [Static Range Sum Queries](practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) |
+| [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp) | many offline range additions, final reconstruction only | online queries or updates interleave with answers | [Difference Arrays](topics/foundations/patterns/difference-arrays/README.md) | [Range Update Queries](practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) |
+| [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp) | monotone sliding window with forward-only boundaries | negative values or non-monotone validity break the window logic | [Two Pointers](topics/foundations/patterns/two-pointers/README.md) | [Apartments](practice/ladders/foundations/two-pointers/apartments.md) |
+
 ## Current Templates
 
 ### Foundations
 
-- [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
-- [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
-- [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
-- [binary-search-first-true.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-first-true.cpp)
-- [binary-search-last-false.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-last-false.cpp)
-- [prefix-sum-1d.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/prefix-sum-1d.cpp)
-- [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp)
-- [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
+- chooser table above; use the pilot cards plus the foundations chooser before browsing raw files
 
 ### Data Structures
 

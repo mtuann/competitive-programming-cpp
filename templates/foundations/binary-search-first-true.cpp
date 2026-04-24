@@ -1,4 +1,15 @@
 // Template: binary search first true
+// Signal: monotone predicate, want the first feasible answer.
+// Assumes:
+// - l is bad
+// - r is good
+// - answer is in (l, r]
+// Exposes: first_true(l, r, is_good).
+// Complexity: O(log range) predicate calls.
+// Main trap: the predicate is not actually monotone, or endpoint meanings drift mid-loop.
+// Links:
+//   Topic: topics/foundations/patterns/binary-search/README.md
+//   Note: practice/ladders/foundations/binary-search/factorymachines.md
 // Invariant:
 // - l is bad
 // - r is good

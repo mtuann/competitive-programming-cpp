@@ -1,4 +1,15 @@
 // Template: binary search last false
+// Signal: monotone predicate, want the last infeasible or last bad answer.
+// Assumes:
+// - l is bad
+// - r is good
+// - answer is the last bad point before r
+// Exposes: last_false(l, r, is_good).
+// Complexity: O(log range) predicate calls.
+// Main trap: mixing this variant with first-true semantics and returning the wrong endpoint.
+// Links:
+//   Topic: topics/foundations/patterns/binary-search/README.md
+//   Note: practice/ladders/foundations/binary-search/factorymachines.md
 // Invariant:
 // - l is bad
 // - r is good

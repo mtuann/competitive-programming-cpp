@@ -240,6 +240,14 @@ The two first templates to actually understand are:
 - [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
 - [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
 
+When you open them through the [Template Library](../../../template-library.md), scan the short contract first:
+
+- `Signal`
+- `Assumes`
+- `Exposes`
+- `Complexity`
+- `Main trap`
+
 What they are teaching is modest but important:
 
 - initialize the stream settings once

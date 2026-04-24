@@ -1,5 +1,13 @@
 // Template: prefix sum 1D
 // Use when the array is static and you need many range sums.
+// Signal: many static range queries, no updates.
+// Assumes: one stable indexing convention and pref[0] = 0.
+// Exposes: PrefixSum1D with sum(l, r).
+// Complexity: O(n) build, O(1) range query.
+// Main trap: mixing inclusive and half-open interval formulas.
+// Links:
+//   Topic: topics/foundations/patterns/prefix-sums/README.md
+//   Note: practice/ladders/foundations/prefix-sums/staticrangesumqueries.md
 
 #include <iostream>
 #include <vector>

@@ -119,6 +119,14 @@ This keeps noisy logs out of the release build without inventing a heavy debug f
 
 You do not need to memorize every template. Learn a very small set until they feel predictable, and browse them through the [Template Library](../template-library.md).
 
+The foundations pilot templates there now expose the short contract you should scan first:
+
+- `Signal`
+- `Assumes`
+- `Exposes`
+- `Complexity`
+- `Main trap`
+
 ## Modern C++ Short Wins
 
 Structured bindings:
