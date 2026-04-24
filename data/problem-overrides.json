@@ -56,7 +56,9 @@
     ]
   },
   "FFLOW": {
-    "topic_tags": [],
+    "topic_tags": [
+      "advanced/algorithm-engineering"
+    ],
     "patterns": [
       "maximum flow",
       "undirected capacities",
@@ -79,8 +81,24 @@
       "Dynamic programming"
     ]
   },
+  "DISTINCTSUBSTRINGS": {
+    "topic_tags": [
+      "strings/suffix-array-lcp"
+    ],
+    "patterns": [
+      "suffix automaton construction",
+      "clone states",
+      "state contribution counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
   "BOOKSHOP": {
-    "topic_tags": [],
+    "topic_tags": [
+      "advanced/complexity-and-hardness"
+    ],
     "patterns": [
       "0 1 knapsack",
       "downward capacity loop",
@@ -132,7 +150,9 @@
     ]
   },
   "DISTINCTNUMBERS": {
-    "topic_tags": [],
+    "topic_tags": [
+      "foundations/cpp-language"
+    ],
     "patterns": [
       "sort unique",
       "container deduplication",
@@ -144,7 +164,9 @@
     ]
   },
   "FACTORYMACHINES": {
-    "topic_tags": [],
+    "topic_tags": [
+      "foundations/complexity-and-invariants"
+    ],
     "patterns": [
       "answer binary search",
       "monotone feasibility",
@@ -168,7 +190,9 @@
     ]
   },
   "FINDINGBORDERS": {
-    "topic_tags": [],
+    "topic_tags": [
+      "advanced/randomized-algorithms"
+    ],
     "patterns": [
       "rolling hash",
       "prefix-suffix equality",
@@ -191,6 +215,18 @@
     "tracks": [
       "CSES",
       "String algorithms"
+    ]
+  },
+  "INCREASINGARRAY": {
+    "topic_tags": [],
+    "patterns": [
+      "loop invariant scan",
+      "greedy repair",
+      "running maximum maintenance"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
     ]
   },
   "KINGDOMS": {
@@ -306,7 +342,9 @@
     ]
   },
   "MOVIEFESTIVAL": {
-    "topic_tags": [],
+    "topic_tags": [
+      "foundations/complexity-and-invariants"
+    ],
     "patterns": [
       "finish-time sorting",
       "interval scheduling",
@@ -331,6 +369,7 @@
   },
   "PRAVO": {
     "topic_tags": [
+      "advanced/algorithm-engineering",
       "geometry/counting-geometry",
       "geometry/vector-orientation"
     ],

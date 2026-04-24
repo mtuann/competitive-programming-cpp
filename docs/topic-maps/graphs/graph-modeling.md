@@ -6,6 +6,7 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 - Tutorial page: [Open tutorial](../../../topics/graphs/graph-modeling/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/graph-modeling/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `9`
 
 ## Microtopics

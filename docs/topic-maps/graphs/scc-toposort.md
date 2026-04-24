@@ -6,6 +6,7 @@ Compress directed graphs into DAGs, reason about dependencies, and detect strong
 - Tutorial page: [Open tutorial](../../../topics/graphs/scc-toposort/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/scc-toposort/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `9`
 
 ## Microtopics

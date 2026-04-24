@@ -152,6 +152,18 @@ dp[i][j] = answer for the first i items with extra parameter j
 
 This is often enough to prevent half the common bugs.
 
+## Two-Minute Pre-Code Routine
+
+Before writing the full solution, force yourself to answer five short questions:
+
+1. what does the state or main variable mean?
+2. what stays true after each iteration?
+3. what is the boundary convention?
+4. what is the time and memory cost?
+5. what is one tiny case that could break the model?
+
+This sounds small, but it is one of the fastest ways to reduce wrong-answer churn for beginner and intermediate problems.
+
 ## Worked Examples
 
 ### Example 1: prefix sums
@@ -217,6 +229,22 @@ When a solution fails, check in this order:
 5. does one tiny custom case break the invariant?
 
 This is much better than randomly editing lines until the sample passes again.
+
+## Small-Case Test Routine
+
+For foundations-level problems, a very good default is:
+
+- one smallest legal input
+- one all-equal case
+- one already-good case
+- one case that forces the repair logic or boundary update
+
+Examples:
+
+- binary search: smallest bad/good split you can think of
+- prefix sums: one query touching the left boundary
+- two pointers: one window that becomes invalid immediately
+- greedy scan: one case where the tempting local choice is wrong
 
 ## Recognition Cues
 

@@ -6,6 +6,7 @@ A focused counting-geometry subtopic around perpendicular vectors, normalized sl
 - Tutorial page: [Open tutorial](../../../topics/geometry/counting-geometry/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/right-triangles/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

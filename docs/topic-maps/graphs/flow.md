@@ -6,6 +6,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 - Tutorial page: [Open tutorial](../../../topics/graphs/flow/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `3`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

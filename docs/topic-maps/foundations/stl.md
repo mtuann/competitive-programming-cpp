@@ -6,6 +6,7 @@ Container and algorithm fluency: build the habit of reaching for `vector`, `set`
 - Tutorial page: [Open tutorial](../../../topics/foundations/cpp-language/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/stl/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

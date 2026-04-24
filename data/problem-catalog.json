@@ -408,7 +408,8 @@
     "status": "solved",
     "primary_slug": "dp/knapsack-family",
     "topic_tags": [
-      "dp/knapsack-family"
+      "dp/knapsack-family",
+      "advanced/complexity-and-hardness"
     ],
     "patterns": [
       "0 1 knapsack",
@@ -474,7 +475,8 @@
     "status": "solved",
     "primary_slug": "foundations/binary-search",
     "topic_tags": [
-      "foundations/binary-search"
+      "foundations/binary-search",
+      "foundations/complexity-and-invariants"
     ],
     "patterns": [
       "answer binary search",
@@ -489,6 +491,38 @@
     "ladder_path": "practice/ladders/foundations/binary-search/README.md",
     "tutorial_path": "topics/foundations/patterns/binary-search/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp"
+  },
+  {
+    "code": "INCREASINGARRAY",
+    "title": "Increasing Array",
+    "full_title": "Increasing Array",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1094",
+    "main_topic": "Foundations -> Complexity And Invariants",
+    "secondary_topics": [
+      "Loop invariant",
+      "Greedy repair",
+      "Running maximum"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/complexity-and-invariants",
+    "topic_tags": [
+      "foundations/complexity-and-invariants"
+    ],
+    "patterns": [
+      "loop invariant scan",
+      "greedy repair",
+      "running maximum maintenance"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
+    ],
+    "note_path": "practice/ladders/foundations/complexity-and-invariants/increasingarray.md",
+    "ladder_path": "practice/ladders/foundations/complexity-and-invariants/README.md",
+    "tutorial_path": "topics/foundations/reasoning/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/complexity-and-invariants/increasingarray.cpp"
   },
   {
     "code": "RANGEUPDATEQUERIES",
@@ -539,7 +573,8 @@
     "status": "solved",
     "primary_slug": "foundations/sorting",
     "topic_tags": [
-      "foundations/sorting"
+      "foundations/sorting",
+      "foundations/complexity-and-invariants"
     ],
     "patterns": [
       "finish-time sorting",
@@ -571,7 +606,8 @@
     "status": "solved",
     "primary_slug": "foundations/stl",
     "topic_tags": [
-      "foundations/stl"
+      "foundations/stl",
+      "foundations/cpp-language"
     ],
     "patterns": [
       "sort unique",
@@ -637,6 +673,7 @@
     "primary_slug": "geometry/right-triangles",
     "topic_tags": [
       "geometry/right-triangles",
+      "advanced/algorithm-engineering",
       "geometry/counting-geometry",
       "geometry/vector-orientation"
     ],
@@ -802,7 +839,8 @@
     "status": "solved",
     "primary_slug": "graphs/flow",
     "topic_tags": [
-      "graphs/flow"
+      "graphs/flow",
+      "advanced/algorithm-engineering"
     ],
     "patterns": [
       "maximum flow",
@@ -1358,7 +1396,8 @@
     "status": "solved",
     "primary_slug": "strings/hashing",
     "topic_tags": [
-      "strings/hashing"
+      "strings/hashing",
+      "advanced/randomized-algorithms"
     ],
     "patterns": [
       "rolling hash",
@@ -1437,6 +1476,39 @@
     "ladder_path": "practice/ladders/strings/suffix-array-lcp/README.md",
     "tutorial_path": "topics/strings/suffix-array-lcp/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp"
+  },
+  {
+    "code": "DISTINCTSUBSTRINGS",
+    "title": "Distinct Substrings",
+    "full_title": "Distinct Substrings",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2105",
+    "main_topic": "Strings -> Suffix Automaton",
+    "secondary_topics": [
+      "State length intervals",
+      "Suffix links",
+      "Online construction"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/suffix-automaton",
+    "topic_tags": [
+      "strings/suffix-automaton",
+      "strings/suffix-array-lcp"
+    ],
+    "patterns": [
+      "suffix automaton construction",
+      "clone states",
+      "state contribution counting"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/suffix-automaton/distinctsubstrings.md",
+    "ladder_path": "practice/ladders/strings/suffix-automaton/README.md",
+    "tutorial_path": "topics/strings/suffix-automaton/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp"
   },
   {
     "code": "WORDCOMBINATIONS",

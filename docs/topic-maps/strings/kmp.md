@@ -6,6 +6,7 @@ Prefix-function reasoning for exact pattern matching, borders, periods, and auto
 - Tutorial page: [Open tutorial](../../../topics/strings/kmp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/kmp/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

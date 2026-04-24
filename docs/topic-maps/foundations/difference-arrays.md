@@ -6,6 +6,7 @@ A range-update perspective on prefix sums: store changes at boundaries, then rec
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/difference-arrays/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/difference-arrays/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

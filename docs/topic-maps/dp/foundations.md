@@ -6,6 +6,7 @@ State design, transitions, and the discipline of converting brute force recurren
 - Tutorial page: [Open tutorial](../../../topics/dp/foundations/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/foundations/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `12`
 
 ## Microtopics

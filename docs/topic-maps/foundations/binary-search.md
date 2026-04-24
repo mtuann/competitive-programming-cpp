@@ -6,6 +6,7 @@ Search on sorted data and on monotone answers: learn the invariant-first templat
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/binary-search/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/binary-search/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

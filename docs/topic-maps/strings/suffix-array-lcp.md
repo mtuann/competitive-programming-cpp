@@ -5,7 +5,8 @@ Sorted suffix views and LCP arrays for substring order, uniqueness, and offline 
 - Topic slug: `strings/suffix-array-lcp`
 - Tutorial page: [Open tutorial](../../../topics/strings/suffix-array-lcp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/suffix-array-lcp/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `9`
 
 ## Microtopics
@@ -58,6 +59,7 @@ Sorted suffix views and LCP arrays for substring order, uniqueness, and offline 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `DISTINCTSUBSTRINGS` | Distinct Substrings | `secondary` | `medium` | suffix automaton construction; clone states; state contribution counting | [Note](../../../practice/ladders/strings/suffix-automaton/distinctsubstrings.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp) |
 | `REPEATINGSUBSTRING` | Repeating Substring | `primary` | `medium` | suffix array doubling; kasai lcp; maximum adjacent lcp | [Note](../../../practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp) |
 
 ## Regeneration

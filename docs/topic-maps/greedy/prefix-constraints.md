@@ -5,6 +5,7 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 - Topic slug: `greedy/prefix-constraints`
 - Ladder page: [Open ladder](../../../practice/ladders/greedy/prefix-constraints/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

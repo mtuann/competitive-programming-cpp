@@ -14,6 +14,10 @@ Use this ladder when deterministic contest tools feel familiar and you want to u
 - randomized balancing
 - fingerprinting and low-failure verification
 
+## Repo Case Study
+
+- [Finding Borders](../../strings/hashing/findingborders.md): a clean internal example of probabilistic fingerprinting.
+
 ## Stretch
 
 - compare Monte Carlo vs Las Vegas thinking

@@ -6,6 +6,7 @@ Count or optimize over numeric ranges by scanning digits left-to-right with tigh
 - Tutorial page: [Open tutorial](../../../topics/dp/digit-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/digit-dp/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `15`
 
 ## Microtopics

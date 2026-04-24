@@ -117,6 +117,16 @@ bool by_end(const Interval &a, const Interval &b) {
 
 This is safer than relying on an incomplete comparator.
 
+## Comparator Sanity Check
+
+Before trusting a custom comparator, ask:
+
+- what is the primary key?
+- what happens on ties?
+- is the comparison still consistent if I swap the arguments?
+
+If the proof depends on a tie rule, make that rule explicit in code instead of leaving equal keys unspecified.
+
 ## Standard Patterns
 
 ### 1. Greedy After Sorting

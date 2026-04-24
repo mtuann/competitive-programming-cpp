@@ -6,6 +6,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 - Tutorial page: [Open tutorial](../../../topics/math/modular-arithmetic/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `10`
 
 ## Microtopics

@@ -865,6 +865,53 @@ def validate_source_items(label: str, items: object, issues: list[str], *, allow
             seen_urls[canonical] = source_url
 
 
+def validate_repo_companion_items(label: str, items: object, issues: list[str]) -> None:
+    if not isinstance(items, list):
+        append_issue(issues, f"{label} must be a list of repo companion objects.")
+        return
+
+    seen_paths: set[str] = set()
+    allowed_prefixes = ("topics/", "practice/", "notebook/")
+    for idx, item in enumerate(items):
+        item_label = f"{label}[{idx}]"
+        if not isinstance(item, dict):
+            append_issue(issues, f"{item_label} must be an object with label/path/kind.")
+            continue
+
+        allowed_keys = {"kind", "label", "path"}
+        extra_keys = sorted(set(item) - allowed_keys)
+        missing_keys = sorted(allowed_keys - set(item))
+        if missing_keys:
+            append_issue(issues, f"{item_label} is missing expected keys: {', '.join(missing_keys)}.")
+        if extra_keys:
+            append_issue(issues, f"{item_label} has unknown keys: {', '.join(extra_keys)}.")
+
+        companion_label = clean_value(item.get("label", ""))
+        companion_path = clean_value(item.get("path", ""))
+        companion_kind = clean_value(item.get("kind", ""))
+
+        if not companion_label:
+            append_issue(issues, f"{item_label}.label must be non-empty.")
+        if not companion_kind:
+            append_issue(issues, f"{item_label}.kind must be non-empty.")
+        if not companion_path:
+            append_issue(issues, f"{item_label}.path must be non-empty.")
+            continue
+        if companion_path in seen_paths:
+            append_issue(issues, f"{label} repeats companion path {companion_path!r}.")
+        else:
+            seen_paths.add(companion_path)
+        if not companion_path.endswith(".md"):
+            append_issue(issues, f"{item_label}.path must point to a markdown file, got {companion_path!r}.")
+        if companion_path != "template-library.md" and not companion_path.startswith(allowed_prefixes):
+            append_issue(
+                issues,
+                f"{item_label}.path must be 'template-library.md' or start with one of {allowed_prefixes!r}, got {companion_path!r}.",
+            )
+        if not (ROOT / companion_path).exists():
+            append_issue(issues, f"{item_label}.path points to missing path {companion_path!r}.")
+
+
 def collect_note_records(topic_resources: dict[str, dict], issues: list[str]) -> list[dict[str, str]]:
     required_fields = [
         "Title",
@@ -959,7 +1006,7 @@ def validate_topic_resources(topic_resources: dict[str, dict], issues: list[str]
             append_issue(issues, f"topic-resources[{slug!r}] must be an object.")
             continue
 
-        allowed_keys = {
+        required_keys = {
             "ladder_path",
             "learning_sources",
             "microtopics",
@@ -968,8 +1015,9 @@ def validate_topic_resources(topic_resources: dict[str, dict], issues: list[str]
             "title",
             "topic_path",
         }
-        extra_keys = sorted(set(entry) - allowed_keys)
-        missing_keys = sorted(allowed_keys - set(entry))
+        optional_keys = {"repo_companions"}
+        extra_keys = sorted(set(entry) - required_keys - optional_keys)
+        missing_keys = sorted(required_keys - set(entry))
         if missing_keys:
             append_issue(issues, f"topic-resources[{slug!r}] is missing expected keys: {', '.join(missing_keys)}.")
         if extra_keys:
@@ -1017,6 +1065,11 @@ def validate_topic_resources(topic_resources: dict[str, dict], issues: list[str]
         validate_source_items(
             f"topic-resources[{slug!r}].practice_sources",
             entry.get("practice_sources", []),
+            issues,
+        )
+        validate_repo_companion_items(
+            f"topic-resources[{slug!r}].repo_companions",
+            entry.get("repo_companions", []),
             issues,
         )
 
@@ -1424,6 +1477,7 @@ def write_csv(rows: list[dict]) -> None:
                 "tutorial_path",
                 "solution_url",
             ],
+            lineterminator="\n",
         )
         writer.writeheader()
         for row in rows:
@@ -1457,6 +1511,7 @@ def write_external_csv(rows: list[dict]) -> None:
                 "prerequisites",
                 "why_fit",
             ],
+            lineterminator="\n",
         )
         writer.writeheader()
         for row in rows:
@@ -1597,10 +1652,10 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
     index_lines = [
         "# Topic Maps",
         "",
-        "These pages collect trusted learning sources, official practice sources, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
+        "These pages collect trusted learning sources, official practice sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
         "",
-        "| Topic | Repo Problems | External Problems | Map |",
-        "| --- | ---: | ---: | --- |",
+        "| Topic | Repo Problems | Repo Companions | External Problems | Map |",
+        "| --- | ---: | ---: | ---: | --- |",
     ]
 
     def sort_key(item: tuple[str, dict]) -> tuple[int, str]:
@@ -1613,6 +1668,7 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
         title = entry["title"]
         problems = sorted(grouped_by_slug.get(slug, []), key=lambda row: row["code"])
         external_problems = [normalize_external_problem(slug, problem) for problem in external_problem_pools.get(slug, [])]
+        companions = entry.get("repo_companions", [])
         rel_path = Path(slug + ".md")
         out_path = TOPIC_MAPS_DIR / rel_path
         out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -1630,6 +1686,7 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
         if entry.get("ladder_path"):
             lines.append(f"- Ladder page: [Open ladder]({relative_for_topic_maps(entry['ladder_path'])})")
         lines.append(f"- Repo problems currently tagged here: `{len(problems)}`")
+        lines.append(f"- Repo companion pages: `{len(companions)}`")
         lines.append(f"- Curated external problems: `{len(external_problems)}`")
         lines.append("")
 
@@ -1659,6 +1716,17 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
             lines.append("| --- | --- |")
             for source in practice_sources:
                 lines.append(f"| [{source['label']}]({source['url']}) | `{source['kind']}` |")
+            lines.append("")
+
+        if companions:
+            lines.append("## Repo Companion Material")
+            lines.append("")
+            lines.append("| Material | Type |")
+            lines.append("| --- | --- |")
+            for companion in companions:
+                lines.append(
+                    f"| [{companion['label']}]({relative_for_topic_maps(companion['path'])}) | `{companion['kind']}` |"
+                )
             lines.append("")
 
         lines.append("## Curated External Problems")
@@ -1693,7 +1761,10 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
         lines.append("## Repo Problems")
         lines.append("")
         if not problems:
-            lines.append("_No repo note has been tagged to this topic yet._")
+            if companions:
+                lines.append("_No repo problem note is attached yet. Use the repo companion material above for this theory/process-heavy topic._")
+            else:
+                lines.append("_No repo note has been tagged to this topic yet._")
             lines.append("")
         else:
             lines.append("| Code | Title | Fit | Difficulty | Pattern | Note | Solution |")
@@ -1716,7 +1787,9 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
         lines.append("")
 
         out_path.write_text("\n".join(lines), encoding="utf-8")
-        index_lines.append(f"| {title} | {len(problems)} | {len(external_problems)} | [Open]({slug}.md) |")
+        index_lines.append(
+            f"| {title} | {len(problems)} | {len(companions)} | {len(external_problems)} | [Open]({slug}.md) |"
+        )
 
     TOPIC_MAPS_INDEX.write_text("\n".join(index_lines) + "\n", encoding="utf-8")
 

@@ -85,6 +85,14 @@ Capture:
 - what bug habit repeated
 - what notebook/template change would have prevented it
 
+## Internal Material
+
+This topic is deliberately repo-led more than problem-led. The most useful internal pages are:
+
+- [Contest Playbooks](../../../practice/contest-playbooks/README.md)
+- [Contest Checklist](../../../notebook/contest-checklist.md)
+- [Template Library](../../../template-library.md)
+
 ## Recognition Cues
 
 - strong practice performance but weak contest conversion

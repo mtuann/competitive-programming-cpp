@@ -6,6 +6,7 @@ Tree-rooted dynamic programming from local subtree states to rerooting and path 
 - Tutorial page: [Open tutorial](../../../topics/dp/tree-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/tree-dp/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

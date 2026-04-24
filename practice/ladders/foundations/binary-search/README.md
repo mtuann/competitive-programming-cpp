@@ -30,6 +30,10 @@ Target skill:
 
 - define one monotone predicate and one stable boundary convention
 
+## Repo Anchor
+
+- [Factory Machines](factorymachines.md): a strong first answer-search note because the predicate is simple and the boundary meaning is easy to explain.
+
 ## Stretch
 
 - combine binary search with prefix sums or greedy checking

@@ -5,7 +5,8 @@ Compact automaton of all substrings, with endpos classes, clones, and counting a
 - Topic slug: `strings/suffix-automaton`
 - Tutorial page: [Open tutorial](../../../topics/strings/suffix-automaton/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/suffix-automaton/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -54,7 +55,9 @@ Compact automaton of all substrings, with endpos classes, clones, and counting a
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `DISTINCTSUBSTRINGS` | Distinct Substrings | `primary` | `medium` | suffix automaton construction; clone states; state contribution counting | [Note](../../../practice/ladders/strings/suffix-automaton/distinctsubstrings.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp) |
 
 ## Regeneration
 

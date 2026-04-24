@@ -30,6 +30,15 @@ Target skill:
 
 - express the query as a difference of prefixes or rectangles
 
+## Starter Drill
+
+Before solving bigger problems, take one small array and derive by hand:
+
+- `pref[0]`
+- one prefix value in the middle
+- one range query touching the left boundary
+- one range query touching the right boundary
+
 ## Stretch
 
 - decide when prefix sums are enough and when Fenwick is needed

@@ -113,6 +113,30 @@ long long total_weight(const vector<Edge> &edges) {
 
 This is better than anonymous nested pairs if the fields matter later.
 
+## Beginner Build And Run
+
+If you are new to local C++ practice, start with one command and repeat it until it feels ordinary:
+
+```bash
+c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp && ./a.out < input.txt
+```
+
+What the flags mean:
+
+- `-std=c++20`: turns on the language version used across this repo
+- `-O2`: enables the optimization level closest to normal judge settings
+- `-Wall -Wextra`: asks the compiler to report many common mistakes early
+- `-pedantic`: warns when code leans on non-standard extensions
+
+A good beginner loop is:
+
+1. write the smallest correct version
+2. compile until the warnings make sense, not just until the binary exists
+3. run one tiny handmade `input.txt`
+4. only then move to larger tests or submissions
+
+If your machine prefers `g++` instead of `c++`, the flags stay the same.
+
 ## Standard Toolkit
 
 ### Types
@@ -148,6 +172,40 @@ Use helpers for:
 - reusable data structures
 
 Avoid helpers that force the reader to jump around just to understand the main algorithm.
+
+## Short Modern C++ Wins
+
+The goal is not to memorize the whole language. It is to internalize a few short constructs that remove friction.
+
+Structured bindings for pairs or tuples:
+
+```cpp
+pair<int, int> seg{l, r};
+auto [left, right] = seg;
+```
+
+Range-for loops when you only need values:
+
+```cpp
+long long sum = 0;
+for (int x : values) sum += x;
+```
+
+`auto` when the type is obvious from the right-hand side:
+
+```cpp
+auto it = lower_bound(a.begin(), a.end(), target);
+```
+
+Lambda comparators for local ordering rules:
+
+```cpp
+sort(intervals.begin(), intervals.end(), [](const Interval &a, const Interval &b) {
+    return a.right < b.right;
+});
+```
+
+Use these to shorten boilerplate, not to hide meaning. If `auto` or a lambda makes the code harder to read, step back and name the concept more clearly.
 
 ## Worked Examples
 

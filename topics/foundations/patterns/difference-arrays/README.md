@@ -86,6 +86,16 @@ for (int i = 1; i <= n; ++i) {
 
 After the prefix pass, `diff[i]` becomes the final value at position `i` if the initial array was all zero. If there was an initial array, add the rebuilt effect to it.
 
+## Decision Check
+
+Ask one question before choosing this tool:
+
+```text
+Do I need answers while the updates are still happening?
+```
+
+If the answer is yes, difference arrays alone are not enough. Move to Fenwick tree or segment tree. If the answer is no, this offline approach is often the cleanest option.
+
 ## Standard Patterns
 
 ### 1. Offline Range Addition

@@ -6,6 +6,7 @@ Sort events and maintain an active structure while a conceptual line moves acros
 - Tutorial page: [Open tutorial](../../../topics/geometry/sweep-line/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/sweep-line/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

@@ -6,6 +6,7 @@ Polynomial multiplication and convolution with roots of unity, integer-friendly 
 - Tutorial page: [Open tutorial](../../../topics/math/fft-ntt/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/fft/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

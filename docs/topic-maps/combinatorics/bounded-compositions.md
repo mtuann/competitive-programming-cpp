@@ -6,6 +6,7 @@ Distribute sums under lower and upper bounds using stars and bars, generating fu
 - Tutorial page: [Open tutorial](../../../topics/combinatorics/bounded-compositions/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/combinatorics/bounded-compositions/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

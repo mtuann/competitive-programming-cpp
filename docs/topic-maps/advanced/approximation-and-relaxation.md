@@ -6,6 +6,7 @@ Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary 
 - Tutorial page: [Open tutorial](../../../topics/advanced/approximation-and-relaxation/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/approximation-and-relaxation/README.md)
 - Repo problems currently tagged here: `0`
+- Repo companion pages: `2`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -35,6 +36,13 @@ Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary 
 | [MIT 6.854 problem sets](https://courses.csail.mit.edu/6.854/16/) | `course exercises` |
 | [CMU 15-854B](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/) | `course exercises` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Optimization and duality tutorial](../../../topics/advanced/optimization-and-duality/README.md) | `related tutorial` |
+| [Complexity and hardness ladder](../../../practice/ladders/advanced/complexity-and-hardness/README.md) | `adjacent ladder` |
+
 ## Curated External Problems
 
 ### Core
@@ -49,7 +57,7 @@ Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary 
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+_No repo problem note is attached yet. Use the repo companion material above for this theory/process-heavy topic._
 
 ## Regeneration
 

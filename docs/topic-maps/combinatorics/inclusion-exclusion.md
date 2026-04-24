@@ -6,6 +6,7 @@ Count by overlaps, complements, and Möbius-style corrections when direct counti
 - Tutorial page: [Open tutorial](../../../topics/combinatorics/inclusion-exclusion/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/combinatorics/inclusion-exclusion/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

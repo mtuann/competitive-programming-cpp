@@ -52,6 +52,15 @@ Tradeoffs:
 - not the first place to invest if core contest topics are still weak
 - many techniques are more common in theory/editorials than in mainstream contest rounds
 
+## Repo Scope
+
+In this repository, this topic is intentionally tutorial-led. The main payoff is vocabulary and design intuition, not a large pile of exact-problem notes.
+
+For internal follow-up, pair it with:
+
+- [Optimization And Duality](../optimization-and-duality/README.md)
+- [Complexity And Hardness](../complexity-and-hardness/README.md)
+
 ## Canonical Pattern
 
 Useful questions:

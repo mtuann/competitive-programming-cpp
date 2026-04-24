@@ -31,6 +31,10 @@ Target skill:
 
 - recognize when ordering creates the needed structure
 
+## Repo Anchor
+
+- [Movie Festival](moviefestival.md): the clean internal anchor for greedy-after-sorting plus exchange-argument reasoning.
+
 ## Stretch
 
 - comparator-heavy problems with careful tie rules

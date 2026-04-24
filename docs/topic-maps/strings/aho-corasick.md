@@ -6,6 +6,7 @@ Dictionary automaton for multi-pattern matching with failure and output links.
 - Tutorial page: [Open tutorial](../../../topics/strings/aho-corasick/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/aho-corasick/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

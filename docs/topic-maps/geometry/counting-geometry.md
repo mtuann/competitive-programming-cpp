@@ -6,6 +6,7 @@ Count intersections, lattice points, or union areas by mixing geometry primitive
 - Tutorial page: [Open tutorial](../../../topics/geometry/counting-geometry/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/counting-geometry/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

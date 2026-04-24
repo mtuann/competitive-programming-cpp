@@ -6,6 +6,7 @@ Sort events, reorder queries, and use rollback or CDQ to trade interactivity for
 - Tutorial page: [Open tutorial](../../../topics/data-structures/offline-tricks/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/offline-tricks/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

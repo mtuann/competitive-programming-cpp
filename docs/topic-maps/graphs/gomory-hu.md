@@ -5,6 +5,7 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 - Topic slug: `graphs/gomory-hu`
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

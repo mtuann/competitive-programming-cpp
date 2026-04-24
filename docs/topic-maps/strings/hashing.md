@@ -6,6 +6,7 @@ Rolling hashes for substring equality, borders, Rabin-Karp style matching, and c
 - Tutorial page: [Open tutorial](../../../topics/strings/hashing/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/hashing/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

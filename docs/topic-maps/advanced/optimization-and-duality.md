@@ -6,6 +6,7 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 - Tutorial page: [Open tutorial](../../../topics/advanced/optimization-and-duality/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/optimization-and-duality/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

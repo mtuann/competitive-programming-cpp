@@ -6,6 +6,7 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 - Tutorial page: [Open tutorial](../../../topics/data-structures/dsu/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/dsu/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

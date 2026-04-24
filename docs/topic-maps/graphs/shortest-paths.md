@@ -6,6 +6,7 @@ From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool th
 - Tutorial page: [Open tutorial](../../../topics/graphs/shortest-paths/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/shortest-paths/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `9`
 
 ## Microtopics

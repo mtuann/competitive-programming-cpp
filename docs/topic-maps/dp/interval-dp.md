@@ -6,6 +6,7 @@ Reason over contiguous ranges and split points when the optimal structure is bui
 - Tutorial page: [Open tutorial](../../../topics/dp/interval-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/interval-dp/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `12`
 
 ## Microtopics

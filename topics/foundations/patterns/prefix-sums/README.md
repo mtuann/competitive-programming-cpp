@@ -92,6 +92,22 @@ for (int i = 1; i <= n; ++i) {
 
 Then every range formula is uniform.
 
+## Indexing Discipline
+
+The safest beginner habit is:
+
+- store the original array however you like
+- build prefix sums as `pref[0..n]`
+- let `pref[i]` mean “aggregate of the first `i` elements”
+
+Then:
+
+```text
+sum on [l, r) = pref[r] - pref[l]
+```
+
+or, if you prefer one-based problem statements, convert once and keep the formula uniform. Most prefix-sum bugs are really indexing-discipline bugs.
+
 ## Standard Patterns
 
 ### 1. Range Sums

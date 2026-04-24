@@ -6,6 +6,7 @@ Prefix trees for dictionary queries, prefix counting, lexicographic traversal, a
 - Tutorial page: [Open tutorial](../../../topics/strings/trie/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/trie/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

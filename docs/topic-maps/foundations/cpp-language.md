@@ -5,7 +5,8 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 - Topic slug: `foundations/cpp-language`
 - Tutorial page: [Open tutorial](../../../topics/foundations/cpp-language/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/cpp-language/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
+- Repo companion pages: `3`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -34,6 +35,14 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
 | [Codeforces sortings tag](https://codeforces.com/problemset?tags=sortings) | `problem set` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Foundations cheatsheet](../../../notebook/foundations-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
+| [STL basics ladder](../../../practice/ladders/foundations/stl/README.md) | `adjacent ladder` |
+
 ## Curated External Problems
 
 ### Warm-Up
@@ -59,7 +68,9 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `DISTINCTNUMBERS` | Distinct Numbers | `secondary` | `easy` | sort unique; container deduplication; stl algorithms | [Note](../../../practice/ladders/foundations/stl/distinctnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp) |
 
 ## Regeneration
 

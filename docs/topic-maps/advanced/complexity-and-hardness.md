@@ -5,7 +5,8 @@ Reductions, hardness classes, and the language for understanding when exact effi
 - Topic slug: `advanced/complexity-and-hardness`
 - Tutorial page: [Open tutorial](../../../topics/advanced/complexity-and-hardness/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/complexity-and-hardness/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
+- Repo companion pages: `2`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -34,6 +35,13 @@ Reductions, hardness classes, and the language for understanding when exact effi
 | [MIT 6.045J](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/) | `course exercises` |
 | [Princeton textbook exercises](https://theory.cs.princeton.edu/complexity/) | `course exercises` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Book Shop note](../../../practice/ladders/dp/knapsack-family/bookshop.md) | `repo case study` |
+| [Approximation tutorial](../../../topics/advanced/approximation-and-relaxation/README.md) | `related tutorial` |
+
 ## Curated External Problems
 
 ### Core
@@ -48,7 +56,9 @@ Reductions, hardness classes, and the language for understanding when exact effi
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `BOOKSHOP` | Book Shop | `secondary` | `easy` | 0 1 knapsack; downward capacity loop; budget value maximization | [Note](../../../practice/ladders/dp/knapsack-family/bookshop.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp) |
 
 ## Regeneration
 

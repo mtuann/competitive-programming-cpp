@@ -5,6 +5,7 @@ Decompose tree paths into logarithmically many chains so path queries and update
 - Topic slug: `graphs/hld`
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

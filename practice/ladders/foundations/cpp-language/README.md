@@ -10,11 +10,22 @@ Use this ladder if:
 - STL still feels fragmented
 - you want fewer syntax and container-choice bugs
 
+## First Local Loop
+
+Use one reliable local command until it becomes muscle memory:
+
+```bash
+c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp && ./a.out < input.txt
+```
+
+This is the default compile/run loop to pair with the templates and notes in this repo.
+
 ## Warm-Up
 
 - simple input / output tasks
 - vector and string manipulation
 - pairs, structs, and record sorting
+- compile, run, and slightly edit one tiny program without searching for the flags again
 
 Target skill:
 
@@ -46,6 +57,7 @@ Target skill:
 You are ready to move on when:
 
 - you can build a clean contest skeleton from memory
+- the compile command and stdin redirection feel automatic
 - you rarely make accidental-copy or overflow mistakes
 - you can explain why a container choice fits the needed operations
 

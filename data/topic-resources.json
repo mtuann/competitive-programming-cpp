@@ -42,6 +42,23 @@
         "url": "https://codeforces.com/problemset?tags=sortings",
         "kind": "problem set"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Foundations cheatsheet",
+        "path": "notebook/foundations-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      },
+      {
+        "label": "STL basics ladder",
+        "path": "practice/ladders/foundations/stl/README.md",
+        "kind": "adjacent ladder"
+      }
     ]
   },
   "foundations/stl": {
@@ -130,6 +147,13 @@
         "label": "USACO contest archive",
         "url": "https://usaco.org/index.php?page=contests",
         "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Foundations cheatsheet",
+        "path": "notebook/foundations-cheatsheet.md",
+        "kind": "quick reference"
       }
     ]
   },
@@ -2693,6 +2717,18 @@
         "url": "https://www.csd.cmu.edu/course/15359/f24",
         "kind": "course exercises"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Hashing tutorial",
+        "path": "topics/strings/hashing/README.md",
+        "kind": "repo case study"
+      },
+      {
+        "label": "Hashing ladder",
+        "path": "practice/ladders/strings/hashing/README.md",
+        "kind": "adjacent ladder"
+      }
     ]
   },
   "advanced/algorithm-engineering": {
@@ -2743,6 +2779,23 @@
         "url": "https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a",
         "kind": "practice"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Contest checklist",
+        "path": "notebook/contest-checklist.md",
+        "kind": "checklist"
+      },
+      {
+        "label": "Contest playbooks",
+        "path": "practice/contest-playbooks/README.md",
+        "kind": "process guide"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
     ]
   },
   "advanced/complexity-and-hardness": {
@@ -2791,6 +2844,18 @@
         "label": "Princeton textbook exercises",
         "url": "https://theory.cs.princeton.edu/complexity/",
         "kind": "course exercises"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Book Shop note",
+        "path": "practice/ladders/dp/knapsack-family/bookshop.md",
+        "kind": "repo case study"
+      },
+      {
+        "label": "Approximation tutorial",
+        "path": "topics/advanced/approximation-and-relaxation/README.md",
+        "kind": "related tutorial"
       }
     ]
   },
@@ -2841,6 +2906,18 @@
         "label": "CMU 15-854B",
         "url": "https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/",
         "kind": "course exercises"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Optimization and duality tutorial",
+        "path": "topics/advanced/optimization-and-duality/README.md",
+        "kind": "related tutorial"
+      },
+      {
+        "label": "Complexity and hardness ladder",
+        "path": "practice/ladders/advanced/complexity-and-hardness/README.md",
+        "kind": "adjacent ladder"
       }
     ]
   },
@@ -2941,6 +3018,23 @@
         "label": "IOI tasks archive",
         "url": "https://stats.ioinformatics.org/tasks/",
         "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Contest checklist",
+        "path": "notebook/contest-checklist.md",
+        "kind": "checklist"
+      },
+      {
+        "label": "Contest playbooks",
+        "path": "practice/contest-playbooks/README.md",
+        "kind": "process guide"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
       }
     ]
   }

@@ -4,6 +4,8 @@
 
 Use this ladder when you want to understand provable near-optimal algorithms and the theory ideas behind many advanced design patterns.
 
+This ladder is intentionally theory-first in this repo. Use the tutorial and related advanced pages even if the internal problem-note set stays small.
+
 ## Warm-Up
 
 - fractional benchmark intuition
@@ -32,6 +34,7 @@ You are ready to move on when you can:
 
 - [Berkeley CS174](https://people.eecs.berkeley.edu/~sinclair/cs174/s25.html)
 - [Oxford Approximation Algorithms notes](https://www.cs.ox.ac.uk/teaching/courses/2025-2026/approxalg/)
+- [Optimization And Duality](../../../../topics/advanced/optimization-and-duality/README.md)
 
 ## Tutorial Link
 

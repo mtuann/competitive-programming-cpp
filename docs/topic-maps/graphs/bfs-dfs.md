@@ -6,6 +6,7 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 - Tutorial page: [Open tutorial](../../../topics/graphs/bfs-dfs/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/bfs-dfs/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

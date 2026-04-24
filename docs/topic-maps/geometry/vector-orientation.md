@@ -6,6 +6,7 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 - Tutorial page: [Open tutorial](../../../topics/geometry/vector-orientation/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/vector-orientation/README.md)
 - Repo problems currently tagged here: `4`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

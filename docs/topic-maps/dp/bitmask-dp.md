@@ -6,6 +6,7 @@ Compress small subsets into bitmasks and reason about transitions over subsets, 
 - Tutorial page: [Open tutorial](../../../topics/dp/bitmask-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/bitmask-dp/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `11`
 
 ## Microtopics

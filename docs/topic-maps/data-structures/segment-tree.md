@@ -6,6 +6,7 @@ General range query/update structure built on monoids and lazy propagation, with
 - Tutorial page: [Open tutorial](../../../topics/data-structures/segment-tree/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/segment-tree/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `8`
 
 ## Microtopics

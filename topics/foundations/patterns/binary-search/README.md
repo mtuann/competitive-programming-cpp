@@ -92,6 +92,19 @@ long long mid = l + (r - l) / 2;
 
 to avoid overflow.
 
+## Newbie Guardrail
+
+If binary search still feels slippery, write these four lines in comments first:
+
+```text
+good(x) =
+l means =
+r means =
+return =
+```
+
+If any line feels vague, the loop is not ready yet.
+
 ## Standard Patterns
 
 ### 1. Search In Sorted Data

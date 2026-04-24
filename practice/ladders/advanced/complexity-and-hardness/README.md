@@ -14,6 +14,10 @@ Use this ladder when you want better judgment about what kinds of exact algorith
 - hardness as a modeling signal
 - exact vs restricted vs approximate thinking
 
+## Repo Case Study
+
+- [Book Shop](../../dp/knapsack-family/bookshop.md): use it as the internal anchor for pseudo-polynomial reasoning before pushing deeper into theory material.
+
 ## Stretch
 
 - parameterized exact algorithms

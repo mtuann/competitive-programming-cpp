@@ -18,6 +18,22 @@ Foundations are the entry point for the whole repo. This area is about writing c
 - Prereqs: none beyond basic programming
 - Defer for later: heavy data structures, graph theory, and advanced DP
 
+## How To Use This Section
+
+Treat foundations as a loop, not a one-time read:
+
+1. read one tutorial page until the core idea feels simple
+2. open the matching ladder and solve one warm-up or anchor note
+3. keep one tiny template or pattern in your head, not ten
+4. after each bug, come back here and tighten the habit that failed
+
+The supporting layers in this repo are:
+
+- `topics/`: the teaching pages
+- `practice/ladders/`: practice order and anchor notes
+- `templates/`: compact code you should be able to recognize quickly
+- `notebook/`: short reminders for review and contest-time recall
+
 ## Learn In Order
 
 1. Core now
@@ -34,6 +50,34 @@ Foundations are the entry point for the whole repo. This area is about writing c
 - amortized reasoning
 - recurrence analysis
 - niche language and standard-library tricks
+
+## Suggested First Route
+
+If you are new enough that even local C++ workflow still feels shaky, this is the cleanest order:
+
+1. [C++ Language For Contests](cpp-language/README.md)
+2. [Reasoning And Implementation Discipline](reasoning/README.md)
+3. [Sorting](patterns/sorting/README.md)
+4. [Binary Search](patterns/binary-search/README.md)
+5. [Prefix Sums](patterns/prefix-sums/README.md)
+6. [Difference Arrays](patterns/difference-arrays/README.md)
+7. [Two Pointers](patterns/two-pointers/README.md)
+
+This route works well because:
+
+- C++ language removes syntax friction first
+- reasoning gives you a way to debug and justify code
+- sorting and binary search teach order and invariants early
+- prefix sums and difference arrays teach precompute vs update thinking
+- two pointers trains monotone scans and window discipline
+
+## Starter Toolkit
+
+Open these alongside the tutorial pages:
+
+- [Foundations ladders](../../practice/ladders/foundations/README.md)
+- [Template Library](../../template-library.md)
+- [Foundations Cheatsheet](../../notebook/foundations-cheatsheet.md)
 
 ## Recognition Cues
 
@@ -57,3 +101,4 @@ After this section, you should be able to write clean C++ for standard beginner 
 - Course: [Stanford CS161](https://cs161-stanford.github.io)
 - Reference: [CP-Algorithms](https://cp-algorithms.com/)
 - Practice: [CSES Problem Set](https://cses.fi/)
+- Notes: [Foundations Cheatsheet](../../notebook/foundations-cheatsheet.md)

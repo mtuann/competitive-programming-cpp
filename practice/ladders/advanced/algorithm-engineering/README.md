@@ -14,6 +14,11 @@ Use this ladder when you already know the algorithmic ideas, but accepted code i
 - bottleneck identification
 - data-layout and implementation tradeoffs
 
+## Repo Case Studies
+
+- [FFLOW](../../graphs/flow/fflow.md)
+- [PRAVO](../../geometry/right-triangles/pravo.md)
+
 ## Stretch
 
 - judge-specific performance traps

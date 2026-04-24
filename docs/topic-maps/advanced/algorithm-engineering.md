@@ -5,7 +5,8 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 - Topic slug: `advanced/algorithm-engineering`
 - Tutorial page: [Open tutorial](../../../topics/advanced/algorithm-engineering/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/algorithm-engineering/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `2`
+- Repo companion pages: `3`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -35,6 +36,14 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 | [Sort Benchmark](https://sortbenchmark.org/) | `benchmark suite` |
 | [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `practice` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Contest checklist](../../../notebook/contest-checklist.md) | `checklist` |
+| [Contest playbooks](../../../practice/contest-playbooks/README.md) | `process guide` |
+| [Templates overview](../../../template-library.md) | `template guide` |
+
 ## Curated External Problems
 
 ### Core
@@ -57,7 +66,10 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FFLOW` | Fast Maximum Flow | `secondary` | `medium` | maximum flow; undirected capacities; capacity scaling | [Note](../../../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
+| `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 
 ## Regeneration
 

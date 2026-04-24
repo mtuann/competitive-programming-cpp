@@ -6,6 +6,7 @@ Problems where a moving window carries state, costs, or feasibility information 
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/sliding-window/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `16`
 
 ## Microtopics

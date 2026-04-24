@@ -6,6 +6,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 - Tutorial page: [Open tutorial](../../../topics/geometry/segment-intersection/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/segment-intersection/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

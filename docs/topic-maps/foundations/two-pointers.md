@@ -6,6 +6,7 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/two-pointers/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

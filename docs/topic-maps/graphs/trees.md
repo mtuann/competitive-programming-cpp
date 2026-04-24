@@ -6,6 +6,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 - Tutorial page: [Open tutorial](../../../topics/graphs/trees/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
 - Repo problems currently tagged here: `7`
+- Repo companion pages: `0`
 - Curated external problems: `10`
 
 ## Microtopics

@@ -74,6 +74,11 @@ Example 3: layout-aware implementation
 
 Old judges often reward iterative loops, contiguous storage, and reduced allocation churn.
 
+## Repo Case Studies
+
+- [FFLOW](../../../practice/ladders/graphs/flow/fflow.md): a flow solution that leans into flat edge arrays, manual queues, and capacity scaling.
+- [PRAVO](../../../practice/ladders/geometry/right-triangles/pravo.md): a geometry note with alternate buffered variants that is good for comparing engineering choices around the same core idea.
+
 ## Recognition Cues
 
 - "should be AC, but TLE/MLE/WA keeps happening"
@@ -107,6 +112,7 @@ Old judges often reward iterative loops, contiguous storage, and reduced allocat
 - Practice: [Contest Playbooks](../../../practice/contest-playbooks/README.md)
 - Reference: [KACTL](https://github.com/kth-competitive-programming/kactl)
 - Blog/reference: [CP-Algorithms](https://cp-algorithms.com/)
+- Repo companion: [Contest Checklist](../../../notebook/contest-checklist.md)
 
 ## Related Topics
 

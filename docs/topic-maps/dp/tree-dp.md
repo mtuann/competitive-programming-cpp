@@ -6,6 +6,7 @@ DP on rooted trees, rerooting, subtree merges, and local state design for hierar
 - Tutorial page: [Open tutorial](../../../topics/dp/tree-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/tree-dp/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `10`
 
 ## Microtopics

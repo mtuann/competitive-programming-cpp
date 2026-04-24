@@ -6,6 +6,7 @@ Use cut and cycle properties to build minimum spanning forests with Kruskal or P
 - Tutorial page: [Open tutorial](../../../topics/graphs/mst/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/mst/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

@@ -6,6 +6,7 @@ Generate, count, or skip combinatorial objects in lexicographic order using rank
 - Tutorial page: [Open tutorial](../../../topics/combinatorics/lexicographic-enumeration/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/combinatorics/lexicographic-enumeration/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

@@ -6,6 +6,7 @@ Factorials, binomials, arrangements, stars and bars, and the basic models that r
 - Tutorial page: [Open tutorial](../../../topics/combinatorics/counting-basics/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/combinatorics/counting-basics/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `13`
 
 ## Microtopics

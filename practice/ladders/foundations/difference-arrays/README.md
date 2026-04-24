@@ -30,6 +30,10 @@ Target skill:
 
 - combine difference reconstruction with one final scan or check
 
+## Repo Anchor
+
+- [Range Update Queries](rangeupdatequeries.md): a useful bridge note from offline difference arrays to the dynamic Fenwick version of the same idea.
+
 ## Stretch
 
 - compare offline difference arrays against online Fenwick

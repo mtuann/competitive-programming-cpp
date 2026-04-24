@@ -5,7 +5,8 @@ Reasoning tools for contests: estimate time honestly, define loop invariants, an
 - Topic slug: `foundations/complexity-and-invariants`
 - Tutorial page: [Open tutorial](../../../topics/foundations/reasoning/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/complexity-and-invariants/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `3`
+- Repo companion pages: `1`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -32,6 +33,12 @@ Reasoning tools for contests: estimate time honestly, define loop invariants, an
 | --- | --- |
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
 | [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Foundations cheatsheet](../../../notebook/foundations-cheatsheet.md) | `quick reference` |
 
 ## Curated External Problems
 
@@ -65,7 +72,11 @@ Reasoning tools for contests: estimate time honestly, define loop invariants, an
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FACTORYMACHINES` | Factory Machines | `secondary` | `medium` | answer binary search; monotone feasibility; production rate accumulation | [Note](../../../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
+| `INCREASINGARRAY` | Increasing Array | `primary` | `easy` | loop invariant scan; greedy repair; running maximum maintenance | [Note](../../../practice/ladders/foundations/complexity-and-invariants/increasingarray.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/complexity-and-invariants/increasingarray.cpp) |
+| `MOVIEFESTIVAL` | Movie Festival | `secondary` | `easy` | finish-time sorting; interval scheduling; exchange argument greedy | [Note](../../../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
 
 ## Regeneration
 

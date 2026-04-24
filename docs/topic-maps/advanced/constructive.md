@@ -6,6 +6,7 @@ Output-sensitive problems where the main work is proving the existence and struc
 - Tutorial page: [Open tutorial](../../../topics/advanced/constructive/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/constructive/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `10`
 
 ## Microtopics

@@ -31,6 +31,15 @@ Target skill:
 
 - know exactly when to expand, shrink, and update the answer
 
+## Starter Drill
+
+For each new window problem, write down:
+
+- what `[l, r]` or `[l, r)` means
+- what summary the window stores
+- what makes the window invalid
+- when the answer is updated
+
 ## Stretch
 
 - decide whether the condition is monotone enough for two pointers

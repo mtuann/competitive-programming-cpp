@@ -14,6 +14,12 @@ Use this ladder when your raw knowledge is decent, but your contest results are 
 - contest prioritization workflow
 - post-contest review and retention
 
+## Internal Material
+
+- [Contest Playbooks](../../../contest-playbooks/README.md)
+- [Contest Checklist](../../../../notebook/contest-checklist.md)
+- [Template Library](../../../../template-library.md)
+
 ## Stretch
 
 - build a repeatable solo or team contest loop

@@ -6,6 +6,7 @@ Lowest common ancestor as a reusable primitive for ancestor checks and path quer
 - Tutorial page: [Open tutorial](../../../topics/graphs/lca/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/lca/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

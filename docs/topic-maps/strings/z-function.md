@@ -6,6 +6,7 @@ Maintain a Z-box to measure longest prefix matches at every position and solve p
 - Tutorial page: [Open tutorial](../../../topics/strings/z-function/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/strings/z-function/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `5`
 
 ## Microtopics

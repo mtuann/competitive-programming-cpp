@@ -75,6 +75,10 @@ Example 3: parameterized exact algorithms
 
 Some graph problems are tractable when the answer size, bitmask size, or treewidth-like quantity is tiny, even if the unrestricted problem is hard.
 
+## Repo Case Study
+
+- [Book Shop](../../../practice/ladders/dp/knapsack-family/bookshop.md): a contest-facing pseudo-polynomial example where `O(n * x)` is practical only because the numeric budget is small enough.
+
 ## Recognition Cues
 
 - the input size rules out all obvious exact global search

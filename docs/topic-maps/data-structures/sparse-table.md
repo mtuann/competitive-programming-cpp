@@ -6,6 +6,7 @@ Static range query structure for idempotent operations such as RMQ and LCA reduc
 - Tutorial page: [Open tutorial](../../../topics/data-structures/sparse-table/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/sparse-table/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `3`
 
 ## Microtopics

@@ -6,6 +6,7 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 - Tutorial page: [Open tutorial](../../../topics/data-structures/heaps-and-ordered-sets/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/heaps-and-ordered-sets/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

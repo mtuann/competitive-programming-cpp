@@ -6,6 +6,7 @@ Successive shortest augmenting paths, potentials, and reduced costs for transpor
 - Tutorial page: [Open tutorial](../../../topics/graphs/min-cost-flow/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `10`
 
 ## Microtopics

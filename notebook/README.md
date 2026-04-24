@@ -21,6 +21,7 @@ It should stay denser and shorter than `topics/`.
 
 ## Current Sheets
 
+- [Foundations cheatsheet](foundations-cheatsheet.md)
 - [Data structures cheatsheet](data-structures-cheatsheet.md)
 - [Graph cheatsheet](graph-cheatsheet.md)
 - [DP cheatsheet](dp-cheatsheet.md)

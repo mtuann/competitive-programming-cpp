@@ -95,6 +95,22 @@ for each r:
     update answer
 ```
 
+## Monotonicity Test
+
+Before using two pointers, check whether one-direction pointer movement is believable.
+
+Good signs:
+
+- all numbers are nonnegative for sum-based windows
+- shrinking the window can only improve validity
+- sorting makes the pair condition move predictably
+
+Bad signs:
+
+- negative values destroy the simple sum monotonicity
+- validity depends on a future choice that may require moving backward
+- you cannot explain why each pointer moves at most `n` times
+
 ## Standard Patterns
 
 ### 1. Variable-Size Sliding Window

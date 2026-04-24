@@ -6,6 +6,7 @@ Operational discipline for contests: local testing, checkers, interactive handli
 - Tutorial page: [Open tutorial](../../../topics/advanced/contest-engineering/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/contest-engineering/README.md)
 - Repo problems currently tagged here: `0`
+- Repo companion pages: `3`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -35,6 +36,14 @@ Operational discipline for contests: local testing, checkers, interactive handli
 | [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `practice` |
 | [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Contest checklist](../../../notebook/contest-checklist.md) | `checklist` |
+| [Contest playbooks](../../../practice/contest-playbooks/README.md) | `process guide` |
+| [Templates overview](../../../template-library.md) | `template guide` |
+
 ## Curated External Problems
 
 ### Core
@@ -50,7 +59,7 @@ Operational discipline for contests: local testing, checkers, interactive handli
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+_No repo problem note is attached yet. Use the repo companion material above for this theory/process-heavy topic._
 
 ## Regeneration
 

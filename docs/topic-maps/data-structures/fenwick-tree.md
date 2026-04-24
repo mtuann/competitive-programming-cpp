@@ -6,6 +6,7 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 - Tutorial page: [Open tutorial](../../../topics/data-structures/fenwick-tree/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/fenwick-tree/README.md)
 - Repo problems currently tagged here: `3`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

@@ -6,6 +6,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/sorting/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/sorting/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `7`
 
 ## Microtopics

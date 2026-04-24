@@ -5,7 +5,8 @@ Monte Carlo and Las Vegas design, amplification, randomized rounding, and probab
 - Topic slug: `advanced/randomized-algorithms`
 - Tutorial page: [Open tutorial](../../../topics/advanced/randomized-algorithms/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/randomized-algorithms/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
+- Repo companion pages: `2`
 - Curated external problems: `9`
 
 ## Microtopics
@@ -35,6 +36,13 @@ Monte Carlo and Las Vegas design, amplification, randomized rounding, and probab
 | [MIT OCW 6.856J lecture notes](https://www.ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/resources/lecture-notes/) | `course exercises` |
 | [CMU 15-359 Probability and Computing](https://www.csd.cmu.edu/course/15359/f24) | `course exercises` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Hashing tutorial](../../../topics/strings/hashing/README.md) | `repo case study` |
+| [Hashing ladder](../../../practice/ladders/strings/hashing/README.md) | `adjacent ladder` |
+
 ## Curated External Problems
 
 ### Core
@@ -63,7 +71,9 @@ Monte Carlo and Las Vegas design, amplification, randomized rounding, and probab
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `FINDINGBORDERS` | Finding Borders | `secondary` | `easy` | rolling hash; prefix-suffix equality; proper borders enumeration | [Note](../../../practice/ladders/strings/hashing/findingborders.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp) |
 
 ## Regeneration
 

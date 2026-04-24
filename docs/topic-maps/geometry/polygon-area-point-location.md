@@ -6,6 +6,7 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 - Tutorial page: [Open tutorial](../../../topics/geometry/polygon-area-point-location/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/polygon-area-point-location/README.md)
 - Repo problems currently tagged here: `3`
+- Repo companion pages: `0`
 - Curated external problems: `4`
 
 ## Microtopics

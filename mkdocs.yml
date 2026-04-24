@@ -261,6 +261,7 @@ nav:
       - Template Library: template-library.md
       - Notebook:
           - Overview: notebook/README.md
+          - Foundations Cheatsheet: notebook/foundations-cheatsheet.md
           - Data Structures Cheatsheet: notebook/data-structures-cheatsheet.md
           - Graph Cheatsheet: notebook/graph-cheatsheet.md
           - DP Cheatsheet: notebook/dp-cheatsheet.md

@@ -6,6 +6,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/prefix-sums/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/prefix-sums/README.md)
 - Repo problems currently tagged here: `1`
+- Repo companion pages: `0`
 - Curated external problems: `6`
 
 ## Microtopics

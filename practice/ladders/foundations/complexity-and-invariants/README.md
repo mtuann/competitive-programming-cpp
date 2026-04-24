@@ -31,6 +31,12 @@ Target skill:
 
 - describe the algorithm as state + invariant + transition
 
+## Repo Anchors
+
+- [Increasing Array](increasingarray.md)
+- [Factory Machines](../binary-search/factorymachines.md)
+- [Movie Festival](../sorting/moviefestival.md)
+
 ## Stretch
 
 - write a short proof sketch before coding

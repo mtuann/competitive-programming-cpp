@@ -22,3 +22,39 @@ Use them after reading the matching tutorial pages in `topics/foundations/`.
 - only then move to the core or stretch bucket
 
 The beginner layer is about fluency and recognition, not heroic single-problem grinding.
+
+## Suggested First Route
+
+If you want a concrete path instead of browsing randomly, use:
+
+1. [C++ language](cpp-language/README.md)
+2. [STL habits](stl/README.md)
+3. [Complexity and invariants](complexity-and-invariants/README.md)
+4. [Sorting](sorting/README.md)
+5. [Binary search](binary-search/README.md)
+6. [Prefix sums](prefix-sums/README.md)
+7. [Difference arrays](difference-arrays/README.md)
+8. [Two pointers](two-pointers/README.md)
+
+Why this order works:
+
+- syntax and container choice stop being the main blocker
+- invariants and complexity checks arrive before harder scans
+- sorting and binary search teach clean ordered reasoning early
+- prefix logic prepares you for later Fenwick and segment tree topics
+
+## Repo Anchors
+
+If you want the first internal notes to open in this section, start with:
+
+- [Distinct Numbers](stl/distinctnumbers.md)
+- [Increasing Array](complexity-and-invariants/increasingarray.md)
+- [Movie Festival](sorting/moviefestival.md)
+- [Factory Machines](binary-search/factorymachines.md)
+- [Range Update Queries](difference-arrays/rangeupdatequeries.md)
+
+## Support Material
+
+- [Foundations tutorial overview](../../../topics/foundations/README.md)
+- [Template Library](../../../template-library.md)
+- [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)

@@ -6,6 +6,7 @@ Divisibility, primes, totients, divisor functions, and the standard multiplicati
 - Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/number-theory-basics/README.md)
 - Repo problems currently tagged here: `3`
+- Repo companion pages: `0`
 - Curated external problems: `13`
 
 ## Microtopics

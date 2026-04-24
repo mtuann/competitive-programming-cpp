@@ -85,6 +85,10 @@ Example 3: randomized stress testing
 
 Generate many small random cases and compare a fast solution against a brute-force checker.
 
+## Repo Case Study
+
+- [Finding Borders](../../../practice/ladders/strings/hashing/findingborders.md): a compact rolling-hash note where hash equality is treated as a strong probabilistic fingerprint rather than an absolute proof.
+
 ## Recognition Cues
 
 - expected-time arguments are acceptable
@@ -118,6 +122,7 @@ Generate many small random cases and compare a fast solution against a brute-for
 - Course: [Berkeley CS174](https://people.eecs.berkeley.edu/~sinclair/cs174/s25.html)
 - Reference: [CP-Algorithms - Randomized Treap](https://cp-algorithms.com/data_structures/treap.html)
 - Reference: [CP-Algorithms - String Hashing](https://cp-algorithms.com/string/string-hashing.html)
+- Repo companion: [Hashing](../../strings/hashing/README.md)
 
 ## Related Topics
 

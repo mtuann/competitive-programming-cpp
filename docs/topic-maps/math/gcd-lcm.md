@@ -6,6 +6,7 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 - Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/gcd-lcm/README.md)
 - Repo problems currently tagged here: `2`
+- Repo companion pages: `0`
 - Curated external problems: `11`
 
 ## Microtopics
