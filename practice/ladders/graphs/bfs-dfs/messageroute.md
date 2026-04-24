@@ -13,7 +13,29 @@
 
 This is the standard BFS path-reconstruction problem. The graph part is simple on purpose, so the real lesson is to trust the BFS layer invariant and turn the traversal tree into an actual shortest route.
 
-## Key Idea
+## Recognition Cue
+
+This is the standard `unweighted shortest path + actual route` signal:
+
+- the graph is unweighted
+- you only need one shortest path, not all distances
+- the output requires the path itself, not only its length
+- the first discovery order is enough to certify optimality
+
+If every edge has cost `1`, a plain BFS tree is usually the whole answer structure.
+
+## Problem-Specific Transformation
+
+The statement is about messaging between cities, but the reusable formulation is:
+
+- run BFS from node `1`
+- treat the first visit of each node as its shortest-distance certificate
+- store the parent at first discovery time
+- reconstruct the route by walking backward from node `n`
+
+That reframes the task from "search for a route" into "build one BFS predecessor tree and read one path out of it."
+
+## Core Idea
 
 Because every edge has unit cost, BFS explores nodes in nondecreasing distance from node `1`.
 

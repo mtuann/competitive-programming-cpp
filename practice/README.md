@@ -48,13 +48,13 @@
 
 <div class="grid cards" markdown>
 
--   __Read the classification first__
+-   __Read the recognition cue first__
 
-    Check the main topic, subtype, and difficulty before you jump into code. That keeps your practice intentional.
+    Check the topic, subtype, and recognition sentence before reading the solution. That keeps your practice tied to pattern recognition instead of only code recall.
 
--   __Use the idea section actively__
+-   __Compare the transformation, not just the answer__
 
-    Try to restate the key idea in your own words before comparing with the stored solution.
+    Ask what changed between the raw statement and the reusable topic pattern. That delta is usually what you want to remember for the next problem.
 
 -   __Track status honestly__
 
@@ -102,13 +102,23 @@ Optional fields:
 Suggested section order:
 
 1. `Why practice this`
-2. `Core idea`
-3. `Complexity`
-4. `Pitfalls / judge notes`
-5. `Solutions`
+2. `Recognition Cue`
+3. `Problem-Specific Transformation`
+4. `Core Idea`
+5. `Complexity`
+6. `Pitfalls / Judge Notes`
+7. `Reusable Pattern`
+8. `Solutions`
+
+Writing rule:
+
+- solved notes should emphasize the delta from the topic page, not reteach the entire topic from scratch
+- `Recognition Cue` should help you notice the right pattern next time
+- `Problem-Specific Transformation` should explain how the raw statement was rewritten into that pattern
+- `Reusable Pattern` should point back to the best internal topic, template, and notebook refreshers
 
 !!! tip "Best way to use this section"
-    Read one topic page, solve one focused problem note, then write or adapt one clean implementation before moving on.
+    Read one topic page, pause at `Recognition Cue`, solve or re-solve the problem, then compare your transformation against the stored note before reading the code.
 
 ## Current Examples
 

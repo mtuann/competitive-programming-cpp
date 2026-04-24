@@ -19,7 +19,29 @@ This is one of the best first segment-tree problems because the node state is as
 
 That makes it a clean place to learn the segment-tree invariant before moving on to minimum queries, descent queries, or lazy propagation.
 
-## Key Idea
+## Recognition Cue
+
+This is a classic `online updates + online range queries` signal:
+
+- updates and queries are interleaved
+- one update changes one position
+- each query asks for an aggregate over an interval
+- the merge operation is associative and cheap
+
+That is the segment-tree mental pattern: define a node meaning, define a merge, and support both directions online.
+
+## Problem-Specific Transformation
+
+The statement becomes much simpler after one internal rewrite:
+
+- represent the array with a segment tree whose nodes store segment sums
+- interpret type `1 k u` as a point assignment at one leaf
+- interpret type `2 a b` as a range-sum query on one-based inclusive `[a, b]`
+- convert that query into the tree's internal zero-based half-open interval `[a - 1, b)`
+
+So the problem is not "process custom query syntax." It is "map the judge operations onto one standard point-update/range-query tree."
+
+## Core Idea
 
 Store the sum of each segment in a segment tree.
 

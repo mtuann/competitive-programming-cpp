@@ -23,7 +23,30 @@ After sorting, the structure becomes:
 
 That is exactly the kind of reasoning that makes sorting feel like an algorithmic tool instead of just preprocessing.
 
-## Key Idea
+## Recognition Cue
+
+This shape usually means `sort + greedy pairing`:
+
+- each container holds at most two items
+- the objective is to minimize the number of containers
+- feasibility depends only on the sum of two weights
+- one very heavy element looks like the bottleneck at every step
+
+When the heaviest remaining element is the hardest to place, it is often the right place to anchor the proof.
+
+## Problem-Specific Transformation
+
+The raw statement is about arbitrary pairings, but sorting removes most of that combinatorial noise.
+
+After sorting:
+
+- the lightest remaining child is at the left end
+- the heaviest remaining child is at the right end
+- the only useful question is whether those two can share one gondola
+
+So instead of "search over all pairings," we rewrite the problem as "process the heaviest child now, and decide whether the lightest child can accompany them." That turns the whole task into one opposite-end two-pointer pass.
+
+## Core Idea
 
 Sort the weights in nondecreasing order.
 

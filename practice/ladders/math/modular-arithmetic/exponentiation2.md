@@ -21,7 +21,34 @@ The real question is:
 how do we shrink the exponent x = b^c first?
 ```
 
-## Key Idea
+## Recognition Cue
+
+This is a modular-arithmetic alarm bell:
+
+- the exponent itself is another huge exponent
+- direct evaluation of `b^c` is impossible
+- the modulus is prime
+- the real task is to reduce the exponent before the outer power
+
+Whenever the exponent is too large to materialize, stop and ask what cycle length the exponent lives in.
+
+## Problem-Specific Transformation
+
+The raw expression is:
+
+```text
+a^(b^c) mod MOD
+```
+
+The reusable rewrite is:
+
+1. treat the outer exponent as a separate quantity `e`
+2. reduce `e` modulo `MOD - 1` using Fermat's little theorem
+3. compute `a^e mod MOD` with binary exponentiation
+
+The only extra branch is the zero-base / zero-exponent edge case, because exponent reduction alone does not explain what to do when `a % MOD == 0`.
+
+## Core Idea
 
 Let:
 

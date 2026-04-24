@@ -13,7 +13,29 @@
 
 This is the cleanest first KMP problem because the task is exactly what the algorithm was built for: scan one long text, count every occurrence of one pattern, and do it without ever moving the text pointer backward.
 
-## Key Idea
+## Recognition Cue
+
+This is one of the clearest `KMP` triggers:
+
+- one pattern and one long text
+- count all exact occurrences
+- overlapping matches matter
+- rescanning the text from the left would be too expensive
+
+If the statement is really about "keep scanning forward without undoing text work," the prefix-function fallback machine is usually the right model.
+
+## Problem-Specific Transformation
+
+The statement talks about counting matches, but the reusable reformulation is:
+
+- preprocess the pattern into a border-fallback table `pi`
+- scan the text with one state `j = matched_prefix_length`
+- on mismatch, shorten `j` through `pi[j - 1]`
+- on full match, increment the answer and continue from `pi[m - 1]`
+
+So the problem is not "search from every text position." It is "maintain the longest matched prefix while the text pointer only moves right."
+
+## Core Idea
 
 Let `pi[i]` be the length of the longest proper prefix of the pattern that is also a suffix ending at position `i`.
 
