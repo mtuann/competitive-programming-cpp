@@ -82,7 +82,9 @@ The Z array directly tells how strongly the prefix appears at every shift.
 
 Example 3: detecting periodic structure
 
-If `i + z[i] = n` and `n % i = 0`, then `i` is a candidate period.
+If `i + z[i] = n`, then `i` is a valid period when the last block is allowed to be partial.
+
+If you also require the whole string to be tiled by equal full blocks, then add the stronger condition `n % i = 0`.
 
 Repo anchors:
 

@@ -11,6 +11,7 @@ STATIC_FILES = {
     "template-library.md": "template-library.md",
     "docs-assets/stylesheets/extra.css": "assets/stylesheets/extra.css",
     "docs-assets/javascripts/problem-finder.js": "assets/javascripts/problem-finder.js",
+    "docs-assets/javascripts/mathjax.js": "assets/javascripts/mathjax.js",
 }
 
 DIRECTORIES = [

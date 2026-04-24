@@ -195,8 +195,16 @@ body {
   font-weight: 700;
 }
 
+[data-md-color-scheme="default"] .md-typeset mjx-container[display="true"] {
+  background: rgba(22, 59, 115, 0.03);
+}
+
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
   background: rgba(120, 165, 242, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset mjx-container[display="true"] {
+  background: rgba(120, 165, 242, 0.06);
 }
 
 .md-typeset .admonition,
@@ -207,6 +215,26 @@ body {
 
 .md-typeset a {
   text-decoration-thickness: 0.08em;
+}
+
+.md-typeset .arithmatex {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.md-typeset mjx-container {
+  max-width: 100%;
+  font-size: 1em;
+}
+
+.md-typeset mjx-container[display="true"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 1.1rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--site-border);
+  border-radius: 1rem;
+  box-shadow: var(--site-shadow);
 }
 
 @media screen and (max-width: 44.9375em) {

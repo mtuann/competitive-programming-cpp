@@ -6,7 +6,7 @@ This repository should grow in layers, not as a random pile of solutions.
 
 Each finished topic should eventually include:
 
-1. a concise tutorial page in `topics/`
+1. a layered, self-contained tutorial page in `topics/`
 2. one or more reusable implementations in `templates/` or `solutions/`
 3. a small practice ladder in `practice/ladders/`
 4. a `go deeper` block with:
@@ -17,12 +17,32 @@ Each finished topic should eventually include:
 
 ## Writing Rule
 
-Each topic page should be short enough to scan quickly, but complete enough to answer:
+Each mature topic page should open with a fast-scanning core path, but the full page should still be complete enough that a serious reader can learn the topic without hunting for another primary explanation.
+
+At minimum, the page should answer:
 
 1. `When do I use this?`
-2. `Why does it work?`
-3. `What is the clean C++ pattern?`
-4. `What should I solve next?`
+2. `What is the brute-force baseline, and why does it fail?`
+3. `Why does the optimized algorithm work?`
+4. `What are the important variants and tradeoffs?`
+5. `What is the clean implementation pattern?`
+6. `What should I solve next?`
+
+Anchor topics should also include:
+
+- one real proof or correctness invariant
+- two worked examples
+- pseudocode plus implementation notes
+- a variant chooser
+- practice archetypes with recognition comments
+
+Not every page has the same role:
+
+- `technique leaf`: full deep tutorial for one concrete algorithm or data structure
+- `family / chooser page`: a decision map across multiple related algorithms
+- `theory-led page`: concept, theorem, or modeling page where code is secondary
+
+The full deep template is the default for `technique leaf` pages. Family and theory-led pages may compress or rearrange sections, but they should still preserve the same teaching promises.
 
 ## Build Order
 
@@ -156,7 +176,7 @@ Deep links:
 
 ## Deliverable Shape By Folder
 
-- `topics/`: concise teaching pages
+- `topics/`: layered teaching pages with a scannable core path and a deeper tutorial layer
 - `templates/`: reusable contest-ready code
 - `practice/ladders/`: topic-first problem ladders
 - `practice/mixed-rounds/`: review packs that mix topics

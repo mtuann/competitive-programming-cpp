@@ -35,7 +35,7 @@ Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages.
 
 ## How This Repo Works
 
-- [Topics](topics/README.md): concise teaching pages and area hubs
+- [Topics](topics/README.md): layered topic tutorials and area hubs
 - [Practice](practice/README.md): topic-first ladders, mixed rounds, and contest playbooks
 - [Problem Index](docs/problem-index.md): current solved problem notes mapped back to their learning hubs
 - [External Problem Index](docs/external-problem-index.md): curated official and trusted problems grouped by topic, microtopic, and contest track
@@ -44,12 +44,14 @@ Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages.
 - [Notebook](notebook/README.md): dense reference material for contest use
 - [Source Map](docs/source-map.md): the research appendix behind the curriculum choices
 
-Each mature topic page should help a reader answer four questions quickly:
+Each mature topic page should help a reader answer the whole learning loop, not just the definition:
 
 1. `When should I think of this idea?`
-2. `Why is it correct?`
-3. `What is the clean C++ pattern?`
-4. `What should I solve next?`
+2. `What is the naive baseline, and why is it too slow or too weak?`
+3. `Why is the optimized algorithm correct?`
+4. `Which variant should I choose?`
+5. `What is the clean C++ pattern?`
+6. `What should I solve next?`
 
 The source of truth for finished topic pages is [docs/topic-template.md](docs/topic-template.md).
 
