@@ -80,7 +80,7 @@ This is optimal. The only real difficulty is correctness on edge cases.
 
 - Topic page: [Segment Intersection](../../../../topics/geometry/segment-intersection/README.md)
 - Practice ladder: [Segment Intersection ladder](README.md)
-- Starter template: [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- Starter template: [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
 - Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
 - Carry forward: get orientation and collinearity logic correct before handling overlap cases.
 - This note adds: the exact on-segment and overlap handling used by this judge task.
