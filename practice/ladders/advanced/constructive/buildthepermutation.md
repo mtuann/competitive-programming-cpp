@@ -11,7 +11,7 @@
 
 ## Why Practice This
 
-This is a very good second constructive anchor after `VMCOINS` because the search space looks enormous, but the accepted solution is a tiny pattern once you identify the right invariant.
+This is one of the cleanest constructive anchors in the repo because the search space looks enormous, but the accepted solution is a tiny pattern once you identify the right invariant.
 
 The key shift is:
 

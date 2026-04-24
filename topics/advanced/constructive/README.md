@@ -15,9 +15,6 @@ This page is theory-led: the main payoff is learning how to spot the right promi
   - brute-force search over all outputs is hopeless, but one small pattern feels plausible
 - Prerequisites:
   - [Reasoning](../../foundations/reasoning/README.md)
-  - [Algorithm Engineering](../algorithm-engineering/README.md)
-  - [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
-  - [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
 - Strongest cues:
   - "print any solution"
   - "it is guaranteed that a solution exists"
@@ -27,6 +24,7 @@ This page is theory-led: the main payoff is learning how to spot the right promi
   - the real bottleneck is still discovering the right graph / DP / number-theory model
   - the statement asks for one optimum value rather than a witness
   - the space of valid outputs is huge and no structural promise is visible yet
+  - randomness is part of the solution method itself rather than only the validator or stress harness
 - Success after studying this page:
   - you can name the one promise that collapses the state space
   - you can prove legality, progress, and final validity separately
@@ -169,13 +167,13 @@ Typical cost patterns:
 Important contest lesson:
 
 - when the statement gives a strong promise, the right construction is usually the **smallest** one that uses that promise directly
-- if your proof is getting longer than the construction, either the construction is wrong or you are still solving the wrong problem
+- if your proof is getting much longer than the construction, treat that as a warning to re-check whether you are using the strongest promise directly
 
 ## Variant Chooser
 
 | Situation | Best first idea | Why it fits | Where it fails |
 | --- | --- | --- | --- |
-| exact counts of local features such as peaks / valleys / inversions | build one explicit pattern core | local features are created by a short repeated gadget | weak if leftover positions can still create extra features |
+| exact counts of local features such as peaks / valleys | build one explicit pattern core | local features are created by a short repeated gadget | weak if leftover positions can still create extra features |
 | output may be reordered into a standard shape | canonicalize the object first | removes symmetric clutter and shrinks the search space | weak if canonicalization itself destroys legality |
 | one part of the answer can be fixed by a statement guarantee | keep a fixed core and search only the free boundary | converts a huge global state into tiny residual freedom | weak if the claimed core is not actually forced |
 | the answer can be built greedily while preserving one condition | greedy repair with a visible invariant | lets each move be justified locally | weak if no monotone measure exists |
@@ -232,6 +230,40 @@ The proof naturally splits into the three constructive obligations:
 - final validity:
   the core creates exactly the requested extrema, and the tail cannot add extras
 
+Concrete trace:
+
+- take `n = 7`, `a = 2`, `b = 1`
+- feasibility holds because `|a - b| = 1` and `a + b = 3 <= n - 2 = 5`
+- let `m = a + b + 2 = 5`, so the core alone must create all requested extrema
+- because `a >= b`, use the largest `m` values in the alternating core:
+
+$$
+3,\ 5,\ 4,\ 7,\ 6
+$$
+
+- put the leftover smaller values in increasing order in front:
+
+$$
+1,\ 2,\ 3,\ 5,\ 4,\ 7,\ 6
+$$
+
+Now mark the interior extrema:
+
+- `5` is a local maximum because `3 < 5 > 4`
+- `4` is a local minimum because `5 > 4 < 7`
+- `7` is a local maximum because `4 < 7 > 6`
+
+So the counts are exactly:
+
+- local maxima: `2`
+- local minima: `1`
+
+Why the tail is safe:
+
+- the prefix `1, 2, 3` is strictly increasing
+- every leftover value is smaller than every core value
+- so the boundary around `... 2, 3, 5 ...` creates no new extremum because `2 < 3 < 5`
+
 This is the cleanest "pattern core + safe attachment" constructive archetype in the repo.
 
 ### Example 3: Promise-Driven Fixed Core Plus Tiny Residual Search
@@ -254,6 +286,22 @@ That collapses the problem to:
 
 This is still constructive, but not "print one fixed pattern and stop."
 
+Minimal residual sketch:
+
+- after one good translation, suppose the source and target already agree on a common core
+  $C$ of size `N - 2`
+- only two source coins remain unmatched, and only two target cells remain uncovered
+- the BFS state is therefore just the unordered pair of current free-coin positions
+  `{u, v}`
+- from `{u, v}`, a transition moves exactly one of the free coins to an empty cell `x`
+  if that move is legal with respect to the fixed core `C` together with the other free coin
+
+So the global board is no longer the true search space:
+
+- the fixed core never changes
+- only the two free coins move
+- legality is checked against one stable support structure plus one partner coin
+
 It shows an important higher-level rule:
 
 - a constructive solution may still contain search
@@ -261,7 +309,7 @@ It shows an important higher-level rule:
 
 ## Algorithm And Pseudocode
 
-There is no universal constructive algorithm, but there is a universal checklist.
+There is no universal constructive algorithm, but there is a universal solving script.
 
 ```text
 CONSTRUCT(instance I):
@@ -272,19 +320,25 @@ CONSTRUCT(instance I):
         progress measure Phi
         final validity condition V
 
-    while some residual freedom remains:
-        choose one local gadget / placement / move
-        apply it only if L is preserved
-        ensure Phi decreases or the residual state stays bounded
+    if the promise already determines a closed-form witness:
+        print that witness directly
+        return
 
-    prove or check that V now holds
-    return the witness
-```
+    if legality and progress are both local:
+        while residual freedom remains:
+            choose one local gadget / placement / move
+            apply it only if L is preserved
+            ensure Phi strictly decreases
+        prove V
+        return
 
-If the residual freedom is tiny, replace the loop with:
+    otherwise:
+        fix the largest core forced by the promise
+        search only the finite residual state graph
+        prove that the found residual completion plus the fixed core satisfies V
+        return
 
-```text
-search only the residual state graph
+    reject any plan that still searches the full output space
 ```
 
 The central question is always:
@@ -359,7 +413,7 @@ Whenever a constructive proof feels too complicated, ask:
 
 - `warm-up`: one explicit pattern with exact local features
   - [Build the Permutation](../../../practice/ladders/advanced/constructive/buildthepermutation.md)
-  - why it belongs here: the whole answer is one alternating core plus one safe tail
+  - why it belongs here: the whole answer is one alternating core plus one safe tail; it is the cleanest small constructive pattern in the repo
 - `core`: one promise-driven search where only a tiny residual remains free
   - [VMCOINS](../../../practice/ladders/advanced/constructive/vmcoins.md)
   - why it belongs here: the heavy promise about two special coins is what makes the construction tractable
@@ -371,8 +425,10 @@ Whenever a constructive proof feels too complicated, ask:
 
 - `Course`
   - [HKOI Training 2016: Constructive Algorithm](https://assets.hkoi.org/training2016/ca.pdf)
+  - [HKOI Training 2018: Constructive Algorithms](https://assets.hkoi.org/training2018/ca.pdf)
+  - [HKOI Training 2022: Constructive Algorithms](https://assets.hkoi.org/training2022/cast.pdf)
+- `General background`
   - [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf)
-- `Reference`
   - [USACO Guide](https://usaco.guide/)
 - `Practice`
   - [Codeforces constructive algorithms tag](https://codeforces.com/problemset?tags=constructive+algorithms)
@@ -380,13 +436,13 @@ Whenever a constructive proof feels too complicated, ask:
   - [Constructive ladder](../../../practice/ladders/advanced/constructive/README.md)
   - [Build the Permutation](../../../practice/ladders/advanced/constructive/buildthepermutation.md)
   - [VMCOINS](../../../practice/ladders/advanced/constructive/vmcoins.md)
+- `Implementation companions`
   - [Algorithm Engineering](../algorithm-engineering/README.md)
   - [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
   - [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
-  - [Template Library](../../../template-library.md)
 
 ## Related Topics
 
 - [Algorithm Engineering](../algorithm-engineering/README.md): use it when the construction idea is already known, but validation, constants, or trust are now the bottleneck
-- [Randomized Algorithms](../randomized-algorithms/README.md): use it when randomness is part of the method itself rather than just a test generator
+- [Randomized Algorithms](../randomized-algorithms/README.md): use it when randomness is part of the solution method itself rather than just a validator, stress harness, or test generator
 - [Reasoning](../../foundations/reasoning/README.md): use it for tighter invariant writing and proof hygiene
