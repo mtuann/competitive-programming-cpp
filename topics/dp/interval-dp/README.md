@@ -1,160 +1,400 @@
 # Interval DP
 
-Interval DP is the right tool when the problem is about subarrays, substrings, polygons, or parenthesization-style splits. The subproblem is literally “solve this interval.”
+Interval DP is the right model when the subproblem is literally:
 
-## Summary
+- solve this subarray
+- solve this substring
+- solve this polygon chain
+- solve this contiguous segment after choosing a split
 
-Suspect interval DP when:
+The keyword is not "DP" by itself.
 
-- the answer on `[l, r]` combines answers from smaller intervals
-- the transition tries a split point `k`
-- the structure resembles matrix-chain multiplication, bracket merging, or optimal partitioning on a line
+The keyword is:
 
-What success looks like:
+- **contiguous interval**
 
-- you know the right interval meaning before writing loops
-- you process intervals in a dependency-safe order
-- you know when `O(n^3)` is acceptable and when optimization is needed
+Once the problem truly decomposes into smaller intervals, the whole solution becomes about:
+
+- defining `dp[l][r]` correctly
+- processing intervals in dependency-safe order
+- deciding whether the transition is:
+  - split by `k`
+  - remove one end
+  - merge two neighboring solved pieces
+
+## At A Glance
+
+- **Use when:** every state is a contiguous interval and each transition depends only on smaller nested intervals
+- **Core worldview:** solve small intervals first, then build larger intervals from them
+- **Main tools:** `dp[l][r]`, length-order iteration, split-point transitions, score-difference modeling, interval helper arrays such as prefix sums
+- **Typical complexity:** often `O(n^3)` baseline, sometimes `O(n^2)` with simpler transitions or later optimizations
+- **Main trap:** using interval DP when the problem is not truly contiguous, or writing the right recurrence but filling states in the wrong order
 
 ## Prerequisites
 
 - [DP Foundations](../foundations/README.md)
 - [Prefix Sums](../../foundations/patterns/prefix-sums/README.md)
 
-## Core Idea
+Helpful neighboring topics:
 
-Define:
+- [Knapsack Family](../knapsack-family/README.md)
+- [Bitmask DP](../bitmask-dp/README.md)
 
-```text
-dp[l][r] = answer for the interval [l, r]
-```
+## Problem Model And Notation
 
-Then process intervals by increasing length.
+Let the objects live on a line:
 
-This is the interval analogue of prefix DP: smaller intervals must be solved before larger ones that depend on them.
+$$
+a_0, a_1, \dots, a_{n-1}.
+$$
 
-## Theory / Proof Sketch
+The canonical state is:
 
-When an interval solution depends only on smaller nested intervals, processing by increasing length guarantees that all needed subproblems are already known.
+$$
+\mathrm{dp}[l][r] = \text{answer for interval } [l, r].
+$$
 
-Typical recurrence shape:
+Depending on the problem, the state may mean:
 
-```text
-dp[l][r] = best over split points k of combine(dp[l][k], dp[k+1][r], extra_cost)
-```
+- minimum merge cost on `[l, r]`
+- maximum score difference on `[l, r]`
+- whether substring `[l, r]` is feasible
+- best partition of `[l, r]`
 
-The DP is correct if:
-
-- every legal decomposition appears in the transition
-- every smaller interval dependency is processed first
-
-## Complexity And Tradeoffs
-
-Common baseline:
+The most important design question is:
 
 ```text
-O(n^3)
+What exactly does dp[l][r] mean?
 ```
 
-Tradeoffs:
+If that sentence is vague, the recurrence will be vague too.
 
-- clean when the dependency really stays inside the interval
-- often too slow unless `n` is moderate or the transition has extra structure
+## From Brute Force To The Right Idea
 
-This is where optimizations like Knuth or divide-and-conquer DP may appear later.
+### Brute Force: Enumerate All Parenthesizations Or All Play Sequences
 
-## Canonical C++ Pattern
+Many interval problems look exponential at first:
 
-Template in this repo:
+- every split point is possible
+- every order of merges seems possible
+- every game move sequence seems different
 
-- [interval-dp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/interval-dp.cpp)
+That is because the same smaller intervals appear again and again inside different global choices.
 
-Canonical loop order:
+### The First Shift: The State Is The Remaining Interval
 
-1. iterate interval length
-2. iterate left endpoint
-3. compute right endpoint
-4. try split points
+In interval DP, all that history is compressed into:
 
-## Standard Patterns
+- left boundary `l`
+- right boundary `r`
 
-### 1. Split-Point Optimization
+because once the interval is fixed, the future choices inside it no longer care how that interval was reached.
 
-Examples:
+### The Second Shift: Every Legal First Move Produces Smaller Intervals
+
+A split point `k` creates:
+
+- `[l, k]`
+- `[k+1, r]`
+
+Removing one end creates:
+
+- `[l+1, r]`
+- or `[l, r-1]`
+
+So the recursive structure is always:
+
+- one interval depends on strictly smaller intervals
+
+That is why length order works.
+
+### The Third Shift: Auxiliary Precomputation Often Simplifies The Transition
+
+Many interval transitions need:
+
+- sum of `[l, r]`
+- weight of a segment
+- whether boundaries match
+
+Those helpers are often static and should be precomputed once:
+
+- prefix sums
+- match tables
+- coordinate costs
+
+The interval DP should then focus only on the true combinatorial choice.
+
+## Core Invariants And Why They Work
+
+## 1. Interval Meaning Must Be Exact
+
+The central invariant is:
+
+```text
+dp[l][r] has one precise semantic meaning for every valid interval.
+```
+
+Typical bad start:
+
+- "`dp[l][r]` is kind of the best answer around this segment"
+
+Typical good start:
+
+- "`dp[l][r]` is the maximum score difference the current player can force on subarray [l, r]`"
+
+That exact wording determines:
+
+- base cases
+- transition signs
+- final extraction formula
+
+## 2. Length Order Guarantees Dependencies Are Ready
+
+If every transition uses only smaller intervals, then processing by increasing interval length is correct.
+
+For example:
+
+- length `1` intervals are base cases
+- length `2` intervals depend on length `1`
+- length `3` intervals depend on lengths `1` and `2`
+
+and so on.
+
+This is the interval analogue of topological order for states.
+
+## 3. Split-Point Recurrences Cover All Decompositions
+
+A very common recurrence shape is:
+
+$$
+\mathrm{dp}[l][r] =
+\min_{l \le k < r}
+\bigl(
+\mathrm{dp}[l][k] + \mathrm{dp}[k+1][r] + \mathrm{extraCost}(l, k, r)
+\bigr).
+$$
+
+Why is this correct?
+
+Because any full decomposition of `[l, r]` has a first split point `k`. Once that split is chosen, the left and right parts are independent subproblems of the same type.
+
+So:
+
+- if you try all legal `k`
+- and each branch combines optimal smaller answers
+
+then every legal decomposition is represented.
+
+## 4. Game Interval DP Often Works Better With Score Difference
+
+For two-player interval games, absolute scores can make the recurrence messy.
+
+The cleaner state is often:
+
+$$
+\mathrm{dp}[l][r] = \text{best score difference current player can force on } [l, r].
+$$
+
+Then if the current player takes `a[l]`, the opponent faces `[l+1, r]` and the net advantage becomes:
+
+$$
+a[l] - \mathrm{dp}[l+1][r].
+$$
+
+This is exactly the modeling trick behind:
+
+- [Removal Game](../../../practice/ladders/dp/interval-dp/removalgame.md)
+
+## 5. Prefix Sums Often Remove A Hidden Inner Loop
+
+If each transition needs the sum of `[l, r]`, recomputing that sum inside the DP creates unnecessary work.
+
+Use prefix sums so interval costs become:
+
+$$
+\mathrm{sum}(l, r) = \mathrm{pref}[r+1] - \mathrm{pref}[l].
+$$
+
+That keeps the DP focused on the real combinatorial split.
+
+## Variant Chooser
+
+### Use Split-Point Interval DP When
+
+- the interval is partitioned into two smaller intervals
+- a split point `k` is the main choice
+
+Canonical examples:
 
 - matrix chain multiplication
-- partitioning / triangulation style costs
+- optimal merge/partition costs
+- polygon triangulation style recurrences
 
-### 2. Merge Or Remove On A Segment
+### Use Remove-From-Ends Interval DP When
 
-Examples:
+- each move removes the left or right endpoint
+- the remaining problem is still a contiguous interval
 
-- remove boxes style logic
-- merging items with local costs
+Canonical examples:
 
-### 3. String And Parenthesis Intervals
+- optimal play games
+- take-from-ends scoring problems
 
-Examples:
+### Use Merge-On-Interval DP When
 
-- bracket matching style DP
-- substring transformation costs
+- neighboring pieces are merged with some interval-dependent cost
+
+### Do Not Use Interval DP When
+
+- the structure is not contiguous
+- the state is really "subset" rather than interval
+- the order of chosen elements matters more than adjacency
+
+Then you may need:
+
+- [Bitmask DP](../bitmask-dp/README.md)
+- [Knapsack Family](../knapsack-family/README.md)
 
 ## Worked Examples
 
-### Example 1: matrix chain multiplication
+### Example 1: Removal Game
 
-Classic interval DP:
+This is the repo's main interval-game anchor:
 
-- split at every `k`
-- combine left and right costs
+- [Removal Game](../../../practice/ladders/dp/interval-dp/removalgame.md)
 
-### Example 2: merge-cost intervals
+Define:
 
-The extra cost often depends on a precomputed interval sum, which is why prefix sums frequently pair with interval DP.
+$$
+\mathrm{dp}[l][r] = \text{best score difference current player can force on } [l, r].
+$$
 
-### Example 3: polygon triangulation style costs
+Then:
 
-The geometry story hides a pure interval split structure.
+$$
+\mathrm{dp}[l][r]
+=
+\max(a[l] - \mathrm{dp}[l+1][r],\ a[r] - \mathrm{dp}[l][r-1]).
+$$
 
-## Recognition Cues
+This is a perfect example of:
 
-Strong clues:
+- state meaning first
+- recurrence second
 
-- intervals, substrings, or contiguous segments
+### Example 2: Matrix-Chain Style Split
+
+Suppose you must choose the first split point `k`.
+
+Then the answer on `[l, r]` is:
+
+- optimal left interval
+- plus optimal right interval
+- plus cost caused by joining those two solved parts
+
+That is the archetypal `O(n^3)` interval DP.
+
+### Example 3: Interval Cost From Prefix Sums
+
+Suppose merging `[l, r]` costs the total sum on that interval.
+
+Then prefix sums provide:
+
+$$
+\mathrm{sum}(l, r)
+$$
+
+in `O(1)`, so the DP does not waste work recomputing interval totals.
+
+That is one of the most common pairings:
+
+- prefix sums + interval DP
+
+## Algorithms And Pseudocode
+
+### Split-Point Skeleton
+
+```text
+initialize dp for base intervals
+
+for len from 2 to n:
+    for l from 0 to n-len:
+        r = l + len - 1
+        dp[l][r] = worst_possible_value
+        for k from l to r-1:
+            dp[l][r] = best(
+                dp[l][r],
+                combine(dp[l][k], dp[k+1][r], extra_cost(l, k, r))
+            )
+```
+
+### Remove-From-Ends Skeleton
+
+```text
+for i from 0 to n-1:
+    dp[i][i] = base_case(a[i])
+
+for len from 2 to n:
+    for l from 0 to n-len:
+        r = l + len - 1
+        dp[l][r] = combine_take_left_or_right(
+            dp[l+1][r],
+            dp[l][r-1]
+        )
+```
+
+## Implementation Notes
+
+- Write the state meaning in words before coding.
+- Check base cases separately for:
+  - empty intervals if they exist
+  - length `1`
+  - sometimes length `2`
+- The most common loop bug is getting `len`, `l`, `r` ordering wrong.
+- If the recurrence depends on interval sums, precompute them first.
+- `O(n^3)` is normal for classic interval DP. Do not panic if the structure is correct and constraints allow it.
+
+## Practice Archetypes
+
+You should strongly suspect interval DP when you see:
+
+- subarrays or substrings
 - split point `k`
-- recursive formulation over smaller intervals
+- removing from ends
+- recursive definitions over smaller contiguous segments
 
-Interval DP is often confused with:
+Repo anchors:
 
-- [Knapsack Family](../knapsack-family/README.md), because both can be `O(n^2)` or `O(n^3)` DP tables
-- generic recursion, when the real reusable structure is specifically interval-based
+- [Removal Game](../../../practice/ladders/dp/interval-dp/removalgame.md)
 
-## Common Mistakes
+Starter template:
 
-- wrong length order
-- off-by-one errors in `l`, `r`, and split ranges
-- forgetting to precompute interval sums or other static helpers
-- using interval DP when the structure is not truly contiguous
+- [interval-dp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/interval-dp.cpp)
 
-## Practice Ladder
+Notebook refresher:
+
+- [DP cheatsheet](../../../notebook/dp-cheatsheet.md)
+
+## References And Repo Anchors
+
+Course / tutorial style:
+
+- [USACO Guide: Range DP](https://usaco.guide/gold/dp-ranges)
+- [HKUST: Interval DP / Matrix-Chain Multiplication](https://cse.hkust.edu.hk/~dimitris/3711/16_DP_interval.pdf)
+- [AtCoder Educational DP Contest](https://atcoder.jp/contests/dp)
+
+Reference:
+
+- [CP-Algorithms: Knuth Optimization](https://cp-algorithms.com/dynamic_programming/knuth-optimization.html)
+
+Practice / repo anchors:
 
 - [Interval DP ladder](../../../practice/ladders/dp/interval-dp/README.md)
-
-Suggested order:
-
-1. simple split DP
-2. interval sums plus DP
-3. bracket / substring interval logic
-4. read optimization topics only after the baseline form is comfortable
-
-## Go Deeper
-
-- Reference: [CP-Algorithms - Knuth Optimization](https://cp-algorithms.com/dynamic_programming/knuth-optimization.html)
-- Reference: [USACO Guide - Range DP](https://usaco.guide/gold/dp-ranges)
-- Practice: [AtCoder Educational DP Contest](https://atcoder.jp/contests/dp)
+- [Removal Game](../../../practice/ladders/dp/interval-dp/removalgame.md)
 
 ## Related Topics
 
 - [DP Foundations](../foundations/README.md)
 - [Knapsack Family](../knapsack-family/README.md)
+- [Bitmask DP](../bitmask-dp/README.md)
 - [Prefix Sums](../../foundations/patterns/prefix-sums/README.md)

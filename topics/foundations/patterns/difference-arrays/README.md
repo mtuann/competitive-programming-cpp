@@ -1,213 +1,384 @@
 # Difference Arrays
 
-Difference arrays are the offline sibling of prefix sums. They are the right tool when you need many range additions, but only care about the final array after all updates are applied.
+Difference arrays are the offline mirror image of prefix sums.
 
-## Summary
+Prefix sums answer:
 
-Suspect difference arrays when:
+- "what is the total on this range?"
 
-- there are many range updates
-- you do not need to answer queries between updates
-- the output only depends on the final values or one final scan
+Difference arrays answer:
 
-What success looks like:
+- "how do I apply many range additions without touching every element of every range?"
 
-- you can convert each range update into two endpoint changes
-- you can rebuild the final array with one prefix pass
-- you know when this is enough and when you need Fenwick or segment tree instead
+The key move is to stop storing the final values directly and instead store where changes begin and where they stop.
+
+## At A Glance
+
+- **Use when:** many range additions happen, but you only need the final array after all updates are known
+- **Core worldview:** range updates become two endpoint updates; one prefix pass reconstructs the final values
+- **Main tools:** 1D adjacent difference array, event start/stop encoding, 2D difference arrays in more advanced settings
+- **Typical complexity:** `O(1)` per offline range update and `O(n)` for one final reconstruction
+- **Main trap:** using it when answers are needed online during the update stream
 
 ## Prerequisites
 
 - [Prefix Sums](../prefix-sums/README.md)
 
-## Core Idea
+Helpful neighboring topics:
 
-Instead of adding `x` to every position in `[l, r]`, store only where the effect starts and where it stops:
+- [Fenwick Tree](../../../data-structures/fenwick-tree/README.md)
+- [Segment Tree](../../../data-structures/segment-tree/README.md)
+- [Offline Tricks](../../../data-structures/offline-tricks/README.md)
+
+## Problem Model And Notation
+
+Let:
+
+$$
+a_0, a_1, \dots, a_{n-1}
+$$
+
+be the final array we want after many range additions.
+
+Define the difference array:
+
+$$
+\mathrm{diff}[0] = a_0,
+$$
+
+and for `i >= 1`:
+
+$$
+\mathrm{diff}[i] = a_i - a_{i-1}.
+$$
+
+Then reconstruction is just a prefix sum:
+
+$$
+a_i = \mathrm{diff}[0] + \mathrm{diff}[1] + \cdots + \mathrm{diff}[i].
+$$
+
+This is why difference arrays and prefix sums are two sides of the same picture.
+
+## From Brute Force To The Right Idea
+
+### Brute Force: Update Every Element In The Range
+
+Suppose each operation says:
+
+- add `x` to every `a[i]` in `[l, r]`
+
+The literal implementation is:
+
+- loop from `l` to `r`
+- add `x` to each position
+
+That costs:
+
+$$
+O(r-l+1)
+$$
+
+per update, so the total can become:
+
+$$
+O(nq)
+$$
+
+which is too slow.
+
+### The First Shift: Encode Changes, Not Final Values
+
+One update adding `x` on `[l, r]` means:
+
+- values increase by `x` when you enter position `l`
+- values stop carrying that extra `x` after position `r`
+
+So you do not need to touch the whole interval.
+
+You only need to mark:
+
+- start of effect
+- end of effect
+
+### The Second Shift: One Update Means Two Endpoint Changes
+
+Under zero-based indexing, one range addition becomes:
+
+$$
+\mathrm{diff}[l] += x
+$$
+
+and, if `r + 1 < n`:
+
+$$
+\mathrm{diff}[r+1] -= x.
+$$
+
+After all updates, one prefix pass reconstructs the actual array values.
+
+This is the whole technique.
+
+### The Third Shift: Difference Arrays Are Event Sweeps On A Line
+
+Another good intuition is:
+
+- `+x` means an event becomes active
+- `-x` means that event stops contributing
+
+The reconstruction prefix pass then asks:
+
+- what is the total active contribution at this position?
+
+That makes difference arrays feel much less magical and much closer to sweep-line/event processing.
+
+## Core Invariants And Why They Work
+
+## 1. Difference Meaning
+
+The central invariant is:
 
 ```text
-diff[l] += x
-diff[r + 1] -= x
+diff[i] stores how much the running value changes when moving from i-1 to i.
 ```
 
-After all updates, rebuild the array by taking prefix sums of `diff`.
+For `i = 0`, it stores the initial base value at the first position.
 
-That works because the contribution of one update is “active” exactly between its start and end.
+Once that meaning is fixed, the range-update encoding becomes natural.
 
-## Theory / Proof Sketch
+## 2. Why One Range Addition Becomes Two Endpoint Updates
 
-Think of `diff[i]` as the change that happens when moving from position `i - 1` to position `i`.
+Suppose we add `x` to every position in `[l, r]`.
 
-For one update adding `x` on `[l, r]`:
+Then:
 
-- the value should increase by `x` when you enter `l`
-- the value should decrease by `x` after you leave `r`
+- at `l`, the running value should jump up by `x`
+- after `r`, the running value should drop back by `x`
 
-So the endpoint encoding is:
+So we record:
 
-```text
-diff[l] += x
-diff[r + 1] -= x
-```
+$$
+\mathrm{diff}[l] += x
+$$
 
-Now when you take the prefix sum of `diff`, every update contributes exactly on the positions where it is active.
+and:
 
-## Complexity And Tradeoffs
+$$
+\mathrm{diff}[r+1] -= x
+$$
 
-If there are `q` updates on an array of length `n`:
+if that index exists.
 
-- each range update: `O(1)`
-- rebuild final values: `O(n)`
-- total: `O(n + q)`
+During reconstruction:
 
-Tradeoffs:
+- all positions before `l` do not see the update
+- all positions from `l` through `r` include the `+x`
+- all positions after `r` see the cancellation too
 
-- perfect for offline range additions
-- useless if you need online answers after each update
-- best when the final reconstruction is enough
+That is exactly the desired range effect.
 
-## Canonical C++ Pattern
+## 3. Why Reconstruction Is A Prefix Sum
 
-Template in this repo:
+By definition:
 
-- [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp)
+$$
+a_i = a_{i-1} + \mathrm{diff}[i].
+$$
 
-Typical pattern:
+Unrolling this recurrence gives:
 
-```cpp
-vector<long long> diff(n + 2, 0);
-for (each update [l, r] += x) {
-    diff[l] += x;
-    if (r + 1 <= n) diff[r + 1] -= x;
-}
-for (int i = 1; i <= n; ++i) {
-    diff[i] += diff[i - 1];
-}
-```
+$$
+a_i = \sum_{j=0}^{i} \mathrm{diff}[j].
+$$
 
-After the prefix pass, `diff[i]` becomes the final value at position `i` if the initial array was all zero. If there was an initial array, add the rebuilt effect to it.
+So reconstructing the final array is just taking prefix sums of the difference array.
 
-## Decision Check
+This is why:
 
-Ask one question before choosing this tool:
+- prefix sums answer static range queries
+- difference arrays process offline range updates
 
-```text
-Do I need answers while the updates are still happening?
-```
+They are inverse viewpoints.
 
-If the answer is yes, difference arrays alone are not enough. Move to Fenwick tree or segment tree. If the answer is no, this offline approach is often the cleanest option.
+## 4. Initial Array vs Update Effect
 
-## Standard Patterns
+When the initial array is not all zero, the clean mental split is:
 
-### 1. Offline Range Addition
+$$
+\mathrm{final}[i] = \mathrm{initial}[i] + \mathrm{addedEffect}[i].
+$$
 
-The classic use:
+You may either:
 
-- many `add x on [l, r]`
-- one final output
+- start `diff` from the initial array's true differences
+- or keep a separate zero-based update-effect difference array and add it afterward
 
-### 2. Event Sweep On A Line
+Both are correct. The important part is not to mix the two interpretations halfway through the implementation.
 
-You can treat interval starts and ends as signed changes and then scan the line once.
+## 5. Why Difference Arrays Fail Online
 
-Examples:
+If a query asks for the value at position `k` after only some updates have occurred, then a plain difference array is not enough unless you are willing to rebuild prefixes repeatedly.
 
-- how many intervals cover each point
-- how many active events exist at each coordinate
+That is the exact boundary where you move to:
 
-### 3. Difference Then Prefix Then Check
+- [Fenwick Tree](../../../data-structures/fenwick-tree/README.md) for dynamic prefix logic
+- [Segment Tree](../../../data-structures/segment-tree/README.md) for richer online range operations
 
-Sometimes the final array is not the direct output. You rebuild it first, then:
+## Variant Chooser
 
-- take a max
-- count positions meeting a threshold
-- run another scan or greedy step
+### Use Plain Difference Arrays When
+
+- updates are all known
+- you only need the final array or one final scan of it
+
+Canonical examples:
+
+- print final array
+- count how many positions exceed a threshold after all updates
+- compute the maximum final value after all interval increments
+
+### Use Difference Arrays As An Event Counter When
+
+- intervals add `+1` or another weight while active
+- you want the number of active intervals at each coordinate
+
+This is the event-sweep interpretation of the same tool.
+
+### Use Dynamic Difference + Fenwick When
+
+- the conceptual model is still "endpoint updates + prefix query"
+- but updates and queries are interleaved online
+
+The repo bridge problem is:
+
+- [Range Update Queries](../../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md)
+
+### Do Not Use Difference Arrays When
+
+- arbitrary range queries are required between updates
+- the answer depends on the intermediate state after each operation
+
+Then plain offline reconstruction is the wrong model.
 
 ## Worked Examples
 
-### Example 1: many interval increments
+### Example 1: Offline Range Addition
 
-Problem:
+Suppose the array is initially zero and updates are:
 
-```text
-apply q updates: add x to every a[i] in [l, r]
-print the final array
-```
+- add `2` on `[1, 3]`
+- add `1` on `[0, 2]`
 
-Difference-array solution:
+Using zero-based indexing:
 
-- record the start and stop of each update in `O(1)`
-- rebuild once in `O(n)`
+- first update contributes `diff[1] += 2`, `diff[4] -= 2`
+- second update contributes `diff[0] += 1`, `diff[3] -= 1`
 
-### Example 2: active intervals by coordinate
+Then one prefix pass gives the final values.
 
-If an interval `[l, r]` contributes `+1` while active:
+This is exactly what the repo starter template demonstrates.
 
-```text
-diff[l] += 1
-diff[r + 1] -= 1
-```
+### Example 2: Active Interval Count
 
-Prefix sum gives the number of active intervals at every position.
+Suppose each interval `[l, r]` contributes `+1` while active.
 
-### Example 3: initial array plus updates
+Then:
 
-If the initial array is not zero, the clean mental model is:
+$$
+\mathrm{diff}[l] += 1,\quad \mathrm{diff}[r+1] -= 1.
+$$
 
-```text
-final[i] = initial[i] + accumulated_update_effect[i]
-```
+After the prefix pass, each position stores how many intervals cover it.
 
-Keep those two layers conceptually separate.
+This is the same technique, only with "coverage count" instead of numeric additions.
 
-## Recognition Cues
+### Example 3: Online Bridge Problem
 
-Strong clues:
+The repo note:
 
-- “apply many range increments”
-- “after all operations, print / count / maximize”
-- no intermediate query needs the updated state
-- brute force per update would be `O(nq)`
+- [Range Update Queries](../../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md)
 
-Difference arrays are often confused with:
+keeps the exact same difference-array worldview:
 
-- [Prefix Sums](../prefix-sums/README.md), because reconstruction is a prefix sum
-- [Fenwick Tree](../../../data-structures/fenwick-tree/README.md), because both touch prefix logic
-- [Segment Tree](../../../data-structures/segment-tree/README.md), because all three can appear in range-update problems
+- range update becomes two endpoint updates
 
-The deciding question is:
+but now those endpoint updates are maintained in a Fenwick tree because queries arrive between updates.
+
+That is the correct mental bridge from offline technique to data structure.
+
+## Algorithms And Pseudocode
+
+### Offline Range Addition
 
 ```text
-Do I need answers during the update process, or only after all updates finish?
+initialize diff with zeros
+
+for each update (l, r, x):
+    diff[l] += x
+    if r + 1 < n:
+        diff[r + 1] -= x
+
+running = 0
+for i from 0 to n-1:
+    running += diff[i]
+    final[i] = running
 ```
 
-## Common Mistakes
+### If There Is An Initial Array
 
-- forgetting the `r + 1` boundary check
-- rebuilding from the wrong base array
-- mixing zero-based and one-based indexing
-- using difference arrays when online queries are required
-- forgetting that subtraction at `r + 1` ends the update after `r`, not at `r`
+Either:
 
-## Practice Ladder
+```text
+final[i] = initial[i] + running_update_effect[i]
+```
+
+or build the full initial difference array first.
+
+## Implementation Notes
+
+- Always guard the `r + 1` boundary.
+- Use `long long` if updates can accumulate large values.
+- Decide clearly whether `diff` represents:
+  - the full array difference
+  - or only the update effect on top of an existing base array
+- Difference arrays are usually easier to code than segment trees when the problem is truly offline. Do not overcomplicate a static setting.
+
+## Practice Archetypes
+
+You should strongly suspect difference arrays when you see:
+
+- many range increments
+- no intermediate query answers needed
+- one final scan or one final output
+
+Repo anchors:
+
+- [Range Update Queries](../../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md)
+
+Starter template:
+
+- [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp)
+
+Notebook refresher:
+
+- [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+
+## References And Repo Anchors
+
+Reference / tutorial style:
+
+- [OI Wiki: Prefix Sum And Adjacent Difference](https://en.oi-wiki.org/basic/prefix-sum/)
+- [GeeksforGeeks: 1D Difference Array](https://www.geeksforgeeks.org/difference-array-range-update-query-o1/)
+- [TutorialCup: Difference Array Range Update Query In O(1)](https://tutorialcup.com/interview/dynamic-programming/difference-array-range-update-query-in-o1.htm)
+
+Practice / repo anchors:
 
 - [Difference arrays ladder](../../../../practice/ladders/foundations/difference-arrays/README.md)
-- [Prefix sums ladder](../../../../practice/ladders/foundations/prefix-sums/README.md)
-
-Suggested order:
-
-1. zero-initialized range additions
-2. initial array plus updates
-3. event-count reconstruction
-4. compare offline difference arrays against online Fenwick
-
-## Go Deeper
-
-- Reference: [CP-Algorithms](https://cp-algorithms.com/)
-- Practice: [CSES Problem Set](https://cses.fi/problemset/)
-- Next step: [Fenwick Tree](../../../data-structures/fenwick-tree/README.md)
+- [Range Update Queries](../../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md)
 
 ## Related Topics
 
 - [Prefix Sums](../prefix-sums/README.md)
 - [Fenwick Tree](../../../data-structures/fenwick-tree/README.md)
 - [Segment Tree](../../../data-structures/segment-tree/README.md)
+- [Offline Tricks](../../../data-structures/offline-tricks/README.md)
