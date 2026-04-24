@@ -29,7 +29,7 @@ If local C++ practice still feels shaky, do not browse randomly. Use this very s
 The idea is simple:
 
 - learn one compile/run loop
-- solve one tiny anchor note
+- solve one tiny anchor note like [Weird Algorithm](../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 - only then widen the toolkit
 
 ## How To Use This Section
@@ -89,14 +89,15 @@ This route works well because:
 
 If you want actual internal notes instead of only theory pages, start with:
 
-1. [Missing Number](../../practice/ladders/foundations/cpp-language/missingnumber.md)
-2. [Distinct Numbers](../../practice/ladders/foundations/stl/distinctnumbers.md)
-3. [Increasing Array](../../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
-4. [Movie Festival](../../practice/ladders/foundations/sorting/moviefestival.md)
-5. [Ferris Wheel](../../practice/ladders/foundations/sorting/ferriswheel.md)
-6. [Factory Machines](../../practice/ladders/foundations/binary-search/factorymachines.md)
-7. [Static Range Sum Queries](../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
-8. [Apartments](../../practice/ladders/foundations/two-pointers/apartments.md)
+1. [Weird Algorithm](../../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
+2. [Missing Number](../../practice/ladders/foundations/cpp-language/missingnumber.md)
+3. [Distinct Numbers](../../practice/ladders/foundations/stl/distinctnumbers.md)
+4. [Increasing Array](../../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
+5. [Movie Festival](../../practice/ladders/foundations/sorting/moviefestival.md)
+6. [Ferris Wheel](../../practice/ladders/foundations/sorting/ferriswheel.md)
+7. [Factory Machines](../../practice/ladders/foundations/binary-search/factorymachines.md)
+8. [Static Range Sum Queries](../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+9. [Apartments](../../practice/ladders/foundations/two-pointers/apartments.md)
 
 That order gives a smoother beginner climb than jumping straight into harder multi-pattern tasks.
 

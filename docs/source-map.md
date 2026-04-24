@@ -10,6 +10,7 @@ This repository design is grounded in public official or project-primary sources
 - `project-primary` means the maintained homepage or repository of a widely used resource
 - terms are written exactly when possible, such as `Fall 2025` or `Spring 2026`
 - when a contest has no single official syllabus, the curriculum role is inferred from official rules, archives, curriculum pages, and training materials
+- this file is the repo-level research snapshot, but freshness-sensitive pages should still record their own review context when current behavior or recommendations matter
 
 ## 1. Foundational University Syllabi
 

@@ -4,6 +4,8 @@ This page is the map for the repo's reusable contest-ready code. The actual impl
 
 ## Fast Pick By Signal
 
+- smallest clean contest skeleton: [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp)
+- large input but ordinary batch stdin/stdout: [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp)
 - shortest path on unit edges: [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
 - shortest path on `0/1` edges: [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - shortest path with negative edges: [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
@@ -28,6 +30,12 @@ Use the library in this order:
 If you are still unsure which family to use, start from the [Notebook](notebook/README.md) instead of browsing files blindly.
 
 If the template is integrated but still feels untrustworthy, switch immediately to the [Stress testing workflow](notebook/stress-testing-workflow.md) instead of guessing at bugs.
+
+If you are still stabilizing the local C++ loop itself, pair these first:
+
+- [C++ Language For Contests](topics/foundations/cpp-language/README.md)
+- [Foundations Cheatsheet](notebook/foundations-cheatsheet.md)
+- [Weird Algorithm](practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 
 ## Current Templates
 

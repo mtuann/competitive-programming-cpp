@@ -2,11 +2,29 @@
 
 This page is the shortest reusable route from “I think the idea is right” to “I have actual evidence that the implementation is trustworthy.”
 
+- Trigger: nontrivial fast solution, suspicious edge cases, or low trust after samples
+- Inputs needed: fast solution plus either a brute-force checker, property validator, or small-case oracle
+- Output artifact: one reproducible mismatch or many clean small-case passes
+- Stop condition: the first unexplained mismatch is understood, or the local confidence loop is clean enough to move on
+- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Local judge workflow](local-judge-workflow.md), [Template library](../template-library.md)
+
 Use it when:
 
 - your fast solution is nontrivial enough that a few hand tests do not feel convincing
 - the bug is probably in implementation details, not in the high-level algorithm choice
 - you can write a slower checker, brute-force solver, or property validator on small cases
+
+If you are still on the first few beginner notes, do not start here. A saved sample plus one deliberate edge case is the right first loop before you invest in generators and checkers.
+
+## Which Workflow To Use Right Now
+
+Choose this page only if:
+
+- the problem is still an ordinary batch problem
+- saved samples already pass
+- trust is low because the fast solution is nontrivial
+
+If the task is interactive or validator-heavy, switch to [Local judge workflow](local-judge-workflow.md) instead.
 
 ## Fast Loop
 

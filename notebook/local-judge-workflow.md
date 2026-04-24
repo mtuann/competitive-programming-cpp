@@ -2,11 +2,30 @@
 
 This page is for the class of problems where “run the binary on stdin” is not enough.
 
+- Trigger: interactive tasks, validator-heavy tasks, or outputs with many valid forms
+- Inputs needed: a solution binary plus either fixed tests, a validator, or a simulator
+- Output artifact: one reproducible failing transcript or enough evidence that the local harness is trustworthy
+- Stop condition: one clean harness loop that you can rerun without guessing
+- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md)
+
 Use it when:
 
 - the task is interactive
 - the output can have many valid forms and needs a validator
 - you want a local harness that behaves more like the real judge
+
+If you are still on ordinary batch tasks like `Weird Algorithm` or `Missing Number`, this page is too early. Stay with the normal stdin/stdout loop from the [Foundations cheatsheet](foundations-cheatsheet.md) first.
+
+## Which Workflow To Use Right Now
+
+Choose this page only if simple stdin/stdout runs are not enough anymore:
+
+- interactive protocol
+- custom validator
+- many valid answers
+- simulator or hidden-state harness
+
+If the problem is still a normal batch task, go back to the [Foundations cheatsheet](foundations-cheatsheet.md) or, if trust is the issue, to [Stress testing workflow](stress-testing-workflow.md).
 
 ## Core Goal
 
@@ -17,6 +36,17 @@ Separate three roles clearly:
 3. `judge / validator / simulator`
 
 When those roles are mixed together, debugging gets noisy very quickly.
+
+## Minimum Setup
+
+For most local-judge tasks, keep this file split:
+
+- `sol.cpp`
+- `judge.py` or `judge.cpp`
+- optional `gen.cpp`
+- one saved transcript or seed when something fails
+
+This keeps the submission candidate clean while giving you one place to inspect protocol behavior.
 
 ## Interactive Baseline
 
@@ -91,6 +121,8 @@ for seed in $(seq 1 200); do
 done
 ```
 
+The first goal is not “run many seeds.” The first goal is “make one seed fully reproducible.”
+
 ## Transcript Discipline
 
 When debugging a local judge, keep one transcript per failure:
@@ -112,6 +144,13 @@ Interactive bugs are often not logic bugs, but process bugs:
 - using buffered output without flushing
 
 Make the harness enforce the query budget strictly.
+
+## Done When
+
+- the harness can reproduce one failure from a saved seed or transcript
+- the protocol roles are clearly separated
+- the solution no longer depends on accidental flushing
+- one rerun command is stable enough that you would trust it tomorrow
 
 ## Good Pairings
 

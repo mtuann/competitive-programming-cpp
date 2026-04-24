@@ -245,6 +245,18 @@
       "Sorting and searching"
     ]
   },
+  "WEIRDALGORITHM": {
+    "topic_tags": [],
+    "patterns": [
+      "simulation loop",
+      "parity branching",
+      "first local workflow"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
+    ]
+  },
   "DISTRIBUTINGAPPLES": {
     "topic_tags": [
       "math/modular-arithmetic"

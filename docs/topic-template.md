@@ -149,6 +149,13 @@ Minimum expectation for a mature deep topic page:
 - one `Practice`
 - the repo anchors that let the reader stay inside this repository
 
+Default sourcing rule for topic pages:
+
+- treat topic pages as `evergreen` unless they depend on unstable tooling, library behavior, or platform rules
+- even for evergreen topics, do a research sweep before calling the page `mature`
+- do not rely only on memory when writing proofs, formulas, derivations, or variant comparisons
+- if a topic page contains freshness-sensitive claims, record a snapshot or last-reviewed date in the surrounding maintainer docs
+
 Add an `Essay / Blog` only when it is genuinely high-signal. Do not add blogs just to pad the list.
 
 Priority rule:

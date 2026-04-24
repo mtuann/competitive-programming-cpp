@@ -290,6 +290,7 @@ nav:
   - References:
       - Source Map: docs/source-map.md
   - Contributing:
+      - Roadmap: docs/roadmap.md
       - Content Blueprint: docs/content-blueprint.md
       - Topic Template: docs/topic-template.md
       - Markdown Math Style: docs/authoring/markdown-math-style.md

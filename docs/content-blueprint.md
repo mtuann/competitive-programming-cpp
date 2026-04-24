@@ -60,6 +60,66 @@ For references, use this taxonomy consistently:
 - `Practice`: official platform/archive
 - `Repo anchors`: internal ladder, template, notebook, note
 
+## Cross-Cutting Sourcing And Freshness Contract
+
+Every serious content pass should start with a small research sweep, not only a writing pass.
+
+Use this two-way split for every page or content artifact:
+
+- `Evergreen`: the main ideas should stay stable for years, but the page still needs strong supporting sources
+- `Freshness-sensitive`: official docs, platform behavior, judge workflow, build/deploy details, or recommendations could change and must be rechecked
+
+### Evergreen Rule
+
+Examples:
+
+- most algorithm topic pages
+- proofs, derivations, and math-heavy explanations
+- reusable templates
+- most solved notes and ladders
+
+Requirements:
+
+- perform a research sweep before calling the page `mature`
+- prefer `Primary`, `Course`, and `Reference` sources for definitions, facts, and proofs
+- add `Essay / Blog` only when it materially improves intuition, derivation, or implementation judgment
+- do not assume the page can skip online research just because the topic is old
+
+### Freshness-Sensitive Rule
+
+Examples:
+
+- contest playbooks
+- toolchain guidance
+- compile / debug / sanitizer workflow notes
+- route pages that recommend external resources
+- docs about judges, libraries, platforms, or official curricula
+
+Requirements:
+
+- verify the relevant official or primary online sources during the pass
+- record a `snapshot` or `last reviewed` date in the governing maintainer doc or the page itself when the date matters
+- prefer official documentation and project-primary links over secondary summaries
+- if the page contains recommendations, commands, or tool behavior that might drift, treat online verification as mandatory
+
+### Layer-by-Layer Minimum
+
+- `topics/`: source-backed before a page becomes `mature`; math/proof topics should still be researched, not written from memory alone
+- `templates/`: every nontrivial template should be backed by at least one strong topic page or primary/reference source
+- `notebook/`: short pages can stay compact, but the underlying claims should trace back to a researched topic page or workflow source
+- `practice/`: ladders and notes should use researched topic understanding plus official problem/judge links where relevant
+- `docs/`: route pages, playbooks, and maintainer docs should be the strictest about freshness when they recommend current external resources or workflows
+
+### Default Rule For Future Passes
+
+Before expanding any content family, do this in order:
+
+1. identify whether the pass is `evergreen` or `freshness-sensitive`
+2. gather the minimum online sources first
+3. write the page in repo voice
+4. store the evidence in the page or in a maintainer-facing companion doc
+5. only then call the content complete
+
 ## Build Order
 
 Use `stages` as the progression language across the repo. This file is the maintainer-facing build plan, not a second public taxonomy.

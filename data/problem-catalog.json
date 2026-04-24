@@ -753,6 +753,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/missingnumber.cpp"
   },
   {
+    "code": "WEIRDALGORITHM",
+    "title": "Weird Algorithm",
+    "full_title": "Weird Algorithm",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1068",
+    "main_topic": "Foundations -> C++ Language",
+    "secondary_topics": [
+      "Basic loops",
+      "Parity branching",
+      "Output discipline"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/cpp-language",
+    "topic_tags": [
+      "foundations/cpp-language"
+    ],
+    "patterns": [
+      "simulation loop",
+      "parity branching",
+      "first local workflow"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
+    ],
+    "note_path": "practice/ladders/foundations/cpp-language/weirdalgorithm.md",
+    "ladder_path": "practice/ladders/foundations/cpp-language/README.md",
+    "tutorial_path": "topics/foundations/cpp-language/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/weirdalgorithm.cpp"
+  },
+  {
     "code": "RANGEUPDATEQUERIES",
     "title": "Range Update Queries",
     "full_title": "Range Update Queries",

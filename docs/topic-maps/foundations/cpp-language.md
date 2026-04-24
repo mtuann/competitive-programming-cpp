@@ -5,7 +5,7 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 - Topic slug: `foundations/cpp-language`
 - Tutorial page: [Open tutorial](../../../topics/foundations/cpp-language/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/cpp-language/README.md)
-- Repo problems currently tagged here: `2`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `3`
 - Curated external problems: `6`
 
@@ -72,6 +72,7 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 | --- | --- | --- | --- | --- | --- | --- |
 | `DISTINCTNUMBERS` | Distinct Numbers | `secondary` | `easy` | sort unique; container deduplication; stl algorithms | [Note](../../../practice/ladders/foundations/stl/distinctnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp) |
 | `MISSINGNUMBER` | Missing Number | `primary` | `easy` | running total subtraction; arithmetic series sum; type safe warm-up | [Note](../../../practice/ladders/foundations/cpp-language/missingnumber.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/missingnumber.cpp) |
+| `WEIRDALGORITHM` | Weird Algorithm | `primary` | `easy` | simulation loop; parity branching; first local workflow | [Note](../../../practice/ladders/foundations/cpp-language/weirdalgorithm.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/weirdalgorithm.cpp) |
 
 ## Regeneration
 

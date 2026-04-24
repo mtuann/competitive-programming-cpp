@@ -56,24 +56,30 @@ Those three are enough to build a real local loop:
 - debug by meaning and invariant
 - solve at least one standard static-query problem cleanly
 
+If Day 1 still feels shaky, keep these open beside the first page:
+
+- [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
+- [Local judge workflow](../notebook/local-judge-workflow.md)
+- [Stress testing workflow](../notebook/stress-testing-workflow.md)
+
 ## First 3 Repo Notes
 
 Solve these in order:
 
-1. [Missing Number](../practice/ladders/foundations/cpp-language/missingnumber.md)
-2. [Increasing Array](../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
-3. [Static Range Sum Queries](../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+1. [Weird Algorithm](../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
+2. [Missing Number](../practice/ladders/foundations/cpp-language/missingnumber.md)
+3. [Increasing Array](../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
 
 Optional next two if you still feel good:
 
-4. [Ferris Wheel](../practice/ladders/foundations/sorting/ferriswheel.md)
-5. [Apartments](../practice/ladders/foundations/two-pointers/apartments.md)
+4. [Static Range Sum Queries](../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+5. [Ferris Wheel](../practice/ladders/foundations/sorting/ferriswheel.md)
 
 ## Your First Week
 
 If you want a concrete seven-day rhythm:
 
-1. Day 1: read [C++ Language](../topics/foundations/cpp-language/README.md) and run one tiny file locally
+1. Day 1: read [C++ Language](../topics/foundations/cpp-language/README.md), open [contest-main.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/contest-main.cpp), compile it once with the release build, rerun it once with the debug build, optionally glance at [fast-io.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/fast-io.cpp), then solve [Weird Algorithm](../practice/ladders/foundations/cpp-language/weirdalgorithm.md)
 2. Day 2: solve [Missing Number](../practice/ladders/foundations/cpp-language/missingnumber.md) and [Distinct Numbers](../practice/ladders/foundations/stl/distinctnumbers.md)
 3. Day 3: read [Reasoning](../topics/foundations/reasoning/README.md) and solve [Increasing Array](../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
 4. Day 4: read [Sorting](../topics/foundations/patterns/sorting/README.md) and solve [Ferris Wheel](../practice/ladders/foundations/sorting/ferriswheel.md)
@@ -93,6 +99,19 @@ You only need to be able to:
 - solve a few clean CSES-style tasks without guessing
 
 That is already a strong start.
+
+## Which Workflow To Use Right Now
+
+Use the smallest workflow that matches the task:
+
+- ordinary batch problem with saved sample:
+  stay with the compile/run/diff loop from [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
+- samples pass, but the optimized solution still feels untrustworthy:
+  move to [Stress testing workflow](../notebook/stress-testing-workflow.md)
+- interactive task, validator-heavy task, or many-valid-answers task:
+  move to [Local judge workflow](../notebook/local-judge-workflow.md)
+
+Do not escalate too early. Most beginner problems should stay in the first bucket.
 
 ## After This Page
 

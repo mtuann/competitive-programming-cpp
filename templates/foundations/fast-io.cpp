@@ -1,5 +1,6 @@
 // Template: fast I/O
 // Use when input is large but the problem still fits standard C++ streams.
+// After disabling sync, avoid casually mixing iostreams with scanf / printf.
 
 #include <iostream>
 

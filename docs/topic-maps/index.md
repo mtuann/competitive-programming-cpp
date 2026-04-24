@@ -6,7 +6,7 @@ These pages collect trusted learning sources, official practice sources, repo co
 | --- | ---: | ---: | ---: | --- |
 | Foundations -> Binary Search | 1 | 0 | 6 | [Open](foundations/binary-search.md) |
 | Foundations -> Complexity And Invariants | 3 | 1 | 8 | [Open](foundations/complexity-and-invariants.md) |
-| Foundations -> C++ Language | 2 | 3 | 6 | [Open](foundations/cpp-language.md) |
+| Foundations -> C++ Language | 3 | 3 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 1 | 0 | 5 | [Open](foundations/difference-arrays.md) |
 | Foundations -> Prefix Sums | 3 | 3 | 6 | [Open](foundations/prefix-sums.md) |
 | Foundations -> Sorting | 5 | 0 | 7 | [Open](foundations/sorting.md) |

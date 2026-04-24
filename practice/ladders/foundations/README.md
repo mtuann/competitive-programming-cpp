@@ -48,11 +48,12 @@ Why this order works:
 If you want the smallest workable beginner route inside this repo, do just this:
 
 1. read [C++ language](cpp-language/README.md)
-2. solve [Missing Number](cpp-language/missingnumber.md)
+2. solve [Weird Algorithm](cpp-language/weirdalgorithm.md)
 3. read [Complexity and invariants](complexity-and-invariants/README.md)
-4. solve [Increasing Array](complexity-and-invariants/increasingarray.md)
-5. read [Prefix sums](prefix-sums/README.md)
-6. solve [Static Range Sum Queries](prefix-sums/staticrangesumqueries.md)
+4. solve [Missing Number](cpp-language/missingnumber.md)
+5. solve [Increasing Array](complexity-and-invariants/increasingarray.md)
+6. read [Prefix sums](prefix-sums/README.md)
+7. solve [Static Range Sum Queries](prefix-sums/staticrangesumqueries.md)
 
 That is enough to build a real local loop before harder patterns.
 
@@ -60,6 +61,7 @@ That is enough to build a real local loop before harder patterns.
 
 If you want the first internal notes to open in this section, start with:
 
+- [Weird Algorithm](cpp-language/weirdalgorithm.md)
 - [Missing Number](cpp-language/missingnumber.md)
 - [Distinct Numbers](stl/distinctnumbers.md)
 - [Increasing Array](complexity-and-invariants/increasingarray.md)

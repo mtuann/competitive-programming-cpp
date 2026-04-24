@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `73`
+- Total tracked problem notes: `74`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -13,7 +13,7 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Area | Count |
 | --- | ---: |
-| Foundations | 10 |
+| Foundations | 11 |
 | Data Structures | 6 |
 | Graphs | 16 |
 | DP | 7 |
@@ -33,6 +33,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `FACTORYMACHINES` | Factory Machines | `Foundations -> Binary Search` | Foundations -> Complexity And Invariants | answer binary search; monotone feasibility; production rate accumulation | `medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/binary-search.md) / [Ladder](../practice/ladders/foundations/binary-search/README.md) / [Tutorial](../topics/foundations/patterns/binary-search/README.md) | [Note](../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
 | `INCREASINGARRAY` | Increasing Array | `Foundations -> Complexity And Invariants` | - | loop invariant scan; greedy repair; running maximum maintenance | `easy` | CSES, Introductory problems | [Map](topic-maps/foundations/complexity-and-invariants.md) / [Ladder](../practice/ladders/foundations/complexity-and-invariants/README.md) / [Tutorial](../topics/foundations/reasoning/README.md) | [Note](../practice/ladders/foundations/complexity-and-invariants/increasingarray.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/complexity-and-invariants/increasingarray.cpp) |
 | `MISSINGNUMBER` | Missing Number | `Foundations -> C++ Language` | - | running total subtraction; arithmetic series sum; type safe warm-up | `easy` | CSES, Introductory problems | [Map](topic-maps/foundations/cpp-language.md) / [Ladder](../practice/ladders/foundations/cpp-language/README.md) / [Tutorial](../topics/foundations/cpp-language/README.md) | [Note](../practice/ladders/foundations/cpp-language/missingnumber.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/missingnumber.cpp) |
+| `WEIRDALGORITHM` | Weird Algorithm | `Foundations -> C++ Language` | - | simulation loop; parity branching; first local workflow | `easy` | CSES, Introductory problems | [Map](topic-maps/foundations/cpp-language.md) / [Ladder](../practice/ladders/foundations/cpp-language/README.md) / [Tutorial](../topics/foundations/cpp-language/README.md) | [Note](../practice/ladders/foundations/cpp-language/weirdalgorithm.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/weirdalgorithm.cpp) |
 | `RANGEUPDATEQUERIES` | Range Update Queries | `Foundations -> Difference Arrays` | Data Structures -> Fenwick Tree | difference array updates; fenwick on diff; range add point query | `medium` | CSES, Range queries | [Map](topic-maps/foundations/difference-arrays.md) / [Ladder](../practice/ladders/foundations/difference-arrays/README.md) / [Tutorial](../topics/foundations/patterns/difference-arrays/README.md) | [Note](../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp) |
 | `STATICRANGESUMQUERIES` | Static Range Sum Queries | `Foundations -> Prefix Sums` | - | prefix sum build; range sum by subtraction; immutable array queries | `easy` | CSES, Range queries | [Map](topic-maps/foundations/prefix-sums.md) / [Ladder](../practice/ladders/foundations/prefix-sums/README.md) / [Tutorial](../topics/foundations/patterns/prefix-sums/README.md) | [Note](../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp) |
 | `FERRISWHEEL` | Ferris Wheel | `Foundations -> Sorting` | Foundations -> Two Pointers | opposite end pointers; greedy pairing; sorted capacity matching | `easy-medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/sorting.md) / [Ladder](../practice/ladders/foundations/sorting/README.md) / [Tutorial](../topics/foundations/patterns/sorting/README.md) | [Note](../practice/ladders/foundations/sorting/ferriswheel.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/ferriswheel.cpp) |

@@ -75,5 +75,6 @@ The curriculum is grounded in public official sources current through `April 22,
 - Research appendix: [docs/source-map.md](docs/source-map.md)
 - Maintainer plan: [docs/content-blueprint.md](docs/content-blueprint.md)
 - Topic-page contract: [docs/topic-template.md](docs/topic-template.md)
+- Roadmap and backlog: [docs/roadmap.md](docs/roadmap.md)
 
 This repo is still growing from scaffold to full curriculum, so the highest-value work is not adding more philosophy pages. It is writing stronger topic pages, cleaner templates, and better practice ladders.
