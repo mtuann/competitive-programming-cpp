@@ -73,6 +73,8 @@ After this section, you should be comfortable with:
 
 ## Solved Examples In This Repo
 
+- [Polygon Area](../../practice/ladders/geometry/polygon-area-point-location/polygonarea.md): shoelace accumulation around a closed polygon with exact integer output
+- [Point in Polygon](../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md): boundary-aware ray casting for inside, outside, and on-edge queries
 - [PRAVO - Tam giác vuông](../../practice/ladders/geometry/right-triangles/pravo.md): normalized directions and right-triangle counting
 - [KINGDOMS - Các vương quốc lồng nhau](../../practice/ladders/geometry/sweep-line/kingdoms.md): sweep-line ordering for nested polygons
 

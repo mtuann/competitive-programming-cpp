@@ -3,7 +3,6 @@
 - Title: `Chất lượng dịch vụ`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/QOS/](https://vn.spoj.com/problems/QOS/)
-- Main topic: `Graphs -> Shortest Paths`
 - Secondary topics: `Reverse Dijkstra`, `DP with slack`, `K-th lexicographic path`
 - Difficulty: `hard`
 - Subtype: `K-th lexicographic path under a near-shortest bound`

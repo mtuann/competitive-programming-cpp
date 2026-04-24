@@ -3,7 +3,6 @@
 - Title: `Book Shop`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1158](https://cses.fi/problemset/task/1158)
-- Main topic: `DP -> Knapsack Family`
 - Secondary topics: `0/1 knapsack`, `Downward capacity loop`, `Budget maximization`
 - Difficulty: `easy`
 - Subtype: `Choose books once each to maximize pages within a budget`

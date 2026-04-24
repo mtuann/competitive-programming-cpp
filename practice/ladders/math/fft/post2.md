@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/POST2/](https://vn.spoj.com/problems/POST2/)
 - Mirror URL: [https://oj.vnoi.info/problem/post2](https://oj.vnoi.info/problem/post2)
-- Main topic: `Math -> FFT`
 - Secondary topics: `Polynomial convolution`, `Frequency counting`
 - Difficulty: `medium`
 - Subtype: `Count triples with A_i + B_j = C_k`

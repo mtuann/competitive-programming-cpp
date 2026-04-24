@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/CRYPTKEY/](https://vn.spoj.com/problems/CRYPTKEY/)
 - Mirror URL: [https://oj.vnoi.info/problem/cryptkey](https://oj.vnoi.info/problem/cryptkey)
-- Main topic: `Math -> GCD / LCM`
 - Secondary topics: `Prime factorization`, `Closure under operations`, `Necessary and sufficient condition`
 - Difficulty: `hard`
 - Subtype: `Membership in a gcd/lcm-generated set`

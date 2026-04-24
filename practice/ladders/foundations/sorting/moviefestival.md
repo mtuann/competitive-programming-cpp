@@ -3,7 +3,6 @@
 - Title: `Movie Festival`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1629](https://cses.fi/problemset/task/1629)
-- Main topic: `Foundations -> Sorting`
 - Secondary topics: `Interval scheduling`, `Finish-time ordering`, `Exchange argument`
 - Difficulty: `easy`
 - Subtype: `Pick the maximum number of non-overlapping intervals`

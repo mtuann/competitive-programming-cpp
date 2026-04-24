@@ -3,7 +3,6 @@
 - Title: `Static Range Minimum Queries`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1647](https://cses.fi/problemset/task/1647)
-- Main topic: `Data Structures -> Sparse Table`
 - Secondary topics: `Idempotent queries`, `Overlapping blocks`, `Log-table preprocessing`
 - Difficulty: `easy`
 - Subtype: `Answer many minimum queries on an immutable array`

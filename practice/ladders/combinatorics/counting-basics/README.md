@@ -17,6 +17,7 @@ Use this ladder when you can already manipulate formulas, but you want to get be
 
 ## Example Notes
 
+- [Distributing Apples](distributingapples.md)
 - [VOSFENCE](../bounded-compositions/vosfence.md)
 
 ## Exit Criteria

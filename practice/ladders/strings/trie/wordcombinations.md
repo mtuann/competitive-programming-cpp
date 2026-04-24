@@ -3,7 +3,6 @@
 - Title: `Word Combinations`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1731](https://cses.fi/problemset/task/1731)
-- Main topic: `Strings -> Trie`
 - Secondary topics: `DP on suffixes`, `Dictionary segmentation`, `Duplicate words`
 - Difficulty: `medium`
 - Subtype: `Count how many dictionary segmentations form the target string`

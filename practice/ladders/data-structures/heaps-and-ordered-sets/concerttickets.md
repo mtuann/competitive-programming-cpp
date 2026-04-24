@@ -3,7 +3,6 @@
 - Title: `Concert Tickets`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1091](https://cses.fi/problemset/task/1091)
-- Main topic: `Data Structures -> Heaps And Ordered Sets`
 - Secondary topics: `Multiset predecessor`, `Erase one occurrence`, `Greedy matching`
 - Difficulty: `medium`
 - Subtype: `For each buyer, sell the most expensive remaining ticket within budget`

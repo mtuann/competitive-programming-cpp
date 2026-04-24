@@ -6,6 +6,8 @@ This repo is meant to be more than a template dump and more than a solutions arc
 
 Project site: [mtuann.github.io/competitive-programming-cpp](https://mtuann.github.io/competitive-programming-cpp/)
 
+If you want one guided first door instead of browsing sections, start with [Start Here](docs/start-here.md).
+
 ## Start Here
 
 | If you are... | Start with | Goal |

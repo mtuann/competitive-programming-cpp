@@ -5,7 +5,7 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 - Topic slug: `graphs/bfs-dfs`
 - Tutorial page: [Open tutorial](../../../topics/graphs/bfs-dfs/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/bfs-dfs/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
 - Curated external problems: `7`
 
@@ -82,6 +82,7 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `COUNTINGROOMS` | Counting Rooms | `secondary` | `easy` | grid graph modeling; iterative flood fill; connected components | [Note](../../../practice/ladders/graphs/graph-modeling/countingrooms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/countingrooms.cpp) |
 | `MESSAGEROUTE` | Message Route | `primary` | `easy` | breadth-first search; unweighted shortest path; parent reconstruction | [Note](../../../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 
 ## Regeneration

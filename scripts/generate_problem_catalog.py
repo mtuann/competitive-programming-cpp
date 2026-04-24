@@ -917,9 +917,11 @@ def collect_note_records(topic_resources: dict[str, dict], issues: list[str]) ->
         "Title",
         "Judge / source",
         "Original URL",
-        "Main topic",
         "Difficulty",
         "Status",
+    ]
+    deprecated_fields = [
+        "Main topic",
     ]
 
     records: list[dict[str, str]] = []
@@ -939,6 +941,12 @@ def collect_note_records(topic_resources: dict[str, dict], issues: list[str]) ->
         for field in required_fields:
             if not clean_value(meta.get(field, "")):
                 append_issue(issues, f"{path_label!r} is missing required metadata field {field!r}.")
+        for field in deprecated_fields:
+            if clean_value(meta.get(field, "")):
+                append_issue(
+                    issues,
+                    f"{path_label!r} uses deprecated metadata field {field!r}; derive the canonical topic label from the ladder path instead.",
+                )
 
         primary_slug = primary_slug_from_note(note_rel)
         validate_slug_reference(f"{path_label} primary slug", primary_slug, topic_resources, issues)
@@ -1362,7 +1370,7 @@ def build_problem_rows() -> list[dict]:
                 "full_title": meta.get("Title", f"{code} - {short_title}"),
                 "judge": clean_value(meta.get("Judge / source", "")),
                 "judge_url": extract_url(meta.get("Original URL", "")),
-                "main_topic": clean_value(meta.get("Main topic", "")),
+                "main_topic": display_label_for_slug(primary_slug, topic_resources),
                 "secondary_topics": secondary_topics,
                 "difficulty": clean_value(meta.get("Difficulty", "")),
                 "status": clean_value(meta.get("Status", "")),

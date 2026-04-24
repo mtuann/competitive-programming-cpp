@@ -3,7 +3,6 @@
 - Title: `Ferris Wheel`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1090](https://cses.fi/problemset/task/1090)
-- Main topic: `Foundations -> Sorting`
 - Secondary topics: `Opposite-end two pointers`, `Greedy pairing`, `Lightest-heaviest matching`
 - Difficulty: `easy-medium`
 - Subtype: `Minimize the number of gondolas when each gondola can carry at most two children`

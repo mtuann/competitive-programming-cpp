@@ -3,7 +3,6 @@
 - Title: `PATHQUERIES2 - Path Queries II`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2134](https://cses.fi/problemset/task/2134)
-- Main topic: `Graphs -> Heavy-Light Decomposition`
 - Secondary topics: `Segment tree`, `Path maximum queries`, `Point updates`
 - Difficulty: `medium`
 - Subtype: `Node updates and maximum queries on arbitrary tree paths`

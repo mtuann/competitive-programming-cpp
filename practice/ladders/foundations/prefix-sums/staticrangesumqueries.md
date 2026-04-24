@@ -3,7 +3,6 @@
 - Title: `Static Range Sum Queries`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1646](https://cses.fi/problemset/task/1646)
-- Main topic: `Foundations -> Prefix Sums`
 - Secondary topics: `1D prefix sum`, `Range subtraction`, `Immutable array`
 - Difficulty: `easy`
 - Subtype: `Answer many range-sum queries on an array that never changes`

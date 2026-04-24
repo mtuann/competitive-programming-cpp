@@ -3,7 +3,6 @@
 - Title: `Point Location Test`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2189](https://cses.fi/problemset/task/2189)
-- Main topic: `Geometry -> Vector Orientation`
 - Secondary topics: `Cross product sign`, `Directed line side test`, `Integer geometry`
 - Difficulty: `easy`
 - Subtype: `Classify a point as LEFT / RIGHT / TOUCH relative to a directed segment`

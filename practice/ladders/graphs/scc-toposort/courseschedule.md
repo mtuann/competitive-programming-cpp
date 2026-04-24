@@ -3,7 +3,6 @@
 - Title: `Course Schedule`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1679](https://cses.fi/problemset/task/1679)
-- Main topic: `Graphs -> Topological Sort And SCC`
 - Secondary topics: `Kahn topological sort`, `Indegree counting`, `Directed cycle detection`
 - Difficulty: `medium`
 - Subtype: `Find a topological order or prove a directed cycle exists`

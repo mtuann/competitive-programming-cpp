@@ -81,6 +81,9 @@ extra:
 
 nav:
   - Home: index.md
+  - Start Here:
+      - Guided Start: docs/start-here.md
+      - Project Overview: project-readme.md
   - Learn:
       - Overview: topics/README.md
       - Foundations:
@@ -272,8 +275,6 @@ nav:
           - String Cheatsheet: notebook/string-cheatsheet.md
           - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
           - Contest Checklist: notebook/contest-checklist.md
-  - Start Here:
-      - Project Overview: project-readme.md
   - References:
       - Source Map: docs/source-map.md
   - Contributing:

@@ -5,7 +5,7 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 - Topic slug: `graphs/graph-modeling`
 - Tutorial page: [Open tutorial](../../../topics/graphs/graph-modeling/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/graph-modeling/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `2`
 - Curated external problems: `9`
 
@@ -91,6 +91,8 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `BUILDINGROADS` | Building Roads | `primary` | `easy` | connected components; component representatives; constructive graph connection | [Note](../../../practice/ladders/graphs/graph-modeling/buildingroads.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/buildingroads.cpp) |
+| `COUNTINGROOMS` | Counting Rooms | `primary` | `easy` | grid graph modeling; iterative flood fill; connected components | [Note](../../../practice/ladders/graphs/graph-modeling/countingrooms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/countingrooms.cpp) |
 | `MESSAGEROUTE` | Message Route | `secondary` | `easy` | breadth-first search; unweighted shortest path; parent reconstruction | [Note](../../../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 
 ## Regeneration

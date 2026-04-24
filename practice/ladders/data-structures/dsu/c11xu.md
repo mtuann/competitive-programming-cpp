@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/C11XU/](https://vn.spoj.com/problems/C11XU/)
 - Mirror URL: [https://oj.vnoi.info/problem/c11xu](https://oj.vnoi.info/problem/c11xu)
-- Main topic: `Data Structures -> DSU`
 - Secondary topics: `Graphic matroid`, `Forest independence`, `Augmenting path`
 - Difficulty: `hard`
 - Subtype: `Choose at most one envelope per pair-group so the chosen envelope-edges stay acyclic`

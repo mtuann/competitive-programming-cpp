@@ -3,7 +3,6 @@
 - Title: `Message Route`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1667](https://cses.fi/problemset/task/1667)
-- Main topic: `Graphs -> BFS And DFS`
 - Secondary topics: `Unweighted shortest path`, `Parent reconstruction`, `Layered BFS`
 - Difficulty: `easy`
 - Subtype: `Recover one shortest path in an unweighted undirected graph`

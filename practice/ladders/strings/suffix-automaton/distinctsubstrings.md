@@ -3,7 +3,6 @@
 - Title: `Distinct Substrings`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2105](https://cses.fi/problemset/task/2105)
-- Main topic: `Strings -> Suffix Automaton`
 - Secondary topics: `State length intervals`, `Suffix links`, `Online construction`
 - Difficulty: `medium`
 - Subtype: `Count the number of distinct substrings of one string`

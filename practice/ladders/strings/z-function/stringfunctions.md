@@ -3,7 +3,6 @@
 - Title: `String Functions`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2107](https://cses.fi/problemset/task/2107)
-- Main topic: `Strings -> Z-Function`
 - Secondary topics: `Prefix function`, `Borders`, `Prefix structure diagnostics`
 - Difficulty: `easy`
 - Subtype: `Compute both the Z array and the prefix-function of one string`

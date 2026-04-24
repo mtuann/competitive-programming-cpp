@@ -3,7 +3,6 @@
 - Title: `Tam giác vuông`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/PRAVO/](https://vn.spoj.com/problems/PRAVO/)
-- Main topic: `Geometry -> Right Triangles`
 - Secondary topics: `Normalized direction vectors`, `Sorting`, `Perpendicular directions`
 - Difficulty: `medium`
 - Subtype: `Counting right triangles`

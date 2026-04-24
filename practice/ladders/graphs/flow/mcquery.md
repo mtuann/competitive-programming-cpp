@@ -5,7 +5,6 @@
 - Original URL: [https://vn.spoj.com/problems/MCQUERY/](https://vn.spoj.com/problems/MCQUERY/)
 - Mirror URL: [https://oj.vnoi.info/problem/mcquery](https://oj.vnoi.info/problem/mcquery)
 - Source contest: `Code Craft 09`
-- Main topic: `Graphs -> Flow`
 - Secondary topics: `Gomory-Hu tree`, `DSU`, `All-pairs min-cut`
 - Difficulty: `hard`
 - Subtype: `Count unordered pairs with minCut(s, t) <= x`

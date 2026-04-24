@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VMWTREE/](https://vn.spoj.com/problems/VMWTREE/)
 - Mirror URL: [https://oj.vnoi.info/problem/vmwtree](https://oj.vnoi.info/problem/vmwtree)
-- Main topic: `Graphs -> Trees`
 - Secondary topics: `Heavy-light decomposition`, `Implicit treap`, `Path sequence updates`
 - Difficulty: `hard`
 - Subtype: `Query min/max on a path and reverse the whole path-value sequence`

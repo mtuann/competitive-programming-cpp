@@ -3,7 +3,6 @@
 - Title: `Road Reparation`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1675](https://cses.fi/problemset/task/1675)
-- Main topic: `Graphs -> Minimum Spanning Tree`
 - Secondary topics: `Kruskal`, `DSU`, `Connectivity check`
 - Difficulty: `medium`
 - Subtype: `Minimum spanning tree cost in an undirected weighted graph`

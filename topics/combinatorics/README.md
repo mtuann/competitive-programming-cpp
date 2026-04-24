@@ -48,6 +48,13 @@ Combinatorics is the counting layer of the repo. It is where “how many?” pro
 
 After this section, you should be able to recognize common counting patterns, break them into structured choices, and attach the right formula or DP.
 
+## Solved Examples In This Repo
+
+- [Distributing Apples](../../practice/ladders/combinatorics/counting-basics/distributingapples.md): stars and bars turned into one modular binomial coefficient
+- [Prime Multiples](../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md): direct subset inclusion-exclusion with safe product guards
+- [VOSFENCE - Xay hang rao](../../practice/ladders/combinatorics/bounded-compositions/vosfence.md): constrained run decomposition and bounded distributions
+- [VOITSORT - Sắp xếp đổi chỗ](../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md): ranking and unranking flavored constructive counting
+
 ## Go Deeper
 
 - Reference: [CP-Algorithms](https://cp-algorithms.com/)

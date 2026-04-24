@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VMSCALE/](https://vn.spoj.com/problems/VMSCALE/)
 - Mirror URL: [https://oj.vnoi.info/problem/vmscale](https://oj.vnoi.info/problem/vmscale)
-- Main topic: `DP -> Foundations`
 - Secondary topics: `Decision tree`, `Balanced ternary`, `Minimax DP`
 - Difficulty: `hard`
 - Subtype: `Minimum worst-case total weighing cost on an integer interval`

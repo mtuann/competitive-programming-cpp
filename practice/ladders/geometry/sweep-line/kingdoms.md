@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/ranks/KINGDOMS/](https://vn.spoj.com/ranks/KINGDOMS/)
 - Mirror URL: [https://oj.vnoi.info/problem/kingdoms](https://oj.vnoi.info/problem/kingdoms)
-- Main topic: `Geometry -> Sweep Line`
 - Secondary topics: `Nested convex polygons`, `Laminar intervals`, `Point location`
 - Difficulty: `hard`
 - Subtype: `Find the deepest convex polygon containing each query point`

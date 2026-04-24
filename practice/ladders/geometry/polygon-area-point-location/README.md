@@ -22,6 +22,8 @@ Use this ladder when you are comfortable with vectors and orientation and want t
 
 ## Example Notes
 
+- [Polygon Area](polygonarea.md)
+- [Point in Polygon](pointinpolygon.md)
 - [TFIELD](../../dp/sliding-window/tfield.md)
 
 ## Exit Criteria

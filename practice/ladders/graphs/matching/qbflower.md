@@ -3,7 +3,6 @@
 - Title: `Tặng hoa`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/QBFLOWER/](https://vn.spoj.com/problems/QBFLOWER/)
-- Main topic: `Graphs -> Matching`
 - Secondary topics: `Minimum edge cover`, `Edmonds blossom`
 - Difficulty: `medium`
 - Subtype: `General graph matching`

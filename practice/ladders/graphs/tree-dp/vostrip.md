@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VOSTRIP/](https://vn.spoj.com/problems/VOSTRIP/)
 - Mirror URL: [https://oj.vnoi.info/problem/vostrip](https://oj.vnoi.info/problem/vostrip)
-- Main topic: `Graphs -> Tree DP`
 - Secondary topics: `Path decomposition`, `Degree pairing`, `Counting endpoints`
 - Difficulty: `hard`
 - Subtype: `Minimum number of simple paths that realize edge-usage counts on a tree`

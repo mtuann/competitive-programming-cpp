@@ -18,6 +18,10 @@ Use this ladder when you can already do direct constructive counting, but overla
 
 - combine with bitmask DP or number theory
 
+## Example Notes
+
+- [Prime Multiples](primemultiples.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

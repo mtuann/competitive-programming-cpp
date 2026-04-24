@@ -3,7 +3,6 @@
 - Title: `Sum of Two Values`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1640](https://cses.fi/problemset/task/1640)
-- Main topic: `Foundations -> Two Pointers`
 - Secondary topics: `Sort and scan`, `Original index recovery`, `Opposite-end pointers`
 - Difficulty: `medium`
 - Subtype: `Find two distinct positions whose values sum to a target`

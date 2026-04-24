@@ -3,7 +3,6 @@
 - Title: `Ruộng bậc thang`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/TFIELD/](https://vn.spoj.com/problems/TFIELD/)
-- Main topic: `DP -> Sliding Window`
 - Secondary topics: `Polygon area`, `Sorting nested polygons`, `Two pointers`
 - Difficulty: `hard`
 - Subtype: `Maximum weighted monochromatic contiguous segment`

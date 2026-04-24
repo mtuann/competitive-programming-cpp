@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/FFLOW/](https://vn.spoj.com/problems/FFLOW/)
 - Mirror / English URL: [https://vn.spoj.com/problems/FFLOW/en/](https://vn.spoj.com/problems/FFLOW/en/)
-- Main topic: `Graphs -> Flow`
 - Secondary topics: `Dinic`, `Undirected capacity graph`
 - Difficulty: `medium`
 - Subtype: `Maximum flow / minimum cut`

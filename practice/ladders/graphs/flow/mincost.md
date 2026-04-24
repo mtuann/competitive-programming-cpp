@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/MINCOST/](https://vn.spoj.com/problems/MINCOST/)
 - Mirror URL: [https://oj.vnoi.info/problem/mincost](https://oj.vnoi.info/problem/mincost)
-- Main topic: `Graphs -> Flow`
 - Secondary topics: `Min-cost max-flow`, `Shortest augmenting path`, `Flow reconstruction`
 - Difficulty: `hard`
 - Subtype: `Send exactly k units with minimum transportation cost`

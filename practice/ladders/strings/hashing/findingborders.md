@@ -3,7 +3,6 @@
 - Title: `Finding Borders`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1732](https://cses.fi/problemset/task/1732)
-- Main topic: `Strings -> Hashing`
 - Secondary topics: `Prefix-suffix equality`, `Proper borders`, `Collision awareness`
 - Difficulty: `easy`
 - Subtype: `List every proper border of one string`

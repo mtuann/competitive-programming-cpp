@@ -3,7 +3,6 @@
 - Title: `Chia phần`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/VODIVIDE/](https://vn.spoj.com/problems/VODIVIDE/)
-- Main topic: `Greedy -> Prefix Constraints`
 - Secondary topics: `Sorting`, `Laminar constraints`, `Pair reconstruction`
 - Difficulty: `hard`
 - Subtype: `Maximum reward perfect pairing under ordered dominance`

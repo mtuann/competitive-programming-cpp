@@ -16,6 +16,10 @@ Use this ladder when divisibility, gcd/lcm, and prime factors show up often enou
 - many factorizations
 - exponent-of-prime reasoning
 
+## Repo Anchors
+
+- [Counting Divisors](countingdivisors.md)
+
 ## Stretch
 
 - gcd/lcm construction problems

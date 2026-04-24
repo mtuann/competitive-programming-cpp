@@ -5,7 +5,7 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 - Topic slug: `geometry/vector-orientation`
 - Tutorial page: [Open tutorial](../../../topics/geometry/vector-orientation/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/vector-orientation/README.md)
-- Repo problems currently tagged here: `5`
+- Repo problems currently tagged here: `7`
 - Repo companion pages: `2`
 - Curated external problems: `5`
 
@@ -59,7 +59,9 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 | --- | --- | --- | --- | --- | --- | --- |
 | `CONVEXHULL` | Convex Hull | `secondary` | `medium` | andrew monotone chain; strict turn pop; boundary collinear points | [Note](../../../practice/ladders/geometry/convex-hull/convexhull.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp) |
 | `LINESEGMENTINTERSECTION` | Line Segment Intersection | `secondary` | `easy` | orientation test; on segment inclusion; collinear overlap handling | [Note](../../../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
+| `POINTINPOLYGON` | Point in Polygon | `secondary` | `medium` | ray casting parity; boundary classification; on segment test | [Note](../../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/pointinpolygon.cpp) |
 | `POINTLOCATIONTEST` | Point Location Test | `primary` | `easy` | cross product orientation; signed area test; turn classification | [Note](../../../practice/ladders/geometry/vector-orientation/pointlocationtest.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/vector-orientation/pointlocationtest.cpp) |
+| `POLYGONAREA` | Polygon Area | `secondary` | `easy` | shoelace formula; signed area accumulation; integer polygon area | [Note](../../../practice/ladders/geometry/polygon-area-point-location/polygonarea.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/polygonarea.cpp) |
 | `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 | `VMCOINS` | Trò chơi với những đồng xu | `secondary` | `hard` | promise-driven constructive; translation matching; small residual search | [Note](../../../practice/ladders/advanced/constructive/vmcoins.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp) |
 

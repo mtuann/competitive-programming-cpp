@@ -3,7 +3,6 @@
 - Title: `Convex Hull`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2195](https://cses.fi/problemset/task/2195)
-- Main topic: `Geometry -> Convex Hull`
 - Secondary topics: `Andrew monotone chain`, `Orientation test`, `Boundary collinear points`
 - Difficulty: `medium`
 - Subtype: `Construct the convex hull and print every point on its boundary`

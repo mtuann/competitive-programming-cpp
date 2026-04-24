@@ -3,7 +3,6 @@
 - Title: `Line Segment Intersection`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2190](https://cses.fi/problemset/task/2190)
-- Main topic: `Geometry -> Segment Intersection`
 - Secondary topics: `Orientation test`, `On-segment check`, `Collinear overlap`
 - Difficulty: `easy`
 - Subtype: `Decide whether two closed line segments intersect or touch`

@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VMCOINS/](https://vn.spoj.com/problems/VMCOINS/)
 - Mirror URL: [https://oj.vnoi.info/problem/vmcoins](https://oj.vnoi.info/problem/vmcoins)
-- Main topic: `Advanced -> Constructive`
 - Secondary topics: `Promise-driven search`, `Translation matching`, `State BFS`
 - Difficulty: `hard`
 - Subtype: `Find an N-2 common core under some translation, then BFS the two free coins around that core`

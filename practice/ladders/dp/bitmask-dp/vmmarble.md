@@ -3,7 +3,6 @@
 - Title: `VMMARBLE - Phân loại bi`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/VMMARBLE/](https://vn.spoj.com/problems/VMMARBLE/)
-- Main topic: `DP -> Bitmask DP`
 - Secondary topics: `Assignment`, `Lower bound equals construction`, `Keeper-box selection`
 - Difficulty: `medium`
 - Subtype: `Choose one kept color per box so every present color has at least one keeper`

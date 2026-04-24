@@ -3,7 +3,6 @@
 - Title: `Range Update Queries`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1651](https://cses.fi/problemset/task/1651)
-- Main topic: `Foundations -> Difference Arrays`
 - Secondary topics: `Dynamic difference array`, `Fenwick tree`, `Range-add point-query`
 - Difficulty: `medium`
 - Subtype: `Support range additions and point-value queries on an initial array`

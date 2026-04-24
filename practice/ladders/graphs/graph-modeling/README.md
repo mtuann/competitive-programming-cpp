@@ -47,6 +47,11 @@ You are ready to move on when:
 - you can spot when the true graph is a state graph
 - you no longer add details to the model that the algorithm never uses
 
+## Repo Anchors
+
+- [Counting Rooms](countingrooms.md)
+- [Building Roads](buildingroads.md)
+
 ## External Practice
 
 - [ICPC Curriculum](https://curriculum.u.icpc.global/curriculum/)

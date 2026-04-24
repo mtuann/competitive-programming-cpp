@@ -3,7 +3,6 @@
 - Title: `Cây hoán vị`
 - Judge / source: `VN SPOJ`
 - Original URL: [https://vn.spoj.com/problems/VOITSORT/](https://vn.spoj.com/problems/VOITSORT/)
-- Main topic: `Combinatorics -> Lexicographic Enumeration`
 - Secondary topics: `Cartesian tree`, `Stack-sortable permutations`, `Next permutation`
 - Difficulty: `hard`
 - Subtype: `Count stack-sortable permutations in a short lexicographic interval`

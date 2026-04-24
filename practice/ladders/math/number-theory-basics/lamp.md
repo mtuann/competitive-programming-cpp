@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/LAMP/](https://vn.spoj.com/problems/LAMP/)
 - Mirror URL: [https://oj.vnoi.info/problem/lamp](https://oj.vnoi.info/problem/lamp)
-- Main topic: `Math -> Number Theory Basics`
 - Secondary topics: `Asymptotic density`, `Pairwise coprime numbers`, `Exact big fractions`
 - Difficulty: `hard`
 - Subtype: `Final color density after many overwrite operations on multiples`

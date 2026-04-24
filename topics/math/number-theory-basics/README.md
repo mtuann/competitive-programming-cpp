@@ -119,6 +119,11 @@ Example 3: [CRYPTKEY](../../../practice/ladders/math/gcd-lcm/cryptkey.md)
 
 - [Number theory basics ladder](../../../practice/ladders/math/number-theory-basics/README.md)
 
+## Repo Anchors
+
+- [Counting Divisors](../../../practice/ladders/math/number-theory-basics/countingdivisors.md): divisor-count precomputation by a direct divisor sieve.
+- [LAMP](../../../practice/ladders/math/number-theory-basics/lamp.md): a much heavier number-theory counting example once the basics feel stable.
+
 ## Go Deeper
 
 - Course notes: [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf)

@@ -8,7 +8,7 @@
     contests, and implementation habits that hold up in real competition.
   </p>
   <div class="hero-actions">
-    <a class="md-button md-button--primary" href="topics/">Start with the topic map</a>
+    <a class="md-button md-button--primary" href="docs/start-here/">Start Here</a>
     <a class="md-button" href="docs/problem-finder/">Open Problem Finder</a>
     <a class="md-button" href="practice/">Browse practice ladders</a>
   </div>
@@ -23,6 +23,12 @@
 ## Choose Your Route
 
 <div class="grid cards" markdown>
+
+-   __New here? Start here__
+
+    Use one guided entry page instead of guessing between topics, indexes, ladders, and build-kit pages.
+
+    [Open Start Here](docs/start-here.md)
 
 -   __Learn the core curriculum__
 
@@ -102,6 +108,7 @@
 
 ## Featured Doors Into The Repo
 
+- [Start Here](docs/start-here.md) for one guided route through the first useful pages and problems
 - [Foundations](topics/foundations/README.md) for asymptotics, STL workflow, binary search, and proof basics
 - [Problem Finder](docs/problem-finder.md) for the fastest filtered view across repo notes and curated external practice
 - [Graphs](topics/graphs/README.md) for BFS, DFS, shortest paths, MST, flow, and matching

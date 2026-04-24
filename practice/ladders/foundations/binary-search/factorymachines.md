@@ -3,7 +3,6 @@
 - Title: `Factory Machines`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1620](https://cses.fi/problemset/task/1620)
-- Main topic: `Foundations -> Binary Search`
 - Secondary topics: `Answer binary search`, `Monotone feasibility`, `Saturating accumulation`
 - Difficulty: `medium`
 - Subtype: `Minimum time to reach a production target`

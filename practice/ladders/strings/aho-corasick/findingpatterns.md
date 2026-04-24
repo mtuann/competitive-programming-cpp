@@ -3,7 +3,6 @@
 - Title: `Finding Patterns`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2102](https://cses.fi/problemset/task/2102)
-- Main topic: `Strings -> Aho-Corasick`
 - Secondary topics: `Trie automaton`, `Failure links`, `Failure-tree propagation`
 - Difficulty: `medium`
 - Subtype: `Answer whether each pattern appears at least once in one text`

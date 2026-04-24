@@ -3,7 +3,6 @@
 - Title: `String Matching`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1753](https://cses.fi/problemset/task/1753)
-- Main topic: `Strings -> KMP`
 - Secondary topics: `Prefix function`, `Border fallback`, `Overlapping matches`
 - Difficulty: `easy`
 - Subtype: `Count all exact occurrences of one pattern in a text`

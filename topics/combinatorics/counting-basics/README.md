@@ -128,6 +128,10 @@ This formula is only correct after you verify the variables really are indisting
 
 - [Counting basics ladder](../../../practice/ladders/combinatorics/counting-basics/README.md)
 
+## Repo Anchors
+
+- [Distributing Apples](../../../practice/ladders/combinatorics/counting-basics/distributingapples.md): the standard stars-and-bars model with one modular binomial answer.
+
 ## Go Deeper
 
 - Course notes: [Stanford CS103 combinatorics notes](https://web.stanford.edu/class/archive/cs/cs103/cs103.1254/)

@@ -82,11 +82,14 @@ Required fields:
 - `Title`
 - `Judge / source`
 - `Original URL`
-- `Main topic`
 - `Secondary topics`
 - `Difficulty`
 - `Status`: `todo`, `attempted`, `solved`, `reviewed`
 - `Solution file`
+
+Derived fields:
+
+- `Main topic`: generated from the note path `practice/ladders/<area>/<subtopic>/...` and the canonical title in `data/topic-resources.json`
 
 Optional fields:
 

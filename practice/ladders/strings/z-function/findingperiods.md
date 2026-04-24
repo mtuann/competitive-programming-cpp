@@ -3,7 +3,6 @@
 - Title: `Finding Periods`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1733](https://cses.fi/problemset/task/1733)
-- Main topic: `Strings -> Z-Function`
 - Secondary topics: `String periodicity`, `Prefix alignment`, `Suffix covered by prefix`
 - Difficulty: `easy`
 - Subtype: `List every period length of one string`

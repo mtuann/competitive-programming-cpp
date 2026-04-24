@@ -29,6 +29,8 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 
 ## Representative Solved Notes
 
+- [Counting Rooms](graph-modeling/countingrooms.md)
+- [Building Roads](graph-modeling/buildingroads.md)
 - [QOS](shortest-paths/qos.md)
 - [FFLOW](flow/fflow.md)
 - [MINCOST](flow/mincost.md)

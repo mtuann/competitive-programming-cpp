@@ -26,5 +26,7 @@ Use these ladders when the main challenge is geometric modeling rather than raw 
 
 ## Representative Solved Notes
 
+- [Polygon Area](polygon-area-point-location/polygonarea.md)
+- [Point in Polygon](polygon-area-point-location/pointinpolygon.md)
 - [PRAVO](right-triangles/pravo.md)
 - [KINGDOMS](sweep-line/kingdoms.md)

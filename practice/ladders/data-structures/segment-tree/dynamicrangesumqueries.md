@@ -3,7 +3,6 @@
 - Title: `Dynamic Range Sum Queries`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1648](https://cses.fi/problemset/task/1648)
-- Main topic: `Data Structures -> Segment Tree`
 - Secondary topics: `Point update`, `Range sum`, `Iterative segment tree`
 - Difficulty: `medium`
 - Subtype: `Support point assignments and online range-sum queries`

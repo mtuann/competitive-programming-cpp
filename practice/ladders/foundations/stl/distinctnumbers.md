@@ -3,7 +3,6 @@
 - Title: `Distinct Numbers`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1621](https://cses.fi/problemset/task/1621)
-- Main topic: `Foundations -> STL Basics`
 - Secondary topics: `sort`, `unique`, `Container choice`
 - Difficulty: `easy`
 - Subtype: `Count how many different values appear in one array`

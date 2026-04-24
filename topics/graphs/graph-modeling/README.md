@@ -190,6 +190,11 @@ Suggested order:
 3. state graphs
 4. bipartite modeling
 
+## Repo Anchors
+
+- [Counting Rooms](../../../practice/ladders/graphs/graph-modeling/countingrooms.md): model a grid as an implicit graph and count connected floor components.
+- [Building Roads](../../../practice/ladders/graphs/graph-modeling/buildingroads.md): model cities and roads as an undirected graph, then connect component representatives constructively.
+
 ## Go Deeper
 
 - Course: [Stanford CS161](https://cs161-stanford.github.io)

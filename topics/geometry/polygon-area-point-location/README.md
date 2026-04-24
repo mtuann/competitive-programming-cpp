@@ -116,6 +116,11 @@ Area is often a cheap first key for nesting logic, but containment still needs a
 
 - [Polygon area and point-location ladder](../../../practice/ladders/geometry/polygon-area-point-location/README.md)
 
+## Repo Anchors
+
+- [Polygon Area](../../../practice/ladders/geometry/polygon-area-point-location/polygonarea.md): shoelace area with exact doubled-area output.
+- [Point in Polygon](../../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md): boundary-aware point classification with ray-crossing parity.
+
 ## Go Deeper
 
 - Practice: [TFIELD](../../../practice/ladders/dp/sliding-window/tfield.md)

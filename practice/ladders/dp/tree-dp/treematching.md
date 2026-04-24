@@ -3,7 +3,6 @@
 - Title: `Tree Matching`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1130](https://cses.fi/problemset/task/1130)
-- Main topic: `DP -> Tree DP`
 - Secondary topics: `Maximum matching on a tree`, `Rooted subtree states`, `Child contribution swap`
 - Difficulty: `medium`
 - Subtype: `Choose the largest set of pairwise disjoint tree edges`

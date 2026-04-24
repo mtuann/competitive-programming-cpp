@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VOSFENCE/](https://vn.spoj.com/problems/VOSFENCE/)
 - Mirror URL: [https://oj.vnoi.info/problem/vosfence](https://oj.vnoi.info/problem/vosfence)
-- Main topic: `Combinatorics -> Bounded Compositions`
 - Secondary topics: `Run counting`, `DP counting`, `Stars and bars with upper bounds`
 - Difficulty: `hard`
 - Subtype: `Count colorings with no K consecutive whites and exactly M blue-red adjacencies`

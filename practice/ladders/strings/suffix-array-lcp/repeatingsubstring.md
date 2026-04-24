@@ -3,7 +3,6 @@
 - Title: `Repeating Substring`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2106](https://cses.fi/problemset/task/2106)
-- Main topic: `Strings -> Suffix Array And LCP`
 - Secondary topics: `Doubling suffix array`, `Kasai LCP`, `Longest repeated substring`
 - Difficulty: `medium`
 - Subtype: `Find one longest substring that appears in at least two positions`

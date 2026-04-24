@@ -18,5 +18,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 
 ## Representative Solved Notes
 
+- [Exponentiation](modular-arithmetic/exponentiation.md)
+- [Counting Divisors](number-theory-basics/countingdivisors.md)
 - [CRYPTKEY](gcd-lcm/cryptkey.md)
 - [POST2](fft/post2.md)

@@ -5,7 +5,6 @@
 - Original URL: [https://vn.spoj.com/problems/MTREECOL/](https://vn.spoj.com/problems/MTREECOL/)
 - Mirror URL: [https://oj.vnoi.info/problem/mtreecol](https://oj.vnoi.info/problem/mtreecol)
 - Source contest: `Peking 2004`
-- Main topic: `Graphs -> Trees`
 - Secondary topics: `Greedy scheduling`, `Precedence constraints`, `Tree contraction`
 - Difficulty: `hard`
 - Subtype: `Minimum weighted completion time on a rooted tree precedence order`

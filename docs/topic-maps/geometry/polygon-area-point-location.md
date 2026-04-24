@@ -5,7 +5,7 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 - Topic slug: `geometry/polygon-area-point-location`
 - Tutorial page: [Open tutorial](../../../topics/geometry/polygon-area-point-location/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/polygon-area-point-location/README.md)
-- Repo problems currently tagged here: `3`
+- Repo problems currently tagged here: `5`
 - Repo companion pages: `2`
 - Curated external problems: `4`
 
@@ -57,6 +57,8 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `KINGDOMS` | KINGDOMS | `secondary` | `hard` | laminar regions; sweep events; containment tree | [Note](../../../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
+| `POINTINPOLYGON` | Point in Polygon | `primary` | `medium` | ray casting parity; boundary classification; on segment test | [Note](../../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/pointinpolygon.cpp) |
+| `POLYGONAREA` | Polygon Area | `primary` | `easy` | shoelace formula; signed area accumulation; integer polygon area | [Note](../../../practice/ladders/geometry/polygon-area-point-location/polygonarea.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/polygonarea.cpp) |
 | `TFIELD` | Ruộng bậc thang | `secondary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../../../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 | `VOTELPH` | Bà Nà | `secondary` | `hard` | piecewise maximum; endpoint preprocessing; parabola envelopes | [Note](../../../practice/ladders/geometry/sweep-line/votelph.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp) |
 

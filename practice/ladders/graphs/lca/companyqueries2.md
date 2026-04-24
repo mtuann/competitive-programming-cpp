@@ -3,7 +3,6 @@
 - Title: `COMPANYQUERIES2 - Company Queries II`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1688](https://cses.fi/problemset/task/1688)
-- Main topic: `Graphs -> LCA`
 - Secondary topics: `Binary lifting`, `Depth equalization`, `Tree path queries`
 - Difficulty: `medium`
 - Subtype: `Lowest common ancestor queries on a rooted tree`

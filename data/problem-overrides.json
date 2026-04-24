@@ -81,6 +81,20 @@
       "Dynamic programming"
     ]
   },
+  "COUNTINGROOMS": {
+    "topic_tags": [
+      "graphs/bfs-dfs"
+    ],
+    "patterns": [
+      "grid graph modeling",
+      "iterative flood fill",
+      "connected components"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ]
+  },
   "DISTINCTSUBSTRINGS": {
     "topic_tags": [
       "strings/suffix-array-lcp"
@@ -109,6 +123,18 @@
       "Dynamic programming"
     ]
   },
+  "BUILDINGROADS": {
+    "topic_tags": [],
+    "patterns": [
+      "connected components",
+      "component representatives",
+      "constructive graph connection"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ]
+  },
   "CONCERTTICKETS": {
     "topic_tags": [],
     "patterns": [
@@ -133,6 +159,20 @@
     "tracks": [
       "CSES",
       "Geometry"
+    ]
+  },
+  "COUNTINGDIVISORS": {
+    "topic_tags": [
+      "math/gcd-lcm"
+    ],
+    "patterns": [
+      "divisor sieve",
+      "many queries preprocessing",
+      "divisor counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
     ]
   },
   "DISTINCTVALUESQUERIES": {
@@ -161,6 +201,20 @@
     "tracks": [
       "CSES",
       "Sorting and searching"
+    ]
+  },
+  "DISTRIBUTINGAPPLES": {
+    "topic_tags": [
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "stars and bars",
+      "single binomial query",
+      "factorial precompute"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
     ]
   },
   "MISSINGNUMBER": {
@@ -223,6 +277,18 @@
       "binary exponentiation",
       "fermat exponent reduction",
       "zero exponent edge case"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ]
+  },
+  "EXPONENTIATION": {
+    "topic_tags": [],
+    "patterns": [
+      "binary exponentiation",
+      "repeated squaring",
+      "modular fast power"
     ],
     "tracks": [
       "CSES",
@@ -752,6 +818,49 @@
       "cross product orientation",
       "signed area test",
       "turn classification"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ]
+  },
+  "POINTINPOLYGON": {
+    "topic_tags": [
+      "geometry/vector-orientation",
+      "geometry/segment-intersection"
+    ],
+    "patterns": [
+      "ray casting parity",
+      "boundary classification",
+      "on segment test"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ]
+  },
+  "PRIMEMULTIPLES": {
+    "topic_tags": [
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "subset inclusion exclusion",
+      "overflow safe lcm product",
+      "count divisible numbers"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ]
+  },
+  "POLYGONAREA": {
+    "topic_tags": [
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "shoelace formula",
+      "signed area accumulation",
+      "integer polygon area"
     ],
     "tracks": [
       "CSES",

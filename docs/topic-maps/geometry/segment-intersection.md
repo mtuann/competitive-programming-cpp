@@ -5,7 +5,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 - Topic slug: `geometry/segment-intersection`
 - Tutorial page: [Open tutorial](../../../topics/geometry/segment-intersection/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/segment-intersection/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `2`
 - Curated external problems: `5`
 
@@ -63,6 +63,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `LINESEGMENTINTERSECTION` | Line Segment Intersection | `primary` | `easy` | orientation test; on segment inclusion; collinear overlap handling | [Note](../../../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
+| `POINTINPOLYGON` | Point in Polygon | `secondary` | `medium` | ray casting parity; boundary classification; on segment test | [Note](../../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/pointinpolygon.cpp) |
 
 ## Regeneration
 

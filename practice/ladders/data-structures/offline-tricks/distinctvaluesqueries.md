@@ -3,7 +3,6 @@
 - Title: `Distinct Values Queries`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1734](https://cses.fi/problemset/task/1734)
-- Main topic: `Data Structures -> Offline Tricks`
 - Secondary topics: `Offline sweep by right endpoint`, `Fenwick tree`, `Last occurrence`
 - Difficulty: `hard`
 - Subtype: `Count how many distinct values appear in many static subarrays`

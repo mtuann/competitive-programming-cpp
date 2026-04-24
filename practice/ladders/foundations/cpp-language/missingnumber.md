@@ -3,7 +3,6 @@
 - Title: `Missing Number`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1083](https://cses.fi/problemset/task/1083)
-- Main topic: `Foundations -> C++ Language`
 - Secondary topics: `Running total`, `long long discipline`, `Input fluency`
 - Difficulty: `easy`
 - Subtype: `Recover one missing value from the range 1..n`

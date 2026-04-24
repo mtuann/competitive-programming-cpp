@@ -3,7 +3,6 @@
 - Title: `Counting Numbers`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/2220](https://cses.fi/problemset/task/2220)
-- Main topic: `DP -> Digit DP`
 - Secondary topics: `Previous digit state`, `Leading zeros`, `Range counting`
 - Difficulty: `medium`
 - Subtype: `Count numbers in a range with no equal adjacent digits`

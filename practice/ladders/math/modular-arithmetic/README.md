@@ -28,6 +28,11 @@ Use this ladder when you already understand loops and arrays, but modular formul
 - extended Euclid / composite-mod inverse -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 - quick reminder sheet -> [Number theory cheatsheet](../../../../notebook/number-theory-cheatsheet.md)
 
+## Repo Anchors
+
+- [Exponentiation](exponentiation.md)
+- [Exponentiation II](exponentiation2.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

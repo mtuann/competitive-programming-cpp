@@ -67,6 +67,72 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp"
   },
   {
+    "code": "DISTRIBUTINGAPPLES",
+    "title": "Distributing Apples",
+    "full_title": "Distributing Apples",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1716",
+    "main_topic": "Combinatorics -> Counting Basics",
+    "secondary_topics": [
+      "Stars and bars",
+      "Binomial coefficients",
+      "Modular arithmetic"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "combinatorics/counting-basics",
+    "topic_tags": [
+      "combinatorics/counting-basics",
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "stars and bars",
+      "single binomial query",
+      "factorial precompute"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/combinatorics/counting-basics/distributingapples.md",
+    "ladder_path": "practice/ladders/combinatorics/counting-basics/README.md",
+    "tutorial_path": "topics/combinatorics/counting-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/counting-basics/distributingapples.cpp"
+  },
+  {
+    "code": "PRIMEMULTIPLES",
+    "title": "Prime Multiples",
+    "full_title": "Prime Multiples",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2185",
+    "main_topic": "Combinatorics -> Inclusion-Exclusion",
+    "secondary_topics": [
+      "Subset enumeration",
+      "LCM reasoning",
+      "Overflow guards"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "combinatorics/inclusion-exclusion",
+    "topic_tags": [
+      "combinatorics/inclusion-exclusion",
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "subset inclusion exclusion",
+      "overflow safe lcm product",
+      "count divisible numbers"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md",
+    "ladder_path": "practice/ladders/combinatorics/inclusion-exclusion/README.md",
+    "tutorial_path": "topics/combinatorics/inclusion-exclusion/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/inclusion-exclusion/primemultiples.cpp"
+  },
+  {
     "code": "VOITSORT",
     "title": "Cây hoán vị",
     "full_title": "Cây hoán vị",
@@ -463,7 +529,7 @@
     "full_title": "Ruộng bậc thang",
     "judge": "VN SPOJ",
     "judge_url": "https://vn.spoj.com/problems/TFIELD/",
-    "main_topic": "DP -> Sliding Window",
+    "main_topic": "DP -> Sliding Window And Window DP",
     "secondary_topics": [
       "Polygon area",
       "Sorting nested polygons",
@@ -885,6 +951,73 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp"
   },
   {
+    "code": "POINTINPOLYGON",
+    "title": "Point in Polygon",
+    "full_title": "Point in Polygon",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2192",
+    "main_topic": "Geometry -> Polygon Area And Point Location",
+    "secondary_topics": [
+      "Ray casting",
+      "Boundary handling",
+      "On-segment check"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "geometry/polygon-area-point-location",
+    "topic_tags": [
+      "geometry/polygon-area-point-location",
+      "geometry/vector-orientation",
+      "geometry/segment-intersection"
+    ],
+    "patterns": [
+      "ray casting parity",
+      "boundary classification",
+      "on segment test"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md",
+    "ladder_path": "practice/ladders/geometry/polygon-area-point-location/README.md",
+    "tutorial_path": "topics/geometry/polygon-area-point-location/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/pointinpolygon.cpp"
+  },
+  {
+    "code": "POLYGONAREA",
+    "title": "Polygon Area",
+    "full_title": "Polygon Area",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2191",
+    "main_topic": "Geometry -> Polygon Area And Point Location",
+    "secondary_topics": [
+      "Shoelace formula",
+      "Signed area",
+      "Cross product sum"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "geometry/polygon-area-point-location",
+    "topic_tags": [
+      "geometry/polygon-area-point-location",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "shoelace formula",
+      "signed area accumulation",
+      "integer polygon area"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/geometry/polygon-area-point-location/polygonarea.md",
+    "ladder_path": "practice/ladders/geometry/polygon-area-point-location/README.md",
+    "tutorial_path": "topics/geometry/polygon-area-point-location/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/polygon-area-point-location/polygonarea.cpp"
+  },
+  {
     "code": "PRAVO",
     "title": "Tam giác vuông",
     "full_title": "Tam giác vuông",
@@ -1025,7 +1158,7 @@
     "full_title": "Point Location Test",
     "judge": "CSES",
     "judge_url": "https://cses.fi/problemset/task/2189",
-    "main_topic": "Geometry -> Vector Orientation",
+    "main_topic": "Geometry -> Vector And Orientation",
     "secondary_topics": [
       "Cross product sign",
       "Directed line side test",
@@ -1090,7 +1223,7 @@
     "full_title": "Fast Maximum Flow",
     "judge": "VN SPOJ",
     "judge_url": "https://vn.spoj.com/problems/FFLOW/",
-    "main_topic": "Graphs -> Flow",
+    "main_topic": "Graphs -> Maximum Flow",
     "secondary_topics": [
       "Dinic",
       "Undirected capacity graph"
@@ -1122,7 +1255,7 @@
     "full_title": "MCQUERY - MinCut Query",
     "judge": "VN SPOJ / VNOI",
     "judge_url": "https://vn.spoj.com/problems/MCQUERY/",
-    "main_topic": "Graphs -> Flow",
+    "main_topic": "Graphs -> Maximum Flow",
     "secondary_topics": [
       "Gomory-Hu tree",
       "DSU",
@@ -1157,7 +1290,7 @@
     "full_title": "Luồng với chi phí nhỏ nhất",
     "judge": "VN SPOJ / VNOI",
     "judge_url": "https://vn.spoj.com/problems/MINCOST/",
-    "main_topic": "Graphs -> Flow",
+    "main_topic": "Graphs -> Maximum Flow",
     "secondary_topics": [
       "Min-cost max-flow",
       "Shortest augmenting path",
@@ -1183,6 +1316,71 @@
     "ladder_path": "practice/ladders/graphs/flow/README.md",
     "tutorial_path": "topics/graphs/flow/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp"
+  },
+  {
+    "code": "BUILDINGROADS",
+    "title": "Building Roads",
+    "full_title": "Building Roads",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1666",
+    "main_topic": "Graphs -> Graph Modeling",
+    "secondary_topics": [
+      "Connected components",
+      "Component representatives",
+      "Constructive output"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "graphs/graph-modeling",
+    "topic_tags": [
+      "graphs/graph-modeling"
+    ],
+    "patterns": [
+      "connected components",
+      "component representatives",
+      "constructive graph connection"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/graph-modeling/buildingroads.md",
+    "ladder_path": "practice/ladders/graphs/graph-modeling/README.md",
+    "tutorial_path": "topics/graphs/graph-modeling/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/buildingroads.cpp"
+  },
+  {
+    "code": "COUNTINGROOMS",
+    "title": "Counting Rooms",
+    "full_title": "Counting Rooms",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1192",
+    "main_topic": "Graphs -> Graph Modeling",
+    "secondary_topics": [
+      "Grid graph",
+      "Flood fill",
+      "Connected components"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "graphs/graph-modeling",
+    "topic_tags": [
+      "graphs/graph-modeling",
+      "graphs/bfs-dfs"
+    ],
+    "patterns": [
+      "grid graph modeling",
+      "iterative flood fill",
+      "connected components"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/graph-modeling/countingrooms.md",
+    "ladder_path": "practice/ladders/graphs/graph-modeling/README.md",
+    "tutorial_path": "topics/graphs/graph-modeling/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/countingrooms.cpp"
   },
   {
     "code": "PATHQUERIES2",
@@ -1517,7 +1715,7 @@
     "full_title": "A cộng B version 2",
     "judge": "VN SPOJ / VNOI",
     "judge_url": "https://vn.spoj.com/problems/POST2/",
-    "main_topic": "Math -> FFT",
+    "main_topic": "Math -> FFT And NTT",
     "secondary_topics": [
       "Polynomial convolution",
       "Frequency counting"
@@ -1548,7 +1746,7 @@
     "full_title": "Chìa khóa mã số",
     "judge": "VN SPOJ",
     "judge_url": "https://vn.spoj.com/problems/CRYPTKEY/",
-    "main_topic": "Math -> GCD / LCM",
+    "main_topic": "Math -> GCD And LCM",
     "secondary_topics": [
       "Prime factorization",
       "Closure under operations",
@@ -1574,6 +1772,38 @@
     "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp"
+  },
+  {
+    "code": "EXPONENTIATION",
+    "title": "Exponentiation",
+    "full_title": "Exponentiation",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1095",
+    "main_topic": "Math -> Modular Arithmetic",
+    "secondary_topics": [
+      "Binary exponentiation",
+      "Modulo arithmetic",
+      "Fast power"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "math/modular-arithmetic",
+    "topic_tags": [
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "binary exponentiation",
+      "repeated squaring",
+      "modular fast power"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/math/modular-arithmetic/exponentiation.md",
+    "ladder_path": "practice/ladders/math/modular-arithmetic/README.md",
+    "tutorial_path": "topics/math/modular-arithmetic/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation.cpp"
   },
   {
     "code": "EXPONENTIATION2",
@@ -1606,6 +1836,39 @@
     "ladder_path": "practice/ladders/math/modular-arithmetic/README.md",
     "tutorial_path": "topics/math/modular-arithmetic/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp"
+  },
+  {
+    "code": "COUNTINGDIVISORS",
+    "title": "Counting Divisors",
+    "full_title": "Counting Divisors",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1713",
+    "main_topic": "Math -> Number Theory Basics",
+    "secondary_topics": [
+      "Divisor counting",
+      "Sieve preprocessing",
+      "Prime exponents"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "math/number-theory-basics",
+    "topic_tags": [
+      "math/number-theory-basics",
+      "math/gcd-lcm"
+    ],
+    "patterns": [
+      "divisor sieve",
+      "many queries preprocessing",
+      "divisor counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/math/number-theory-basics/countingdivisors.md",
+    "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/countingdivisors.cpp"
   },
   {
     "code": "LAMP",

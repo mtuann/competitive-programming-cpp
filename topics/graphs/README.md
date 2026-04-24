@@ -58,6 +58,8 @@ After this section, you should be able to recognize the common graph models, cho
 
 ## Solved Examples In This Repo
 
+- [Counting Rooms](../../practice/ladders/graphs/graph-modeling/countingrooms.md): grid cells become vertices, and rooms become connected components
+- [Building Roads](../../practice/ladders/graphs/graph-modeling/buildingroads.md): component representatives turn a connectivity repair task into a clean constructive graph solution
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling

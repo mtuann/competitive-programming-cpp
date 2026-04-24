@@ -4,7 +4,6 @@
 - Judge / source: `VN SPOJ / VNOI`
 - Original URL: [https://vn.spoj.com/problems/VOTELPH/](https://vn.spoj.com/problems/VOTELPH/)
 - Mirror URL: [https://oj.vnoi.info/problem/votelph](https://oj.vnoi.info/problem/votelph)
-- Main topic: `Geometry -> Sweep Line`
 - Secondary topics: `Concave quadratics`, `Offline preprocessing`, `Range maximum query`
 - Difficulty: `hard`
 - Subtype: `Maximum mountain height over many interval queries`

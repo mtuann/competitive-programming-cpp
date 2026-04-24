@@ -3,7 +3,6 @@
 - Title: `Apartments`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1084](https://cses.fi/problemset/task/1084)
-- Main topic: `Foundations -> Two Pointers`
 - Secondary topics: `Greedy matching`, `Sorted scan`, `Tolerance window`
 - Difficulty: `easy-medium`
 - Subtype: `Match applicants to apartments within an allowed size difference`

@@ -159,6 +159,11 @@ Only do this when the inverse is valid.
 - [Math ladder overview](../../../practice/ladders/math/README.md)
 - [Modular arithmetic ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
 
+## Repo Anchors
+
+- [Exponentiation](../../../practice/ladders/math/modular-arithmetic/exponentiation.md): the standard repeated-squaring warm-up under one fixed modulus.
+- [Exponentiation II](../../../practice/ladders/math/modular-arithmetic/exponentiation2.md): exponent towers plus Fermat-style exponent reduction.
+
 ## Go Deeper
 
 - Course notes: [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf)

@@ -3,7 +3,6 @@
 - Title: `Increasing Array`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1094](https://cses.fi/problemset/task/1094)
-- Main topic: `Foundations -> Complexity And Invariants`
 - Secondary topics: `Loop invariant`, `Greedy repair`, `Running maximum`
 - Difficulty: `easy`
 - Subtype: `Minimum total increments to make an array nondecreasing`

@@ -3,7 +3,6 @@
 - Title: `Removal Game`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1097](https://cses.fi/problemset/task/1097)
-- Main topic: `DP -> Interval DP`
 - Secondary topics: `Score-difference DP`, `Take from ends game`, `Minimax`
 - Difficulty: `medium`
 - Subtype: `Optimal play on an interval where each move removes one end`

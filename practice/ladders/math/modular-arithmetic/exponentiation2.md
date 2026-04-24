@@ -3,7 +3,6 @@
 - Title: `Exponentiation II`
 - Judge / source: `CSES`
 - Original URL: [https://cses.fi/problemset/task/1712](https://cses.fi/problemset/task/1712)
-- Main topic: `Math -> Modular Arithmetic`
 - Secondary topics: `Binary exponentiation`, `Fermat reduction`, `Zero-exponent edge case`
 - Difficulty: `medium`
 - Subtype: `Compute a^(b^c) modulo a prime efficiently`

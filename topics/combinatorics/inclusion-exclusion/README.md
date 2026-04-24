@@ -115,6 +115,10 @@ Sometimes the subset intersection is not `O(1)` but can be precomputed or memoiz
 
 - [Inclusion-exclusion ladder](../../../practice/ladders/combinatorics/inclusion-exclusion/README.md)
 
+## Repo Anchors
+
+- [Prime Multiples](../../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md): the cleanest subset-enumeration inclusion-exclusion problem with overflow-safe lcm/product handling.
+
 ## Go Deeper
 
 - Course notes: [Princeton combinatorics notes](https://www.cs.princeton.edu/courses/archive/fall17/cos521/)
