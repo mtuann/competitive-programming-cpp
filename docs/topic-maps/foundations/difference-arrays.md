@@ -5,7 +5,7 @@ A range-update perspective on prefix sums: store changes at boundaries, then rec
 - Topic slug: `foundations/difference-arrays`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/difference-arrays/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/difference-arrays/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -51,7 +51,9 @@ A range-update perspective on prefix sums: store changes at boundaries, then rec
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `RANGEUPDATEQUERIES` | Range Update Queries | `primary` | `medium` | difference array updates; fenwick on diff; range add point query | [Note](../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp) |
 
 ## Regeneration
 

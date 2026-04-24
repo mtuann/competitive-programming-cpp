@@ -62,6 +62,7 @@ This is optimal for comparison-based hull construction.
 
 - CSES explicitly says to print **all points that lie on the convex hull**, so do not discard boundary-collinear points.
 - Keep the pop condition strict (`< 0`). If you use `<= 0`, you will keep only corner points and fail.
+- If all points are collinear, handle that case explicitly or deduplicate carefully, otherwise a monotone-chain implementation can print middle points twice.
 - Use integer geometry only. Coordinates go up to `1e9`, so cross products should use `__int128` for safe intermediate arithmetic.
 - The judge accepts the hull points in any order, but outputting them in boundary order is the cleanest and easiest way to avoid duplicates.
 

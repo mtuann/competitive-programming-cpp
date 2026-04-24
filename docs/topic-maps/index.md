@@ -7,13 +7,13 @@ These pages collect trusted learning sources, official practice sources, curated
 | Foundations -> Binary Search | 1 | 6 | [Open](foundations/binary-search.md) |
 | Foundations -> Complexity And Invariants | 0 | 8 | [Open](foundations/complexity-and-invariants.md) |
 | Foundations -> C++ Language | 0 | 6 | [Open](foundations/cpp-language.md) |
-| Foundations -> Difference Arrays | 0 | 5 | [Open](foundations/difference-arrays.md) |
+| Foundations -> Difference Arrays | 1 | 5 | [Open](foundations/difference-arrays.md) |
 | Foundations -> Prefix Sums | 1 | 6 | [Open](foundations/prefix-sums.md) |
 | Foundations -> Sorting | 1 | 7 | [Open](foundations/sorting.md) |
-| Foundations -> STL Basics | 0 | 8 | [Open](foundations/stl.md) |
+| Foundations -> STL Basics | 1 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 1 | 6 | [Open](foundations/two-pointers.md) |
 | Data Structures -> DSU | 2 | 5 | [Open](data-structures/dsu.md) |
-| Data Structures -> Fenwick Tree | 2 | 6 | [Open](data-structures/fenwick-tree.md) |
+| Data Structures -> Fenwick Tree | 3 | 6 | [Open](data-structures/fenwick-tree.md) |
 | Data Structures -> Heaps And Ordered Sets | 1 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Offline Tricks | 1 | 7 | [Open](data-structures/offline-tricks.md) |
 | Data Structures -> Segment Tree | 1 | 8 | [Open](data-structures/segment-tree.md) |
@@ -34,7 +34,7 @@ These pages collect trusted learning sources, official practice sources, curated
 | DP -> Bitmask DP | 1 | 11 | [Open](dp/bitmask-dp.md) |
 | DP -> Digit DP | 1 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 12 | [Open](dp/foundations.md) |
-| DP -> Interval DP | 0 | 12 | [Open](dp/interval-dp.md) |
+| DP -> Interval DP | 1 | 12 | [Open](dp/interval-dp.md) |
 | DP -> Knapsack Family | 1 | 15 | [Open](dp/knapsack-family.md) |
 | DP -> Sliding Window And Window DP | 1 | 16 | [Open](dp/sliding-window.md) |
 | DP -> Tree DP | 1 | 10 | [Open](dp/tree-dp.md) |
@@ -54,13 +54,13 @@ These pages collect trusted learning sources, official practice sources, curated
 | Strings -> Suffix Automaton | 0 | 8 | [Open](strings/suffix-automaton.md) |
 | Strings -> Trie | 2 | 5 | [Open](strings/trie.md) |
 | Strings -> Z-Function | 1 | 5 | [Open](strings/z-function.md) |
-| Geometry -> Convex Hull | 0 | 6 | [Open](geometry/convex-hull.md) |
+| Geometry -> Convex Hull | 1 | 6 | [Open](geometry/convex-hull.md) |
 | Geometry -> Counting Geometry | 1 | 6 | [Open](geometry/counting-geometry.md) |
 | Geometry -> Polygon Area And Point Location | 3 | 4 | [Open](geometry/polygon-area-point-location.md) |
 | Geometry -> Right Triangles | 1 | 5 | [Open](geometry/right-triangles.md) |
 | Geometry -> Segment Intersection | 1 | 5 | [Open](geometry/segment-intersection.md) |
 | Geometry -> Sweep Line | 2 | 6 | [Open](geometry/sweep-line.md) |
-| Geometry -> Vector And Orientation | 3 | 5 | [Open](geometry/vector-orientation.md) |
+| Geometry -> Vector And Orientation | 4 | 5 | [Open](geometry/vector-orientation.md) |
 | Advanced -> Algorithm Engineering | 0 | 8 | [Open](advanced/algorithm-engineering.md) |
 | Advanced -> Approximation And Relaxation | 0 | 5 | [Open](advanced/approximation-and-relaxation.md) |
 | Advanced -> Complexity And Hardness | 0 | 5 | [Open](advanced/complexity-and-hardness.md) |

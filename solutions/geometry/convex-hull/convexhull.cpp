@@ -40,6 +40,17 @@ vector<Point> convex_hull_with_boundary(vector<Point> points) {
         return points;
     }
 
+    bool all_collinear = true;
+    for (int i = 2; i < static_cast<int>(points.size()); ++i) {
+        if (cross(points[0], points[1], points[i]) != 0) {
+            all_collinear = false;
+            break;
+        }
+    }
+    if (all_collinear) {
+        return points;
+    }
+
     vector<Point> lower;
     for (const Point& p : points) {
         while (lower.size() >= 2 &&

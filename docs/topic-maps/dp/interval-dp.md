@@ -5,7 +5,7 @@ Reason over contiguous ranges and split points when the optimal structure is bui
 - Topic slug: `dp/interval-dp`
 - Tutorial page: [Open tutorial](../../../topics/dp/interval-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/interval-dp/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `12`
 
 ## Microtopics
@@ -103,7 +103,9 @@ Reason over contiguous ranges and split points when the optimal structure is bui
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `REMOVALGAME` | Removal Game | `primary` | `medium` | score difference dp; take from ends; interval minimax | [Note](../../../practice/ladders/dp/interval-dp/removalgame.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/interval-dp/removalgame.cpp) |
 
 ## Regeneration
 

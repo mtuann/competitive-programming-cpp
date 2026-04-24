@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `42`
+- Total tracked problem notes: `46`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - External companion index: [external-problem-index.md](external-problem-index.md)
 - Topic maps: [topic-maps/index.md](topic-maps/index.md)
@@ -12,15 +12,15 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Area | Count |
 | --- | ---: |
-| Foundations | 2 |
+| Foundations | 4 |
 | Data Structures | 5 |
 | Graphs | 12 |
-| DP | 5 |
+| DP | 6 |
 | Greedy | 1 |
 | Math | 4 |
 | Combinatorics | 2 |
 | Strings | 6 |
-| Geometry | 4 |
+| Geometry | 5 |
 | Advanced | 1 |
 
 ## Current Catalog
@@ -30,7 +30,9 @@ This page lists every current solved problem note in the repo and maps it back t
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `FACTORYMACHINES` | Factory Machines | `Foundations -> Binary Search` | - | answer binary search; monotone feasibility; production rate accumulation | `medium` | CSES, Sorting and searching | [Map](topic-maps/foundations/binary-search.md) / [Ladder](../practice/ladders/foundations/binary-search/README.md) / [Tutorial](../topics/foundations/patterns/binary-search/README.md) | [Note](../practice/ladders/foundations/binary-search/factorymachines.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp) |
+| `RANGEUPDATEQUERIES` | Range Update Queries | `Foundations -> Difference Arrays` | Data Structures -> Fenwick Tree | difference array updates; fenwick on diff; range add point query | `medium` | CSES, Range queries | [Map](topic-maps/foundations/difference-arrays.md) / [Ladder](../practice/ladders/foundations/difference-arrays/README.md) / [Tutorial](../topics/foundations/patterns/difference-arrays/README.md) | [Note](../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp) |
 | `MOVIEFESTIVAL` | Movie Festival | `Foundations -> Sorting` | - | finish-time sorting; interval scheduling; exchange argument greedy | `easy` | CSES, Sorting and searching | [Map](topic-maps/foundations/sorting.md) / [Ladder](../practice/ladders/foundations/sorting/README.md) / [Tutorial](../topics/foundations/patterns/sorting/README.md) | [Note](../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
+| `DISTINCTNUMBERS` | Distinct Numbers | `Foundations -> STL Basics` | - | sort unique; container deduplication; stl algorithms | `easy` | CSES, Sorting and searching | [Map](topic-maps/foundations/stl.md) / [Ladder](../practice/ladders/foundations/stl/README.md) / [Tutorial](../topics/foundations/cpp-language/README.md) | [Note](../practice/ladders/foundations/stl/distinctnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp) |
 
 ### Data Structures
 
@@ -66,6 +68,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `VMMARBLE` | Phân loại bi | `DP -> Bitmask DP` | Advanced -> Constructive | final-color assignment; residual-state dp; capacity-2 moves | `medium` | VN SPOJ, OI-style | [Map](topic-maps/dp/bitmask-dp.md) / [Ladder](../practice/ladders/dp/bitmask-dp/README.md) / [Tutorial](../topics/dp/bitmask-dp/README.md) | [Note](../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
 | `COUNTINGNUMBERS` | Counting Numbers | `DP -> Digit DP` | - | digit dp; previous digit state; range counting | `medium` | CSES, Dynamic programming | [Map](topic-maps/dp/digit-dp.md) / [Ladder](../practice/ladders/dp/digit-dp/README.md) / [Tutorial](../topics/dp/digit-dp/README.md) | [Note](../practice/ladders/dp/digit-dp/countingnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp) |
 | `VMSCALE` | Chiếc cân kỳ diệu | `DP -> Foundations` | Math -> Number Theory Basics | budget dp; balanced ternary; decision-tree optimization | `hard` | VN SPOJ, OI-style | [Map](topic-maps/dp/foundations.md) / [Ladder](../practice/ladders/dp/foundations/README.md) / [Tutorial](../topics/dp/foundations/README.md) | [Note](../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |
+| `REMOVALGAME` | Removal Game | `DP -> Interval DP` | - | score difference dp; take from ends; interval minimax | `medium` | CSES, Dynamic programming | [Map](topic-maps/dp/interval-dp.md) / [Ladder](../practice/ladders/dp/interval-dp/README.md) / [Tutorial](../topics/dp/interval-dp/README.md) | [Note](../practice/ladders/dp/interval-dp/removalgame.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/interval-dp/removalgame.cpp) |
 | `BOOKSHOP` | Book Shop | `DP -> Knapsack Family` | - | 0 1 knapsack; downward capacity loop; budget value maximization | `easy` | CSES, Dynamic programming | [Map](topic-maps/dp/knapsack-family.md) / [Ladder](../practice/ladders/dp/knapsack-family/README.md) / [Tutorial](../topics/dp/knapsack-family/README.md) | [Note](../practice/ladders/dp/knapsack-family/bookshop.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp) |
 | `TFIELD` | Ruộng bậc thang | `DP -> Sliding Window And Window DP` | Foundations -> Two Pointers; Geometry -> Polygon Area And Point Location | nested polygons; weighted sliding window; shoelace preprocessing | `hard` | VN SPOJ, OI-style | [Map](topic-maps/dp/sliding-window.md) / [Ladder](../practice/ladders/dp/sliding-window/README.md) / [Tutorial](../topics/foundations/patterns/two-pointers/README.md) | [Note](../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 
@@ -106,6 +109,7 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `CONVEXHULL` | Convex Hull | `Geometry -> Convex Hull` | Geometry -> Vector And Orientation | andrew monotone chain; strict turn pop; boundary collinear points | `medium` | CSES, Geometry | [Map](topic-maps/geometry/convex-hull.md) / [Ladder](../practice/ladders/geometry/convex-hull/README.md) / [Tutorial](../topics/geometry/convex-hull/README.md) | [Note](../practice/ladders/geometry/convex-hull/convexhull.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp) |
 | `PRAVO` | Tam giác vuông | `Geometry -> Right Triangles` | Geometry -> Counting Geometry; Geometry -> Vector And Orientation | count right triangles; normalized directions; perpendicular pairing | `medium` | VN SPOJ, OI-style | [Map](topic-maps/geometry/right-triangles.md) / [Ladder](../practice/ladders/geometry/right-triangles/README.md) / [Tutorial](../topics/geometry/counting-geometry/README.md) | [Note](../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 | `LINESEGMENTINTERSECTION` | Line Segment Intersection | `Geometry -> Segment Intersection` | Geometry -> Vector And Orientation | orientation test; on segment inclusion; collinear overlap handling | `easy` | CSES, Geometry | [Map](topic-maps/geometry/segment-intersection.md) / [Ladder](../practice/ladders/geometry/segment-intersection/README.md) / [Tutorial](../topics/geometry/segment-intersection/README.md) | [Note](../practice/ladders/geometry/segment-intersection/linesegmentintersection.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp) |
 | `KINGDOMS` | KINGDOMS | `Geometry -> Sweep Line` | Graphs -> Trees; Geometry -> Polygon Area And Point Location | laminar regions; sweep events; containment tree | `hard` | VN SPOJ, OI-style | [Map](topic-maps/geometry/sweep-line.md) / [Ladder](../practice/ladders/geometry/sweep-line/README.md) / [Tutorial](../topics/geometry/sweep-line/README.md) | [Note](../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |

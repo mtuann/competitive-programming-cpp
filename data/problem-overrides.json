@@ -103,6 +103,20 @@
       "Sorting and searching"
     ]
   },
+  "CONVEXHULL": {
+    "topic_tags": [
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "andrew monotone chain",
+      "strict turn pop",
+      "boundary collinear points"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ]
+  },
   "DISTINCTVALUESQUERIES": {
     "topic_tags": [
       "data-structures/fenwick-tree"
@@ -115,6 +129,18 @@
     "tracks": [
       "CSES",
       "Range queries"
+    ]
+  },
+  "DISTINCTNUMBERS": {
+    "topic_tags": [],
+    "patterns": [
+      "sort unique",
+      "container deduplication",
+      "stl algorithms"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
     ]
   },
   "FACTORYMACHINES": {
@@ -342,6 +368,32 @@
     "tracks": [
       "VN SPOJ",
       "OI-style"
+    ]
+  },
+  "RANGEUPDATEQUERIES": {
+    "topic_tags": [
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "difference array updates",
+      "fenwick on diff",
+      "range add point query"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ]
+  },
+  "REMOVALGAME": {
+    "topic_tags": [],
+    "patterns": [
+      "score difference dp",
+      "take from ends",
+      "interval minimax"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
     ]
   },
   "ROADREPARATION": {

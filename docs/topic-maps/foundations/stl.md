@@ -5,7 +5,7 @@ Container and algorithm fluency: build the habit of reaching for `vector`, `set`
 - Topic slug: `foundations/stl`
 - Tutorial page: [Open tutorial](../../../topics/foundations/cpp-language/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/stl/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -66,7 +66,9 @@ Container and algorithm fluency: build the habit of reaching for `vector`, `set`
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `DISTINCTNUMBERS` | Distinct Numbers | `primary` | `easy` | sort unique; container deduplication; stl algorithms | [Note](../../../practice/ladders/foundations/stl/distinctnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp) |
 
 ## Regeneration
 

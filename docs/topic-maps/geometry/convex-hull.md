@@ -5,7 +5,7 @@ Build hulls with monotone chain or Graham scan, then exploit hull order for rota
 - Topic slug: `geometry/convex-hull`
 - Tutorial page: [Open tutorial](../../../topics/geometry/convex-hull/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/convex-hull/README.md)
-- Repo problems currently tagged here: `0`
+- Repo problems currently tagged here: `1`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -53,7 +53,9 @@ Build hulls with monotone chain or Graham scan, then exploit hull order for rota
 
 ## Repo Problems
 
-_No repo note has been tagged to this topic yet._
+| Code | Title | Fit | Difficulty | Pattern | Note | Solution |
+| --- | --- | --- | --- | --- | --- | --- |
+| `CONVEXHULL` | Convex Hull | `primary` | `medium` | andrew monotone chain; strict turn pop; boundary collinear points | [Note](../../../practice/ladders/geometry/convex-hull/convexhull.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp) |
 
 ## Regeneration
 

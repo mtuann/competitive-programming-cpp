@@ -361,6 +361,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp"
   },
   {
+    "code": "REMOVALGAME",
+    "title": "Removal Game",
+    "full_title": "Removal Game",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1097",
+    "main_topic": "DP -> Interval DP",
+    "secondary_topics": [
+      "Score-difference DP",
+      "Take from ends game",
+      "Minimax"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/interval-dp",
+    "topic_tags": [
+      "dp/interval-dp"
+    ],
+    "patterns": [
+      "score difference dp",
+      "take from ends",
+      "interval minimax"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ],
+    "note_path": "practice/ladders/dp/interval-dp/removalgame.md",
+    "ladder_path": "practice/ladders/dp/interval-dp/README.md",
+    "tutorial_path": "topics/dp/interval-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/interval-dp/removalgame.cpp"
+  },
+  {
     "code": "BOOKSHOP",
     "title": "Book Shop",
     "full_title": "Book Shop",
@@ -459,6 +491,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp"
   },
   {
+    "code": "RANGEUPDATEQUERIES",
+    "title": "Range Update Queries",
+    "full_title": "Range Update Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1651",
+    "main_topic": "Foundations -> Difference Arrays",
+    "secondary_topics": [
+      "Dynamic difference array",
+      "Fenwick tree",
+      "Range-add point-query"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "foundations/difference-arrays",
+    "topic_tags": [
+      "foundations/difference-arrays",
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "difference array updates",
+      "fenwick on diff",
+      "range add point query"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/foundations/difference-arrays/rangeupdatequeries.md",
+    "ladder_path": "practice/ladders/foundations/difference-arrays/README.md",
+    "tutorial_path": "topics/foundations/patterns/difference-arrays/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp"
+  },
+  {
     "code": "MOVIEFESTIVAL",
     "title": "Movie Festival",
     "full_title": "Movie Festival",
@@ -489,6 +554,71 @@
     "ladder_path": "practice/ladders/foundations/sorting/README.md",
     "tutorial_path": "topics/foundations/patterns/sorting/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp"
+  },
+  {
+    "code": "DISTINCTNUMBERS",
+    "title": "Distinct Numbers",
+    "full_title": "Distinct Numbers",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1621",
+    "main_topic": "Foundations -> STL Basics",
+    "secondary_topics": [
+      "sort",
+      "unique",
+      "Container choice"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/stl",
+    "topic_tags": [
+      "foundations/stl"
+    ],
+    "patterns": [
+      "sort unique",
+      "container deduplication",
+      "stl algorithms"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/stl/distinctnumbers.md",
+    "ladder_path": "practice/ladders/foundations/stl/README.md",
+    "tutorial_path": "topics/foundations/cpp-language/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp"
+  },
+  {
+    "code": "CONVEXHULL",
+    "title": "Convex Hull",
+    "full_title": "Convex Hull",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2195",
+    "main_topic": "Geometry -> Convex Hull",
+    "secondary_topics": [
+      "Andrew monotone chain",
+      "Orientation test",
+      "Boundary collinear points"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "geometry/convex-hull",
+    "topic_tags": [
+      "geometry/convex-hull",
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "andrew monotone chain",
+      "strict turn pop",
+      "boundary collinear points"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/geometry/convex-hull/convexhull.md",
+    "ladder_path": "practice/ladders/geometry/convex-hull/README.md",
+    "tutorial_path": "topics/geometry/convex-hull/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp"
   },
   {
     "code": "PRAVO",
