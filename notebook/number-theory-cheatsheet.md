@@ -2,6 +2,12 @@
 
 Use this page when divisibility, residues, or algebraic constraints appear and you want the smallest reliable helper.
 
+## Do Not Use When
+
+- the core task is counting structure rather than arithmetic structure
+- the problem is really implementation-heavy modular DP rather than number theory
+- you have not yet separated “integer fact” from “mod prime computation”
+
 ## Core Tools
 
 - `gcd(a, b)`
@@ -26,6 +32,12 @@ gcd: take the smaller exponent
 lcm: take the larger exponent
 ```
 
+## Core Invariants
+
+- modular division is only legal when an inverse exists
+- prime-factor views turn gcd and lcm into exponentwise min/max
+- repeated-power problems usually reduce to fast exponentiation before anything fancier
+
 ## Typical Signals
 
 - divisibility
@@ -39,3 +51,12 @@ lcm: take the larger exponent
 - modular power / tower reasoning -> [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
 - gcd / divisibility -> [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md)
 - broader workflow -> [Modular Arithmetic topic](../topics/math/modular-arithmetic/README.md)
+
+## Main Trap
+
+The most common wrong turn is treating “mod arithmetic” as if every denominator were invertible, or treating `lcm(a, b)` as safe without thinking about overflow in `a / gcd(a, b) * b`.
+
+## Reopen Paths
+
+- topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md)
+- template layer -> [Template library](../template-library.md)

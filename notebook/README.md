@@ -11,6 +11,39 @@ Use it for:
 
 It should stay denser and shorter than `topics/`.
 
+## Contract
+
+This layer answers one question:
+
+```text
+I already mostly know the area. What is the shortest route back to the right invariant, trap, and reusable snippet?
+```
+
+Every mature cheatsheet should bias toward:
+
+- `Use when`
+- `Do not use when`
+- `Choose by signal`
+- one or two core invariants
+- one or two main traps
+- direct jumps to topic pages, templates, and repo notes
+
+It should not try to reteach the full topic. If you need proofs or slower walkthroughs, jump back to `topics/`.
+
+## Use This Layer When
+
+- the area is mostly known, but retrieval feels slow
+- you want the lightest viable template family quickly
+- you need the main invariant or failure mode under contest pressure
+- you want one nearby repo note to reopen, not a long tutorial
+
+## Do Not Use This Layer When
+
+- you are learning the topic for the first time
+- you still do not know the brute-force baseline
+- you cannot yet explain why the main technique works
+- the problem needs a slower decision page more than a compact reminder
+
 ## Fast Retrieval Loop
 
 When you are mid-problem and want the shortest route back to something reusable:
@@ -20,6 +53,16 @@ When you are mid-problem and want the shortest route back to something reusable:
 3. jump back into the topic page only if you need proof, pitfalls, or a slower explanation
 
 This is meant to be the layer you skim during implementation, not the layer you study first.
+
+## Sheet Contract In Practice
+
+The shortest useful scan order is:
+
+1. `Use when`
+2. `Do not use when`
+3. `Choose by signal`
+4. `Invariant / trap`
+5. one template or repo anchor
 
 ## Representative Anchors
 
@@ -51,3 +94,9 @@ This is meant to be the layer you skim during implementation, not the layer you 
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
 - interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)
+
+## Reopen Rules
+
+- if you need proofs, go to `topics/`
+- if you need a pasteable skeleton, go to [Template library](../template-library.md)
+- if you need the exact next problem, go to `practice/ladders/`

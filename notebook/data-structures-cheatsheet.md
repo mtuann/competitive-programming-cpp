@@ -2,6 +2,12 @@
 
 Use this page when you know the operations but have not yet picked the lightest structure.
 
+## Do Not Use When
+
+- the main difficulty is graph or DP modeling rather than operations
+- one static formula or prefix array already solves the whole problem
+- you still cannot list the required operations cleanly
+
 ## Choose By Operations
 
 - static range sums -> prefix sums
@@ -22,6 +28,13 @@ Use this page when you know the operations but have not yet picked the lightest 
 - online or offline?
 - duplicates matter?
 - do you need order, rank, or only the current best element?
+
+## Core Invariants
+
+- Fenwick / prefix structures: one stable prefix meaning
+- segment tree: every node represents one mergeable segment summary
+- DSU: every element belongs to one representative-led component
+- ordered-set logic: duplicates and erase policy must be explicit
 
 ## Retrieval Cues
 
@@ -45,8 +58,20 @@ Use this page when you know the operations but have not yet picked the lightest 
 - trying to erase arbitrary heap items without a lazy-delete plan
 - missing the original-order bookkeeping in offline processing
 
+## Do Not Overbuild
+
+Under contest pressure, the usual failure is not “too simple.” It is “picked a heavier structure than the operations justify.”
+
+Ask:
+
+- would prefix sums already work?
+- would sorting + two pointers already work?
+- are all queries known first, so offline processing is enough?
+
 ## Next Stops
 
 - [Heaps and ordered sets topic](../topics/data-structures/heaps-and-ordered-sets/README.md)
 - [Offline tricks topic](../topics/data-structures/offline-tricks/README.md)
 - [Template library](../template-library.md)
+- [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
+- [Segment Tree topic](../topics/data-structures/segment-tree/README.md)

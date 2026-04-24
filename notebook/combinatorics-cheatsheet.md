@@ -1,5 +1,21 @@
 # Combinatorics Cheatsheet
 
+Use this page when you can already name the counting family, but still need to stabilize the shape of the objects, slots, and constraints.
+
+## Do Not Use When
+
+- the problem is really about modular arithmetic implementation, not counting structure
+- you still cannot tell whether order matters
+- the main difficulty is graph modeling or DP state design rather than counting
+
+## Choose By Signal
+
+- choose positions directly -> binomial / combinations
+- split a total into slots -> stars and bars / compositions
+- upper bounds per slot -> bounded compositions or inclusion-exclusion
+- count good objects by subtracting bad ones -> inclusion-exclusion
+- lexicographic generation or k-th object -> enumeration / ranking
+
 ## Common Moves
 
 - choose positions
@@ -22,3 +38,18 @@ xi <= K
 - are slots distinguishable?
 - is order important?
 - is the target exact, at least, or at most?
+
+## Main Trap
+
+The most common wrong turn is counting the right structure with the wrong model of identity:
+
+- identical vs distinct objects
+- labeled vs unlabeled slots
+- exact total vs at most total
+
+Fix those three decisions before writing any formula.
+
+## Reopen Paths
+
+- topic pages -> [Counting Basics](../topics/combinatorics/counting-basics/README.md), [Inclusion-Exclusion](../topics/combinatorics/inclusion-exclusion/README.md)
+- repo anchors -> [Distributing Apples](../practice/ladders/combinatorics/counting-basics/distributingapples.md), [Prime Multiples](../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md)

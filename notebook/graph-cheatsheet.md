@@ -2,6 +2,12 @@
 
 Use this page when the graph model is mostly clear but the algorithm family still feels ambiguous.
 
+## Do Not Use When
+
+- the graph model itself is still unclear
+- the task is really a tree DP, flow modeling, or DSU structure question, not a generic graph-family choice
+- you need proofs or full algorithm derivations more than a chooser
+
 ## Choose By Edge Model
 
 - unweighted shortest path -> BFS -> [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
@@ -18,6 +24,13 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - tree path queries -> LCA or HLD
 - capacities -> flow
 - pairing -> matching
+
+## Core Invariants
+
+- BFS: first visit gives minimum number of edges in an unweighted graph
+- Dijkstra: settled distances stay optimal when all edge weights are nonnegative
+- `0-1 BFS`: deque order stays nondecreasing by distance
+- Bellman-Ford: one more relaxation after `n - 1` rounds signals a reachable negative cycle
 
 ## Retrieval Cues
 
@@ -46,3 +59,5 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Shortest Paths topic](../topics/graphs/shortest-paths/README.md)
 - [Graphs ladder](../practice/ladders/graphs/README.md)
 - [Template library](../template-library.md)
+- [Flow topic](../topics/graphs/flow/README.md)
+- [LCA topic](../topics/graphs/lca/README.md)
