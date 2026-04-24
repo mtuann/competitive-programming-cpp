@@ -378,6 +378,13 @@ Then keep that convention everywhere.
 
 Many lexicographic bugs are just off-by-one errors in rank convention.
 
+Also decide which order the problem really uses:
+
+- lexicographic over the statement alphabet
+- or some other ranking convention such as colex / Gray-like order
+
+Do not silently assume the standard textbook order if the statement defines another one.
+
 ### 2. "Prefix Count" Must Mean Full Completions
 
 When you compute `count(P)`, it must count:
