@@ -32,7 +32,7 @@
 
 -   __Problem Finder__
 
-    Use one searchable doorway when you know the weak topic or want the next good set quickly.
+    Use one searchable doorway when you know the weak topic, want the next good set quickly, or need a `resume / review / fresh follow-up` queue.
 
     [Open problem finder](../docs/problem-finder.md)
 
@@ -68,6 +68,7 @@ That is the default `topic -> ladder -> note -> retrieve -> switch` loop of the 
 | If your bottleneck is... | Best first door | Then |
 | --- | --- | --- |
 | I need the next good problems | [Problem Finder](../docs/problem-finder.md) | the matching ladder or playbook |
+| I need a clean resume or review queue | [Problem Finder](../docs/problem-finder.md) | the matching note, ladder, or mixed round |
 | I am still learning one topic | the matching topic page in [topics/](../topics/README.md) | [Ladders](ladders/README.md) |
 | I know several topics but switch badly | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) |
 | I care about one contest format now | [Contest Playbooks](contest-playbooks/README.md) | [Problem Finder](../docs/problem-finder.md) |

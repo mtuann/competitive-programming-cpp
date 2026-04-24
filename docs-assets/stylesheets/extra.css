@@ -345,6 +345,60 @@ body {
   box-shadow: var(--site-shadow);
 }
 
+.problem-finder-presets,
+.problem-finder-route {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.15rem;
+  border: 1px solid var(--site-border);
+  border-radius: 1.25rem;
+  background: linear-gradient(180deg, var(--site-surface-soft), var(--site-surface-strong));
+  box-shadow: var(--site-shadow);
+}
+
+.finder-helper {
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+}
+
+.finder-preset-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.finder-preset {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.62rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--site-border);
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+[data-md-color-scheme="slate"] .finder-preset {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.finder-preset--ghost {
+  background: transparent;
+}
+
+.finder-preset--active {
+  border-color: var(--md-primary-fg-color);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 14%, white);
+}
+
+[data-md-color-scheme="slate"] .finder-preset--active {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 22%, transparent);
+}
+
 .problem-finder-table {
   width: 100%;
   border-collapse: collapse;

@@ -9,6 +9,12 @@ You can filter by topic, difficulty, source, bucket, and content type without ho
 
 If you want the fastest way to narrow a practice set, start here first. Use the static indexes afterward when you want a full inventory view.
 
+This page is best when you treat it like a practice control panel, not just a search box:
+
+- `Status` is the repo-note training log: `todo`, `attempted`, `solved`, `reviewed`
+- `Kind` splits internal notes from fresh external follow-up
+- session presets are meant to answer `what do I do right now?`, not only `what exists?`
+
 ## Best Use Cases
 
 Use this page when:
@@ -16,6 +22,7 @@ Use this page when:
 - you know the weak topic but not the next good problem
 - you want to build a short ladder for one subtopic
 - a mixed round or contest exposed a weak slot and you want the next follow-up set quickly
+- you want to resume attempted notes or build a light review queue without scanning the whole repo
 
 Do **not** stay here forever. After you narrow the list, jump into a real workflow.
 
@@ -28,6 +35,17 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
 | one weak retrieval family | [Notebook](../notebook/README.md) |
 | one weak implementation family | [Build Kit](build-kit.md) |
 
+## Status Discipline
+
+Use repo-note statuses consistently so this page becomes a real training system:
+
+- `todo`: selected, but not honestly attempted yet
+- `attempted`: you tried it and want a clean return path
+- `solved`: you finished it once, but it is still live material for review
+- `reviewed`: you reopened it deliberately and no longer need it in the first review queue
+
+External problems do not use repo-note status. Treat them as fresh follow-up reps after the topic is already mostly trusted.
+
 <div id="problem-finder-root" class="problem-finder-shell">
   <div class="problem-finder-toolbar">
     <h2>Filter The Catalog</h2>
@@ -39,6 +57,12 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
       <div class="problem-finder-field">
         <label for="finder-kind">Kind</label>
         <select id="finder-kind">
+          <option value="">All</option>
+        </select>
+      </div>
+      <div class="problem-finder-field">
+        <label for="finder-status">Status</label>
+        <select id="finder-status">
           <option value="">All</option>
         </select>
       </div>
@@ -80,6 +104,7 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
         <a href="../practice/mixed-rounds/">Mixed rounds</a>
         <a href="../practice/contest-playbooks/">Contest playbooks</a>
         <a href="../notebook/">Notebook</a>
+        <a href="../build-kit/">Build Kit</a>
         <a href="../template-library/">Template library</a>
         <a href="../problem-index/">Repo index</a>
         <a href="../external-problem-index/">External index</a>
@@ -87,6 +112,24 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
       </div>
     </div>
   </div>
+
+  <div class="problem-finder-presets">
+    <h2>Session Presets</h2>
+    <p class="finder-helper">
+      These presets are meant to answer common training questions fast. Use them first, then narrow by topic or difficulty.
+    </p>
+    <div class="finder-preset-row">
+      <button type="button" class="finder-preset" data-finder-preset="resume-attempted">Resume attempted</button>
+      <button type="button" class="finder-preset" data-finder-preset="review-solved">Review solved</button>
+      <button type="button" class="finder-preset" data-finder-preset="reopen-reviewed">Reopen reviewed</button>
+      <button type="button" class="finder-preset" data-finder-preset="fresh-external">Fresh external reps</button>
+      <button type="button" class="finder-preset" data-finder-preset="core-external">Core external set</button>
+      <button type="button" class="finder-preset" data-finder-preset="challenge-push">Challenge push</button>
+      <button type="button" class="finder-preset finder-preset--ghost" data-finder-reset>Clear filters</button>
+    </div>
+  </div>
+
+  <div id="finder-route" class="problem-finder-route" hidden></div>
 
   <div class="problem-finder-results">
     <h2>Results</h2>
@@ -97,6 +140,7 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
           <th>Problem</th>
           <th>Topic</th>
           <th>Kind</th>
+          <th>Status</th>
           <th>Difficulty</th>
           <th>Source</th>
           <th>Bucket</th>
