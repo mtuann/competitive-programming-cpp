@@ -1,95 +1,136 @@
 # Two Pointers And Sliding Window
 
-Two pointers turn a nested scan into a linear scan when the valid region changes monotonically. This is one of the most useful “looks simple, saves huge time” patterns in beginner and intermediate contest problems.
+Two pointers is the pattern where you stop recomputing every interval from scratch and instead keep one moving frontier of information that changes predictably.
 
-## Summary
+The essential question is not:
 
-Suspect two pointers when:
+- "can I write two indices?"
 
-- you are scanning intervals of an array or string
-- left and right boundaries mostly move forward
-- once a window becomes invalid, moving the left pointer can restore validity
-- the condition behaves monotonically as the window grows or shrinks
+It is:
 
-What success looks like:
+- "does the valid region move monotonically enough that both indices only need to move forward?"
 
-- you can state what the current window means
-- you know exactly when to expand and when to shrink
-- you can tell when two pointers is invalid because the condition is not monotone
+When the answer is yes, a nested scan often collapses to linear time.
 
-## Prerequisites
+When the answer is no, forcing a two-pointer solution usually creates a subtle bug.
 
-- [Reasoning And Implementation Discipline](../../reasoning/README.md)
-- [Sorting](../sorting/README.md)
+## At A Glance
 
-## Core Idea
+- **Use when:** intervals, pairs, or two sorted streams can be scanned with one-direction pointer movement
+- **Core worldview:** maintain one meaningful window or one meaningful pair state while pointers move monotonically
+- **Main tools:** fixed-size window, variable-size sliding window, sorted two-end scan, merge-style scan
+- **Typical complexity:** `O(n)` pointer movement plus the cost of maintaining the current summary
+- **Main trap:** the condition is not monotone, especially for sum-based windows with negative values
 
-Maintain a window and a summary of that window.
+## Problem Model And Notation
 
-Typical summary:
+There are three common models.
 
-- current sum
+### 1. Variable Window On One Array
+
+We maintain a range:
+
+$$
+[l, r] \quad \text{or} \quad [l, r)
+$$
+
+and a summary of the current window, such as:
+
+- sum
 - frequency table
 - number of distinct values
-- current count of violations
+- number of violations
 
-The main rule is:
+### 2. Two Ends On A Sorted Array
 
-```text
-every pointer move must preserve a meaningful invariant
-```
+We keep:
 
-This is why two pointers is more about reasoning than syntax.
+- `l` at the left end
+- `r` at the right end
 
-## Theory / Proof Sketch
+and move one endpoint based on whether the current pair is:
 
-The standard linear-time proof is:
+- too small
+- too large
+- or acceptable
 
-- `r` only moves forward
-- `l` only moves forward
+### 3. Merge-Style Scan On Two Sorted Sequences
+
+We keep one pointer in each sorted stream and advance the smaller side, or advance both when a match is found.
+
+All three variants rely on the same structural property:
+
+- once a pointer move discards something, that thing never needs to come back
+
+## From Brute Force To The Right Idea
+
+### Brute Force: Recompute Every Interval Or Pair
+
+The naive approach for subarray or substring questions is usually:
+
+- fix the left endpoint
+- try every right endpoint
+- recompute the condition from scratch
+
+That costs:
+
+$$
+O(n^2)
+$$
+
+or worse.
+
+For sorted-pair problems, the naive version is:
+
+- try every pair
+
+which is again quadratic.
+
+### The First Shift: One Pointer Move Should Kill Many Candidates
+
+Two pointers only pays off when one move lets you discard a whole class of possibilities.
+
+Examples:
+
+- in a sorted pair-sum problem, if `a[l] + a[r]` is too small, then `l` cannot pair successfully with any earlier right endpoint, because none exists and every later right endpoint is at least as large
+- in a nonnegative sliding window, if the sum is too large, moving `l` right is the only sensible way to reduce it
+
+### The Second Shift: Maintain A Summary, Not The Whole Interval
+
+The current window is only useful if you can update its summary cheaply:
+
+- add one element
+- remove one element
+
+So the real hidden question is:
+
+- can I update the statistic of interest in `O(1)` or `O(log n)` when one boundary moves by one step?
+
+If yes, the window can be maintained.
+
+If no, two pointers may still be the wrong abstraction.
+
+### The Third Shift: Monotonicity Is The Whole Proof
+
+The standard linear proof is:
+
+- `l` only increases
+- `r` only increases
 - each pointer moves at most `n` times
 
-So the total work is `O(n)` plus the cost of maintaining the window summary.
+But that proof is valid only if the condition really supports one-direction movement.
 
-This only works when the window condition is monotone enough:
+So before you code, you should be able to explain:
 
-- expanding can only make one direction of change
-- shrinking can restore validity without needing backward moves
+- why expanding helps in one direction
+- why shrinking repairs the window
+- and why no backward move is ever needed
 
-If the condition needs backtracking, the pattern may not apply.
+## Core Invariants And Why They Work
 
-## Complexity And Tradeoffs
+### 1. Variable Window With A Monotone Validity Condition
 
-Typical cost:
-
-- `O(n)` pointer movement
-- extra work depends on what the window maintains
-
-Tradeoffs:
-
-- excellent for monotone interval conditions
-- not suitable for arbitrary subarray optimization
-- sometimes sorting first turns a hard problem into a two-pointer problem
-
-## Canonical C++ Pattern
-
-Template in this repo:
-
-- [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
-
-Notebook:
-
-- [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
-- [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
-
-Useful checklist:
-
-- what is the exact meaning of `[l, r]` or `[l, r)`?
-- what summary is maintained?
-- when is the window valid?
-- at which moment is the answer updated?
-
-Common structure:
+The classic loop is:
 
 ```text
 for each r:
@@ -100,133 +141,415 @@ for each r:
     update answer
 ```
 
-## Monotonicity Test
+The invariant is:
 
-Before using two pointers, check whether one-direction pointer movement is believable.
+```text
+After the inner while loop, [l, r] is the leftmost valid window ending at r
+under the chosen summary and validity rule.
+```
 
-Good signs:
+This works when:
 
-- all numbers are nonnegative for sum-based windows
-- shrinking the window can only improve validity
-- sorting makes the pair condition move predictably
+- adding to the right can only move the window toward invalidity in one predictable direction
+- removing from the left can only move it back toward validity
 
-Bad signs:
+For example, if all values are nonnegative and the condition is:
 
-- negative values destroy the simple sum monotonicity
-- validity depends on a future choice that may require moving backward
-- you cannot explain why each pointer moves at most `n` times
+$$
+\text{sum} \le K,
+$$
 
-## Newbie Retrieval Layer
+then:
 
-Before coding a window solution, write these three lines on paper or in comments:
+- extending right never decreases the sum
+- moving left never increases the sum
 
-- what `[l, r]` or `[l, r)` means
-- what summary the window stores
-- what event makes the window invalid
+So the validity boundary moves monotonically.
 
-If you cannot write those lines cleanly, stop and go back to the [Two pointers ladder](../../../../practice/ladders/foundations/two-pointers/README.md) first.
+### 2. Sorted Two-End Scan
 
-Good first anchors after that:
+Suppose the array is sorted and you inspect `a[l] + a[r]`.
+
+If the sum is too small, moving `r` left would only make it smaller, so `r` is the wrong pointer to move.
+
+The only hopeful move is:
+
+```text
+l++
+```
+
+Similarly, if the sum is too large, the only hopeful move is:
+
+```text
+r--
+```
+
+That is the invariant-level reason pair-scan works:
+
+- one comparison tells you which side can be discarded safely
+
+### 3. Merge-Style Scan
+
+For two sorted sequences `A` and `B`, if `A[i] < B[j]`, then:
+
+- `A[i]` cannot match any earlier `B` entry
+- and keeping `i` fixed while advancing `j` cannot help with equality
+
+So it is safe to advance `i`.
+
+This is the same discard logic again, just in a two-stream setting.
+
+### 4. Why Negative Numbers Break The Simple Sum Window
+
+Suppose the condition is:
+
+$$
+\text{sum} \le K
+$$
+
+but the array can contain negative numbers.
+
+Then:
+
+- extending right may increase the sum
+- or decrease it
+
+So the validity boundary is no longer monotone.
+
+The standard shrinking-window proof collapses.
+
+This is the single most important "do not force two pointers" warning in foundations.
+
+## Variant Chooser
+
+### Use A Fixed-Size Window When
+
+- every valid candidate interval has the same length
+- you only need to slide by one step each time
+
+Canonical examples:
+
+- window sum / max / distinct count of size `k`
+
+This is the easiest form because:
+
+- both boundaries move together
+- there is no validity loop
+
+### Use A Variable-Size Sliding Window When
+
+- the condition is monotone in one direction
+- extending right grows the candidate
+- shrinking left repairs invalidity
+
+Canonical examples:
+
+- longest subarray with sum at most `K` when all values are nonnegative
+- shortest window satisfying a frequency requirement
+- longest substring with at most `K` distinct characters
+
+### Use Two Ends On A Sorted Array When
+
+- the problem is about pairs
+- sorting makes comparisons monotone
+
+Canonical examples:
+
+- exact pair sum
+- closest pair under a target
+- greedy tolerance matching
+
+This is the right mental model for:
 
 - [Apartments](../../../../practice/ladders/foundations/two-pointers/apartments.md)
 - [Sum of Two Values](../../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md)
 
-## Standard Patterns
+### Use Merge-Style Scan When
 
-### 1. Variable-Size Sliding Window
+- both inputs are already sorted
+- you compare current representatives of two streams
 
-Examples:
+Canonical examples:
 
-- longest subarray with sum at most `k`
-- shortest subarray satisfying a requirement
-- longest substring with at most `k` distinct characters
+- interval/event merges
+- intersection of sorted lists
+- advancing the smaller pointer
 
-### 2. Two Ends On A Sorted Array
+### Do Not Use Two Pointers When
 
-Examples:
-
-- pair sum
-- closest pair under a target
-- count compatible pairs
-
-Here the two pointers are not a window but two moving positions in sorted order.
-
-### 3. Merge-Style Scan
-
-Examples:
-
-- intersect two sorted lists
-- compare two event streams
-- advance the pointer with the smaller current value
+- validity is not monotone
+- the needed statistic cannot be updated cheaply under add/remove
+- the true problem is prefix sums + binary search, monotonic queue, or DP
 
 ## Worked Examples
 
-### Example 1: longest subarray with sum at most `k`
+### Example 1: `Apartments`
 
-This works directly when all values are nonnegative.
+The repo anchor here is:
 
-Why:
+- [Apartments](../../../../practice/ladders/foundations/two-pointers/apartments.md)
 
-- expanding increases or preserves the sum
-- shrinking decreases or preserves the sum
+After sorting:
 
-That monotonicity makes the window manageable.
+- applicant requests
+- apartment sizes
 
-### Example 2: count pairs in a sorted array
+look at the current applicant `a[i]` and apartment `b[j]`.
 
-Sort first, then keep one pointer at each end.
+If:
 
-If the sum is too small, move the left pointer.
+$$
+b[j] < a[i] - k,
+$$
 
-If the sum is too large, move the right pointer.
+then this apartment is too small even under tolerance, so it can never help the current or any later applicant. Move `j`.
 
-This works because sorting creates monotonicity.
+If:
 
-### Example 3: shortest valid window
+$$
+b[j] > a[i] + k,
+$$
 
-Expand until the window becomes valid, then shrink while validity is preserved.
+then the apartment is too large for the current applicant, so applicant `i` cannot be matched with this or any later apartment of even larger size. Move `i`.
 
-The answer must be updated during the shrinking phase, not only after expansion.
+Otherwise the pair is feasible, so match and move both.
 
-## Recognition Cues
+This is a perfect illustration of:
 
-Strong clues:
+- one comparison
+- one safe discard
 
-- windows, intervals, substrings, or subarrays
-- both boundaries move only forward
-- “at most”, “at least”, or “no more than k distinct”
-- sorted pair problems where moving one endpoint changes the condition predictably
+### Example 2: `Sum of Two Values`
 
-Two pointers is often confused with:
+The repo anchor here is:
 
-- [Prefix Sums](../prefix-sums/README.md), because both work on ranges
-- [Binary Search](../binary-search/README.md), because both exploit monotonicity
-- [Sorting](../sorting/README.md), because sorted order often makes two pointers possible
+- [Sum of Two Values](../../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md)
 
-## Common Mistakes
+After sorting pairs `(value, original_index)`, keep:
 
-- using the pattern on non-monotone conditions
-- forgetting that negative values can break a sum-based sliding window
-- updating the answer at the wrong moment
-- mixing `[l, r]` and `[l, r)` conventions
-- letting a pointer move backward
+- `l` at the smallest remaining value
+- `r` at the largest remaining value
 
-## Practice Ladder
+If:
 
-- [Two pointers ladder](../../../../practice/ladders/foundations/two-pointers/README.md)
+$$
+a[l] + a[r] < x,
+$$
 
-Suggested order:
+then `l` is too small to pair with the current `r`, and also too small for every earlier right endpoint because there is none larger than the current `r`.
 
-1. fixed-size windows
-2. variable windows with nonnegative sums
-3. distinct-element windows
-4. sorted two-end pointer problems
+So it is safe to increment `l`.
 
-## Go Deeper
+That discard argument is the whole proof.
 
-- Reference: [USACO Guide](https://usaco.guide/)
-- Practice: [CSES Problem Set](https://cses.fi/problemset/)
-- Notes: [Reasoning And Implementation Discipline](../../reasoning/README.md)
+### Example 3: Longest Window With Sum At Most `K`
+
+Assume all numbers are nonnegative.
+
+Maintain:
+
+- current sum of `[l, r]`
+
+For each new `r`:
+
+- add `a[r]`
+- while sum exceeds `K`, move `l` right and subtract removed values
+- once valid, the current window is a candidate answer
+
+This works because the sum only moves in one direction under each pointer move.
+
+### Example 4: A Counterexample With Negative Numbers
+
+Take:
+
+$$
+[5, -10, 5]
+$$
+
+and suppose you try to maintain a sum-based sliding window under a monotonicity story.
+
+Adding the next value can:
+
+- increase the sum
+- or decrease the sum
+
+So "expand until invalid, shrink until valid" is no longer justified by a one-direction proof.
+
+This is why the phrase:
+
+- "subarray sum"
+
+is not enough by itself to justify two pointers. The sign structure matters.
+
+### Example 5: Merge Two Sorted Arrays
+
+Suppose you want to merge sorted arrays `A` and `B`.
+
+At any moment:
+
+- compare `A[i]` and `B[j]`
+- output the smaller one
+- advance that pointer
+
+The invariant is:
+
+```text
+the output built so far is the sorted merge of A[0..i) and B[0..j)
+```
+
+This is still a two-pointer algorithm, just not a window-shaped one.
+
+## Algorithms And Pseudocode
+
+Repo starter template:
+
+- [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
+
+### Variable-Size Sliding Window
+
+```text
+l = 0
+summary = empty
+
+for r in [0..n-1]:
+    add(a[r]) to summary
+    while window is invalid:
+        remove(a[l]) from summary
+        l++
+    use current valid window for the answer
+```
+
+### Sorted Two-End Scan
+
+```text
+l = 0
+r = n - 1
+
+while l < r:
+    inspect a[l], a[r]
+    if pair is too small:
+        l++
+    else if pair is too large:
+        r--
+    else:
+        process match / answer
+```
+
+### Merge-Style Scan
+
+```text
+i = 0
+j = 0
+
+while i < n and j < m:
+    compare A[i], B[j]
+    advance one or both pointers according to the invariant
+```
+
+## Implementation Notes
+
+### 1. Choose `[l, r]` Or `[l, r)` Once
+
+Do not mix closed and half-open windows in the same solution.
+
+Write down explicitly:
+
+- what the current interval means
+- when the answer is updated
+
+Many off-by-one bugs in two pointers are really interval-convention drift.
+
+### 2. Update The Answer At The Right Moment
+
+For longest-valid-window tasks, update after the shrink loop, when the window is valid.
+
+For shortest-valid-window tasks, update while shrinking as long as validity is preserved.
+
+The answer-update point is part of the algorithm, not a cosmetic placement detail.
+
+### 3. Sorting Changes The Problem Model
+
+In pair problems, sorting is not preprocessing fluff.
+
+It creates the monotone order that makes discarding one side correct.
+
+If you remove sorting, the proof usually disappears.
+
+### 4. Distinct-Element Windows Need Careful Frequency Updates
+
+If the window tracks counts, then `add` and `remove` must update:
+
+- the frequency table
+- and any derived statistic such as number of distinct values
+
+consistently.
+
+This is where most sliding-window bugs move from "reasoning error" to "bookkeeping error."
+
+### 5. Negative Values Are A Red Flag For Sum Windows
+
+If the window condition depends on the sum and values may be negative, pause immediately.
+
+That often means the intended tool is something else, such as:
+
+- prefix sums
+- deque optimization
+- binary search on prefix structure
+
+### 6. Every Pointer Should Be Monotone
+
+A real two-pointer proof usually ends with:
+
+- `l` moved at most `n` times
+- `r` moved at most `n` times
+
+If your design needs one of them to oscillate backward, it is probably not a true two-pointer solution anymore.
+
+## Practice Archetypes
+
+The most common two-pointers-shaped tasks are:
+
+- **tolerance matching on two sorted arrays**
+- **pair sum / pair feasibility after sorting**
+- **longest valid window**
+- **shortest valid window**
+- **distinct/frequency-constrained substring or subarray**
+- **merge-style scan of two sorted streams**
+
+Strong contest smells include:
+
+- windows, substrings, subarrays
+- pairing after sorting
+- both boundaries seem to move only forward
+- each discard argument eliminates many future candidates at once
+
+## References And Repo Anchors
+
+Research sweep refreshed on `2026-04-24`.
+
+Course:
+
+- [Dartmouth CS31: Two Pointer Technique](https://www.cs.dartmouth.edu/~deepc/LecNotes/cs31/lec3-tptr.pdf)
+- [MIT CSAIL 6.390 notes: Sliding Window Algorithm](https://people.csail.mit.edu/hasinoff/320/sliding-notes.pdf)
+
+Reference:
+
+- [USACO Guide: Two Pointers](https://usaco.guide/silver/two-pointers)
+- [CP-Algorithms](https://cp-algorithms.com/)
+
+Practice:
+
+- [CSES Sorting and Searching](https://cses.fi/problemset/list/)
+
+Repo anchors:
+
+- practice ladder: [Two Pointers ladder](../../../../practice/ladders/foundations/two-pointers/README.md)
+- practice note: [Apartments](../../../../practice/ladders/foundations/two-pointers/apartments.md)
+- practice note: [Sum of Two Values](../../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md)
+- starter template: [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
+- notebook refresher: [Foundations Cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- adjacent topic: [Sorting](../sorting/README.md)
+- adjacent topic: [Prefix Sums](../prefix-sums/README.md)
 
 ## Related Topics
 
@@ -234,3 +557,4 @@ Suggested order:
 - [Prefix Sums](../prefix-sums/README.md)
 - [Binary Search](../binary-search/README.md)
 - [Difference Arrays](../difference-arrays/README.md)
+- [Reasoning And Implementation Discipline](../../reasoning/README.md)

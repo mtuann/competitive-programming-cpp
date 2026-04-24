@@ -1,181 +1,525 @@
 # BFS And DFS
 
-BFS and DFS are the first two graph traversals you should recognize quickly. They solve different problems, but they share the same starting point: a graph model and a systematic visit order.
+Breadth-first search and depth-first search are the first graph traversals you should internalize so well that they become modeling reflexes.
 
-## Summary
+They are not interchangeable.
 
-Suspect BFS or DFS when:
+They solve different kinds of graph questions because they preserve different invariants:
 
-- reachability or connectivity is the main question
-- the graph is unweighted and you need shortest paths in number of edges
-- you need components, coloring, traversal order, or cycle detection
+- BFS preserves **distance layers** in an unweighted graph.
+- DFS preserves the structure of one **active search branch** together with entry/exit order.
 
-What success looks like:
+Once that distinction becomes automatic, many graph problems stop looking like "some graph trick" and start looking like one of a few standard traversals plus problem-specific bookkeeping.
 
-- you know when BFS is required because distances matter
-- you know when DFS is natural because structure or recursion order matters
-- you can write either traversal with clean visited-state discipline
+## At A Glance
+
+- **Use when:** you need reachability, connected components, unweighted shortest paths, bipartite checks, cycle detection, traversal order, or tree/graph search structure
+- **Core worldview:** traversal is not just "visit everything"; it is "visit everything while preserving the invariant the question actually cares about"
+- **Main tools:** adjacency lists, `visited`, `dist`, `parent`, `color`, recursion stack or timestamps, queue for BFS, stack/recursion for DFS
+- **Typical complexity:** `O(n + m)` with adjacency lists
+- **Main trap:** using DFS when the statement really asks for shortest distance in number of edges, or using BFS when the statement actually needs DFS-style structural information
 
 ## Prerequisites
 
 - [Graph Modeling](../graph-modeling/README.md)
 
-## Core Idea
+Helpful neighboring topics:
 
-- BFS explores in layers from a source
-- DFS explores one branch deeply before backtracking
+- [Shortest Paths](../shortest-paths/README.md)
+- [Topological Sort And SCC](../scc-toposort/README.md)
+- [Trees](../trees/README.md)
 
-Use BFS when layer distance matters.
+## Problem Model And Notation
 
-Use DFS when structural decomposition, recursion, or search-tree reasoning matters.
+Let:
 
-## Theory / Proof Sketch
+$$
+G = (V, E)
+$$
 
-### BFS Invariant
+be a graph with:
+
+- `n = |V|` vertices
+- `m = |E|` edges
+
+and suppose we start from a source vertex `s`.
+
+For BFS, the key quantity is:
+
+$$
+\mathrm{dist}(s, v),
+$$
+
+the minimum number of edges on a path from `s` to `v` in an **unweighted** graph.
+
+For DFS, the key quantities are structural:
+
+- which vertices lie on the current active branch
+- entry time `tin[v]`
+- exit time `tout[v]`
+- the parent relation in the DFS tree or forest
+
+This is the first mental split:
+
+- BFS is about **levels**
+- DFS is about **search-tree structure**
+
+## From Brute Force To The Right Idea
+
+### Brute Force: Re-Search From Scratch
+
+Suppose the statement says:
+
+- is `t` reachable from `s`?
+- what is the minimum number of moves?
+- how many connected components are there?
+
+The brute-force mindset is often:
+
+- from each vertex, try many paths
+- or repeatedly search again from scratch
+- or keep vague "visited somehow" logic without a clean traversal contract
+
+That tends to blur several different problems together.
+
+### The First Shift: One Traversal Already Gives A Whole Tree
+
+Both BFS and DFS do more than answer one yes/no query.
+
+A traversal from `s` gives you a whole spanning structure over the reachable part of the graph:
+
+- a **BFS tree** grouped by distance layers
+- a **DFS tree/forest** grouped by recursive ancestry
+
+That means many questions are not separate algorithms at all. They are:
+
+- one traversal
+- plus a small extra array or invariant
+
+### The Second Shift: Choose The Invariant Before Choosing The Code
+
+If the question is:
+
+- "fewest edges"
+- "minimum number of moves"
+- "shortest route in an unweighted graph"
+
+then the only traversal whose default invariant matches the problem is BFS.
+
+If the question is:
+
+- "what is the component structure?"
+- "does a cycle exist?"
+- "what is the traversal order?"
+- "what intervals/subtrees/ancestor relations appear during search?"
+
+then DFS is usually the natural fit.
+
+### The Third Shift: Traversal Order Is The Proof
+
+Most beginners treat BFS and DFS as two code snippets.
+
+The better view is:
+
+- the order in which vertices leave the queue proves BFS shortest-path correctness
+- the active recursion stack and timestamps prove DFS structure claims
+
+Once you see the proof as part of the traversal order, the implementation becomes much less magical.
+
+## Core Invariants And Why They Work
+
+## 1. Shared Traversal Invariant
+
+Both BFS and DFS need the same first discipline:
 
 ```text
-When a node is popped from the queue,
-its recorded distance is the shortest number of edges from the source.
+Every reachable vertex should be committed exactly once.
 ```
 
-Why:
+That is why every clean traversal has:
 
-- BFS processes nodes in nondecreasing distance order
-- every edge has equal cost in an unweighted graph
+- a `visited` array
+- or an equivalent "already discovered" state
 
-### DFS Invariant
+Without that, cycles and multiple paths immediately break correctness or complexity.
+
+## 2. BFS Layer Invariant
+
+In BFS, vertices are discovered in nondecreasing distance from the source.
+
+The strongest contest-useful version is:
 
 ```text
-When DFS enters a node,
-all recursive or stack descendants belong to the current active search branch.
+When a vertex v is first pushed into the queue,
+its recorded distance dist[v] is already the shortest possible.
 ```
 
-Why this matters:
+Why is this true?
 
-- entry/exit order becomes meaningful
-- subtree reasoning becomes possible
-- cycle and ancestor logic can be expressed via colors or timestamps
+- `s` is discovered with distance `0`
+- when BFS pops a vertex at distance `d`, every outgoing edge reaches a vertex at distance at most `d + 1`
+- because the queue is FIFO, all vertices at smaller distance are processed before any vertex at larger distance
 
-## Complexity And Tradeoffs
+So if `v` is first reached from `u`, then:
 
-- BFS: `O(n + m)`
-- DFS: `O(n + m)`
-- memory: graph plus queue or stack / recursion
+$$
+\mathrm{dist}[v] = \mathrm{dist}[u] + 1
+$$
 
-Tradeoffs:
+is optimal.
 
-- BFS is best for unweighted shortest paths
-- DFS is often better for components, cycle detection, and later graph algorithms based on traversal order
-- recursive DFS is concise, but iterative DFS is safer on very deep graphs
+This is why:
 
-## Canonical C++ Pattern
+- unweighted shortest paths
+- shortest path reconstruction
+- minimum move count on grids
 
-Templates in this repo:
+all collapse to plain BFS.
 
-- [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
-- [dfs-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dfs-iterative.cpp)
+## 3. Why Mark-On-Push Matters In BFS
 
-Common arrays:
+In contest BFS, the safest discipline is:
 
-- `visited`
-- `dist`
-- `parent`
-- `color`
-- `tin`, `tout`
+- mark `visited[v] = true` or assign `dist[v]` **when pushing**
+- not when popping
 
-Good rule:
+Why?
 
-- mark visited at the moment you commit to exploring the node, not later
+Because first discovery is already the shortest-path certificate.
 
-## Standard Patterns
+If you delay the mark until pop:
 
-### 1. Connected Components
+- the same vertex may be pushed many times
+- parents may be overwritten accidentally
+- queue size can blow up
 
-Repeat BFS or DFS from every unvisited node.
+This is not only slower. It often destroys the exact invariant you wanted.
 
-### 2. Unweighted Shortest Path
+## 4. DFS Active-Branch Invariant
 
-Run BFS from the source and store `dist` and optionally `parent`.
+DFS maintains a different structure:
 
-### 3. Bipartite Check
+```text
+At any time, the recursion stack (or its iterative simulation)
+is exactly one active search branch in the DFS forest.
+```
 
-Assign alternating colors using BFS or DFS. Any edge between equal colors breaks bipartiteness.
+That gives DFS powers BFS does not naturally expose:
 
-### 4. Cycle Detection
+- ancestor/descendant reasoning
+- cycle detection through back edges or colors
+- entry/exit times
+- subtree intervals in DFS order
+- topological-sort style finishing order
 
-Use parent checks in undirected graphs or color states / recursion-stack logic in directed graphs.
+This is why many "structural graph" algorithms are DFS-first.
+
+## 5. DFS Timestamp Invariant
+
+If DFS records:
+
+- `tin[v]` when entering `v`
+- `tout[v]` when finishing `v`
+
+then a key structural fact becomes available:
+
+in tree-like DFS settings,
+
+$$
+u \text{ is an ancestor of } v
+$$
+
+if and only if:
+
+$$
+\mathrm{tin}[u] \le \mathrm{tin}[v]
+\quad\text{and}\quad
+\mathrm{tout}[v] \le \mathrm{tout}[u].
+$$
+
+You do not need that fact for basic traversal, but it explains why DFS is the right substrate for many later topics.
+
+## 6. Components Come From Restarting Traversal
+
+For either BFS or DFS:
+
+- one run from one start vertex only covers the reachable region from that start
+
+So for connected components in an undirected graph, the invariant is:
+
+```text
+Each fresh traversal from an unvisited vertex discovers exactly one new component.
+```
+
+That is why:
+
+- count components
+- label components
+- collect one representative per component
+
+all use the same outer loop:
+
+```text
+for each vertex:
+    if unvisited:
+        start traversal
+```
+
+## Variant Chooser
+
+### Use BFS When
+
+- the graph is unweighted
+- edge cost is effectively `1`
+- the question is about minimum number of edges / moves / steps
+- you need shortest-path parents in an unweighted graph
+- multi-source distance from a set of starts is natural
+
+Canonical smells:
+
+- "minimum number of moves"
+- "shortest route"
+- "fewest flights / transformations / steps"
+- "spread from many sources"
+
+### Use DFS When
+
+- the answer depends on search-tree structure
+- you need connected components, traversal order, or cycle logic
+- ancestor/descendant or subtree reasoning matters
+- the graph algorithm is really a DFS-based reduction in disguise
+
+Canonical smells:
+
+- "visit every reachable node"
+- "is there a cycle?"
+- "is the graph bipartite?"
+- "process nodes after all descendants"
+
+### Use Either BFS Or DFS When
+
+- you only need reachability
+- you only need connected components in an undirected graph
+- you only need bipartite coloring and no distance information
+
+In those cases, the better choice is mostly:
+
+- BFS if layer distance is convenient
+- DFS if recursion/order reasoning is convenient
+
+### Do Not Use Plain DFS For Unweighted Shortest Path
+
+This is the most common beginner mistake.
+
+DFS may find *a* path. It does not preserve shortest distance in number of edges.
+
+If every edge weight is `1`, the correct shortest-path traversal is BFS.
+
+### Do Not Stop At Plain BFS If Edge Weights Are Not Uniform
+
+If the graph has:
+
+- weights `0` and `1`, think [Shortest Paths](../shortest-paths/README.md) and `0-1 BFS`
+- arbitrary nonnegative weights, think Dijkstra
+- negative edges, plain BFS is not the right family at all
 
 ## Worked Examples
 
-### Example 1: connected components
+### Example 1: Unweighted Shortest Path
 
-Each new BFS/DFS from an unvisited node discovers exactly one component.
+This is the repo's canonical BFS note:
 
-That is why repeated traversals partition the graph.
+- [Message Route](../../../practice/ladders/graphs/bfs-dfs/messageroute.md)
 
-### Example 2: shortest path in an unweighted graph
+Suppose the graph is unweighted and you need one shortest route from `1` to `n`.
 
-Run BFS from the source.
-
-Store:
+Run BFS from `1` and store:
 
 - `dist[v]`
 - `parent[v]`
 
-Then reconstruct the path by walking parents backward.
+When `v` is first discovered, `dist[v]` is already optimal. So `parent[v]` at first discovery time becomes part of a shortest-path tree.
 
-### Example 3: bipartite check
+To reconstruct the route:
 
-Color the graph with `0/1` while traversing.
+- start from `n`
+- follow parents backward
+- reverse the collected list
 
-If an edge joins equal colors, the graph is not bipartite.
+This is the cleanest possible BFS application because the traversal invariant and the problem invariant are identical.
 
-This is one of the most common BFS/DFS follow-up applications.
+### Example 2: Bipartite Check
 
-## Recognition Cues
+Suppose an undirected graph must be colored with two colors so every edge joins opposite colors.
 
-Strong clues:
+Run BFS or DFS and assign:
 
-- unweighted graph
+$$
+\mathrm{color}[v] \in \{0, 1\}.
+$$
+
+Whenever you traverse an edge `(u, v)`:
+
+- if `v` is uncolored, assign `1 - color[u]`
+- if `v` is already colored and `color[v] = color[u]`, the graph is not bipartite
+
+Why does this work?
+
+Because every traversed edge forces opposite parity relative to the start of the component.
+
+You do not need shortest distance here, so BFS and DFS are both valid. But BFS makes the "parity by layers" intuition especially visible.
+
+### Example 3: Cycle Detection In A Directed Graph
+
+Suppose you need to know whether a directed graph has a cycle.
+
+Use DFS with a 3-color state:
+
+- `0`: unvisited
+- `1`: currently in recursion stack
+- `2`: fully processed
+
+When DFS explores an edge `(u, v)`:
+
+- if `v` is `0`, continue DFS
+- if `v` is `1`, you found a back edge into the active branch, so a cycle exists
+- if `v` is `2`, that edge is harmless for cycle existence
+
+This is a pure DFS-style invariant. BFS does not naturally expose the active-branch structure needed for this proof.
+
+### Example 4: Why DFS Fails For Unweighted Shortest Path
+
+Consider:
+
+```text
+s -> a -> b -> t
+s -> t
+```
+
+If DFS explores `a` before `t`, it may first discover a path of length `3`.
+
+But the true shortest path has length `1`.
+
+So "first path found" means nothing for shortest paths under DFS.
+
+That counterexample is worth remembering because it prevents many wrong first instincts.
+
+## Algorithms And Pseudocode
+
+### BFS
+
+```text
+bfs(source):
+    set dist[*] = -1
+    dist[source] = 0
+    parent[source] = -1
+    queue q
+    q.push(source)
+
+    while q not empty:
+        u = q.front()
+        q.pop()
+        for v in adj[u]:
+            if dist[v] != -1:
+                continue
+            dist[v] = dist[u] + 1
+            parent[v] = u
+            q.push(v)
+```
+
+Default interpretation:
+
+- `dist[v] == -1` means undiscovered
+- first push fixes both discovery and shortest distance
+
+### DFS (Recursive Shape)
+
+```text
+dfs(u, p):
+    visited[u] = true
+    parent[u] = p
+    tin[u] = timer++
+
+    for v in adj[u]:
+        if v == p in an undirected graph:
+            continue
+        if not visited[v]:
+            dfs(v, u)
+
+    tout[u] = timer++
+```
+
+### DFS (3-Color Cycle Detection In Directed Graph)
+
+```text
+dfs(u):
+    color[u] = 1
+    for v in adj[u]:
+        if color[v] == 0:
+            dfs(v)
+        else if color[v] == 1:
+            found_cycle = true
+    color[u] = 2
+```
+
+## Implementation Notes
+
+- Prefer adjacency lists for contest graphs. With adjacency matrices, traversal cost degrades toward `O(n^2)`.
+- In BFS, mark on push, not pop.
+- In undirected DFS, parent-check logic differs from directed cycle logic. Do not mix them.
+- Recursive DFS is concise, but iterative DFS is safer when the graph may degenerate into a chain of length `2e5` or more.
+- If the graph may be disconnected, wrap traversal inside an outer loop over all vertices.
+- For path reconstruction, store `parent` only when the vertex is first committed.
+- For grids, BFS/DFS are the same ideas after graph modeling; neighbors are just generated implicitly instead of stored explicitly.
+
+## Practice Archetypes
+
+You should be able to recognize these immediately:
+
+- one shortest route in an unweighted graph
+- minimum number of moves on a grid
 - connected components
-- reachability
-- “minimum number of moves”
-- traversal order or search tree matters
+- bipartite check / two-coloring
+- directed or undirected cycle detection
+- traversal order / finish order as preparation for a later graph algorithm
 
-BFS/DFS is often confused with:
+Repo anchors:
 
-- [Shortest Paths](../shortest-paths/README.md), because BFS is itself the shortest-path tool for unweighted graphs
-- [Graph Modeling](../graph-modeling/README.md), because many failures here actually start with a bad model
+- [Message Route](../../../practice/ladders/graphs/bfs-dfs/messageroute.md)
+- [Counting Rooms](../../../practice/ladders/graphs/graph-modeling/countingrooms.md)
+- [Building Roads](../../../practice/ladders/graphs/graph-modeling/buildingroads.md)
 
-## Common Mistakes
+Starter templates:
 
-- using DFS for unweighted shortest path
-- forgetting to reset state between components
-- recursive DFS stack overflow on deep graphs
-- marking visited too late and pushing duplicates into the BFS queue
-- mixing directed and undirected cycle logic
+- [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
+- [dfs-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dfs-iterative.cpp)
 
-## Practice Ladder
+Notebook refresher:
+
+- [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
+
+## References And Repo Anchors
+
+Primary / course style:
+
+- [Cornell CS 2110: Graph Traversal](https://www.cs.cornell.edu/courses/cs2110/2019sp/L18-GraphTraversal/L18-GraphTraversal.pdf)
+- [Stanford CS106B: Graph Algorithms](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1242/lectures/26-graphs/)
+
+Reference:
+
+- [CP-Algorithms: Breadth First Search](https://cp-algorithms.com/graph/breadth-first-search.html)
+- [CP-Algorithms: Depth First Search](https://cp-algorithms.com/graph/depth-first-search.html)
+- [USACO Guide: Graph Traversal](https://usaco.guide/silver/graph-traversal?lang=cpp)
+
+Practice / repo anchors:
 
 - [Graphs ladder overview](../../../practice/ladders/graphs/README.md)
 - [BFS / DFS ladder](../../../practice/ladders/graphs/bfs-dfs/README.md)
-
-Suggested order:
-
-1. reachability and components
-2. shortest path in unweighted graphs
-3. bipartite check
-4. cycle detection and traversal-order reasoning
-
-## Go Deeper
-
-- Reference: [CP-Algorithms - BFS](https://cp-algorithms.com/graph/breadth-first-search.html)
-- Reference: [CP-Algorithms - DFS](https://cp-algorithms.com/graph/depth-first-search.html)
-- Practice: [CSES Graph Algorithms](https://cses.fi/problemset/)
-- Practice: [USACO Guide](https://usaco.guide/)
+- [Message Route](../../../practice/ladders/graphs/bfs-dfs/messageroute.md)
 
 ## Related Topics
 
 - [Graph Modeling](../graph-modeling/README.md)
 - [Shortest Paths](../shortest-paths/README.md)
 - [Topological Sort And SCC](../scc-toposort/README.md)
+- [Trees](../trees/README.md)

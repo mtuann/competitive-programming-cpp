@@ -1,20 +1,33 @@
 # Heavy-Light Decomposition
 
-Heavy-light decomposition is the standard way to answer repeated path queries on a tree by reducing them to range queries on an array. It is the natural next step after trees, LCA, and segment trees already feel comfortable on their own.
+Heavy-light decomposition is the standard reduction for this kind of tree problem:
 
-## Summary
+- the tree is static
+- the values may change
+- each query asks about an aggregate on a path `u -> v`
 
-Suspect HLD when:
+The brute-force instinct is:
 
-- the input is a static tree
-- queries ask for a sum, maximum, or another aggregate on the path between two nodes
-- updates happen on node or edge values
+- find the path
+- walk along every vertex or edge on that path
 
-What success looks like:
+Heavy-light decomposition replaces that with a much stronger statement:
 
-- you can choose a heavy child and explain why that keeps the number of chains small
-- you can flatten the tree into a base array with `head[u]` and `pos[u]`
-- path queries feel like “a few segment-tree intervals” instead of “walk the whole path”
+- every tree path can be broken into only `O(\log n)` contiguous segments of one flattened array
+
+That is the whole reason HLD is useful.
+
+It is not a new query structure by itself.
+
+It is the decomposition that lets a standard range structure such as a segment tree answer tree-path queries.
+
+## At A Glance
+
+- **Use when:** the input is a static tree and you need many path queries or updates on node/edge values
+- **Core worldview:** choose one heavy child per node so any root-to-node route crosses only `O(\log n)` light edges
+- **Main tools:** subtree sizes, heavy child, chain heads, flattened positions, segment tree or Fenwick tree on the base array
+- **Typical complexity:** preprocessing `O(n)`, path query/update usually `O(\log^2 n)` with a segment tree
+- **Main trap:** mixing node-valued and edge-valued conventions, or forgetting that non-commutative merges need left/right accumulation order
 
 ## Prerequisites
 
@@ -22,140 +35,463 @@ What success looks like:
 - [LCA](../lca/README.md)
 - [Segment Tree](../../data-structures/segment-tree/README.md)
 
-## Core Idea
+Helpful neighboring topics:
 
-Root the tree first.
+- [Tree DP](../../dp/tree-dp/README.md)
+- [Fenwick Tree](../../data-structures/fenwick-tree/README.md)
 
-For each node, mark one child as **heavy**, usually the child with the largest subtree. The remaining child edges are **light**.
+## Problem Model And Notation
+
+Let the tree be rooted at some vertex, usually `1`.
+
+For each vertex `u`, we keep:
+
+- `parent[u]`
+- `depth[u]`
+- `size[u]`: subtree size
+- `heavy[u]`: the child of `u` with maximum subtree size, or `-1` if none
+- `head[u]`: the head of the heavy chain containing `u`
+- `pos[u]`: the position of `u` in the flattened base array
+
+The base array is arranged so that each heavy chain occupies a contiguous interval.
+
+If values live on vertices, a common convention is:
+
+$$
+\mathrm{base}[\mathrm{pos}[u]] = \mathrm{value}[u].
+$$
+
+If values live on edges, the standard shift is:
+
+- store the value of edge `(parent[u], u)` at `pos[u]`
+- leave the root position as a dummy or neutral value
+
+This page uses the vertex-valued convention as the default because it matches the repo's first HLD anchor.
+
+## From Brute Force To The Right Idea
+
+### Brute Force: Walk The Whole Path
+
+Suppose a query asks for:
+
+- sum on path `u -> v`
+- maximum on path `u -> v`
+- point updates, edge updates, or both
+
+The brute-force solution is:
+
+1. recover the path
+2. scan every vertex or edge on it
+3. merge the answers
+
+That costs:
+
+$$
+O(\text{path length})
+$$
+
+per query, which is too slow when both:
+
+- `n` is large
+- the number of queries is large
+
+### The First Shift: Do Not Fight The Tree One Query At A Time
+
+The right question is not:
+
+- how do I walk this path faster?
+
+It is:
+
+- how do I flatten the tree so path queries become a few range queries?
+
+### The Second Shift: Pick One Heavy Child
+
+For each node `u`, choose one child with largest subtree as the heavy child.
+
+All other child edges are light.
+
+This makes heavy edges represent "the direction where the subtree stays large for as long as possible."
+
+### The Third Shift: Light Edges Are Rare On Any Root Path
+
+If `(u, v)` is a light edge and `v` is a child of `u`, then `v` is not the largest child.
+
+So:
+
+$$
+\mathrm{size}[v] \le \frac{\mathrm{size}[u] - 1}{2} < \frac{\mathrm{size}[u]}{2}.
+$$
+
+Every time you cross a light edge while going downward, the remaining subtree size at least halves.
+
+That can happen only `O(\log n)` times before the subtree size falls to `1`.
+
+This is the theorem that makes HLD worth learning.
+
+### The Fourth Shift: Turn Chains Into Intervals
+
+Once heavy edges are chosen, each maximal heavy path becomes a chain.
+
+If we assign positions by walking each chain contiguously, then:
+
+- every chain becomes one interval in the base array
+- a path query can be answered by climbing chain heads
+- each climb consumes one whole chain segment
+
+Now the tree problem has become:
+
+- `O(\log n)` chain segments
+- each answered by a normal range query structure
+
+## Core Invariants And Why They Work
+
+## 1. Heavy-Child Invariant
+
+For every non-leaf node `u`, at most one child is designated heavy.
+
+That alone implies:
+
+- heavy paths are vertex-disjoint if viewed as chains of vertices
+- every vertex belongs to exactly one heavy chain
+
+So `head[u]` is always well-defined.
+
+## 2. Light-Edge Halving Lemma
+
+If `v` is a light child of `u`, then:
+
+$$
+\mathrm{size}[v] < \frac{\mathrm{size}[u]}{2}.
+$$
+
+Why?
+
+Because the heavy child is chosen with maximum subtree size, so every light child is no larger than the heavy child. If a light child had size more than half of `size[u]`, there would be no room for the rest of the subtree.
+
+This gives the key consequence:
+
+```text
+Any root-to-node path crosses at most O(log n) light edges.
+```
+
+## 3. Path-Decomposition Invariant
+
+Consider a query path from `u` to `v`.
+
+While `head[u] != head[v]`, one of the two vertices lies on a deeper chain head.
+
+Suppose `head[u]` is deeper.
+
+Then the segment:
+
+$$
+[\mathrm{pos}[\mathrm{head}[u]], \mathrm{pos}[u]]
+$$
+
+lies entirely on the query path and can be consumed at once.
+
+After consuming it, we jump:
+
+$$
+u \leftarrow \mathrm{parent}[\mathrm{head}[u]].
+$$
+
+This crosses exactly one light edge.
+
+Since only `O(\log n)` light-edge crossings are possible on either side, the number of chain segments is also `O(\log n)`.
+
+## 4. Why The Final Same-Chain Segment Is One Interval
+
+Eventually, `u` and `v` land on the same chain.
+
+Then the remaining path is just one contiguous chain interval:
+
+$$
+[\min(\mathrm{pos}[u], \mathrm{pos}[v]), \max(\mathrm{pos}[u], \mathrm{pos}[v])].
+$$
+
+This is the most common missing line in first HLD implementations:
+
+- the loop handles cross-chain parts
+- the final same-chain segment is still required
+
+## 5. Node-Valued vs Edge-Valued Convention
+
+This is the most important modeling choice to decide *before* coding.
+
+### Vertex values
+
+Store:
+
+$$
+\mathrm{value}[u] \text{ at } \mathrm{pos}[u].
+$$
+
+Then a same-chain query includes both endpoints.
+
+### Edge values
+
+Store:
+
+$$
+\mathrm{value}(parent[u], u) \text{ at } \mathrm{pos}[u].
+$$
 
 Then:
 
-- heavy edges keep you inside one chain
-- each chain has a `head`
-- each node gets a position `pos[u]` in a flattened base array
+- the root has no incoming edge value
+- when querying the path to the LCA, you usually exclude the LCA position itself
 
-To answer a query on the path between `u` and `v`:
+Many off-by-one bugs in HLD are not array bugs. They are convention bugs.
 
-1. while `head[u] != head[v]`, move the deeper chain head upward
-2. query the whole chain segment you just consumed
-3. once both nodes are on the same chain, query the final interval between them
+## 6. Non-Commutative Aggregates Need Ordered Accumulators
 
-That turns a tree-path problem into a small number of array-range queries.
+If the merge operation is commutative, like:
 
-## Theory / Proof Sketch
+- sum
+- min
+- max
+- gcd
 
-The key fact is that crossing a light edge shrinks the remaining subtree quickly.
+then you may merge chain pieces in any order.
 
-If `v` is a light child of `u`, then `v` is not the heaviest child, so:
+But if the aggregate is non-commutative, such as:
 
-```text
-subtree(v) <= subtree(u) / 2
-```
+- string concatenation
+- matrix product
+- function composition
 
-Therefore any root-to-node path can cross at most `O(log n)` light edges.
+then path order matters.
 
-Every time HLD jumps from one chain to another, it crosses one light edge. So a path between two nodes touches only `O(log n)` chains. If each chain segment is answered with a segment tree in `O(log n)`, the standard HLD query cost is:
+In that case you must usually maintain:
 
-```text
-O(log n) chain segments * O(log n) per segment = O(log^2 n)
-```
+- a left accumulator for pieces collected from `u` upward
+- a right accumulator for pieces collected from `v` upward
 
-## Complexity And Tradeoffs
+and combine them in the final path order.
 
-- preprocessing subtree sizes and heavy child: `O(n)`
-- decomposition into chains: `O(n)`
-- point update or path query with segment tree: `O(log^2 n)`
+This is a subtle point, but it is exactly what separates "HLD for max/sum" from "HLD as a general path decomposition framework."
 
-Tradeoffs:
+## Variant Chooser
 
-- HLD is much more general than plain LCA formulas
-- if you only need subtree queries, Euler-tour flattening is usually simpler
-- if the path aggregate is especially friendly, there are sometimes lighter special-case tricks
+### Use HLD When
 
-## Canonical C++ Pattern
+- the tree is static
+- queries are on arbitrary paths `u -> v`
+- values may update online
+- the aggregate is associative, so a segment tree or similar structure can merge intervals
 
-A standard first implementation has three pieces:
+Canonical examples:
 
-1. DFS for `parent`, `depth`, `subtree_size`, and `heavy_child`
-2. DFS for `head[u]` and `pos[u]`
-3. segment tree on the flattened base array
+- path sum
+- path maximum
+- path xor
+- point update + path query
 
-The debugging trick is to verify each layer separately:
+### Use Euler Tour Flattening Instead When
 
-- subtree sizes are correct
-- heavy child is the largest child
-- chain heads and positions make sense on a small tree
-- same-chain and cross-chain path cases both work
+- you only need subtree queries
+- no arbitrary path queries are required
 
-## Standard Patterns
+Then a subtree is already one contiguous interval, so HLD is unnecessary overhead.
 
-### 1. Path Maximum Or Sum
+### Use Simpler LCA Formulas Instead When
 
-The classic entry problem. Decompose the path, query each segment, and merge the answers.
+- the path answer can be derived from prefix-like root information
+- updates are absent or extremely simple
 
-### 2. Point Update, Path Query
+For example, with static node weights and only path sums, one may sometimes combine:
 
-Very common in contests: the tree shape is fixed, but node values change.
+- root-prefix sums
+- LCA
 
-### 3. Edge-Valued Variants
+without needing HLD at all.
 
-Still HLD, but you must be careful about whether a position stores a node value or the edge to its parent.
+### Use Tree DP Or Rerooting Instead When
+
+- the problem is about computing one value for every node or subtree
+- not about answering many online path queries
+
+HLD is a query/update data-structure reduction, not a replacement for tree DP.
+
+### Use Link-Cut Trees Or Other Dynamic-Tree Tools Instead When
+
+- the tree topology itself changes online
+
+HLD assumes the tree is fixed during all queries.
 
 ## Worked Examples
 
-### Example 1: path maximum
+### Example 1: Path Maximum With Point Updates
 
-Climb the deeper chain head until both endpoints share a head, then finish with one last range maximum on that chain.
+This is the repo's main HLD anchor:
 
-### Example 2: point update
+- [Path Queries II](../../../practice/ladders/graphs/hld/pathqueries2.md)
 
-Update the single flattened index `pos[u]`. The chain decomposition itself never changes.
+Suppose values live on vertices and queries ask:
 
-### Example 3: subtree interval
+- update one vertex value
+- query maximum on path `u -> v`
 
-HLD also gives DFS-style positions, so subtree queries can often become one contiguous interval. That is a good sanity check while debugging your flattening.
+Then:
 
-## Recognition Cues
+- update becomes one point update at `pos[u]`
+- path query becomes repeated chain climbs plus one final same-chain segment
 
-Strong clues:
+Because `max` is commutative, the order of consumed chain segments does not matter.
+
+### Example 2: Why The Deeper Head Must Move
+
+Suppose `head[u] != head[v]`.
+
+If you move the shallower chain upward first, you may skip part of the true path or fail to shrink the problem properly.
+
+The correct rule is:
+
+- compare `depth[head[u]]` and `depth[head[v]]`
+- always consume the deeper head segment first
+
+That guarantees the consumed interval lies fully inside the query path.
+
+### Example 3: Edge-Valued Path Sum
+
+Suppose edge `(parent[x], x)` stores a weight at `pos[x]`.
+
+If `u` and `v` finally land on the same chain and `w` is the shallower endpoint on that chain, then the final interval is usually:
+
+$$
+[\mathrm{pos}[w] + 1, \mathrm{pos}[\text{deeper endpoint}]]
+$$
+
+not the inclusive vertex interval.
+
+That `+1` is the classic edge-valued HLD adjustment.
+
+### Example 4: Subtree Query As A Sanity Check
+
+Although HLD is built for arbitrary paths, the flattening order still gives each subtree a contiguous interval:
+
+$$
+[\mathrm{pos}[u], \mathrm{pos}[u] + \mathrm{size}[u] - 1].
+$$
+
+This is not the main reason to use HLD, but it is a very useful debugging check:
+
+- if subtree intervals are broken, your decomposition order is wrong
+
+## Algorithms And Pseudocode
+
+### Preprocessing
+
+First DFS:
+
+- compute `parent`
+- compute `depth`
+- compute `size`
+- choose `heavy`
+
+Second DFS:
+
+- assign `head`
+- assign `pos`
+- write vertex or edge values into the base array
+
+### Standard Path Query Loop
+
+```text
+query_path(u, v):
+    ans = identity
+
+    while head[u] != head[v]:
+        if depth[head[u]] < depth[head[v]]:
+            swap(u, v)
+        ans = merge(ans, seg.query(pos[head[u]], pos[u]))
+        u = parent[head[u]]
+
+    if depth[u] > depth[v]:
+        swap(u, v)
+
+    ans = merge(ans, seg.query(pos[u], pos[v]))
+    return ans
+```
+
+For edge-valued queries, the final same-chain segment becomes:
+
+```text
+seg.query(pos[u] + 1, pos[v])
+```
+
+if `u` is the LCA-side endpoint on that chain.
+
+### Point Update
+
+```text
+update_vertex(u, new_value):
+    seg.set_value(pos[u], new_value)
+```
+
+### Complexity
+
+With an `O(\log n)` segment-tree range query:
+
+- preprocessing: `O(n)`
+- point update: `O(\log n)`
+- path query: `O(\log^2 n)`
+
+Some special cases can be pushed to `O(\log n)` by storing richer prefix information per chain, but `O(\log^2 n)` is the standard contest baseline.
+
+## Implementation Notes
+
+- Decide node-valued vs edge-valued before writing any query code.
+- The root convention must be explicit; edge-valued HLD needs a dummy or neutral value at the root position.
+- The repo's first practical path-query implementation is node-valued, which is the best entry point.
+- The heavy child is usually chosen by largest subtree size. Ties do not affect correctness.
+- The segment tree size does **not** require `n` to be a power of two if your implementation already handles arbitrary `n`.
+- For non-commutative merges, keep two accumulators and combine them in the correct path order.
+- If recursion depth is risky, both DFS passes can be made iterative, but a recursive version is usually easier to understand first.
+
+## Practice Archetypes
+
+You should strongly suspect HLD when you see:
 
 - static tree
-- many path queries
-- many updates on node or edge values
-- constraints too large for per-query DFS
+- many queries on arbitrary paths
+- many point updates on nodes or edges
+- path sum / max / xor / gcd with constraints too large for per-query DFS
 
-HLD is often confused with:
+Repo anchors:
 
-- [LCA](../lca/README.md), which helps describe the path but not arbitrary path aggregates
-- Euler-tour flattening, which is perfect for subtree queries but not enough for general `u -> v` path queries
+- [Path Queries II](../../../practice/ladders/graphs/hld/pathqueries2.md)
+- [LCA](../lca/README.md)
+- [Segment Tree](../../data-structures/segment-tree/README.md)
 
-## Common Mistakes
+Starter pieces in the repo:
 
-- forgetting the final same-chain segment after the main loop
-- climbing the shallower chain instead of the deeper one
-- mixing node values and edge values without shifting indices carefully
-- not reordering endpoints by depth for the final same-chain query
-- reaching for HLD when a plain subtree interval would already solve the problem
+- [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
+- [Path Queries II note](../../../practice/ladders/graphs/hld/pathqueries2.md)
 
-## Practice Ladder
+Notebook refresher:
+
+- [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
+
+## References And Repo Anchors
+
+Course / tutorial style:
+
+- [CP-Algorithms: Heavy-Light Decomposition](https://cp-algorithms.com/graph/hld.html)
+- [USACO Guide: Heavy-Light Decomposition](https://usaco.guide/plat/hld?lang=cpp)
+- [OI Wiki: Heavy-Light Decomposition](https://en.oi-wiki.org/graph/hld/)
+
+Practice / repo anchors:
 
 - [Heavy-Light Decomposition ladder](../../../practice/ladders/graphs/hld/README.md)
-
-Suggested order:
-
-1. chain decomposition and indexing
-2. point update plus path maximum
-3. edge-valued or path-update variants
-
-## Go Deeper
-
-- Reference: [CP-Algorithms - Heavy-Light Decomposition](https://cp-algorithms.com/graph/hld.html)
-- Reference: [USACO Guide - HLD](https://usaco.guide/plat/hld?lang=cpp)
-- Reference: [OI Wiki - HLD](https://en.oi-wiki.org/graph/hld/)
-- Practice: [CSES Tree Algorithms](https://cses.fi/problemset/)
+- [Path Queries II](../../../practice/ladders/graphs/hld/pathqueries2.md)
+- [Segment Tree](../../data-structures/segment-tree/README.md)
 
 ## Related Topics
 
 - [Trees](../trees/README.md)
 - [LCA](../lca/README.md)
 - [Segment Tree](../../data-structures/segment-tree/README.md)
+- [Tree DP](../../dp/tree-dp/README.md)
