@@ -24,16 +24,16 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 
 | Source | Type |
 | --- | --- |
-| [cppreference language](https://en.cppreference.com/w/cpp/language) | `official docs` |
-| [cppreference containers](https://en.cppreference.com/w/cpp/container) | `official docs` |
-| [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `official docs` |
+| [cppreference language](https://en.cppreference.com/w/cpp/language) | `Primary` |
+| [cppreference containers](https://en.cppreference.com/w/cpp/container) | `Primary` |
+| [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `Primary` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [Codeforces sortings tag](https://codeforces.com/problemset?tags=sortings) | `problem set` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [Codeforces sortings tag](https://codeforces.com/problemset?tags=sortings) | `Practice` |
 
 ## Repo Companion Material
 

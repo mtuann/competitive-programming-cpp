@@ -22,17 +22,17 @@ Count intersections, lattice points, or union areas by mixing geometry primitive
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms Pick's theorem](https://cp-algorithms.com/geometry/picks-theorem.html) | `trusted guide` |
-| [cp-algorithms lattice points](https://cp-algorithms.com/geometry/lattice-points.html) | `trusted guide` |
-| [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `trusted guide` |
+| [cp-algorithms Pick's theorem](https://cp-algorithms.com/geometry/picks-theorem.html) | `Reference` |
+| [cp-algorithms lattice points](https://cp-algorithms.com/geometry/lattice-points.html) | `Reference` |
+| [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Polygon Lattice Points](https://cses.fi/problemset/task/2193/) | `problem` |
-| [CSES Intersection Points](https://cses.fi/problemset/task/1740) | `problem` |
-| [CSES Area of Rectangles](https://cses.fi/problemset/task/1741) | `problem` |
+| [CSES Polygon Lattice Points](https://cses.fi/problemset/task/2193/) | `Practice` |
+| [CSES Intersection Points](https://cses.fi/problemset/task/1740) | `Practice` |
+| [CSES Area of Rectangles](https://cses.fi/problemset/task/1741) | `Practice` |
 
 ## Curated External Problems
 

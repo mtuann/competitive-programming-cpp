@@ -23,17 +23,17 @@ Reductions, hardness classes, and the language for understanding when exact effi
 
 | Source | Type |
 | --- | --- |
-| [MIT 18.404J Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) | `course` |
-| [Computational Complexity: A Modern Approach](https://theory.cs.princeton.edu/complexity/) | `textbook` |
-| [MIT 6.006 Lecture 19 Complexity](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-19-complexity/) | `course` |
+| [MIT 18.404J Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) | `Course` |
+| [Computational Complexity: A Modern Approach](https://theory.cs.princeton.edu/complexity/) | `Reference` |
+| [MIT 6.006 Lecture 19 Complexity](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-19-complexity/) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [MIT 18.404J assignments and exams](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) | `course exercises` |
-| [MIT 6.045J](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/) | `course exercises` |
-| [Princeton textbook exercises](https://theory.cs.princeton.edu/complexity/) | `course exercises` |
+| [MIT 18.404J assignments and exams](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) | `Course` |
+| [MIT 6.045J](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/) | `Course` |
+| [Princeton textbook exercises](https://theory.cs.princeton.edu/complexity/) | `Reference` |
 
 ## Repo Companion Material
 

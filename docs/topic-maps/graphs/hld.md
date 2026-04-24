@@ -23,17 +23,17 @@ Decompose tree paths into logarithmically many chains so path queries and update
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms HLD](https://cp-algorithms.com/graph/hld.html) | `trusted guide` |
-| [OI Wiki HLD](https://en.oi-wiki.org/graph/hld/) | `trusted guide` |
-| [USACO Guide HLD](https://usaco.guide/plat/hld?lang=cpp) | `trusted guide` |
+| [cp-algorithms HLD](https://cp-algorithms.com/graph/hld.html) | `Reference` |
+| [OI Wiki HLD](https://en.oi-wiki.org/graph/hld/) | `Reference` |
+| [USACO Guide HLD](https://usaco.guide/plat/hld?lang=cpp) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker vertex_add_path_sum](https://judge.yosupo.jp/problem/vertex_add_path_sum) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [Library Checker vertex_add_path_sum](https://judge.yosupo.jp/problem/vertex_add_path_sum) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

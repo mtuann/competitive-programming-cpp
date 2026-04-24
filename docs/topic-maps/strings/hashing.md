@@ -22,17 +22,17 @@ Rolling hashes for substring equality, borders, Rabin-Karp style matching, and c
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms string hashing](https://cp-algorithms.com/string/string-hashing.html) | `trusted guide` |
-| [USACO Guide hashing](https://usaco.guide/gold/hashing) | `trusted guide` |
-| [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `course` |
+| [cp-algorithms string hashing](https://cp-algorithms.com/string/string-hashing.html) | `Reference` |
+| [USACO Guide hashing](https://usaco.guide/gold/hashing) | `Reference` |
+| [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Finding Periods](https://cses.fi/problemset/task/1733) | `problem` |
-| [CSES Finding Borders](https://cses.fi/problemset/task/1732) | `problem` |
-| [USACO Guide hashing problems](https://usaco.guide/gold/hashing) | `problem bank` |
+| [CSES Finding Periods](https://cses.fi/problemset/task/1733) | `Practice` |
+| [CSES Finding Borders](https://cses.fi/problemset/task/1732) | `Practice` |
+| [USACO Guide hashing problems](https://usaco.guide/gold/hashing) | `Practice` |
 
 ## Curated External Problems
 

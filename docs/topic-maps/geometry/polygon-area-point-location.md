@@ -22,17 +22,17 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms area of simple polygon](https://cp-algorithms.com/geometry/area-of-simple-polygon.html) | `trusted guide` |
-| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `course` |
-| [cp-algorithms point location](https://cp-algorithms.com/geometry/point-location.html) | `trusted guide` |
+| [cp-algorithms area of simple polygon](https://cp-algorithms.com/geometry/area-of-simple-polygon.html) | `Reference` |
+| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
+| [cp-algorithms point location](https://cp-algorithms.com/geometry/point-location.html) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `problem` |
-| [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `problem` |
-| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `problem` |
+| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `Practice` |
+| [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `Practice` |
+| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `Practice` |
 
 ## Repo Companion Material
 

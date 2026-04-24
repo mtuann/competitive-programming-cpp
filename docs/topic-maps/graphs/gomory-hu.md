@@ -21,15 +21,15 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 
 | Source | Type |
 | --- | --- |
-| [MIT Gomory-Hu paper mirror](https://web.mit.edu/tabbott/www/papers/gomory-hu.pdf) | `paper` |
-| [UC Davis advanced algorithms](https://www.cs.ucdavis.edu/~martel/222b/) | `course` |
+| [MIT Gomory-Hu paper mirror](https://web.mit.edu/tabbott/www/papers/gomory-hu.pdf) | `Primary` |
+| [UC Davis advanced algorithms](https://www.cs.ucdavis.edu/~martel/222b/) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker problem bank](https://github.com/yosupo06/library-checker-problems) | `problem bank` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
+| [Library Checker problem bank](https://github.com/yosupo06/library-checker-problems) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
 
 ## Curated External Problems
 

@@ -23,16 +23,16 @@ Distribute sums under lower and upper bounds using stars and bars, generating fu
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms stars and bars](https://cp-algorithms.com/combinatorics/stars_and_bars.html) | `trusted guide` |
-| [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `trusted guide` |
-| [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `trusted guide` |
+| [cp-algorithms stars and bars](https://cp-algorithms.com/combinatorics/stars_and_bars.html) | `Reference` |
+| [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `Reference` |
+| [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Distributing Apples](https://cses.fi/problemset/task/1716/) | `problem` |
-| [AtCoder DP M](https://atcoder.jp/contests/dp/tasks/dp_m) | `problem` |
+| [CSES Distributing Apples](https://cses.fi/problemset/task/1716/) | `Practice` |
+| [AtCoder DP M](https://atcoder.jp/contests/dp/tasks/dp_m) | `Practice` |
 
 ## Curated External Problems
 

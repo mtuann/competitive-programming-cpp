@@ -22,16 +22,16 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 
 | Source | Type |
 | --- | --- |
-| [AtCoder ACL DSU](https://atcoder.github.io/ac-library/production/document_en/dsu.html) | `official docs` |
-| [cp-algorithms DSU](https://cp-algorithms.com/data_structures/disjoint_set_union.html) | `trusted guide` |
-| [USACO Guide DSU](https://usaco.guide/gold/dsu) | `trusted guide` |
+| [AtCoder ACL DSU](https://atcoder.github.io/ac-library/production/document_en/dsu.html) | `Primary` |
+| [cp-algorithms DSU](https://cp-algorithms.com/data_structures/disjoint_set_union.html) | `Reference` |
+| [USACO Guide DSU](https://usaco.guide/gold/dsu) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

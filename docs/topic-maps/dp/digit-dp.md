@@ -22,16 +22,16 @@ Count or optimize over numeric ranges by scanning digits left-to-right with tigh
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide Digit DP](https://usaco.guide/gold/digit-dp) | `trusted guide` |
-| [OI Wiki Digit DP](https://en.oi-wiki.org/dp/number/) | `trusted guide` |
+| [USACO Guide Digit DP](https://usaco.guide/gold/digit-dp) | `Reference` |
+| [OI Wiki Digit DP](https://en.oi-wiki.org/dp/number/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP S](https://atcoder.jp/contests/dp/tasks/dp_s) | `problem` |
-| [CSES Counting Numbers](https://cses.fi/problemset/task/2220/) | `problem` |
-| [USACO Guide digit DP problems](https://usaco.guide/gold/digit-dp) | `problem bank` |
+| [AtCoder DP S](https://atcoder.jp/contests/dp/tasks/dp_s) | `Practice` |
+| [CSES Counting Numbers](https://cses.fi/problemset/task/2220/) | `Practice` |
+| [USACO Guide digit DP problems](https://usaco.guide/gold/digit-dp) | `Practice` |
 
 ## Curated External Problems
 

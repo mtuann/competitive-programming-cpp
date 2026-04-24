@@ -23,17 +23,17 @@ Polynomial multiplication and convolution with roots of unity, integer-friendly 
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms FFT](https://cp-algorithms.com/algebra/fft.html) | `trusted guide` |
-| [OI Wiki FFT](https://en.oi-wiki.org/math/poly/fft/) | `trusted guide` |
-| [AtCoder ACL Convolution](https://atcoder.github.io/ac-library/production/document_en/convolution.html) | `official docs` |
+| [cp-algorithms FFT](https://cp-algorithms.com/algebra/fft.html) | `Reference` |
+| [OI Wiki FFT](https://en.oi-wiki.org/math/poly/fft/) | `Reference` |
+| [AtCoder ACL Convolution](https://atcoder.github.io/ac-library/production/document_en/convolution.html) | `Primary` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder Practice2 F](https://atcoder.jp/contests/practice2/tasks/practice2_f) | `problem` |
-| [CSES Signal Processing](https://cses.fi/problemset/task/2113/) | `problem` |
-| [CSES Apples and Bananas](https://cses.fi/problemset/task/2112/) | `problem` |
+| [AtCoder Practice2 F](https://atcoder.jp/contests/practice2/tasks/practice2_f) | `Practice` |
+| [CSES Signal Processing](https://cses.fi/problemset/task/2113/) | `Practice` |
+| [CSES Apples and Bananas](https://cses.fi/problemset/task/2112/) | `Practice` |
 
 ## Curated External Problems
 

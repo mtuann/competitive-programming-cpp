@@ -24,17 +24,17 @@ Monte Carlo and Las Vegas design, amplification, randomized rounding, and probab
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.856 Randomized Algorithms](https://courses.csail.mit.edu/6.856/current/) | `course` |
-| [MIT OCW 6.856J](https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/) | `course` |
-| [CMU 15-756 Randomized Algorithms](https://csd.cs.cmu.edu/course/15756/f24) | `course` |
+| [MIT 6.856 Randomized Algorithms](https://courses.csail.mit.edu/6.856/current/) | `Course` |
+| [MIT OCW 6.856J](https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/) | `Course` |
+| [CMU 15-756 Randomized Algorithms](https://csd.cs.cmu.edu/course/15756/f24) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.856 notes and problem sets](https://courses.csail.mit.edu/6.856/current/) | `course exercises` |
-| [MIT OCW 6.856J lecture notes](https://www.ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/resources/lecture-notes/) | `course exercises` |
-| [CMU 15-359 Probability and Computing](https://www.csd.cmu.edu/course/15359/f24) | `course exercises` |
+| [MIT 6.856 notes and problem sets](https://courses.csail.mit.edu/6.856/current/) | `Course` |
+| [MIT OCW 6.856J lecture notes](https://www.ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/resources/lecture-notes/) | `Course` |
+| [CMU 15-359 Probability and Computing](https://www.csd.cmu.edu/course/15359/f24) | `Course` |
 
 ## Repo Companion Material
 

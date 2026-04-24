@@ -22,17 +22,17 @@ Sorted suffix views and LCP arrays for substring order, uniqueness, and offline 
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms suffix array](https://cp-algorithms.com/string/suffix-array.html) | `trusted guide` |
-| [Princeton suffix arrays](https://algs4.cs.princeton.edu/63suffix/) | `course` |
-| [USACO Guide suffix array](https://usaco.guide/adv/suffix-array?lang=cpp) | `trusted guide` |
+| [cp-algorithms suffix array](https://cp-algorithms.com/string/suffix-array.html) | `Reference` |
+| [Princeton suffix arrays](https://algs4.cs.princeton.edu/63suffix/) | `Course` |
+| [USACO Guide suffix array](https://usaco.guide/adv/suffix-array?lang=cpp) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker Suffix Array](https://judge.yosupo.jp/problem/suffixarray) | `problem` |
-| [Library Checker LCP Array](https://judge.yosupo.jp/problem/lcp_array) | `problem` |
-| [CSES Distinct Substrings](https://cses.fi/problemset/task/2105/) | `problem` |
+| [Library Checker Suffix Array](https://judge.yosupo.jp/problem/suffixarray) | `Practice` |
+| [Library Checker LCP Array](https://judge.yosupo.jp/problem/lcp_array) | `Practice` |
+| [CSES Distinct Substrings](https://cses.fi/problemset/task/2105/) | `Practice` |
 
 ## Curated External Problems
 

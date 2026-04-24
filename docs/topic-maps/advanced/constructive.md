@@ -24,17 +24,17 @@ Output-sensitive problems where the main work is proving the existence and struc
 
 | Source | Type |
 | --- | --- |
-| [IOI Syllabus 2025](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `official curriculum` |
-| [Tips on Constructive Algorithms](https://codeforces.com/blog/entry/80317) | `trusted tutorial` |
-| [CSES books](https://www.cses.fi/book/index.html) | `reference` |
+| [IOI Syllabus 2025](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `Primary` |
+| [Tips on Constructive Algorithms](https://codeforces.com/blog/entry/80317) | `Essay / Blog` |
+| [CSES books](https://www.cses.fi/book/index.html) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Codeforces constructive algorithms tag](https://codeforces.com/problemset?locale=en&tags=constructive+algorithms) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [BOI task archive](https://boi.cses.fi/tasks.php) | `contest archive` |
+| [Codeforces constructive algorithms tag](https://codeforces.com/problemset?locale=en&tags=constructive+algorithms) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [BOI task archive](https://boi.cses.fi/tasks.php) | `Practice` |
 
 ## Repo Companion Material
 

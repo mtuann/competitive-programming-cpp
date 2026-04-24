@@ -22,17 +22,17 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 
 | Source | Type |
 | --- | --- |
-| [OI Wiki max bipartite matching](https://en.oi-wiki.org/graph/graph-matching/bigraph-match/) | `trusted guide` |
-| [cp-algorithms Kuhn](https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html) | `trusted guide` |
-| [OI Wiki augmenting path](https://en.oi-wiki.org/graph/graph-matching/augment/) | `trusted guide` |
+| [OI Wiki max bipartite matching](https://en.oi-wiki.org/graph/graph-matching/bigraph-match/) | `Reference` |
+| [cp-algorithms Kuhn](https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html) | `Reference` |
+| [OI Wiki augmenting path](https://en.oi-wiki.org/graph/graph-matching/augment/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker bipartite matching](https://judge.yosupo.jp/problem/bipartitematching) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [Library Checker bipartite matching](https://judge.yosupo.jp/problem/bipartitematching) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

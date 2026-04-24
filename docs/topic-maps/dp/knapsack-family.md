@@ -22,17 +22,17 @@ Choose the state dimension and transition order that matches 0-1, complete, boun
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide Knapsack](https://usaco.guide/gold/knapsack) | `trusted guide` |
-| [cp-algorithms knapsack](https://cp-algorithms.com/dynamic_programming/knapsack.html) | `trusted guide` |
-| [OI Wiki knapsack DP](https://en.oi-wiki.org/dp/knapsack/) | `trusted guide` |
+| [USACO Guide Knapsack](https://usaco.guide/gold/knapsack) | `Reference` |
+| [cp-algorithms knapsack](https://cp-algorithms.com/dynamic_programming/knapsack.html) | `Reference` |
+| [OI Wiki knapsack DP](https://en.oi-wiki.org/dp/knapsack/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP D](https://atcoder.jp/contests/dp/tasks/dp_d) | `problem` |
-| [CSES Money Sums](https://cses.fi/problemset/task/1745/) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [AtCoder DP D](https://atcoder.jp/contests/dp/tasks/dp_d) | `Practice` |
+| [CSES Money Sums](https://cses.fi/problemset/task/1745/) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

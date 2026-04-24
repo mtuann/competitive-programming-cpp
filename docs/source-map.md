@@ -2,12 +2,15 @@
 
 Research snapshot: `April 22, 2026`
 
+Freshness-sensitive link and wording review: `April 24, 2026`
+
 This repository design is grounded in public official or project-primary sources. The phrase "all top CS universities" is not literally enumerable in one pass, so this source map uses a representative set of leading public syllabi and public contest systems rather than pretending every school in the world exposes the same level of detail.
 
 ## How To Read This File
 
 - `official` means a university course page, catalog, contest site, syllabus, or project homepage
 - `project-primary` means the maintained homepage or repository of a widely used resource
+- learner-facing topic maps normalize raw source labels into the repo taxonomy: `Primary`, `Course`, `Reference`, `Essay / Blog`, and `Practice`
 - terms are written exactly when possible, such as `Fall 2025` or `Spring 2026`
 - when a contest has no single official syllabus, the curriculum role is inferred from official rules, archives, curriculum pages, and training materials
 - this file is the repo-level research snapshot, but freshness-sensitive pages should still record their own review context when current behavior or recommendations matter

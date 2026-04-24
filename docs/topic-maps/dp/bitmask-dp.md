@@ -22,17 +22,17 @@ Compress small subsets into bitmasks and reason about transitions over subsets, 
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide Bitmask DP](https://usaco.guide/gold/dp-bitmasks) | `trusted guide` |
-| [OI Wiki state compression DP](https://en.oi-wiki.org/dp/state/) | `trusted guide` |
-| [USACO Guide broken profile](https://usaco.guide/adv/dp-broken-profile) | `trusted guide` |
+| [USACO Guide Bitmask DP](https://usaco.guide/gold/dp-bitmasks) | `Reference` |
+| [OI Wiki state compression DP](https://en.oi-wiki.org/dp/state/) | `Reference` |
+| [USACO Guide broken profile](https://usaco.guide/adv/dp-broken-profile) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP O](https://atcoder.jp/contests/dp/tasks/dp_o) | `problem` |
-| [CSES Elevator Rides](https://cses.fi/problemset/task/1653/) | `problem` |
-| [CSES Counting Tilings](https://cses.fi/problemset/task/2181/) | `problem` |
+| [AtCoder DP O](https://atcoder.jp/contests/dp/tasks/dp_o) | `Practice` |
+| [CSES Elevator Rides](https://cses.fi/problemset/task/1653/) | `Practice` |
+| [CSES Counting Tilings](https://cses.fi/problemset/task/2181/) | `Practice` |
 
 ## Curated External Problems
 

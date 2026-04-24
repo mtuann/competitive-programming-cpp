@@ -22,17 +22,17 @@ Dot, cross, orientation, signed area, and exact integer geometry as the basis of
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms basic geometry](https://cp-algorithms.com/geometry/basic-geometry.html) | `trusted guide` |
-| [cp-algorithms oriented area](https://cp-algorithms.com/geometry/oriented-triangle-area.html) | `trusted guide` |
-| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `course` |
+| [cp-algorithms basic geometry](https://cp-algorithms.com/geometry/basic-geometry.html) | `Reference` |
+| [cp-algorithms oriented area](https://cp-algorithms.com/geometry/oriented-triangle-area.html) | `Reference` |
+| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `problem` |
-| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `problem` |
-| [CSES Line Segment Intersection](https://cses.fi/problemset/task/2190) | `problem` |
+| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `Practice` |
+| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `Practice` |
+| [CSES Line Segment Intersection](https://cses.fi/problemset/task/2190) | `Practice` |
 
 ## Repo Companion Material
 

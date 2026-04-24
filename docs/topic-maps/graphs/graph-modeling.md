@@ -23,16 +23,16 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 
 | Source | Type |
 | --- | --- |
-| [Princeton Graphs](https://algs4.cs.princeton.edu/40graphs) | `course` |
-| [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `official curriculum` |
-| [OI Wiki graph intro](https://en.oi-wiki.org/graph/) | `trusted guide` |
+| [Princeton Graphs](https://algs4.cs.princeton.edu/40graphs) | `Course` |
+| [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `Primary` |
+| [OI Wiki graph intro](https://en.oi-wiki.org/graph/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Repo Companion Material
 

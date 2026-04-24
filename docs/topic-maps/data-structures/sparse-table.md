@@ -22,16 +22,16 @@ Static range query structure for idempotent operations such as RMQ and LCA reduc
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms sparse table](https://cp-algorithms.com/data_structures/sparse-table.html) | `trusted guide` |
-| [OI Wiki sparse table](https://en.oi-wiki.org/ds/sparse-table/) | `trusted guide` |
-| [USACO Guide Euler Tour / Static RMQ](https://usaco.guide/gold/tree-euler/) | `trusted guide` |
+| [cp-algorithms sparse table](https://cp-algorithms.com/data_structures/sparse-table.html) | `Reference` |
+| [OI Wiki sparse table](https://en.oi-wiki.org/ds/sparse-table/) | `Reference` |
+| [USACO Guide Euler Tour / Static RMQ](https://usaco.guide/gold/tree-euler/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Static Range Minimum Queries](https://cses.fi/problemset/task/1647/) | `problem` |
-| [SPOJ RMQSQ](https://www.spoj.com/problems/RMQSQ/) | `problem` |
+| [CSES Static Range Minimum Queries](https://cses.fi/problemset/task/1647/) | `Practice` |
+| [SPOJ RMQSQ](https://www.spoj.com/problems/RMQSQ/) | `Practice` |
 
 ## Curated External Problems
 

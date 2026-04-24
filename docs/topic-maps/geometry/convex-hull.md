@@ -22,17 +22,17 @@ Build hulls with monotone chain or Graham scan, then exploit hull order for rota
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms convex hull](https://cp-algorithms.com/geometry/convex-hull.html) | `trusted guide` |
-| [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `trusted guide` |
-| [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `trusted tutorial` |
+| [cp-algorithms convex hull](https://cp-algorithms.com/geometry/convex-hull.html) | `Reference` |
+| [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `Reference` |
+| [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `Essay / Blog` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Convex Hull](https://cses.fi/problemset/task/2195) | `problem` |
-| [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `problem bank` |
-| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `problem` |
+| [CSES Convex Hull](https://cses.fi/problemset/task/2195) | `Practice` |
+| [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `Practice` |
+| [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `Practice` |
 
 ## Curated External Problems
 

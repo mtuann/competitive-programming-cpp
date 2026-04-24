@@ -22,16 +22,16 @@ A range-update perspective on prefix sums: store changes at boundaries, then rec
 
 | Source | Type |
 | --- | --- |
-| [OI Wiki prefix sum and adjacent difference](https://en.oi-wiki.org/basic/prefix-sum/) | `trusted guide` |
-| [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `trusted guide` |
-| [cppreference adjacent_difference](https://en.cppreference.com/w/cpp/algorithm/adjacent_difference) | `official docs` |
+| [OI Wiki prefix sum and adjacent difference](https://en.oi-wiki.org/basic/prefix-sum/) | `Reference` |
+| [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `Reference` |
+| [cppreference adjacent_difference](https://en.cppreference.com/w/cpp/algorithm/adjacent_difference) | `Primary` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Range Update Queries](https://cses.fi/problemset/task/1651/) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [CSES Range Update Queries](https://cses.fi/problemset/task/1651/) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

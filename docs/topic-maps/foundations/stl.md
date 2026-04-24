@@ -24,16 +24,16 @@ Container and algorithm fluency: build the habit of reaching for `vector`, `set`
 
 | Source | Type |
 | --- | --- |
-| [cppreference containers](https://en.cppreference.com/w/cpp/container) | `official docs` |
-| [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `official docs` |
-| [USACO Guide](https://usaco.guide/) | `trusted guide` |
+| [cppreference containers](https://en.cppreference.com/w/cpp/container) | `Primary` |
+| [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `Primary` |
+| [USACO Guide](https://usaco.guide/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [Codeforces data structures tag](https://codeforces.com/problemset?tags=data+structures) | `problem set` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [Codeforces data structures tag](https://codeforces.com/problemset?tags=data+structures) | `Practice` |
 
 ## Curated External Problems
 

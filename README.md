@@ -42,7 +42,7 @@ Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages.
 - [Explore](docs/explore.md): topic maps, indexes, and research-backed coverage lookup
 - [Problem Index](docs/problem-index.md): current solved problem notes mapped back to their learning hubs
 - [External Problem Index](docs/external-problem-index.md): curated official and trusted problems grouped by topic, microtopic, and contest track
-- [Topic Maps](docs/topic-maps/index.md): trusted learning sources, official practice sources, and repo coverage for each subtopic
+- [Topic Maps](docs/topic-maps/index.md): trusted learning sources, practice and follow-up sources, and repo coverage for each subtopic
 - [Build Kit](docs/build-kit.md): templates, notebook pages, and debugging workflows
 - [Templates](template-library.md): reusable contest-ready code
 - [Notebook](notebook/README.md): dense reference material for contest use
@@ -75,6 +75,8 @@ mkdocs build --strict
 ## References And Standards
 
 The curriculum is grounded in public official sources current through `April 22, 2026`, including university algorithms syllabi, official contest documents, and major CP references.
+
+Freshness-sensitive external links and workflow recommendations in learner-facing docs were last reviewed on `April 24, 2026`.
 
 - Research appendix: [docs/source-map.md](docs/source-map.md)
 - Maintainer plan: [docs/content-blueprint.md](docs/content-blueprint.md)

@@ -4,6 +4,8 @@ Mixed rounds are for `breadth and retrieval`, not first exposure.
 
 Use them when you already know the basics of several areas and want to practice switching gears under light contest pressure.
 
+Last reviewed against official follow-up pools: `2026-04-24`
+
 ## Who This Folder Is For
 
 Use mixed rounds when:

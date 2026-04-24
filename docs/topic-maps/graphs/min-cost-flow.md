@@ -22,17 +22,17 @@ Successive shortest augmenting paths, potentials, and reduced costs for transpor
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.854 min-cost flow notes](https://courses.csail.mit.edu/6.854/20/Notes/n09-mincostflow.html) | `course` |
-| [cp-algorithms min-cost flow](https://cp-algorithms.com/graph/min_cost_flow.html) | `trusted guide` |
-| [USACO Guide min-cost flow](https://usaco.guide/adv/min-cost-flow?lang=cpp) | `trusted guide` |
+| [MIT 6.854 min-cost flow notes](https://courses.csail.mit.edu/6.854/20/Notes/n09-mincostflow.html) | `Course` |
+| [cp-algorithms min-cost flow](https://cp-algorithms.com/graph/min_cost_flow.html) | `Reference` |
+| [USACO Guide min-cost flow](https://usaco.guide/adv/min-cost-flow?lang=cpp) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker min_cost_b_flow](https://judge.yosupo.jp/problem/min_cost_b_flow) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [Library Checker min_cost_b_flow](https://judge.yosupo.jp/problem/min_cost_b_flow) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

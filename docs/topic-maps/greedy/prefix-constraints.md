@@ -22,17 +22,17 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 
 | Source | Type |
 | --- | --- |
-| [OI Wiki greedy](https://en.oi-wiki.org/basic/greedy/) | `trusted guide` |
-| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `reference` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [OI Wiki greedy](https://en.oi-wiki.org/basic/greedy/) | `Reference` |
+| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Repo Companion Material
 

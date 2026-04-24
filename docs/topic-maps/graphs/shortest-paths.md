@@ -23,17 +23,17 @@ From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool th
 
 | Source | Type |
 | --- | --- |
-| [Princeton Shortest Paths](https://algs4.cs.princeton.edu/44sp/) | `course` |
-| [MIT 6.006 Dijkstra and DAG shortest paths](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture16.pdf) | `course` |
-| [OI Wiki shortest path](https://en.oi-wiki.org/graph/shortest-path/) | `trusted guide` |
+| [Princeton Shortest Paths](https://algs4.cs.princeton.edu/44sp/) | `Course` |
+| [MIT 6.006 Dijkstra and DAG shortest paths](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture16.pdf) | `Course` |
+| [OI Wiki shortest path](https://en.oi-wiki.org/graph/shortest-path/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [Library Checker shortest path](https://judge.yosupo.jp/problem/shortest_path) | `problem` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [Library Checker shortest path](https://judge.yosupo.jp/problem/shortest_path) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

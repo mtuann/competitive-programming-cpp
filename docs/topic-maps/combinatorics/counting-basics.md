@@ -22,17 +22,17 @@ Factorials, binomials, arrangements, stars and bars, and the basic models that r
 
 | Source | Type |
 | --- | --- |
-| [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) | `textbook` |
-| [cp-algorithms binomial coefficients](https://cp-algorithms.com/combinatorics/binomial-coefficients.html) | `trusted guide` |
-| [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `trusted guide` |
+| [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) | `Reference` |
+| [cp-algorithms binomial coefficients](https://cp-algorithms.com/combinatorics/binomial-coefficients.html) | `Reference` |
+| [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Binomial Coefficients](https://cses.fi/problemset/task/1079/) | `problem` |
-| [CSES Distributing Apples](https://cses.fi/problemset/task/1716/) | `problem` |
-| [USACO Guide Catalan Numbers](https://usaco.guide/gold/combo?lang=cpp) | `trusted guide` |
+| [CSES Binomial Coefficients](https://cses.fi/problemset/task/1079/) | `Practice` |
+| [CSES Distributing Apples](https://cses.fi/problemset/task/1716/) | `Practice` |
+| [USACO Guide Catalan Numbers](https://usaco.guide/gold/combo?lang=cpp) | `Reference` |
 
 ## Curated External Problems
 

@@ -24,17 +24,17 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 
 | Source | Type |
 | --- | --- |
-| [Stanford EE364a](https://web.stanford.edu/class/ee364a/) | `course` |
-| [Boyd-Vandenberghe Convex Optimization](https://stanford.edu/~boyd/cvxbook/) | `textbook` |
-| [Stanford CS261](https://theory.stanford.edu/~tim/cs261/cs261.html) | `course` |
+| [Stanford EE364a](https://web.stanford.edu/class/ee364a/) | `Course` |
+| [Boyd-Vandenberghe Convex Optimization](https://stanford.edu/~boyd/cvxbook/) | `Reference` |
+| [Stanford CS261](https://theory.stanford.edu/~tim/cs261/cs261.html) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [EE364a duality notes](https://web.stanford.edu/class/ee364a/lectures/duality.pdf) | `course notes` |
-| [EE364b](https://web.stanford.edu/class/ee364b) | `course` |
-| [MS&E 310 Conic Linear Optimization](https://web.stanford.edu/class/msande310/course.shtml) | `course` |
+| [EE364a duality notes](https://web.stanford.edu/class/ee364a/lectures/duality.pdf) | `Course` |
+| [EE364b](https://web.stanford.edu/class/ee364b) | `Course` |
+| [MS&E 310 Conic Linear Optimization](https://web.stanford.edu/class/msande310/course.shtml) | `Course` |
 
 ## Repo Companion Material
 

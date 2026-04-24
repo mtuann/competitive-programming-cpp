@@ -22,16 +22,16 @@ Sort events, reorder queries, and use rollback or CDQ to trade interactivity for
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide offline deletion](https://usaco.guide/adv/offline-del) | `trusted guide` |
-| [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `trusted guide` |
-| [OI Wiki CDQ divide and conquer](https://en.oi-wiki.org/misc/cdq-divide/) | `trusted guide` |
+| [USACO Guide offline deletion](https://usaco.guide/adv/offline-del) | `Reference` |
+| [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `Reference` |
+| [OI Wiki CDQ divide and conquer](https://en.oi-wiki.org/misc/cdq-divide/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [CSES Range Interval Queries](https://cses.fi/problemset/task/3163) | `problem` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [CSES Range Interval Queries](https://cses.fi/problemset/task/3163) | `Practice` |
 
 ## Curated External Problems
 

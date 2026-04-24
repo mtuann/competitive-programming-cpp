@@ -82,7 +82,7 @@
 
 - [Problem index](../docs/problem-index.md): one table for every currently tracked solved note, with links to the note, code, ladder, and tutorial hub
 - [External problem index](../docs/external-problem-index.md): curated official and trusted problems outside the repo, organized by topic and usable as the next practice queue
-- [Topic maps](../docs/topic-maps/index.md): source-backed pages for each subtopic, including trusted learning references, official practice banks, and every repo problem tagged there
+- [Topic maps](../docs/topic-maps/index.md): source-backed pages for each subtopic, including trusted learning references, practice and follow-up sources, and every repo problem tagged there
 
 ## After One Practice Session
 

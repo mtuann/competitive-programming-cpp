@@ -22,16 +22,16 @@ Generate, count, or skip combinatorial objects in lexicographic order using rank
 
 | Source | Type |
 | --- | --- |
-| [cppreference next_permutation](https://en.cppreference.com/w/cpp/algorithm/next_permutation) | `official docs` |
-| [cp-algorithms generating combinations](https://cp-algorithms.com/combinatorics/generating_combinations.html) | `trusted guide` |
-| [OI Wiki enumerate](https://en.oi-wiki.org/basic/enumerate/) | `trusted guide` |
+| [cppreference next_permutation](https://en.cppreference.com/w/cpp/algorithm/next_permutation) | `Primary` |
+| [cp-algorithms generating combinations](https://cp-algorithms.com/combinatorics/generating_combinations.html) | `Reference` |
+| [OI Wiki enumerate](https://en.oi-wiki.org/basic/enumerate/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Creating Strings](https://cses.fi/problemset/task/1622/) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [CSES Creating Strings](https://cses.fi/problemset/task/1622/) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

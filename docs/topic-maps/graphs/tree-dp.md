@@ -22,17 +22,17 @@ Tree-rooted dynamic programming from local subtree states to rerooting and path 
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.006 structural DP on trees](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture21.pdf) | `course` |
-| [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `trusted guide` |
-| [USACO Guide DP on trees](https://usaco.guide/gold/dp-trees) | `trusted guide` |
+| [MIT 6.006 structural DP on trees](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture21.pdf) | `Course` |
+| [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `Reference` |
+| [USACO Guide DP on trees](https://usaco.guide/gold/dp-trees) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Curated External Problems
 

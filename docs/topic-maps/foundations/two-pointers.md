@@ -22,15 +22,15 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide two pointers](https://usaco.guide/silver/two-pointers) | `trusted guide` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [USACO Guide two pointers](https://usaco.guide/silver/two-pointers) | `Reference` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Codeforces two-pointers tag](https://codeforces.com/problemset?tags=two+pointers) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [Codeforces two-pointers tag](https://codeforces.com/problemset?tags=two+pointers) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Repo Companion Material
 

@@ -22,17 +22,17 @@ Divisibility, primes, totients, divisor functions, and the standard multiplicati
 
 | Source | Type |
 | --- | --- |
-| [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) | `textbook` |
-| [OI Wiki number theory basics](https://en.oi-wiki.org/math/number-theory/basic/) | `trusted guide` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [MIT Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf) | `Reference` |
+| [OI Wiki number theory basics](https://en.oi-wiki.org/math/number-theory/basic/) | `Reference` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Counting Divisors](https://cses.fi/problemset/task/1713/) | `problem` |
-| [CSES Common Divisors](https://cses.fi/problemset/task/1081/) | `problem` |
-| [CSES Counting Coprime Pairs](https://cses.fi/problemset/task/2417/) | `problem` |
+| [CSES Counting Divisors](https://cses.fi/problemset/task/1713/) | `Practice` |
+| [CSES Common Divisors](https://cses.fi/problemset/task/1081/) | `Practice` |
+| [CSES Counting Coprime Pairs](https://cses.fi/problemset/task/2417/) | `Practice` |
 
 ## Curated External Problems
 

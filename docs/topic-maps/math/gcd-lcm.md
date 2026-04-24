@@ -22,17 +22,17 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms Euclidean Algorithm](https://cp-algorithms.com/algebra/euclid-algorithm.html) | `trusted guide` |
-| [OI Wiki GCD](https://en.oi-wiki.org/math/number-theory/gcd/) | `trusted guide` |
-| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `reference` |
+| [cp-algorithms Euclidean Algorithm](https://cp-algorithms.com/algebra/euclid-algorithm.html) | `Reference` |
+| [OI Wiki GCD](https://en.oi-wiki.org/math/number-theory/gcd/) | `Reference` |
+| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Common Divisors](https://cses.fi/problemset/task/1081/) | `problem` |
-| [USACO Guide GCD on Blackboard](https://usaco.guide/problems/cf-gcd-on-blackboard/solution) | `problem writeup` |
-| [USACO Guide Orac and LCM](https://usaco.guide/problems/cf-orac-and-lcm/solution) | `problem writeup` |
+| [CSES Common Divisors](https://cses.fi/problemset/task/1081/) | `Practice` |
+| [USACO Guide GCD on Blackboard](https://usaco.guide/problems/cf-gcd-on-blackboard/solution) | `Reference` |
+| [USACO Guide Orac and LCM](https://usaco.guide/problems/cf-orac-and-lcm/solution) | `Reference` |
 
 ## Curated External Problems
 

@@ -24,17 +24,17 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.506 Algorithm Engineering](https://people.csail.mit.edu/jshun/6506-s23/) | `course` |
-| [MIT OCW 6.5060](https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/) | `course` |
-| [TU/e Algorithms Engineering](https://research.tue.nl/en/courses/algorithms-engineering/) | `course` |
+| [MIT 6.506 Algorithm Engineering](https://people.csail.mit.edu/jshun/6506-s23/) | `Course` |
+| [MIT OCW 6.5060](https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/) | `Course` |
+| [TU/e Algorithms Engineering](https://research.tue.nl/en/courses/algorithms-engineering/) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [PBBS benchmark suite](https://www.cs.cmu.edu/~pbbs/) | `benchmark suite` |
-| [Sort Benchmark](https://sortbenchmark.org/) | `benchmark suite` |
-| [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `practice` |
+| [PBBS benchmark suite](https://www.cs.cmu.edu/~pbbs/) | `Practice` |
+| [Sort Benchmark](https://sortbenchmark.org/) | `Practice` |
+| [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `Practice` |
 
 ## Repo Companion Material
 

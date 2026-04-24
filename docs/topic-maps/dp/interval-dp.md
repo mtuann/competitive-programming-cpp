@@ -22,16 +22,16 @@ Reason over contiguous ranges and split points when the optimal structure is bui
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide Range DP](https://usaco.guide/gold/dp-ranges) | `trusted guide` |
-| [OI Wiki Interval DP](https://en.oi-wiki.org/dp/interval/) | `trusted guide` |
+| [USACO Guide Range DP](https://usaco.guide/gold/dp-ranges) | `Reference` |
+| [OI Wiki Interval DP](https://en.oi-wiki.org/dp/interval/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP N](https://atcoder.jp/contests/dp/tasks/dp_n) | `problem` |
-| [CSES Removal Game](https://cses.fi/problemset/task/1097/) | `problem` |
-| [USACO Guide range DP problems](https://usaco.guide/gold/dp-ranges) | `problem bank` |
+| [AtCoder DP N](https://atcoder.jp/contests/dp/tasks/dp_n) | `Practice` |
+| [CSES Removal Game](https://cses.fi/problemset/task/1097/) | `Practice` |
+| [USACO Guide range DP problems](https://usaco.guide/gold/dp-ranges) | `Practice` |
 
 ## Curated External Problems
 

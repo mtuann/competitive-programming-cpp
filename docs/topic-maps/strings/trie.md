@@ -22,16 +22,16 @@ Prefix trees for dictionary queries, prefix counting, lexicographic traversal, a
 
 | Source | Type |
 | --- | --- |
-| [Princeton Tries](https://algs4.cs.princeton.edu/52trie/) | `course` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `trusted guide` |
+| [Princeton Tries](https://algs4.cs.princeton.edu/52trie/) | `Course` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Word Combinations](https://cses.fi/problemset/task/1731) | `problem` |
-| [CSES Finding Patterns](https://cses.fi/problemset/task/2102/) | `problem` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `problem bank` |
+| [CSES Word Combinations](https://cses.fi/problemset/task/1731) | `Practice` |
+| [CSES Finding Patterns](https://cses.fi/problemset/task/2102/) | `Practice` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Practice` |
 
 ## Curated External Problems
 

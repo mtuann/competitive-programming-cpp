@@ -22,17 +22,17 @@ Count by overlaps, complements, and Möbius-style corrections when direct counti
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms inclusion-exclusion](https://cp-algorithms.com/combinatorics/inclusion-exclusion.html) | `trusted guide` |
-| [USACO Guide PIE](https://usaco.guide/plat/PIE) | `trusted guide` |
-| [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `trusted guide` |
+| [cp-algorithms inclusion-exclusion](https://cp-algorithms.com/combinatorics/inclusion-exclusion.html) | `Reference` |
+| [USACO Guide PIE](https://usaco.guide/plat/PIE) | `Reference` |
+| [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Prime Multiples](https://cses.fi/problemset/task/2185/) | `problem` |
-| [USACO Cowpatibility](https://usaco.org/index.php?page=viewproblem2&cpid=862) | `problem` |
-| [CSES Counting Coprime Pairs](https://cses.fi/problemset/task/2417/) | `problem` |
+| [CSES Prime Multiples](https://cses.fi/problemset/task/2185/) | `Practice` |
+| [USACO Cowpatibility](https://usaco.org/index.php?page=viewproblem2&cpid=862) | `Practice` |
+| [CSES Counting Coprime Pairs](https://cses.fi/problemset/task/2417/) | `Practice` |
 
 ## Curated External Problems
 

@@ -22,17 +22,17 @@ DP on rooted trees, rerooting, subtree merges, and local state design for hierar
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide DP on Trees](https://usaco.guide/gold/dp-trees) | `trusted guide` |
-| [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `trusted guide` |
-| [USACO Guide Combining Subtrees](https://usaco.guide/adv/comb-sub) | `trusted guide` |
+| [USACO Guide DP on Trees](https://usaco.guide/gold/dp-trees) | `Reference` |
+| [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `Reference` |
+| [USACO Guide Combining Subtrees](https://usaco.guide/adv/comb-sub) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP P](https://atcoder.jp/contests/dp/tasks/dp_p) | `problem` |
-| [CSES Tree Matching](https://cses.fi/problemset/task/1130/) | `problem` |
-| [USACO Guide tree DP modules](https://usaco.guide/gold/dp-trees) | `problem bank` |
+| [AtCoder DP P](https://atcoder.jp/contests/dp/tasks/dp_p) | `Practice` |
+| [CSES Tree Matching](https://cses.fi/problemset/task/1130/) | `Practice` |
+| [USACO Guide tree DP modules](https://usaco.guide/gold/dp-trees) | `Practice` |
 
 ## Curated External Problems
 

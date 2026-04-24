@@ -22,17 +22,17 @@ Lowest common ancestor as a reusable primitive for ancestor checks and path quer
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms binary lifting](https://cp-algorithms.com/graph/lca_binary_lifting.html) | `trusted guide` |
-| [OI Wiki LCA](https://en.oi-wiki.org/graph/lca/) | `trusted guide` |
-| [USACO Guide Euler tour technique](https://usaco.guide/gold/tree-euler/) | `trusted guide` |
+| [cp-algorithms binary lifting](https://cp-algorithms.com/graph/lca_binary_lifting.html) | `Reference` |
+| [OI Wiki LCA](https://en.oi-wiki.org/graph/lca/) | `Reference` |
+| [USACO Guide Euler tour technique](https://usaco.guide/gold/tree-euler/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker LCA](https://judge.yosupo.jp/problem/lca) | `problem` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [Library Checker LCA](https://judge.yosupo.jp/problem/lca) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

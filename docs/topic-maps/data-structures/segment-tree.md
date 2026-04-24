@@ -23,16 +23,16 @@ General range query/update structure built on monoids and lazy propagation, with
 
 | Source | Type |
 | --- | --- |
-| [AtCoder ACL Segtree](https://atcoder.github.io/ac-library/production/document_en/segtree.html) | `official docs` |
-| [cp-algorithms segment tree](https://cp-algorithms.com/data_structures/segment_tree.html) | `trusted guide` |
-| [OI Wiki segment tree](https://en.oi-wiki.org/ds/seg/) | `trusted guide` |
+| [AtCoder ACL Segtree](https://atcoder.github.io/ac-library/production/document_en/segtree.html) | `Primary` |
+| [cp-algorithms segment tree](https://cp-algorithms.com/data_structures/segment_tree.html) | `Reference` |
+| [OI Wiki segment tree](https://en.oi-wiki.org/ds/seg/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

@@ -23,17 +23,17 @@ State design, transitions, and the discipline of converting brute force recurren
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide intro DP](https://usaco.guide/gold/intro-dp) | `trusted guide` |
-| [cp-algorithms intro to DP](https://cp-algorithms.com/dynamic_programming/intro-to-dp.html) | `trusted guide` |
-| [OI Wiki DP basics](https://en.oi-wiki.org/dp/basic/) | `trusted guide` |
+| [USACO Guide intro DP](https://usaco.guide/gold/intro-dp) | `Reference` |
+| [cp-algorithms intro to DP](https://cp-algorithms.com/dynamic_programming/intro-to-dp.html) | `Reference` |
+| [OI Wiki DP basics](https://en.oi-wiki.org/dp/basic/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder DP Contest](https://atcoder.jp/contests/dp?lang=en) | `problem set` |
-| [CSES Grid Paths I](https://cses.fi/problemset/task/1638/) | `problem` |
-| [CSES Array Description](https://cses.fi/problemset/task/1746/) | `problem` |
+| [AtCoder DP Contest](https://atcoder.jp/contests/dp?lang=en) | `Practice` |
+| [CSES Grid Paths I](https://cses.fi/problemset/task/1638/) | `Practice` |
+| [CSES Array Description](https://cses.fi/problemset/task/1746/) | `Practice` |
 
 ## Curated External Problems
 

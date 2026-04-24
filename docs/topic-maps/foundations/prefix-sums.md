@@ -22,15 +22,15 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 
 | Source | Type |
 | --- | --- |
-| [USACO Guide intro prefix sums](https://usaco.guide/silver/prefix-sums) | `trusted guide` |
-| [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `trusted guide` |
-| [OI Wiki prefix sum and adjacent difference](https://en.oi-wiki.org/basic/prefix-sum/) | `trusted guide` |
+| [USACO Guide intro prefix sums](https://usaco.guide/silver/prefix-sums) | `Reference` |
+| [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `Reference` |
+| [OI Wiki prefix sum and adjacent difference](https://en.oi-wiki.org/basic/prefix-sum/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Repo Companion Material
 

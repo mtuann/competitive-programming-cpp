@@ -22,17 +22,17 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.857 modular arithmetic review](https://courses.csail.mit.edu/6.857/current/) | `course` |
-| [USACO Guide modular arithmetic](https://usaco.guide/gold/modular) | `trusted guide` |
-| [cp-algorithms modular inverse](https://cp-algorithms.com/algebra/module-inverse.html) | `trusted guide` |
+| [MIT 6.857 modular arithmetic review](https://courses.csail.mit.edu/6.857/current/) | `Course` |
+| [USACO Guide modular arithmetic](https://usaco.guide/gold/modular) | `Reference` |
+| [cp-algorithms modular inverse](https://cp-algorithms.com/algebra/module-inverse.html) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Exponentiation](https://cses.fi/problemset/task/1095/) | `problem` |
-| [CSES Exponentiation II](https://cses.fi/problemset/task/1712/) | `problem` |
-| [Kattis Modular Arithmetic](https://open.kattis.com/problems/modulararithmetic) | `problem` |
+| [CSES Exponentiation](https://cses.fi/problemset/task/1095/) | `Practice` |
+| [CSES Exponentiation II](https://cses.fi/problemset/task/1712/) | `Practice` |
+| [Kattis Modular Arithmetic](https://open.kattis.com/problems/modulararithmetic) | `Practice` |
 
 ## Repo Companion Material
 

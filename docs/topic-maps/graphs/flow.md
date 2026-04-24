@@ -22,17 +22,17 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 
 | Source | Type |
 | --- | --- |
-| [Princeton Max Flow](https://algs4.cs.princeton.edu/64maxflow/) | `course` |
-| [MIT 6.854 flow notes](https://courses.csail.mit.edu/6.854/21/Notes/n06-flow.html) | `course` |
-| [OI Wiki max flow](https://en.oi-wiki.org/graph/flow/max-flow/) | `trusted guide` |
+| [Princeton Max Flow](https://algs4.cs.princeton.edu/64maxflow/) | `Course` |
+| [MIT 6.854 flow notes](https://courses.csail.mit.edu/6.854/21/Notes/n06-flow.html) | `Course` |
+| [OI Wiki max flow](https://en.oi-wiki.org/graph/flow/max-flow/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Repo Companion Material
 

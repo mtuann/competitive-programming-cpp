@@ -22,17 +22,17 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms segment intersection](https://cp-algorithms.com/geometry/check-segments-intersection.html) | `trusted guide` |
-| [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `trusted tutorial` |
-| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `course` |
+| [cp-algorithms segment intersection](https://cp-algorithms.com/geometry/check-segments-intersection.html) | `Reference` |
+| [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `Essay / Blog` |
+| [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Line Segment Intersection](https://cses.fi/problemset/task/2190) | `problem` |
-| [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `problem` |
-| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `problem` |
+| [CSES Line Segment Intersection](https://cses.fi/problemset/task/2190) | `Practice` |
+| [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `Practice` |
+| [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `Practice` |
 
 ## Repo Companion Material
 

@@ -22,16 +22,16 @@ Maintain a Z-box to measure longest prefix matches at every position and solve p
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms Z-function](https://cp-algorithms.com/string/z-function.html) | `trusted guide` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `trusted guide` |
+| [cp-algorithms Z-function](https://cp-algorithms.com/string/z-function.html) | `Reference` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Library Checker Z Algorithm](https://judge.yosupo.jp/problem/zalgorithm) | `problem` |
-| [CSES String Functions](https://cses.fi/problemset/task/2107) | `problem` |
-| [CSES Finding Periods](https://cses.fi/problemset/task/1733) | `problem` |
+| [Library Checker Z Algorithm](https://judge.yosupo.jp/problem/zalgorithm) | `Practice` |
+| [CSES String Functions](https://cses.fi/problemset/task/2107) | `Practice` |
+| [CSES Finding Periods](https://cses.fi/problemset/task/1733) | `Practice` |
 
 ## Curated External Problems
 

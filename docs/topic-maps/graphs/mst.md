@@ -22,16 +22,16 @@ Use cut and cycle properties to build minimum spanning forests with Kruskal or P
 
 | Source | Type |
 | --- | --- |
-| [Princeton MST](https://algs4.cs.princeton.edu/43mst/index.php) | `course` |
-| [cp-algorithms Kruskal](https://cp-algorithms.com/graph/mst_kruskal.html) | `trusted guide` |
-| [cp-algorithms Prim](https://cp-algorithms.com/graph/mst_prim.html) | `trusted guide` |
+| [Princeton MST](https://algs4.cs.princeton.edu/43mst/index.php) | `Course` |
+| [cp-algorithms Kruskal](https://cp-algorithms.com/graph/mst_kruskal.html) | `Reference` |
+| [cp-algorithms Prim](https://cp-algorithms.com/graph/mst_prim.html) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Curated External Problems
 

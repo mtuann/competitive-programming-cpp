@@ -21,6 +21,8 @@ So the real goal of this page is not syntax accumulation.
 
 It is implementation fluency.
 
+Freshness note: official compiler, sanitizer, debugger, and `cppreference` links on this page were last reviewed on `2026-04-24`.
+
 ## At A Glance
 
 - **Use when:** the algorithm is mostly known, but coding still feels slower or less reliable than the actual thinking.

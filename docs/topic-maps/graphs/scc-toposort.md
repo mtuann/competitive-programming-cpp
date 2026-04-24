@@ -23,17 +23,17 @@ Compress directed graphs into DAGs, reason about dependencies, and detect strong
 
 | Source | Type |
 | --- | --- |
-| [Princeton Directed Graphs](https://algs4.cs.princeton.edu/42directed/index.php) | `course` |
-| [cp-algorithms topological sort](https://cp-algorithms.com/graph/topological-sort.html) | `trusted guide` |
-| [USACO Guide SCC](https://usaco.guide/adv/SCC) | `trusted guide` |
+| [Princeton Directed Graphs](https://algs4.cs.princeton.edu/42directed/index.php) | `Course` |
+| [cp-algorithms topological sort](https://cp-algorithms.com/graph/topological-sort.html) | `Reference` |
+| [USACO Guide SCC](https://usaco.guide/adv/SCC) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [Library Checker SCC](https://judge.yosupo.jp/problem/scc) | `problem` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [Library Checker SCC](https://judge.yosupo.jp/problem/scc) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Curated External Problems
 

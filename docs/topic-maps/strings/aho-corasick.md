@@ -22,16 +22,16 @@ Dictionary automaton for multi-pattern matching with failure and output links.
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms Aho-Corasick](https://cp-algorithms.com/string/aho_corasick.html) | `trusted guide` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `trusted guide` |
+| [cp-algorithms Aho-Corasick](https://cp-algorithms.com/string/aho_corasick.html) | `Reference` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Finding Patterns](https://cses.fi/problemset/task/2102/) | `problem` |
-| [CSES Counting Patterns](https://cses.fi/problemset/task/2103/) | `problem` |
-| [CSES Pattern Positions](https://cses.fi/problemset/task/2104) | `problem` |
+| [CSES Finding Patterns](https://cses.fi/problemset/task/2102/) | `Practice` |
+| [CSES Counting Patterns](https://cses.fi/problemset/task/2103/) | `Practice` |
+| [CSES Pattern Positions](https://cses.fi/problemset/task/2104) | `Practice` |
 
 ## Curated External Problems
 

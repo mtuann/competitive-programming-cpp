@@ -24,17 +24,17 @@ Operational discipline for contests: local testing, checkers, interactive handli
 
 | Source | Type |
 | --- | --- |
-| [ICPC World Finals Programming Environment](https://docs.icpc.global/worldfinals-programming-environment/) | `official docs` |
-| [ICPC Tools](https://tools.icpc.global/) | `official docs` |
-| [ICPC Contest Utilities](https://tools.icpc.global/contest-utils/) | `official docs` |
+| [ICPC World Finals Programming Environment](https://docs.icpc.global/worldfinals-programming-environment/) | `Primary` |
+| [ICPC Tools](https://tools.icpc.global/) | `Primary` |
+| [ICPC Contest Utilities](https://tools.icpc.global/contest-utils/) | `Primary` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [ICPC Foundation Problem Archive](https://foundation.icpc.global/archive/) | `contest archive` |
-| [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `practice` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [ICPC Foundation Problem Archive](https://foundation.icpc.global/archive/) | `Practice` |
+| [AtCoder Introduction to Heuristics](https://atcoder.jp/contests/intro-heuristics/tasks/intro_heuristics_a) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Repo Companion Material
 

@@ -23,16 +23,16 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 
 | Source | Type |
 | --- | --- |
-| [cppreference priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue) | `official docs` |
-| [cppreference set](https://en.cppreference.com/w/cpp/container/set) | `official docs` |
-| [USACO Guide sorted sets](https://usaco.guide/gold/intro-sorted-sets) | `trusted guide` |
+| [cppreference priority_queue](https://en.cppreference.com/w/cpp/container/priority_queue) | `Primary` |
+| [cppreference set](https://en.cppreference.com/w/cpp/container/set) | `Primary` |
+| [USACO Guide sorted sets](https://usaco.guide/gold/intro-sorted-sets) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Codeforces data structures tag](https://codeforces.com/problemset?tags=data+structures) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [Codeforces data structures tag](https://codeforces.com/problemset?tags=data+structures) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Repo Companion Material
 

@@ -21,16 +21,16 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 
 | Source | Type |
 | --- | --- |
-| [OI Wiki sorting intro](https://en.oi-wiki.org/basic/sort-intro/) | `trusted guide` |
-| [cppreference std::sort](https://en.cppreference.com/w/cpp/algorithm/sort) | `official docs` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [OI Wiki sorting intro](https://en.oi-wiki.org/basic/sort-intro/) | `Reference` |
+| [cppreference std::sort](https://en.cppreference.com/w/cpp/algorithm/sort) | `Primary` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [Codeforces sortings tag](https://codeforces.com/problemset?tags=sortings) | `problem set` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [Codeforces sortings tag](https://codeforces.com/problemset?tags=sortings) | `Practice` |
 
 ## Curated External Problems
 

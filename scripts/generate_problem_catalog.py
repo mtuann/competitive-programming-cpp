@@ -149,6 +149,26 @@ METADATA_RE = re.compile(r"^- ([^:]+):\s*(.*)$")
 MD_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 HTTP_URL_RE = re.compile(r"^https?://", re.IGNORECASE)
 
+SOURCE_KIND_TAXONOMY = {
+    "paper": "Primary",
+    "official docs": "Primary",
+    "official curriculum": "Primary",
+    "course": "Course",
+    "course notes": "Course",
+    "reference": "Reference",
+    "trusted guide": "Reference",
+    "textbook": "Reference",
+    "trusted tutorial": "Essay / Blog",
+    "problem": "Practice",
+    "practice": "Practice",
+    "problem set": "Practice",
+    "problem bank": "Practice",
+    "contest archive": "Practice",
+    "benchmark suite": "Practice",
+    "course exercises": "Practice",
+    "problem writeup": "Reference",
+}
+
 
 SOURCE_ALIASES = {
     "csesproblemset": "CSES",
@@ -893,6 +913,9 @@ def validate_source_items(label: str, items: object, issues: list[str], *, allow
             append_issue(issues, f"{item_label}.label must be non-empty.")
         if not source_kind:
             append_issue(issues, f"{item_label}.kind must be non-empty.")
+        elif source_kind not in SOURCE_KIND_TAXONOMY:
+            allowed = ", ".join(sorted(SOURCE_KIND_TAXONOMY))
+            append_issue(issues, f"{item_label}.kind {source_kind!r} is unknown. Allowed kinds: {allowed}.")
         if not source_url:
             append_issue(issues, f"{item_label}.url must be non-empty.")
             continue
@@ -909,6 +932,45 @@ def validate_source_items(label: str, items: object, issues: list[str], *, allow
             )
         else:
             seen_urls[canonical] = source_url
+
+
+def canonical_source_kind(kind: str) -> str:
+    return SOURCE_KIND_TAXONOMY.get(kind, kind)
+
+
+def normalized_source_kind(source: dict[str, object]) -> str:
+    kind = str(source.get("kind", ""))
+    if kind != "course exercises":
+        return canonical_source_kind(kind)
+
+    label = str(source.get("label", "")).lower()
+    url = str(source.get("url", "")).lower()
+    practice_markers = (
+        "problem",
+        "pset",
+        "exercise",
+        "assignment",
+        "exam",
+        "homework",
+        "worksheet",
+        "quiz",
+    )
+    practice_url_markers = tuple(f"/{marker}" for marker in practice_markers)
+    course_markers = (
+        "lecture note",
+        "course",
+        "syllabus",
+        "schedule",
+        "homepage",
+    )
+
+    if any(marker in url for marker in practice_markers) or any(marker in url for marker in practice_url_markers):
+        return "Practice"
+    if "textbook" in label:
+        return "Reference"
+    if any(marker in label or marker in url for marker in course_markers):
+        return "Course"
+    return "Course"
 
 
 def validate_repo_companion_items(label: str, items: object, issues: list[str]) -> None:
@@ -1717,7 +1779,9 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
     index_lines = [
         "# Topic Maps",
         "",
-        "These pages collect trusted learning sources, official practice sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
+        "These pages collect source-backed learning references, practice and follow-up sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
+        "",
+        "Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Reference`, `Essay / Blog`, and `Practice`.",
         "",
         "| Topic | Repo Problems | Repo Companions | External Problems | Map |",
         "| --- | ---: | ---: | ---: | --- |",
@@ -1770,17 +1834,17 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
             lines.append("| Source | Type |")
             lines.append("| --- | --- |")
             for source in learning_sources:
-                lines.append(f"| [{source['label']}]({source['url']}) | `{source['kind']}` |")
+                lines.append(f"| [{source['label']}]({source['url']}) | `{normalized_source_kind(source)}` |")
             lines.append("")
 
         practice_sources = entry.get("practice_sources", [])
         if practice_sources:
-            lines.append("## Practice Sources")
+            lines.append("## Practice And Follow-Up Sources")
             lines.append("")
             lines.append("| Source | Type |")
             lines.append("| --- | --- |")
             for source in practice_sources:
-                lines.append(f"| [{source['label']}]({source['url']}) | `{source['kind']}` |")
+                lines.append(f"| [{source['label']}]({source['url']}) | `{normalized_source_kind(source)}` |")
             lines.append("")
 
         if companions:

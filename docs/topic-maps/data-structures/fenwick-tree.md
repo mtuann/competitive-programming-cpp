@@ -22,16 +22,16 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 
 | Source | Type |
 | --- | --- |
-| [AtCoder ACL Fenwick](https://atcoder.github.io/ac-library/production/document_en/fenwicktree.html) | `official docs` |
-| [cp-algorithms Fenwick](https://cp-algorithms.com/data_structures/fenwick.html) | `trusted guide` |
-| [OI Wiki Fenwick](https://en.oi-wiki.org/ds/fenwick/) | `trusted guide` |
+| [AtCoder ACL Fenwick](https://atcoder.github.io/ac-library/production/document_en/fenwicktree.html) | `Primary` |
+| [cp-algorithms Fenwick](https://cp-algorithms.com/data_structures/fenwick.html) | `Reference` |
+| [OI Wiki Fenwick](https://en.oi-wiki.org/ds/fenwick/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [AtCoder Library Practice Contest](https://atcoder.jp/contests/practice2/tasks?lang=en) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

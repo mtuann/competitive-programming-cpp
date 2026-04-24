@@ -23,16 +23,16 @@ Search on sorted data and on monotone answers: learn the invariant-first templat
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms binary search](https://cp-algorithms.com/num_methods/binary_search.html) | `trusted guide` |
-| [USACO Guide binary search](https://usaco.guide/silver/binary-search) | `trusted guide` |
-| [Codeforces EDU binary search](https://codeforces.com/blog/entry/81729) | `course` |
+| [cp-algorithms binary search](https://cp-algorithms.com/num_methods/binary_search.html) | `Reference` |
+| [USACO Guide binary search](https://usaco.guide/silver/binary-search) | `Reference` |
+| [Codeforces EDU binary search](https://codeforces.com/blog/entry/81729) | `Course` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [Codeforces binary-search tag](https://codeforces.com/problemset?tags=binary+search) | `problem set` |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+| [Codeforces binary-search tag](https://codeforces.com/problemset?tags=binary+search) | `Practice` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
 
 ## Curated External Problems
 

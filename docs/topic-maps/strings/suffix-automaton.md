@@ -22,16 +22,16 @@ Compact automaton of all substrings, with endpos classes, clones, and counting a
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms suffix automaton](https://cp-algorithms.com/string/suffix-automaton.html) | `trusted guide` |
-| [USACO Guide string suffix structures](https://usaco.guide/adv/string-suffix) | `trusted guide` |
+| [cp-algorithms suffix automaton](https://cp-algorithms.com/string/suffix-automaton.html) | `Reference` |
+| [USACO Guide string suffix structures](https://usaco.guide/adv/string-suffix) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Distinct Substrings](https://cses.fi/problemset/task/2105/) | `problem` |
-| [CSES Substring Order I](https://cses.fi/problemset/task/2108) | `problem` |
-| [USACO Guide string suffix structures](https://usaco.guide/adv/string-suffix) | `problem bank` |
+| [CSES Distinct Substrings](https://cses.fi/problemset/task/2105/) | `Practice` |
+| [CSES Substring Order I](https://cses.fi/problemset/task/2108) | `Practice` |
+| [USACO Guide string suffix structures](https://usaco.guide/adv/string-suffix) | `Practice` |
 
 ## Curated External Problems
 

@@ -22,17 +22,17 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.006 notes page](https://courses.csail.mit.edu/6.006/fall10/notes.shtml) | `course` |
-| [cp-algorithms BFS](https://cp-algorithms.com/graph/breadth-first-search.html) | `trusted guide` |
-| [USACO Guide graph traversal](https://usaco.guide/silver/graph-traversal?lang=cpp) | `trusted guide` |
+| [MIT 6.006 notes page](https://courses.csail.mit.edu/6.006/fall10/notes.shtml) | `Course` |
+| [cp-algorithms BFS](https://cp-algorithms.com/graph/breadth-first-search.html) | `Reference` |
+| [USACO Guide graph traversal](https://usaco.guide/silver/graph-traversal?lang=cpp) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Curated External Problems
 

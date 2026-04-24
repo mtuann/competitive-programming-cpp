@@ -23,16 +23,16 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 
 | Source | Type |
 | --- | --- |
-| [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `official curriculum` |
-| [OI Wiki tree basics](https://en.oi-wiki.org/graph/tree-basic/) | `trusted guide` |
+| [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `Primary` |
+| [OI Wiki tree basics](https://en.oi-wiki.org/graph/tree-basic/) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
-| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
+| [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `Practice` |
 
 ## Curated External Problems
 

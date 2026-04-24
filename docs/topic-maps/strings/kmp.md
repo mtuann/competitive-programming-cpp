@@ -22,17 +22,17 @@ Prefix-function reasoning for exact pattern matching, borders, periods, and auto
 
 | Source | Type |
 | --- | --- |
-| [cp-algorithms prefix function](https://cp-algorithms.com/string/prefix-function.html) | `trusted guide` |
-| [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `course` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `trusted guide` |
+| [cp-algorithms prefix function](https://cp-algorithms.com/string/prefix-function.html) | `Reference` |
+| [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `Course` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES String Matching](https://cses.fi/problemset/task/1753) | `problem` |
-| [CSES String Functions](https://cses.fi/problemset/task/2107) | `problem` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `problem bank` |
+| [CSES String Matching](https://cses.fi/problemset/task/1753) | `Practice` |
+| [CSES String Functions](https://cses.fi/problemset/task/2107) | `Practice` |
+| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Practice` |
 
 ## Curated External Problems
 

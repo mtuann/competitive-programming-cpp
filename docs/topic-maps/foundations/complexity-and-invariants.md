@@ -23,16 +23,16 @@ Reasoning tools for contests: estimate time honestly, define loop invariants, an
 
 | Source | Type |
 | --- | --- |
-| [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) | `course` |
-| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `reference` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [MIT 6.006](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/) | `Course` |
+| [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
-| [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+| [CSES Problem Set](https://cses.fi/problemset) | `Practice` |
+| [USACO contest archive](https://usaco.org/index.php?page=contests) | `Practice` |
 
 ## Repo Companion Material
 

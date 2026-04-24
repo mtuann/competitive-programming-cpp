@@ -22,17 +22,17 @@ Sort events and maintain an active structure while a conceptual line moves acros
 
 | Source | Type |
 | --- | --- |
-| [Topcoder line sweep algorithms](https://www.topcoder.com/thrive/articles/Line%20Sweep%20Algorithms) | `trusted tutorial` |
-| [USACO Guide sweep line](https://usaco.guide/plat/sweep-line?lang=cpp) | `trusted guide` |
-| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `reference` |
+| [Topcoder line sweep algorithms](https://www.topcoder.com/thrive/articles/Line%20Sweep%20Algorithms) | `Essay / Blog` |
+| [USACO Guide sweep line](https://usaco.guide/plat/sweep-line?lang=cpp) | `Reference` |
+| [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice Sources
+## Practice And Follow-Up Sources
 
 | Source | Type |
 | --- | --- |
-| [CSES Intersection Points](https://cses.fi/problemset/task/1740) | `problem` |
-| [CSES Minimum Euclidean Distance](https://cses.fi/problemset/task/2194/) | `problem` |
-| [CSES Area of Rectangles](https://cses.fi/problemset/task/1741) | `problem` |
+| [CSES Intersection Points](https://cses.fi/problemset/task/1740) | `Practice` |
+| [CSES Minimum Euclidean Distance](https://cses.fi/problemset/task/2194/) | `Practice` |
+| [CSES Area of Rectangles](https://cses.fi/problemset/task/1741) | `Practice` |
 
 ## Curated External Problems
 
