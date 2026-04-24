@@ -433,6 +433,49 @@ while some queries still have lo < hi:
 
 This is conceptually different from a sorted sweep, but the same batching mindset appears again.
 
+### Mo's Algorithm Skeleton
+
+```text
+sort queries by (block_of_L, then R with the chosen block order)
+current range = empty
+current answer = answer on empty range
+
+for q in sorted queries:
+    while current L > q.L: add(--L)
+    while current R < q.R: add(++R)
+    while current L < q.L: remove(L++)
+    while current R > q.R: remove(R--)
+    ans[q.id] = current answer
+```
+
+The hidden contract is:
+
+- `add(pos)` and `remove(pos)` must update the same maintained statistic consistently
+- the active range after the loop really is exactly `[q.L, q.R]`
+
+### Offline Deletion / Rollback DSU Sketch
+
+```text
+for each update:
+    determine the time interval where it is active
+    add that update to all segment-tree-over-time nodes covering the interval
+
+dfs(node):
+    apply this node's updates to the rollback-friendly structure
+    if node is a leaf:
+        answer all queries at this time
+    else:
+        dfs(left child)
+        dfs(right child)
+    rollback all updates added at this node
+```
+
+This is the cleanest mental model for:
+
+- add / delete / query timelines
+- dynamic connectivity asked offline
+- any structure that can undo changes exactly
+
 ## Implementation Notes
 
 ### 1. Original Index Is Mandatory
@@ -528,10 +571,14 @@ Reference:
 
 - [CP-Algorithms: Deleting from a data structure in $O(T(n)\log n)$](https://cp-algorithms.com/data_structures/deleting_in_log_n.html)
 - [USACO Guide: Offline Deletion](https://usaco.guide/adv/offline-del)
+- [OI Wiki: Mo's Algorithm](https://en.oi-wiki.org/misc/mo-algo-intro/)
+- [AlgoWiki: Parallel Binary Search](https://wiki.algo.is/Parallel%20binary%20search/)
 
 Practice:
 
 - [CSES Range Queries](https://cses.fi/problemset/list/)
+- [Library Checker: Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct)
+- [Codeforces 86D: Powerful Array](https://codeforces.com/problemset/problem/86/D)
 
 Repo anchors:
 

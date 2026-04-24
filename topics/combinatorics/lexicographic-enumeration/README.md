@@ -288,6 +288,69 @@ So if we want the `k`-th permutation:
 
 This is direct unranking from factorial block sizes.
 
+#### Numeric Trace
+
+Take `n = 4` and ask for the `15`-th permutation in `1`-indexed order.
+
+Each first-symbol block has size:
+
+$$
+(4-1)! = 6.
+$$
+
+So the top-level blocks are:
+
+- start with `1`: ranks `1..6`
+- start with `2`: ranks `7..12`
+- start with `3`: ranks `13..18`
+- start with `4`: ranks `19..24`
+
+Since `15` lies in the third block, choose `3` first and subtract the skipped blocks:
+
+$$
+15 - 2 \cdot 6 = 3.
+$$
+
+Now we unrank the `3`-rd permutation of the remaining symbols `{1, 2, 4}`.
+
+Each second-symbol block has size:
+
+$$
+(3-1)! = 2.
+$$
+
+Among suffixes after prefix `3`, the blocks are:
+
+- `31*`: ranks `1..2`
+- `32*`: ranks `3..4`
+- `34*`: ranks `5..6`
+
+So choose `2` next and update the residual rank:
+
+$$
+3 - 1 \cdot 2 = 1.
+$$
+
+Now only `{1, 4}` remains. Each next block has size:
+
+$$
+(2-1)! = 1.
+$$
+
+Residual rank `1` chooses the first remaining symbol `1`, then finally `4`.
+
+So the answer is:
+
+$$
+3214.
+$$
+
+This is the whole unranking mechanic in miniature:
+
+- inspect blocks in order
+- subtract skipped block sizes
+- recurse on the surviving block
+
 ### Example 2: Binary Strings With A Constraint
 
 Suppose you want the `k`-th binary string of length `n` with no consecutive ones.
@@ -483,6 +546,7 @@ Practice:
 Repo anchors:
 
 - ladder: [Lexicographic Enumeration ladder](../../../practice/ladders/combinatorics/lexicographic-enumeration/README.md)
+- practice note: [VOITSORT](../../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md)
 - notebook refresher: [Combinatorics Cheatsheet](../../../notebook/combinatorics-cheatsheet.md)
 - adjacent topic: [Counting Basics](../counting-basics/README.md)
 - adjacent topic: [Bitmask DP](../../dp/bitmask-dp/README.md)

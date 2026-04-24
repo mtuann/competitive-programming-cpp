@@ -445,6 +445,7 @@ Repo starter templates:
 - [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
 - [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
 - [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp)
+- [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp) as the ordering primitive for DAG shortest paths
 
 ### BFS
 
@@ -534,6 +535,24 @@ for k in vertices:
             dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j])
 ```
 
+### DAG Shortest Paths
+
+```text
+topologically sort the vertices
+dist[*] = INF
+dist[s] = 0
+
+for u in topological order:
+    if dist[u] == INF:
+        continue
+    for each edge (u, v, w):
+        if dist[u] + w < dist[v]:
+            dist[v] = dist[u] + w
+            parent[v] = u
+```
+
+This works because every edge goes forward in topological order, so by the time we process `u`, all paths that can improve `dist[u]` have already had their chance.
+
 ## Implementation Notes
 
 ### 1. Relaxation Is The Unifying Operation
@@ -602,6 +621,23 @@ Examples:
 
 The point of this family page is to help you choose the correct base layer first.
 
+### 8. DAG Shortest Paths Is The Lightweight Special Case
+
+If the graph is a DAG, you do not need a heap and you do not need repeated relaxation rounds.
+
+One topological order is enough because:
+
+- every directed path respects that order
+- once you leave a vertex, no later edge can come back and improve it through a cycle
+
+This is why DAG shortest paths can handle:
+
+- positive edges
+- zero edges
+- negative edges
+
+as long as the graph is still acyclic.
+
 ## Practice Archetypes
 
 The most common shortest-path-flavored tasks are:
@@ -625,6 +661,7 @@ Research sweep refreshed on `2026-04-24`.
 Primary / course:
 
 - [MIT 6.006 Lecture 15: Shortest Paths I](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/7a2abc9bc568c743404e85e85cf6dc59_MIT6_006F11_lec15.pdf)
+- [MIT 6.006 Lecture 16: Shortest Paths in DAGs and Dijkstra](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture16.pdf)
 - [CMU 15-210 Recitation 11: Shortest Paths, Dijkstra, and Bellman-Ford](https://www.cs.cmu.edu/afs/cs/academic/class/15210-s15/www/recitations/rec11.pdf)
 - [Stanford CS106B: Graph Shortest Path Algorithms](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1206/lectures/dijkstra/)
 
@@ -648,6 +685,8 @@ Repo anchors:
 - starter template: [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
 - starter template: [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
 - starter template: [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp)
+- DAG ordering anchor: [Course Schedule](../../../practice/ladders/graphs/scc-toposort/courseschedule.md)
+- ordering template: [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp)
 - notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
 ## Related Topics

@@ -386,6 +386,40 @@ The repo starter implementation is:
 
 - [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
 
+### Kuhn / DFS Augmenting Paths
+
+This is the lightest first implementation for bipartite matching.
+
+```text
+try_kuhn(u):
+    if u was visited in this DFS:
+        return false
+    mark u visited
+
+    for each edge (u, v):
+        if v is free:
+            match u with v
+            return true
+
+        mate = match_right[v]
+        if try_kuhn(mate):
+            match u with v
+            return true
+
+    return false
+```
+
+The outer loop is:
+
+```text
+for each left vertex u:
+    clear visited
+    if try_kuhn(u):
+        matching_size++
+```
+
+This is the cleanest code path for learning the augmenting-path theorem because every successful DFS literally finds one augmenting path and flips it.
+
 ### Hopcroft-Karp Overview
 
 Maintain:
@@ -461,7 +495,19 @@ The template assumes:
 
 Do not blur that separation during implementation.
 
-### 4. Flow Is A Tool, Not The Default Explanation
+### 4. Kuhn Also Needs Left-Side Discipline
+
+In the simple DFS version, each outer iteration starts from one left vertex and tries to claim or reroute one path through the right side.
+
+That is why the standard teaching form stores:
+
+- adjacency from left to right
+- `match_right[v]`
+- and often `match_left[u]` as well for reconstruction or clarity
+
+If you mix the roles of the two sides, the recursive augmentation logic becomes much harder to reason about.
+
+### 5. Flow Is A Tool, Not The Default Explanation
 
 Bipartite matching can be reduced to max flow, but that does not mean flow is the best first mental model.
 
@@ -472,7 +518,7 @@ Usually:
 
 Use flow when the extra capacities or surrounding constraints truly ask for it.
 
-### 5. Blossom Is A Boundary Marker
+### 6. Blossom Is A Boundary Marker
 
 If the graph is not bipartite, odd cycles matter.
 
@@ -485,7 +531,7 @@ Do not reach for blossom automatically. First ask:
 
 Only then decide whether general matching is truly required.
 
-### 6. Edge Cover Is Nearby But Not The Same
+### 7. Edge Cover Is Nearby But Not The Same
 
 Matching:
 
@@ -497,7 +543,7 @@ Edge cover:
 
 These concepts are closely related, but they are not interchangeable. Keep the objective clear.
 
-### 7. Weighted Assignment Is Another Boundary
+### 8. Weighted Assignment Is Another Boundary
 
 If the objective is:
 
