@@ -1,168 +1,576 @@
 # Minimum Spanning Tree
 
-Minimum spanning tree is the standard way to connect all vertices of an undirected weighted graph as cheaply as possible. It is one of the cleanest examples of greedy reasoning in graph algorithms.
+Minimum spanning tree (MST) is the canonical answer to this question:
 
-## Summary
-
-Suspect MST when:
-
-- you must connect all nodes with minimum total cost
 - the graph is undirected and weighted
-- the goal is to build a cheapest backbone, network, or clustering structure
+- you must connect all vertices
+- the objective is **minimum total connection cost**
 
-What success looks like:
+This is not a shortest-path problem. It is a **global connection** problem. The target object is one cheapest spanning tree, not one shortest path from a chosen source.
 
-- you can decide between Kruskal and Prim from the input form
-- you can explain the cut or cycle property in words
-- you remember to check whether the graph is actually fully connectable
+At contest level, MST is one of the cleanest greedy topics because everything rests on one structural theorem:
 
-## Prerequisites
+- the **cut property**
 
-- [DSU](../../data-structures/dsu/README.md)
-- [Sorting](../../foundations/patterns/sorting/README.md)
+Kruskal and Prim are not two unrelated tricks. They are two ways of repeatedly taking a **safe edge**.
 
-## Core Idea
+## At A Glance
 
-The two classic MST algorithms are:
+- **Use when:** undirected weighted graph, connect everything as cheaply as possible
+- **Core invariant:** every chosen edge is safe by a cut argument
+- **Most common implementation:** Kruskal + DSU
+- **Alternative implementation:** Prim + priority queue
+- **Typical complexity:** `O(m log m)` for Kruskal, `O(m log n)` for heap Prim
+- **Do not use when:** the graph is directed, or the task is really about shortest paths from one source
 
-- Kruskal
-- Prim
+## Problem Model And Notation
 
-Kruskal is usually the better first implementation:
+Let
 
-- sort edges by weight
-- add an edge if it joins two different components
+$$
+G = (V, E)
+$$
 
-Prim is often more natural when:
+be an undirected weighted graph with edge-weight function
 
-- the graph is already stored as adjacency lists
-- you want to grow one connected tree outward from a start vertex
+$$
+w: E \to \mathbb{R}.
+$$
 
-## Theory / Proof Sketch
+A **spanning tree** is a subset of edges
 
-Two key facts power MST correctness:
+$$
+T \subseteq E
+$$
 
-### Cut Property
+such that:
 
-For any cut of the graph, the lightest edge crossing that cut can belong to some MST.
+- `(V, T)` is connected
+- `(V, T)` has no cycle
+- equivalently, `|T| = |V| - 1`
 
-This is the core reason Kruskal is safe.
+An **MST** is a spanning tree minimizing total weight:
 
-### Cycle Property
+$$
+w(T) = \sum_{e \in T} w(e).
+$$
 
-Inside any cycle, the heaviest edge cannot be necessary for every MST.
+If the graph is disconnected, then no spanning tree exists. The natural object then is a **minimum spanning forest**, one MST per connected component.
 
-This explains why edges that would create a cycle can be skipped in Kruskal.
+This distinction matters in code:
 
-Kruskal view:
+- if the statement demands one spanning tree, you must verify connectivity
+- if not all vertices become connected, output `IMPOSSIBLE` or the equivalent failure case
 
-- when processing edges in increasing order, the first edge that can connect two different components is always safe to take
+## From Brute Force To The Right Idea
 
-## Complexity And Tradeoffs
+### Brute Force Over All Spanning Trees
 
-- Kruskal: `O(m log m)` from sorting edges
-- Prim with heap: `O(m log n)`
+The brute-force thought experiment is:
 
-Tradeoffs:
+- enumerate all spanning trees
+- compute the total cost of each
+- keep the cheapest
 
-- Kruskal is simpler when the edge list is explicit
-- Prim is natural on dense adjacency-style input or when starting from one root feels more direct
+This is hopeless computationally, but it teaches the right shape of the answer:
 
-## Canonical C++ Pattern
+- we are selecting exactly `n - 1` edges
+- every valid answer must stay cycle-free
+- every local choice affects global connectivity
 
-Template in this repo:
+So the real question is:
 
-- [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
+- can we decide some edges greedily without losing optimality?
 
-Typical Kruskal structure:
+### Why Greedy Is Not Obviously Safe
 
-1. sort edges by weight
+If you greedily take the globally smallest unused edge, that can fail in many graph problems.
+
+What makes MST special is that the graph structure gives us an exchange argument:
+
+- for the right kind of edge, if an optimum tree does not already contain it, we can swap it in without making the tree worse
+
+That is what the cut property formalizes.
+
+### The Right Greedy Unit: A Safe Edge
+
+The MST problem becomes easy as soon as you internalize this:
+
+- not every light edge is automatically safe
+- but the **lightest edge crossing a cut** is safe
+
+Once that is true:
+
+- Kruskal can reason in terms of current connected components
+- Prim can reason in terms of one grown tree vs the outside vertices
+
+Both algorithms are really building an MST by repeatedly exposing a cut and taking a safe edge across it.
+
+## Core Invariant And Why It Works
+
+### The Cut Property
+
+Take any cut
+
+$$
+(S, V \setminus S)
+$$
+
+of the graph. Among all edges crossing that cut, let `e` be one of minimum weight.
+
+Then:
+
+- `e` belongs to **some** MST
+
+If edge weights are distinct, we can state an even sharper version:
+
+- the unique lightest crossing edge belongs to **every** MST
+
+This is the core theorem behind both Kruskal and Prim.
+
+### Why The Cut Property Is True
+
+Take an MST `T`.
+
+If `T` already contains `e`, we are done.
+
+Otherwise, add `e` to `T`. Since `T` was a tree, adding one extra edge creates exactly one cycle.
+
+That cycle must cross the cut at least one other edge `f`, because `e` crosses from `S` to `V \setminus S` and any closed walk that crosses a cut must come back across it.
+
+Now:
+
+- `f` is also a crossing edge
+- `e` was chosen as a minimum-weight crossing edge
+
+So:
+
+$$
+w(e) \le w(f).
+$$
+
+Remove `f` from the cycle. The graph becomes a spanning tree again, and its total weight is no larger than before.
+
+So replacing `f` by `e` preserves optimality. Therefore there exists an MST containing `e`.
+
+That is the whole greedy miracle.
+
+### The Cycle Property
+
+The dual viewpoint is:
+
+- in any cycle, a strictly heaviest edge cannot belong to every MST
+
+With distinct weights, the unique heaviest edge in a cycle belongs to no MST.
+
+This is the "why skipping a cycle edge is safe" mirror of the cut property.
+
+Kruskal often feels most intuitive through the cycle property:
+
+- edges are processed from light to heavy
+- if an edge would create a cycle, then it is the last and therefore heaviest edge seen on that cycle
+- so skipping it is safe
+
+### Kruskal's Invariant
+
+Kruskal maintains a forest of chosen edges.
+
+At every step:
+
+- the chosen edges are acyclic
+- there exists an MST containing all chosen edges
+
+When Kruskal looks at the next edge `(u, v)` in sorted order:
+
+- if `u` and `v` are already in the same component, adding it creates a cycle, so skip
+- otherwise, the current connected components define a cut, and this edge is the cheapest available crossing edge for that component split
+
+So it is safe to add.
+
+### Prim's Invariant
+
+Prim maintains:
+
+- one connected tree on a set `S` of already absorbed vertices
+
+At each step it takes the cheapest edge from `S` to `V \setminus S`.
+
+That edge is safe by the cut property for the cut
+
+$$
+(S, V \setminus S).
+$$
+
+So Prim is not "like Dijkstra but for trees" because of some vague similarity. It is a cut-property greedy on one evolving cut.
+
+## Kruskal Versus Prim
+
+### Kruskal
+
+Mental model:
+
+- sort edges globally
+- keep only those that connect different components
+
+Best when:
+
+- input already comes as an edge list
+- the graph is sparse
+- DSU is natural and available
+- the statement is explicitly about selecting edges
+
+Typical implementation:
+
+1. sort all edges by weight
 2. initialize DSU
-3. iterate edges
-4. if endpoints are in different components, take the edge and unite them
+3. take an edge if its endpoints are in different components
+4. stop after `n - 1` chosen edges if connected
 
-## Standard Patterns
+### Prim
 
-### 1. Cheapest Full Connection
+Mental model:
 
-The direct MST problem.
+- grow one tree outward from a seed vertex
+- always attach the cheapest outside vertex-edge connection
 
-### 2. Connectivity Check Plus Minimum Cost
+Best when:
 
-After running MST, verify you actually used `n - 1` edges or that all vertices ended in one component.
+- graph is already stored as adjacency lists
+- dense graphs make edge sorting less attractive
+- you want a one-tree growth picture instead of a component forest
 
-### 3. MST As A Subroutine
+Typical implementation:
 
-Examples:
+1. start from any root
+2. maintain the best known edge connecting each outside vertex to the current tree
+3. repeatedly add the outside vertex with smallest such key
 
-- clustering by stopping early
-- threshold questions on the MST edges
-- “minimum maximum edge” style reformulations
+On a connected graph, the start vertex does not change the optimal MST cost, though with tied weights it may change which particular MST Prim outputs.
+
+### Which One Should You Default To In Contest?
+
+Use this quick rule:
+
+- **edge list + DSU-friendly statement:** Kruskal
+- **dense graph / adjacency-first view / complete graph on points:** Prim
+
+In this repo, Kruskal is the default first implementation because it is usually:
+
+- easier to code cleanly
+- easier to prove from the cut property
+- easier to connect with DSU practice
 
 ## Worked Examples
 
-### Example 1: cheapest network connection
+### Example 1: Kruskal On A Small Graph
 
-Classic MST:
+Take the weighted graph with edges:
 
-- use Kruskal if edges come as a flat list
+```text
+(0,1,1), (2,3,1), (1,2,2), (0,2,5)
+```
 
-### Example 2: detect whether a graph is fully connectable
+Sort them:
 
-Even if Kruskal runs, the graph may be disconnected.
+```text
+1, 1, 2, 5
+```
 
-So at the end:
+Process in order:
 
-- check that exactly `n - 1` edges were chosen
-- or confirm one connected component remains
+1. take `(0,1,1)`
+   Components: `{0,1}`, `{2}`, `{3}`
 
-### Example 3: clustering by MST
+2. take `(2,3,1)`
+   Components: `{0,1}`, `{2,3}`
 
-Sometimes the true goal is not the whole tree, but the moment before the graph becomes one component, or the maximum edge used in the MST.
+3. take `(1,2,2)`
+   Components: `{0,1,2,3}`
 
-That is still an MST-flavored problem.
+4. skip `(0,2,5)` because it now closes a cycle
 
-## Recognition Cues
+Total cost is:
 
-Strong clues:
+$$
+1 + 1 + 2 = 4.
+$$
+
+This example is tiny, but it shows the whole structure:
+
+- light edges first
+- DSU prevents cycles
+- the last heavy edge becomes unnecessary
+
+### Example 2: Why Connectivity Check Matters
+
+Suppose `n = 4`, but the edge list is:
+
+```text
+(0,1,1), (2,3,2)
+```
+
+Kruskal will happily choose both edges. But the result has only:
+
+```text
+2 < n - 1 = 3
+```
+
+chosen edges, so it is not a spanning tree.
+
+This is the standard contest postcondition:
+
+- if you did not choose exactly `n - 1` edges, the graph was disconnected
+
+For [Road Reparation](../../../practice/ladders/graphs/mst/roadreparation.md), that is exactly why the solution must print `IMPOSSIBLE`.
+
+### Example 3: MST Cost Versus Shortest-Path Tree Cost
+
+Take this graph:
+
+```text
+0 --1-- 1
+|       |
+10      1
+|       |
+2 --1-- 3
+```
+
+An MST takes edges of cost `1, 1, 1`, total `3`.
+
+But the shortest-path tree from source `0` may include the edge `(0,2)` of weight `10`, because it is trying to optimize distances from `0`, not total tree weight.
+
+This is the key distinction:
+
+- MST minimizes total connection cost
+- shortest-path tree minimizes root-to-vertex distances
+
+If a statement says "build roads as cheaply as possible so all cities become connected," think MST, not Dijkstra.
+
+### Example 4: Why Clustering Problems Still Smell Like MST
+
+Some statements are really asking for:
+
+- the smallest maximum edge needed to connect everything
+- the moment two vertices become connected as edges are added in increasing order
+- the cost threshold at which the graph becomes one component
+
+These are still MST-flavored because Kruskal exposes connectivity in sorted edge order.
+
+In many such problems, you do not even need the final tree explicitly. You only need the moment the right components merge.
+
+## Algorithm And Pseudocode
+
+Repo starter template:
+
+- [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
+
+### Kruskal
+
+```text
+sort edges by increasing weight
+initialize DSU with n singleton components
+total = 0
+chosen = 0
+
+for edge (u, v, w) in sorted order:
+    if DSU says u and v are already connected:
+        continue
+    unite(u, v)
+    total += w
+    chosen++
+    if chosen == n - 1:
+        break
+
+if chosen != n - 1:
+    graph is disconnected
+else:
+    total is the MST cost
+```
+
+### Heap Prim
+
+```text
+mark all vertices as outside the tree
+push (0, start) into a min-heap
+total = 0
+
+while heap not empty:
+    pop cheapest (w, u)
+    if u is already inside:
+        continue
+    mark u inside
+    total += w
+
+    for each edge (u, v, cost):
+        if v is outside:
+            push (cost, v)
+
+if not all vertices were absorbed:
+    graph is disconnected
+```
+
+This lazy heap version is usually enough for contest work. The eager-key-update version is more elegant analytically but often unnecessary in implementation.
+
+## Implementation Notes
+
+### 1. Negative Weights Are Fine
+
+MST does not require nonnegative edges.
+
+That condition belongs to Dijkstra, not MST.
+
+If the graph is undirected and weighted, Kruskal and Prim still work with negative weights.
+
+### 2. Distinct Weights Make Proofs Cleaner, Not Algorithms Necessary
+
+Many proofs are first stated with distinct weights because then:
+
+- the lightest crossing edge is unique
+- the heaviest cycle edge is unique
+- the MST is unique
+
+But the algorithms do not require distinct weights.
+
+With ties:
+
+- there may be multiple MSTs
+- Kruskal and Prim may output different valid MSTs
+
+### 3. DSU Is The Helper, Not The Idea
+
+Kruskal is not "the DSU algorithm."
+
+DSU only answers:
+
+- are these endpoints already in the same component?
+
+The real algorithmic idea is still:
+
+- process edges in increasing order
+- use the cut/cycle property to justify each keep/skip decision
+
+### 4. `long long` For Total Cost
+
+Even if each edge weight fits in `int`, the MST sum may not.
+
+The safe default in contest code is:
+
+- store individual weights in at least `int`
+- store total cost in `long long`
+
+### 5. Prim On Complete Graphs Can Beat Kruskal In Practice
+
+In complete-graph modeling problems such as "connect all points" with geometric distance, explicit edge generation makes:
+
+$$
+m = \Theta(n^2).
+$$
+
+In that setting, an `O(n^2)` Prim variant can be the cleanest implementation.
+
+So "Kruskal is easier" is not the same as "Kruskal is always the best."
+
+### 6. Stop Early In Kruskal
+
+Once you have chosen `n - 1` edges, the MST is complete.
+
+Continuing the scan is harmless but unnecessary.
+
+### 7. MST And Bottleneck Questions
+
+Every MST is also a **minimum bottleneck spanning tree**:
+
+- it minimizes the largest edge used among all spanning trees
+
+This is why many "minimize the worst jump/road/cable" problems can be reduced to MST reasoning even when the statement does not literally ask for total sum.
+
+But the converse is false:
+
+- a minimum bottleneck spanning tree need not minimize total weight
+
+So if the statement really asks for the sum, solve MST directly instead of stopping at a bottleneck argument.
+
+### 8. Directed Graphs Are A Different World
+
+If edges are directed, this page does not apply.
+
+Then you are in the territory of:
+
+- shortest paths
+- arborescences / Edmonds' algorithm
+- flow or reachability modeling
+
+Do not try to force Kruskal or Prim onto a directed graph.
+
+## Beyond Basic MST
+
+The core contest layer is:
+
+- Kruskal
+- Prim
+- cut property
+- cycle property
+- connectivity check
+
+Important next-layer directions include:
+
+- Borůvka's algorithm
+- dynamic MST updates
+- Euclidean MST
+- directed minimum arborescence
+
+Those are valuable, but the right study order is:
+
+1. internalize cut/cycle property
+2. become fluent with Kruskal + DSU
+3. then learn Prim as the "grow one tree" viewpoint
+
+## Practice Archetypes
+
+The most common MST-shaped tasks are:
+
+- **minimum total cost to connect all vertices**
+- **print `IMPOSSIBLE` if full connection cannot be achieved**
+- **clustering / threshold problems driven by Kruskal order**
+- **minimum possible maximum edge in a connected structure**
+- **complete-graph point connection problems better suited to Prim**
+
+The strongest contest smell is:
 
 - undirected weighted graph
-- connect everything as cheaply as possible
-- build a backbone network
-- no need for shortest paths between all pairs, only total connection cost
+- one global connection objective
+- no root source and no all-pairs distance requirement
 
-MST is often confused with:
+## References And Repo Anchors
 
-- [Shortest Paths](../shortest-paths/README.md), because both use weighted graphs
-- [DSU](../../data-structures/dsu/README.md), because DSU is the helper structure, not the algorithm itself
+Research sweep refreshed on `2026-04-24`.
 
-## Common Mistakes
+Course:
 
-- trying to use MST ideas on directed graphs
-- forgetting to verify connectivity at the end
-- confusing MST cost with shortest-path tree cost
-- rebuilding DSU incorrectly between test cases
+- [Stanford CS106B: Minimum Spanning Trees](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1224/lectures/26-msts/)
+- [Illinois ECE374: Lecture 18 - Minimum spanning trees](https://ecealgo.com/lectures/Lec18.html)
 
-## Practice Ladder
+Reference:
 
-- [MST ladder](../../../practice/ladders/graphs/mst/README.md)
+- [Princeton COS226 MST Study Guide](https://www.cs.princeton.edu/courses/archive/spring19/cos226/lectures/study/43MinimumSpanningTrees.html)
+- [CP-Algorithms: Kruskal](https://cp-algorithms.com/graph/mst_kruskal.html)
+- [CP-Algorithms: Prim](https://cp-algorithms.com/graph/mst_prim.html)
 
-Suggested order:
+Practice:
 
-1. Kruskal on simple graphs
-2. connectivity check after MST
-3. compare Kruskal and Prim
-4. solve one clustering or threshold variant
+- [CSES Graph Algorithms](https://cses.fi/problemset/list/)
 
-## Go Deeper
+Repo anchors:
 
-- Reference: [CP-Algorithms - Kruskal](https://cp-algorithms.com/graph/mst_kruskal.html)
-- Reference: [CP-Algorithms - Prim](https://cp-algorithms.com/graph/mst_prim.html)
-- Practice: [CSES Graph Algorithms](https://cses.fi/problemset/)
-- Next step: [Trees](../trees/README.md)
+- practice ladder: [MST ladder](../../../practice/ladders/graphs/mst/README.md)
+- practice note: [Road Reparation](../../../practice/ladders/graphs/mst/roadreparation.md)
+- starter template: [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
+- related topic: [DSU](../../data-structures/dsu/README.md)
+- notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
 ## Related Topics
 
 - [DSU](../../data-structures/dsu/README.md)
 - [Graph Modeling](../graph-modeling/README.md)
 - [Shortest Paths](../shortest-paths/README.md)
+- [Trees](../trees/README.md)
