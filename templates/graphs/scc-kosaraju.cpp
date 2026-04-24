@@ -1,4 +1,12 @@
-// Template: Kosaraju SCC.
+// Template: Kosaraju SCC
+// Signal: compress directed cycles into SCC ids and then reason on the condensation DAG.
+// Assumes: the graph is directed and two DFS passes are acceptable.
+// Exposes: dfs_order / dfs_component helpers plus one SCC labeling skeleton.
+// Complexity: O(n + m).
+// Main trap: forgetting the second pass must run on the reversed graph in reverse finish order.
+// Links:
+//   Topic: topics/graphs/scc-toposort/README.md
+//   Notebook: notebook/graph-cheatsheet.md
 
 #include <algorithm>
 #include <iostream>

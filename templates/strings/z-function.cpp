@@ -1,4 +1,12 @@
-// Template: Z-function.
+// Template: Z-function
+// Signal: one-string diagnostics, prefix matches, borders, or periods.
+// Assumes: z[i] means longest prefix match starting at i and the maintained box is [l, r).
+// Exposes: z_function(s).
+// Complexity: O(n).
+// Main trap: mixing inclusive and half-open meaning for the right border r.
+// Links:
+//   Topic: topics/strings/z-function/README.md
+//   Note: practice/ladders/strings/z-function/findingperiods.md
 
 #include <iostream>
 #include <string>

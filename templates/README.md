@@ -39,6 +39,9 @@ This layer is `evergreen`, but it should still be source-backed through the topi
   - segment tree
   - sparse table
   - heaps / lazy deletion
+  - predecessor queries
+  - sliding median
+  - monotonic deque minimum
   - offline-query skeleton
 - `graphs/`
   - BFS
@@ -74,17 +77,13 @@ This layer is `evergreen`, but it should still be source-backed through the topi
 
 Each template should stay compact, compile on its own, and link back to the teaching page in `topics/`.
 
-## Foundations Pilot
+## Mature Rollout
 
-The first templates to hold the full contract are:
+The compact contract now covers these groups:
 
-- `foundations/contest-main.cpp`
-- `foundations/fast-io.cpp`
-- `foundations/sort-and-comparator.cpp`
-- `foundations/binary-search-last-false.cpp`
-- `foundations/prefix-sum-1d.cpp`
-- `foundations/binary-search-first-true.cpp`
-- `foundations/difference-array.cpp`
-- `foundations/two-pointers-variable-window.cpp`
+- `foundations/`
+- `data-structures/`
+- `graphs/`
+- `strings/`
 
-Use these as the reference pattern before rolling the metadata style out to the rest of the repo.
+Use those folders as the reference pattern before rolling the metadata style further into `dp/`, `math/`, and `geometry/`.

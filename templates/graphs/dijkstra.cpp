@@ -1,4 +1,12 @@
-// Template: Dijkstra with nonnegative weights.
+// Template: Dijkstra
+// Signal: single-source shortest paths with nonnegative edge weights.
+// Assumes: all reachable edges have weight >= 0 and stale priority-queue entries are skipped.
+// Exposes: one min-heap shortest-path skeleton with dist and parent arrays.
+// Complexity: O((n + m) log n) with a binary heap.
+// Main trap: one hidden negative edge invalidates the greedy settle order completely.
+// Links:
+//   Topic: topics/graphs/shortest-paths/README.md
+//   Note: practice/ladders/graphs/shortest-paths/qos.md
 
 #include <functional>
 #include <iostream>

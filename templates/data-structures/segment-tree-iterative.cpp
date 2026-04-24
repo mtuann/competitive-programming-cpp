@@ -1,4 +1,12 @@
-// Template: iterative segment tree for range sum.
+// Template: iterative segment tree
+// Signal: point updates with range sums on a mutable array.
+// Assumes: values are long long sums, identity is 0, and n is the leaf base used by the iterative layout.
+// Exposes: SegTree with build(a), set_value(pos, value), query(l, r).
+// Complexity: O(n) build, O(log n) point update, O(log n) range query.
+// Main trap: forgetting the template query is half-open [l, r), then mixing it with inclusive problem statements.
+// Links:
+//   Topic: topics/data-structures/segment-tree/README.md
+//   Note: practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md
 
 #include <iostream>
 #include <vector>

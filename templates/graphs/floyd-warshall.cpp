@@ -1,6 +1,12 @@
-// Use: all-pairs shortest paths on small graphs, or transitive-closure-style DP on distances.
-// Invariant: after processing k, dist[i][j] is optimal among paths whose internal vertices lie in [0, k].
+// Template: Floyd-Warshall
+// Signal: all-pairs shortest paths on small dense graphs, or closure-style DP on distances.
+// Assumes: O(n^3) time and O(n^2) memory are acceptable, INF guards prevent overflow, and no negative cycle is needed for shortest-path meaning.
+// Exposes: floyd_warshall(dist) over an initialized distance matrix.
 // Complexity: O(n^3) time, O(n^2) memory.
+// Main trap: forgetting the INF guards, or reading the final matrix as shortest-path distances when negative cycles exist.
+// Links:
+//   Topic: topics/graphs/shortest-paths/README.md
+//   Notebook: notebook/graph-cheatsheet.md
 
 #include <iostream>
 #include <limits>

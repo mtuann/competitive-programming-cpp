@@ -1,4 +1,12 @@
-// Template: heap with lazy deletion using a second heap.
+// Template: heap with lazy deletion
+// Signal: heap ordering is right, but deletions happen by value instead of only at the top.
+// Assumes: every erase(x) corresponds to a currently live value, and every observable read goes through top() / empty().
+// Exposes: LazyMinHeap with push(x), erase(x), top(), empty().
+// Complexity: O(log n) per push/erase and O(log n) amortized per discarded value during normalize().
+// Main trap: reading in_heap.top() directly or erasing values that were never actually live in the heap.
+// Links:
+//   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
+//   Notebook: notebook/data-structures-cheatsheet.md
 
 #include <functional>
 #include <iostream>

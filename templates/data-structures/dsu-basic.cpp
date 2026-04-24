@@ -1,5 +1,13 @@
 // Template: DSU basic
-// Supports find / unite / same-set / component size.
+// Signal: merge-only connectivity or component tracking under unions.
+// Assumes: no deletions, rollback, parity constraints, or path aggregates.
+// Exposes: DSU with find(x), unite(a, b), same(a, b), component_size(x).
+// Complexity: O(alpha(n)) amortized per operation.
+// Main trap: attaching component metadata anywhere except the current representative root.
+// Links:
+//   Topic: topics/data-structures/dsu/README.md
+//   Note: practice/ladders/data-structures/dsu/c11xu.md
+//   Note: practice/ladders/graphs/mst/roadreparation.md
 
 #include <iostream>
 #include <numeric>

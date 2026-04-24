@@ -1,4 +1,12 @@
-// Template: suffix array with doubling and LCP.
+// Template: suffix array
+// Signal: global suffix order, repeated substring structure, or suffix-LCP queries.
+// Assumes: the string is static and O(n log^2 n) from repeated sorting is acceptable for the target size.
+// Exposes: build_suffix_array(s) returning the suffix order.
+// Complexity: O(n log^2 n) in this implementation.
+// Main trap: copying this into an O(n log n) mental model and overshooting a tight limit.
+// Links:
+//   Topic: topics/strings/suffix-array-lcp/README.md
+//   Note: practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md
 
 #include <algorithm>
 #include <iostream>

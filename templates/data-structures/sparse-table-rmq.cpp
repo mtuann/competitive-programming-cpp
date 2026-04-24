@@ -1,4 +1,12 @@
-// Template: sparse table for static range minimum query.
+// Template: sparse table RMQ
+// Signal: static range minimum query.
+// Assumes: the operation is minimum, the array is immutable, and queries are inclusive in this wrapper.
+// Exposes: SparseTable with query(l, r) over inclusive indices.
+// Complexity: O(n log n) build, O(1) query, O(n log n) memory.
+// Main trap: using the same two-block trick for non-idempotent operations like sum.
+// Links:
+//   Topic: topics/data-structures/sparse-table/README.md
+//   Note: practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md
 
 #include <algorithm>
 #include <iostream>

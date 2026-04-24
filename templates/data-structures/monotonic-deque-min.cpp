@@ -1,6 +1,12 @@
-// Use: sliding-window minimum or DP over a moving interval.
-// Invariant: indices increase front to back and values increase strictly, so the front is the current minimum.
+// Template: monotonic deque minimum
+// Signal: sliding minimum or DP over a forward-only moving interval.
+// Assumes: expired indices leave forever and dominance is by value then recency.
+// Exposes: MonotonicMinDeque with push(idx, value), expire(min_idx), get_min().
 // Complexity: amortized O(1) per push/expire, O(1) to read the minimum.
+// Main trap: using it when the valid set is not a contiguous forward-moving window.
+// Links:
+//   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
+//   Note: practice/ladders/dp/sliding-window/tfield.md
 
 #include <deque>
 #include <iostream>

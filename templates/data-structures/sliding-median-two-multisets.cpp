@@ -1,6 +1,12 @@
-// Use: maintain a sliding-window median with insertions, deletions, and duplicates.
-// Invariant: lo stores the smaller half, hi the larger half, |lo| = |hi| or |lo| = |hi| + 1, and every lo <= every hi.
-// Complexity: O(log n) per add/erase, O(1) for the lower median.
+// Template: sliding median with two multisets
+// Signal: maintain a lower median under insertions, deletions, and duplicates.
+// Assumes: lo stores the smaller half, hi the larger half, and the wanted answer is the lower median.
+// Exposes: SlidingMedian with add(x), erase(x), median(), plus sliding_median(a, k).
+// Complexity: O(log n) per add/erase, O(1) median lookup.
+// Main trap: forgetting this returns the lower median, not the average or upper median.
+// Links:
+//   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
+//   Notebook: notebook/data-structures-cheatsheet.md
 
 #include <iostream>
 #include <iterator>

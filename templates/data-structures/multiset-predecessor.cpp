@@ -1,6 +1,12 @@
-// Use: predecessor queries in an ordered multiset with duplicates.
-// Invariant: returns an iterator to the largest value < x, or ms.end() if none exists.
+// Template: multiset predecessor
+// Signal: predecessor queries in an ordered multiset with duplicates.
+// Assumes: strict predecessor means largest value < x; duplicates are real elements, not counts only.
+// Exposes: predecessor(ms, x) returning iterator to the largest value < x or ms.end().
 // Complexity: O(log n) per query.
+// Main trap: confusing predecessor with floor and silently needing <= x instead of < x.
+// Links:
+//   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
+//   Note: practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md
 
 #include <iostream>
 #include <iterator>

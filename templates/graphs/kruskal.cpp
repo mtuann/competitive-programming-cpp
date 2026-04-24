@@ -1,4 +1,12 @@
-// Template: Kruskal minimum spanning tree.
+// Template: Kruskal MST
+// Signal: minimum spanning tree from an explicit weighted edge list.
+// Assumes: graph is undirected, weights are sortable, and DSU merges are enough for connectivity.
+// Exposes: one sorted-edge MST skeleton plus embedded DSU.
+// Complexity: O(m log m) for sorting plus near-linear DSU work.
+// Main trap: reaching for it on a path-distance problem that wants shortest paths, not an MST.
+// Links:
+//   Topic: topics/graphs/mst/README.md
+//   Note: practice/ladders/graphs/mst/roadreparation.md
 
 #include <algorithm>
 #include <iostream>
@@ -28,7 +36,8 @@ struct DSU {
 };
 
 struct Edge {
-    int u, v, w;
+    int u, v;
+    long long w;
 };
 
 int main() {
@@ -39,7 +48,7 @@ int main() {
     });
 
     DSU dsu(n);
-    int total = 0;
+    long long total = 0;
     for (const Edge &e : edges) {
         if (dsu.unite(e.u, e.v)) {
             total += e.w;

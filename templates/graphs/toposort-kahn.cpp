@@ -1,4 +1,12 @@
-// Template: Kahn topological sort.
+// Template: Kahn topological sort
+// Signal: explicit DAG order from indegrees, especially when you also want cycle detection.
+// Assumes: the graph should be a DAG; if not, a short order means a cycle exists.
+// Exposes: one indegree-based queue skeleton producing a topological order.
+// Complexity: O(n + m).
+// Main trap: reading any output order as valid without checking whether its length reached n.
+// Links:
+//   Topic: topics/graphs/scc-toposort/README.md
+//   Note: practice/ladders/graphs/scc-toposort/courseschedule.md
 
 #include <iostream>
 #include <queue>

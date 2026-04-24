@@ -1,6 +1,12 @@
-// Use: single-source shortest paths with negative edges; detects reachable negative cycles.
-// Invariant: after k passes, dist[v] is optimal among paths using at most k edges.
+// Template: Bellman-Ford
+// Signal: single-source shortest paths with negative edges or reachable negative-cycle detection.
+// Assumes: edge list is explicit and O(n * m) is acceptable for the input size.
+// Exposes: bellman_ford(n, edges, source) returning dist, parent, and a reachable-negative-cycle flag.
 // Complexity: O(n * m).
+// Main trap: treating dist/parent as ordinary shortest-path outputs after has_negative_cycle becomes true.
+// Links:
+//   Topic: topics/graphs/shortest-paths/README.md
+//   Notebook: notebook/graph-cheatsheet.md
 
 #include <iostream>
 #include <limits>

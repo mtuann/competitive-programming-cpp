@@ -1,6 +1,12 @@
-// Use: one fixed base string, all substrings matter, and you want state-based aggregation.
-// Invariant: each state is one endpos class; len/link delimit the represented substring-length interval.
+// Template: suffix automaton
+// Signal: one fixed base string, all substrings matter, and state aggregation is useful.
+// Assumes: alphabet is lowercase `a`-`z` and each state represents one endpos class.
+// Exposes: SuffixAutomaton with extend(ch), build(s), and state array st.
 // Complexity: O(n * alphabet) with fixed-array transitions, O(n) states.
+// Main trap: treating clones like real end occurrences and initializing their occurrence count to 1.
+// Links:
+//   Topic: topics/strings/suffix-automaton/README.md
+//   Note: practice/ladders/strings/suffix-automaton/distinctsubstrings.md
 
 #include <array>
 #include <iostream>

@@ -1,6 +1,12 @@
-// Use: shortest paths on graphs whose edge weights are only 0 or 1.
-// Invariant: the deque stores vertices in nondecreasing tentative distance.
+// Template: 0-1 BFS
+// Signal: shortest paths on graphs whose edge weights are only 0 or 1.
+// Assumes: every edge weight is exactly 0 or 1 and the deque stores nondecreasing tentative distance.
+// Exposes: zero_one_bfs(graph, source) returning dist and parent arrays.
 // Complexity: O(n + m).
+// Main trap: one edge of weight 2 silently breaks the deque invariant and the whole proof.
+// Links:
+//   Topic: topics/graphs/shortest-paths/README.md
+//   Notebook: notebook/graph-cheatsheet.md
 
 #include <deque>
 #include <iostream>

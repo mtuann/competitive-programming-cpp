@@ -1,4 +1,12 @@
-// Template: KMP prefix function and pattern matching.
+// Template: KMP
+// Signal: one exact pattern against one text, or one string where border-chain structure matters.
+// Assumes: matching is exact and the separator in pattern + '#' + text is not in the alphabet.
+// Exposes: prefix_function(s) and find_matches(text, pattern).
+// Complexity: O(n) for prefix function, O(n + m) for matching.
+// Main trap: treating pi[i] as an index instead of a matched-prefix length.
+// Links:
+//   Topic: topics/strings/kmp/README.md
+//   Note: practice/ladders/strings/kmp/stringmatching.md
 
 #include <iostream>
 #include <string>

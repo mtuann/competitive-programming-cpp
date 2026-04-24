@@ -1,4 +1,12 @@
-// Template: Hopcroft-Karp for bipartite matching.
+// Template: Hopcroft-Karp
+// Signal: bipartite maximum matching at a scale where Kuhn would start to drag.
+// Assumes: the graph is bipartite with left/right parts fixed in advance.
+// Exposes: HopcroftKarp with add_edge(u, v) and max_matching().
+// Complexity: O(m * sqrt(n)).
+// Main trap: feeding it a graph that is not actually bipartite and trusting the answer anyway.
+// Links:
+//   Topic: topics/graphs/matching/README.md
+//   Note: practice/ladders/graphs/matching/qbflower.md
 
 #include <iostream>
 #include <queue>

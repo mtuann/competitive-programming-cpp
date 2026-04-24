@@ -1,5 +1,12 @@
-// Template: iterative DFS.
-// Useful when recursion depth may be risky.
+// Template: iterative DFS
+// Signal: traversal or component discovery is needed, but recursion depth may be risky.
+// Assumes: stack order is acceptable and distance layers are not the proof-critical object.
+// Exposes: one explicit stack traversal skeleton plus visited/order arrays.
+// Complexity: O(n + m).
+// Main trap: expecting BFS-style shortest-path guarantees from a DFS traversal order.
+// Links:
+//   Topic: topics/graphs/bfs-dfs/README.md
+//   Note: practice/ladders/graphs/graph-modeling/countingrooms.md
 
 #include <iostream>
 #include <stack>

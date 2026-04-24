@@ -1,4 +1,12 @@
-// Template: Dinic max flow.
+// Template: Dinic max flow
+// Signal: max-flow / min-cut on a moderate network with repeated blocking-flow phases.
+// Assumes: capacities are integral, reverse edges stay paired, and the network is static during the run.
+// Exposes: Dinic with add_edge(u, v, cap) and max_flow(s, t).
+// Complexity: fast in practice; common contest bound O(m * n^2), better on many sparse networks.
+// Main trap: mutating only the forward edge and forgetting the reverse edge carries the residual invariant.
+// Links:
+//   Topic: topics/graphs/flow/README.md
+//   Note: practice/ladders/graphs/flow/policechase.md
 
 #include <iostream>
 #include <limits>

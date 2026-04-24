@@ -1,5 +1,12 @@
 // Template: offline query skeleton
-// Sort events and queries by a monotone key, process once, and restore answer order.
+// Signal: events and queries can both be sorted by one monotone key, then swept once.
+// Assumes: each query answer depends only on all events whose key is already eligible.
+// Exposes: Event / Query structs, one sorted sweep, and answer restoration by query id.
+// Complexity: O((n + q) log (n + q)) for sorting plus linear sweep work.
+// Main trap: forcing this on problems whose answers depend on previous answers or online updates.
+// Links:
+//   Topic: topics/data-structures/offline-tricks/README.md
+//   Note: practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md
 
 #include <algorithm>
 #include <iostream>

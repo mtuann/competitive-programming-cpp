@@ -1,4 +1,12 @@
-// Template: Aho-Corasick automaton for lowercase strings.
+// Template: Aho-Corasick
+// Signal: many lowercase patterns against one text.
+// Assumes: alphabet is lowercase `a`-`z` and all missing transitions are filled during build().
+// Exposes: AhoCorasick with add_word(s), build(), and automaton transitions in trie nodes.
+// Complexity: O(total pattern length * alphabet) build with fixed arrays, then linear scan in text length.
+// Main trap: forgetting `build()` before scanning and then following raw `-1` transitions.
+// Links:
+//   Topic: topics/strings/aho-corasick/README.md
+//   Note: practice/ladders/strings/aho-corasick/findingpatterns.md
 
 #include <array>
 #include <iostream>

@@ -112,6 +112,50 @@ The library page carries the fuller cards. The template file itself only keeps t
 | [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp) | many offline range additions, final reconstruction only | online queries or updates interleave with answers | [Difference Arrays](topics/foundations/patterns/difference-arrays/README.md) | [Range Update Queries](practice/ladders/foundations/difference-arrays/rangeupdatequeries.md) |
 | [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp) | monotone sliding window with forward-only boundaries | negative values or non-monotone validity break the window logic | [Two Pointers](topics/foundations/patterns/two-pointers/README.md) | [Apartments](practice/ladders/foundations/two-pointers/apartments.md) |
 
+## Data Structures Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp) | merge-only connectivity or component tracking | deletions, rollback, parity constraints, or path aggregates | [DSU](topics/data-structures/dsu/README.md) | [C11XU](practice/ladders/data-structures/dsu/c11xu.md) |
+| [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp) | point updates plus prefix or range sums | range assignment, min/max merges, or mixed lazy operations | [Fenwick Tree](topics/data-structures/fenwick-tree/README.md) | [CVP00001](practice/ladders/data-structures/fenwick-tree/cvp00001.md) |
+| [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp) | point updates with range sums on a mutable array | you need a generic monoid, lazy propagation, or a fully static structure | [Segment Tree](topics/data-structures/segment-tree/README.md) | [Dynamic Range Sum Queries](practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md) |
+| [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp) | static range minimum query | online updates or any non-RMQ aggregate | [Sparse Table](topics/data-structures/sparse-table/README.md) | [Static Range Minimum Queries](practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) |
+| [heap-lazy-delete.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/heap-lazy-delete.cpp) | min-heap behavior with delayed deletions by value | predecessor/order-statistics queries or deletes that do not correspond to live values | [Heaps And Ordered Sets](topics/data-structures/heaps-and-ordered-sets/README.md) | [Heaps And Ordered Sets Ladder](practice/ladders/data-structures/heaps-and-ordered-sets/README.md) |
+| [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp) | strict predecessor queries with duplicates | you actually need floor `<= x` semantics or heap-only behavior | [Heaps And Ordered Sets](topics/data-structures/heaps-and-ordered-sets/README.md) | [Heaps And Ordered Sets Ladder](practice/ladders/data-structures/heaps-and-ordered-sets/README.md) |
+| [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp) | maintain a lower median under insert/erase with duplicates | you need arbitrary quantiles or a different median convention | [Heaps And Ordered Sets](topics/data-structures/heaps-and-ordered-sets/README.md) | [Heaps And Ordered Sets Ladder](practice/ladders/data-structures/heaps-and-ordered-sets/README.md) |
+| [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp) | sliding minimum or DP over a moving interval | the valid set is not a forward-only window | [Heaps And Ordered Sets](topics/data-structures/heaps-and-ordered-sets/README.md) | [TFIELD](practice/ladders/dp/sliding-window/tfield.md) |
+| [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp) | sort events and queries by one monotone key, then sweep once | answers depend on previous answers or truly online updates | [Offline Tricks](topics/data-structures/offline-tricks/README.md) | [Distinct Values Queries](practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) |
+
+## Graphs Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp) | unweighted shortest path or layer exploration | weighted edges matter | [BFS And DFS](topics/graphs/bfs-dfs/README.md) | [Message Route](practice/ladders/graphs/bfs-dfs/messageroute.md) |
+| [dfs-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dfs-iterative.cpp) | traversal/components without recursion risk | layer distance is the proof-critical object | [BFS And DFS](topics/graphs/bfs-dfs/README.md) | [Counting Rooms](practice/ladders/graphs/graph-modeling/countingrooms.md) |
+| [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp) | shortest paths with edge weights only `0/1` | arbitrary nonnegative weights | [Shortest Paths](topics/graphs/shortest-paths/README.md) | [Shortest Paths Ladder](practice/ladders/graphs/shortest-paths/README.md) |
+| [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp) | nonnegative weighted shortest paths | any reachable negative edge survives after modeling | [Shortest Paths](topics/graphs/shortest-paths/README.md) | [QOS](practice/ladders/graphs/shortest-paths/qos.md) |
+| [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp) | negative edges or reachable negative-cycle detection | all weights are nonnegative and sparse enough for Dijkstra | [Shortest Paths](topics/graphs/shortest-paths/README.md) | [Shortest Paths Ladder](practice/ladders/graphs/shortest-paths/README.md) |
+| [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp) | all-pairs shortest paths on small `n` | sparse large graphs or one-source queries only | [Shortest Paths](topics/graphs/shortest-paths/README.md) | [Shortest Paths Ladder](practice/ladders/graphs/shortest-paths/README.md) |
+| [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp) | MST from an edge list | directed reachability or path-distance questions | [MST](topics/graphs/mst/README.md) | [Road Reparation](practice/ladders/graphs/mst/roadreparation.md) |
+| [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp) | explicit DAG ordering from indegrees | you need SCC condensation or cyclic-component structure, not just cycle detection | [Topological Sort And SCC](topics/graphs/scc-toposort/README.md) | [Course Schedule](practice/ladders/graphs/scc-toposort/courseschedule.md) |
+| [scc-kosaraju.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/scc-kosaraju.cpp) | compress directed cycles into SCC ids | the graph is undirected or plain topo order already exists | [Topological Sort And SCC](topics/graphs/scc-toposort/README.md) | [SCC / Toposort Ladder](practice/ladders/graphs/scc-toposort/README.md) |
+| [lca-binary-lifting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/lca-binary-lifting.cpp) | many static ancestor or LCA queries on one rooted tree | dynamic trees or path aggregates are the real bottleneck | [LCA](topics/graphs/lca/README.md) | [Company Queries II](practice/ladders/graphs/lca/companyqueries2.md) |
+| [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp) | max-flow / min-cut on a moderate network | edge costs matter or pure bipartite matching is the only goal | [Maximum Flow](topics/graphs/flow/README.md) | [Police Chase](practice/ladders/graphs/flow/policechase.md) |
+| [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp) | flow value and edge costs both matter, with nonnegative initial residual costs in this snippet | max-flow value alone is enough or negative-cost edges need an initial potential pass | [Maximum Flow](topics/graphs/flow/README.md) | [MINCOST](practice/ladders/graphs/flow/mincost.md) |
+| [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp) | bipartite maximum matching at scale | matching is not bipartite or costs/weights matter | [Matching](topics/graphs/matching/README.md) | [QBFLOWER](practice/ladders/graphs/matching/qbflower.md) |
+
+## Strings Chooser
+
+| Template | Signal | Avoid when | Teaching anchor | Representative use |
+| --- | --- | --- | --- | --- |
+| [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp) | same-length substring fingerprints, borders, or LCP via binary search | exact proof-critical matching needs zero collision risk by itself | [String Hashing](topics/strings/hashing/README.md) | [Finding Borders](practice/ladders/strings/hashing/findingborders.md) |
+| [kmp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/kmp.cpp) | one exact pattern against one text, plus border-chain reuse | many patterns or all-substring aggregation | [KMP](topics/strings/kmp/README.md) | [String Matching](practice/ladders/strings/kmp/stringmatching.md) |
+| [z-function.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/z-function.cpp) | one-string diagnostics, prefix matches, borders, or periods | dictionary matching over many patterns | [Z-Function](topics/strings/z-function/README.md) | [Finding Periods](practice/ladders/strings/z-function/findingperiods.md) |
+| [trie-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/trie-basic.cpp) | many words with shared-prefix transitions | a sort/lower_bound pass already solves the task | [Trie](topics/strings/trie/README.md) | [Word Combinations](practice/ladders/strings/trie/wordcombinations.md) |
+| [aho-corasick.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/aho-corasick.cpp) | many patterns against one text | only one pattern matters or you need all substrings of one base string instead | [Aho-Corasick](topics/strings/aho-corasick/README.md) | [Finding Patterns](practice/ladders/strings/aho-corasick/findingpatterns.md) |
+| [suffix-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-array.cpp) | global suffix order, LCP, repeated substring queries | online extension or state-based substring aggregation is the core need | [Suffix Array And LCP](topics/strings/suffix-array-lcp/README.md) | [Repeating Substring](practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md) |
+| [suffix-automaton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-automaton.cpp) | one base string, all substrings matter, and state aggregation helps | many independent patterns are matched against one long text | [Suffix Automaton](topics/strings/suffix-automaton/README.md) | [Distinct Substrings](practice/ladders/strings/suffix-automaton/distinctsubstrings.md) |
+
 ## Current Templates
 
 ### Foundations
@@ -120,31 +164,11 @@ The library page carries the fuller cards. The template file itself only keeps t
 
 ### Data Structures
 
-- [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp)
-- [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp)
-- [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
-- [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp)
-- [heap-lazy-delete.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/heap-lazy-delete.cpp)
-- [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
-- [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
-- [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
-- [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
+- chooser table above; this group now carries the same compact contract style as foundations
 
 ### Graphs
 
-- [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
-- [dfs-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dfs-iterative.cpp)
-- [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
-- [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
-- [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
-- [floyd-warshall.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/floyd-warshall.cpp)
-- [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
-- [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp)
-- [scc-kosaraju.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/scc-kosaraju.cpp)
-- [lca-binary-lifting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/lca-binary-lifting.cpp)
-- [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
-- [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
-- [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
+- chooser table above; use it before browsing raw graph templates under contest pressure
 
 ### Dynamic Programming
 
@@ -166,13 +190,7 @@ The library page carries the fuller cards. The template file itself only keeps t
 
 ### Strings
 
-- [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp)
-- [kmp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/kmp.cpp)
-- [z-function.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/z-function.cpp)
-- [trie-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/trie-basic.cpp)
-- [aho-corasick.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/aho-corasick.cpp)
-- [suffix-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-array.cpp)
-- [suffix-automaton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-automaton.cpp)
+- chooser table above; this group now exposes the same contract fields as the mature foundations templates
 
 ### Geometry
 

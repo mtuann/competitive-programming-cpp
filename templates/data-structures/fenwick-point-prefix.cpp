@@ -1,5 +1,12 @@
 // Template: Fenwick tree / BIT
-// Supports point updates and prefix sums.
+// Signal: point updates plus prefix or range sums.
+// Assumes: public indices are 1-based and the combine operation is addition.
+// Exposes: Fenwick with add(idx, delta), sum_prefix(idx), sum_range(l, r).
+// Complexity: O(log n) per update or query, O(n) memory.
+// Main trap: mixing 0-based and 1-based indices after copying the loop skeleton.
+// Links:
+//   Topic: topics/data-structures/fenwick-tree/README.md
+//   Note: practice/ladders/data-structures/fenwick-tree/cvp00001.md
 
 #include <iostream>
 #include <vector>

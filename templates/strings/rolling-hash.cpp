@@ -1,4 +1,12 @@
-// Template: polynomial rolling hash.
+// Template: rolling hash
+// Signal: same-length substring fingerprints, borders, or LCP via binary search.
+// Assumes: equal hashes are treated as fingerprints, not absolute proof of equality.
+// Exposes: RollingHash with get(l, r) over half-open substring indices.
+// Complexity: O(n) build, O(1) hash extraction.
+// Main trap: comparing hashes of substrings with different lengths as if the fingerprint were position-free.
+// Links:
+//   Topic: topics/strings/hashing/README.md
+//   Note: practice/ladders/strings/hashing/findingborders.md
 
 #include <iostream>
 #include <string>

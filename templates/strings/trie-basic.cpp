@@ -1,4 +1,12 @@
-// Template: lowercase trie.
+// Template: lowercase trie
+// Signal: many words with shared-prefix transitions.
+// Assumes: alphabet is lowercase `a`-`z` and prefix traversal is more important than lexicographic order alone.
+// Exposes: Trie with insert(s), contains(s), and node counters end_count / pass_count.
+// Complexity: O(total inserted length) build and O(|s|) query.
+// Main trap: forgetting whether pass_count should be updated at the root as well as along the path.
+// Links:
+//   Topic: topics/strings/trie/README.md
+//   Note: practice/ladders/strings/trie/wordcombinations.md
 
 #include <array>
 #include <iostream>

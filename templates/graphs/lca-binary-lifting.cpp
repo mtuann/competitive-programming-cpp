@@ -1,4 +1,12 @@
-// Template: LCA by binary lifting.
+// Template: LCA by binary lifting
+// Signal: many static ancestor or LCA queries on one rooted tree.
+// Assumes: the tree is fixed after preprocessing and parent jumps are enough for the query family.
+// Exposes: LCA with add_edge(u, v), build(root), and query(a, b).
+// Complexity: O(n log n) build, O(log n) per query.
+// Main trap: forgetting to build from the intended root, then trusting every depth/ancestor relation afterward.
+// Links:
+//   Topic: topics/graphs/lca/README.md
+//   Note: practice/ladders/graphs/lca/companyqueries2.md
 
 #include <iostream>
 #include <vector>

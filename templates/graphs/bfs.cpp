@@ -1,4 +1,12 @@
-// Template: BFS for unweighted shortest path.
+// Template: BFS
+// Signal: unweighted shortest path or layer exploration on a graph/grid.
+// Assumes: every edge has equal unit cost and the first visit gives optimal distance.
+// Exposes: one queue-based shortest-path skeleton with dist and parent arrays.
+// Complexity: O(n + m).
+// Main trap: slipping weighted edges into the same loop and trusting level order anyway.
+// Links:
+//   Topic: topics/graphs/bfs-dfs/README.md
+//   Note: practice/ladders/graphs/bfs-dfs/messageroute.md
 
 #include <iostream>
 #include <queue>

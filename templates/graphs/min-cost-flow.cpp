@@ -1,4 +1,12 @@
-// Template: successive shortest augmenting path with potentials.
+// Template: min-cost flow
+// Signal: flow value and edge costs both matter, not just max-flow value.
+// Assumes: residual reverse edges stay paired, reduced costs are maintained with potentials, and the initial residual costs are already nonnegative for Dijkstra.
+// Exposes: MinCostFlow with add_edge(u, v, cap, cost) and min_cost_flow(s, t, need).
+// Complexity: problem-dependent; successive shortest augmenting paths with Dijkstra + potentials.
+// Main trap: using negative-cost edges without seeding initial potentials via Bellman-Ford or SPFA first.
+// Links:
+//   Topic: topics/graphs/flow/README.md
+//   Note: practice/ladders/graphs/flow/mincost.md
 
 #include <functional>
 #include <iostream>
