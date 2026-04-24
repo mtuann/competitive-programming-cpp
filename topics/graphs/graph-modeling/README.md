@@ -224,6 +224,15 @@ If one legal move transforms one state into another:
 - states are vertices
 - legal moves are edges
 
+The most common failure here is not forgetting the traversal. It is forgetting one state dimension that changes future legality.
+
+Typical missing dimensions:
+
+- whether a coupon was already used
+- which keys have been collected
+- whose turn it is
+- how many moves remain
+
 ### 6. Modeling Often Chooses The Whole Algorithm Family
 
 Once the graph is right, the next step is usually obvious:
@@ -387,6 +396,18 @@ There is no single graph-modeling algorithm, but there is a reusable checklist.
 8. only then choose BFS / DFS / shortest paths / SCC / matching / flow
 ```
 
+### Quick Sanity Check Before Coding
+
+Ask these three yes/no questions:
+
+```text
+1. Can two graph states that I merged ever have different legal futures?
+2. Can a graph path represent something illegal in the original story?
+3. Once weights/capacities are added, do they still mean the original cost/limit?
+```
+
+If the answer to any of them is "yes," the model still needs work.
+
 ### Adjacency List Skeleton
 
 Weighted:
@@ -435,6 +456,8 @@ Too little state:
 Too much state:
 
 - explodes complexity
+
+The art is to store exactly what the future depends on, and nothing else.
 
 ### 3. Implicit Graphs Need Duplicate Control
 
@@ -485,6 +508,11 @@ Examples:
 - bipartite graph after left/right partition
 
 This is still graph modeling, just one layer above the statement.
+
+That is often the exact moment a hard problem becomes standard:
+
+- first model the story
+- then remodel it into the graph your theorem or algorithm actually wants
 
 ## Beyond The Core Topic
 
