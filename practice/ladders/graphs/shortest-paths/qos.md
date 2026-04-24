@@ -81,6 +81,15 @@ So the main accepted file:
 
 is the cleaner implementation, while `qos-oldstyle.cpp` is the closer “patched old submission” version for study.
 
+## Reusable Pattern
+
+- Topic page: [Shortest Paths](../../../../topics/graphs/shortest-paths/README.md)
+- Practice ladder: [Shortest Paths ladder](README.md)
+- Starter template: [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: pick the lightest shortest-path primitive that fits the edge weights and graph model.
+- This note adds: the DP and lexicographic reconstruction logic added after shortest paths.
+
 ## Solutions
 
 - Code: [qos.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp)

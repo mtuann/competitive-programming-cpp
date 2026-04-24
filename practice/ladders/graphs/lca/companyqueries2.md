@@ -104,6 +104,15 @@ With `n, q <= 2 * 10^5`, this is exactly the intended complexity.
 - Use enough levels in the jump table: while `(1 << LOG) <= n`, keep increasing `LOG`.
 - An iterative DFS/BFS avoids recursion-depth issues on a long chain.
 
+## Reusable Pattern
+
+- Topic page: [LCA](../../../../topics/graphs/lca/README.md)
+- Practice ladder: [LCA ladder](README.md)
+- Starter template: [lca-binary-lifting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/lca-binary-lifting.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: equalize depths first, then lift both nodes together from large jumps downward.
+- This note adds: the query formula or tree-specific interpretation that sits on top of plain LCA.
+
 ## Solutions
 
 - Code: [companyqueries2.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp)

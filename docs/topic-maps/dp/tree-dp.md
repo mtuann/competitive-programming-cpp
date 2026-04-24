@@ -5,7 +5,7 @@ DP on rooted trees, rerooting, subtree merges, and local state design for hierar
 - Topic slug: `dp/tree-dp`
 - Tutorial page: [Open tutorial](../../../topics/dp/tree-dp/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/tree-dp/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
 - Curated external problems: `10`
 
@@ -95,6 +95,7 @@ DP on rooted trees, rerooting, subtree merges, and local state design for hierar
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `TREEMATCHING` | Tree Matching | `primary` | `medium` | tree matching dp; matched or unmatched state; child swap contribution | [Note](../../../practice/ladders/dp/tree-dp/treematching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/tree-dp/treematching.cpp) |
 | `VOSTRIP` | VOSTRIP | `secondary` | `hard` | tree endpoint pairing; path decomposition; local imbalance formula | [Note](../../../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
 
 ## Regeneration

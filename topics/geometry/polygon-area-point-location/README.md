@@ -55,6 +55,12 @@ Keep geometry exact with integer arithmetic whenever possible.
 Template help:
 
 - [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp)
+- [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp)
+
+Notebook:
+
+- [Geometry cheatsheet](../../../notebook/geometry-cheatsheet.md)
 
 Standard workflow:
 

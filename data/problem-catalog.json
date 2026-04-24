@@ -231,6 +231,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp"
   },
   {
+    "code": "DYNAMICRANGESUMQUERIES",
+    "title": "Dynamic Range Sum Queries",
+    "full_title": "Dynamic Range Sum Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1648",
+    "main_topic": "Data Structures -> Segment Tree",
+    "secondary_topics": [
+      "Point update",
+      "Range sum",
+      "Iterative segment tree"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/segment-tree",
+    "topic_tags": [
+      "data-structures/segment-tree"
+    ],
+    "patterns": [
+      "iterative segment tree",
+      "point assignment",
+      "range sum query"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md",
+    "ladder_path": "practice/ladders/data-structures/segment-tree/README.md",
+    "tutorial_path": "topics/data-structures/segment-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree/dynamicrangesumqueries.cpp"
+  },
+  {
     "code": "STATICRANGEMINIMUMQUERIES",
     "title": "Static Range Minimum Queries",
     "full_title": "Static Range Minimum Queries",
@@ -460,6 +492,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp"
   },
   {
+    "code": "TREEMATCHING",
+    "title": "Tree Matching",
+    "full_title": "Tree Matching",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1130",
+    "main_topic": "DP -> Tree DP",
+    "secondary_topics": [
+      "Maximum matching on a tree",
+      "Rooted subtree states",
+      "Child contribution swap"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/tree-dp",
+    "topic_tags": [
+      "dp/tree-dp",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "tree matching dp",
+      "matched or unmatched state",
+      "child swap contribution"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ],
+    "note_path": "practice/ladders/dp/tree-dp/treematching.md",
+    "ladder_path": "practice/ladders/dp/tree-dp/README.md",
+    "tutorial_path": "topics/dp/tree-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/tree-dp/treematching.cpp"
+  },
+  {
     "code": "FACTORYMACHINES",
     "title": "Factory Machines",
     "full_title": "Factory Machines",
@@ -525,6 +590,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/complexity-and-invariants/increasingarray.cpp"
   },
   {
+    "code": "MISSINGNUMBER",
+    "title": "Missing Number",
+    "full_title": "Missing Number",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1083",
+    "main_topic": "Foundations -> C++ Language",
+    "secondary_topics": [
+      "Running total",
+      "long long discipline",
+      "Input fluency"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/cpp-language",
+    "topic_tags": [
+      "foundations/cpp-language"
+    ],
+    "patterns": [
+      "running total subtraction",
+      "arithmetic series sum",
+      "type safe warm-up"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
+    ],
+    "note_path": "practice/ladders/foundations/cpp-language/missingnumber.md",
+    "ladder_path": "practice/ladders/foundations/cpp-language/README.md",
+    "tutorial_path": "topics/foundations/cpp-language/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/cpp-language/missingnumber.cpp"
+  },
+  {
     "code": "RANGEUPDATEQUERIES",
     "title": "Range Update Queries",
     "full_title": "Range Update Queries",
@@ -556,6 +653,38 @@
     "ladder_path": "practice/ladders/foundations/difference-arrays/README.md",
     "tutorial_path": "topics/foundations/patterns/difference-arrays/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp"
+  },
+  {
+    "code": "STATICRANGESUMQUERIES",
+    "title": "Static Range Sum Queries",
+    "full_title": "Static Range Sum Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1646",
+    "main_topic": "Foundations -> Prefix Sums",
+    "secondary_topics": [
+      "1D prefix sum",
+      "Range subtraction",
+      "Immutable array"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "foundations/prefix-sums",
+    "topic_tags": [
+      "foundations/prefix-sums"
+    ],
+    "patterns": [
+      "prefix sum build",
+      "range sum by subtraction",
+      "immutable array queries"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/foundations/prefix-sums/staticrangesumqueries.md",
+    "ladder_path": "practice/ladders/foundations/prefix-sums/README.md",
+    "tutorial_path": "topics/foundations/patterns/prefix-sums/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp"
   },
   {
     "code": "MOVIEFESTIVAL",
@@ -622,6 +751,72 @@
     "ladder_path": "practice/ladders/foundations/stl/README.md",
     "tutorial_path": "topics/foundations/cpp-language/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp"
+  },
+  {
+    "code": "APARTMENTS",
+    "title": "Apartments",
+    "full_title": "Apartments",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1084",
+    "main_topic": "Foundations -> Two Pointers",
+    "secondary_topics": [
+      "Greedy matching",
+      "Sorted scan",
+      "Tolerance window"
+    ],
+    "difficulty": "easy-medium",
+    "status": "solved",
+    "primary_slug": "foundations/two-pointers",
+    "topic_tags": [
+      "foundations/two-pointers",
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "two sorted pointers",
+      "tolerance matching",
+      "greedy monotone scan"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/two-pointers/apartments.md",
+    "ladder_path": "practice/ladders/foundations/two-pointers/README.md",
+    "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/apartments.cpp"
+  },
+  {
+    "code": "SUMOFTWOVALUES",
+    "title": "Sum of Two Values",
+    "full_title": "Sum of Two Values",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1640",
+    "main_topic": "Foundations -> Two Pointers",
+    "secondary_topics": [
+      "Sort and scan",
+      "Original index recovery",
+      "Opposite-end pointers"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "foundations/two-pointers",
+    "topic_tags": [
+      "foundations/two-pointers",
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "sort and scan",
+      "opposite end pointers",
+      "index restoration"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ],
+    "note_path": "practice/ladders/foundations/two-pointers/sumoftwovalues.md",
+    "ladder_path": "practice/ladders/foundations/two-pointers/README.md",
+    "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/sumoftwovalues.cpp"
   },
   {
     "code": "CONVEXHULL",
@@ -792,6 +987,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp"
   },
   {
+    "code": "POINTLOCATIONTEST",
+    "title": "Point Location Test",
+    "full_title": "Point Location Test",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2189",
+    "main_topic": "Geometry -> Vector Orientation",
+    "secondary_topics": [
+      "Cross product sign",
+      "Directed line side test",
+      "Integer geometry"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "geometry/vector-orientation",
+    "topic_tags": [
+      "geometry/vector-orientation"
+    ],
+    "patterns": [
+      "cross product orientation",
+      "signed area test",
+      "turn classification"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/geometry/vector-orientation/pointlocationtest.md",
+    "ladder_path": "practice/ladders/geometry/vector-orientation/README.md",
+    "tutorial_path": "topics/geometry/vector-orientation/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/vector-orientation/pointlocationtest.cpp"
+  },
+  {
     "code": "MESSAGEROUTE",
     "title": "Message Route",
     "full_title": "Message Route",
@@ -923,6 +1150,40 @@
     "ladder_path": "practice/ladders/graphs/flow/README.md",
     "tutorial_path": "topics/graphs/flow/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp"
+  },
+  {
+    "code": "PATHQUERIES2",
+    "title": "Path Queries II",
+    "full_title": "PATHQUERIES2 - Path Queries II",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2134",
+    "main_topic": "Graphs -> Heavy-Light Decomposition",
+    "secondary_topics": [
+      "Segment tree",
+      "Path maximum queries",
+      "Point updates"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/hld",
+    "topic_tags": [
+      "graphs/hld",
+      "graphs/trees",
+      "data-structures/segment-tree"
+    ],
+    "patterns": [
+      "heavy light decomposition",
+      "path query decomposition",
+      "segment tree on base array"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/hld/pathqueries2.md",
+    "ladder_path": "practice/ladders/graphs/hld/README.md",
+    "tutorial_path": "topics/graphs/hld/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp"
   },
   {
     "code": "COMPANYQUERIES2",

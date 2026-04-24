@@ -43,14 +43,30 @@ Why this order works:
 - sorting and binary search teach clean ordered reasoning early
 - prefix logic prepares you for later Fenwick and segment tree topics
 
+## First Week Route
+
+If you want the smallest workable beginner route inside this repo, do just this:
+
+1. read [C++ language](cpp-language/README.md)
+2. solve [Missing Number](cpp-language/missingnumber.md)
+3. read [Complexity and invariants](complexity-and-invariants/README.md)
+4. solve [Increasing Array](complexity-and-invariants/increasingarray.md)
+5. read [Prefix sums](prefix-sums/README.md)
+6. solve [Static Range Sum Queries](prefix-sums/staticrangesumqueries.md)
+
+That is enough to build a real local loop before harder patterns.
+
 ## Repo Anchors
 
 If you want the first internal notes to open in this section, start with:
 
+- [Missing Number](cpp-language/missingnumber.md)
 - [Distinct Numbers](stl/distinctnumbers.md)
 - [Increasing Array](complexity-and-invariants/increasingarray.md)
 - [Movie Festival](sorting/moviefestival.md)
 - [Factory Machines](binary-search/factorymachines.md)
+- [Static Range Sum Queries](prefix-sums/staticrangesumqueries.md)
+- [Apartments](two-pointers/apartments.md)
 - [Range Update Queries](difference-arrays/rangeupdatequeries.md)
 
 ## Support Material

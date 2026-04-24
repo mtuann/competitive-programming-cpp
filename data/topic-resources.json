@@ -279,6 +279,23 @@
         "url": "https://cses.fi/problemset",
         "kind": "problem set"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Foundations cheatsheet",
+        "path": "notebook/foundations-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Static Range Sum Queries note",
+        "path": "practice/ladders/foundations/prefix-sums/staticrangesumqueries.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
     ]
   },
   "foundations/difference-arrays": {
@@ -359,6 +376,23 @@
         "label": "CSES Problem Set",
         "url": "https://cses.fi/problemset",
         "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Foundations cheatsheet",
+        "path": "notebook/foundations-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "adjacent reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
       }
     ]
   },
@@ -577,6 +611,18 @@
         "url": "https://cses.fi/problemset",
         "kind": "problem set"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Data structures cheatsheet",
+        "path": "notebook/data-structures-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
     ]
   },
   "data-structures/offline-tricks": {
@@ -663,6 +709,18 @@
         "label": "USACO contest archive",
         "url": "https://usaco.org/index.php?page=contests",
         "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Graph cheatsheet",
+        "path": "notebook/graph-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
       }
     ]
   },
@@ -1142,8 +1200,8 @@
   "graphs/hld": {
     "title": "Graphs -> Heavy-Light Decomposition",
     "summary": "Decompose tree paths into logarithmically many chains so path queries and updates reduce to range structures.",
-    "topic_path": "",
-    "ladder_path": "practice/ladders/graphs/trees/README.md",
+    "topic_path": "topics/graphs/hld/README.md",
+    "ladder_path": "practice/ladders/graphs/hld/README.md",
     "microtopics": [
       "heavy-edge",
       "light-edge",
@@ -1541,6 +1599,18 @@
         "url": "https://codeforces.com/problemset?tags=two+pointers",
         "kind": "problem set"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Data structures cheatsheet",
+        "path": "notebook/data-structures-cheatsheet.md",
+        "kind": "adjacent reference"
+      }
     ]
   },
   "math/modular-arithmetic": {
@@ -1588,6 +1658,18 @@
         "label": "Kattis Modular Arithmetic",
         "url": "https://open.kattis.com/problems/modulararithmetic",
         "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Number theory cheatsheet",
+        "path": "notebook/number-theory-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
       }
     ]
   },
@@ -2281,6 +2363,18 @@
         "url": "https://cses.fi/problemset/task/2190",
         "kind": "problem"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Geometry cheatsheet",
+        "path": "notebook/geometry-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
     ]
   },
   "geometry/segment-intersection": {
@@ -2329,6 +2423,18 @@
         "url": "https://cses.fi/problemset/task/2189/",
         "kind": "problem"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Geometry cheatsheet",
+        "path": "notebook/geometry-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
     ]
   },
   "geometry/polygon-area-point-location": {
@@ -2376,6 +2482,18 @@
         "label": "CSES Point Location Test",
         "url": "https://cses.fi/problemset/task/2189/",
         "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Geometry cheatsheet",
+        "path": "notebook/geometry-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
       }
     ]
   },

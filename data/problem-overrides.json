@@ -163,6 +163,18 @@
       "Sorting and searching"
     ]
   },
+  "MISSINGNUMBER": {
+    "topic_tags": [],
+    "patterns": [
+      "running total subtraction",
+      "arithmetic series sum",
+      "type safe warm-up"
+    ],
+    "tracks": [
+      "CSES",
+      "Introductory problems"
+    ]
+  },
   "FACTORYMACHINES": {
     "topic_tags": [
       "foundations/complexity-and-invariants"
@@ -171,6 +183,20 @@
       "answer binary search",
       "monotone feasibility",
       "production rate accumulation"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ]
+  },
+  "APARTMENTS": {
+    "topic_tags": [
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "two sorted pointers",
+      "tolerance matching",
+      "greedy monotone scan"
     ],
     "tracks": [
       "CSES",
@@ -349,6 +375,20 @@
       "finish-time sorting",
       "interval scheduling",
       "exchange argument greedy"
+    ],
+    "tracks": [
+      "CSES",
+      "Sorting and searching"
+    ]
+  },
+  "SUMOFTWOVALUES": {
+    "topic_tags": [
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "sort and scan",
+      "opposite end pointers",
+      "index restoration"
     ],
     "tracks": [
       "CSES",
@@ -649,6 +689,71 @@
     "tracks": [
       "CSES",
       "String algorithms"
+    ]
+  },
+  "DYNAMICRANGESUMQUERIES": {
+    "topic_tags": [],
+    "patterns": [
+      "iterative segment tree",
+      "point assignment",
+      "range sum query"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ]
+  },
+  "PATHQUERIES2": {
+    "topic_tags": [
+      "graphs/trees",
+      "data-structures/segment-tree"
+    ],
+    "patterns": [
+      "heavy light decomposition",
+      "path query decomposition",
+      "segment tree on base array"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ]
+  },
+  "POINTLOCATIONTEST": {
+    "topic_tags": [],
+    "patterns": [
+      "cross product orientation",
+      "signed area test",
+      "turn classification"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ]
+  },
+  "STATICRANGESUMQUERIES": {
+    "topic_tags": [],
+    "patterns": [
+      "prefix sum build",
+      "range sum by subtraction",
+      "immutable array queries"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ]
+  },
+  "TREEMATCHING": {
+    "topic_tags": [
+      "graphs/trees"
+    ],
+    "patterns": [
+      "tree matching dp",
+      "matched or unmatched state",
+      "child swap contribution"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
     ]
   }
 }

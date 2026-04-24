@@ -81,9 +81,16 @@ Tradeoffs:
 
 ## Canonical C++ Pattern
 
-Template in this repo:
+Templates in this repo:
 
+- [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
+- [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
+- [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
+
+Notebook:
+
+- [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
 Core arrays:
 
@@ -96,6 +103,8 @@ Important habits:
 - initialize distances with a large sentinel
 - use `long long` when path totals may overflow `int`
 - in heap Dijkstra, skip stale entries
+- in `0-1 BFS`, only push to the front on zero-cost transitions
+- in Bellman-Ford, decide whether you only need shortest paths or also need reachable negative-cycle detection
 
 ## Standard Patterns
 

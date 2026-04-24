@@ -66,9 +66,11 @@ Tradeoffs:
 
 ## Canonical Pattern
 
-Template in this repo:
+Templates in this repo:
 
 - [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
+- [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
+- [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 
 Notebook:
 
@@ -89,6 +91,11 @@ powmod(a, e):
     a = a * a mod MOD
     e >>= 1
 ```
+
+Retrieval hints:
+
+- use the factorial template when many `nCk` queries share one prime modulus
+- use extended Euclid when the modulus is not guaranteed prime or when the task is really a linear Diophantine equation wearing modular clothes
 
 ## Worked Examples
 

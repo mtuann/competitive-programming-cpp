@@ -49,6 +49,15 @@ With `n <= 100`, the standard implementation is fast enough:
 - Reconstruct the answer on the **original** undirected edges, not on residual edges.
 - The printed edge list can be any valid optimal transportation plan.
 
+## Reusable Pattern
+
+- Topic page: [Maximum Flow](../../../../topics/graphs/flow/README.md)
+- Practice ladder: [Maximum Flow ladder](README.md)
+- Starter template: [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: separate the reusable residual-network machinery from the cost-specific shortest-path layer.
+- This note adds: the duplicate-edge handling and judge-specific modeling for this transport network.
+
 ## Solutions
 
 - Code: [mincost.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp)

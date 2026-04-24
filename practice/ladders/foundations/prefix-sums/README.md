@@ -49,6 +49,12 @@ Target skill:
 
 - see “precompute once, answer many times” quickly
 
+## Retrieval Layer
+
+- reusable 1D build pattern -> [prefix-sum-1d.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/prefix-sum-1d.cpp)
+- first repo anchor -> [Static Range Sum Queries](staticrangesumqueries.md)
+- quick reminder sheet -> [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

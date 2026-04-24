@@ -71,6 +71,15 @@ So covering the middle part twice does not change the answer. That is exactly wh
 - Precompute the log table carefully so `lg[len]` is valid for every query length.
 - This is a static-query problem. If updates existed, sparse table would be the wrong tool.
 
+## Reusable Pattern
+
+- Topic page: [Sparse Table](../../../../topics/data-structures/sparse-table/README.md)
+- Practice ladder: [Sparse Table ladder](README.md)
+- Starter template: [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp)
+- Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+- Carry forward: reach for sparse table only when the operation is static and idempotent.
+- This note adds: the exact query interpretation and preprocessing choices for this range primitive.
+
 ## Solutions
 
 - Code: [staticrangeminimumqueries.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp)

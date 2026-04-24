@@ -77,6 +77,15 @@ This is optimal. The only real difficulty is correctness on edge cases.
 - Use integer arithmetic throughout. Floating point is unnecessary here and only makes boundary cases less reliable.
 - With coordinates up to about `1e9`, a cross product is still fine in integer arithmetic, but using `__int128` for the intermediate multiplication makes the orientation primitive comfortably robust.
 
+## Reusable Pattern
+
+- Topic page: [Segment Intersection](../../../../topics/geometry/segment-intersection/README.md)
+- Practice ladder: [Segment Intersection ladder](README.md)
+- Starter template: [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+- Carry forward: get orientation and collinearity logic correct before handling overlap cases.
+- This note adds: the exact on-segment and overlap handling used by this judge task.
+
 ## Solutions
 
 - Code: [linesegmentintersection.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/segment-intersection/linesegmentintersection.cpp)

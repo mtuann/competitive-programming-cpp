@@ -14,6 +14,12 @@ Use this ladder when you are comfortable with vectors and orientation and want t
 - point in polygon
 - nested polygons and region reasoning
 
+## Retrieval Layer
+
+- polygon area -> [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp)
+- point classification -> [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp)
+- quick reminder sheet -> [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+
 ## Example Notes
 
 - [TFIELD](../../dp/sliding-window/tfield.md)

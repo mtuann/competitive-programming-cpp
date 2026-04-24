@@ -66,6 +66,15 @@ Queries are sorted by right endpoint. As soon as the sweep reaches a query’s `
 - Remove the previous active occurrence before activating the new one.
 - Mo’s algorithm also solves this problem, but the right-endpoint sweep is cleaner for a first offline-tricks note.
 
+## Reusable Pattern
+
+- Topic page: [Offline Tricks](../../../../topics/data-structures/offline-tricks/README.md)
+- Practice ladder: [Offline Tricks ladder](README.md)
+- Starter template: [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
+- Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+- Carry forward: sort or sweep queries so the expensive state change happens once per event, not once per query.
+- This note adds: the right event ordering and state invariant for this exact offline reduction.
+
 ## Solutions
 
 - Code: [distinctvaluesqueries.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp)

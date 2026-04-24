@@ -55,6 +55,15 @@ Self-loops can be ignored because they never help send flow from `1` to `N`, and
 - duplicate edges are allowed and can be added directly
 - the solution uses a capacity-scaling version of `Dinic's algorithm`
 
+## Reusable Pattern
+
+- Topic page: [Maximum Flow](../../../../topics/graphs/flow/README.md)
+- Practice ladder: [Maximum Flow ladder](README.md)
+- Starter template: [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: separate the reusable residual-network engine from the problem-specific source/sink modeling.
+- This note adds: the capacity-scaling and undirected-edge handling needed by this judge task.
+
 ## Solutions
 
 - Code: [fflow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp)

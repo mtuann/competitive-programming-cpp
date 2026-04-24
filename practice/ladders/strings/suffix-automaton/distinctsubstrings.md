@@ -72,6 +72,15 @@ Once the automaton is correct, the final count is just one linear pass over the 
 - In the clone case, copy transitions and suffix link first, then shorten only the clone's `len`.
 - The CSES statement uses characters `a-z`, so a fixed `26`-transition array is both safe and fast here.
 
+## Reusable Pattern
+
+- Topic page: [Suffix Automaton](../../../../topics/strings/suffix-automaton/README.md)
+- Practice ladder: [Suffix Automaton ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: track what each automaton state summarizes before relying on clone logic.
+- This note adds: the counting or aggregation performed on top of the suffix-automaton states.
+
 ## Solutions
 
 - Code: [distinctsubstrings.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp)

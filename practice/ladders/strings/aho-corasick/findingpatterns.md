@@ -64,6 +64,15 @@ For lowercase English strings, this is comfortably fast for the CSES limits.
 - If you walk the whole output chain at every text position, you risk unnecessary overhead. Reverse failure-tree propagation is cleaner here.
 - Root transitions should be completed during BFS so the scan loop stays simple.
 
+## Reusable Pattern
+
+- Topic page: [Aho-Corasick](../../../../topics/strings/aho-corasick/README.md)
+- Practice ladder: [Aho-Corasick ladder](README.md)
+- Starter template: [aho-corasick.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/aho-corasick.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: build failure links once, then treat the automaton walk as the real scan.
+- This note adds: the output aggregation or query logic used on top of the automaton.
+
 ## Solutions
 
 - Code: [findingpatterns.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp)

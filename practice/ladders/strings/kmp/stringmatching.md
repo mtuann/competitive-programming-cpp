@@ -63,6 +63,15 @@ Each character participates in only a constant number of pointer movements acros
 - Handle the pattern and text as plain strings; no separator trick is required here.
 - With input sizes up to about `10^6`, use iterative logic and fast I/O.
 
+## Reusable Pattern
+
+- Topic page: [KMP](../../../../topics/strings/kmp/README.md)
+- Practice ladder: [KMP ladder](README.md)
+- Starter template: [kmp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/kmp.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: the prefix function is a fallback table, not just a preprocessing artifact.
+- This note adds: the occurrence-counting or overlap logic added on top of the base matcher.
+
 ## Solutions
 
 - Code: [stringmatching.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp)

@@ -4,6 +4,7 @@ This page lists curated external problems imported into the topic-map system.
 
 - Total curated external problems: `500`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
+- Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
 
 ## Foundations

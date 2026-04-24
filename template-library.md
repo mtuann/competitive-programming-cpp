@@ -1,8 +1,30 @@
 # Template Library
 
-This page is the overview for the repo's reusable contest-ready code.
+This page is the map for the repo's reusable contest-ready code. The actual implementations live under [`templates/`](https://github.com/mtuann/competitive-programming-cpp/tree/main/templates); this page is here so you can retrieve the right snippet quickly under contest pressure.
 
-The actual implementations live under [`templates/`](https://github.com/mtuann/competitive-programming-cpp/tree/main/templates), while this page explains what should belong there and how it should relate back to the teaching material in `topics/`.
+## Fast Pick By Signal
+
+- shortest path on unit edges: [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
+- shortest path on `0/1` edges: [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
+- shortest path with negative edges: [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
+- predecessor / previous value in a multiset: [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
+- sliding median with duplicates: [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
+- sliding minimum or monotone-window DP: [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
+- many `nCk mod prime` queries: [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
+- inverse under composite modulus or `ax + by = c`: [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
+- robust closed-segment predicate: [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
+- polygon area from ordered vertices: [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp)
+- classify `outside / boundary / inside`: [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp)
+
+## Retrieval Flow
+
+Use the library in this order:
+
+1. identify the smallest valid pattern from the topic page or cheatsheet
+2. open the matching template and copy only the parts your problem really needs
+3. sanity-check the invariant and boundary policy before integrating it into the solution
+
+If you are still unsure which family to use, start from the [Notebook](notebook/README.md) instead of browsing files blindly.
 
 ## Current Templates
 
@@ -24,13 +46,18 @@ The actual implementations live under [`templates/`](https://github.com/mtuann/c
 - [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
 - [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp)
 - [heap-lazy-delete.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/heap-lazy-delete.cpp)
+- [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
+- [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
+- [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
 - [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
 
 ### Graphs
 
 - [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
 - [dfs-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dfs-iterative.cpp)
+- [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
+- [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
 - [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
 - [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp)
 - [scc-kosaraju.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/scc-kosaraju.cpp)
@@ -50,6 +77,8 @@ The actual implementations live under [`templates/`](https://github.com/mtuann/c
 ### Math
 
 - [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
+- [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
+- [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 - [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
 - [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp)
 
@@ -65,6 +94,9 @@ The actual implementations live under [`templates/`](https://github.com/mtuann/c
 ### Geometry
 
 - [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
+- [shoelace-area.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/shoelace-area.cpp)
+- [point-in-polygon.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/point-in-polygon.cpp)
 - [convex-hull.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/convex-hull.cpp)
 
 ## Standard
@@ -76,15 +108,14 @@ Each template should stay compact, contest-usable, and linked back to the teachi
 - the main implementation invariants
 - the common failure cases
 
-## Utility Notes
-
 ## Representative Uses In This Repo
 
 - Fenwick tree -> [CVP00001](practice/ladders/data-structures/fenwick-tree/cvp00001.md)
-- Dijkstra / path reconstruction -> [QOS](practice/ladders/graphs/shortest-paths/qos.md)
-- Max flow / min-cost flow -> [FFLOW](practice/ladders/graphs/flow/fflow.md), [MINCOST](practice/ladders/graphs/flow/mincost.md)
-- Number theory helpers -> [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md)
-- Geometry primitives -> [PRAVO](practice/ladders/geometry/right-triangles/pravo.md), [KINGDOMS](practice/ladders/geometry/sweep-line/kingdoms.md)
+- ordered multiset / predecessor -> [Concert Tickets](practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
+- shortest-path family -> [Message Route](practice/ladders/graphs/bfs-dfs/messageroute.md), [QOS](practice/ladders/graphs/shortest-paths/qos.md)
+- max flow / min-cost flow -> [FFLOW](practice/ladders/graphs/flow/fflow.md), [MINCOST](practice/ladders/graphs/flow/mincost.md)
+- modular arithmetic helpers -> [Exponentiation II](practice/ladders/math/modular-arithmetic/exponentiation2.md), [CRYPTKEY](practice/ladders/math/gcd-lcm/cryptkey.md)
+- segment / polygon geometry -> [Point Location Test](practice/ladders/geometry/vector-orientation/pointlocationtest.md), [Line Segment Intersection](practice/ladders/geometry/segment-intersection/linesegmentintersection.md)
 
 ### `__int128` helper
 

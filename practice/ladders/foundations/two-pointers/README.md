@@ -50,6 +50,17 @@ Target skill:
 
 - prove linearity and detect invalid uses of the pattern
 
+## Retrieval Layer
+
+- reusable variable-window skeleton -> [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
+- quick reminder sheet -> [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- if the window also carries DP-style state -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+
+## Repo Anchors
+
+- [Apartments](apartments.md)
+- [Sum of Two Values](sumoftwovalues.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

@@ -91,6 +91,15 @@ This is the intended complexity for the CSES constraints.
 - Use `long long`; sums can grow well beyond `int`.
 - For the 1D compression, the loop order matters: `l` must go downward, and `r` must go upward.
 
+## Reusable Pattern
+
+- Topic page: [Interval DP](../../../../topics/dp/interval-dp/README.md)
+- Practice ladder: [Interval DP ladder](README.md)
+- Starter template: [interval-dp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/interval-dp.cpp)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: decide what interval `[l, r]` means and which smaller intervals feed it.
+- This note adds: the score function and move order that make this interval recurrence work.
+
 ## Solutions
 
 - Code: [removalgame.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/interval-dp/removalgame.cpp)

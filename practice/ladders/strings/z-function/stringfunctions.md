@@ -51,6 +51,15 @@ The important lesson is that both arrays are linear, but they reuse previous wor
   - Z array
   - prefix-function array
 
+## Reusable Pattern
+
+- Topic page: [Z-Function](../../../../topics/strings/z-function/README.md)
+- Practice ladder: [Z-Function ladder](README.md)
+- Starter template: [z-function.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/z-function.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: the Z-box is a reuse window; know what substring equality it already guarantees.
+- This note adds: the exact diagnostic or border logic extracted from the Z-values.
+
 ## Solutions
 
 - Code: [stringfunctions.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/z-function/stringfunctions.cpp)

@@ -20,6 +20,8 @@ c++ -std=c++20 -O2 -Wall -Wextra -pedantic main.cpp && ./a.out < input.txt
 
 This is the default compile/run loop to pair with the templates and notes in this repo.
 
+If your compiler command is `g++` instead of `c++`, keep the same flags and only swap the executable name.
+
 ## Warm-Up
 
 - simple input / output tasks
@@ -41,6 +43,17 @@ Target skill:
 Target skill:
 
 - choose types and containers from required operations, not guesswork
+
+## Retrieval Layer
+
+- quick syntax + flags -> [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- contest-ready snippet inventory -> [Template Library](../../../../template-library.md)
+- first container-choice note -> [Distinct Numbers](../stl/distinctnumbers.md)
+
+## Repo Anchors
+
+- [Missing Number](missingnumber.md)
+- [Distinct Numbers](../stl/distinctnumbers.md)
 
 ## Stretch
 

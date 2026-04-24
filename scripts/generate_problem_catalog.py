@@ -1539,6 +1539,7 @@ def write_problem_index(rows: list[dict], topic_resources: dict[str, dict]) -> N
     lines.append("")
     lines.append(f"- Total tracked problem notes: `{len(rows)}`")
     lines.append(f"- Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)")
+    lines.append("- Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table")
     lines.append("- External companion index: [external-problem-index.md](external-problem-index.md)")
     lines.append("- Topic maps: [topic-maps/index.md](topic-maps/index.md)")
     lines.append("- Recommended use: start from the `Primary topic`, open the `Topic map`, then solve from the linked notes.")
@@ -1603,6 +1604,7 @@ def write_external_problem_index(rows: list[dict]) -> None:
     lines.append("")
     lines.append(f"- Total curated external problems: `{len(rows)}`")
     lines.append(f"- Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)")
+    lines.append("- Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice")
     lines.append("- Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.")
     lines.append("")
 

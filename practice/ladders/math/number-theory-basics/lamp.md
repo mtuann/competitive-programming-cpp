@@ -72,6 +72,15 @@ Because the time limit is very tight, a lightweight custom bigint is safer than 
 - The denominator can be enormous, so fixed-width integers are not enough.
 - Do not try to simulate by period unless only for brute-force testing.
 
+## Reusable Pattern
+
+- Topic page: [Number Theory Basics](../../../../topics/math/number-theory-basics/README.md)
+- Practice ladder: [Number Theory Basics ladder](README.md)
+- Starter template: [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
+- Notebook refresher: [Number theory cheatsheet](../../../../notebook/number-theory-cheatsheet.md)
+- Carry forward: reduce the statement to divisibility, gcd, lcm, or factorization facts before coding.
+- This note adds: the inclusion-exclusion style density formula and exact arithmetic for this note.
+
 ## Solutions
 
 - Code: [lamp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp)

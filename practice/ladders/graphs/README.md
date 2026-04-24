@@ -10,7 +10,8 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 4. minimum spanning tree
 5. toposort and SCC
 6. trees and LCA
-7. flow and matching
+7. heavy-light decomposition when path queries need a range structure
+8. flow and matching
 
 ## Subtopic Ladders
 
@@ -21,6 +22,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Toposort and SCC](scc-toposort/README.md)
 - [Trees](trees/README.md)
 - [LCA](lca/README.md)
+- [Heavy-light decomposition](hld/README.md)
 - [Flow](flow/README.md)
 - [Matching](matching/README.md)
 - [Tree DP notes](tree-dp/README.md)
@@ -30,5 +32,6 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [QOS](shortest-paths/qos.md)
 - [FFLOW](flow/fflow.md)
 - [MINCOST](flow/mincost.md)
+- [Path Queries II](hld/pathqueries2.md)
 - [QBFLOWER](matching/qbflower.md)
 - [VOSTRIP](tree-dp/vostrip.md)

@@ -59,6 +59,15 @@ take a movie if it starts after or when the previous chosen movie ends
 - If two movies end at the same time, the tie-break does not change the answer, but keeping it explicit makes the order deterministic.
 - This is not weighted interval scheduling. Every chosen movie contributes exactly `1`.
 
+## Reusable Pattern
+
+- Topic page: [Sorting](../../../../topics/foundations/patterns/sorting/README.md)
+- Practice ladder: [Sorting ladder](README.md)
+- Starter template: [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
+- Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- Carry forward: sort by the property that makes the greedy or counting argument obvious.
+- This note adds: the comparator and proof idea that are unique to this task.
+
 ## Solutions
 
 - Code: [moviefestival.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp)

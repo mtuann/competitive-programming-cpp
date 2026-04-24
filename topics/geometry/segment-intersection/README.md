@@ -59,6 +59,11 @@ Use:
 The same primitives are in:
 
 - [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
+
+Notebook:
+
+- [Geometry cheatsheet](../../../notebook/geometry-cheatsheet.md)
 
 ## Worked Examples
 

@@ -164,6 +164,17 @@ Before writing the full solution, force yourself to answer five short questions:
 
 This sounds small, but it is one of the fastest ways to reduce wrong-answer churn for beginner and intermediate problems.
 
+## If Hidden Tests Keep Breaking You
+
+Use this debugging order before editing code randomly:
+
+1. restate what each important variable means
+2. write down the boundary convention
+3. test the smallest case that attacks the invariant directly
+4. only then inspect the code line by line
+
+For most foundations problems, this beats trying bigger random tests first.
+
 ## Worked Examples
 
 ### Example 1: prefix sums
@@ -245,6 +256,14 @@ Examples:
 - prefix sums: one query touching the left boundary
 - two pointers: one window that becomes invalid immediately
 - greedy scan: one case where the tempting local choice is wrong
+
+## Newbie Retrieval Layer
+
+Keep these nearby while practicing:
+
+- [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)
+- [Complexity and invariants ladder](../../../practice/ladders/foundations/complexity-and-invariants/README.md)
+- [Binary search ladder](../../../practice/ladders/foundations/binary-search/README.md)
 
 ## Recognition Cues
 

@@ -183,15 +183,18 @@
 
     items.forEach((item) => {
       const row = document.createElement("tr");
-      row.innerHTML = `
-        <td><strong>${item.title}</strong></td>
-        <td>${labelOf(item.topic)}</td>
-        <td><code>${item.kind}</code></td>
-        <td><code>${labelOf(item.difficulty)}</code></td>
-        <td><code>${labelOf(item.source)}</code></td>
-        <td><code>${labelOf(item.bucket)}</code></td>
-        <td><div class="finder-links">${item.links.join("")}</div></td>
-      `;
+      const cells = [
+        ["Problem", `<strong>${item.title}</strong>`],
+        ["Topic", labelOf(item.topic)],
+        ["Kind", `<code>${item.kind}</code>`],
+        ["Difficulty", `<code>${labelOf(item.difficulty)}</code>`],
+        ["Source", `<code>${labelOf(item.source)}</code>`],
+        ["Bucket", `<code>${labelOf(item.bucket)}</code>`],
+        ["Links", `<div class="finder-links">${item.links.join("")}</div>`],
+      ];
+      row.innerHTML = cells
+        .map(([label, content]) => `<td data-label="${label}">${content}</td>`)
+        .join("");
       resultsBody.appendChild(row);
     });
   }

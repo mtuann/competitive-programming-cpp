@@ -48,6 +48,15 @@ This is optimal for a single shortest-path query in an unweighted graph.
 - The output wants the number of vertices in the route, not the number of edges.
 - Early exit is optional; correctness does not depend on stopping as soon as `n` is reached.
 
+## Reusable Pattern
+
+- Topic page: [BFS And DFS](../../../../topics/graphs/bfs-dfs/README.md)
+- Practice ladder: [BFS And DFS ladder](README.md)
+- Starter template: [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: mark on push, not pop, when the first visit already fixes the graph invariant you need.
+- This note adds: the reconstruction or graph-specific bookkeeping added on top of plain traversal.
+
 ## Solutions
 
 - Code: [messageroute.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp)

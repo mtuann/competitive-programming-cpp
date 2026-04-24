@@ -63,6 +63,15 @@ With `m, n_i <= 1000`, this is easily fast enough.
 - The answer is always a multiple of `0.5`, so printing from doubled area is the safest approach.
 - You only need to try target colors that already appear. Recoloring a segment to a brand-new color is never better than recoloring it to one of its existing colors.
 
+## Reusable Pattern
+
+- Topic page: [Sliding Window And Window DP](../../../../topics/foundations/patterns/two-pointers/README.md)
+- Practice ladder: [Sliding Window And Window DP ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: make the window or frontier monotone before you optimize the DP transitions.
+- This note adds: the DP state and queue maintenance specific to this sliding-window variant.
+
 ## Solutions
 
 - Code: [tfield.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp)

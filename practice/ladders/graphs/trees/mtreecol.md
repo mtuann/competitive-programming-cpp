@@ -117,6 +117,15 @@ W(a) * S(b) ? W(b) * S(a)
 - The root is never chosen for merging; everything eventually merges into it.
 - The answer fits in `32-bit` for the official constraints, but `long long` is the safer default.
 
+## Reusable Pattern
+
+- Topic page: [Trees](../../../../topics/graphs/trees/README.md)
+- Practice ladder: [Trees ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: compute parent, depth, and subtree facts once so later tree logic has something stable to build on.
+- This note adds: the tree-specific invariant or decomposition that goes beyond the plain rooted-tree setup.
+
 ## Solutions
 
 - Code: [mtreecol.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp)

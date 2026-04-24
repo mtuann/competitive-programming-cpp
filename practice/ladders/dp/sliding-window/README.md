@@ -14,6 +14,12 @@ Use this ladder when a problem sits between DP and window techniques, and the ma
 - combine window invariants with DP-style state interpretation
 - avoid recomputing window contributions from scratch
 
+## Retrieval Layer
+
+- moving minimum / best recent transition -> [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
+- balanced lower median in a dynamic window -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
+- short reminder sheet -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+
 ## Example Notes
 
 - [TFIELD](tfield.md)

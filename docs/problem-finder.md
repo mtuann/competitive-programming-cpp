@@ -7,6 +7,8 @@ Use this page when you want one searchable view across both:
 
 You can filter by topic, difficulty, source, bucket, and content type without hopping between multiple index pages.
 
+If you want the fastest way to narrow a practice set, start here first. Use the static indexes afterward when you want a full inventory view.
+
 <div id="problem-finder-root" class="problem-finder-shell">
   <div class="problem-finder-toolbar">
     <h2>Filter The Catalog</h2>
@@ -54,10 +56,10 @@ You can filter by topic, difficulty, source, bucket, and content type without ho
     </div>
     <div class="problem-finder-meta">
       <div id="finder-stats" class="problem-finder-stats"></div>
-      <div class="finder-links">
-        <a href="problem-index.md">Repo index</a>
-        <a href="external-problem-index.md">External index</a>
-        <a href="topic-maps/index.md">Topic maps</a>
+      <div class="finder-shortcuts">
+        <a href="../problem-index/">Repo index</a>
+        <a href="../external-problem-index/">External index</a>
+        <a href="../topic-maps/">Topic maps</a>
       </div>
     </div>
   </div>

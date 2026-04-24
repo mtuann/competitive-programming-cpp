@@ -56,6 +56,15 @@ Otherwise the produced order is a valid topological ordering.
 - Multiple valid topological orders can exist; any one is accepted.
 - A failed topological sort is a cycle signal, not just "bad luck with queue order".
 
+## Reusable Pattern
+
+- Topic page: [Topological Sort And SCC](../../../../topics/graphs/scc-toposort/README.md)
+- Practice ladder: [Topological Sort And SCC ladder](README.md)
+- Starter template: [toposort-kahn.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/toposort-kahn.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: state what becomes acyclic or what order must be preserved before choosing the graph algorithm.
+- This note adds: the cycle detection or condensation reasoning specific to this problem.
+
 ## Solutions
 
 - Code: [courseschedule.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/scc-toposort/courseschedule.cpp)

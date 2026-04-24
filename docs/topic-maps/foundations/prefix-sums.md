@@ -5,8 +5,8 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 - Topic slug: `foundations/prefix-sums`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/prefix-sums/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/prefix-sums/README.md)
-- Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo problems currently tagged here: `2`
+- Repo companion pages: `3`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -31,6 +31,14 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 | Source | Type |
 | --- | --- |
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Foundations cheatsheet](../../../notebook/foundations-cheatsheet.md) | `quick reference` |
+| [Static Range Sum Queries note](../../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) | `anchor note` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 
@@ -65,6 +73,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `CVP00001` | Ô ăn quan | `secondary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `STATICRANGESUMQUERIES` | Static Range Sum Queries | `primary` | `easy` | prefix sum build; range sum by subtraction; immutable array queries | [Note](../../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp) |
 
 ## Regeneration
 

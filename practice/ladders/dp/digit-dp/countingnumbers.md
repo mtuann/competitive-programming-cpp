@@ -73,6 +73,15 @@ So the total work is tiny, comfortably within limits.
 - Leading zeros should not count as repeated adjacent digits.
 - Memoize only states that are independent of the current bound suffix, typically the `tight = false` states.
 
+## Reusable Pattern
+
+- Topic page: [Digit DP](../../../../topics/dp/digit-dp/README.md)
+- Practice ladder: [Digit DP ladder](README.md)
+- Starter template: [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: separate tightness, started-state, and the carried constraint into explicit DP dimensions.
+- This note adds: the digit condition and memo state needed by this exact counting question.
+
 ## Solutions
 
 - Code: [countingnumbers.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp)

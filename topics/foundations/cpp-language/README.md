@@ -137,6 +137,18 @@ A good beginner loop is:
 
 If your machine prefers `g++` instead of `c++`, the flags stay the same.
 
+## First Syntax Worth Internalizing
+
+Do not try to learn all of modern C++ at once. The highest-ROI early subset is:
+
+- `vector`, `string`, `pair`, and `struct`
+- `sort`, `lower_bound`, and simple lambdas
+- range-for loops
+- `auto` for iterators and long obvious types
+- `set`, `map`, and `priority_queue`
+
+If those five feel stable, most beginner CP solutions stop feeling like language puzzles.
+
 ## Standard Toolkit
 
 ### Types
@@ -206,6 +218,17 @@ sort(intervals.begin(), intervals.end(), [](const Interval &a, const Interval &b
 ```
 
 Use these to shorten boilerplate, not to hide meaning. If `auto` or a lambda makes the code harder to read, step back and name the concept more clearly.
+
+## Newbie Retrieval Layer
+
+When you are stuck on "how do I even start coding this?", open these in order:
+
+- [Foundations Cheatsheet](../../../notebook/foundations-cheatsheet.md)
+- [Template Library](../../../template-library.md)
+- [Missing Number](../../../practice/ladders/foundations/cpp-language/missingnumber.md)
+- [STL ladder](../../../practice/ladders/foundations/stl/README.md)
+
+That route is usually faster than searching random syntax online mid-problem.
 
 ## Worked Examples
 
@@ -278,6 +301,15 @@ This topic is often confused with “just learn more STL”. That is only part o
 - copying large containers by value accidentally
 - switching between 0-based and 1-based indexing mid-solution
 - writing clever one-liners that are hard to debug under contest pressure
+
+## A Good First Week
+
+If you are rebuilding C++ fluency from scratch, a strong first week is:
+
+1. compile and run one tiny file every day with the same flags
+2. rewrite one small loop using range-for, `auto`, and a lambda comparator
+3. solve one easy note with `vector` + `sort`
+4. only after that, touch `set`, `map`, and `priority_queue`
 
 ## Practice Ladder
 

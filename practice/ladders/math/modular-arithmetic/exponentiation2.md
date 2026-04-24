@@ -72,6 +72,15 @@ So each test case is effectively `O(log MOD)`.
 - The zero-base / zero-exponent edge case is easy to miss if you apply Fermat reduction blindly.
 - Keep multiplication in `long long` before taking `% MOD`.
 
+## Reusable Pattern
+
+- Topic page: [Modular Arithmetic](../../../../topics/math/modular-arithmetic/README.md)
+- Practice ladder: [Modular Arithmetic ladder](README.md)
+- Starter template: [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
+- Notebook refresher: [Number theory cheatsheet](../../../../notebook/number-theory-cheatsheet.md)
+- Carry forward: decide which operations are happening mod `M` and which are happening on exponents first.
+- This note adds: the exponent reduction or edge-case logic needed by this modular task.
+
 ## Solutions
 
 - Code: [exponentiation2.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp)

@@ -60,6 +60,15 @@ This is the intended complexity for the CSES limits.
 - The final connectivity check is essential. Kruskal can finish scanning edges without having built a spanning tree.
 - MST is about minimum total connection cost, not shortest paths from one source.
 
+## Reusable Pattern
+
+- Topic page: [Minimum Spanning Tree](../../../../topics/graphs/mst/README.md)
+- Practice ladder: [Minimum Spanning Tree ladder](README.md)
+- Starter template: [kruskal.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/kruskal.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: sort edges by weight and let the cut property justify every accepted edge.
+- This note adds: the connectivity or output requirement attached to this MST instance.
+
 ## Solutions
 
 - Code: [roadreparation.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/mst/roadreparation.cpp)

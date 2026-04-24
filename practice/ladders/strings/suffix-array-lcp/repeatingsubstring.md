@@ -58,6 +58,15 @@ If the maximum `lcp` is `0`, there is no repeating substring, so print `-1`.
 - Remember that the `lcp` array has length `n - 1`, not `n`.
 - If you append a sentinel while building the suffix array, remove its suffix before building `lcp` on the original string.
 
+## Reusable Pattern
+
+- Topic page: [Suffix Array And LCP](../../../../topics/strings/suffix-array-lcp/README.md)
+- Practice ladder: [Suffix Array And LCP ladder](README.md)
+- Starter template: [suffix-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/suffix-array.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: build suffix order first, then let LCP explain the repeated-structure question.
+- This note adds: the exact LCP-based objective for this problem.
+
 ## Solutions
 
 - Code: [repeatingsubstring.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp)

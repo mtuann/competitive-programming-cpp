@@ -86,6 +86,15 @@ This is easily fast enough for the official limits.
 - If `K = 1`, then no white bar can appear at all. The implementation handles this as a special edge case automatically.
 - When `B = 0` or `R = 0`, the skeleton has only one color, so the number of `BR/RB` adjacencies is always `0`.
 
+## Reusable Pattern
+
+- Topic page: [Bounded Compositions](../../../../topics/combinatorics/bounded-compositions/README.md)
+- Practice ladder: [Bounded Compositions ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Combinatorics cheatsheet](../../../../notebook/combinatorics-cheatsheet.md)
+- Carry forward: translate counting constraints into slots, gaps, or bounded choices before coding.
+- This note adds: the combinatorial decomposition and edge-case bookkeeping for this exact counting model.
+
 ## Solutions
 
 - Code: [vosfence.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp)

@@ -61,6 +61,15 @@ This is easily fast enough for the CSES limits.
 - The clean invariant is "answer is in `[lo, hi]` and `hi` is feasible". That makes the final answer simply `lo` after the loop.
 - `hi = min(k) * t` is the right upper bound; choosing something ad hoc like `1e18` works too, but gives a weaker argument.
 
+## Reusable Pattern
+
+- Topic page: [Binary Search](../../../../topics/foundations/patterns/binary-search/README.md)
+- Practice ladder: [Binary Search ladder](README.md)
+- Starter template: [binary-search-first-true.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/binary-search-first-true.cpp)
+- Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- Carry forward: write the monotone predicate first, then binary-search the first true answer.
+- This note adds: the saturating feasibility check for this answer-space search.
+
 ## Solutions
 
 - Code: [factorymachines.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/binary-search/factorymachines.cpp)

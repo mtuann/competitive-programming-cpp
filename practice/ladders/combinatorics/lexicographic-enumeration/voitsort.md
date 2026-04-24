@@ -68,6 +68,15 @@ This is fast enough for `n <= 1000`, `k <= 10^6`.
 - The `10!` observation is the whole optimization: only the suffix block changes significantly.
 - When the interval crosses the end of a suffix block, rebuild the next block once, then continue.
 
+## Reusable Pattern
+
+- Topic page: [Lexicographic Enumeration](../../../../topics/combinatorics/lexicographic-enumeration/README.md)
+- Practice ladder: [Lexicographic Enumeration ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Combinatorics cheatsheet](../../../../notebook/combinatorics-cheatsheet.md)
+- Carry forward: make the order relation precise before you try to rank, unrank, or enumerate.
+- This note adds: the ordering rule and state transitions that are unique to this enumeration problem.
+
 ## Solutions
 
 - Code: [voitsort.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp)

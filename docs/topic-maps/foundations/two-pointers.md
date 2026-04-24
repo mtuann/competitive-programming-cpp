@@ -5,8 +5,8 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 - Topic slug: `foundations/two-pointers`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/two-pointers/README.md)
-- Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo problems currently tagged here: `3`
+- Repo companion pages: `3`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -31,6 +31,14 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 | --- | --- |
 | [Codeforces two-pointers tag](https://codeforces.com/problemset?tags=two+pointers) | `problem set` |
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Foundations cheatsheet](../../../notebook/foundations-cheatsheet.md) | `quick reference` |
+| [DP cheatsheet](../../../notebook/dp-cheatsheet.md) | `adjacent reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 
@@ -59,6 +67,8 @@ Exploit monotone movement to replace nested loops with linear scans, sliding win
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `APARTMENTS` | Apartments | `primary` | `easy-medium` | two sorted pointers; tolerance matching; greedy monotone scan | [Note](../../../practice/ladders/foundations/two-pointers/apartments.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/apartments.cpp) |
+| `SUMOFTWOVALUES` | Sum of Two Values | `primary` | `medium` | sort and scan; opposite end pointers; index restoration | [Note](../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/sumoftwovalues.cpp) |
 | `TFIELD` | Ruộng bậc thang | `secondary` | `hard` | nested polygons; weighted sliding window; shoelace preprocessing | [Note](../../../practice/ladders/dp/sliding-window/tfield.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp) |
 
 ## Regeneration

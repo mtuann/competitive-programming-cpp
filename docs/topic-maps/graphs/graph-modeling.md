@@ -6,7 +6,7 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 - Tutorial page: [Open tutorial](../../../topics/graphs/graph-modeling/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/graph-modeling/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `9`
 
 ## Microtopics
@@ -33,6 +33,13 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 | --- | --- |
 | [CSES Problem Set](https://cses.fi/problemset/) | `problem set` |
 | [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Graph cheatsheet](../../../notebook/graph-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 

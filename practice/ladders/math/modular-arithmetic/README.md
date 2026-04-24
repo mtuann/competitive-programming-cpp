@@ -21,6 +21,13 @@ Use this ladder when you already understand loops and arrays, but modular formul
 - compare prime-mod and composite-mod cases
 - explain when division is legal modulo `MOD`
 
+## Retrieval Layer
+
+- base modular helpers -> [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
+- many `nCk` queries -> [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
+- extended Euclid / composite-mod inverse -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
+- quick reminder sheet -> [Number theory cheatsheet](../../../../notebook/number-theory-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

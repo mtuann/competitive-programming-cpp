@@ -6,7 +6,7 @@ Problems where a moving window carries state, costs, or feasibility information 
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/two-pointers/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/sliding-window/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `16`
 
 ## Microtopics
@@ -31,6 +31,13 @@ Problems where a moving window carries state, costs, or feasibility information 
 | --- | --- |
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
 | [Codeforces two-pointers tag](https://codeforces.com/problemset?tags=two+pointers) | `problem set` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [DP cheatsheet](../../../notebook/dp-cheatsheet.md) | `quick reference` |
+| [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md) | `adjacent reference` |
 
 ## Curated External Problems
 

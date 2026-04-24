@@ -39,6 +39,13 @@ Target skill:
 
 - avoid overengineering while still choosing the right dynamic ordered structure
 
+## Retrieval Layer
+
+- stale heap cleanup -> [heap-lazy-delete.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/heap-lazy-delete.cpp)
+- predecessor in active multiset -> [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
+- sliding median maintenance -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
+- quick reminder sheet -> [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

@@ -6,7 +6,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 - Tutorial page: [Open tutorial](../../../topics/geometry/segment-intersection/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/segment-intersection/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `5`
 
 ## Microtopics
@@ -33,6 +33,13 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 | [CSES Line Segment Intersection](https://cses.fi/problemset/task/2190) | `problem` |
 | [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `problem` |
 | [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `problem` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Geometry cheatsheet](../../../notebook/geometry-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 

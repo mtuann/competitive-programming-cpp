@@ -6,7 +6,7 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 - Tutorial page: [Open tutorial](../../../topics/geometry/polygon-area-point-location/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/polygon-area-point-location/README.md)
 - Repo problems currently tagged here: `3`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `4`
 
 ## Microtopics
@@ -33,6 +33,13 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 | [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `problem` |
 | [CSES Point in Polygon](https://cses.fi/problemset/task/2192) | `problem` |
 | [CSES Point Location Test](https://cses.fi/problemset/task/2189/) | `problem` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Geometry cheatsheet](../../../notebook/geometry-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 

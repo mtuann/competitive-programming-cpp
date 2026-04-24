@@ -37,6 +37,11 @@ Target skill:
 - [Factory Machines](../binary-search/factorymachines.md)
 - [Movie Festival](../sorting/moviefestival.md)
 
+## Retrieval Layer
+
+- quick checklists -> [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- tutorial page -> [Reasoning And Implementation Discipline](../../../../topics/foundations/reasoning/README.md)
+
 ## Stretch
 
 - write a short proof sketch before coding

@@ -64,6 +64,15 @@ This is the intended scale for the official limits.
 - Edge capacities can accumulate to more than `2^31`, so use `long long`.
 - After each max-flow in Gomory-Hu, the min-cut side is the set reachable from `s` in the final residual graph.
 
+## Reusable Pattern
+
+- Topic page: [Maximum Flow](../../../../topics/graphs/flow/README.md)
+- Practice ladder: [Maximum Flow ladder](README.md)
+- Starter template: [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: separate the reusable residual-network engine from the problem-specific source/sink modeling.
+- This note adds: repeated max-flow runs plus cut-tree construction on top of the base flow engine.
+
 ## Solutions
 
 - Code: [mcquery.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp)

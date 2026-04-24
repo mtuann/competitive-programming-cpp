@@ -77,6 +77,11 @@ Template in this repo:
 
 - [two-pointers-variable-window.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/two-pointers-variable-window.cpp)
 
+Notebook:
+
+- [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+
 Useful checklist:
 
 - what is the exact meaning of `[l, r]` or `[l, r)`?
@@ -110,6 +115,21 @@ Bad signs:
 - negative values destroy the simple sum monotonicity
 - validity depends on a future choice that may require moving backward
 - you cannot explain why each pointer moves at most `n` times
+
+## Newbie Retrieval Layer
+
+Before coding a window solution, write these three lines on paper or in comments:
+
+- what `[l, r]` or `[l, r)` means
+- what summary the window stores
+- what event makes the window invalid
+
+If you cannot write those lines cleanly, stop and go back to the [Two pointers ladder](../../../../practice/ladders/foundations/two-pointers/README.md) first.
+
+Good first anchors after that:
+
+- [Apartments](../../../../practice/ladders/foundations/two-pointers/apartments.md)
+- [Sum of Two Values](../../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md)
 
 ## Standard Patterns
 

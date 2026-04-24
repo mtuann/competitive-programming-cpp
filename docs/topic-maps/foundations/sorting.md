@@ -5,7 +5,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 - Topic slug: `foundations/sorting`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/sorting/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/sorting/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `0`
 - Curated external problems: `7`
 
@@ -60,7 +60,9 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `APARTMENTS` | Apartments | `secondary` | `easy-medium` | two sorted pointers; tolerance matching; greedy monotone scan | [Note](../../../practice/ladders/foundations/two-pointers/apartments.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/apartments.cpp) |
 | `MOVIEFESTIVAL` | Movie Festival | `primary` | `easy` | finish-time sorting; interval scheduling; exchange argument greedy | [Note](../../../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
+| `SUMOFTWOVALUES` | Sum of Two Values | `secondary` | `medium` | sort and scan; opposite end pointers; index restoration | [Note](../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/sumoftwovalues.cpp) |
 
 ## Regeneration
 

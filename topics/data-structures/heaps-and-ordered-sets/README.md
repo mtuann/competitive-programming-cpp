@@ -62,15 +62,22 @@ Tradeoffs:
 
 ## Canonical C++ Pattern
 
-Template in this repo:
+Templates in this repo:
 
 - [heap-lazy-delete.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/heap-lazy-delete.cpp)
+- [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
+- [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
+
+Notebook:
+
+- [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
 
 Practical rules:
 
 - use `priority_queue` for repeated “take best next”
 - use `set` / `multiset` for active intervals or dynamic ordered values
 - if heap values become stale, mark-and-skip is often easier than removing them immediately
+- if you need “largest value `< x`”, write that operation directly instead of scattering `lower_bound` edge cases
 
 ## Standard Patterns
 

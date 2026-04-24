@@ -75,6 +75,15 @@ That is exactly what a Fenwick tree does well.
 - Querying position `k` means taking the prefix sum of the dynamic difference array up to `k`.
 - The conceptual trick is difference arrays; the supporting structure is Fenwick.
 
+## Reusable Pattern
+
+- Topic page: [Difference Arrays](../../../../topics/foundations/patterns/difference-arrays/README.md)
+- Practice ladder: [Difference Arrays ladder](README.md)
+- Starter template: [difference-array.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/difference-array.cpp)
+- Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- Carry forward: encode updates at boundaries first, then reconstruct the final values with one prefix pass.
+- This note adds: the query model and indexing details for this specific update pattern.
+
 ## Solutions
 
 - Code: [rangeupdatequeries.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/difference-arrays/rangeupdatequeries.cpp)

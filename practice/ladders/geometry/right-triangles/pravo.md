@@ -68,6 +68,15 @@ This is exactly what we want, because when the right angle is at `P`, the sign a
 - the implementation avoids floating point entirely
 - the judge time limit is a bit tight, so the code uses sorting plus binary search instead of heavier hash/map logic
 
+## Reusable Pattern
+
+- Topic page: [Right Triangles](../../../../topics/geometry/counting-geometry/README.md)
+- Practice ladder: [Right Triangles ladder](README.md)
+- Starter template: [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+- Carry forward: normalize the geometric primitive before you count with it.
+- This note adds: direction normalization and counting on top of the raw geometry primitives.
+
 ## Solutions
 
 - Code: [pravo.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp)

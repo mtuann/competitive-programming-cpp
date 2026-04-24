@@ -67,6 +67,15 @@ This is important because the largest tests go up to `N <= 10^6`, while the edge
 - Use `long long`.
 - The official statement comments mention that the test data avoids pathological looping ambiguities from the story interpretation. The endpoint formula is still the correct accepted model.
 
+## Reusable Pattern
+
+- Topic page: [Tree DP](../../../../topics/dp/tree-dp/README.md)
+- Practice ladder: [Tree DP ladder](README.md)
+- Starter template: [tree-dp-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-subtree.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: root the tree and make every subtree contribution local before combining children.
+- This note adds: the exact aggregation rule and path interpretation needed here.
+
 ## Solutions
 
 - Code: [vostrip.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp)

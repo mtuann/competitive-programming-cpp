@@ -65,6 +65,15 @@ The repo solution runs a cardinality matroid-intersection style augmentation in 
 - “No bad subset” is stronger than “the whole chosen set is not bad”. You must forbid **every** nonempty chosen subset from having even parity on all types.
 - The right graph view is forest independence, not just DSU-greedy. A naive greedy choice can block a better later choice.
 
+## Reusable Pattern
+
+- Topic page: [DSU](../../../../topics/data-structures/dsu/README.md)
+- Practice ladder: [DSU ladder](README.md)
+- Starter template: [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp)
+- Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+- Carry forward: state the set invariant first, then use DSU only for the merge logic it really supports.
+- This note adds: the extra problem-specific state layered on top of the basic union-find scaffold.
+
 ## Solutions
 
 - Code: [c11xu.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp)

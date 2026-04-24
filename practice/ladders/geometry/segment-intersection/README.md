@@ -14,6 +14,11 @@ Use this ladder when you trust your orientation primitive and are ready to handl
 - collinear overlap
 - intersection filtering before sweep line
 
+## Retrieval Layer
+
+- pairwise segment predicate -> [segment-intersection-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/segment-intersection-basic.cpp)
+- quick reminder sheet -> [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

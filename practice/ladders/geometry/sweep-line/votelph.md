@@ -75,6 +75,15 @@ With `N <= 2000`, `Q <= 500000`, this fits.
 - The vertex itself is **not** restricted to the `0.01` grid. Only endpoint evaluations are discretized.
 - Remember to add the final safety margin `+1`.
 
+## Reusable Pattern
+
+- Topic page: [Sweep Line](../../../../topics/geometry/sweep-line/README.md)
+- Practice ladder: [Sweep Line ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+- Carry forward: sort events first, then make the active-set invariant explicit.
+- This note adds: the event meaning and state maintenance for this geometric sweep.
+
 ## Solutions
 
 - Code: [votelph.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp)

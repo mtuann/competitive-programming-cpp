@@ -65,6 +65,15 @@ This is fast enough for the intended constraints when implemented iteratively.
 - Compute `dp` from right to left so transitions point to already-computed states.
 - Stop the forward scan immediately when the trie has no next edge for the current character.
 
+## Reusable Pattern
+
+- Topic page: [Trie](../../../../topics/strings/trie/README.md)
+- Practice ladder: [Trie ladder](README.md)
+- Starter template: [trie-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/trie-basic.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: use the trie only for the shared-prefix part; keep the extra DP or query logic separate.
+- This note adds: the state transition or counting rule built on top of the trie.
+
 ## Solutions
 
 - Code: [wordcombinations.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp)

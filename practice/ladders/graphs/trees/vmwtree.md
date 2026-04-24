@@ -57,6 +57,15 @@ This is safe for `N, Q <= 10^5`.
   - ancestor to deeper means keep chain order
 - Query order does not matter for min/max, but update order does matter for path reversal.
 
+## Reusable Pattern
+
+- Topic page: [Trees](../../../../topics/graphs/trees/README.md)
+- Practice ladder: [Trees ladder](README.md)
+- Starter template: [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: flatten the path logic until the segment-tree operations become obvious.
+- This note adds: the tree-specific path representation layered on top of the range structure.
+
 ## Solutions
 
 - Code: [vmwtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp)

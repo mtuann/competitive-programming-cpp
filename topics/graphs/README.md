@@ -11,6 +11,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Topological Sort And SCC](scc-toposort/README.md)
 - [Trees](trees/README.md)
 - [LCA](lca/README.md)
+- [Heavy-Light Decomposition](hld/README.md)
 - [Maximum Flow](flow/README.md)
 - [Min-Cost Flow](min-cost-flow/README.md)
 - [Matching](matching/README.md)
@@ -62,6 +63,7 @@ After this section, you should be able to recognize the common graph models, cho
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
 - [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling
 - [VOSTRIP - VOSTRIP](../../practice/ladders/graphs/tree-dp/vostrip.md): tree usage aggregation and endpoint accounting
+- [PATHQUERIES2 - Path Queries II](../../practice/ladders/graphs/hld/pathqueries2.md): heavy-light decomposition for point updates and path maximum
 
 ## Go Deeper
 

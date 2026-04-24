@@ -56,6 +56,15 @@ So the optimal count becomes:
 
 `matched_edges + unmatched_vertices = maximum_matching + (N - 2 * maximum_matching) = N - maximum_matching`
 
+## Reusable Pattern
+
+- Topic page: [Matching](../../../../topics/graphs/matching/README.md)
+- Practice ladder: [Matching ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- Carry forward: pin down whether the graph is bipartite or general before choosing a matching engine.
+- This note adds: the transformation from edge-cover language to the matching formulation used here.
+
 ## Solutions
 
 - The graph is a general graph, not a bipartite graph.

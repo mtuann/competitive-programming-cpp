@@ -59,6 +59,15 @@ This is fine for `N <= 30`.
 - A move is legal only if the destination has at least two adjacent coins after removing the source coin. In the BFS, that means the destination must see at least two neighbors in `core + other_free_coin`.
 - The previous repo version was not correct enough for the full judge because it only tried direct finishing moves. The current version explicitly searches the intermediate helper positions.
 
+## Reusable Pattern
+
+- Topic page: [Constructive](../../../../topics/advanced/constructive/README.md)
+- Practice ladder: [Constructive ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Contest checklist](../../../../notebook/contest-checklist.md)
+- Carry forward: look for the smallest invariant that forces the construction to succeed.
+- This note adds: a problem-specific constructive argument instead of a reusable code skeleton.
+
 ## Solutions
 
 - Code: [vmcoins.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp)

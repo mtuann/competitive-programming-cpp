@@ -69,6 +69,15 @@ This matches the scored subtasks well:
   `ceil(A[i][j] / K)`.
   Without that, the DP looks unjustified.
 
+## Reusable Pattern
+
+- Topic page: [Bitmask DP](../../../../topics/dp/bitmask-dp/README.md)
+- Practice ladder: [Bitmask DP ladder](README.md)
+- Starter template: [bitmask-subset-iterate.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/bitmask-subset-iterate.cpp)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: define what the mask means in plain language before writing transitions.
+- This note adds: the state compression and transition ordering specific to this marble DP.
+
 ## Solutions
 
 - Code: [vmmarble.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp)

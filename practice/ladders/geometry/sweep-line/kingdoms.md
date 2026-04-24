@@ -53,6 +53,15 @@ This fits the small time limit only because we avoid checking polygons one by on
 - The answer is the **deepest** kingdom containing the house, not just any containing kingdom.
 - Using `long long` is necessary for coordinates; use careful comparisons for line-vs-point checks.
 
+## Reusable Pattern
+
+- Topic page: [Sweep Line](../../../../topics/geometry/sweep-line/README.md)
+- Practice ladder: [Sweep Line ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+- Carry forward: sort events first, then make the active-set invariant explicit.
+- This note adds: the event meaning and state maintenance for this geometric sweep.
+
 ## Solutions
 
 - Code: [kingdoms.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp)

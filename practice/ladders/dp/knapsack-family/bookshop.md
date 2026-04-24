@@ -69,6 +69,15 @@ This is the standard compressed `0/1` knapsack bound.
 - `dp[money]` means “best value with budget at most `money`”, so printing `dp[x]` is correct even if the exact budget is not fully used.
 - A 2D DP is valid too, but the 1D compressed version is the intended clean implementation here.
 
+## Reusable Pattern
+
+- Topic page: [Knapsack Family](../../../../topics/dp/knapsack-family/README.md)
+- Practice ladder: [Knapsack Family ladder](README.md)
+- Starter template: [knapsack-01.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/knapsack-01.cpp)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: match the problem to item / capacity / value language before coding loops.
+- This note adds: the one-dimensional capacity update and value maximization for this budget constraint.
+
 ## Solutions
 
 - Code: [bookshop.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp)

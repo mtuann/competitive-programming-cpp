@@ -50,6 +50,15 @@ This easily fits the limits.
 - Values are negative, so shift them before indexing.
 - The problem counts ordered index triples `(i, j, k)`, not distinct values.
 
+## Reusable Pattern
+
+- Topic page: [FFT And NTT](../../../../topics/math/fft-ntt/README.md)
+- Practice ladder: [FFT And NTT ladder](README.md)
+- Starter template: [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp)
+- Notebook refresher: [Notebook overview](../../../../notebook/README.md)
+- Carry forward: separate the algebraic transform from the problem-specific coefficient interpretation.
+- This note adds: the coefficient encoding and big-integer reconstruction layered on top of convolution.
+
 ## Solutions
 
 - Code: [post2.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp)

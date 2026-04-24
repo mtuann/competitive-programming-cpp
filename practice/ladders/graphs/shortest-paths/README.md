@@ -39,6 +39,14 @@ Target skill:
 
 - use shortest paths as a base layer for richer reconstruction or DP problems
 
+## Retrieval Layer
+
+- unit edges -> [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
+- `0/1` edges -> [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
+- nonnegative weights -> [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
+- negative edges -> [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
+- quick reminder sheet -> [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

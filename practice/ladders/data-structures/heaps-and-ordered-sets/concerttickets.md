@@ -55,6 +55,15 @@ Because duplicate ticket prices matter. If the input contains two tickets with p
 - Erase by iterator, not by value. `tickets.erase(value)` would remove *all* copies of that price.
 - A heap is not enough here because we need predecessor search, not just the global minimum or maximum.
 
+## Reusable Pattern
+
+- Topic page: [Heaps And Ordered Sets](../../../../topics/data-structures/heaps-and-ordered-sets/README.md)
+- Practice ladder: [Heaps And Ordered Sets ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+- Carry forward: choose the container by operation set, not by the story in the statement.
+- This note adds: the exact predecessor / erase / balancing logic needed by this problem.
+
 ## Solutions
 
 - Code: [concerttickets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp)

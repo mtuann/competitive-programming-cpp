@@ -66,6 +66,15 @@ This is optimal for comparison-based hull construction.
 - Use integer geometry only. Coordinates go up to `1e9`, so cross products should use `__int128` for safe intermediate arithmetic.
 - The judge accepts the hull points in any order, but outputting them in boundary order is the cleanest and easiest way to avoid duplicates.
 
+## Reusable Pattern
+
+- Topic page: [Convex Hull](../../../../topics/geometry/convex-hull/README.md)
+- Practice ladder: [Convex Hull ladder](README.md)
+- Starter template: [convex-hull.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/convex-hull.cpp)
+- Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+- Carry forward: orientation tests and point ordering do most of the real work in hull problems.
+- This note adds: the boundary policy and output formatting required by this version.
+
 ## Solutions
 
 - Code: [convexhull.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp)

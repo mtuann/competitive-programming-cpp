@@ -90,6 +90,15 @@ That is fast enough even for `Q <= 10^6`.
 - Because `Q` is huge, slow per-query logic will time out even if the recurrence is correct.
 - The hidden trick is to precompute the whole answer table by budget, then answer each query with only a binary search.
 
+## Reusable Pattern
+
+- Topic page: [Foundations](../../../../topics/dp/foundations/README.md)
+- Practice ladder: [Foundations ladder](README.md)
+- Starter template: [Template library overview](../../../../template-library.md)
+- Notebook refresher: [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Carry forward: write the state meaning in one sentence before you derive any recurrence.
+- This note adds: the recurrence shape and optimization that belong to this specific problem.
+
 ## Solutions
 
 - Code: [vmscale.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp)

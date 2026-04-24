@@ -14,6 +14,11 @@ Use this ladder when geometry still feels intimidating and you want to stabilize
 - line-side tests
 - integer geometry conventions
 
+## Retrieval Layer
+
+- geometry primitives -> [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
+- quick reminder sheet -> [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

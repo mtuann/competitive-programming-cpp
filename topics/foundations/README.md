@@ -18,6 +18,20 @@ Foundations are the entry point for the whole repo. This area is about writing c
 - Prereqs: none beyond basic programming
 - Defer for later: heavy data structures, graph theory, and advanced DP
 
+## Start Here If You Are New
+
+If local C++ practice still feels shaky, do not browse randomly. Use this very small route:
+
+1. [C++ Language For Contests](cpp-language/README.md)
+2. [Foundations ladders](../../practice/ladders/foundations/README.md)
+3. [Foundations Cheatsheet](../../notebook/foundations-cheatsheet.md)
+
+The idea is simple:
+
+- learn one compile/run loop
+- solve one tiny anchor note
+- only then widen the toolkit
+
 ## How To Use This Section
 
 Treat foundations as a loop, not a one-time read:
@@ -71,6 +85,20 @@ This route works well because:
 - prefix sums and difference arrays teach precompute vs update thinking
 - two pointers trains monotone scans and window discipline
 
+## First Repo Notes To Open
+
+If you want actual internal notes instead of only theory pages, start with:
+
+1. [Missing Number](../../practice/ladders/foundations/cpp-language/missingnumber.md)
+2. [Distinct Numbers](../../practice/ladders/foundations/stl/distinctnumbers.md)
+3. [Increasing Array](../../practice/ladders/foundations/complexity-and-invariants/increasingarray.md)
+4. [Movie Festival](../../practice/ladders/foundations/sorting/moviefestival.md)
+5. [Factory Machines](../../practice/ladders/foundations/binary-search/factorymachines.md)
+6. [Static Range Sum Queries](../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+7. [Apartments](../../practice/ladders/foundations/two-pointers/apartments.md)
+
+That order gives a smoother beginner climb than jumping straight into harder multi-pattern tasks.
+
 ## Starter Toolkit
 
 Open these alongside the tutorial pages:
@@ -78,6 +106,13 @@ Open these alongside the tutorial pages:
 - [Foundations ladders](../../practice/ladders/foundations/README.md)
 - [Template Library](../../template-library.md)
 - [Foundations Cheatsheet](../../notebook/foundations-cheatsheet.md)
+
+Use them in different roles:
+
+- tutorial page -> slower explanation
+- ladder -> what to solve next
+- cheatsheet -> what to remember during implementation
+- template library -> which snippet to borrow once the pattern is clear
 
 ## Recognition Cues
 

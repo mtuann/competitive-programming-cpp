@@ -9,8 +9,8 @@
   </p>
   <div class="hero-actions">
     <a class="md-button md-button--primary" href="topics/">Start with the topic map</a>
+    <a class="md-button" href="docs/problem-finder/">Open Problem Finder</a>
     <a class="md-button" href="practice/">Browse practice ladders</a>
-    <a class="md-button" href="project-readme/">Read the project overview</a>
   </div>
   <div class="chip-row">
     <span class="chip">Beginner friendly</span>
@@ -103,8 +103,8 @@
 ## Featured Doors Into The Repo
 
 - [Foundations](topics/foundations/README.md) for asymptotics, STL workflow, binary search, and proof basics
+- [Problem Finder](docs/problem-finder.md) for the fastest filtered view across repo notes and curated external practice
 - [Graphs](topics/graphs/README.md) for BFS, DFS, shortest paths, MST, flow, and matching
 - [Dynamic Programming](topics/dp/README.md) for state design, transitions, and classic contest patterns
-- [Problem Finder](docs/problem-finder.md) for filtering repo notes and curated external problems from one place
 - [Practice Notes](practice/README.md) for problem classifications, judge links, and solution writeups
 - [Project Overview](project-readme.md) for the staged learning path and repo structure

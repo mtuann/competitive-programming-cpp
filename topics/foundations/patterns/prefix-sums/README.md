@@ -77,6 +77,10 @@ Template in this repo:
 
 - [prefix-sum-1d.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/prefix-sum-1d.cpp)
 
+Notebook:
+
+- [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+
 Safe habit:
 
 - use a one-based prefix array and set `pref[0] = 0`
@@ -107,6 +111,14 @@ sum on [l, r) = pref[r] - pref[l]
 ```
 
 or, if you prefer one-based problem statements, convert once and keep the formula uniform. Most prefix-sum bugs are really indexing-discipline bugs.
+
+## Newbie Retrieval Layer
+
+When you feel "I know the idea but I still keep getting the formula wrong", use:
+
+- [Static Range Sum Queries note](../../../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md)
+- [Prefix sums ladder](../../../../practice/ladders/foundations/prefix-sums/README.md)
+- [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
 
 ## Standard Patterns
 

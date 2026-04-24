@@ -6,7 +6,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 - Tutorial page: [Open tutorial](../../../topics/math/modular-arithmetic/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `10`
 
 ## Microtopics
@@ -33,6 +33,13 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 | [CSES Exponentiation](https://cses.fi/problemset/task/1095/) | `problem` |
 | [CSES Exponentiation II](https://cses.fi/problemset/task/1712/) | `problem` |
 | [Kattis Modular Arithmetic](https://open.kattis.com/problems/modulararithmetic) | `problem` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Number theory cheatsheet](../../../notebook/number-theory-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 

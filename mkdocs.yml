@@ -109,6 +109,7 @@ nav:
           - Topological Sort And SCC: topics/graphs/scc-toposort/README.md
           - Trees: topics/graphs/trees/README.md
           - LCA: topics/graphs/lca/README.md
+          - Heavy-Light Decomposition: topics/graphs/hld/README.md
           - Maximum Flow: topics/graphs/flow/README.md
           - Min-Cost Flow: topics/graphs/min-cost-flow/README.md
           - Matching: topics/graphs/matching/README.md
@@ -191,6 +192,7 @@ nav:
           - SCC / Toposort: practice/ladders/graphs/scc-toposort/README.md
           - Trees: practice/ladders/graphs/trees/README.md
           - LCA: practice/ladders/graphs/lca/README.md
+          - Heavy-Light Decomposition: practice/ladders/graphs/hld/README.md
           - Flow: practice/ladders/graphs/flow/README.md
           - Matching: practice/ladders/graphs/matching/README.md
           - Tree DP Notes: practice/ladders/graphs/tree-dp/README.md

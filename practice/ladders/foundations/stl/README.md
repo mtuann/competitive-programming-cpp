@@ -32,6 +32,11 @@ Use this ladder if:
 
 - [Distinct Numbers](distinctnumbers.md): a clean first note for `vector`, `sort`, `unique`, and container-choice thinking.
 
+## Retrieval Layer
+
+- quick syntax + flags -> [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- template inventory -> [Template Library](../../../../template-library.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

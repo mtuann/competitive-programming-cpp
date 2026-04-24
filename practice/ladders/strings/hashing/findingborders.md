@@ -70,6 +70,15 @@ This is not the only way to solve the task. Prefix-function or Z-function gives 
 - Equal hashes are a strong fingerprint, not a proof. In contest practice, a robust 64-bit rolling hash is usually accepted here.
 - This problem is simple enough that off-by-one mistakes matter more than asymptotic mistakes.
 
+## Reusable Pattern
+
+- Topic page: [Hashing](../../../../topics/strings/hashing/README.md)
+- Practice ladder: [Hashing ladder](README.md)
+- Starter template: [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp)
+- Notebook refresher: [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+- Carry forward: treat hashing as a fast equality filter, then be explicit about what substring comparison is being asked.
+- This note adds: the exact prefix / suffix / substring relation checked in this note.
+
 ## Solutions
 
 - Code: [findingborders.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp)

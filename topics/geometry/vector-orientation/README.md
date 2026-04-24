@@ -60,6 +60,10 @@ Template in this repo:
 
 - [geometry-primitives.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/geometry/geometry-primitives.cpp)
 
+Notebook:
+
+- [Geometry cheatsheet](../../../notebook/geometry-cheatsheet.md)
+
 Standard workflow:
 
 1. define `Point`

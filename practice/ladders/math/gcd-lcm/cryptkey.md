@@ -69,6 +69,15 @@ Since `k <= 10^12`, the number of distinct prime factors is very small, so the f
 - Handle `k = 1` separately.
 - Use `long long`; all values are within `10^12`.
 
+## Reusable Pattern
+
+- Topic page: [GCD And LCM](../../../../topics/math/number-theory-basics/README.md)
+- Practice ladder: [GCD And LCM ladder](README.md)
+- Starter template: [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
+- Notebook refresher: [Number theory cheatsheet](../../../../notebook/number-theory-cheatsheet.md)
+- Carry forward: factor or normalize the arithmetic condition before you start casework.
+- This note adds: the prime-power reasoning and feasibility test specific to this key construction.
+
 ## Solutions
 
 - Code: [cryptkey.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp)

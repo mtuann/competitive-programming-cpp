@@ -6,7 +6,7 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 - Tutorial page: [Open tutorial](../../../topics/data-structures/heaps-and-ordered-sets/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/heaps-and-ordered-sets/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `2`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -33,6 +33,13 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 | --- | --- |
 | [Codeforces data structures tag](https://codeforces.com/problemset?tags=data+structures) | `problem set` |
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md) | `quick reference` |
+| [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
 

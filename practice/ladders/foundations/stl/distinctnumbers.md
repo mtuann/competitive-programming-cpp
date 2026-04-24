@@ -53,6 +53,15 @@ A `set` or `unordered_set` would also work, but `sort + unique` is especially ed
 - Always sort before using `unique` if you want to remove all duplicates by value.
 - This problem only asks for the count, so you do not need to preserve original order.
 
+## Reusable Pattern
+
+- Topic page: [STL Basics](../../../../topics/foundations/cpp-language/README.md)
+- Practice ladder: [STL Basics ladder](README.md)
+- Starter template: [sort-and-comparator.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/foundations/sort-and-comparator.cpp)
+- Notebook refresher: [Foundations cheatsheet](../../../../notebook/foundations-cheatsheet.md)
+- Carry forward: pick the STL tool by the operation you need most often, not by habit.
+- This note adds: the container or algorithm choice that best matches this statement.
+
 ## Solutions
 
 - Code: [distinctnumbers.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/stl/distinctnumbers.cpp)
