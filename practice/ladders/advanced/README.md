@@ -30,3 +30,9 @@ These ladders are not the first place to spend time if your foundations, data st
 - tie every theory page back to a concrete code habit or problem pattern
 - stop if the topic is interesting but not yet high-ROI for your current level
 - treat this section as maturity training, not a replacement for core practice
+
+## Repo Anchors
+
+- [Minimum Euclidean Distance](algorithm-engineering/minimumeuclideandistance.md)
+- [Build the Permutation](constructive/buildthepermutation.md)
+- [VMCOINS](constructive/vmcoins.md)

@@ -14,6 +14,10 @@ Use this ladder when you already understand approximation at a high level and wa
 - relaxation as a design lens
 - primal-dual or dual-fitting style reasoning
 
+## Repo Bridge Note
+
+- [Police Chase](../../graphs/flow/policechase.md): compute max flow, then read off a minimum cut certificate from the residual graph.
+
 ## Stretch
 
 - explain one greedy/approximation proof through a dual or lower-bound lens

@@ -5,7 +5,7 @@ Sort events and maintain an active structure while a conceptual line moves acros
 - Topic slug: `geometry/sweep-line`
 - Tutorial page: [Open tutorial](../../../topics/geometry/sweep-line/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/geometry/sweep-line/README.md)
-- Repo problems currently tagged here: `2`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `0`
 - Curated external problems: `6`
 
@@ -57,6 +57,7 @@ Sort events and maintain an active structure while a conceptual line moves acros
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `KINGDOMS` | KINGDOMS | `primary` | `hard` | laminar regions; sweep events; containment tree | [Note](../../../practice/ladders/geometry/sweep-line/kingdoms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/kingdoms.cpp) |
+| `MINIMUMEUCLIDEANDISTANCE` | Minimum Euclidean Distance | `secondary` | `hard` | closest pair sweep line; active strip by x distance; ordered set by y | [Note](../../../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/algorithm-engineering/minimumeuclideandistance.cpp) |
 | `VOTELPH` | Bà Nà | `primary` | `hard` | piecewise maximum; endpoint preprocessing; parabola envelopes | [Note](../../../practice/ladders/geometry/sweep-line/votelph.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/sweep-line/votelph.cpp) |
 
 ## Regeneration

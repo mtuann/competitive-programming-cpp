@@ -15,6 +15,11 @@ Use this ladder when you can already reason about algorithms, but “print any v
 - promise-driven matching
 - small exhaustive search over the final flexible pieces
 
+## Repo Anchors
+
+- [Build the Permutation](buildthepermutation.md)
+- [VMCOINS](vmcoins.md)
+
 ## Stretch
 
 - [VMCOINS](vmcoins.md)

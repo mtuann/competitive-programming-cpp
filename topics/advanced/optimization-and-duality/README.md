@@ -69,6 +69,10 @@ Example 3: contest maturity use
 
 Even if you never code LP, recognizing “this proof is really a dual comparison” makes advanced editorials much easier to follow.
 
+Example 4: [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
+
+This is a good bridge note because the code is just max flow plus one residual DFS, but the object you print is a minimum cut certificate. That is exactly the kind of “algorithm plus dual witness” viewpoint this topic is trying to teach.
+
 ## Recognition Cues
 
 - the proof language talks about bounds, certificates, or paying for constraints
@@ -99,6 +103,7 @@ Even if you never code LP, recognizing “this proof is really a dual comparison
 - Course: [Princeton COS 521](https://www.cs.princeton.edu/~hy2/teaching/fall25-cos521/index.html)
 - Course: [Cornell CS 6820](https://www.cs.cornell.edu/courses/cs6820/2025fa/syllabus.html)
 - Course: [Berkeley CS174](https://people.eecs.berkeley.edu/~sinclair/cs174/s25.html)
+- Bridge note: [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
 
 ## Related Topics
 

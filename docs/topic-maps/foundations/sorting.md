@@ -5,7 +5,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 - Topic slug: `foundations/sorting`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/sorting/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/sorting/README.md)
-- Repo problems currently tagged here: `4`
+- Repo problems currently tagged here: `5`
 - Repo companion pages: `0`
 - Curated external problems: `7`
 
@@ -62,6 +62,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 | --- | --- | --- | --- | --- | --- | --- |
 | `APARTMENTS` | Apartments | `secondary` | `easy-medium` | two sorted pointers; tolerance matching; greedy monotone scan | [Note](../../../practice/ladders/foundations/two-pointers/apartments.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/apartments.cpp) |
 | `FERRISWHEEL` | Ferris Wheel | `primary` | `easy-medium` | opposite end pointers; greedy pairing; sorted capacity matching | [Note](../../../practice/ladders/foundations/sorting/ferriswheel.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/ferriswheel.cpp) |
+| `LEMONADELINE` | Lemonade Line | `secondary` | `easy` | descending tolerance order; prefix feasibility count; minimize accepted arrivals | [Note](../../../practice/ladders/greedy/prefix-constraints/lemonadeline.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/lemonadeline.cpp) |
 | `MOVIEFESTIVAL` | Movie Festival | `primary` | `easy` | finish-time sorting; interval scheduling; exchange argument greedy | [Note](../../../practice/ladders/foundations/sorting/moviefestival.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/sorting/moviefestival.cpp) |
 | `SUMOFTWOVALUES` | Sum of Two Values | `secondary` | `medium` | sort and scan; opposite end pointers; index restoration | [Note](../../../practice/ladders/foundations/two-pointers/sumoftwovalues.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/two-pointers/sumoftwovalues.cpp) |
 

@@ -18,6 +18,8 @@ Use this ladder when your raw knowledge is decent, but your contest results are 
 
 - [Contest Playbooks](../../../contest-playbooks/README.md)
 - [Contest Checklist](../../../../notebook/contest-checklist.md)
+- [Stress Testing Workflow](../../../../notebook/stress-testing-workflow.md)
+- [Local Judge Workflow](../../../../notebook/local-judge-workflow.md)
 - [Template Library](../../../../template-library.md)
 
 ## Stretch

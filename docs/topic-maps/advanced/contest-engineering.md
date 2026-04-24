@@ -6,7 +6,7 @@ Operational discipline for contests: local testing, checkers, interactive handli
 - Tutorial page: [Open tutorial](../../../topics/advanced/contest-engineering/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/contest-engineering/README.md)
 - Repo problems currently tagged here: `0`
-- Repo companion pages: `3`
+- Repo companion pages: `5`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -42,6 +42,8 @@ Operational discipline for contests: local testing, checkers, interactive handli
 | --- | --- |
 | [Contest checklist](../../../notebook/contest-checklist.md) | `checklist` |
 | [Contest playbooks](../../../practice/contest-playbooks/README.md) | `process guide` |
+| [Stress testing workflow](../../../notebook/stress-testing-workflow.md) | `verification guide` |
+| [Local judge workflow](../../../notebook/local-judge-workflow.md) | `interactive guide` |
 | [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems

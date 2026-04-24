@@ -1,5 +1,70 @@
 [
   {
+    "code": "MINIMUMEUCLIDEANDISTANCE",
+    "title": "Minimum Euclidean Distance",
+    "full_title": "Minimum Euclidean Distance",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2194/",
+    "main_topic": "Advanced -> Algorithm Engineering",
+    "secondary_topics": [
+      "Closest pair",
+      "Sweep line",
+      "Ordered active set"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "advanced/algorithm-engineering",
+    "topic_tags": [
+      "advanced/algorithm-engineering",
+      "geometry/sweep-line"
+    ],
+    "patterns": [
+      "closest pair sweep line",
+      "active strip by x distance",
+      "ordered set by y"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ],
+    "note_path": "practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md",
+    "ladder_path": "practice/ladders/advanced/algorithm-engineering/README.md",
+    "tutorial_path": "topics/advanced/algorithm-engineering/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/algorithm-engineering/minimumeuclideandistance.cpp"
+  },
+  {
+    "code": "BUILDTHEPERMUTATION",
+    "title": "Build the Permutation",
+    "full_title": "Build the Permutation",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/1608/B",
+    "main_topic": "Advanced -> Constructive",
+    "secondary_topics": [
+      "Alternating pattern",
+      "Local extrema counting",
+      "Case split construction"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/constructive",
+    "topic_tags": [
+      "advanced/constructive"
+    ],
+    "patterns": [
+      "alternating core construction",
+      "local extrema counting",
+      "monotone leftover tail"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Constructive"
+    ],
+    "note_path": "practice/ladders/advanced/constructive/buildthepermutation.md",
+    "ladder_path": "practice/ladders/advanced/constructive/README.md",
+    "tutorial_path": "topics/advanced/constructive/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/buildthepermutation.cpp"
+  },
+  {
     "code": "VMCOINS",
     "title": "Trò chơi với những đồng xu",
     "full_title": "VMCOINS - Trò chơi với những đồng xu",
@@ -1318,6 +1383,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp"
   },
   {
+    "code": "POLICECHASE",
+    "title": "Police Chase",
+    "full_title": "Police Chase",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1695",
+    "main_topic": "Graphs -> Maximum Flow",
+    "secondary_topics": [
+      "Minimum cut",
+      "Cut certificate",
+      "Undirected unit-capacity flow"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/flow",
+    "topic_tags": [
+      "graphs/flow",
+      "advanced/optimization-and-duality"
+    ],
+    "patterns": [
+      "unit capacity max flow",
+      "residual reachable cut",
+      "minimum edge cut certificate"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/flow/policechase.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "tutorial_path": "topics/graphs/flow/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp"
+  },
+  {
     "code": "BUILDINGROADS",
     "title": "Building Roads",
     "full_title": "Building Roads",
@@ -1678,6 +1776,72 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp"
   },
   {
+    "code": "LEMONADELINE",
+    "title": "Lemonade Line",
+    "full_title": "Lemonade Line",
+    "judge": "USACO 2018 US Open Silver",
+    "judge_url": "https://usaco.org/index.php?cpid=835&page=viewproblem2",
+    "main_topic": "Greedy -> Prefix Constraints",
+    "secondary_topics": [
+      "Sorting",
+      "Threshold feasibility",
+      "Exchange argument"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "greedy/prefix-constraints",
+    "topic_tags": [
+      "greedy/prefix-constraints",
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "descending tolerance order",
+      "prefix feasibility count",
+      "minimize accepted arrivals"
+    ],
+    "tracks": [
+      "USACO",
+      "Greedy"
+    ],
+    "note_path": "practice/ladders/greedy/prefix-constraints/lemonadeline.md",
+    "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
+    "tutorial_path": "topics/greedy/prefix-constraints/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/lemonadeline.cpp"
+  },
+  {
+    "code": "PREFIXSUMADDICTS",
+    "title": "Prefix Sum Addicts",
+    "full_title": "Prefix Sum Addicts",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/1738/B",
+    "main_topic": "Greedy -> Prefix Constraints",
+    "secondary_topics": [
+      "Prefix sums",
+      "Difference reasoning",
+      "Feasibility check"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "greedy/prefix-constraints",
+    "topic_tags": [
+      "greedy/prefix-constraints",
+      "foundations/prefix-sums"
+    ],
+    "patterns": [
+      "suffix prefix differences",
+      "sorted sequence feasibility",
+      "first block capacity bound"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Greedy"
+    ],
+    "note_path": "practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md",
+    "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
+    "tutorial_path": "topics/greedy/prefix-constraints/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/prefixsumaddicts.cpp"
+  },
+  {
     "code": "VODIVIDE",
     "title": "Chia phần",
     "full_title": "Chia phần",
@@ -1706,7 +1870,7 @@
     ],
     "note_path": "practice/ladders/greedy/prefix-constraints/vodivide.md",
     "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
-    "tutorial_path": "",
+    "tutorial_path": "topics/greedy/prefix-constraints/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
   },
   {

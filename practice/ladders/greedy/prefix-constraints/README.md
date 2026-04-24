@@ -6,8 +6,8 @@ Use this ladder when a problem asks you to choose an optimal subset or ordering 
 
 ## Warm-Up
 
-- prefix feasibility reasoning
-- choose cheapest valid set under running constraints
+- threshold-feasibility ordering
+- suffix-difference sanity checks
 
 ## Core
 
@@ -16,6 +16,8 @@ Use this ladder when a problem asks you to choose an optimal subset or ordering 
 
 ## Example Notes
 
+- [Lemonade Line](lemonadeline.md)
+- [Prefix Sum Addicts](prefixsumaddicts.md)
 - [VODIVIDE](vodivide.md)
 
 ## Exit Criteria
@@ -27,6 +29,10 @@ You are ready to move on when you can:
 - use a heap or ordered structure to repair choices efficiently
 - distinguish this pattern from a full DP over prefixes
 
+## Tutorial Link
+
+- [Prefix Constraints](../../../../topics/greedy/prefix-constraints/README.md)
+
 ## External Practice
 
 - [USACO Guide](https://usaco.guide/)
@@ -34,5 +40,6 @@ You are ready to move on when you can:
 
 ## Related Tutorials
 
+- [Greedy overview](../../../../topics/greedy/README.md)
 - [Reasoning](../../../../topics/foundations/reasoning/README.md)
-- [Counting Basics](../../../../topics/combinatorics/counting-basics/README.md)
+- [Prefix Sums](../../../../topics/foundations/patterns/prefix-sums/README.md)

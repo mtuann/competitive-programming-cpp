@@ -8,8 +8,8 @@ These pages collect trusted learning sources, official practice sources, repo co
 | Foundations -> Complexity And Invariants | 3 | 1 | 8 | [Open](foundations/complexity-and-invariants.md) |
 | Foundations -> C++ Language | 2 | 3 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 1 | 0 | 5 | [Open](foundations/difference-arrays.md) |
-| Foundations -> Prefix Sums | 2 | 3 | 6 | [Open](foundations/prefix-sums.md) |
-| Foundations -> Sorting | 4 | 0 | 7 | [Open](foundations/sorting.md) |
+| Foundations -> Prefix Sums | 3 | 3 | 6 | [Open](foundations/prefix-sums.md) |
+| Foundations -> Sorting | 5 | 0 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
 | Data Structures -> DSU | 2 | 0 | 5 | [Open](data-structures/dsu.md) |
@@ -19,7 +19,7 @@ These pages collect trusted learning sources, official practice sources, repo co
 | Data Structures -> Segment Tree | 3 | 0 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Sparse Table | 1 | 0 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |
-| Graphs -> Maximum Flow | 3 | 0 | 8 | [Open](graphs/flow.md) |
+| Graphs -> Maximum Flow | 4 | 2 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 0 | 7 | [Open](graphs/gomory-hu.md) |
 | Graphs -> Graph Modeling | 3 | 2 | 9 | [Open](graphs/graph-modeling.md) |
 | Graphs -> Heavy-Light Decomposition | 2 | 0 | 8 | [Open](graphs/hld.md) |
@@ -38,7 +38,7 @@ These pages collect trusted learning sources, official practice sources, repo co
 | DP -> Knapsack Family | 1 | 0 | 15 | [Open](dp/knapsack-family.md) |
 | DP -> Sliding Window And Window DP | 1 | 2 | 16 | [Open](dp/sliding-window.md) |
 | DP -> Tree DP | 2 | 0 | 10 | [Open](dp/tree-dp.md) |
-| Greedy -> Prefix Constraints | 1 | 0 | 8 | [Open](greedy/prefix-constraints.md) |
+| Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> FFT And NTT | 1 | 0 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 5 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Modular Arithmetic | 3 | 2 | 10 | [Open](math/modular-arithmetic.md) |
@@ -59,12 +59,12 @@ These pages collect trusted learning sources, official practice sources, repo co
 | Geometry -> Polygon Area And Point Location | 5 | 2 | 4 | [Open](geometry/polygon-area-point-location.md) |
 | Geometry -> Right Triangles | 1 | 0 | 5 | [Open](geometry/right-triangles.md) |
 | Geometry -> Segment Intersection | 2 | 2 | 5 | [Open](geometry/segment-intersection.md) |
-| Geometry -> Sweep Line | 2 | 0 | 6 | [Open](geometry/sweep-line.md) |
+| Geometry -> Sweep Line | 3 | 0 | 6 | [Open](geometry/sweep-line.md) |
 | Geometry -> Vector And Orientation | 7 | 2 | 5 | [Open](geometry/vector-orientation.md) |
-| Advanced -> Algorithm Engineering | 2 | 3 | 8 | [Open](advanced/algorithm-engineering.md) |
+| Advanced -> Algorithm Engineering | 3 | 5 | 8 | [Open](advanced/algorithm-engineering.md) |
 | Advanced -> Approximation And Relaxation | 0 | 2 | 5 | [Open](advanced/approximation-and-relaxation.md) |
 | Advanced -> Complexity And Hardness | 1 | 2 | 5 | [Open](advanced/complexity-and-hardness.md) |
-| Advanced -> Constructive | 2 | 0 | 10 | [Open](advanced/constructive.md) |
-| Advanced -> Contest Engineering | 0 | 3 | 6 | [Open](advanced/contest-engineering.md) |
-| Advanced -> Optimization And Duality | 1 | 0 | 6 | [Open](advanced/optimization-and-duality.md) |
+| Advanced -> Constructive | 3 | 3 | 10 | [Open](advanced/constructive.md) |
+| Advanced -> Contest Engineering | 0 | 5 | 6 | [Open](advanced/contest-engineering.md) |
+| Advanced -> Optimization And Duality | 2 | 2 | 6 | [Open](advanced/optimization-and-duality.md) |
 | Advanced -> Randomized Algorithms | 1 | 2 | 9 | [Open](advanced/randomized-algorithms.md) |

@@ -5,7 +5,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 - Topic slug: `foundations/prefix-sums`
 - Tutorial page: [Open tutorial](../../../topics/foundations/patterns/prefix-sums/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/foundations/prefix-sums/README.md)
-- Repo problems currently tagged here: `2`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `3`
 - Curated external problems: `6`
 
@@ -73,6 +73,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `CVP00001` | Ô ăn quan | `secondary` | `hard` | circular updates; range-add point-query; query-from-initial-state | [Note](../../../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |
+| `PREFIXSUMADDICTS` | Prefix Sum Addicts | `secondary` | `medium` | suffix prefix differences; sorted sequence feasibility; first block capacity bound | [Note](../../../practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/prefixsumaddicts.cpp) |
 | `STATICRANGESUMQUERIES` | Static Range Sum Queries | `primary` | `easy` | prefix sum build; range sum by subtraction; immutable array queries | [Note](../../../practice/ladders/foundations/prefix-sums/staticrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/foundations/prefix-sums/staticrangesumqueries.cpp) |
 
 ## Regeneration

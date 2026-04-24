@@ -26,6 +26,8 @@ Use the library in this order:
 
 If you are still unsure which family to use, start from the [Notebook](notebook/README.md) instead of browsing files blindly.
 
+If the template is integrated but still feels untrustworthy, switch immediately to the [Stress testing workflow](notebook/stress-testing-workflow.md) instead of guessing at bugs.
+
 ## Current Templates
 
 ### Foundations

@@ -1099,6 +1099,18 @@
         "url": "https://stats.ioinformatics.org/tasks/",
         "kind": "contest archive"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Police Chase note",
+        "path": "practice/ladders/graphs/flow/policechase.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Graph cheatsheet",
+        "path": "notebook/graph-cheatsheet.md",
+        "kind": "quick reference"
+      }
     ]
   },
   "graphs/min-cost-flow": {
@@ -2692,7 +2704,7 @@
   "greedy/prefix-constraints": {
     "title": "Greedy -> Prefix Constraints",
     "summary": "Greedy selection under prefix or feasibility quotas, usually proved with exchange arguments and heap maintenance.",
-    "topic_path": "",
+    "topic_path": "topics/greedy/prefix-constraints/README.md",
     "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
     "microtopics": [
       "prefix-quota",
@@ -2734,6 +2746,23 @@
         "label": "IOI tasks archive",
         "url": "https://stats.ioinformatics.org/tasks/",
         "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Greedy overview",
+        "path": "topics/greedy/README.md",
+        "kind": "area guide"
+      },
+      {
+        "label": "Lemonade Line note",
+        "path": "practice/ladders/greedy/prefix-constraints/lemonadeline.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Prefix Sum Addicts note",
+        "path": "practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md",
+        "kind": "anchor note"
       }
     ]
   },
@@ -2784,6 +2813,23 @@
         "label": "BOI task archive",
         "url": "https://boi.cses.fi/tasks.php",
         "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Build the Permutation note",
+        "path": "practice/ladders/advanced/constructive/buildthepermutation.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "VMCOINS note",
+        "path": "practice/ladders/advanced/constructive/vmcoins.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Stress testing workflow",
+        "path": "notebook/stress-testing-workflow.md",
+        "kind": "verification guide"
       }
     ]
   },
@@ -2905,9 +2951,19 @@
         "kind": "checklist"
       },
       {
+        "label": "Stress testing workflow",
+        "path": "notebook/stress-testing-workflow.md",
+        "kind": "verification guide"
+      },
+      {
         "label": "Contest playbooks",
         "path": "practice/contest-playbooks/README.md",
         "kind": "process guide"
+      },
+      {
+        "label": "Minimum Euclidean Distance note",
+        "path": "practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md",
+        "kind": "anchor note"
       },
       {
         "label": "Templates overview",
@@ -3087,6 +3143,18 @@
         "url": "https://web.stanford.edu/class/msande310/course.shtml",
         "kind": "course"
       }
+    ],
+    "repo_companions": [
+      {
+        "label": "Police Chase note",
+        "path": "practice/ladders/graphs/flow/policechase.md",
+        "kind": "bridge note"
+      },
+      {
+        "label": "Maximum Flow tutorial",
+        "path": "topics/graphs/flow/README.md",
+        "kind": "adjacent tutorial"
+      }
     ]
   },
   "advanced/contest-engineering": {
@@ -3148,6 +3216,16 @@
         "label": "Contest playbooks",
         "path": "practice/contest-playbooks/README.md",
         "kind": "process guide"
+      },
+      {
+        "label": "Stress testing workflow",
+        "path": "notebook/stress-testing-workflow.md",
+        "kind": "verification guide"
+      },
+      {
+        "label": "Local judge workflow",
+        "path": "notebook/local-judge-workflow.md",
+        "kind": "interactive guide"
       },
       {
         "label": "Templates overview",

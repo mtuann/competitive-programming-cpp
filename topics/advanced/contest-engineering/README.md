@@ -91,6 +91,8 @@ This topic is deliberately repo-led more than problem-led. The most useful inter
 
 - [Contest Playbooks](../../../practice/contest-playbooks/README.md)
 - [Contest Checklist](../../../notebook/contest-checklist.md)
+- [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
+- [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
 - [Template Library](../../../template-library.md)
 
 ## Recognition Cues
@@ -124,6 +126,8 @@ This topic is deliberately repo-led more than problem-led. The most useful inter
 
 - Practice: [Contest Playbooks](../../../practice/contest-playbooks/README.md)
 - Practice: [Contest Checklist](../../../notebook/contest-checklist.md)
+- Practice: [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
+- Practice: [Local Judge Workflow](../../../notebook/local-judge-workflow.md)
 - Reference: [KACTL](https://github.com/kth-competitive-programming/kactl)
 - Blog/reference: [USACO Guide](https://usaco.guide/)
 

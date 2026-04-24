@@ -6,8 +6,18 @@ These ladders cover problems where the main work is choosing or maintaining a lo
 
 - [Prefix Constraints](prefix-constraints/README.md)
 
+## Tutorial Hub
+
+- [Greedy overview](../../../topics/greedy/README.md)
+
 ## How To Use This Section
 
 - state the greedy choice in one sentence
 - write down the invariant or exchange argument before trusting the code
 - compare with DP or counting models when the greedy step feels too magical
+
+## Repo Anchors
+
+- [Lemonade Line](prefix-constraints/lemonadeline.md)
+- [Prefix Sum Addicts](prefix-constraints/prefixsumaddicts.md)
+- [VODIVIDE](prefix-constraints/vodivide.md)

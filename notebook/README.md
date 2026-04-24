@@ -40,6 +40,8 @@ This is meant to be the layer you skim during implementation, not the layer you 
 - [String cheatsheet](string-cheatsheet.md)
 - [Geometry cheatsheet](geometry-cheatsheet.md)
 - [Contest checklist](contest-checklist.md)
+- [Stress testing workflow](stress-testing-workflow.md)
+- [Local judge workflow](local-judge-workflow.md)
 
 ## Good Pairings
 
@@ -47,3 +49,5 @@ This is meant to be the layer you skim during implementation, not the layer you 
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Number theory cheatsheet](number-theory-cheatsheet.md)
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
+- debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
+- interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)

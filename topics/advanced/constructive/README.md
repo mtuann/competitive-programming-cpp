@@ -53,11 +53,14 @@ versus
 
 When a statement gives a strong promise, the right move is often to build the simplest construction that uses that promise directly.
 
-## Worked Example
+## Worked Examples
 
+- [Build the Permutation](../../../practice/ladders/advanced/constructive/buildthepermutation.md)
 - [VMCOINS](../../../practice/ladders/advanced/constructive/vmcoins.md)
 
-This note uses the promise that two special coins are the only ones whose exact positions matter. That collapses the search from “arbitrary long move sequence” to “find the right translation and the last `0..2` legal moves”.
+`Build the Permutation` is the clean alternating-core version of constructive work: one feasibility check, one explicit pattern, and no search.
+
+`VMCOINS` is the promise-driven version: the statement guarantee shrinks the real search down to a tiny movable residual.
 
 ## Recognition Cues
 

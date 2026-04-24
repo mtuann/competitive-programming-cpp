@@ -16,8 +16,14 @@ Use this ladder when you already know the algorithmic ideas, but accepted code i
 
 ## Repo Case Studies
 
+- [Minimum Euclidean Distance](minimumeuclideandistance.md)
 - [FFLOW](../../graphs/flow/fflow.md)
 - [PRAVO](../../geometry/right-triangles/pravo.md)
+
+## Internal Material
+
+- [Stress Testing Workflow](../../../../notebook/stress-testing-workflow.md)
+- [Contest Checklist](../../../../notebook/contest-checklist.md)
 
 ## Stretch
 

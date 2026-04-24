@@ -69,6 +69,34 @@
       "ICPC-style"
     ]
   },
+  "LEMONADELINE": {
+    "topic_tags": [
+      "foundations/sorting"
+    ],
+    "patterns": [
+      "descending tolerance order",
+      "prefix feasibility count",
+      "minimize accepted arrivals"
+    ],
+    "tracks": [
+      "USACO",
+      "Greedy"
+    ]
+  },
+  "MINIMUMEUCLIDEANDISTANCE": {
+    "topic_tags": [
+      "geometry/sweep-line"
+    ],
+    "patterns": [
+      "closest pair sweep line",
+      "active strip by x distance",
+      "ordered set by y"
+    ],
+    "tracks": [
+      "CSES",
+      "Geometry"
+    ]
+  },
   "COUNTINGNUMBERS": {
     "topic_tags": [],
     "patterns": [
@@ -283,6 +311,18 @@
     "tracks": [
       "CSES",
       "Sorting and searching"
+    ]
+  },
+  "BUILDTHEPERMUTATION": {
+    "topic_tags": [],
+    "patterns": [
+      "alternating core construction",
+      "local extrema counting",
+      "monotone leftover tail"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Constructive"
     ]
   },
   "EXPONENTIATION2": {
@@ -543,6 +583,20 @@
     "tracks": [
       "VN SPOJ",
       "OI-style"
+    ]
+  },
+  "PREFIXSUMADDICTS": {
+    "topic_tags": [
+      "foundations/prefix-sums"
+    ],
+    "patterns": [
+      "suffix prefix differences",
+      "sorted sequence feasibility",
+      "first block capacity bound"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Greedy"
     ]
   },
   "QBFLOWER": {
@@ -893,6 +947,20 @@
     "tracks": [
       "CSES",
       "Geometry"
+    ]
+  },
+  "POLICECHASE": {
+    "topic_tags": [
+      "advanced/optimization-and-duality"
+    ],
+    "patterns": [
+      "unit capacity max flow",
+      "residual reachable cut",
+      "minimum edge cut certificate"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
     ]
   },
   "STATICRANGESUMQUERIES": {

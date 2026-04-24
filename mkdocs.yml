@@ -152,6 +152,9 @@ nav:
           - Convex Hull: topics/geometry/convex-hull/README.md
           - Sweep Line: topics/geometry/sweep-line/README.md
           - Counting Geometry: topics/geometry/counting-geometry/README.md
+      - Greedy:
+          - Overview: topics/greedy/README.md
+          - Prefix Constraints: topics/greedy/prefix-constraints/README.md
       - Advanced:
           - Overview: topics/advanced/README.md
           - Constructive: topics/advanced/constructive/README.md
@@ -278,6 +281,8 @@ nav:
           - String Cheatsheet: notebook/string-cheatsheet.md
           - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
           - Contest Checklist: notebook/contest-checklist.md
+          - Stress Testing Workflow: notebook/stress-testing-workflow.md
+          - Local Judge Workflow: notebook/local-judge-workflow.md
   - References:
       - Source Map: docs/source-map.md
   - Contributing:

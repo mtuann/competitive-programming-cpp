@@ -5,8 +5,8 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 - Topic slug: `advanced/optimization-and-duality`
 - Tutorial page: [Open tutorial](../../../topics/advanced/optimization-and-duality/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/optimization-and-duality/README.md)
-- Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo problems currently tagged here: `2`
+- Repo companion pages: `2`
 - Curated external problems: `6`
 
 ## Microtopics
@@ -36,6 +36,13 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 | [EE364b](https://web.stanford.edu/class/ee364b) | `course` |
 | [MS&E 310 Conic Linear Optimization](https://web.stanford.edu/class/msande310/course.shtml) | `course` |
 
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Police Chase note](../../../practice/ladders/graphs/flow/policechase.md) | `bridge note` |
+| [Maximum Flow tutorial](../../../topics/graphs/flow/README.md) | `adjacent tutorial` |
+
 ## Curated External Problems
 
 ### Core
@@ -59,6 +66,7 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `C11XU` | Bộ sưu tập đồng xu | `secondary` | `hard` | xor-independence; forest selection; augmenting exchange | [Note](../../../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
+| `POLICECHASE` | Police Chase | `secondary` | `medium` | unit capacity max flow; residual reachable cut; minimum edge cut certificate | [Note](../../../practice/ladders/graphs/flow/policechase.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp) |
 
 ## Regeneration
 

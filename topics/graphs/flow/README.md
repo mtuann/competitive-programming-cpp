@@ -109,7 +109,11 @@ When vertices, not edges, have capacity limits:
 
 This is a good repo example of the standard max-flow layer before moving into costed flow.
 
-### Example 4: Gomory-Hu compression
+### Example 4: [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
+
+This is the cleanest min-cut certificate example in the repo: max flow gives the value, and one residual DFS tells you exactly which original edges form a valid minimum cut.
+
+### Example 5: Gomory-Hu compression
 
 - [MCQUERY](../../../practice/ladders/graphs/flow/mcquery.md) is the right next step when the statement asks about many pairwise min-cuts instead of one single source-sink flow
 
@@ -150,6 +154,7 @@ Suggested order:
 
 - Reference: [CP-Algorithms - Dinic](https://cp-algorithms.com/graph/dinic.html)
 - Practice: [FFLOW note](../../../practice/ladders/graphs/flow/fflow.md)
+- Practice: [Police Chase note](../../../practice/ladders/graphs/flow/policechase.md)
 - Practice: [MCQUERY note](../../../practice/ladders/graphs/flow/mcquery.md)
 - Practice: [MINCOST note](../../../practice/ladders/graphs/flow/mincost.md)
 - Next step: [Min-Cost Flow](../min-cost-flow/README.md)

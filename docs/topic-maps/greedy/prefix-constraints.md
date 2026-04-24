@@ -3,9 +3,10 @@
 Greedy selection under prefix or feasibility quotas, usually proved with exchange arguments and heap maintenance.
 
 - Topic slug: `greedy/prefix-constraints`
+- Tutorial page: [Open tutorial](../../../topics/greedy/prefix-constraints/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/greedy/prefix-constraints/README.md)
-- Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo problems currently tagged here: `3`
+- Repo companion pages: `3`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -32,6 +33,14 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 | [CSES Problem Set](https://cses.fi/problemset) | `problem set` |
 | [USACO contest archive](https://usaco.org/index.php?page=contests) | `contest archive` |
 | [IOI tasks archive](https://stats.ioinformatics.org/tasks/) | `contest archive` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Greedy overview](../../../topics/greedy/README.md) | `area guide` |
+| [Lemonade Line note](../../../practice/ladders/greedy/prefix-constraints/lemonadeline.md) | `anchor note` |
+| [Prefix Sum Addicts note](../../../practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md) | `anchor note` |
 
 ## Curated External Problems
 
@@ -87,6 +96,8 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `LEMONADELINE` | Lemonade Line | `primary` | `easy` | descending tolerance order; prefix feasibility count; minimize accepted arrivals | [Note](../../../practice/ladders/greedy/prefix-constraints/lemonadeline.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/lemonadeline.cpp) |
+| `PREFIXSUMADDICTS` | Prefix Sum Addicts | `primary` | `medium` | suffix prefix differences; sorted sequence feasibility; first block capacity bound | [Note](../../../practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/prefixsumaddicts.cpp) |
 | `VODIVIDE` | Chia phần | `primary` | `hard` | prefix quota greedy; heap maintenance; pair reconstruction | [Note](../../../practice/ladders/greedy/prefix-constraints/vodivide.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp) |
 
 ## Regeneration

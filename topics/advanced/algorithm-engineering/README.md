@@ -76,6 +76,7 @@ Old judges often reward iterative loops, contiguous storage, and reduced allocat
 
 ## Repo Case Studies
 
+- [Minimum Euclidean Distance](../../../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md): closest-pair sweep with an active strip, integer-only pruning, and careful ordered-set maintenance.
 - [FFLOW](../../../practice/ladders/graphs/flow/fflow.md): a flow solution that leans into flat edge arrays, manual queues, and capacity scaling.
 - [PRAVO](../../../practice/ladders/geometry/right-triangles/pravo.md): a geometry note with alternate buffered variants that is good for comparing engineering choices around the same core idea.
 
@@ -109,6 +110,7 @@ Old judges often reward iterative loops, contiguous storage, and reduced allocat
 ## Go Deeper
 
 - Practice: [Notebook](../../../notebook/README.md)
+- Practice: [Stress Testing Workflow](../../../notebook/stress-testing-workflow.md)
 - Practice: [Contest Playbooks](../../../practice/contest-playbooks/README.md)
 - Reference: [KACTL](https://github.com/kth-competitive-programming/kactl)
 - Blog/reference: [CP-Algorithms](https://cp-algorithms.com/)

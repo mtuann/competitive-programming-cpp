@@ -5,8 +5,8 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 - Topic slug: `advanced/algorithm-engineering`
 - Tutorial page: [Open tutorial](../../../topics/advanced/algorithm-engineering/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/advanced/algorithm-engineering/README.md)
-- Repo problems currently tagged here: `2`
-- Repo companion pages: `3`
+- Repo problems currently tagged here: `3`
+- Repo companion pages: `5`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -41,7 +41,9 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 | Material | Type |
 | --- | --- |
 | [Contest checklist](../../../notebook/contest-checklist.md) | `checklist` |
+| [Stress testing workflow](../../../notebook/stress-testing-workflow.md) | `verification guide` |
 | [Contest playbooks](../../../practice/contest-playbooks/README.md) | `process guide` |
+| [Minimum Euclidean Distance note](../../../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md) | `anchor note` |
 | [Templates overview](../../../template-library.md) | `template guide` |
 
 ## Curated External Problems
@@ -69,6 +71,7 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `FFLOW` | Fast Maximum Flow | `secondary` | `medium` | maximum flow; undirected capacities; capacity scaling | [Note](../../../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
+| `MINIMUMEUCLIDEANDISTANCE` | Minimum Euclidean Distance | `primary` | `hard` | closest pair sweep line; active strip by x distance; ordered set by y | [Note](../../../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/algorithm-engineering/minimumeuclideandistance.cpp) |
 | `PRAVO` | Tam giác vuông | `secondary` | `medium` | count right triangles; normalized directions; perpendicular pairing | [Note](../../../practice/ladders/geometry/right-triangles/pravo.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/right-triangles/pravo.cpp) |
 
 ## Regeneration

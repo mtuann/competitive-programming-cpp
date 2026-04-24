@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `68`
+- Total tracked problem notes: `73`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -15,14 +15,14 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | ---: |
 | Foundations | 10 |
 | Data Structures | 6 |
-| Graphs | 15 |
+| Graphs | 16 |
 | DP | 7 |
-| Greedy | 1 |
+| Greedy | 3 |
 | Math | 8 |
 | Combinatorics | 4 |
 | Strings | 8 |
 | Geometry | 8 |
-| Advanced | 1 |
+| Advanced | 3 |
 
 ## Current Catalog
 
@@ -60,6 +60,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `FFLOW` | Fast Maximum Flow | `Graphs -> Maximum Flow` | Advanced -> Algorithm Engineering | maximum flow; undirected capacities; capacity scaling | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
 | `MCQUERY` | MinCut Query | `Graphs -> Maximum Flow` | Data Structures -> DSU; Graphs -> Trees; Graphs -> Gomory-Hu Tree | all-pairs min-cut; cut tree; count pairs by threshold | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MINCOST` | Luồng với chi phí nhỏ nhất | `Graphs -> Maximum Flow` | Graphs -> Min-Cost Flow | transportation network; flow reconstruction; duplicate-edge overwrite | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
+| `POLICECHASE` | Police Chase | `Graphs -> Maximum Flow` | Advanced -> Optimization And Duality | unit capacity max flow; residual reachable cut; minimum edge cut certificate | `medium` | CSES, Graph algorithms | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/policechase.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp) |
 | `BUILDINGROADS` | Building Roads | `Graphs -> Graph Modeling` | - | connected components; component representatives; constructive graph connection | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/graph-modeling.md) / [Ladder](../practice/ladders/graphs/graph-modeling/README.md) / [Tutorial](../topics/graphs/graph-modeling/README.md) | [Note](../practice/ladders/graphs/graph-modeling/buildingroads.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/buildingroads.cpp) |
 | `COUNTINGROOMS` | Counting Rooms | `Graphs -> Graph Modeling` | Graphs -> BFS And DFS | grid graph modeling; iterative flood fill; connected components | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/graph-modeling.md) / [Ladder](../practice/ladders/graphs/graph-modeling/README.md) / [Tutorial](../topics/graphs/graph-modeling/README.md) | [Note](../practice/ladders/graphs/graph-modeling/countingrooms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/countingrooms.cpp) |
 | `PATHQUERIES2` | Path Queries II | `Graphs -> Heavy-Light Decomposition` | Graphs -> Trees; Data Structures -> Segment Tree | heavy light decomposition; path query decomposition; segment tree on base array | `medium` | CSES, Tree algorithms | [Map](topic-maps/graphs/hld.md) / [Ladder](../practice/ladders/graphs/hld/README.md) / [Tutorial](../topics/graphs/hld/README.md) | [Note](../practice/ladders/graphs/hld/pathqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp) |
@@ -88,7 +89,9 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `VODIVIDE` | Chia phần | `Greedy -> Prefix Constraints` | - | prefix quota greedy; heap maintenance; pair reconstruction | `hard` | VN SPOJ, OI-style | [Map](topic-maps/greedy/prefix-constraints.md) / [Ladder](../practice/ladders/greedy/prefix-constraints/README.md) | [Note](../practice/ladders/greedy/prefix-constraints/vodivide.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp) |
+| `LEMONADELINE` | Lemonade Line | `Greedy -> Prefix Constraints` | Foundations -> Sorting | descending tolerance order; prefix feasibility count; minimize accepted arrivals | `easy` | USACO, Greedy | [Map](topic-maps/greedy/prefix-constraints.md) / [Ladder](../practice/ladders/greedy/prefix-constraints/README.md) / [Tutorial](../topics/greedy/prefix-constraints/README.md) | [Note](../practice/ladders/greedy/prefix-constraints/lemonadeline.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/lemonadeline.cpp) |
+| `PREFIXSUMADDICTS` | Prefix Sum Addicts | `Greedy -> Prefix Constraints` | Foundations -> Prefix Sums | suffix prefix differences; sorted sequence feasibility; first block capacity bound | `medium` | Codeforces, Greedy | [Map](topic-maps/greedy/prefix-constraints.md) / [Ladder](../practice/ladders/greedy/prefix-constraints/README.md) / [Tutorial](../topics/greedy/prefix-constraints/README.md) | [Note](../practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/prefixsumaddicts.cpp) |
+| `VODIVIDE` | Chia phần | `Greedy -> Prefix Constraints` | - | prefix quota greedy; heap maintenance; pair reconstruction | `hard` | VN SPOJ, OI-style | [Map](topic-maps/greedy/prefix-constraints.md) / [Ladder](../practice/ladders/greedy/prefix-constraints/README.md) / [Tutorial](../topics/greedy/prefix-constraints/README.md) | [Note](../practice/ladders/greedy/prefix-constraints/vodivide.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp) |
 
 ### Math
 
@@ -142,6 +145,8 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `MINIMUMEUCLIDEANDISTANCE` | Minimum Euclidean Distance | `Advanced -> Algorithm Engineering` | Geometry -> Sweep Line | closest pair sweep line; active strip by x distance; ordered set by y | `hard` | CSES, Geometry | [Map](topic-maps/advanced/algorithm-engineering.md) / [Ladder](../practice/ladders/advanced/algorithm-engineering/README.md) / [Tutorial](../topics/advanced/algorithm-engineering/README.md) | [Note](../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/algorithm-engineering/minimumeuclideandistance.cpp) |
+| `BUILDTHEPERMUTATION` | Build the Permutation | `Advanced -> Constructive` | - | alternating core construction; local extrema counting; monotone leftover tail | `medium` | Codeforces, Constructive | [Map](topic-maps/advanced/constructive.md) / [Ladder](../practice/ladders/advanced/constructive/README.md) / [Tutorial](../topics/advanced/constructive/README.md) | [Note](../practice/ladders/advanced/constructive/buildthepermutation.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/buildthepermutation.cpp) |
 | `VMCOINS` | Trò chơi với những đồng xu | `Advanced -> Constructive` | Geometry -> Vector And Orientation | promise-driven constructive; translation matching; small residual search | `hard` | VN SPOJ, OI-style | [Map](topic-maps/advanced/constructive.md) / [Ladder](../practice/ladders/advanced/constructive/README.md) / [Tutorial](../topics/advanced/constructive/README.md) | [Note](../practice/ladders/advanced/constructive/vmcoins.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp) |
 
 ## Maintenance
