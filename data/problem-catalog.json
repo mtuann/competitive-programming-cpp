@@ -1741,6 +1741,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp"
   },
   {
+    "code": "COMMONDIVISORS",
+    "title": "Common Divisors",
+    "full_title": "Common Divisors",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1081",
+    "main_topic": "Math -> GCD And LCM",
+    "secondary_topics": [
+      "Frequency over divisors",
+      "Divisibility counting",
+      "Greatest common divisor"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/gcd-lcm",
+    "topic_tags": [
+      "math/gcd-lcm",
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "divisor frequency scan",
+      "count multiples",
+      "maximize pair gcd"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/math/gcd-lcm/commondivisors.md",
+    "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp"
+  },
+  {
     "code": "CRYPTKEY",
     "title": "Chìa khóa mã số",
     "full_title": "Chìa khóa mã số",
@@ -1772,6 +1805,39 @@
     "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp"
+  },
+  {
+    "code": "GCDONBLACKBOARD",
+    "title": "GCD on Blackboard",
+    "full_title": "GCD on Blackboard",
+    "judge": "AtCoder",
+    "judge_url": "https://atcoder.jp/contests/abc125/tasks/abc125_c",
+    "main_topic": "Math -> GCD And LCM",
+    "secondary_topics": [
+      "Prefix/suffix gcd",
+      "Remove one element",
+      "Array gcd"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/gcd-lcm",
+    "topic_tags": [
+      "math/gcd-lcm",
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "prefix suffix gcd",
+      "remove one element",
+      "maximize array gcd"
+    ],
+    "tracks": [
+      "AtCoder",
+      "Number theory"
+    ],
+    "note_path": "practice/ladders/math/gcd-lcm/gcdonblackboard.md",
+    "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp"
   },
   {
     "code": "EXPONENTIATION",

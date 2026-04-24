@@ -16,6 +16,8 @@ Use this ladder when gcd/lcm problems stop being one-line formulas and start tur
 
 ## Example Notes
 
+- [Common Divisors](commondivisors.md)
+- [GCD on Blackboard](gcdonblackboard.md)
 - [CRYPTKEY](cryptkey.md)
 
 ## Exit Criteria

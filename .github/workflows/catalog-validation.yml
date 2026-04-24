@@ -26,6 +26,9 @@ jobs:
       - name: Byte-compile support scripts
         run: python -m py_compile scripts/generate_problem_catalog.py scripts/build_site_docs.py
 
+      - name: Run focused generator tests
+        run: python -m unittest discover -s tests -p "test_*.py"
+
       - name: Validate catalog source data
         run: python scripts/generate_problem_catalog.py --validate-only
 

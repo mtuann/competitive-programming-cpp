@@ -256,7 +256,10 @@ nav:
           - VMWTREE - Lại là cây khung: practice/ladders/graphs/trees/vmwtree.md
           - VMCOINS - Trò chơi với những đồng xu: practice/ladders/advanced/constructive/vmcoins.md
           - PRAVO - Tam giác vuông: practice/ladders/geometry/right-triangles/pravo.md
-      - Mixed Rounds: practice/mixed-rounds/README.md
+      - Mixed Rounds:
+          - Overview: practice/mixed-rounds/README.md
+          - Stage 0 Review Pack 01: practice/mixed-rounds/stage0-review-pack-01.md
+          - Contest Core Switching 01: practice/mixed-rounds/contest-core-switching-01.md
       - Contest Playbooks:
           - Overview: practice/contest-playbooks/README.md
           - USACO: practice/contest-playbooks/usaco.md

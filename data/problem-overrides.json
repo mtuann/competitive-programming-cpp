@@ -175,6 +175,20 @@
       "Mathematics"
     ]
   },
+  "COMMONDIVISORS": {
+    "topic_tags": [
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "divisor frequency scan",
+      "count multiples",
+      "maximize pair gcd"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ]
+  },
   "DISTINCTVALUESQUERIES": {
     "topic_tags": [
       "data-structures/fenwick-tree"
@@ -335,6 +349,20 @@
     "tracks": [
       "CSES",
       "String algorithms"
+    ]
+  },
+  "GCDONBLACKBOARD": {
+    "topic_tags": [
+      "math/number-theory-basics"
+    ],
+    "patterns": [
+      "prefix suffix gcd",
+      "remove one element",
+      "maximize array gcd"
+    ],
+    "tracks": [
+      "AtCoder",
+      "Number theory"
     ]
   },
   "INCREASINGARRAY": {

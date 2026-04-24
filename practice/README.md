@@ -32,6 +32,7 @@
 -   __Mixed Rounds__
 
     Mix areas on purpose when you want retrieval practice, breadth, and contest-style switching.
+    The starter packs are best after you already have one pass through the corresponding ladders.
 
     [Open mixed rounds](mixed-rounds/README.md)
 

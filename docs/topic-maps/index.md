@@ -40,9 +40,9 @@ These pages collect trusted learning sources, official practice sources, repo co
 | DP -> Tree DP | 2 | 0 | 10 | [Open](dp/tree-dp.md) |
 | Greedy -> Prefix Constraints | 1 | 0 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> FFT And NTT | 1 | 0 | 8 | [Open](math/fft.md) |
-| Math -> GCD And LCM | 3 | 0 | 11 | [Open](math/gcd-lcm.md) |
+| Math -> GCD And LCM | 5 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Modular Arithmetic | 3 | 2 | 10 | [Open](math/modular-arithmetic.md) |
-| Math -> Number Theory Basics | 5 | 0 | 13 | [Open](math/number-theory-basics.md) |
+| Math -> Number Theory Basics | 7 | 0 | 13 | [Open](math/number-theory-basics.md) |
 | Combinatorics -> Bounded Compositions | 1 | 0 | 6 | [Open](combinatorics/bounded-compositions.md) |
 | Combinatorics -> Counting Basics | 2 | 0 | 13 | [Open](combinatorics/counting-basics.md) |
 | Combinatorics -> Inclusion-Exclusion | 3 | 0 | 6 | [Open](combinatorics/inclusion-exclusion.md) |

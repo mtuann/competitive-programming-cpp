@@ -5,7 +5,7 @@ Divisibility, primes, totients, divisor functions, and the standard multiplicati
 - Topic slug: `math/number-theory-basics`
 - Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/number-theory-basics/README.md)
-- Repo problems currently tagged here: `5`
+- Repo problems currently tagged here: `7`
 - Repo companion pages: `0`
 - Curated external problems: `13`
 
@@ -68,8 +68,10 @@ Divisibility, primes, totients, divisor functions, and the standard multiplicati
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `COMMONDIVISORS` | Common Divisors | `secondary` | `medium` | divisor frequency scan; count multiples; maximize pair gcd | [Note](../../../practice/ladders/math/gcd-lcm/commondivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp) |
 | `COUNTINGDIVISORS` | Counting Divisors | `primary` | `easy` | divisor sieve; many queries preprocessing; divisor counting | [Note](../../../practice/ladders/math/number-theory-basics/countingdivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/countingdivisors.cpp) |
 | `CRYPTKEY` | Chìa khóa mã số | `secondary` | `hard` | gcd-lcm closure; prime-power characterization; constructibility | [Note](../../../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
+| `GCDONBLACKBOARD` | GCD on Blackboard | `secondary` | `medium` | prefix suffix gcd; remove one element; maximize array gcd | [Note](../../../practice/ladders/math/gcd-lcm/gcdonblackboard.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp) |
 | `LAMP` | Dàn đèn màu | `primary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../../../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
 | `PRIMEMULTIPLES` | Prime Multiples | `secondary` | `medium` | subset inclusion exclusion; overflow safe lcm product; count divisible numbers | [Note](../../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/inclusion-exclusion/primemultiples.cpp) |
 | `VMSCALE` | Chiếc cân kỳ diệu | `secondary` | `hard` | budget dp; balanced ternary; decision-tree optimization | [Note](../../../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |

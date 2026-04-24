@@ -38,6 +38,52 @@ GENERATED_OUTPUT_PATHS = [
 ]
 
 
+def configure_repo_root(root: Path) -> None:
+    global ROOT
+    global NOTES_ROOT
+    global DATA_DIR
+    global DOCS_DIR
+    global PROBLEM_OVERRIDES
+    global TOPIC_RESOURCES
+    global EXTERNAL_PROBLEM_POOLS
+    global PROBLEM_JSON
+    global EXTERNAL_PROBLEM_JSON
+    global OUTPUT_CSV
+    global OUTPUT_MD
+    global EXTERNAL_OUTPUT_CSV
+    global EXTERNAL_OUTPUT_MD
+    global TOPIC_MAPS_DIR
+    global TOPIC_MAPS_INDEX
+    global GENERATED_OUTPUT_PATHS
+
+    ROOT = root.resolve()
+    NOTES_ROOT = ROOT / "practice" / "ladders"
+    DATA_DIR = ROOT / "data"
+    DOCS_DIR = ROOT / "docs"
+
+    PROBLEM_OVERRIDES = DATA_DIR / "problem-overrides.json"
+    TOPIC_RESOURCES = DATA_DIR / "topic-resources.json"
+    EXTERNAL_PROBLEM_POOLS = DATA_DIR / "external-problem-pools.json"
+
+    PROBLEM_JSON = DATA_DIR / "problem-catalog.json"
+    EXTERNAL_PROBLEM_JSON = DATA_DIR / "external-problem-catalog.json"
+    OUTPUT_CSV = DOCS_DIR / "repo-problem-catalog.csv"
+    OUTPUT_MD = DOCS_DIR / "problem-index.md"
+    EXTERNAL_OUTPUT_CSV = DOCS_DIR / "external-problem-catalog.csv"
+    EXTERNAL_OUTPUT_MD = DOCS_DIR / "external-problem-index.md"
+    TOPIC_MAPS_DIR = DOCS_DIR / "topic-maps"
+    TOPIC_MAPS_INDEX = TOPIC_MAPS_DIR / "index.md"
+    GENERATED_OUTPUT_PATHS = [
+        PROBLEM_JSON,
+        EXTERNAL_PROBLEM_JSON,
+        OUTPUT_CSV,
+        OUTPUT_MD,
+        EXTERNAL_OUTPUT_CSV,
+        EXTERNAL_OUTPUT_MD,
+        TOPIC_MAPS_DIR,
+    ]
+
+
 AREA_ORDER = [
     "foundations",
     "data-structures",
@@ -1330,7 +1376,16 @@ def ensure_generated_outputs_are_in_sync() -> None:
         raise ValidationError("git is required for --check but was not found in PATH.") from exc
 
     if result.returncode == 0:
-        return
+        untracked_command = ["git", "ls-files", "--others", "--exclude-standard", "--"] + generated_output_relpaths()
+        untracked_result = subprocess.run(untracked_command, cwd=ROOT, capture_output=True, text=True, check=False)
+        untracked = [line for line in untracked_result.stdout.splitlines() if line.strip()]
+        if not untracked:
+            return
+        raise ValidationError(
+            "Generated catalog outputs include untracked files. "
+            "Run `python3 scripts/generate_problem_catalog.py` and commit the updated files.\n"
+            + "\n".join(untracked)
+        )
 
     diff_output = "\n".join(part for part in [result.stdout.strip(), result.stderr.strip()] if part)
     raise ValidationError(

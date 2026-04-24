@@ -133,6 +133,12 @@ Example 3: [CRYPTKEY](../../../practice/ladders/math/gcd-lcm/cryptkey.md)
 - Blog/reference: [USACO Guide - Divisibility](https://usaco.guide/gold/divisibility?lang=cpp)
 - Practice: [CRYPTKEY note](../../../practice/ladders/math/gcd-lcm/cryptkey.md)
 
+## GCD / LCM Bridge
+
+- [Common Divisors](../../../practice/ladders/math/gcd-lcm/commondivisors.md): turn a pairwise gcd question into divisor-frequency counting.
+- [GCD on Blackboard](../../../practice/ladders/math/gcd-lcm/gcdonblackboard.md): use prefix/suffix gcd to remove one position in linear time.
+- [CRYPTKEY](../../../practice/ladders/math/gcd-lcm/cryptkey.md): move from identities into prime-exponent feasibility reasoning.
+
 ## Related Topics
 
 - [Modular Arithmetic](../modular-arithmetic/README.md)
