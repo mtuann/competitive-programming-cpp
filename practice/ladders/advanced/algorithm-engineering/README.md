@@ -24,11 +24,26 @@ Use this ladder when you already know the algorithmic ideas, but accepted code i
 
 - [Stress Testing Workflow](../../../../notebook/stress-testing-workflow.md)
 - [Contest Checklist](../../../../notebook/contest-checklist.md)
+- [Build Kit](../../../../docs/build-kit.md)
+- [Problem Finder](../../../../docs/problem-finder.md)
 
 ## Stretch
 
 - judge-specific performance traps
 - rewrite a correct solution into a faster version without losing trust in it
+
+## Repo Anchors And Compare Points
+
+- closest-pair sweep case study -> [Minimum Euclidean Distance](minimumeuclideandistance.md)
+- flow implementation under load -> [FFLOW](../../graphs/flow/fflow.md)
+- geometry counting/performance tradeoffs -> [PRAVO](../../geometry/right-triangles/pravo.md)
+- workflow companions -> [Algorithm Engineering](../../../../topics/advanced/algorithm-engineering/README.md) and [Contest Engineering](../../../../topics/advanced/contest-engineering/README.md)
+
+This ladder only has one direct in-lane note, so use the compare points on purpose:
+
+1. study one case where the algorithmic idea is already known
+2. identify what the real bottleneck is: bugs, constants, memory layout, or validation discipline
+3. reopen the workflow pages before changing code blindly
 
 ## Exit Criteria
 

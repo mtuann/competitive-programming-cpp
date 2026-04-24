@@ -19,6 +19,31 @@ Use this ladder when you already know arrays and counting, and you want to learn
 - precision pitfalls
 - [POST2](post2.md)
 
+## Build Path
+
+- floating FFT starter -> [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp)
+- exact modular convolution -> [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp)
+
+## Reopen Theory Pages
+
+- quick theory refresher -> [FFT / NTT](../../../../topics/math/fft-ntt/README.md)
+- counting precheck -> [Counting Basics](../../../../topics/combinatorics/counting-basics/README.md)
+
+## Repo Anchors And Compare Points
+
+- direct repo note -> [POST2](post2.md)
+- compare floating vs exact viewpoints -> [FFT / NTT](../../../../topics/math/fft-ntt/README.md)
+- reopen the counting lens before the transform lens -> [Counting Basics](../../../../topics/combinatorics/counting-basics/README.md)
+- if coefficient shifts or mod arithmetic are the real bottleneck -> [Modular Arithmetic ladder](../modular-arithmetic/README.md)
+
+This ladder is still thin on direct internal notes. In the current repo, the floating-FFT branch is note-backed through [POST2](post2.md), while the exact NTT branch is still mainly topic/template-backed.
+
+The intended loop is:
+
+1. first reduce the statement to a clean convolution story
+2. compare that reduction against [POST2](post2.md)
+3. only then decide whether [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp) or [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) is the better build path
+
 ## Exit Criteria
 
 You are ready to move on when you can:

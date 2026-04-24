@@ -17,11 +17,21 @@ Use this ladder when you already understand approximation at a high level and wa
 ## Repo Bridge Note
 
 - [Police Chase](../../graphs/flow/policechase.md): compute max flow, then read off a minimum cut certificate from the residual graph.
+- [MINCOST](../../graphs/flow/mincost.md): potentials and reduced-cost thinking from the contest side.
 
 ## Stretch
 
 - explain one greedy/approximation proof through a dual or lower-bound lens
 - connect one editorial argument to an optimization viewpoint
+
+## Compare Points
+
+- exact dual certificate -> [Police Chase](../../graphs/flow/policechase.md)
+- reduced-cost / potential view -> [MINCOST](../../graphs/flow/mincost.md)
+- optional exchange-style compare point -> [C11XU](../../data-structures/dsu/c11xu.md)
+- theory pages -> [Optimization And Duality](../../../../topics/advanced/optimization-and-duality/README.md), [Maximum Flow](../../../../topics/graphs/flow/README.md), [Min-Cost Flow](../../../../topics/graphs/min-cost-flow/README.md)
+
+This ladder is sparse on direct note count, so the right move is to compare one exact certificate, one reduced-cost style argument, and one exchange-style proof before leaving the lane.
 
 ## Exit Criteria
 
@@ -32,7 +42,7 @@ You are ready to move on when you can:
 - explain why duality matters even without contest-time LP code
 - connect this page naturally to approximation and hardness
 
-## External Practice
+## External Reading / Courses
 
 - [Princeton COS 521](https://www.cs.princeton.edu/~hy2/teaching/fall25-cos521/index.html)
 - [Cornell CS 6820](https://www.cs.cornell.edu/courses/cs6820/2025fa/syllabus.html)

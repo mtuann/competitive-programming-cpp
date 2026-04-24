@@ -21,11 +21,22 @@ Use this ladder when your raw knowledge is decent, but your contest results are 
 - [Stress Testing Workflow](../../../../notebook/stress-testing-workflow.md)
 - [Local Judge Workflow](../../../../notebook/local-judge-workflow.md)
 - [Template Library](../../../../template-library.md)
+- [Problem Finder](../../../../docs/problem-finder.md)
+- [Build Kit](../../../../docs/build-kit.md)
 
 ## Stretch
 
 - build a repeatable solo or team contest loop
 - turn one repeated failure pattern into a concrete notebook/process change
+
+## Compare Points
+
+- track-specific operating manuals -> [Contest Playbooks](../../../contest-playbooks/README.md)
+- engineering under implementation pressure -> [Algorithm Engineering](../algorithm-engineering/README.md)
+- switch training after topic study -> [Mixed Rounds](../../../mixed-rounds/README.md)
+- status-driven next-problem routing -> [Problem Finder](../../../../docs/problem-finder.md)
+
+This lane is intentionally workflow-heavy. Use it when the real bug is no longer algorithm knowledge, but the way you enter, execute, and debrief contests.
 
 ## Exit Criteria
 

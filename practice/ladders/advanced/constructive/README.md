@@ -19,10 +19,25 @@ Use this ladder when you can already reason about algorithms, but “print any v
 
 - [Build the Permutation](buildthepermutation.md)
 - [VMCOINS](vmcoins.md)
+- [Building Roads](../../graphs/graph-modeling/buildingroads.md)
+- [VODIVIDE](../../greedy/prefix-constraints/vodivide.md)
 
 ## Stretch
 
 - [VMCOINS](vmcoins.md)
+
+## Compare Points
+
+- clean canonical construction -> [Build the Permutation](buildthepermutation.md)
+- promise-driven residual search -> [VMCOINS](vmcoins.md)
+- graph construction with a simpler invariant -> [Building Roads](../../graphs/graph-modeling/buildingroads.md)
+- prefix-feasibility repair as a lighter constructive cousin -> [VODIVIDE](../../greedy/prefix-constraints/vodivide.md)
+
+If this ladder still feels thin, triangulate through:
+
+- [Constructive](../../../../topics/advanced/constructive/README.md)
+- [Graph Modeling](../../../../topics/graphs/graph-modeling/README.md)
+- [Prefix Constraints](../../../../topics/greedy/prefix-constraints/README.md)
 
 ## Exit Criteria
 
