@@ -21,7 +21,35 @@ It teaches three useful habits together:
 
 That makes it a great bridge between simple sorting tasks and full sliding-window reasoning.
 
-## Key Idea
+## Recognition Cue
+
+Reach for opposite-end two pointers when:
+
+- you need one pair whose sum hits a target
+- values can be sorted
+- moving one endpoint changes the sum monotonically
+- you still need to recover original indices afterward
+
+The strongest smell is:
+
+- "find two values with sum exactly `x`"
+
+That is the classic sorted two-pointer pair search.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- pair each value with its original index
+- sort by value
+- search in the sorted order while preserving the answer indices externally
+
+So the problem becomes:
+
+- one monotone sum scan on sorted values
+- plus one bookkeeping layer for original positions
+
+## Core Idea
 
 Store each number together with its original index, then sort by value.
 

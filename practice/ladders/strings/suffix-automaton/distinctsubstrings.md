@@ -19,7 +19,34 @@ The problem asks for a global substring count, but the answer falls directly out
 
 So instead of enumerating substrings, we only need to understand what each state contributes. That makes this task a great checkpoint for whether the automaton's state meaning really feels solid.
 
-## Key Idea
+## Recognition Cue
+
+Reach for suffix automaton counting when:
+
+- the object is "all distinct substrings"
+- online construction is attractive
+- the intended answer should fall out of one structural invariant on states
+
+The strongest smell is:
+
+- "count distinct substrings of one string"
+
+That often means each automaton state contributes one interval of substring lengths.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- build the SAM once
+- let each state contribute all substring lengths in its own interval
+
+So the global substring-count problem becomes:
+
+- sum local interval sizes over states
+
+That removes any need to enumerate substrings explicitly.
+
+## Core Idea
 
 Build the suffix automaton online while scanning the string from left to right.
 

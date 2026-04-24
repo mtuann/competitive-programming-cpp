@@ -14,7 +14,38 @@
 
 This is a classic frequency-convolution problem: the combinatorics is simple, but the direct `O(N^2)` pair counting is impossible for `N = 10^5`.
 
-## Key Idea
+## Recognition Cue
+
+Reach for convolution when:
+
+- two arrays contribute one term each to a sum or difference condition
+- you need counts for all possible sums at once
+- the value range is moderate even if the index range is huge
+
+The strongest smell is:
+
+- "count pairs `(a, b)` such that `a + b = c` for many possible `c`"
+
+That usually means frequency arrays plus polynomial convolution.
+
+## Problem-Specific Transformation
+
+The triple-counting statement is rewritten as:
+
+- frequency array for `A`
+- frequency array for `B`
+- convolution = number of ordered pairs achieving each sum
+
+Then `C` is no longer part of the convolution itself. It is just one final weighting layer:
+
+- sum `pairs[c] * cntC[c]`
+
+So the global triple count becomes:
+
+- one convolution
+- one final frequency lookup sweep
+
+## Core Idea
 
 Let:
 

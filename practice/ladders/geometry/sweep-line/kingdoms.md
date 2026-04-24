@@ -14,7 +14,34 @@
 
 This is a good geometry problem because the polygons are convex, disjoint-or-nested, and numerous enough that repeated point-in-polygon checks are too slow. The important structural observation is that a vertical sweep line sees a laminar family of intervals.
 
-## Key Idea
+## Recognition Cue
+
+Reach for a sweep-line laminar-family view when:
+
+- many geometric regions are disjoint-or-nested
+- queries ask for the deepest containing region
+- repeating point-in-polygon against every region is too slow
+
+The strongest smell is:
+
+- "nested convex polygons plus many point queries"
+
+That often means one sweep position sees a family of ordered intervals.
+
+## Problem-Specific Transformation
+
+The polygon-containment story is rewritten as:
+
+- at one `x`, each active polygon contributes one vertical interval
+- because polygons are disjoint or nested, these intervals form a laminar order
+
+So the query becomes:
+
+- among active intervals, find the deepest one whose lower boundary is below the query and whose upper boundary is above it
+
+That turns many expensive geometric membership tests into one ordered active-set problem.
+
+## Core Idea
 
 For a fixed `x`, every active convex polygon intersects the vertical line in one interval:
 

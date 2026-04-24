@@ -17,7 +17,36 @@ The intended closest-pair sweep is only `O(n log n)` if the implementation prese
 
 That makes this problem a good benchmark for turning a geometric theorem into reliable contest code.
 
-## Key Idea
+## Recognition Cue
+
+Reach for the closest-pair sweep when:
+
+- the object is an unweighted set of points
+- the naive `O(n^2)` pair scan is too large
+- the answer is one global nearest-neighbor distance
+- sorting by one coordinate and maintaining a narrow active strip feels plausible
+
+The strongest smell is:
+
+- "minimum Euclidean distance among all pairs of points"
+
+That is usually a divide-and-conquer or sweep-line closest-pair problem, not graph shortest paths or hull geometry.
+
+## Problem-Specific Transformation
+
+The statement is about geometric distance, but the reusable rewrite is:
+
+- sort by `x`
+- maintain exactly the points still capable of improving the current best answer
+- organize them by `y` so the candidate scan stays local
+
+So the original all-pairs problem becomes:
+
+- one monotone sweep
+- one active strip invariant
+- one bounded candidate window per point
+
+## Core Idea
 
 Sort all points by `x`, then sweep from left to right.
 

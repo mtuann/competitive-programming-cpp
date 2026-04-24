@@ -17,6 +17,35 @@ This is a great example of an “all-pairs cut” problem where the direct inter
 
 The statement asks about all unordered pairs `(s, t)`, which makes naive repeated max-flow look impossible. The key observation is that for undirected weighted graphs, all pairwise min-cuts can be represented by one tree.
 
+## Recognition Cue
+
+Reach for a cut tree or compressed all-pairs structure when:
+
+- the statement asks about min-cuts for many or all node pairs
+- direct repeated max-flow would be too expensive
+- the graph is undirected
+
+The strongest smell is:
+
+- "all unordered pairs `(s, t)` and their min-cuts"
+
+That is the natural home of a Gomory-Hu tree.
+
+## Problem-Specific Transformation
+
+The all-pairs query is rewritten as:
+
+- build one tree where path minimum encodes every pairwise min-cut
+
+Then the counting question becomes:
+
+- for each threshold `x`, count how many tree paths have minimum edge weight `<= x`
+
+That is why the problem splits cleanly into:
+
+- expensive tree construction once
+- cheap DSU-based offline counting afterward
+
 ## Core Idea
 
 For an undirected weighted graph, a **Gomory-Hu tree** has the property:

@@ -20,7 +20,34 @@ For each customer, we need:
 
 That operation pair is almost a direct definition of `multiset` plus predecessor search.
 
-## Key Idea
+## Recognition Cue
+
+Reach for an ordered multiset when:
+
+- every query asks for the largest value not exceeding a threshold
+- the chosen value must be removed exactly once
+- duplicates matter
+
+The strongest smell is:
+
+- "sell the most expensive remaining ticket within budget"
+
+That is a predecessor query plus one erase, not a heap-only problem.
+
+## Problem-Specific Transformation
+
+The statement is a ticket-selling story, but the reusable rewrite is:
+
+- maintain a multiset of remaining prices
+- for budget `x`, find predecessor of `x`
+- erase only that one occurrence
+
+So the whole problem becomes an ordered-container operations question:
+
+- predecessor search
+- duplicate-safe erase
+
+## Core Idea
 
 Store all remaining ticket prices in a `multiset<int>`.
 

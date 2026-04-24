@@ -19,7 +19,33 @@ This is the cleanest first modular-arithmetic problem in the repo:
 
 It is the best first anchor for the topic because it turns “power modulo `MOD`” into a trusted tool you will reuse everywhere else.
 
-## Key Idea
+## Recognition Cue
+
+Reach for binary exponentiation when:
+
+- the exponent is large
+- multiplication is associative under a modulus
+- repeated multiplication by hand would be too slow
+
+The strongest smell is:
+
+- `a^b mod MOD`
+
+That should immediately trigger repeated squaring.
+
+## Problem-Specific Transformation
+
+The statement is already almost the final pattern. The only real rewrite is:
+
+- stop thinking of `a^b` as `a * a * ...`
+- think of the exponent bits deciding which squared powers contribute
+
+So the problem becomes:
+
+- maintain one invariant under repeated squaring
+- answer each query independently in `O(log b)`
+
+## Core Idea
 
 Use binary exponentiation.
 

@@ -18,7 +18,35 @@ This is one of the cleanest first `prefix/suffix gcd` problems:
 
 It is a very useful bridge from one-line gcd formulas into array-structure reasoning.
 
-## Key Idea
+## Recognition Cue
+
+Reach for prefix/suffix gcd when:
+
+- the answer depends on "all elements except one position"
+- gcd is associative and easy to combine from left and right aggregates
+- recomputing one gcd from scratch for every removed index would be too slow
+
+The strongest smell is:
+
+- "best answer after removing or replacing one element"
+
+That is usually a signal to precompute left and right aggregates.
+
+## Problem-Specific Transformation
+
+The statement sounds like arbitrary replacement, but the reusable rewrite is:
+
+- after choosing index `i`, the best final gcd is exactly the gcd of all elements except `A[i]`
+
+So the problem becomes:
+
+- compute gcd of prefix before `i`
+- compute gcd of suffix after `i`
+- combine them
+
+That removes the replacement story entirely and turns the task into a classic "all except one" aggregate problem.
+
+## Core Idea
 
 If we replace `A[i]` with any number we like, then the final gcd cannot exceed:
 

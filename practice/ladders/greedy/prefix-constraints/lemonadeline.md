@@ -22,7 +22,35 @@ That makes it a perfect place to practice two habits:
 - choose an order that makes the prefix condition easiest to satisfy
 - explain why that order is globally best, not just locally plausible
 
-## Key Idea
+## Recognition Cue
+
+Reach for descending-threshold greedy when:
+
+- each item only cares about how many items are already accepted
+- the condition is easier to satisfy for more permissive thresholds
+- the final order is under your control
+
+The strongest smell is:
+
+- "an item joins only if the current prefix size is at most its threshold"
+
+That usually means put the most permissive items first.
+
+## Problem-Specific Transformation
+
+The line-joining story is rewritten as:
+
+- after sorting by tolerance, the only state is current accepted count
+
+So the problem becomes:
+
+- choose an order
+- scan once
+- accept if the current prefix count satisfies the threshold
+
+That removes the queue story and exposes one prefix-feasibility greedy.
+
+## Core Idea
 
 Let `cnt` be the number of cows already in line.
 

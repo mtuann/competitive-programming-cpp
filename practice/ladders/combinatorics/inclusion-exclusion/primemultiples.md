@@ -19,7 +19,34 @@ This is the textbook inclusion-exclusion problem for contests:
 
 It is the right first anchor for this topic because the alternating-sign logic is completely exposed.
 
-## Key Idea
+## Recognition Cue
+
+Reach for inclusion-exclusion when:
+
+- the question is "divisible by at least one of these small-set properties"
+- each subset intersection is easy to count
+- the number of properties is small enough to enumerate subsets
+
+The strongest smell is:
+
+- "count integers in `[1, n]` divisible by at least one value from a small list"
+
+That is nearly the canonical `PIE + subset lcm/product` pattern.
+
+## Problem-Specific Transformation
+
+The statement can be rewritten as a union of divisibility sets:
+
+- one set per prime divisor
+
+Then the problem becomes:
+
+- count one subset intersection at a time
+- alternate signs by subset parity
+
+Because the inputs are distinct primes, every subset lcm is just the product, so the only real implementation detail left is overflow-safe multiplication.
+
+## Core Idea
 
 For each prime `a[i]`, define the set:
 

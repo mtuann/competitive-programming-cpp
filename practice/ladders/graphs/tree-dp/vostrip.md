@@ -14,7 +14,35 @@
 
 This is a great tree problem because the final solution is much simpler than it first looks. Instead of building the paths directly, you only need to understand what must happen locally at each vertex.
 
-## Key Idea
+## Recognition Cue
+
+Reach for local degree-balancing on a tree when:
+
+- the input gives required path usages on edges
+- the final object is a set of simple paths
+- direct construction of all paths looks messy
+- each vertex only needs to know how many incident path copies can be paired internally
+
+The strongest smell is:
+
+- "minimum number of paths realizing edge-usage counts on a tree"
+
+That often means count endpoints first and divide by two, instead of constructing paths directly.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- each edge with count `c` contributes `c` path copies through that incidence
+- at one vertex, incident copies are paired whenever they continue through different edges
+
+So the hard global path-cover problem becomes:
+
+- local pairing and leftover counting at each vertex
+
+Those leftovers are exactly path endpoints, which makes the final answer one global endpoint count.
+
+## Core Idea
 
 Each tour is a simple path on the tree. Every time a path uses an edge, that edge count decreases by `1`.
 

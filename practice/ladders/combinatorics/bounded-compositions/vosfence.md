@@ -20,7 +20,38 @@ This is a nice example of splitting one messy counting problem into two much cle
 
 The final answer is the product of those two counts, summed over all possible skeleton transition counts.
 
-## Key Idea
+## Recognition Cue
+
+Reach for a decomposition like this when:
+
+- one color or symbol behaves like separators or gaps
+- adjacency constraints can be described on the non-separator skeleton first
+- after fixing that skeleton, the leftover placements become bounded compositions
+
+The strongest smell is:
+
+- "count strings/colorings under both adjacency rules and maximum-run rules"
+
+That often means split the structure into:
+
+- a core sequence
+- and bounded fillers between its parts
+
+## Problem-Specific Transformation
+
+The raw fence-coloring statement is messy because all three colors interact.
+
+The reusable rewrite is:
+
+- first ignore white and count only the `B/R` skeleton
+- then reinsert white runs into the gaps
+
+That turns one tangled counting problem into two smaller ones:
+
+- skeleton counting by run structure
+- bounded gap counting by DP / stars-and-bars-with-caps
+
+## Core Idea
 
 Let the non-white sequence be the `B/R` skeleton first.
 

@@ -16,6 +16,38 @@ This problem looks like an upper-envelope or segment-tree problem at first, but 
 
 That turns a scary `max over all k and all x in [L, R]` into three smaller max queries.
 
+## Recognition Cue
+
+Reach for this decomposition when:
+
+- each candidate function is concave
+- a query asks for the maximum over one interval
+- the interval endpoints live on a small grid or can be heavily preprocessed
+
+The strongest smell is:
+
+- "maximum of many downward parabolas over many ranges"
+
+That often means the maximum of one parabola on `[L, R]` is determined only by:
+
+- the left endpoint
+- the right endpoint
+- or the vertex if it lies inside
+
+## Problem-Specific Transformation
+
+The raw envelope-looking problem is rewritten as:
+
+- classify each parabola by whether its vertex lies left of `L`, inside `[L, R]`, or right of `R`
+
+Then one huge max query becomes three independent structures:
+
+- best value at `L` from left-vertex parabolas
+- best value at `R` from right-vertex parabolas
+- best peak among interior vertices
+
+That is the key simplification that removes the need for a heavier continuous-geometry structure.
+
 ## Core Idea
 
 For one parabola `f(x) = ax^2 + bx + c` with `a < 0`, let:

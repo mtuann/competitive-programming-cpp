@@ -14,6 +14,34 @@
 
 This is a good example of turning an infinite-process story into an exact density formula. The update rule looks dynamic, but the final color of lamp `x` depends only on the last button whose number divides `x`.
 
+## Recognition Cue
+
+Reach for arithmetic-density reasoning when:
+
+- the domain is effectively infinite
+- direct simulation is impossible
+- the final state of one position depends only on divisibility by a sequence of numbers
+- pairwise coprime structure is present and looks exploitable
+
+The strongest smell is:
+
+- "after infinitely many or very many overwrites, what fraction ends in each color?"
+
+That often means the real object is a number-theory probability or density formula, not a simulation.
+
+## Problem-Specific Transformation
+
+The lamp story is rewritten as:
+
+- lamp `x` ends with the color of the last pressed button whose number divides `x`
+
+So the whole process becomes a divisibility filter over the positive integers. Because the `p_i` are pairwise coprime, the density for one final color factors cleanly into:
+
+- divisible by `p_i`
+- not divisible by any later `p_j`
+
+That reduces the dynamic process to one exact product formula plus big-fraction bookkeeping.
+
 ## Core Idea
 
 Let `p_i` be the number on button `i`, pressed in order.

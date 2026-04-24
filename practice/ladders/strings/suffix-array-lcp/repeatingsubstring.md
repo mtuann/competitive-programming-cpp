@@ -21,7 +21,36 @@ The brute-force question is about substrings, but the exact structure lives on s
 
 So the problem is a direct drill on the standard suffix-array workflow, not a disguised application.
 
-## Key Idea
+## Recognition Cue
+
+Reach for `suffix array + LCP` when:
+
+- the question is about repeated substrings
+- the answer depends on longest common prefixes of suffixes
+- exact lexicographic suffix order is useful beyond one simple equality test
+
+The strongest smell is:
+
+- "longest substring that appears at least twice"
+
+That usually means the answer is a maximum over adjacent LCP values after sorting suffixes.
+
+## Problem-Specific Transformation
+
+The substring question is rewritten as:
+
+- every substring is a prefix of some suffix
+- repeated substring = common prefix of at least two suffixes
+
+So the whole task becomes:
+
+- sort suffixes
+- measure adjacent common prefixes
+- take the maximum
+
+That is why suffix order, not ad hoc substring hashing, is the main abstraction here.
+
+## Core Idea
 
 Sort all suffixes lexicographically and store their starting indices in the suffix array `sa`.
 

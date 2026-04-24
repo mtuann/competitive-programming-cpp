@@ -19,7 +19,34 @@ This is the canonical first stars-and-bars problem in contest form:
 
 It is a strong first anchor for counting basics because the whole solution depends on describing the counted object correctly.
 
-## Key Idea
+## Recognition Cue
+
+Reach for stars and bars when:
+
+- identical items are distributed into ordered bins
+- every bin may receive `0` or more items
+- the only global constraint is the total sum
+
+The strongest smell is:
+
+- "count nonnegative integer solutions to `x1 + ... + xn = m`"
+
+That is almost the standard stars-and-bars sentence.
+
+## Problem-Specific Transformation
+
+The apple story disappears immediately:
+
+- apples = stars
+- boundaries between children = bars
+
+So the whole problem becomes:
+
+- choose positions for `n - 1` bars among `m + n - 1` total slots
+
+After that, the only extra contest layer is computing the resulting binomial coefficient modulo a prime.
+
+## Core Idea
 
 We want the number of nonnegative integer solutions to:
 

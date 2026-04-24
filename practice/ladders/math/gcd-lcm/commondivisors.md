@@ -20,7 +20,38 @@ The useful shift is:
 
 That turns a pair problem into a divisor-frequency problem.
 
-## Key Idea
+## Recognition Cue
+
+Reach for divisor-frequency scanning when:
+
+- the target is the largest gcd achievable by some subset or pair
+- pairwise checking is too expensive
+- the input values are bounded enough for a multiples sweep
+
+The strongest smell is:
+
+- "find the maximum gcd over some pair"
+
+That often means: test candidate divisors, not candidate pairs.
+
+## Problem-Specific Transformation
+
+The problem is rewritten from:
+
+- "which pair gives the best gcd?"
+
+to:
+
+- "for which divisor `d` do at least two numbers belong to the multiples set of `d`?"
+
+That changes the main loop completely:
+
+- scan divisors downward
+- count multiples upward
+
+So the solution is driven by divisibility structure, not explicit gcd computations on pairs.
+
+## Core Idea
 
 Suppose some answer value is `d`.
 

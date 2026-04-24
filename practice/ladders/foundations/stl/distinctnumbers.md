@@ -19,7 +19,35 @@ This is a great first STL note because the whole problem is smaller than the too
 
 That is exactly the kind of decision basic STL fluency should make feel natural.
 
-## Key Idea
+## Recognition Cue
+
+Reach for `sort + unique` when:
+
+- you only need the number of distinct values
+- original order is irrelevant
+- duplicates are defined by plain value equality
+
+The strongest smell is:
+
+- "count how many different numbers appear"
+
+That is often easier with one sorted vector pass than with a heavier container.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- sort values so equal ones become consecutive
+- compress each equal block to one representative
+
+So the problem becomes:
+
+- one sorting pass
+- one deduplication pass
+
+That turns the whole task into a small STL workflow exercise rather than custom counting logic.
+
+## Core Idea
 
 One clean solution is:
 

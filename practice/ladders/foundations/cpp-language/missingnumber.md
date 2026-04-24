@@ -24,7 +24,33 @@ It lets you practice the beginner loop cleanly:
 
 If this problem still feels noisy, it usually means the local C++ workflow needs a little more repetition before harder topics.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this arithmetic-sum pattern when:
+
+- the values should be exactly one complete range
+- exactly one value is missing
+- order does not matter
+- you want the smallest possible implementation surface
+
+The strongest smell is:
+
+- "numbers from `1..n`, one missing"
+
+That should suggest comparing an expected total against the observed total before using heavier containers.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- expected sum of `1..n`
+- minus actual sum of the `n-1` given values
+
+So the problem stops being about searching an array and becomes one running-total identity.
+
+That is why it is such a good early workflow note: the algorithm is trivial, but type choice and clean I/O still matter.
+
+## Core Idea
 
 The numbers should be exactly:
 

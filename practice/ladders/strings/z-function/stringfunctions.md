@@ -13,7 +13,29 @@
 
 This is a great bridge problem between the `Z` viewpoint and the `KMP / prefix-function` viewpoint. The task is not hidden inside a bigger application, so you can focus directly on what each array means and how the linear invariants differ.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this diagnostic note when:
+
+- you want to compare `Z` and `prefix-function` on the same string
+- the value is in understanding what each array means, not in one outer application
+
+The strongest smell is:
+
+- "compute both arrays for the same string"
+
+That is a direct chance to compare the two linear invariants side by side.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as two independent primitives:
+
+- compute the Z-array
+- compute the prefix-function
+
+So the problem is not about solving a higher-level task. It is about making sure you can implement and interpret both arrays correctly, under the same input and output conventions.
+
+## Core Idea
 
 The problem asks for two arrays on the same string:
 

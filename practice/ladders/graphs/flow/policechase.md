@@ -21,7 +21,34 @@ That is exactly where max-flow/min-cut becomes more than an algorithm:
 - the residual graph reveals the cut
 - the cut is the object the statement actually wants
 
-## Key Idea
+## Recognition Cue
+
+Reach for max-flow/min-cut duality when:
+
+- the statement asks for a minimum set of edges to remove
+- disconnecting source from sink is the actual goal
+- every removed edge has uniform or explicit capacity cost
+
+The strongest smell is:
+
+- "remove the fewest streets so node `1` cannot reach node `n`"
+
+That is the classic min-cut question hiding behind a flow computation.
+
+## Problem-Specific Transformation
+
+The street-blocking story is rewritten as:
+
+- give every street unit capacity
+- compute the max flow
+- then extract a cut certificate from the residual graph
+
+So the problem is not to invent the cut directly. It is:
+
+- solve the dual flow problem first
+- read the desired answer from residual reachability
+
+## Core Idea
 
 Each undirected street can be closed at most once, so give every street capacity `1`.
 

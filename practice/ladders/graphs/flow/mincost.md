@@ -14,7 +14,37 @@
 
 This is the standard min-cost flow pattern with one extra responsibility: you must also reconstruct an explicit transportation plan on the original undirected edges.
 
-## Key Idea
+## Recognition Cue
+
+Reach for min-cost flow when:
+
+- you must send an exact amount of flow
+- capacities and costs both matter
+- local greedy shipment choices are not obviously safe
+
+The strongest smell is:
+
+- "send exactly `k` units with minimum total cost"
+
+That is usually not pure max flow and not shortest paths alone. It is min-cost flow.
+
+## Problem-Specific Transformation
+
+The transport story is rewritten as:
+
+- each road becomes residual-network edges with capacity and cost
+- the goal is no longer route planning by hand, but repeated cheapest augmenting paths
+
+Then the extra judge requirement is layered on top:
+
+- after the optimal flow is found, recover the net direction on each original undirected road
+
+So the task becomes:
+
+- standard min-cost flow core
+- plus one reconstruction step on original edges
+
+## Core Idea
 
 Model each undirected road `(u, v)` with capacity `d` and cost `c` as two directed edges:
 

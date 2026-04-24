@@ -22,6 +22,35 @@ The query types look close to standard HLD:
 
 But the reverse operation does **not** just flip a direction flag on an Euler interval. It changes which value belongs to which vertex along the path.
 
+## Recognition Cue
+
+Reach for sequence-aware path structures when:
+
+- path queries ask for min/max aggregates
+- but updates actually reorder the values along the path
+- a plain segment-tree aggregate on HLD order cannot represent the update faithfully
+
+The strongest smell is:
+
+- "reverse the sequence of values along a tree path"
+
+That is stronger than a normal lazy tag. It means the path must be treated as an ordered sequence, not just a set of endpoints.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- HLD gives the path decomposition into chain intervals
+- each chain interval is really one mutable sequence fragment
+
+So the task becomes:
+
+- extract the path in true order
+- perform one sequence reversal
+- write the pieces back
+
+That is why an implicit-treap layer is needed on top of the tree decomposition.
+
 ## Core Idea
 
 Decompose the tree path into heavy-chain intervals.

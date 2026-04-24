@@ -21,7 +21,36 @@ The code is tiny, but the real lesson is bigger:
 
 That is exactly the mindset this ladder is trying to build.
 
-## Key Idea
+## Recognition Cue
+
+Reach for this one-pass greedy repair when:
+
+- you scan left to right
+- each new position only needs to satisfy one invariant against the previous repaired prefix
+- only increases are allowed
+- choosing anything larger than the minimum legal repair would only add wasted cost
+
+The strongest smell is:
+
+- "minimum increments to make the array nondecreasing"
+
+That usually means the repaired prefix itself is the only state you need.
+
+## Problem-Specific Transformation
+
+The statement sounds like many small increment operations, but the reusable rewrite is:
+
+- forget individual `+1` moves
+- ask what the current position must become in any valid repaired prefix
+
+That collapses the problem to:
+
+- keep the smallest legal ending value of the repaired prefix
+- add exactly the gap when the next value is too small
+
+So the algorithm is driven by one invariant, not by explicit simulation of increments.
+
+## Core Idea
 
 Let `fixed[i]` be the value of position `i` after we repair the array.
 

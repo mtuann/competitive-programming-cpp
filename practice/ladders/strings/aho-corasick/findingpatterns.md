@@ -20,7 +20,34 @@ This is the textbook first Aho-Corasick problem:
 
 That makes it perfect for learning the automaton itself before moving on to heavier variants like occurrence counting or automaton DP.
 
-## Key Idea
+## Recognition Cue
+
+Reach for Aho-Corasick when:
+
+- there is one long text
+- there are many patterns
+- matching each pattern independently would repeat the same text scan too much
+
+The strongest smell is:
+
+- "for each pattern, does it appear in the text at least once?"
+
+That is exactly the many-patterns-against-one-text use case of the automaton.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- trie over all patterns
+- failure links for suffix fallback
+- one text scan that visits automaton states
+
+Then the per-pattern yes/no answers are no longer independent scans. They come from:
+
+- how often each automaton state is visited
+- propagated upward through failure links
+
+## Core Idea
 
 Insert all patterns into a trie and remember the terminal node of each pattern.
 

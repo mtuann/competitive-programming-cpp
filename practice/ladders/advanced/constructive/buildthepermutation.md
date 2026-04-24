@@ -24,7 +24,35 @@ That turns the whole problem into:
 - one small case split
 - one explicit construction
 
-## Key Idea
+## Recognition Cue
+
+Reach for a constructive alternating pattern when:
+
+- the statement asks for exact counts of local peaks and valleys
+- the objects are permutations or sequences where local structure alternates naturally
+- brute-force search is hopeless, but the local feature itself is easy to reason about
+
+The strongest smell is:
+
+- "exactly `a` local maxima and `b` local minima"
+
+That usually means the real object is one alternating core, not a random full permutation.
+
+## Problem-Specific Transformation
+
+The permutation story collapses to:
+
+- decide whether an alternating pattern with the requested numbers of extrema is even possible
+- build only the short prefix or core that creates all requested extrema
+- place the leftover values in a monotone tail so no extra extrema appear
+
+So the problem is not "search for a permutation." It is:
+
+- feasibility test
+- core construction
+- safe tail attachment
+
+## Core Idea
 
 Two facts control the whole problem.
 

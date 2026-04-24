@@ -16,6 +16,35 @@ This is a classic “read the guarantee carefully” problem.
 
 If you ignore the special promise about two coins in the starting state, the problem looks like a wide constructive search on an infinite grid. The accepted-style solution in this repo becomes small only because it uses that promise directly.
 
+## Recognition Cue
+
+Reach for this kind of constructive reduction when:
+
+- the statement contains a strong promise that looks almost too specific
+- a naive search space is huge, but one small invariant substructure might stay fixed
+- the intended solution seems to depend more on exploiting the promise than on generic search
+
+The strongest smell here is:
+
+- "two special coins" plus acceptance up to translation
+
+That is a signal to search for a fixed common core and isolate only a very small movable boundary.
+
+## Problem-Specific Transformation
+
+The raw problem looks like a large reconfiguration search on the whole board.
+
+The reusable rewrite is:
+
+- find a translated target where `N - 2` coins can remain fixed
+- treat those fixed coins as the invariant core
+- search only the state graph of the two remaining free coins
+
+So the enormous global search collapses to:
+
+- promise-driven core matching
+- tiny state BFS for the free part
+
 ## Core Idea
 
 The first repo version was wrong because it assumed:

@@ -16,6 +16,37 @@ This is a very good “DP hidden inside a story problem” exercise.
 
 At first glance it looks like a weighing puzzle or information-theory problem. The real structure is a minimax decision tree where every comparison pivot has a non-uniform price.
 
+## Recognition Cue
+
+Reach for minimax DP on a decision tree when:
+
+- each question partitions the remaining answer range into branches
+- the objective is worst-case total cost, not expected cost
+- different questions have different prices
+- the statement looks like a guessing game or measuring puzzle
+
+The strongest smell is:
+
+- "minimum worst-case total cost to identify one hidden value"
+
+That usually means states are intervals and transitions are chosen questions.
+
+## Problem-Specific Transformation
+
+The weighing story is rewritten as:
+
+- each chosen target `T` is one ternary comparison question
+- asking that question costs `cost(T)`
+- after the answer, the remaining candidate set is one sub-interval
+
+So the whole problem becomes:
+
+- choose pivots
+- pay their balanced-ternary cost
+- minimize the worst-case future budget
+
+That is why the right state is not one current weight configuration, but an interval budget DP.
+
 ## Core Idea
 
 One weighing can place powers of `3` on both sides, so any integer pivot `T` can be written in balanced ternary:

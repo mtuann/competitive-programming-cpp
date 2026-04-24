@@ -22,6 +22,33 @@ The statement is about envelopes and parity, but the accepted reduction is:
 
 So the chosen envelopes must form a forest.
 
+## Recognition Cue
+
+Reach for this kind of reduction when:
+
+- the statement talks about parity or xor on chosen subsets
+- "bad subset" means some nonempty chosen family has total xor `0`
+- each item naturally touches two labels or endpoints
+
+The strongest smell is:
+
+- subset parity over pairs often becomes cycle-freeness in a graph model
+
+## Problem-Specific Transformation
+
+The envelope story is rewritten as:
+
+- one envelope = one undirected edge between two coin types
+- a bad chosen subset = xor-sum `0`
+
+For edge-incidence vectors over `GF(2)`, xor-sum `0` means every vertex has even degree, which is exactly the graph-language signal for a cycle / Eulerian subgraph.
+
+So the original constraint becomes:
+
+- the chosen envelopes must stay acyclic
+
+Then the extra "at most one from each consecutive pair" rule becomes a partition-side constraint on top of forest independence.
+
 ## Core Idea
 
 For an envelope containing coin types `u` and `v`:

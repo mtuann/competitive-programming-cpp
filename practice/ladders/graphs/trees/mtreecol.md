@@ -26,6 +26,37 @@ So the real task is:
 - find the best linear extension of a rooted tree
 - minimize the weighted sum of completion times
 
+## Recognition Cue
+
+Reach for scheduling-on-a-tree reductions when:
+
+- the tree only imposes ancestor-before-descendant precedence
+- every node has a weight and one unit processing time
+- the objective is a weighted completion-time sum
+
+The strongest smell is:
+
+- "color/process nodes only after their parent, minimize weighted finish times"
+
+That usually means precedence scheduling, not classic subtree DP.
+
+## Problem-Specific Transformation
+
+The rooted-tree statement is rewritten as:
+
+- each rooted component is a schedulable block
+- choose which available block to process next
+
+Then the main question becomes:
+
+- which block should go earlier in the linear extension?
+
+The pairwise-swap analysis answers that with one density:
+
+- `W(X) / S(X)`
+
+So the tree is only the source of precedence constraints; the real engine is greedy scheduling plus contractions.
+
 ## Core Idea
 
 At any moment, think of several already-contracted components hanging under the root.

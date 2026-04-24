@@ -19,7 +19,35 @@ This is one of the cleanest first tree-DP matchings:
 
 It is a good checkpoint for whether your tree states are actually minimal.
 
-## Key Idea
+## Recognition Cue
+
+Reach for two-state tree DP when:
+
+- the graph is a tree
+- the global choice is a set of edges or vertices with local exclusivity
+- rooting the tree makes child subproblems independent except for one bit of parent interaction
+
+The strongest smell is:
+
+- "maximum matching on a tree"
+
+That usually means one state for "current node is free downward" and one state for "current node uses exactly one child edge."
+
+## Problem-Specific Transformation
+
+The matching story is rewritten as:
+
+- root the tree
+- for every node, summarize its whole subtree by whether it matches a child or not
+
+That removes the global matching language and turns the task into:
+
+- combine independent child subtrees
+- try one special child if the parent wants to match downward
+
+So the hard part is not matching theory in general; it is choosing the smallest rooted states that encode the local exclusion correctly.
+
+## Core Idea
 
 Root the tree anywhere, for example at node `1`.
 

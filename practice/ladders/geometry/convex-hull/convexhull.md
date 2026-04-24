@@ -19,7 +19,34 @@ This is the canonical first full hull-construction problem:
 
 That last point matters here: CSES wants **all** points on the hull, not only the extreme corners.
 
-## Key Idea
+## Recognition Cue
+
+Reach for monotone-chain hull construction when:
+
+- you need the full convex hull of a static point set
+- the input is not already ordered around the boundary
+- orientation tests are the core primitive
+- the judge's collinear-boundary policy matters
+
+The strongest smell is:
+
+- "construct the convex hull and print its boundary points"
+
+That usually means `sort + lower hull + upper hull`.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- sort points lexicographically
+- build one lower boundary and one upper boundary
+- choose the pop policy that matches the judge's treatment of collinear boundary points
+
+So the problem is not "global geometry search." It is:
+
+- local orientation filtering under one chosen boundary policy
+
+## Core Idea
 
 Sort all points lexicographically by `(x, y)` and build the hull in two passes:
 

@@ -22,7 +22,32 @@ then d(x) = (e1 + 1)(e2 + 1)...(ek + 1)
 
 The rest is deciding how to answer many queries efficiently.
 
-## Key Idea
+## Recognition Cue
+
+Reach for a divisor sieve when:
+
+- many independent queries ask about one arithmetic function on bounded values
+- the function can be described by "every divisor contributes to its multiples"
+- per-query factorization would repeat the same work too often
+
+The strongest smell is:
+
+- "up to `10^5` queries, each value up to `10^6`"
+
+That usually means one precompute pass is cheaper than repeated number-theory work.
+
+## Problem-Specific Transformation
+
+The statement is about the divisor count of one queried number at a time. The reusable rewrite is:
+
+- precompute divisor counts for every value up to the maximum
+
+Then the problem is no longer many small number-theory tasks. It becomes:
+
+- one sieve-like pass over divisors
+- then pure table lookup
+
+## Core Idea
 
 Because every query value satisfies `x <= 10^6`, precompute the divisor count for every value once.
 

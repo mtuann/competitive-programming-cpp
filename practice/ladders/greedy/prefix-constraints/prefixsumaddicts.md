@@ -21,7 +21,35 @@ That shifts the mindset to:
 - check whether they are monotone
 - verify that the unknown first block still has enough room to fit
 
-## Key Idea
+## Recognition Cue
+
+Reach for greedy feasibility on prefix constraints when:
+
+- a sorted hidden sequence is partially described by prefix sums
+- only a suffix of those prefix sums is known
+- the task is yes/no, not explicit reconstruction
+
+The strongest smell is:
+
+- "known suffix of prefix sums of a sorted array"
+
+That usually means convert the known part to forced differences, then check whether the unknown prefix could still exist.
+
+## Problem-Specific Transformation
+
+The statement is rewritten as:
+
+- consecutive known prefix sums determine the tail values exactly
+- the unknown front block only has one aggregate constraint: its total sum
+
+So the task becomes:
+
+- check that the forced tail is nondecreasing
+- check that the first block can fit under the next forced value
+
+That is a feasibility argument, not a reconstruction problem.
+
+## Core Idea
 
 Let the given values be:
 
