@@ -35,7 +35,7 @@ Each pack should say:
 
 Good mixed-round usage looks like this:
 
-1. learn a topic in its own ladder first
+1. learn the topic in `topics/`, then stabilize it in its ladder
 2. use a mixed round to test retrieval and switching
 3. go back to the weakest topic family afterward
 
@@ -50,9 +50,10 @@ Default operating loop:
 
 When one slot exposes a weak point, do not guess where to go next:
 
-- weak topic understanding -> [Practice hub](../README.md) or the matching ladder
+- weak topic understanding -> the matching tutorial in [topics/](../../topics/README.md), then the matching ladder
 - weak problem selection -> [Problem Finder](../../docs/problem-finder.md)
 - weak retrieval of invariant/template -> [Notebook](../../notebook/README.md) or [Template Library](../../template-library.md)
+- weak implementation trust or local-testing discipline -> [Build Kit](../../docs/build-kit.md)
 - weak contest behavior -> [Contest Playbooks](../contest-playbooks/README.md)
 
 Minimal pack contract:

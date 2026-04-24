@@ -7,8 +7,8 @@
     solve targeted problems, and come back for repetition without losing the connection between concept and use.
   </p>
   <div class="hero-actions">
-    <a class="md-button md-button--primary" href="../docs/problem-finder/">Open problem finder</a>
-    <a class="md-button" href="ladders/">Open ladders</a>
+    <a class="md-button md-button--primary" href="ladders/">Open ladders</a>
+    <a class="md-button" href="../docs/problem-finder/">Open problem finder</a>
     <a class="md-button" href="mixed-rounds/">Mixed rounds (later)</a>
     <a class="md-button" href="contest-playbooks/">Contest playbooks (later)</a>
   </div>
@@ -51,12 +51,24 @@
 
 </div>
 
+## The Default Practice Loop
+
+Use the repo layers in this order whenever possible:
+
+1. learn the idea in `topics/`
+2. stay in one family through [Ladders](ladders/README.md)
+3. compare against one solved note
+4. reopen [Notebook](../notebook/README.md) or [Build Kit](../docs/build-kit.md) only if retrieval or implementation is the bottleneck
+5. move to [Mixed Rounds](mixed-rounds/README.md) or [Contest Playbooks](contest-playbooks/README.md) only after the family is already familiar
+
+That is the default `topic -> ladder -> note -> retrieve -> switch` loop of the repo.
+
 ## Choose By Bottleneck
 
 | If your bottleneck is... | Best first door | Then |
 | --- | --- | --- |
 | I need the next good problems | [Problem Finder](../docs/problem-finder.md) | the matching ladder or playbook |
-| I am still learning one topic | [Ladders](ladders/README.md) | one topic page in `topics/` |
+| I am still learning one topic | the matching topic page in [topics/](../topics/README.md) | [Ladders](ladders/README.md) |
 | I know several topics but switch badly | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) |
 | I care about one contest format now | [Contest Playbooks](contest-playbooks/README.md) | [Problem Finder](../docs/problem-finder.md) |
 
@@ -86,7 +98,8 @@
 
 ## After One Practice Session
 
-- weak topic recognition -> reopen [Topics](../topics/README.md)
+- weak topic recognition -> reopen the matching tutorial in [Topics](../topics/README.md)
+- weak family-level repetition -> stay inside [Ladders](ladders/README.md) for one more note set
 - weak implementation trust -> reopen [Build Kit](../docs/build-kit.md)
 - weak retrieval under pressure -> reopen [Notebook](../notebook/README.md)
 - weak contest-time behavior -> reopen [Contest Playbooks](contest-playbooks/README.md)

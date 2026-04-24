@@ -1,89 +1,91 @@
 # Practice Ladders
 
-Practice ladders are the main training path in this repo.
+Practice ladders are the `focused practice` layer of this repo.
 
-Use a ladder when you want to stay inside one topic long enough to build recognition, not just exposure.
+Use a ladder when you already know the rough idea and want enough same-family reps to make recognition and execution stable.
 
-## How To Read A Ladder
+## What This Layer Is For
 
-- start with one subtopic
-- solve the warm-up style notes first
-- write or adapt one clean solution
-- move on only after you can explain the core idea back to yourself
+Use ladders when:
 
-## Current Ladder Examples
+- you want to stay inside one subtopic long enough to stop guessing
+- the topic page made sense, but you still need deliberate repetition
+- you want a small ordered progression instead of a random judge list
 
-- [Foundations -> C++ Language](foundations/cpp-language/README.md)
+Do **not** use ladders as the first door when:
+
+- syntax or local workflow is still the bottleneck
+  next door: [Start Here](../../docs/start-here.md)
+- you cannot yet explain why the technique works
+  next door: [Learning Areas](../../topics/README.md)
+- you want contest-style switching across several families
+  next door: [Mixed Rounds](../mixed-rounds/README.md)
+
+## The Default Ladder Loop
+
+The repo-wide default loop is:
+
+1. read one topic page in `topics/`
+2. open the matching ladder here
+3. solve one anchored repo note
+4. compare your solution against the note's `Recognition Cue` and `Problem-Specific Transformation`
+5. reopen [Notebook](../../notebook/README.md) or [Build Kit](../../docs/build-kit.md) only if retrieval or implementation is the weak point
+6. move to [Mixed Rounds](../mixed-rounds/README.md) or a track playbook only after the family feels stable
+
+## Choose A Ladder
+
+| If you need reps in... | Start with | Representative first note |
+| --- | --- | --- |
+| C++ workflow and first contest habits | [Foundations -> C++ Language](foundations/cpp-language/README.md) | [Weird Algorithm](foundations/cpp-language/weirdalgorithm.md) |
+| bread-and-butter array patterns | [Foundations -> Prefix Sums](foundations/prefix-sums/README.md) | [Static Range Sum Queries](foundations/prefix-sums/staticrangesumqueries.md) |
+| ordered scans and greedy matching | [Foundations -> Two Pointers](foundations/two-pointers/README.md) | [Apartments](foundations/two-pointers/apartments.md) |
+| connectivity and offline unions | [Data Structures -> DSU](data-structures/dsu/README.md) | [C11XU](data-structures/dsu/c11xu.md) |
+| range queries and updates | [Data Structures -> Fenwick Tree](data-structures/fenwick-tree/README.md) | [CVP00001](data-structures/fenwick-tree/cvp00001.md) |
+| state design over subsets or sequences | [DP -> Bitmask DP](dp/bitmask-dp/README.md) | [VMMARBLE](dp/bitmask-dp/vmmarble.md) |
+| trees, paths, and graph structure | [Graphs -> LCA](graphs/lca/README.md) or [Graphs -> Tree DP](graphs/tree-dp/README.md) | [Company Queries II](graphs/lca/companyqueries2.md) or [VOSTRIP](graphs/tree-dp/vostrip.md) |
+| string matching and reuse of prefix structure | [Strings -> KMP](strings/kmp/README.md) or [Strings -> Trie](strings/trie/README.md) | [String Matching](strings/kmp/stringmatching.md) or [Word Combinations](strings/trie/wordcombinations.md) |
+| geometric predicates and polygon basics | [Geometry -> Vector And Orientation](geometry/vector-orientation/README.md) | [Point Location Test](geometry/vector-orientation/pointlocationtest.md) |
+| advanced modeling / olympiad-style construction | [Advanced -> Constructive](advanced/constructive/README.md) | [Build the Permutation](advanced/constructive/buildthepermutation.md) |
+
+## What To Do Inside One Ladder
+
+Use the same rhythm for every mature ladder:
+
+1. read the ladder page to see scope, entry gate, and nearby topics
+2. solve the first note with an honest no-notes attempt
+3. read only the note sections that reveal the transformation you missed
+4. write or clean one reusable solution
+5. move to the next note only after the cue and invariant feel transferable
+
+## Exit Doors
+
+When a ladder exposes a weakness, use the smallest next door:
+
+| If the problem is... | Reopen |
+| --- | --- |
+| I still do not trust the idea | the matching tutorial in [topics/](../../topics/README.md) |
+| I know the idea but my code drifts | [Build Kit](../../docs/build-kit.md) |
+| I know the family and need more reps | [Problem Finder](../../docs/problem-finder.md) |
+| I know several ladders and switch badly | [Mixed Rounds](../mixed-rounds/README.md) |
+| I am now training toward one format | [Contest Playbooks](../contest-playbooks/README.md) |
+
+## Representative Ladder Doors
+
 - [Foundations -> Sorting](foundations/sorting/README.md)
-- [Foundations -> Binary Search](foundations/binary-search/README.md)
-- [Foundations -> Prefix Sums](foundations/prefix-sums/README.md)
-- [Foundations -> Difference Arrays](foundations/difference-arrays/README.md)
-- [Foundations -> Two Pointers](foundations/two-pointers/README.md)
-- [Data Structures -> DSU](data-structures/dsu/README.md)
-- [Data Structures -> DSU -> C11XU](data-structures/dsu/c11xu.md)
-- [Data Structures -> Fenwick Tree -> CVP00001](data-structures/fenwick-tree/cvp00001.md)
-- [Data Structures -> Fenwick Tree](data-structures/fenwick-tree/README.md)
-- [Combinatorics -> Bounded Compositions -> VOSFENCE](combinatorics/bounded-compositions/vosfence.md)
-- [Combinatorics -> Lexicographic Enumeration -> VOITSORT](combinatorics/lexicographic-enumeration/voitsort.md)
-- [Combinatorics -> Counting Basics](combinatorics/counting-basics/README.md)
-- [Combinatorics -> Inclusion-Exclusion](combinatorics/inclusion-exclusion/README.md)
-- [Combinatorics -> Bounded Compositions](combinatorics/bounded-compositions/README.md)
-- [Combinatorics -> Lexicographic Enumeration](combinatorics/lexicographic-enumeration/README.md)
-- [DP -> Foundations](dp/foundations/README.md)
-- [DP -> Foundations -> VMSCALE](dp/foundations/vmscale.md)
-- [DP -> Knapsack Family](dp/knapsack-family/README.md)
-- [DP -> Bitmask DP](dp/bitmask-dp/README.md)
-- [DP -> Bitmask DP -> VMMARBLE](dp/bitmask-dp/vmmarble.md)
-- [DP -> Tree DP](dp/tree-dp/README.md)
-- [DP -> Digit DP](dp/digit-dp/README.md)
+- [Data Structures -> Segment Tree](data-structures/segment-tree/README.md)
 - [DP -> Interval DP](dp/interval-dp/README.md)
-- [DP -> Sliding Window](dp/sliding-window/README.md)
-- [Math -> FFT -> POST2](math/fft/post2.md)
-- [Math -> FFT](math/fft/README.md)
-- [Math -> GCD / LCM](math/gcd-lcm/README.md)
-- [Math -> GCD / LCM -> CRYPTKEY](math/gcd-lcm/cryptkey.md)
-- [Math -> Modular Arithmetic](math/modular-arithmetic/README.md)
-- [Math -> Number Theory Basics](math/number-theory-basics/README.md)
-- [Math -> Number Theory Basics -> LAMP](math/number-theory-basics/lamp.md)
-- [Graphs -> Graph Modeling](graphs/graph-modeling/README.md)
-- [Graphs -> BFS / DFS](graphs/bfs-dfs/README.md)
 - [Graphs -> Shortest Paths](graphs/shortest-paths/README.md)
-- [DP -> Sliding Window -> TFIELD](dp/sliding-window/tfield.md)
-- [Greedy -> Prefix Constraints -> Lemonade Line](greedy/prefix-constraints/lemonadeline.md)
-- [Greedy -> Prefix Constraints -> Prefix Sum Addicts](greedy/prefix-constraints/prefixsumaddicts.md)
-- [Greedy -> Prefix Constraints -> VODIVIDE](greedy/prefix-constraints/vodivide.md)
-- [Advanced -> Algorithm Engineering -> Minimum Euclidean Distance](advanced/algorithm-engineering/minimumeuclideandistance.md)
-- [Graphs -> Matching -> QBFLOWER](graphs/matching/qbflower.md)
-- [Graphs -> Flow -> FFLOW](graphs/flow/fflow.md)
-- [Graphs -> Flow -> MCQUERY](graphs/flow/mcquery.md)
-- [Graphs -> Flow -> MINCOST](graphs/flow/mincost.md)
-- [Graphs -> Flow -> Police Chase](graphs/flow/policechase.md)
-- [Graphs -> MST](graphs/mst/README.md)
-- [Graphs -> SCC / Toposort](graphs/scc-toposort/README.md)
-- [Graphs -> Trees](graphs/trees/README.md)
-- [Graphs -> Trees -> MTREECOL](graphs/trees/mtreecol.md)
-- [Graphs -> Trees -> VMWTREE](graphs/trees/vmwtree.md)
-- [Graphs -> LCA](graphs/lca/README.md)
-- [Graphs -> Shortest Paths -> QOS](graphs/shortest-paths/qos.md)
-- [Graphs -> Tree DP -> VOSTRIP](graphs/tree-dp/vostrip.md)
-- [Strings -> Hashing](strings/hashing/README.md)
-- [Strings -> KMP](strings/kmp/README.md)
-- [Strings -> Trie](strings/trie/README.md)
-- [Geometry -> Vector And Orientation](geometry/vector-orientation/README.md)
-- [Geometry -> Convex Hull](geometry/convex-hull/README.md)
-- [Geometry -> Sweep Line -> KINGDOMS](geometry/sweep-line/kingdoms.md)
-- [Geometry -> Sweep Line -> VOTELPH](geometry/sweep-line/votelph.md)
-- [Geometry -> Right Triangles](geometry/right-triangles/README.md)
-- [Geometry -> Right Triangles -> PRAVO](geometry/right-triangles/pravo.md)
-- [Greedy -> Prefix Constraints](greedy/prefix-constraints/README.md)
+- [Graphs -> Flow](graphs/flow/README.md)
+- [Strings -> Suffix Automaton](strings/suffix-automaton/README.md)
+- [Geometry -> Sweep Line](geometry/sweep-line/README.md)
 - [Advanced -> Randomized Algorithms](advanced/randomized-algorithms/README.md)
-- [Advanced -> Algorithm Engineering](advanced/algorithm-engineering/README.md)
-- [Advanced -> Constructive](advanced/constructive/README.md)
-- [Advanced -> Constructive -> Build the Permutation](advanced/constructive/buildthepermutation.md)
-- [Advanced -> Constructive -> VMCOINS](advanced/constructive/vmcoins.md)
-- [Advanced -> Complexity And Hardness](advanced/complexity-and-hardness/README.md)
-- [Advanced -> Approximation And Relaxation](advanced/approximation-and-relaxation/README.md)
-- [Advanced -> Optimization And Duality](advanced/optimization-and-duality/README.md)
-- [Advanced -> Contest Engineering](advanced/contest-engineering/README.md)
 
-As the repo grows, each subtopic should become a short progression rather than a flat list of links.
+## Ladder Contract
+
+Every mature ladder should make these things easy to answer:
+
+- what this subtopic is really for
+- which repo notes are the best first anchors
+- which topic page to reopen when the idea is still fuzzy
+- which template or notebook page helps when implementation is the weak point
+- where to go next after the ladder is no longer the bottleneck

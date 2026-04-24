@@ -25,9 +25,11 @@ Do **not** open this folder first if you are still learning core syntax or first
 
 Go to:
 
-- [Start Here](../../docs/start-here.md)
-- [Topic Maps](../../docs/topic-maps/index.md)
-- [Contest Engineering](../../topics/advanced/contest-engineering/README.md)
+- [Start Here](../../docs/start-here.md) if syntax or local workflow is still shaky
+- [Ladders](../ladders/README.md) if one topic family is still unstable
+- [Build Kit](../../docs/build-kit.md) if implementation trust or local testing is the real bottleneck
+- [Topic Maps](../../docs/topic-maps/index.md) if you need broader external study references
+- [Contest Engineering](../../topics/advanced/contest-engineering/README.md) if the issue is contest-time process rather than topic depth
 
 first.
 
@@ -53,8 +55,8 @@ Every mature playbook should route through the same repo layers:
 
 | Layer | Main job | Best shared doors |
 | --- | --- | --- |
-| `topics/` | teach the reusable idea | [Topic Maps](../../docs/topic-maps/index.md) |
-| `practice/ladders/` | sequence one subtopic on purpose | [Practice Hub](../README.md) |
+| `topics/` | teach the reusable idea | [Learning Areas](../../topics/README.md) |
+| `practice/ladders/` | sequence one subtopic on purpose | [Ladders](../ladders/README.md) |
 | `docs/problem-finder` | choose the next concrete problem set quickly | [Problem Finder](../../docs/problem-finder.md) |
 | `practice/mixed-rounds/` | retrieval and switching after topics are known | [Mixed Rounds](../mixed-rounds/README.md) |
 | `notebook/` | short contest-time recall | [Notebook](../../notebook/README.md), [Contest Checklist](../../notebook/contest-checklist.md) |

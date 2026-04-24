@@ -13,10 +13,24 @@ Use it when you need one of these instead:
 | If you are here because... | Start with | Then go next |
 | --- | --- | --- |
 | you are completely new | [Start Here](start-here.md) | [Foundations ladders](../practice/ladders/foundations/README.md) |
-| you know basics but your practice is inconsistent | [Practice hub](../practice/README.md) | [Problem Finder](problem-finder.md) |
-| you already know the weak topic | [Learning Areas](../topics/README.md) | the matching ladder + [Template Library](../template-library.md) |
+| you know basics but your practice is inconsistent | [Practice hub](../practice/README.md) | [Ladders](../practice/ladders/README.md) |
+| you already know the weak topic | [Learning Areas](../topics/README.md) | the matching ladder, then one repo note |
 | you want contest-style training | [Mixed Rounds](../practice/mixed-rounds/README.md) | [Contest Playbooks](../practice/contest-playbooks/README.md) |
 | you are debugging or implementing under pressure | [Build Kit](build-kit.md) | [Notebook](../notebook/README.md) |
+
+## Door Meanings
+
+Use the repo doors for different jobs:
+
+| Door | Main job | Open it when... |
+| --- | --- | --- |
+| [Topics](../topics/README.md) | teach the idea slowly and correctly | you still need the invariant, proof, or variant chooser |
+| [Ladders](../practice/ladders/README.md) | give focused same-family repetitions | the idea is roughly known but recognition is not yet stable |
+| one solved note in `practice/ladders/.../*.md` | show the statement-to-pattern transformation | you want to compare one real contest problem to the reusable family |
+| [Notebook](../notebook/README.md) | recall the invariant, trap, or nearest snippet fast | the topic is mostly known and retrieval is the bottleneck |
+| [Build Kit](build-kit.md) | route to workflows, templates, and checklists | implementation trust is weaker than topic understanding |
+| [Mixed Rounds](../practice/mixed-rounds/README.md) | test switching across known topics | breadth and retrieval are now the real bottleneck |
+| [Contest Playbooks](../practice/contest-playbooks/README.md) | train toward one format | your question is about performance under `ICPC`, `USACO`, or olympiad-style constraints |
 
 ## Route Shapes
 
@@ -25,7 +39,8 @@ Use it when you need one of these instead:
 1. [Start Here](start-here.md)
 2. [Foundations overview](../topics/foundations/README.md)
 3. [Foundations ladders](../practice/ladders/foundations/README.md)
-4. [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
+4. one first repo note inside the ladder
+5. [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
 
 Use this when syntax, local workflow, and first recognition cues are still the bottleneck.
 
@@ -36,7 +51,7 @@ Use this when syntax, local workflow, and first recognition cues are still the b
 3. one leaf topic page
 4. the matching ladder
 5. one repo note
-6. [Template Library](../template-library.md) only after the idea is trusted
+6. [Build Kit](build-kit.md) or [Notebook](../notebook/README.md) only after the idea is trusted
 
 Use this when you want depth before speed.
 
@@ -46,7 +61,7 @@ Use this when you want depth before speed.
 2. [Problem Finder](problem-finder.md)
 3. one ladder or one mixed round
 4. the matching topic page only when recognition is fuzzy
-5. [Notebook](../notebook/README.md) when retrieval becomes the bottleneck
+5. [Notebook](../notebook/README.md) or [Build Kit](build-kit.md) when retrieval or implementation becomes the bottleneck
 
 Use this when you already know some ideas and need more reps, not more taxonomy.
 
@@ -65,7 +80,7 @@ Use this when your question is no longer “what is this algorithm?” and is no
 | Your bottleneck | Best first door | Best second door |
 | --- | --- | --- |
 | weak C++ / compile / local loop | [Start Here](start-here.md) | [Build Kit](build-kit.md) |
-| weak topic recognition | [Learning Areas](../topics/README.md) | [Problem Finder](problem-finder.md) |
+| weak topic recognition | [Learning Areas](../topics/README.md) | [Ladders](../practice/ladders/README.md) or one anchored note |
 | weak retrieval during implementation | [Notebook](../notebook/README.md) | [Template Library](../template-library.md) |
 | weak problem selection | [Problem Finder](problem-finder.md) | [Practice hub](../practice/README.md) |
 | weak contest switching | [Mixed Rounds](../practice/mixed-rounds/README.md) | [Contest Playbooks](../practice/contest-playbooks/README.md) |
@@ -76,12 +91,13 @@ Use this when your question is no longer “what is this algorithm?” and is no
 When in doubt, fall back to this:
 
 1. learn one idea in `topics/`
-2. solve one anchored note in `practice/ladders/`
-3. reopen one reusable snippet in [Template Library](../template-library.md)
-4. compress the invariant in [Notebook](../notebook/README.md)
-5. return later through [Mixed Rounds](../practice/mixed-rounds/README.md)
+2. stay inside the matching ladder in `practice/ladders/`
+3. solve one anchored note there
+4. reopen one reusable snippet or workflow through [Build Kit](build-kit.md)
+5. compress the invariant in [Notebook](../notebook/README.md)
+6. return later through [Mixed Rounds](../practice/mixed-rounds/README.md)
 
-That is the repo's default `Learn -> Practice -> Retrieve -> Reuse` loop.
+That is the repo's default `Learn -> Practice -> Retrieve -> Reuse -> Switch` loop.
 
 ## Good Companion Doors
 

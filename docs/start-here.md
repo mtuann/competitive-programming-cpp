@@ -45,13 +45,19 @@ If you want one default route, use this:
 
 1. [Foundations overview](../topics/foundations/README.md)
 2. [Foundations ladders](../practice/ladders/foundations/README.md)
-3. [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
+3. one first repo note inside that ladder
+4. [Foundations cheatsheet](../notebook/foundations-cheatsheet.md) only after the note exposes a retrieval gap
 
 That route works because it gives you:
 
 - one teaching layer
 - one practice layer
+- one real problem anchor
 - one quick-reference layer
+
+This is the smallest version of the repo-wide loop:
+
+`topic -> ladder -> note -> cheatsheet/build kit`
 
 ## First 3 Pages
 
@@ -131,7 +137,8 @@ If the first week went well, use this exact next route:
 1. [Foundations ladders](../practice/ladders/foundations/README.md)
 2. [Data Structures overview](../topics/data-structures/README.md)
 3. [DSU](../topics/data-structures/dsu/README.md) or [Fenwick Tree](../topics/data-structures/fenwick-tree/README.md)
-4. [Practice hub](../practice/README.md) only after you want more than the foundations ladder
+4. the matching ladder and one anchored note
+5. [Practice hub](../practice/README.md) only after you want more than one ladder at a time
 
 If you want a broader chooser instead of that default handoff:
 
