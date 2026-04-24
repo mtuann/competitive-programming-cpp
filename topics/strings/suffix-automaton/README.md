@@ -337,6 +337,13 @@ $$
 (\mathrm{len}[v] - \mathrm{len}[\mathrm{link}[v]]).
 $$
 
+Why is this a true partition rather than a lucky counting trick?
+
+- each non-root state contributes exactly one substring for every length in its interval
+- no substring can belong to two different states, because a substring has exactly one `endpos` class
+
+So the intervals do not overlap across states at the level of represented substrings.
+
 ### Example 2: Why A Clone Appears
 
 Take:

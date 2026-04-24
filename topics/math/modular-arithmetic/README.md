@@ -572,6 +572,11 @@ There is also a very practical contest assumption hiding here:
 - if `MOD` is prime and `0 <= n < MOD`, then `1, 2, ..., n` are all nonzero modulo `MOD`
 - if `n >= MOD`, then `n!` is already divisible by `MOD`, so the naive factorial / inverse-factorial story needs more care
 
+Tiny anti-example:
+
+- modulo `5`, the value `C(5, 1)` is perfectly meaningful and equals `0`
+- but `fact[5] \equiv 0 \pmod 5`, so the naive table formula using `inv_fact[5]` is not even well-formed
+
 That is the point where Lucas-style reasoning or prime-power handling starts to matter.
 
 ### 5. Exponent Reduction Is Not Base Reduction

@@ -385,6 +385,49 @@ No fresh extension is needed.
 
 This is the whole reuse idea in miniature.
 
+One step later, at `i = 9`, we hit the other important branch.
+
+At that moment the active box is:
+
+$$
+[8, 10),
+$$
+
+so `i = 9` is still inside it. The mirrored position is:
+
+$$
+k = 9 - 8 = 1.
+$$
+
+Now:
+
+- `z[1] = 1`
+- `r - i = 1`
+
+so the inherited value touches the boundary exactly. We may seed:
+
+$$
+z[9] = 1,
+$$
+
+but now we must continue matching past `r`.
+
+Indeed:
+
+- `s[1] = a` matches `s[10] = a`
+- then `s[2] = b` does **not** match `s[11] = z`
+
+so the final answer is:
+
+$$
+z[9] = 2.
+$$
+
+This is the branch that most often gets misread in code:
+
+- inherit as much as the box guarantees
+- then keep extending if you exactly hit the right boundary
+
 ### Example 2: Pattern Matching By Concatenation
 
 Suppose:

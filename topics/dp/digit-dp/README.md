@@ -354,6 +354,22 @@ When `tight = 1`, the answer still depends on the exact remaining suffix of the 
 - caching only `tight = 0` is a very common safe default
 - it avoids subtle bugs when people reuse memo tables incorrectly
 
+For example, in a plain count up to `347`, both prefixes `1` and `2` immediately fall into the same state:
+
+$$
+dp(pos = 1,\ tight = 0).
+$$
+
+From there, each branch has exactly `100` free suffixes left, so memoizing that non-tight state is safe and useful.
+
+But the prefix `3` lands in:
+
+$$
+dp(pos = 1,\ tight = 1),
+$$
+
+which is different because the remaining suffix is still bounded by `47`.
+
 ## Complexity And Tradeoffs
 
 If the bound has `n` digits and the extra state has size `S`, then the state count is roughly:
@@ -430,6 +446,13 @@ This is the whole point of `tight`:
 - while tied, respect the bound digit
 - once smaller, count all free suffixes
 
+Two different prefixes can collapse into the same non-tight state immediately. In this toy count:
+
+- choosing first digit `1` gives `dp(1, 0)`
+- choosing first digit `2` also gives `dp(1, 0)`
+
+That shared state is exactly why the memo table saves work.
+
 ### Example 2: No Equal Adjacent Digits
 
 This is the core pattern from [Counting Numbers](../../../practice/ladders/dp/digit-dp/countingnumbers.md).
@@ -501,9 +524,45 @@ Correct handling is:
 - once we place `5`, switch `started` to `1`
 - only after that do adjacency checks use `prev`
 
+Now follow the all-zero path all the way:
+
+```text
+0 -> 0 -> 0 -> 0
+```
+
+At `pos == n`, that path represents the integer `0`.
+
+So:
+
+- if the problem counts numbers in `[0, x]`, this terminal state should return `1`
+- if the problem counts only positive integers, this terminal state should return `0`
+
 This one distinction explains a huge fraction of beginner bugs in digit DP.
 
-### Example 4: From `[0, x]` To `[L, R]`
+### Example 4: The Zero Path Is A Real Base Case
+
+Suppose we solve over 4 digits and the bound is large enough that the path
+
+```text
+0000
+```
+
+is legal.
+
+If the DP reaches:
+
+```text
+pos = 4, started = 0
+```
+
+then you must decide whether that means:
+
+- "we formed the integer `0`" -> return `1`
+- or "we never formed a positive number" -> return `0`
+
+That choice is not cosmetic. It is one of the core semantics of the problem statement.
+
+### Example 5: From `[0, x]` To `[L, R]`
 
 Suppose the problem asks for the number of valid integers in `[80, 325]`.
 

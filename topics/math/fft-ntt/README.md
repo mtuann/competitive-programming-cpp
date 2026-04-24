@@ -452,6 +452,50 @@ This is the whole algorithm in miniature:
 4. inverse-transform
 5. discard the padded tail
 
+### Example 1B: Difference Counting Needs A Reversal
+
+Suppose:
+
+```text
+A = {0, 2}
+B = {1, 2}
+```
+
+and we want counts of:
+
+$$
+a - b = d.
+$$
+
+Use frequency arrays over values `0..2`:
+
+```text
+f = [1, 0, 1]
+g = [0, 1, 1]
+```
+
+Reverse `g`:
+
+```text
+reverse(g) = [1, 1, 0].
+```
+
+Now convolve:
+
+```text
+[1, 0, 1] * [1, 1, 0] = [1, 1, 1, 1, 0].
+```
+
+If `M = 2` is the maximum original value, then coefficient `M + d` counts pairs with difference `d`.
+
+So:
+
+- coefficient `3` counts `d = 1`, giving the single pair `(2, 1)`
+- coefficient `2` counts `d = 0`, giving the single pair `(2, 2)`
+- coefficient `0` counts `d = -2`, giving the single pair `(0, 2)`
+
+The transform did not magically understand subtraction. The reversal is exactly what turned subtraction into coefficient alignment.
+
 ### Example 2: `POST2` And The Modeling Pipeline
 
 In [POST2](../../../practice/ladders/math/fft/post2.md), we want to count ordered triples `(i, j, k)` such that
@@ -560,6 +604,14 @@ Use this decision rule:
 - if there is no modulus and coefficient growth is moderate, `FFT(double)` is usually the simplest valid choice
 
 In other words, `FFT(double)` is the flexible default for real-number evaluation, while `NTT` is the trustworthy default for exact modular arithmetic.
+
+A crisp contest heuristic is:
+
+- answer required modulo a friendly prime like `998244353` -> use `NTT`
+- exact integer coefficients with very large counts or tight correctness requirements -> prefer `NTT` (or multiple NTT primes + CRT later)
+- no modulus, real-valued interpretation, or moderate integral coefficients that are safe to round -> `FFT(double)`
+
+The standard anti-example for casual FFT use is a counting problem whose true coefficients are huge and must be exact: a tiny floating error after the inverse transform can round to the wrong integer, while NTT would stay exact by construction.
 
 ### Choosing An NTT Modulus
 

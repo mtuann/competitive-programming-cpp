@@ -326,6 +326,48 @@ $$
 
 This single example is worth memorizing because it makes the meanings of `sa` and `rank` concrete immediately.
 
+To make the doubling construction feel less magical, look at one real round on the same string.
+
+Start by classifying suffixes by their first character:
+
+```text
+index:   0 1 2 3 4 5
+char:    b a n a n a
+class:   1 0 2 0 2 0
+```
+
+Now build length-`2` keys by pairs:
+
+```text
+0 -> (1, 0)
+1 -> (0, 2)
+2 -> (2, 0)
+3 -> (0, 2)
+4 -> (2, 0)
+5 -> (0, -1)
+```
+
+Sorting by those pairs gives:
+
+```text
+5, 1, 3, 0, 2, 4
+```
+
+with new length-`2` classes:
+
+```text
+index:   0 1 2 3 4 5
+class2:  2 1 3 1 3 0
+```
+
+That is the whole doubling idea in miniature:
+
+- one round starts from class ids for length `2^k`
+- sorts by rank pairs
+- and produces class ids for length `2^{k+1}`
+
+Later rounds keep doing the same thing until the order stabilizes into the final suffix array.
+
 ### Example 2: Distinct Substrings
 
 Every suffix contributes all of its prefixes as candidate substrings.
@@ -339,6 +381,10 @@ $$
 prefixes in total.
 
 But among those, exactly `lcp[i-1]` are duplicates of prefixes already seen from the previous suffix in sorted order.
+
+Why is the previous suffix enough?
+
+Because if the current suffix shared a longer prefix with some even earlier suffix, then all suffixes sharing that prefix would form one contiguous block in suffix-array order. So the nearest previous suffix inside that block shares at least as much. The "largest duplicate overlap with the past" is therefore already captured by the immediate previous neighbor.
 
 So the number of new substrings contributed by suffix `sa[i]` is:
 
@@ -425,12 +471,14 @@ build_lcp(s, sa):
             continue
 
         j = sa[rank[i] + 1]
-        while s[i + k] == s[j + k]:
+        while i + k < n and j + k < n and s[i + k] == s[j + k]:
             k++
         lcp[rank[i]] = k
         if k > 0:
             k--
 ```
+
+If you instead run Kasai on a sentinel-extended string, the bounds checks can be hidden by the sentinel convention. The important thing is to keep the pseudocode consistent with the string model you chose earlier.
 
 ### Distinct Substrings
 
