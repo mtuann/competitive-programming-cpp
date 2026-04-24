@@ -6,7 +6,7 @@
 // Main trap: copying the helpers into a composite-modulus problem and trusting Fermat anyway.
 // Links:
 //   Topic: topics/math/modular-arithmetic/README.md
-//   Note: practice/ladders/math/modular-arithmetic/exponentiation2.md
+//   Note: practice/ladders/math/modular-arithmetic/exponentiation.md
 
 #include <iostream>
 
@@ -17,6 +17,7 @@ const long long MOD = 1000000007LL;
 long long mod_pow(long long a, long long e) {
     long long result = 1 % MOD;
     a %= MOD;
+    if (a < 0) a += MOD;
     while (e > 0) {
         if (e & 1LL) {
             result = result * a % MOD;

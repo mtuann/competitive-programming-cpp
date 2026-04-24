@@ -52,7 +52,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - weighted shortest path / reconstruction -> [QOS](../practice/ladders/graphs/shortest-paths/qos.md)
 - MST -> [Road Reparation](../practice/ladders/graphs/mst/roadreparation.md)
 - SCC / DAG ordering -> [Course Schedule](../practice/ladders/graphs/scc-toposort/courseschedule.md)
-- tree path decomposition -> [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md)
+- tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 
 ## Next Stops
 

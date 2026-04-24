@@ -523,12 +523,12 @@ Repo anchors:
 
 Starter pieces in the repo:
 
-- [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
+- [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - [Path Queries II note](../../../practice/ladders/graphs/hld/pathqueries2.md)
 
 Notebook refresher:
 
-- [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
+- [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
 ## References And Repo Anchors
 

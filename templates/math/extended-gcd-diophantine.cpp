@@ -6,7 +6,7 @@
 // Main trap: assuming every solvable equation has the returned witness in the desired sign/range already.
 // Links:
 //   Topic: topics/math/modular-arithmetic/README.md
-//   Note: practice/ladders/math/gcd-lcm/README.md
+//   Note: no exact repo note yet; reopen topics/math/modular-arithmetic/README.md
 
 #include <cstdlib>
 #include <iostream>
@@ -15,14 +15,19 @@ using namespace std;
 
 long long ext_gcd(long long a, long long b, long long &x, long long &y) {
     if (b == 0) {
-        x = 1;
+        x = (a >= 0 ? 1 : -1);
         y = 0;
-        return a;
+        return llabs(a);
     }
     long long x1 = 0, y1 = 0;
     long long g = ext_gcd(b, a % b, x1, y1);
     x = y1;
     y = x1 - (a / b) * y1;
+    if (g < 0) {
+        g = -g;
+        x = -x;
+        y = -y;
+    }
     return g;
 }
 

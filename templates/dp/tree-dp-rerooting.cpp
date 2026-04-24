@@ -6,7 +6,7 @@
 // Main trap: treating this sum-of-distances skeleton as a fully generic rerooting framework.
 // Links:
 //   Topic: topics/dp/tree-dp/README.md
-//   Template: templates/dp/tree-dp-subtree.cpp
+//   Note: no exact repo note yet; reopen topics/dp/tree-dp/README.md
 
 #include <iostream>
 #include <vector>

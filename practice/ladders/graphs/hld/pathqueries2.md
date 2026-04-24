@@ -98,10 +98,10 @@ This is comfortably fast for the CSES limits.
 
 - Topic page: [Heavy-Light Decomposition](../../../../topics/graphs/hld/README.md)
 - Practice ladder: [Heavy-Light Decomposition ladder](README.md)
-- Starter template: [segment-tree-iterative.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
-- Notebook refresher: [Data structures cheatsheet](../../../../notebook/data-structures-cheatsheet.md)
+- Starter template: [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
+- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
 - Carry forward: climb by deeper chain heads so every path becomes only a few contiguous segments.
-- This note adds: the tree flattening and chain bookkeeping layered on top of the segment-tree core.
+- This note adds: the tree flattening, chain bookkeeping, and deeper-head climb rule layered on top of the range-query core.
 
 ## Solutions
 

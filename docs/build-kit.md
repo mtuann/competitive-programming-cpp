@@ -25,6 +25,17 @@ This is the repo's `retrieve and execute` layer.
 | validator-heavy / interactive / many-valid-answers local loop | [Local judge workflow](../notebook/local-judge-workflow.md) |
 | before-contest checklist | [Contest checklist](../notebook/contest-checklist.md) |
 
+## Exact Starter Routes
+
+Use these when the topic is already mostly trusted and you want the shortest path back to code plus one concrete compare target.
+
+| Need | Learn / check first | Reuse | Compare against |
+| --- | --- | --- | --- |
+| exact one-pattern matching | [KMP](../topics/strings/kmp/README.md) | [kmp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/kmp.cpp) | [String Matching](../practice/ladders/strings/kmp/stringmatching.md) |
+| static tree, point updates, path maximum | [Heavy-Light Decomposition](../topics/graphs/hld/README.md) | [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp) | [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) |
+| exact convolution modulo `998244353` | [FFT / NTT](../topics/math/fft-ntt/README.md) | [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) | [FFT ladder](../practice/ladders/math/fft/README.md) |
+| one inverse under composite modulus or `ax + by = c` | [Modular Arithmetic](../topics/math/modular-arithmetic/README.md) | [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp) | [GCD / LCM ladder](../practice/ladders/math/gcd-lcm/README.md) |
+
 ## Choose The Smallest Useful Tool
 
 ### Template Library
@@ -34,6 +45,7 @@ Open [Template Library](../template-library.md) when:
 - you already know the family
 - you want the smallest contest-ready implementation
 - you need one fast chooser table, not a tutorial
+- you already have a topic page or note anchor and now need the smallest reusable code shape
 
 Do **not** open it first if you still do not trust the topic itself.
 
@@ -66,6 +78,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 ## Best Pairings
 
 - shortest paths -> [Graph cheatsheet](../notebook/graph-cheatsheet.md) + graph templates
+- tree path queries -> [Graph cheatsheet](../notebook/graph-cheatsheet.md) + [Heavy-Light Decomposition](../topics/graphs/hld/README.md)
 - range-query structures -> [Data structures cheatsheet](../notebook/data-structures-cheatsheet.md) + [Template Library](../template-library.md)
 - modular arithmetic -> [Number theory cheatsheet](../notebook/number-theory-cheatsheet.md) + math templates
 - geometry predicates -> [Geometry cheatsheet](../notebook/geometry-cheatsheet.md) + geometry templates
