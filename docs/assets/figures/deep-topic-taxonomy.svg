@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="2545" viewBox="0 0 2200 2545" role="img" aria-labelledby="title desc">
+<title id="title">Deep Topic and Algorithm Taxonomy</title>
+<desc id="desc">One-figure taxonomy of the repository's deep and non-foundational algorithm lanes, grouped by family.</desc>
+<rect width="2200" height="2545" fill="#f8fafc"/>
+<rect x="0" y="0" width="2200" height="150" fill="#e2e8f0"/>
+<text x="1100.0" y="70" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#0f172a" text-anchor="middle">Deep Topic / Algorithm Taxonomy</text>
+<text x="1100.0" y="112" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#334155" text-anchor="middle">Scope: deep and non-foundational lanes only. Foundations, basic combinatorics, and beginner greedy routes are intentionally omitted.</text>
+<text x="1100.0" y="138" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="20" font-weight="500" fill="#475569" text-anchor="middle">Repo snapshot: competitive-programming-cpp on 2026-04-25</text>
+<rect x="60" y="155" width="1015.0" height="801" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="60" y="155" width="1015.0" height="58" rx="24" fill="#2563eb"/>
+<rect x="60" y="189" width="1015.0" height="24" fill="#2563eb"/>
+<text x="88" y="193" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Data Structures (17)</text>
+<text x="88" y="245" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#2563eb" text-anchor="start">Ordered / self-adjusting</text>
+<text x="102" y="276" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Heaps and Ordered Sets</text>
+<text x="102" y="307" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- PBDS / Order Statistics Tree</text>
+<text x="102" y="338" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Balanced BSTs (AVL / RB / Scapegoat / SBT compare)</text>
+<text x="102" y="369" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Splay Tree</text>
+<text x="102" y="400" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Pairing Heap / Leftist Heap</text>
+<text x="88" y="445" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#2563eb" text-anchor="start">Treap / persistence</text>
+<text x="102" y="476" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Treap / Implicit Treap</text>
+<text x="102" y="507" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Key-based Treap route</text>
+<text x="102" y="538" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Persistent Data Structures</text>
+<text x="102" y="569" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Persistent Treap</text>
+<text x="88" y="614" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#2563eb" text-anchor="start">Offline / query reordering</text>
+<text x="102" y="645" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Mo's Algorithm</text>
+<text x="102" y="676" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Offline Tricks</text>
+<text x="102" y="707" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- DSU Rollback / Offline Dynamic Connectivity</text>
+<text x="88" y="752" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#2563eb" text-anchor="start">Local merges / interval mutation</text>
+<text x="102" y="783" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- DSU On Tree / Small-to-Large</text>
+<text x="102" y="814" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Binary Trie / XOR Queries</text>
+<text x="102" y="845" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Wavelet Tree</text>
+<text x="102" y="876" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Segment Tree Beats</text>
+<text x="102" y="907" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- ODT / Chtholly</text>
+<rect x="1125.0" y="155" width="1015.0" height="708" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1125.0" y="155" width="1015.0" height="58" rx="24" fill="#059669"/>
+<rect x="1125.0" y="189" width="1015.0" height="24" fill="#059669"/>
+<text x="1153.0" y="193" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Graphs (14)</text>
+<text x="1153.0" y="245" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#059669" text-anchor="start">Connectivity / logic</text>
+<text x="1167.0" y="276" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Bridges / Articulation / BCC</text>
+<text x="1167.0" y="307" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Eulerian Path / Cycle</text>
+<text x="1167.0" y="338" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Two-SAT</text>
+<text x="1153.0" y="383" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#059669" text-anchor="start">Tree query canon</text>
+<text x="1167.0" y="414" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- LCA</text>
+<text x="1167.0" y="445" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Euler Tour / Subtree Queries</text>
+<text x="1167.0" y="476" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Heavy-Light Decomposition</text>
+<text x="1167.0" y="507" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Centroid Decomposition</text>
+<text x="1167.0" y="538" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Virtual Tree</text>
+<text x="1153.0" y="583" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#059669" text-anchor="start">Dynamic forest family</text>
+<text x="1167.0" y="614" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Link-Cut Tree</text>
+<text x="1167.0" y="645" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Euler Tour Tree</text>
+<text x="1153.0" y="690" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#059669" text-anchor="start">Flow / matching family</text>
+<text x="1167.0" y="721" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Flow</text>
+<text x="1167.0" y="752" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Flow With Lower Bounds</text>
+<text x="1167.0" y="783" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Matching</text>
+<text x="1167.0" y="814" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Min-Cost Flow</text>
+<rect x="1125.0" y="891" width="1015.0" height="601" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1125.0" y="891" width="1015.0" height="58" rx="24" fill="#d97706"/>
+<rect x="1125.0" y="925" width="1015.0" height="24" fill="#d97706"/>
+<text x="1153.0" y="929" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Dynamic Programming (12)</text>
+<text x="1153.0" y="981" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#d97706" text-anchor="start">State families</text>
+<text x="1167.0" y="1012" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Bitmask DP</text>
+<text x="1167.0" y="1043" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Digit DP</text>
+<text x="1167.0" y="1074" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Interval DP</text>
+<text x="1167.0" y="1105" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Tree DP</text>
+<text x="1153.0" y="1150" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#d97706" text-anchor="start">Subset / frontier</text>
+<text x="1167.0" y="1181" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- SOS DP</text>
+<text x="1167.0" y="1212" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Broken Profile / Plug DP</text>
+<text x="1153.0" y="1257" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#d97706" text-anchor="start">Optimization family</text>
+<text x="1167.0" y="1288" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- CHT / Li Chao Tree</text>
+<text x="1167.0" y="1319" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- LineContainer refinement</text>
+<text x="1167.0" y="1350" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Divide and Conquer DP</text>
+<text x="1167.0" y="1381" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Knuth Optimization</text>
+<text x="1167.0" y="1412" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Slope Trick</text>
+<text x="1167.0" y="1443" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Lagrangian Relaxation / Aliens Trick</text>
+<rect x="60" y="984" width="1015.0" height="770" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="60" y="984" width="1015.0" height="58" rx="24" fill="#7c3aed"/>
+<rect x="60" y="1018" width="1015.0" height="24" fill="#7c3aed"/>
+<text x="88" y="1022" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Math (16)</text>
+<text x="88" y="1074" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#7c3aed" text-anchor="start">Discrete log / roots / factors</text>
+<text x="102" y="1105" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- BSGS / Discrete Log</text>
+<text x="102" y="1136" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Modular Square Root / Discrete Root</text>
+<text x="102" y="1167" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Primitive Root</text>
+<text x="102" y="1198" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Pollard-Rho</text>
+<text x="88" y="1243" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#7c3aed" text-anchor="start">Arithmetic functions / prefix sums</text>
+<text x="102" y="1274" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Chinese Remainder / Linear Congruences</text>
+<text x="102" y="1305" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Lucas Theorem / Large Binomial Mod Prime</text>
+<text x="102" y="1336" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Mobius And Multiplicative Counting</text>
+<text x="102" y="1367" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Dirichlet Convolution / Prefix Sums</text>
+<text x="102" y="1398" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Min_25 / Du Jiao</text>
+<text x="88" y="1443" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#7c3aed" text-anchor="start">Algebra / transforms / recurrences</text>
+<text x="102" y="1474" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Gaussian Elimination / Linear Algebra</text>
+<text x="102" y="1505" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Linear Recurrence / Matrix Exponentiation</text>
+<text x="102" y="1536" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- FFT / NTT</text>
+<text x="102" y="1567" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Polynomial / Formal Power Series</text>
+<text x="102" y="1598" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- XOR Basis / Linear Basis</text>
+<text x="88" y="1643" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#7c3aed" text-anchor="start">Games / uncertainty</text>
+<text x="102" y="1674" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Game Theory / Sprague-Grundy</text>
+<text x="102" y="1705" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Probability</text>
+<rect x="1125.0" y="1520" width="1015.0" height="446" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1125.0" y="1520" width="1015.0" height="58" rx="24" fill="#db2777"/>
+<rect x="1125.0" y="1554" width="1015.0" height="24" fill="#db2777"/>
+<text x="1153.0" y="1558" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Strings (7)</text>
+<text x="1153.0" y="1610" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#db2777" text-anchor="start">Automata / dictionary</text>
+<text x="1167.0" y="1641" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Trie</text>
+<text x="1167.0" y="1672" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Aho-Corasick</text>
+<text x="1153.0" y="1717" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#db2777" text-anchor="start">Palindrome family</text>
+<text x="1167.0" y="1748" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Palindromes / Manacher</text>
+<text x="1167.0" y="1779" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Eertree / Palindromic Tree</text>
+<text x="1153.0" y="1824" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#db2777" text-anchor="start">Suffix structures</text>
+<text x="1167.0" y="1855" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Suffix Array / LCP</text>
+<text x="1167.0" y="1886" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Suffix Automaton</text>
+<text x="1167.0" y="1917" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Suffix Tree</text>
+<rect x="60" y="1782" width="1015.0" height="477" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="60" y="1782" width="1015.0" height="58" rx="24" fill="#0891b2"/>
+<rect x="60" y="1816" width="1015.0" height="24" fill="#0891b2"/>
+<text x="88" y="1820" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Geometry (8)</text>
+<text x="88" y="1872" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0891b2" text-anchor="start">Convex / feasible region family</text>
+<text x="102" y="1903" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Convex Hull</text>
+<text x="102" y="1934" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Half-Plane Intersection</text>
+<text x="102" y="1965" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Minkowski Sum</text>
+<text x="88" y="2010" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0891b2" text-anchor="start">Sweeps / distance / counts</text>
+<text x="102" y="2041" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Sweep Line</text>
+<text x="102" y="2072" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Nearest Pair of Points</text>
+<text x="102" y="2103" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Counting Geometry</text>
+<text x="88" y="2148" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#0891b2" text-anchor="start">Planar predicate bridges</text>
+<text x="102" y="2179" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Segment Intersection</text>
+<text x="102" y="2210" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Polygon Area / Point Location</text>
+<rect x="1125.0" y="1994" width="1015.0" height="463" rx="24" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="1125.0" y="1994" width="1015.0" height="58" rx="24" fill="#dc2626"/>
+<rect x="1125.0" y="2028" width="1015.0" height="24" fill="#dc2626"/>
+<text x="1153.0" y="2032" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff" text-anchor="start">Advanced (9)</text>
+<text x="1153.0" y="2084" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#dc2626" text-anchor="start">Theory / contest meta</text>
+<text x="1167.0" y="2115" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Algorithm Engineering</text>
+<text x="1167.0" y="2146" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Contest Engineering</text>
+<text x="1167.0" y="2177" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Randomized Algorithms</text>
+<text x="1167.0" y="2208" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Constructive</text>
+<text x="1167.0" y="2239" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Complexity And Hardness</text>
+<text x="1153.0" y="2284" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="24" font-weight="700" fill="#dc2626" text-anchor="start">Optimization frontier</text>
+<text x="1167.0" y="2315" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Approximation And Relaxation</text>
+<text x="1167.0" y="2346" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Optimization And Duality</text>
+<text x="1167.0" y="2377" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Simplex</text>
+<text x="1167.0" y="2408" font-family="IBM Plex Sans, Inter, Arial, sans-serif" font-size="22" font-weight="400" fill="#1e293b" text-anchor="start">- Matroid Intersection</text>
+</svg>

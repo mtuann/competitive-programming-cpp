@@ -19,6 +19,24 @@
   </div>
 </div>
 
+## What This Repo Already Covers
+
+If you want one picture before choosing a route, use the taxonomy view first.
+
+[![Deep Topic Taxonomy](docs/assets/figures/deep-topic-taxonomy.svg)](docs/deep-topic-taxonomy.md)
+
+This figure groups the repo's deep topic surface by family:
+
+- `Data Structures`
+- `Graphs`
+- `Dynamic Programming`
+- `Math`
+- `Strings`
+- `Geometry`
+- `Advanced`
+
+If you want the standalone page instead of the homepage embed, open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md).
+
 ## Choose Your Route
 
 <div class="grid cards" markdown>

@@ -87,6 +87,7 @@ nav:
   - Routes:
       - Start Here: docs/start-here.md
       - Route Map: docs/route-map.md
+      - Deep Topic Taxonomy: docs/deep-topic-taxonomy.md
       - Project Overview: project-readme.md
   - Learn:
       - Learning Areas: topics/README.md

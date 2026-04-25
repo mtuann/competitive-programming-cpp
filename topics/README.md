@@ -61,3 +61,5 @@ Use these if you want one concrete repo-native anchor before diving into a whole
 - Advanced: [Minimum Euclidean Distance](../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md)
 
 Use [docs/topic-template.md](../docs/topic-template.md) as the source of truth for mature single-topic pages. The area hubs in this folder should stay lighter and focus on scope, sequencing, and navigation.
+
+If you want the whole non-foundational surface in one visual instead of one area at a time, use [Deep Topic Taxonomy](../docs/deep-topic-taxonomy.md).

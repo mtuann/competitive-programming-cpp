@@ -9,6 +9,14 @@ Project site: [mtuann.github.io/competitive-programming-cpp](https://mtuann.gith
 If you want one guided first door instead of browsing sections, start with [Start Here](docs/start-here.md).
 If you want the repo organized by routes instead of folders, open the [Route Map](docs/route-map.md).
 
+## Repo Taxonomy At A Glance
+
+This figure shows the repo's deep algorithm surface in one view, grouped by family instead of by folder listing.
+
+[![Deep Topic Taxonomy](docs/assets/figures/deep-topic-taxonomy.svg)](docs/deep-topic-taxonomy.md)
+
+If you want the full page version with scope notes, open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md).
+
 ## Start Here
 
 | If you are... | Start with | Goal |
