@@ -141,6 +141,7 @@ nav:
           - Modular Arithmetic: topics/math/modular-arithmetic/README.md
           - Number Theory Basics: topics/math/number-theory-basics/README.md
           - Chinese Remainder / Linear Congruences: topics/math/chinese-remainder/README.md
+          - Lucas Theorem / Large Binomial Mod Prime: topics/math/lucas-theorem/README.md
           - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
           - FFT / NTT: topics/math/fft-ntt/README.md
       - Combinatorics:
@@ -238,6 +239,7 @@ nav:
               - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
               - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
               - Chinese Remainder / Linear Congruences: practice/ladders/math/chinese-remainder/README.md
+              - Lucas Theorem / Large Binomial Mod Prime: practice/ladders/math/lucas-theorem/README.md
               - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
               - FFT / NTT: practice/ladders/math/fft/README.md
           - Combinatorics:
@@ -327,6 +329,7 @@ nav:
       - CHT Li Chao Hot Sheet: notebook/cht-hot-sheet.md
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
       - Linear Recurrence Hot Sheet: notebook/linear-recurrence-hot-sheet.md
+      - Lucas Theorem Hot Sheet: notebook/lucas-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md
       - Chinese Remainder Hot Sheet: notebook/chinese-remainder-hot-sheet.md

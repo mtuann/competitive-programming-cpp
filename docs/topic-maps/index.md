@@ -53,6 +53,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Math -> FFT And NTT | 2 | 0 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 6 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Linear Recurrence And Matrix Exponentiation | 1 | 3 | 3 | [Open](math/linear-recurrence.md) |
+| Math -> Lucas Theorem And Large Binomial Mod Prime | 1 | 3 | 2 | [Open](math/lucas-theorem.md) |
 | Math -> Modular Arithmetic | 3 | 2 | 8 | [Open](math/modular-arithmetic.md) |
 | Math -> Number Theory Basics | 7 | 0 | 13 | [Open](math/number-theory-basics.md) |
 | Combinatorics -> Bounded Compositions | 1 | 0 | 6 | [Open](combinatorics/bounded-compositions.md) |

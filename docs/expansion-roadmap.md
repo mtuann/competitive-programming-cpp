@@ -169,6 +169,11 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/chinese-remainder-hot-sheet.md`
 - [x] add `practice/ladders/math/chinese-remainder/README.md`
 - [x] add one flagship CRT / congruence-system note plus solution
+- [x] add `topics/math/lucas-theorem/README.md`
+- [x] add `templates/math/lucas-binomial.cpp`
+- [x] add `notebook/lucas-hot-sheet.md`
+- [x] add `practice/ladders/math/lucas-theorem/README.md`
+- [x] add one flagship Lucas note plus solution
 
 ### Phase 8. Contest-Source Lane B
 

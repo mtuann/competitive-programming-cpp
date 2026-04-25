@@ -11042,6 +11042,58 @@
     "why_fit": "Shows the same repeated-linear-transition worldview outside one-dimensional recurrences."
   },
   {
+    "slug": "math/lucas-theorem",
+    "topic": "Math -> Lucas Theorem And Large Binomial Mod Prime",
+    "title": "Binomial Coefficient (Prime Mod)",
+    "url": "https://judge.yosupo.jp/problem/binomial_coefficient_prime_mod",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Binomial Coefficients"
+    ],
+    "tags": [
+      "Binomial Coefficient",
+      "Prime Modulus"
+    ],
+    "styles": [
+      "Math",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Modular Arithmetic",
+      "Factorial Binomial",
+      "Base Conversion"
+    ],
+    "bucket": "core",
+    "why_fit": "A clean benchmark for the route split between one ordinary factorial table and Lucas digit decomposition under one prime modulus."
+  },
+  {
+    "slug": "math/lucas-theorem",
+    "topic": "Math -> Lucas Theorem And Large Binomial Mod Prime",
+    "title": "Odd Binomial Coefficients",
+    "url": "https://open.kattis.com/problems/oddbinom",
+    "source": "Kattis",
+    "difficulty": "hard",
+    "tracks": [
+      "Binomial Coefficients",
+      "Pascal Structure"
+    ],
+    "tags": [
+      "Parity",
+      "Bitwise Pattern"
+    ],
+    "styles": [
+      "Math",
+      "Observation"
+    ],
+    "prerequisites": [
+      "Lucas Theorem",
+      "Bitwise Reasoning"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong compare point where Lucas with p = 2 exposes a structural parity pattern instead of only answering one binomial query."
+  },
+  {
     "slug": "math/modular-arithmetic",
     "topic": "Math -> Modular Arithmetic",
     "title": "Exponentiation",

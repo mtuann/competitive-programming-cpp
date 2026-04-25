@@ -8,8 +8,9 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 2. number theory basics
 3. gcd / lcm constructions
 4. chinese remainder / linear congruences
-5. linear recurrence / matrix exponentiation
-6. FFT
+5. lucas theorem / large binomial mod prime
+6. linear recurrence / matrix exponentiation
+7. FFT
 
 ## Subtopic Ladders
 
@@ -17,6 +18,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Number theory basics](number-theory-basics/README.md)
 - [GCD / LCM](gcd-lcm/README.md)
 - [Chinese remainder / linear congruences](chinese-remainder/README.md)
+- [Lucas theorem / large binomial mod prime](lucas-theorem/README.md)
 - [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
 - [FFT](fft/README.md)
 
@@ -29,4 +31,5 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [GCD on Blackboard](gcd-lcm/gcdonblackboard.md)
 - [CRYPTKEY](gcd-lcm/cryptkey.md)
 - [General Chinese Remainder](chinese-remainder/generalchineseremainder.md)
+- [Binomial Coefficient (Prime Mod)](lucas-theorem/binomialcoefficientprimemod.md)
 - [POST2](fft/post2.md)

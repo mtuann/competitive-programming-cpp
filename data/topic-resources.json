@@ -2307,6 +2307,66 @@
       }
     ]
   },
+  "math/lucas-theorem": {
+    "title": "Math -> Lucas Theorem And Large Binomial Mod Prime",
+    "summary": "Prime-mod binomial coefficients beyond one factorial table, using base-p digit decomposition and Lucas theorem when n crosses p.",
+    "topic_path": "topics/math/lucas-theorem/README.md",
+    "ladder_path": "practice/ladders/math/lucas-theorem/README.md",
+    "microtopics": [
+      "lucas-theorem",
+      "base-p-digits",
+      "large-binomial",
+      "prime-mod-binomial",
+      "digit-product",
+      "factorial-table-boundary"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms binomial coefficients",
+        "url": "https://cp-algorithms.com/combinatorics/binomial-coefficients.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "AtCoder ABC251 editorial",
+        "url": "https://atcoder.jp/contests/abc251/editorial/3995",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Binomial Coefficient (Prime Mod)",
+        "url": "https://judge.yosupo.jp/problem/binomial_coefficient_prime_mod",
+        "kind": "problem"
+      },
+      {
+        "label": "Kattis Odd Binomial Coefficients",
+        "url": "https://open.kattis.com/problems/oddbinom",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Lucas Theorem hot sheet",
+        "path": "notebook/lucas-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Binomial Coefficient (Prime Mod)",
+        "path": "practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
+    ]
+  },
   "math/linear-recurrence": {
     "title": "Math -> Linear Recurrence And Matrix Exponentiation",
     "summary": "Fixed-width linear recurrences and repeated small linear transitions, turned into companion matrices and powered quickly by repeated squaring.",

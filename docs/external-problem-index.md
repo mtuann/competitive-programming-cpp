@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `537`
+- Total curated external problems: `539`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -385,6 +385,8 @@ This page lists curated external problems imported into the topic-map system.
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Fibonacci Numbers](https://cses.fi/problemset/task/1722) | `CSES` | `Medium` | Matrix/Recurrence | Math; Implementation | Matrix Exponentiation; Fibonacci; Fast Doubling Compare |
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Throwing Dice](https://cses.fi/problemset/task/1096) | `CSES` | `Medium` | DP/Recurrences | Dynamic Programming; Math | Matrix Exponentiation; Companion Matrix; Mod Arithmetic |
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Stretch` | [Graph Paths I](https://cses.fi/problemset/task/1723) | `CSES` | `Hard` | Graphs/Walk Counting | Graphs; Math | Matrix Exponentiation; Adjacency Matrix; Walk Counting |
+| `Math -> Lucas Theorem And Large Binomial Mod Prime` | `Core` | [Binomial Coefficient (Prime Mod)](https://judge.yosupo.jp/problem/binomial_coefficient_prime_mod) | `Library Checker` | `Medium` | Binomial Coefficients | Math; Implementation | Binomial Coefficient; Prime Modulus |
+| `Math -> Lucas Theorem And Large Binomial Mod Prime` | `Stretch` | [Odd Binomial Coefficients](https://open.kattis.com/problems/oddbinom) | `Kattis` | `Hard` | Binomial Coefficients, Pascal Structure | Math; Observation | Parity; Bitwise Pattern |
 | `Math -> Modular Arithmetic` | `Core` | [Exponentiation](https://cses.fi/problemset/task/1095) | `CSES` | `Easy` | Fast-Exponentiation, Mod Arithmetic | Implementation; Math | Binary Exponentiation; Pow |
 | `Math -> Modular Arithmetic` | `Core` | [Distributing Apples](https://cses.fi/problemset/task/1716) | `CSES` | `Easy-Medium` | Stars And Bars, Mod Arithmetic | - | Combinations; Distributions |
 | `Math -> Modular Arithmetic` | `Core` | [Binomial Coefficients](https://cses.fi/problemset/task/1079) | `CSES` | `Medium` | Combinatorics/Counting-Basics, Mod Inverses, Combinatorics | Math; Precomputation | Ncr; Factorials; Modular Inverse; Inverse Factorials |

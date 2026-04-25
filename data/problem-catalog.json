@@ -2482,6 +2482,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/linear-recurrence/throwingdice.cpp"
   },
   {
+    "code": "BINOMIALCOEFFICIENTPRIMEMOD",
+    "title": "Binomial Coefficient (Prime Mod)",
+    "full_title": "Binomial Coefficient (Prime Mod)",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/binomial_coefficient_prime_mod",
+    "main_topic": "Math -> Lucas Theorem And Large Binomial Mod Prime",
+    "secondary_topics": [
+      "Lucas theorem",
+      "Binomial coefficients",
+      "Prime modulus"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/lucas-theorem",
+    "topic_tags": [
+      "math/lucas-theorem"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md",
+    "ladder_path": "practice/ladders/math/lucas-theorem/README.md",
+    "tutorial_path": "topics/math/lucas-theorem/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/lucas-theorem/binomialcoefficientprimemod.cpp"
+  },
+  {
     "code": "EXPONENTIATION",
     "title": "Exponentiation",
     "full_title": "Exponentiation",

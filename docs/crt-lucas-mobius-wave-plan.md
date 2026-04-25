@@ -109,6 +109,10 @@ Out of scope for the first ship:
 
 #### A2. Lucas Theorem / Large Binomial Mod Prime
 
+Status:
+
+- shipped on `2026-04-25`
+
 Planned lane:
 
 - topic: `topics/math/lucas-theorem/README.md`
@@ -224,7 +228,7 @@ If shipped together with congruence topics, one of the lanes will almost certain
 Use this order for the remaining math phase:
 
 1. ship `Chinese Remainder / Linear Congruences`
-2. decide whether `Lucas` is clean enough to remain in the same wave or should become the next small wave
+2. ship `Lucas Theorem / Large Binomial Mod Prime`
 3. only then ship `Möbius And Multiplicative Counting`
 
 This preserves the repo rule:
@@ -254,5 +258,4 @@ This plan is only considered complete when:
 
 The next highest-leverage math task after this plan is:
 
-1. ship `Chinese Remainder / Linear Congruences`
-2. then reassess whether `Lucas` should stay paired in the same wave or become its own small follow-up
+1. ship `Möbius And Multiplicative Counting`
