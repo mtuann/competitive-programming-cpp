@@ -77,9 +77,9 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 
 ### Phase 0. Freshness Backbone
 
-- [ ] add `docs/freshness-radar.md` or equivalent maintainer page for external-source audits
-- [ ] define a quarterly audit cadence for `VNOI Wiki`, `USACO Guide Advanced`, `CP-Algorithms`, `IOI syllabus/stats`, `ICPC WF problem sets`, and official `Codeforces` ecosystem pages
-- [ ] write a short maintainer checklist for deciding whether a new external pattern becomes a `topic page`, `playbook drill`, `mixed round`, or `hot sheet`
+- [x] add `docs/freshness-backbone.md` as the maintainer page for external-source audits
+- [x] define a quarterly audit cadence for `VNOI Wiki`, `USACO Guide Advanced`, `CP-Algorithms`, `IOI syllabus/stats`, `ICPC WF problem sets`, official `Codeforces` ecosystem pages, and the newer contest-source lanes
+- [x] write a short maintainer checklist for deciding whether a new external pattern becomes a `topic page`, `playbook drill`, `mixed round`, or `hot sheet`
 
 ### Phase 1. Canonical Graph Wave A
 
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Phase 0. Freshness Backbone`
+1. `Eulerian Path / Cycle`
 
 That is now the best follow-up because:
 
-- the contest-source lanes are now broad enough that an audit spine should exist before more source-sensitive growth
-- the repo has enough fresh external-source coverage that quarterly review rules will pay back immediately
-- the next highest-leverage improvement is process quality, not one more new family
+- the freshness backbone now exists, so the repo can safely open another long-tail algorithm lane
+- `Eulerian Path / Cycle` is one of the highest-value remaining canonical gaps from the external-source comparison work
+- it connects cleanly to already-mature graph routing, ladders, and retrieval pages

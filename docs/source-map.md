@@ -4,6 +4,8 @@ Research snapshot: `April 22, 2026`
 
 Freshness-sensitive link and wording review: `April 24, 2026`
 
+Ongoing maintenance spine: [Freshness Backbone](freshness-backbone.md)
+
 This repository design is grounded in public official or project-primary sources. The phrase "all top CS universities" is not literally enumerable in one pass, so this source map uses a representative set of leading public syllabi and public contest systems rather than pretending every school in the world exposes the same level of detail.
 
 ## How To Read This File

@@ -99,6 +99,7 @@ Requirements:
 
 - verify the relevant official or primary online sources during the pass
 - record a `snapshot` or `last reviewed` date in the governing maintainer doc or the page itself when the date matters
+- if the pass belongs to a source-family lane or route/workflow page, record or refresh the corresponding entry in [Freshness Backbone](freshness-backbone.md)
 - prefer official documentation and project-primary links over secondary summaries
 - if the page contains recommendations, commands, or tool behavior that might drift, treat online verification as mandatory
 

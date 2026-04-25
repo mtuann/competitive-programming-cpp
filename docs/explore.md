@@ -17,6 +17,7 @@ Use it when you want one of these instead:
 | external official and trusted practice pools | [External Problem Index](external-problem-index.md) |
 | source-backed reading and topic coverage lookup | [Topic Maps](topic-maps/index.md) |
 | the research appendix behind the curriculum | [Source Map](source-map.md) |
+| the maintainer audit spine for freshness-sensitive content | [Freshness Backbone](freshness-backbone.md) |
 
 ## Use This Section For
 

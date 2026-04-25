@@ -363,6 +363,7 @@ nav:
       - Content Blueprint: docs/content-blueprint.md
       - Topic Template: docs/topic-template.md
       - Problem Note Contract: docs/authoring/problem-note-contract.md
+      - Freshness Backbone: docs/freshness-backbone.md
       - Roadmap: docs/roadmap.md
       - Expansion Roadmap: docs/expansion-roadmap.md
       - CRT / Lucas / Mobius Wave Plan: docs/crt-lucas-mobius-wave-plan.md
