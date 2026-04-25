@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `517`
+- Total curated external problems: `522`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -125,6 +125,11 @@ This page lists curated external problems imported into the topic-map system.
 | `Graphs -> Bridges, Articulation, And BCC` | `Practice` | [Two-Edge-Connected Components](https://judge.yosupo.jp/problem/two_edge_connected_components) | `Library Checker` | `Medium` | Two-Edge-Connected Components | Bridge Removal; Component Compression; Tree Of Components | Bridge Compression; 2-Edge Connectivity |
 | `Graphs -> Bridges, Articulation, And BCC` | `Classics` | [Submerging Islands](https://www.spoj.com/problems/SUBMERGE/) | `SPOJ` | `Medium` | Classic | Low-Link DFS; Cut Vertex Counting; Root Handling | Cut Vertices; Articulation Points |
 | `Graphs -> Bridges, Articulation, And BCC` | `Stretch` | [Forbidden Cities](https://cses.fi/problemset/task/1705) | `CSES` | `Hard` | Bcc, Block-Cut Tree | Block-Cut Tree; LCA On Reduced Structure; Query Reduction | Vertex-Biconnected Components |
+| `Graphs -> Centroid Decomposition` | `Warm-Up` | [Finding a Centroid](https://cses.fi/problemset/task/2079) | `CSES` | `Medium` | Trees | Subtree Sizes; Balance Check; Candidate Descent | Subtree Sizes; Balance Check |
+| `Graphs -> Centroid Decomposition` | `Core` | [Ciel the Commander](https://codeforces.com/problemset/problem/321/C) | `Codeforces` | `Hard` | Construction | Centroid Decomposition; Recursive Labeling; Tree Partition | Centroid Tree; Recursive Labeling; Balanced Split |
+| `Graphs -> Centroid Decomposition` | `Practice` | [Xenia and Tree](https://codeforces.com/problemset/problem/342/E) | `Codeforces` | `Hard` | Queries | Centroid Ancestors; Distance Aggregation; Online Queries | Nearest Marked Node; Centroid Ancestors; Distance Aggregation |
+| `Graphs -> Centroid Decomposition` | `Stretch` | [Fixed-Length Paths I](https://cses.fi/problemset/task/2080) | `CSES` | `Hard` | Path Counting | Path Counting; Depth Collection; Frequency Merge | Exact Length; Depth Histogram; Through-Centroid Counting |
+| `Graphs -> Centroid Decomposition` | `Advanced` | [Fixed-Length Paths II](https://cses.fi/problemset/task/2081) | `CSES` | `Hard` | Path Counting | Path Counting; Range Counting; Prefix Merge | Length Range; Depth Prefix Counts; Through-Centroid Counting |
 | `Graphs -> Euler Tour / Subtree Queries` | `Core` | [Subtree Queries](https://cses.fi/problemset/task/1137) | `CSES` | `Medium` | Trees, Euler Tour | Flatten Tree; Fenwick Tree; Range Sum Queries | Subtree Sum; Updates; Fenwick |
 | `Graphs -> Euler Tour / Subtree Queries` | `Stretch` | [Count Descendants](https://atcoder.jp/contests/abc202/tasks/abc202_e) | `AtCoder` | `Medium` | Trees, Euler Tour | Flatten Tree; Offline Counting; Binary Search | Subtree Interval; Depth Buckets; Offline |
 | `Graphs -> Euler Tour / Subtree Queries` | `Stretch` | [Distinct Colors](https://cses.fi/problemset/task/1139) | `CSES` | `Hard` | Trees | Flatten Tree; Offline Queries; Subtree Aggregation | Distinct Values; Subtree Aggregation; Offline |

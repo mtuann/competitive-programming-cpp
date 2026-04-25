@@ -113,6 +113,7 @@ nav:
           - BFS And DFS: topics/graphs/bfs-dfs/README.md
           - Bridges / Articulation / BCC: topics/graphs/bridges-articulation/README.md
           - Euler Tour / Subtree Queries: topics/graphs/euler-tour-subtree/README.md
+          - Centroid Decomposition: topics/graphs/centroid-decomposition/README.md
           - Flow: topics/graphs/flow/README.md
           - Graph Modeling: topics/graphs/graph-modeling/README.md
           - Heavy-Light Decomposition: topics/graphs/hld/README.md
@@ -200,6 +201,7 @@ nav:
               - Overview: practice/ladders/graphs/README.md
               - BFS And DFS: practice/ladders/graphs/bfs-dfs/README.md
               - Bridges / Articulation / BCC: practice/ladders/graphs/bridges-articulation/README.md
+              - Centroid Decomposition: practice/ladders/graphs/centroid-decomposition/README.md
               - Euler Tour / Subtree Queries: practice/ladders/graphs/euler-tour-subtree/README.md
               - Flow: practice/ladders/graphs/flow/README.md
               - Graph Modeling: practice/ladders/graphs/graph-modeling/README.md
@@ -302,6 +304,7 @@ nav:
       - Two-SAT Hot Sheet: notebook/two-sat-hot-sheet.md
       - Subtree Queries Hot Sheet: notebook/subtree-queries-hot-sheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md
+      - Centroid Decomposition Hot Sheet: notebook/centroid-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
       - Min-Cost Flow Hot Sheet: notebook/min-cost-flow-hot-sheet.md

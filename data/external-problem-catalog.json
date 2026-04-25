@@ -7169,6 +7169,145 @@
     "why_fit": "The strongest practical reason to go beyond plain articulation points into full block-cut structure."
   },
   {
+    "slug": "graphs/centroid-decomposition",
+    "topic": "Graphs -> Centroid Decomposition",
+    "title": "Finding a Centroid",
+    "url": "https://cses.fi/problemset/task/2079",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Trees"
+    ],
+    "tags": [
+      "Subtree Sizes",
+      "Balance Check"
+    ],
+    "styles": [
+      "Subtree Sizes",
+      "Balance Check",
+      "Candidate Descent"
+    ],
+    "prerequisites": [
+      "DFS",
+      "Subtree Sizes",
+      "Rooted Tree"
+    ],
+    "bucket": "warm-up",
+    "why_fit": "The cleanest warm-up for the centroid existence proof and the heavy-child walk used before full decomposition."
+  },
+  {
+    "slug": "graphs/centroid-decomposition",
+    "topic": "Graphs -> Centroid Decomposition",
+    "title": "Ciel the Commander",
+    "url": "https://codeforces.com/problemset/problem/321/C",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "Construction"
+    ],
+    "tags": [
+      "Centroid Tree",
+      "Recursive Labeling",
+      "Balanced Split"
+    ],
+    "styles": [
+      "Centroid Decomposition",
+      "Recursive Labeling",
+      "Tree Partition"
+    ],
+    "prerequisites": [
+      "Centroid Basics",
+      "Static Trees",
+      "Subtree Sizes"
+    ],
+    "bucket": "core",
+    "why_fit": "The strongest first full decomposition problem because the answer is literally the centroid-tree depth labeling."
+  },
+  {
+    "slug": "graphs/centroid-decomposition",
+    "topic": "Graphs -> Centroid Decomposition",
+    "title": "Xenia and Tree",
+    "url": "https://codeforces.com/problemset/problem/342/E",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "Queries"
+    ],
+    "tags": [
+      "Nearest Marked Node",
+      "Centroid Ancestors",
+      "Distance Aggregation"
+    ],
+    "styles": [
+      "Centroid Ancestors",
+      "Distance Aggregation",
+      "Online Queries"
+    ],
+    "prerequisites": [
+      "Centroid Decomposition",
+      "Tree Distances",
+      "O(log N) Ancestor Walk"
+    ],
+    "bucket": "practice",
+    "why_fit": "The canonical update/query problem where each operation becomes a walk over one logarithmic centroid-ancestor chain."
+  },
+  {
+    "slug": "graphs/centroid-decomposition",
+    "topic": "Graphs -> Centroid Decomposition",
+    "title": "Fixed-Length Paths I",
+    "url": "https://cses.fi/problemset/task/2080",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Path Counting"
+    ],
+    "tags": [
+      "Exact Length",
+      "Depth Histogram",
+      "Through-Centroid Counting"
+    ],
+    "styles": [
+      "Path Counting",
+      "Depth Collection",
+      "Frequency Merge"
+    ],
+    "prerequisites": [
+      "Centroid Decomposition",
+      "DFS Depth Collection",
+      "Frequency Counting"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The cleanest path-counting benchmark once you trust that every path is handled at the first centroid where its endpoints split."
+  },
+  {
+    "slug": "graphs/centroid-decomposition",
+    "topic": "Graphs -> Centroid Decomposition",
+    "title": "Fixed-Length Paths II",
+    "url": "https://cses.fi/problemset/task/2081",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Path Counting"
+    ],
+    "tags": [
+      "Length Range",
+      "Depth Prefix Counts",
+      "Through-Centroid Counting"
+    ],
+    "styles": [
+      "Path Counting",
+      "Range Counting",
+      "Prefix Merge"
+    ],
+    "prerequisites": [
+      "Centroid Decomposition",
+      "Fixed-Length Paths I",
+      "Prefix Sums"
+    ],
+    "bucket": "advanced",
+    "why_fit": "A natural next step after exact-length counting, where the merge logic becomes the real difficulty rather than the decomposition itself."
+  },
+  {
     "slug": "graphs/euler-tour-subtree",
     "topic": "Graphs -> Euler Tour / Subtree Queries",
     "title": "Subtree Queries",

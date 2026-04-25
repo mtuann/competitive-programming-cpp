@@ -13,6 +13,20 @@
       "OI-style"
     ]
   },
+  "CIELTHECOMMANDER": {
+    "topic_tags": [
+      "graphs/trees"
+    ],
+    "patterns": [
+      "centroid decomposition",
+      "centroid tree labeling",
+      "balanced recursive split"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Tree decomposition"
+    ]
+  },
   "CRYPTKEY": {
     "topic_tags": [
       "math/number-theory-basics"

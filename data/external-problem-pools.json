@@ -3087,6 +3087,153 @@
       ]
     }
   ],
+  "graphs/centroid-decomposition": [
+    {
+      "title": "Finding a Centroid",
+      "url": "https://cses.fi/problemset/task/2079",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "graphs/centroid-decomposition",
+        "Graphs",
+        "Trees",
+        "Centroid"
+      ],
+      "tags": [
+        "Centroid",
+        "Subtree Sizes",
+        "Balance Check"
+      ],
+      "why_fit": "The cleanest warm-up for the centroid existence proof and the heavy-child walk used before full decomposition.",
+      "bucket": "warm-up",
+      "styles": [
+        "Subtree Sizes",
+        "Balance Check",
+        "Candidate Descent"
+      ],
+      "prerequisites": [
+        "DFS",
+        "Subtree Sizes",
+        "Rooted Trees"
+      ]
+    },
+    {
+      "title": "Ciel the Commander",
+      "url": "https://codeforces.com/problemset/problem/321/C",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/centroid-decomposition",
+        "Graphs",
+        "Centroid Decomposition",
+        "Construction"
+      ],
+      "tags": [
+        "Centroid Tree",
+        "Recursive Labeling",
+        "Balanced Split"
+      ],
+      "why_fit": "The strongest first full decomposition problem because the answer is literally the centroid-tree depth labeling.",
+      "bucket": "core",
+      "styles": [
+        "Centroid Decomposition",
+        "Recursive Labeling",
+        "Tree Partition"
+      ],
+      "prerequisites": [
+        "Centroid Basics",
+        "Static Trees",
+        "Subtree Sizes"
+      ]
+    },
+    {
+      "title": "Xenia and Tree",
+      "url": "https://codeforces.com/problemset/problem/342/E",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/centroid-decomposition",
+        "Graphs",
+        "Centroid Decomposition",
+        "Queries"
+      ],
+      "tags": [
+        "Nearest Marked Node",
+        "Centroid Ancestors",
+        "Distance Aggregation"
+      ],
+      "why_fit": "The canonical update/query problem where each operation becomes a walk over one logarithmic centroid-ancestor chain.",
+      "bucket": "practice",
+      "styles": [
+        "Centroid Ancestors",
+        "Distance Aggregation",
+        "Online Queries"
+      ],
+      "prerequisites": [
+        "Centroid Decomposition",
+        "Tree Distances",
+        "O(log n) Ancestor Walk"
+      ]
+    },
+    {
+      "title": "Fixed-Length Paths I",
+      "url": "https://cses.fi/problemset/task/2080",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/centroid-decomposition",
+        "Graphs",
+        "Centroid Decomposition",
+        "Path Counting"
+      ],
+      "tags": [
+        "Exact Length",
+        "Depth Histogram",
+        "Through-Centroid Counting"
+      ],
+      "why_fit": "The cleanest path-counting benchmark once you trust that every path is handled at the first centroid where its endpoints split.",
+      "bucket": "stretch",
+      "styles": [
+        "Path Counting",
+        "Depth Collection",
+        "Frequency Merge"
+      ],
+      "prerequisites": [
+        "Centroid Decomposition",
+        "DFS Depth Collection",
+        "Frequency Counting"
+      ]
+    },
+    {
+      "title": "Fixed-Length Paths II",
+      "url": "https://cses.fi/problemset/task/2081",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/centroid-decomposition",
+        "Graphs",
+        "Centroid Decomposition",
+        "Path Counting"
+      ],
+      "tags": [
+        "Length Range",
+        "Depth Prefix Counts",
+        "Through-Centroid Counting"
+      ],
+      "why_fit": "A natural next step after exact-length counting, where the merge logic becomes the real difficulty rather than the decomposition itself.",
+      "bucket": "advanced",
+      "styles": [
+        "Path Counting",
+        "Range Counting",
+        "Prefix Merge"
+      ],
+      "prerequisites": [
+        "Centroid Decomposition",
+        "Fixed-Length Paths I",
+        "Prefix Sums"
+      ]
+    }
+  ],
   "graphs/shortest-paths": [
     {
       "title": "Shortest Routes I",

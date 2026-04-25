@@ -18,6 +18,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - delete one edge/vertex and connectivity changes -> [Low-Link hot sheet](lowlink-hot-sheet.md)
 - binary clauses over boolean choices -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - one rooted subtree aggregate becomes one contiguous interval -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
+- static tree problem split by one balanced pivot or `O(log n)` centroid ancestors -> [Centroid hot sheet](centroid-hot-sheet.md)
 
 ## Core Families
 
@@ -29,6 +30,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - binary clause feasibility -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - subtree-only rooted-tree aggregation -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - tree path queries -> LCA or [HLD hot sheet](hld-hot-sheet.md)
+- balanced recursive tree splits / centroid ancestors -> [Centroid hot sheet](centroid-hot-sheet.md)
 - capacities -> [Flow hot sheet](flow-hot-sheet.md)
 - pairing -> [Matching hot sheet](matching-hot-sheet.md)
 
@@ -49,6 +51,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "every object has two modes and each constraint touches two literals" -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - "one rooted subtree" or "all descendants of one node" -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - "tree paths" -> LCA for ancestor/meet questions, HLD for repeated path aggregates, Euler flattening for subtree-only aggregation
+- "tree paths, but the split is through one balanced center or one logarithmic ancestor chain" -> [Centroid hot sheet](centroid-hot-sheet.md)
 - "same component after many merges" -> maybe DSU, not BFS/DFS
 
 ## Invariants To Keep In Mind
@@ -68,6 +71,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - subtree-only tree aggregation -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md) + [Subtree Queries](../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md) + [euler-tour-subtree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/euler-tour-subtree.cpp)
 - tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - HLD retrieval route -> [HLD hot sheet](hld-hot-sheet.md)
+- centroid-tree recursion -> [Centroid hot sheet](centroid-hot-sheet.md) + [Ciel the Commander](../practice/ladders/graphs/centroid-decomposition/cielthecommander.md) + [centroid-decomposition.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/centroid-decomposition.cpp)
 - flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
 - min-cost transport -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [MINCOST](../practice/ladders/graphs/flow/mincost.md)
 - matching / bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md)
@@ -79,6 +83,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Graphs ladder](../practice/ladders/graphs/README.md)
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [HLD hot sheet](hld-hot-sheet.md)
+- [Centroid hot sheet](centroid-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)

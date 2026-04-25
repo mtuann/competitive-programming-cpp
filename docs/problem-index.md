@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `83`
+- Total tracked problem notes: `84`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -15,7 +15,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | ---: |
 | Foundations | 11 |
 | Data Structures | 7 |
-| Graphs | 20 |
+| Graphs | 21 |
 | DP | 9 |
 | Greedy | 3 |
 | Math | 10 |
@@ -60,6 +60,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `MESSAGEROUTE` | Message Route | `Graphs -> BFS And DFS` | Graphs -> Graph Modeling | breadth-first search; unweighted shortest path; parent reconstruction | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/bfs-dfs.md) / [Ladder](../practice/ladders/graphs/bfs-dfs/README.md) / [Tutorial](../topics/graphs/bfs-dfs/README.md) | [Note](../practice/ladders/graphs/bfs-dfs/messageroute.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp) |
 | `NECESSARYROADS` | Necessary Roads | `Graphs -> Bridges, Articulation, And BCC` | - | low-link; bridge detection; dfs tree critical edge | `medium` | CSES, Advanced techniques | [Map](topic-maps/graphs/bridges-articulation.md) / [Ladder](../practice/ladders/graphs/bridges-articulation/README.md) / [Tutorial](../topics/graphs/bridges-articulation/README.md) | [Note](../practice/ladders/graphs/bridges-articulation/necessaryroads.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bridges-articulation/necessaryroads.cpp) |
+| `CIELTHECOMMANDER` | Ciel the Commander | `Graphs -> Centroid Decomposition` | Graphs -> Trees | centroid decomposition; centroid tree labeling; balanced recursive split | `hard` | Codeforces, Tree decomposition | [Map](topic-maps/graphs/centroid-decomposition.md) / [Ladder](../practice/ladders/graphs/centroid-decomposition/README.md) / [Tutorial](../topics/graphs/centroid-decomposition/README.md) | [Note](../practice/ladders/graphs/centroid-decomposition/cielthecommander.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/centroid-decomposition/cielthecommander.cpp) |
 | `SUBTREEQUERIES` | Subtree Queries | `Graphs -> Euler Tour / Subtree Queries` | Graphs -> Trees; Data Structures -> Fenwick Tree | euler tour flattening; subtree interval; fenwick point set range sum | `medium` | CSES, Tree algorithms | [Map](topic-maps/graphs/euler-tour-subtree.md) / [Ladder](../practice/ladders/graphs/euler-tour-subtree/README.md) / [Tutorial](../topics/graphs/euler-tour-subtree/README.md) | [Note](../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-subtree/subtreequeries.cpp) |
 | `FFLOW` | Fast Maximum Flow | `Graphs -> Maximum Flow` | Advanced -> Algorithm Engineering | maximum flow; undirected capacities; capacity scaling | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
 | `MCQUERY` | MinCut Query | `Graphs -> Maximum Flow` | Data Structures -> DSU; Graphs -> Trees; Graphs -> Gomory-Hu Tree | all-pairs min-cut; cut tree; count pairs by threshold | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |

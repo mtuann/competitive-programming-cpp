@@ -1429,6 +1429,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bridges-articulation/necessaryroads.cpp"
   },
   {
+    "code": "CIELTHECOMMANDER",
+    "title": "Ciel the Commander",
+    "full_title": "Ciel the Commander",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/321/C",
+    "main_topic": "Graphs -> Centroid Decomposition",
+    "secondary_topics": [
+      "Centroid decomposition",
+      "Centroid tree",
+      "Balanced recursive labeling"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/centroid-decomposition",
+    "topic_tags": [
+      "graphs/centroid-decomposition",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "centroid decomposition",
+      "centroid tree labeling",
+      "balanced recursive split"
+    ],
+    "tracks": [
+      "Codeforces",
+      "Tree decomposition"
+    ],
+    "note_path": "practice/ladders/graphs/centroid-decomposition/cielthecommander.md",
+    "ladder_path": "practice/ladders/graphs/centroid-decomposition/README.md",
+    "tutorial_path": "topics/graphs/centroid-decomposition/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/centroid-decomposition/cielthecommander.cpp"
+  },
+  {
     "code": "SUBTREEQUERIES",
     "title": "Subtree Queries",
     "full_title": "Subtree Queries",

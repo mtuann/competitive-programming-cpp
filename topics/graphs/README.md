@@ -15,6 +15,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
 - [Heavy-Light Decomposition](hld/README.md)
+- [Centroid Decomposition](centroid-decomposition/README.md)
 - [Maximum Flow](flow/README.md)
 - [Min-Cost Flow](min-cost-flow/README.md)
 - [Matching](matching/README.md)
@@ -40,9 +41,9 @@ Graphs are one of the central contest areas because many problems are really abo
 - trees, subtree flattening, LCA, and rerooting-style thinking
 
 3. Advanced later
+- heavy-light and more specialized tree machinery such as centroid decomposition
 - flow
 - matching
-- heavy-light and more specialized tree machinery
 
 ## Recognition Cues
 
@@ -68,6 +69,7 @@ After this section, you should be able to recognize the common graph models, cho
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
 - [Giant Pizza](../../practice/ladders/graphs/two-sat/giantpizza.md): binary clause modeling and SCC-based assignment extraction
 - [Subtree Queries](../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md): subtree intervals reduced to one Fenwick-backed range query
+- [Ciel the Commander](../../practice/ladders/graphs/centroid-decomposition/cielthecommander.md): build the centroid tree itself and use centroid depth as the answer
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
 - [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling

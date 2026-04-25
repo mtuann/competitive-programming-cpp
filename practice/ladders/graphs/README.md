@@ -14,7 +14,8 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 8. trees and subtree flattening
 9. LCA
 10. heavy-light decomposition when path queries need a range structure
-11. flow and matching
+11. centroid decomposition when balanced recursive splits become the main tool
+12. flow and matching
 
 ## Subtopic Ladders
 
@@ -29,6 +30,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
 - [Heavy-light decomposition](hld/README.md)
+- [Centroid decomposition](centroid-decomposition/README.md)
 - [Flow](flow/README.md)
 - [Matching](matching/README.md)
 - [Tree DP notes](tree-dp/README.md)
@@ -41,6 +43,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [QOS](shortest-paths/qos.md)
 - [Giant Pizza](two-sat/giantpizza.md)
 - [Subtree Queries](euler-tour-subtree/subtreequeries.md)
+- [Ciel the Commander](centroid-decomposition/cielthecommander.md)
 - [FFLOW](flow/fflow.md)
 - [MINCOST](flow/mincost.md)
 - [Path Queries II](hld/pathqueries2.md)

@@ -53,7 +53,6 @@ This file exists so future expansion work stays phased, source-backed, and small
 These are the most valuable missing topics or families relative to the repo's current maturity.
 
 - `Lazy Segment Tree`
-- `Centroid Decomposition`
 - `DSU Rollback / Offline Dynamic Connectivity`
 - `Persistent Data Structures`
 - `Manacher`
@@ -134,10 +133,11 @@ These should follow after the `Now` block ships cleanly.
 
 ### Phase 5. Canonical Tree / Data-Structure Wave B
 
-- [ ] add `topics/graphs/centroid-decomposition/README.md`
-- [ ] add `templates/graphs/centroid-decomposition.cpp`
-- [ ] add `notebook/centroid-hot-sheet.md`
-- [ ] add `practice/ladders/graphs/centroid-decomposition/README.md`
+- [x] add `topics/graphs/centroid-decomposition/README.md`
+- [x] add `templates/graphs/centroid-decomposition.cpp`
+- [x] add `notebook/centroid-hot-sheet.md`
+- [x] add `practice/ladders/graphs/centroid-decomposition/README.md`
+- [x] add one flagship centroid note plus solution
 - [ ] choose one of the following as the paired second topic:
   - [ ] `topics/data-structures/dsu-rollback/README.md`
   - [ ] `topics/data-structures/persistent-data-structures/README.md`
@@ -212,10 +212,10 @@ A wave is only considered shipped when:
 
 ## Immediate Next Action
 
-The cleanest next task after this file lands is:
+The cleanest next task after the current shipped waves is:
 
-1. `Centroid Decomposition`
-2. `DSU Rollback / Offline Dynamic Connectivity`
+1. `DSU Rollback / Offline Dynamic Connectivity`
+2. `Persistent Data Structures`
 
 That pair has the best balance of:
 
