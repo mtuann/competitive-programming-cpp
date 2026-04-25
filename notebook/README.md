@@ -120,6 +120,7 @@ The shortest useful scan order is:
 - [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Stress testing workflow](stress-testing-workflow.md)
 - [Local judge workflow](local-judge-workflow.md)
+- [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md)
 
 ## Good Pairings
 
@@ -155,7 +156,8 @@ The shortest useful scan order is:
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
 - hack-sensitive constructive or open-hack fragility -> [Anti-Hack Workflow](anti-hack-workflow.md)
-- interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)
+- interactive or simulator-style tasks -> [Local judge workflow](local-judge-workflow.md)
+- predicate-checked batch output or custom-judge legality -> [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md) + [Local judge workflow](local-judge-workflow.md)
 
 ## Learn -> Practice -> Retrieve
 

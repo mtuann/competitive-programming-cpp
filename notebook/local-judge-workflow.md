@@ -1,18 +1,18 @@
 # Local Judge Workflow
 
-This page is for the class of problems where “run the binary on stdin” is not enough.
+This page is for the class of problems where "run the binary on stdin" is not enough.
 
-- Trigger: interactive tasks, validator-heavy tasks, or outputs with many valid forms
+- Trigger: interactive tasks, simulator-style judges, or hidden-state protocol tasks
 - Inputs needed: a solution binary plus either fixed tests, a validator, or a simulator
 - Output artifact: one reproducible failing transcript or enough evidence that the local harness is trustworthy
 - Stop condition: one clean harness loop that you can rerun without guessing
-- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md)
+- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md)
 
 Use it when:
 
 - the task is interactive
-- the output can have many valid forms and needs a validator
 - you want a local harness that behaves more like the real judge
+- there is a simulator, hidden state, or query budget to enforce
 
 If you are still on ordinary batch tasks like `Weird Algorithm` or `Missing Number`, this page is too early. Stay with the normal stdin/stdout loop from the [Foundations cheatsheet](foundations-cheatsheet.md) first.
 
@@ -21,11 +21,10 @@ If you are still on ordinary batch tasks like `Weird Algorithm` or `Missing Numb
 Choose this page only if simple stdin/stdout runs are not enough anymore:
 
 - interactive protocol
-- custom validator
-- many valid answers
 - simulator or hidden-state harness
+- query-budget enforcement
 
-If the problem is still a normal batch task, go back to the [Foundations cheatsheet](foundations-cheatsheet.md) or, if trust is the issue, to [Stress testing workflow](stress-testing-workflow.md).
+If the problem is still a normal batch task, go back to the [Foundations cheatsheet](foundations-cheatsheet.md) or, if trust is the issue, to [Stress testing workflow](stress-testing-workflow.md). If the task is batch but judged by a predicate or custom validator, go to [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md).
 
 ## Core Goal
 
@@ -81,22 +80,9 @@ Use this shape when the task is complicated enough:
 
 That keeps the contest binary clean while still letting you test protocol behavior.
 
-## Local Validator Pattern
+## Batch Predicate Tasks
 
-For constructive or multi-answer tasks, a local validator should check:
-
-- output format
-- domain validity
-- per-step legality
-- final target condition
-
-Examples:
-
-- a printed permutation really uses each value once
-- a cut or matching certificate is valid
-- a move sequence never violates the rules
-
-If the problem has many correct answers, this validator matters more than a brute-force reference output.
+If the problem is not interactive but still needs a local validator for many valid answers or special judging, use [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md). This page is narrower: it is mainly for protocol loops, simulators, and hidden-state harnesses.
 
 ## Command-Line Loop
 

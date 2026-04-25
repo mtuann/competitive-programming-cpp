@@ -68,7 +68,7 @@ Use this default order unless you have a better reason:
 | reading / statement compression | [Codeforces Playbook](codeforces.md) |
 | implementation | [Codeforces Implementation Clinic 01](codeforces-implementation-clinic-01.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 | anti-hack / rejudge fear | [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) |
-| constructive / many-valid-answers | [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md) and [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| constructive / many-valid-answers | [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md) and [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
 | topic depth | the corresponding ladder in [Ladders](../ladders/README.md) |
 | pacing / solve order | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md) |
 

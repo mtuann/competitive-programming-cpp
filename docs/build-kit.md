@@ -23,7 +23,8 @@ This is the repo's `retrieve and execute` layer.
 | short invariant/trap reminders | [Notebook](../notebook/README.md) |
 | debug a suspicious implementation | [Stress testing workflow](../notebook/stress-testing-workflow.md) |
 | harden a hack-sensitive or many-answer solution before trusting it | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) |
-| validator-heavy / interactive / many-valid-answers local loop | [Local judge workflow](../notebook/local-judge-workflow.md) |
+| interactive or simulator-style local loop | [Local judge workflow](../notebook/local-judge-workflow.md) |
+| predicate-checked batch output or custom-judge legality | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) |
 | before-contest checklist | [Contest checklist](../notebook/contest-checklist.md) |
 
 ## Exact Starter Routes
@@ -101,6 +102,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 | “The code compiles, but I do not trust it” | [Stress testing workflow](../notebook/stress-testing-workflow.md) | the relevant note or template |
 | “The idea seems right, but a hack or rejudge could still break it” | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) | [Stress testing workflow](../notebook/stress-testing-workflow.md) or [Local judge workflow](../notebook/local-judge-workflow.md) |
 | “This task has a judge/protocol quirk” | [Local judge workflow](../notebook/local-judge-workflow.md) | the relevant playbook or note |
+| “This batch task is checked by a predicate, validator, or score-aware output rule” | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) | [Local judge workflow](../notebook/local-judge-workflow.md) or the relevant clinic |
 
 ## Best Pairings
 

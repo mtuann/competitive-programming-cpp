@@ -85,6 +85,7 @@ Do **not** generalize first and validate later.
 
 - [Constructive](../../topics/advanced/constructive/README.md)
 - [Local Judge Workflow](../../notebook/local-judge-workflow.md)
+- [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md)
 - [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md)
 - [Stress Testing Workflow](../../notebook/stress-testing-workflow.md)
 
@@ -99,7 +100,7 @@ Do **not** generalize first and validate later.
 | Failure signal | Go next |
 | --- | --- |
 | cannot state the witness invariant clearly | [Constructive](../../topics/advanced/constructive/README.md) |
-| the task really needs a local validator loop | [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| the task really needs a predicate-checked local validator loop | [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
 | the witness seems valid but collapses on edge families | [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) |
 | the issue is round pacing, not constructive logic | [Codeforces Playbook](codeforces.md) |
 

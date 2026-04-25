@@ -291,6 +291,7 @@ nav:
           - Strings, Math, And Counting 01: practice/mixed-rounds/strings-math-counting-01.md
           - Data Structures And Offline 01: practice/mixed-rounds/data-structures-and-offline-01.md
           - Trees And Queries 01: practice/mixed-rounds/trees-and-queries-01.md
+          - Petrozavodsk OpenCup Hard Mixed 01: practice/mixed-rounds/petrozavodsk-opencup-hard-mixed-01.md
       - Contest Playbooks:
           - Overview: practice/contest-playbooks/README.md
           - Codeforces: practice/contest-playbooks/codeforces.md
@@ -303,6 +304,10 @@ nav:
           - IOI Subtask-First Worksheet: practice/contest-playbooks/ioi-subtask-first-worksheet.md
           - IOI Checkpoint / Score-Path Drill 01: practice/contest-playbooks/ioi-checkpoint-score-path-drill-01.md
           - USACO: practice/contest-playbooks/usaco.md
+          - Code Jam Kick Start Analysis-First Clinic 01: practice/contest-playbooks/code-jam-kick-start-analysis-first-clinic-01.md
+          - Distributed Decomposition Clinic 01: practice/contest-playbooks/distributed-decomposition-clinic-01.md
+          - Topcoder One-Hard-Problem Clinic 01: practice/contest-playbooks/topcoder-one-hard-problem-clinic-01.md
+          - Topcoder Weird-Task Clinic 01: practice/contest-playbooks/topcoder-weird-task-clinic-01.md
   - Build Kit:
       - Build Kit Overview: docs/build-kit.md
       - Template Library: template-library.md
@@ -347,6 +352,7 @@ nav:
       - Anti-Hack Workflow: notebook/anti-hack-workflow.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md
       - Local Judge Workflow: notebook/local-judge-workflow.md
+      - Special Judge Output Protocol Workflow: notebook/special-judge-output-protocol-workflow.md
   - Explore:
       - Explore Overview: docs/explore.md
       - Problem Index: docs/problem-index.md

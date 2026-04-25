@@ -80,6 +80,7 @@ Minimal pack contract:
 | switching between string processing, modular reasoning, and counting | [Strings, Math, And Counting 01](strings-math-counting-01.md) |
 | switching across static, dynamic, offline, and greedy data-structure choices | [Data Structures And Offline 01](data-structures-and-offline-01.md) |
 | rooted-tree retrieval keeps drifting between ancestor, DP, and path-query views | [Trees And Queries 01](trees-and-queries-01.md) |
+| camp-style advanced switching across hard implementations | [Petrozavodsk / OpenCup Hard Mixed 01](petrozavodsk-opencup-hard-mixed-01.md) |
 
 - [Stage 0 Review Pack 01](stage0-review-pack-01.md): first retrieval session after the beginner route
 - [Codeforces Short Round 01](codeforces-short-round-01.md): short-round shipping drill with one anti-hack-heavy mid slot and one optional late-slot model
@@ -89,6 +90,7 @@ Minimal pack contract:
 - [Strings, Math, And Counting 01](strings-math-counting-01.md): pattern matching, modular reasoning, and combinatorial counting in one sitting
 - [Data Structures And Offline 01](data-structures-and-offline-01.md): switch across static RMQ, online updates, ordered containers, offline sweeps, and Fenwick-style range aggregation
 - [Trees And Queries 01](trees-and-queries-01.md): move between rooted-tree reasoning, ancestor jumps, rerooting, heavy-light decomposition, and a non-DP tree reduction
+- [Petrozavodsk / OpenCup Hard Mixed 01](petrozavodsk-opencup-hard-mixed-01.md): advanced camp-style pack for decomposition, versioning, rollback timelines, and affine DP retrieval
 
 ## Official Follow-Up Pools
 
@@ -119,3 +121,4 @@ Research snapshot: reviewed against official pages on `2026-04-24`.
 | symbolic switching across strings, modular arithmetic, and counting | `2.5-3.5 h` | [Strings, Math, And Counting 01](strings-math-counting-01.md) | [KMP](../ladders/strings/kmp/README.md), [Modular Arithmetic](../ladders/math/modular-arithmetic/README.md), or [Counting Basics](../ladders/combinatorics/counting-basics/README.md) |
 | data-structure choice keeps drifting between static, dynamic, ordered, and offline | `3-4 h` | [Data Structures And Offline 01](data-structures-and-offline-01.md) | [Sparse Table](../ladders/data-structures/sparse-table/README.md), [Heaps And Ordered Sets](../ladders/data-structures/heaps-and-ordered-sets/README.md), [Offline Tricks](../ladders/data-structures/offline-tricks/README.md), or [Segment Tree](../ladders/data-structures/segment-tree/README.md) |
 | rooted-tree queries still feel like separate tricks instead of one family | `3-4 h` | [Trees And Queries 01](trees-and-queries-01.md) | [Trees](../ladders/graphs/trees/README.md), [LCA](../ladders/graphs/lca/README.md), [Tree DP](../ladders/dp/tree-dp/README.md), or [HLD](../ladders/graphs/hld/README.md) |
+| advanced camp-style switching across decomposition, persistence, rollback, and DP optimization | `4.5-6 h` | [Petrozavodsk / OpenCup Hard Mixed 01](petrozavodsk-opencup-hard-mixed-01.md) | [Centroid Decomposition](../ladders/graphs/centroid-decomposition/README.md), [Persistent Data Structures](../ladders/data-structures/persistent-data-structures/README.md), [DSU Rollback](../ladders/data-structures/dsu-rollback/README.md), or [CHT / Li Chao](../ladders/dp/cht-li-chao/README.md) |

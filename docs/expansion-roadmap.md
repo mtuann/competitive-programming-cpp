@@ -182,12 +182,12 @@ These should follow after the `Now` block ships cleanly.
 
 ### Phase 8. Contest-Source Lane B
 
-- [ ] add a `Code Jam / Kick Start analysis-first clinic`
-- [ ] add a `special judge / output protocol` workflow page
-- [ ] add a `distributed decomposition` note or clinic if the repo gets enough supporting anchors
-- [ ] add a `Topcoder one-hard-problem clinic`
-- [ ] add a `Topcoder weird-task clinic`
-- [ ] add one `Petrozavodsk / OpenCup hard mixed pack`
+- [x] add a `Code Jam / Kick Start analysis-first clinic`
+- [x] add a `special judge / output protocol` workflow page
+- [x] add a `distributed decomposition` note or clinic if the repo gets enough supporting anchors
+- [x] add a `Topcoder one-hard-problem clinic`
+- [x] add a `Topcoder weird-task clinic`
+- [x] add one `Petrozavodsk / OpenCup hard mixed pack`
 
 ## Later
 

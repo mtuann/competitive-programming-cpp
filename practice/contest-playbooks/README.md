@@ -10,7 +10,7 @@ Use them when you already know some core topics and now need answers to question
 
 This folder is **freshness-sensitive** content.
 
-- last reviewed: `2026-04-24`
+- last reviewed: `2026-04-25`
 - official or primary sources were rechecked during this pass
 
 ## What This Folder Is For
@@ -61,6 +61,17 @@ Use this table when you want one executable drill instead of more prose.
 | [Codeforces](codeforces.md) | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md) | you want one short simulated round with banker-first shipping, anti-hack passes, and a precise upsolve route | [Codeforces Upsolve Worksheet](codeforces-upsolve-worksheet.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md), or [Problem Finder](../../docs/problem-finder.md) |
 | [IOI / OI](ioi-oi.md) | [IOI Checkpoint / Score-Path Drill 01](ioi-checkpoint-score-path-drill-01.md) | you need to practice safe-point collection before gambling on the full solve | [Reasoning](../../topics/foundations/reasoning/README.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md), or [DP ladders](../ladders/dp/README.md) |
 | [ICPC](icpc.md) | [ICPC Modeling Under Pressure 01](icpc-modeling-under-pressure-01.md) | you want a repeatable opening model, priority board, and one-machine-ready handoff | [Mixed Rounds](../mixed-rounds/README.md), [Contest Engineering](../../topics/advanced/contest-engineering/README.md), or [Build Kit](../../docs/build-kit.md) |
+
+## Contest-Source Clinics
+
+These are not full track playbooks yet. They are source-family clinics mined from contest ecosystems that reward one distinctive operating habit.
+
+| Source lane | Start with | Use when | If it breaks, reopen |
+| --- | --- | --- | --- |
+| `Code Jam / Kick Start` | [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md) | you keep seeing the idea only after the official analysis because the `small -> large` bridge never became explicit | [Reasoning](../../topics/foundations/reasoning/README.md), [Binary Search](../../topics/foundations/patterns/binary-search/README.md), or [Digit DP](../../topics/dp/digit-dp/README.md) |
+| `Distributed Code Jam-style decomposition` | [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md) | you want to practice `split -> summarize -> merge` without opening a full distributed platform first | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Subtree Queries](../../topics/graphs/euler-tour-subtree/README.md), or [Reasoning](../../topics/foundations/reasoning/README.md) |
+| `Topcoder one hard problem` | [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md) | one hard slot keeps eating the whole session even when the topic is mostly known | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md), [Reasoning](../../topics/foundations/reasoning/README.md), or the corresponding advanced ladder |
+| `Topcoder weird statement surfaces` | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md) | the wrapper looks exotic enough that you never stabilize the object model | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Constructive](../../topics/advanced/constructive/README.md), or [Counting Geometry](../../topics/geometry/counting-geometry/README.md) |
 
 ## Shared Repo Kit
 
@@ -120,6 +131,10 @@ Canonical section set:
 - [Codeforces](codeforces.md): short-round operating manual for shipping, anti-hack, validator-first construction, and upsolve discipline
 - [IOI / OI](ioi-oi.md): proof-heavy partial-scoring workflow
 - [ICPC](icpc.md): team contest operating manual for breadth, triage, and one-machine execution
+- [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md): `small -> large` promotion and analysis-first solving
+- [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md): local summary and merge-contract thinking
+- [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md): one-hard-slot proof and system-test discipline
+- [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md): strange statement surfaces turned into canonical models
 
 ## Good Pairings
 
@@ -130,7 +145,7 @@ Canonical section set:
 
 ## Research Notes
 
-This layer was refreshed against official or primary pages on `2026-04-24`.
+This layer was refreshed against official or primary pages on `2026-04-25`.
 
 Shared sources used for this pass:
 
@@ -144,3 +159,9 @@ Shared sources used for this pass:
 - [ICPC Regional Rules example (NCNA 2025/26)](https://nc.na.icpc.global/rules/)
 - [IOI Regulations](https://ioinformatics.org/files/regulations03.pdf)
 - [IOI Syllabus](https://ioinformatics.org/page/syllabus/)
+- [Celebrate Google's Coding Competitions with a final round of programming fun](https://developers.googleblog.com/celebrate-googles-coding-competitions-with-a-final-round-of-programming-fun/)
+- [google/coding-competitions-archive](https://github.com/google/coding-competitions-archive)
+- [A Decade of Kick Start](https://developers.googleblog.com/en/a-decade-of-kick-start/)
+- [Single Round Matches (SRMs) - Topcoder Support](https://help.topcoder.com/hc/en-us/articles/24954129102491-Single-Round-Matches-SRMs)
+- [Competitive Programming at Topcoder](https://www.topcoder.com/community/arena)
+- [Competing in a Topcoder Rated Event](https://www.topcoder.com/community/competitive-programming/how-to-compete/ratedEvent)
