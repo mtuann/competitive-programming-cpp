@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `77`
+- Total tracked problem notes: `79`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -18,7 +18,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Graphs | 17 |
 | DP | 9 |
 | Greedy | 3 |
-| Math | 8 |
+| Math | 10 |
 | Combinatorics | 4 |
 | Strings | 8 |
 | Geometry | 8 |
@@ -101,9 +101,11 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `CONVOLUTION` | Convolution | `Math -> FFT And NTT` | - | - | `medium` | - | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/convolution.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/convolution.cpp) |
 | `POST2` | A cộng B version 2 | `Math -> FFT And NTT` | - | convolution; digit aggregation; big integer addition | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
 | `COMMONDIVISORS` | Common Divisors | `Math -> GCD And LCM` | Math -> Number Theory Basics | divisor frequency scan; count multiples; maximize pair gcd | `medium` | CSES, Mathematics | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/commondivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp) |
 | `CRYPTKEY` | Chìa khóa mã số | `Math -> GCD And LCM` | Math -> Number Theory Basics | gcd-lcm closure; prime-power characterization; constructibility | `hard` | VN SPOJ, OI-style | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
+| `EUCLIDPROBLEM` | Euclid Problem | `Math -> GCD And LCM` | - | - | `medium` | - | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/euclidproblem.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/euclidproblem.cpp) |
 | `GCDONBLACKBOARD` | GCD on Blackboard | `Math -> GCD And LCM` | Math -> Number Theory Basics | prefix suffix gcd; remove one element; maximize array gcd | `medium` | AtCoder, Number theory | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/gcdonblackboard.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp) |
 | `EXPONENTIATION` | Exponentiation | `Math -> Modular Arithmetic` | - | binary exponentiation; repeated squaring; modular fast power | `easy` | CSES, Mathematics | [Map](topic-maps/math/modular-arithmetic.md) / [Ladder](../practice/ladders/math/modular-arithmetic/README.md) / [Tutorial](../topics/math/modular-arithmetic/README.md) | [Note](../practice/ladders/math/modular-arithmetic/exponentiation.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation.cpp) |
 | `EXPONENTIATION2` | Exponentiation II | `Math -> Modular Arithmetic` | - | binary exponentiation; fermat exponent reduction; zero exponent edge case | `medium` | CSES, Mathematics | [Map](topic-maps/math/modular-arithmetic.md) / [Ladder](../practice/ladders/math/modular-arithmetic/README.md) / [Tutorial](../topics/math/modular-arithmetic/README.md) | [Note](../practice/ladders/math/modular-arithmetic/exponentiation2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp) |

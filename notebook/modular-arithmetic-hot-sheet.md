@@ -33,7 +33,7 @@ Use this page when one fixed modulus is in play and you need the fastest route b
 - prime-mod `powmod` and inverse -> [`modular-arithmetic.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
 - many `nCk mod prime` queries -> [`factorial-binomial-mod.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
 - composite-mod inverse via Bezout coefficient plus normalization, or plain Diophantine solving -> [`extended-gcd-diophantine.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
-- anchor notes -> [Exponentiation](../practice/ladders/math/modular-arithmetic/exponentiation.md), [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
+- anchor notes -> [Exponentiation](../practice/ladders/math/modular-arithmetic/exponentiation.md), [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md), [Euclid Problem](../practice/ladders/math/gcd-lcm/euclidproblem.md)
 
 ## Reopen Paths
 

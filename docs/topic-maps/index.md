@@ -41,8 +41,8 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | DP -> Sliding Window And Window DP | 2 | 2 | 16 | [Open](dp/sliding-window.md) |
 | DP -> Tree DP | 3 | 0 | 10 | [Open](dp/tree-dp.md) |
 | Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
-| Math -> FFT And NTT | 1 | 0 | 8 | [Open](math/fft.md) |
-| Math -> GCD And LCM | 5 | 0 | 11 | [Open](math/gcd-lcm.md) |
+| Math -> FFT And NTT | 2 | 0 | 8 | [Open](math/fft.md) |
+| Math -> GCD And LCM | 6 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Modular Arithmetic | 3 | 2 | 10 | [Open](math/modular-arithmetic.md) |
 | Math -> Number Theory Basics | 7 | 0 | 13 | [Open](math/number-theory-basics.md) |
 | Combinatorics -> Bounded Compositions | 1 | 0 | 6 | [Open](combinatorics/bounded-compositions.md) |

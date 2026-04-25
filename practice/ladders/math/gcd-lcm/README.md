@@ -13,9 +13,17 @@ Use this ladder when gcd/lcm problems stop being one-line formulas and start tur
 
 - gcd/lcm construction conditions
 - repeated `gcd` or `lcm` operation reasoning
+- Bézout coefficients when the statement asks for witnesses
+
+## Retrieval Layer
+
+- one Bézout witness or composite-mod inverse -> [Modular Arithmetic hot sheet](../../../../notebook/modular-arithmetic-hot-sheet.md)
+- exact repo note -> [Euclid Problem](euclidproblem.md)
+- starter primitive -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 
 ## Example Notes
 
+- [Euclid Problem](euclidproblem.md)
 - [Common Divisors](commondivisors.md)
 - [GCD on Blackboard](gcdonblackboard.md)
 - [CRYPTKEY](cryptkey.md)

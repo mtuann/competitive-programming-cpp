@@ -1981,6 +1981,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
   },
   {
+    "code": "CONVOLUTION",
+    "title": "Convolution",
+    "full_title": "Convolution",
+    "judge": "AtCoder Library Practice Contest",
+    "judge_url": "https://atcoder.jp/contests/practice2/tasks/practice2_f",
+    "main_topic": "Math -> FFT And NTT",
+    "secondary_topics": [
+      "NTT",
+      "Exact modular convolution",
+      "998244353"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/fft",
+    "topic_tags": [
+      "math/fft"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/fft/convolution.md",
+    "ladder_path": "practice/ladders/math/fft/README.md",
+    "tutorial_path": "topics/math/fft-ntt/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/convolution.cpp"
+  },
+  {
     "code": "POST2",
     "title": "A cộng B version 2",
     "full_title": "A cộng B version 2",
@@ -2076,6 +2101,31 @@
     "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp"
+  },
+  {
+    "code": "EUCLIDPROBLEM",
+    "title": "Euclid Problem",
+    "full_title": "Euclid Problem",
+    "judge": "UVa",
+    "judge_url": "https://onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=1045",
+    "main_topic": "Math -> GCD And LCM",
+    "secondary_topics": [
+      "Extended Euclid",
+      "Bezout coefficients",
+      "Diophantine witness"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/gcd-lcm",
+    "topic_tags": [
+      "math/gcd-lcm"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/gcd-lcm/euclidproblem.md",
+    "ladder_path": "practice/ladders/math/gcd-lcm/README.md",
+    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/euclidproblem.cpp"
   },
   {
     "code": "GCDONBLACKBOARD",

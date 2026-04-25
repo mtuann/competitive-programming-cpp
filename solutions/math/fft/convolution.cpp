@@ -1,12 +1,9 @@
-// Template: NTT convolution
-// Signal: exact convolution modulo 998244353.
-// Assumes: transform length is a power of two supported by MOD - 1 and coefficients live modulo 998244353.
-// Exposes: ntt(a, invert) and convolution(a, b).
-// Complexity: O(n log n).
-// Main trap: copying it to a modulus without the required primitive root structure.
-// Links:
-//   Topic: topics/math/fft-ntt/README.md
-//   Note: practice/ladders/math/fft/convolution.md
+// Problem: Convolution
+// Judge: AtCoder Library Practice Contest
+// Source URL: https://atcoder.jp/contests/practice2/tasks/practice2_f
+// Topic: NTT, exact modular convolution
+// Idea: use iterative radix-2 NTT under modulus 998244353, multiply pointwise,
+// inverse transform, and print the first n + m - 1 coefficients.
 
 #include <iostream>
 #include <vector>
@@ -39,13 +36,14 @@ static void ntt(vector<int>& a, bool invert) {
 
     for (int len = 2; len <= n; len <<= 1) {
         int wlen = mod_pow(PRIMITIVE_ROOT, (MOD - 1) / len);
-        if (invert) wlen = mod_pow(wlen, MOD - 2);
-
+        if (invert) {
+            wlen = mod_pow(wlen, MOD - 2);
+        }
         for (int i = 0; i < n; i += len) {
             long long w = 1;
             for (int j = 0; j < len / 2; ++j) {
                 int u = a[i + j];
-                int v = static_cast<int>(a[i + j + len / 2] * w % MOD);
+                int v = static_cast<int>(1LL * a[i + j + len / 2] * w % MOD);
                 a[i + j] = u + v;
                 if (a[i + j] >= MOD) a[i + j] -= MOD;
                 a[i + j + len / 2] = u - v;
@@ -57,14 +55,18 @@ static void ntt(vector<int>& a, bool invert) {
 
     if (invert) {
         int inv_n = mod_pow(n, MOD - 2);
-        for (int& x : a) x = static_cast<int>(1LL * x * inv_n % MOD);
+        for (int& x : a) {
+            x = static_cast<int>(1LL * x * inv_n % MOD);
+        }
     }
 }
 
 static vector<int> convolution(vector<int> a, vector<int> b) {
     int result_size = static_cast<int>(a.size() + b.size() - 1);
     int n = 1;
-    while (n < result_size) n <<= 1;
+    while (n < result_size) {
+        n <<= 1;
+    }
     a.resize(n);
     b.resize(n);
 
@@ -79,12 +81,22 @@ static vector<int> convolution(vector<int> a, vector<int> b) {
 }
 
 int main() {
-    vector<int> a = {1, 2, 3};
-    vector<int> b = {4, 5};
-    vector<int> c = convolution(a, b);
-    for (int x : c) {
-        cout << x << ' ';
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m;
+    cin >> n >> m;
+    vector<int> a(n), b(m);
+    for (int& x : a) {
+        cin >> x;
     }
-    cout << '\n';
+    for (int& x : b) {
+        cin >> x;
+    }
+
+    vector<int> c = convolution(a, b);
+    for (int i = 0; i < static_cast<int>(c.size()); ++i) {
+        cout << c[i] << (i + 1 == static_cast<int>(c.size()) ? '\n' : ' ');
+    }
     return 0;
 }

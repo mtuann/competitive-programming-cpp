@@ -6,7 +6,7 @@
 // Main trap: assuming every solvable equation has the returned witness in the desired sign/range already.
 // Links:
 //   Topic: topics/math/modular-arithmetic/README.md
-//   Note: no exact repo note yet; reopen topics/math/modular-arithmetic/README.md
+//   Note: practice/ladders/math/gcd-lcm/euclidproblem.md
 
 #include <cstdlib>
 #include <iostream>

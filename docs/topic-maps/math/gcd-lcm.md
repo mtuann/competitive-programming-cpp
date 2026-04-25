@@ -5,7 +5,7 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 - Topic slug: `math/gcd-lcm`
 - Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/gcd-lcm/README.md)
-- Repo problems currently tagged here: `5`
+- Repo problems currently tagged here: `6`
 - Repo companion pages: `0`
 - Curated external problems: `11`
 
@@ -64,6 +64,7 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 | `COMMONDIVISORS` | Common Divisors | `primary` | `medium` | divisor frequency scan; count multiples; maximize pair gcd | [Note](../../../practice/ladders/math/gcd-lcm/commondivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp) |
 | `COUNTINGDIVISORS` | Counting Divisors | `secondary` | `easy` | divisor sieve; many queries preprocessing; divisor counting | [Note](../../../practice/ladders/math/number-theory-basics/countingdivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/countingdivisors.cpp) |
 | `CRYPTKEY` | Chìa khóa mã số | `primary` | `hard` | gcd-lcm closure; prime-power characterization; constructibility | [Note](../../../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
+| `EUCLIDPROBLEM` | Euclid Problem | `primary` | `medium` | - | [Note](../../../practice/ladders/math/gcd-lcm/euclidproblem.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/euclidproblem.cpp) |
 | `GCDONBLACKBOARD` | GCD on Blackboard | `primary` | `medium` | prefix suffix gcd; remove one element; maximize array gcd | [Note](../../../practice/ladders/math/gcd-lcm/gcdonblackboard.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp) |
 | `LAMP` | Dàn đèn màu | `secondary` | `hard` | density formula; pairwise coprime products; big integer fractions | [Note](../../../practice/ladders/math/number-theory-basics/lamp.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp) |
 
