@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `99`
+- Total tracked problem notes: `100`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -20,7 +20,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Greedy | 3 |
 | Math | 14 |
 | Combinatorics | 4 |
-| Strings | 9 |
+| Strings | 10 |
 | Geometry | 8 |
 | Advanced | 3 |
 
@@ -145,6 +145,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `FINDINGPATTERNS` | Finding Patterns | `Strings -> Aho-Corasick` | Strings -> Trie | aho-corasick automaton; failure links; multi-pattern presence queries | `medium` | CSES, String algorithms | [Map](topic-maps/strings/aho-corasick.md) / [Ladder](../practice/ladders/strings/aho-corasick/README.md) / [Tutorial](../topics/strings/aho-corasick/README.md) | [Note](../practice/ladders/strings/aho-corasick/findingpatterns.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp) |
+| `DISTINCTPALINDROMICSUBSTRINGS` | Distinct Palindromic Substrings | `Strings -> Eertree / Palindromic Tree` | - | - | `medium` | - | [Map](topic-maps/strings/eertree.md) / [Ladder](../practice/ladders/strings/eertree/README.md) / [Tutorial](../topics/strings/eertree/README.md) | [Note](../practice/ladders/strings/eertree/distinctpalindromicsubstrings.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/eertree/distinctpalindromicsubstrings.cpp) |
 | `FINDINGBORDERS` | Finding Borders | `Strings -> Hashing` | Advanced -> Randomized Algorithms | rolling hash; prefix-suffix equality; proper borders enumeration | `easy` | CSES, String algorithms | [Map](topic-maps/strings/hashing.md) / [Ladder](../practice/ladders/strings/hashing/README.md) / [Tutorial](../topics/strings/hashing/README.md) | [Note](../practice/ladders/strings/hashing/findingborders.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp) |
 | `STRINGMATCHING` | String Matching | `Strings -> KMP` | - | prefix function; border fallback; overlapping occurrence counting | `easy` | CSES, String algorithms | [Map](topic-maps/strings/kmp.md) / [Ladder](../practice/ladders/strings/kmp/README.md) / [Tutorial](../topics/strings/kmp/README.md) | [Note](../practice/ladders/strings/kmp/stringmatching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp) |
 | `LONGESTPALINDROME` | Longest Palindrome | `Strings -> Palindromes / Manacher` | - | manacher; odd/even centers; longest palindromic substring | `medium` | CSES, String algorithms | [Map](topic-maps/strings/palindromes.md) / [Ladder](../practice/ladders/strings/palindromes/README.md) / [Tutorial](../topics/strings/palindromes/README.md) | [Note](../practice/ladders/strings/palindromes/longestpalindrome.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/palindromes/longestpalindrome.cpp) |

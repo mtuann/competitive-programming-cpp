@@ -69,6 +69,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Combinatorics -> Inclusion-Exclusion | 3 | 0 | 6 | [Open](combinatorics/inclusion-exclusion.md) |
 | Combinatorics -> Lexicographic Enumeration | 1 | 0 | 7 | [Open](combinatorics/lexicographic-enumeration.md) |
 | Strings -> Aho-Corasick | 1 | 0 | 7 | [Open](strings/aho-corasick.md) |
+| Strings -> Eertree / Palindromic Tree | 1 | 4 | 3 | [Open](strings/eertree.md) |
 | Strings -> Hashing | 1 | 0 | 7 | [Open](strings/hashing.md) |
 | Strings -> KMP | 3 | 0 | 5 | [Open](strings/kmp.md) |
 | Strings -> Palindromes / Manacher | 1 | 3 | 3 | [Open](strings/palindromes.md) |

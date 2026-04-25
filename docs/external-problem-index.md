@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `560`
+- Total curated external problems: `563`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -479,6 +479,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Strings -> Aho-Corasick` | `Core` | [Counting Patterns](https://cses.fi/problemset/task/2103) | `CSES` | `Hard` | - | Aggregation; Offline Matching | Multi-Pattern Matching; Counting |
 | `Strings -> Aho-Corasick` | `Core` | [Pattern Positions](https://cses.fi/problemset/task/2104) | `CSES` | `Hard` | Trie | Offline Matching | Multi-Pattern Matching; First Occurrence; Many-Patterns; Text-Search |
 | `Strings -> Aho-Corasick` | `Challenge` | [Genetic engineering](https://codeforces.com/problemset/problem/86/C) | `Codeforces` | `Hard` | - | DP On Automaton; Pattern Exclusion | DP; Automata |
+| `Strings -> Eertree / Palindromic Tree` | `Core` | [Palindromes and Super Abilities](https://acm.timus.ru/problem.aspx?num=1960&space=1) | `Timus` | `Medium` | Distinct Palindromes | Online Append; Data Structure; Per-Prefix Counting | Palindromic Tree; Append-Only String; Per-Prefix Output |
+| `Strings -> Eertree / Palindromic Tree` | `Practice` | [eertree](https://judge.yosupo.jp/problem/eertree) | `Library Checker` | `Medium` | - | Verification; Construction | Palindromic Tree; Construction |
+| `Strings -> Eertree / Palindromic Tree` | `Stretch` | [Palindromic characteristics](https://codeforces.com/problemset/problem/835/D) | `Codeforces` | `Hard` | DP | DP; Palindrome Structure | Palindrome; Distinct Structure |
 | `Strings -> Hashing` | `Core` | [String Hashing](https://open.kattis.com/problems/hashing) | `Kattis` | `Easy` | Rolling Hash, Substring Comparison | - | LCS; Equality |
 | `Strings -> Hashing` | `Core` | [Good Substrings](https://codeforces.com/problemset/problem/271/D) | `Codeforces` | `Medium` | Distinct Substrings | Enumeration; Deduplication | Trie; Substrings; Hash Or Trie |
 | `Strings -> Hashing` | `Core` | [Watto and Mechanism](https://codeforces.com/problemset/problem/514/C) | `Codeforces` | `Medium` | Dictionary Matching | - | One-Change; String-Lookup; Collision-Safe |

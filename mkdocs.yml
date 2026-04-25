@@ -164,6 +164,7 @@ nav:
           - String Hashing: topics/strings/hashing/README.md
           - KMP: topics/strings/kmp/README.md
           - Palindromes / Manacher: topics/strings/palindromes/README.md
+          - Eertree / Palindromic Tree: topics/strings/eertree/README.md
           - Suffix Array And LCP: topics/strings/suffix-array-lcp/README.md
           - Suffix Automaton: topics/strings/suffix-automaton/README.md
           - Trie: topics/strings/trie/README.md
@@ -269,6 +270,7 @@ nav:
               - String Hashing: practice/ladders/strings/hashing/README.md
               - KMP: practice/ladders/strings/kmp/README.md
               - Palindromes: practice/ladders/strings/palindromes/README.md
+              - Eertree / Palindromic Tree: practice/ladders/strings/eertree/README.md
               - Suffix Array And LCP: practice/ladders/strings/suffix-array-lcp/README.md
               - Suffix Automaton: practice/ladders/strings/suffix-automaton/README.md
               - Trie: practice/ladders/strings/trie/README.md
@@ -364,6 +366,7 @@ nav:
       - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md
       - String Cheatsheet: notebook/string-cheatsheet.md
       - Palindromes Hot Sheet: notebook/palindromes-hot-sheet.md
+      - Eertree Hot Sheet: notebook/eertree-hot-sheet.md
       - String Hashing Hot Sheet: notebook/string-hashing-hot-sheet.md
       - Aho-Corasick Hot Sheet: notebook/aho-corasick-hot-sheet.md
       - Suffix Array LCP Hot Sheet: notebook/suffix-array-lcp-hot-sheet.md

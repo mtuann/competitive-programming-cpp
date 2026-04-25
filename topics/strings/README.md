@@ -4,10 +4,11 @@ Strings matter because many pattern problems are really about structure in seque
 
 ## What This Area Covers
 
-This section is about three different levels of string thinking:
+This section is about different levels of string thinking:
 
 - lightweight fingerprints and exact one-pattern tools
 - palindrome-center scans on one static string
+- append-only palindrome dictionaries over one growing string
 - dictionary and automaton structures for many patterns
 - suffix-style structures for global substring reasoning
 
@@ -16,6 +17,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - prefix view
 - pattern-matching view
 - palindrome-center view
+- palindrome-dictionary view
 - trie/automaton view
 - suffix/substring view
 
@@ -25,6 +27,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - [KMP](kmp/README.md)
 - [Z-Function](z-function/README.md)
 - [Palindromes / Manacher](palindromes/README.md)
+- [Eertree / Palindromic Tree](eertree/README.md)
 - [Trie](trie/README.md)
 - [Aho-Corasick](aho-corasick/README.md)
 - [Suffix Array And LCP](suffix-array-lcp/README.md)
@@ -45,13 +48,14 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 
 2. Contest core
 - palindromes / Manacher
+- Eertree / palindromic tree
 - trie
 - Aho-Corasick
 - suffix array and LCP
 
 3. Advanced later
 - suffix automaton
-- palindromic trees and border-heavy variants
+- border-heavy variants
 - substring data-structure combinations
 
 ## Recognition Cues
@@ -74,6 +78,7 @@ After this section, you should be able to:
 
 - choose between hashing, KMP, and Z for one-pattern or substring-comparison tasks
 - know when one static palindrome scan wants Manacher instead of hashing
+- know when a growing string wants the dictionary of distinct palindromes instead of raw radii
 - recognize when a trie or Aho-Corasick is the right many-pattern structure
 - use suffix array for static-string substring structure
 - know when suffix automaton is worth the extra conceptual weight

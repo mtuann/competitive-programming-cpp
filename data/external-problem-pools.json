@@ -11470,6 +11470,94 @@
       ]
     }
   ],
+  "strings/eertree": [
+    {
+      "title": "Palindromes and Super Abilities",
+      "url": "https://acm.timus.ru/problem.aspx?num=1960&space=1",
+      "source": "Timus",
+      "difficulty": "medium",
+      "tracks": [
+        "strings/eertree",
+        "Strings",
+        "Eertree",
+        "Distinct Palindromes"
+      ],
+      "tags": [
+        "Palindromic Tree",
+        "Distinct Palindromes",
+        "Append-Only String",
+        "Per-Prefix Output"
+      ],
+      "why_fit": "The cleanest first exact Eertree problem because each prefix answer is just the number of ordinary nodes after one append update.",
+      "bucket": "core",
+      "styles": [
+        "Online Append",
+        "Data Structure",
+        "Per-Prefix Counting"
+      ],
+      "prerequisites": [
+        "Palindrome Basics",
+        "Suffix Links",
+        "Append-Only Updates"
+      ]
+    },
+    {
+      "title": "eertree",
+      "url": "https://judge.yosupo.jp/problem/eertree",
+      "source": "Library Checker",
+      "difficulty": "medium",
+      "tracks": [
+        "strings/eertree",
+        "Strings",
+        "Eertree",
+        "Verification"
+      ],
+      "tags": [
+        "Official",
+        "Palindromic Tree",
+        "Construction"
+      ],
+      "why_fit": "Official verifier for the exact family; useful once the basic append-only invariants feel stable.",
+      "bucket": "practice",
+      "styles": [
+        "Verification",
+        "Construction"
+      ],
+      "prerequisites": [
+        "Eertree Basics",
+        "Suffix-Link Walk",
+        "Distinct Palindrome Nodes"
+      ]
+    },
+    {
+      "title": "Palindromic characteristics",
+      "url": "https://codeforces.com/problemset/problem/835/D",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "strings/eertree",
+        "Strings",
+        "Eertree",
+        "DP"
+      ],
+      "tags": [
+        "Palindromes",
+        "DP",
+        "Distinct Structure"
+      ],
+      "why_fit": "A strong stretch problem once the basic tree is trusted and you are ready to layer extra palindrome DP on top.",
+      "bucket": "stretch",
+      "styles": [
+        "DP",
+        "Palindrome Structure"
+      ],
+      "prerequisites": [
+        "Eertree Basics",
+        "Palindrome DP",
+        "Distinct Palindrome Worldview"
+      ]
+    }
+  ],
   "strings/z-function": [
     {
       "title": "String Functions",

@@ -2887,6 +2887,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp"
   },
   {
+    "code": "DISTINCTPALINDROMICSUBSTRINGS",
+    "title": "Distinct Palindromic Substrings",
+    "full_title": "Distinct Palindromic Substrings",
+    "judge": "Timus",
+    "judge_url": "https://acm.timus.ru/problem.aspx?num=1960&space=1",
+    "main_topic": "Strings -> Eertree / Palindromic Tree",
+    "secondary_topics": [
+      "Eertree",
+      "Distinct palindromes",
+      "Append-only string"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/eertree",
+    "topic_tags": [
+      "strings/eertree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/strings/eertree/distinctpalindromicsubstrings.md",
+    "ladder_path": "practice/ladders/strings/eertree/README.md",
+    "tutorial_path": "topics/strings/eertree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/eertree/distinctpalindromicsubstrings.cpp"
+  },
+  {
     "code": "FINDINGBORDERS",
     "title": "Finding Borders",
     "full_title": "Finding Borders",

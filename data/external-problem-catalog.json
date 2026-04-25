@@ -12368,6 +12368,84 @@
     "why_fit": "A classic AC-plus-DP problem for constrained string construction."
   },
   {
+    "slug": "strings/eertree",
+    "topic": "Strings -> Eertree / Palindromic Tree",
+    "title": "Palindromes and Super Abilities",
+    "url": "https://acm.timus.ru/problem.aspx?num=1960&space=1",
+    "source": "Timus",
+    "difficulty": "medium",
+    "tracks": [
+      "Distinct Palindromes"
+    ],
+    "tags": [
+      "Palindromic Tree",
+      "Append-Only String",
+      "Per-Prefix Output"
+    ],
+    "styles": [
+      "Online Append",
+      "Data Structure",
+      "Per-Prefix Counting"
+    ],
+    "prerequisites": [
+      "Palindrome Basics",
+      "Suffix Links",
+      "Append-Only Updates"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first exact Eertree problem because each prefix answer is just the number of ordinary nodes after one append update."
+  },
+  {
+    "slug": "strings/eertree",
+    "topic": "Strings -> Eertree / Palindromic Tree",
+    "title": "eertree",
+    "url": "https://judge.yosupo.jp/problem/eertree",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [],
+    "tags": [
+      "Palindromic Tree",
+      "Construction"
+    ],
+    "styles": [
+      "Verification",
+      "Construction"
+    ],
+    "prerequisites": [
+      "Eertree Basics",
+      "Suffix-Link Walk",
+      "Distinct Palindrome Nodes"
+    ],
+    "bucket": "practice",
+    "why_fit": "Official verifier for the exact family; useful once the basic append-only invariants feel stable."
+  },
+  {
+    "slug": "strings/eertree",
+    "topic": "Strings -> Eertree / Palindromic Tree",
+    "title": "Palindromic characteristics",
+    "url": "https://codeforces.com/problemset/problem/835/D",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "DP"
+    ],
+    "tags": [
+      "Palindrome",
+      "Distinct Structure"
+    ],
+    "styles": [
+      "DP",
+      "Palindrome Structure"
+    ],
+    "prerequisites": [
+      "Eertree Basics",
+      "Palindrome DP",
+      "Distinct Palindrome Worldview"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong stretch problem once the basic tree is trusted and you are ready to layer extra palindrome DP on top."
+  },
+  {
     "slug": "strings/hashing",
     "topic": "Strings -> Hashing",
     "title": "String Hashing",

@@ -202,7 +202,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Segment Tree Beats`
 - [x] `Wavelet Tree`
 - [x] `Treap / Implicit Treap`
-- [ ] `Eertree / Palindromic Tree`
+- [x] `Eertree / Palindromic Tree`
 - [ ] `XOR Basis / Linear Basis`
 - [ ] `Game Theory / Sprague-Grundy`
 - [ ] `Probability`
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Eertree / Palindromic Tree`
+1. `XOR Basis / Linear Basis`
 
 That is now the best follow-up because:
 
-- the strings lane already has `KMP`, `Z`, `Aho-Corasick`, `Suffix Array`, `Suffix Automaton`, and `Manacher`, so the next meaningful gap is the palindromic automaton family
-- `Eertree` is the cleanest remaining canonical string structure not yet given its own exact lane
-- it adds a new retrieval surface without reopening too many contest-system docs at once
+- the remaining long-tail list is now more algebraic and xor-heavy than string-heavy
+- `XOR Basis` is the cleanest remaining competitive-programming staple that still deserves one exact lane
+- it adds a reusable bitwise-algebra route without reopening the contest-system cluster again

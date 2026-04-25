@@ -6,11 +6,12 @@ Use these ladders when string problems start blurring together and you want a cl
 
 1. KMP and Z-function
 2. palindromes
-3. hashing
-4. trie
-5. Aho-Corasick
-6. suffix array
-7. suffix automaton
+3. Eertree / palindromic tree
+4. hashing
+5. trie
+6. Aho-Corasick
+7. suffix array
+8. suffix automaton
 
 ## Warm Start
 
@@ -22,8 +23,9 @@ Use this short route first:
 2. [String Functions](z-function/stringfunctions.md)
 3. [Finding Periods](z-function/findingperiods.md)
 4. [Longest Palindrome](palindromes/longestpalindrome.md)
+5. [Distinct Palindromic Substrings](eertree/distinctpalindromicsubstrings.md)
 
-That route keeps the focus on exact prefix-style reasoning, then one clean palindrome-center scan, before heavier structures enter.
+That route keeps the focus on exact prefix-style reasoning, then one clean palindrome-center scan, then one append-only palindrome-dictionary structure before heavier suffix machinery enters.
 
 ## How To Use This Section
 
@@ -43,3 +45,4 @@ That route keeps the focus on exact prefix-style reasoning, then one clean palin
 - [String Functions](z-function/stringfunctions.md)
 - [Finding Periods](z-function/findingperiods.md)
 - [Longest Palindrome](palindromes/longestpalindrome.md)
+- [Distinct Palindromic Substrings](eertree/distinctpalindromicsubstrings.md)
