@@ -97,16 +97,13 @@ This is the most direct way to stop “full solution tunnel vision” from swall
 
 ### Subtask Worksheet
 
-For each problem, write a quick table:
+Use the `Subtask Planning Sheet` above as the live worksheet during the contest. Fill it before you commit hard to the full route, then update only the columns that changed:
 
-- `subtask`
-- `points`
-- `extra constraints`
-- `easiest valid algorithm`
 - `proof status`
-- `implementation risk`
+- `validation plan`
+- `submit checkpoint`
 
-This prevents the classic IOI/OI mistake of staring only at the full constraints and missing safe points.
+This keeps one canonical artifact instead of two slightly different subtask tables.
 
 ### Checkpoint Rule
 
