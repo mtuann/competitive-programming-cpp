@@ -18,6 +18,7 @@ Use this ladder when pairwise checking is too slow and you are ready to think in
 
 - [KINGDOMS](kingdoms.md)
 - [VOTELPH](votelph.md)
+- compare point: [Closest Pair](../nearest-pair/closestpair.md) when the sweep is specifically one active-strip nearest-pair pass
 
 ## Exit Criteria
 

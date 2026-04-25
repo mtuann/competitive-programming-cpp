@@ -222,6 +222,15 @@ Canonical examples:
 - rectangle union / covered length
 - enclosure or nesting sweeps
 
+If the full sweep is just:
+
+- one static point set
+- one global nearest Euclidean pair
+
+then reopen the dedicated lane:
+
+- [Nearest Pair of Points](../nearest-pair/README.md)
+
 ### Use Simpler Sorting / Prefix Methods Instead When
 
 - the active state can be represented by one counter or one prefix sum

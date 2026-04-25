@@ -23,6 +23,8 @@ This section is about maturity, not early speed.
 - [Complexity And Hardness](complexity-and-hardness/README.md)
 - [Approximation And Relaxation](approximation-and-relaxation/README.md)
 - [Optimization And Duality](optimization-and-duality/README.md)
+- [Simplex](simplex/README.md)
+- [Matroid Intersection](matroid-intersection/README.md)
 - [Contest Engineering](contest-engineering/README.md)
 
 ## Entry
@@ -44,6 +46,8 @@ This section is about maturity, not early speed.
 - hardness as a signal
 - approximation and relaxation ideas
 - optimization and duality viewpoints
+- simplex only when one small continuous LP is already the honest exact model
+- matroid intersection only when the hidden model really is two matroids on one explicit ground set
 
 3. Theory-first later
 - richer reductions

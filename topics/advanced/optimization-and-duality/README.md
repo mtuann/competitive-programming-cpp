@@ -23,6 +23,7 @@ This page is theory-led. The main payoff is not “learn one more template.” T
 - Boundary with nearby pages:
   - use [Maximum Flow](../../graphs/flow/README.md) when the hard part is modeling the residual network and running the algorithm
   - use this page when the algorithm is already known and the missing piece is the benchmark, certificate, or proof lens
+  - use [Simplex](../simplex/README.md) when the statement is already one small continuous LP and you truly need a numeric solver
 - Strongest cues:
   - the proof language says `lower bound`, `certificate`, `fractional optimum`, `dual`, `tight`, or `complementary slackness`
   - a max-flow computation is followed by a cut extraction
@@ -525,6 +526,7 @@ You do not always need the full dual derivation, but it is worth recognizing the
   - [Cornell CS6820: Matchings / primal-dual notes](https://www.cs.cornell.edu/courses/cs6820/2024fa/handouts/matchings.pdf)
 - `Repo anchors`
   - [Optimization And Duality ladder](../../../practice/ladders/advanced/optimization-and-duality/README.md)
+  - [Simplex](../simplex/README.md)
   - [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
   - [Maximum Flow](../../graphs/flow/README.md)
   - [Approximation And Relaxation](../approximation-and-relaxation/README.md)
@@ -534,5 +536,6 @@ You do not always need the full dual derivation, but it is worth recognizing the
 
 - [Approximation And Relaxation](../approximation-and-relaxation/README.md): use it when the main goal is an approximation ratio or rounding guarantee
 - [Maximum Flow](../../graphs/flow/README.md): use it when the main entry point is the algorithm, not the dual certificate behind it
+- [Simplex](../simplex/README.md): use it when the continuous LP itself is the exact small contest model you need to solve
 - [Complexity And Hardness](../complexity-and-hardness/README.md): use it when the main question is what kind of guarantees are even realistic
 - [Algorithm Engineering](../algorithm-engineering/README.md): use it when the proof is settled and the remaining bottleneck is implementation trust or performance

@@ -15,6 +15,7 @@ Use this page when the string task is close to a known family but you want the f
 - one growing string, distinct palindromes, or longest palindromic suffix: [Eertree hot sheet](eertree-hot-sheet.md)
 - many substring equality checks: [String Hashing hot sheet](string-hashing-hot-sheet.md)
 - many patterns in one text: [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md)
+- one fixed text used as a compressed substring index: [Suffix Tree hot sheet](suffix-tree-hot-sheet.md)
 - suffix-order / repeated-substring / lexicographic suffix tasks: [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 
 ## KMP
@@ -54,7 +55,7 @@ The classic string failure is choosing a heavier structure than the task needs, 
 
 ## Reopen Paths
 
-- topic pages -> [KMP](../topics/strings/kmp/README.md), [Z-Function](../topics/strings/z-function/README.md), [Palindromes / Manacher](../topics/strings/palindromes/README.md), [Eertree / Palindromic Tree](../topics/strings/eertree/README.md), [Hashing](../topics/strings/hashing/README.md), [Aho-Corasick](../topics/strings/aho-corasick/README.md), [Suffix Array And LCP](../topics/strings/suffix-array-lcp/README.md), [Suffix Automaton](../topics/strings/suffix-automaton/README.md)
-- exact quick sheets -> [Palindromes hot sheet](palindromes-hot-sheet.md), [Eertree hot sheet](eertree-hot-sheet.md), [String Hashing hot sheet](string-hashing-hot-sheet.md), [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md), [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
+- topic pages -> [KMP](../topics/strings/kmp/README.md), [Z-Function](../topics/strings/z-function/README.md), [Palindromes / Manacher](../topics/strings/palindromes/README.md), [Eertree / Palindromic Tree](../topics/strings/eertree/README.md), [Hashing](../topics/strings/hashing/README.md), [Aho-Corasick](../topics/strings/aho-corasick/README.md), [Suffix Tree](../topics/strings/suffix-tree/README.md), [Suffix Array And LCP](../topics/strings/suffix-array-lcp/README.md), [Suffix Automaton](../topics/strings/suffix-automaton/README.md)
+- exact quick sheets -> [Palindromes hot sheet](palindromes-hot-sheet.md), [Eertree hot sheet](eertree-hot-sheet.md), [String Hashing hot sheet](string-hashing-hot-sheet.md), [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md), [Suffix Tree hot sheet](suffix-tree-hot-sheet.md), [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 - template layer -> [Template library](../template-library.md)
 - repo anchors -> [String Matching](../practice/ladders/strings/kmp/stringmatching.md), [String Functions](../practice/ladders/strings/z-function/stringfunctions.md), [Longest Palindrome](../practice/ladders/strings/palindromes/longestpalindrome.md), [Distinct Palindromic Substrings](../practice/ladders/strings/eertree/distinctpalindromicsubstrings.md), [Finding Patterns](../practice/ladders/strings/aho-corasick/findingpatterns.md)
