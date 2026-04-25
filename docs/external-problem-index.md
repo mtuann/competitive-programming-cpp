@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `524`
+- Total curated external problems: `527`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -457,6 +457,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Strings -> KMP` | `Core` | [String Matching](https://cses.fi/problemset/task/1753) | `CSES` | `Easy` | Pattern-Matching | Implementation | Prefix-Function; Single-Pattern; Occurrences |
 | `Strings -> KMP` | `Core` | [Finding Periods](https://cses.fi/problemset/task/1733) | `CSES` | `Medium` | Periodicity | Implementation; Pattern Analysis | Prefix-Function; Periods; String-Structure |
 | `Strings -> KMP` | `Core` | [Required Substring](https://cses.fi/problemset/task/1112) | `CSES` | `Medium` | Automaton-DP | - | DP; Forbidden-States; Substring-Automaton |
+| `Strings -> Palindromes / Manacher` | `Core` | [Enumerate Palindromes](https://judge.yosupo.jp/problem/enumerate_palindromes) | `Library Checker` | `Medium` | Manacher, Palindrome Radii | Implementation; Verification | Odd-Even Centers; Radius Arrays |
+| `Strings -> Palindromes / Manacher` | `Core` | [Longest Palindrome](https://cses.fi/problemset/task/1111) | `CSES` | `Medium` | Manacher | Implementation; Static Scan | Longest Palindromic Substring; Odd-Even Centers; Exact Scan |
+| `Strings -> Palindromes / Manacher` | `Challenge` | [All Palindromes](https://cses.fi/problemset/task/3138) | `CSES` | `Hard` | Manacher, Palindrome Radii | Implementation; Output Transformation | Per-Position Output; Static String |
 | `Strings -> Suffix Array And LCP` | `Core` | [Distinct Substrings](https://cses.fi/problemset/task/2105) | `CSES` | `Medium` | Suffix-Array | Counting; Suffix Processing | Distinct Substrings; Counting; Suffix-Structure |
 | `Strings -> Suffix Array And LCP` | `Core` | [Repeating Substring](https://cses.fi/problemset/task/2106) | `CSES` | `Medium` | Suffix-Array | Maximization; Substring Search | Repetition; Longest-Repeat; Binary-Search; Suffix-Structure |
 | `Strings -> Suffix Array And LCP` | `Core` | [lcp_array](https://judge.yosupo.jp/problem/lcp_array) | `Library Checker` | `Medium` | Suffix-Array | - | Kasai; Adjacent-Suffixes |

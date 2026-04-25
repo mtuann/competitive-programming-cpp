@@ -767,6 +767,18 @@
       "String algorithms"
     ]
   },
+  "LONGESTPALINDROME": {
+    "topic_tags": [],
+    "patterns": [
+      "manacher",
+      "odd/even centers",
+      "longest palindromic substring"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ]
+  },
   "STATICRANGEMINIMUMQUERIES": {
     "topic_tags": [],
     "patterns": [

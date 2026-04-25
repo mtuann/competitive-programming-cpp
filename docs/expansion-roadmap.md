@@ -5,7 +5,7 @@
 - Doc type: planning
 - Owner: repo maintainer
 - Status: active
-- Last reviewed: 2026-04-24
+- Last reviewed: 2026-04-25
 - Update triggers: after each expansion wave, after any major reprioritization, or after a new external-source audit
 - Canonical companion docs: [Roadmap](roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
 
@@ -145,11 +145,11 @@ These should follow after the `Now` block ships cleanly.
 
 ### Phase 6. Strings / DP Modern Wave
 
-- [ ] add `topics/strings/palindromes/README.md` with `Manacher` as the first shipped primitive
-- [ ] add `templates/strings/manacher.cpp`
-- [ ] add `notebook/palindromes-hot-sheet.md`
-- [ ] add `practice/ladders/strings/palindromes/README.md`
-- [ ] add one flagship palindrome note plus solution
+- [x] add `topics/strings/palindromes/README.md` with `Manacher` as the first shipped primitive
+- [x] add `templates/strings/manacher.cpp`
+- [x] add `notebook/palindromes-hot-sheet.md`
+- [x] add `practice/ladders/strings/palindromes/README.md`
+- [x] add one flagship palindrome note plus solution
 - [ ] add `topics/dp/cht-li-chao/README.md`
 - [ ] add `templates/dp/li-chao-tree.cpp`
 - [ ] add `notebook/cht-hot-sheet.md`
@@ -214,7 +214,7 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `DSU Rollback / Offline Dynamic Connectivity`
+1. `Convex Hull Trick / Li Chao Tree`
 2. `Persistent Data Structures`
 
 That pair has the best balance of:

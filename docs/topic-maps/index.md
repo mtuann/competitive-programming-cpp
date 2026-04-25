@@ -58,6 +58,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Strings -> Aho-Corasick | 1 | 0 | 7 | [Open](strings/aho-corasick.md) |
 | Strings -> Hashing | 1 | 0 | 7 | [Open](strings/hashing.md) |
 | Strings -> KMP | 3 | 0 | 5 | [Open](strings/kmp.md) |
+| Strings -> Palindromes / Manacher | 1 | 3 | 3 | [Open](strings/palindromes.md) |
 | Strings -> Suffix Array And LCP | 2 | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 1 | 0 | 8 | [Open](strings/suffix-automaton.md) |
 | Strings -> Trie | 2 | 0 | 5 | [Open](strings/trie.md) |

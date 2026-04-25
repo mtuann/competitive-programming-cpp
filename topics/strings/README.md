@@ -7,6 +7,7 @@ Strings matter because many pattern problems are really about structure in seque
 This section is about three different levels of string thinking:
 
 - lightweight fingerprints and exact one-pattern tools
+- palindrome-center scans on one static string
 - dictionary and automaton structures for many patterns
 - suffix-style structures for global substring reasoning
 
@@ -14,6 +15,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 
 - prefix view
 - pattern-matching view
+- palindrome-center view
 - trie/automaton view
 - suffix/substring view
 
@@ -22,6 +24,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - [Hashing](hashing/README.md)
 - [KMP](kmp/README.md)
 - [Z-Function](z-function/README.md)
+- [Palindromes / Manacher](palindromes/README.md)
 - [Trie](trie/README.md)
 - [Aho-Corasick](aho-corasick/README.md)
 - [Suffix Array And LCP](suffix-array-lcp/README.md)
@@ -41,13 +44,14 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - Z-function
 
 2. Contest core
+- palindromes / Manacher
 - trie
 - Aho-Corasick
 - suffix array and LCP
 
 3. Advanced later
 - suffix automaton
-- palindromic and border-heavy variants
+- palindromic trees and border-heavy variants
 - substring data-structure combinations
 
 ## Recognition Cues
@@ -69,6 +73,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 After this section, you should be able to:
 
 - choose between hashing, KMP, and Z for one-pattern or substring-comparison tasks
+- know when one static palindrome scan wants Manacher instead of hashing
 - recognize when a trie or Aho-Corasick is the right many-pattern structure
 - use suffix array for static-string substring structure
 - know when suffix automaton is worth the extra conceptual weight

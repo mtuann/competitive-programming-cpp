@@ -14,6 +14,7 @@ Use this page when many substring comparisons are the bottleneck and you want th
 - borders or prefix-suffix equality tests -> string hashing
 - binary search on LCP / first mismatch -> string hashing as the comparison primitive
 - palindrome queries -> hashing plus reverse-string preprocessing
+- one static longest-palindrome scan -> compare [Palindromes hot sheet](palindromes-hot-sheet.md)
 
 ## Core Invariants
 
@@ -33,6 +34,7 @@ Use this page when many substring comparisons are the bottleneck and you want th
 
 - same-length substring fingerprints -> [`rolling-hash.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp)
 - flagship repo note -> [Finding Borders](../practice/ladders/strings/hashing/findingborders.md)
+- compare exact static palindrome route -> [Palindromes hot sheet](palindromes-hot-sheet.md)
 - compare exact tools first -> [String cheatsheet](string-cheatsheet.md)
 
 ## Reopen Paths

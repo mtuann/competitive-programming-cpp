@@ -5,11 +5,12 @@ Use these ladders when string problems start blurring together and you want a cl
 ## Recommended Order
 
 1. KMP and Z-function
-2. hashing
-3. trie
-4. Aho-Corasick
-5. suffix array
-6. suffix automaton
+2. palindromes
+3. hashing
+4. trie
+5. Aho-Corasick
+6. suffix array
+7. suffix automaton
 
 ## Warm Start
 
@@ -20,8 +21,9 @@ Use this short route first:
 1. [String Matching](kmp/stringmatching.md)
 2. [String Functions](z-function/stringfunctions.md)
 3. [Finding Periods](z-function/findingperiods.md)
+4. [Longest Palindrome](palindromes/longestpalindrome.md)
 
-That route keeps the focus on exact prefix-style reasoning before heavier structures enter.
+That route keeps the focus on exact prefix-style reasoning, then one clean palindrome-center scan, before heavier structures enter.
 
 ## How To Use This Section
 
@@ -40,3 +42,4 @@ That route keeps the focus on exact prefix-style reasoning before heavier struct
 - [String Matching](kmp/stringmatching.md)
 - [String Functions](z-function/stringfunctions.md)
 - [Finding Periods](z-function/findingperiods.md)
+- [Longest Palindrome](palindromes/longestpalindrome.md)

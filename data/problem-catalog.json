@@ -2589,6 +2589,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp"
   },
   {
+    "code": "LONGESTPALINDROME",
+    "title": "Longest Palindrome",
+    "full_title": "Longest Palindrome",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1111",
+    "main_topic": "Strings -> Palindromes / Manacher",
+    "secondary_topics": [
+      "Manacher",
+      "Odd/even centers",
+      "Longest palindromic substring"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/palindromes",
+    "topic_tags": [
+      "strings/palindromes"
+    ],
+    "patterns": [
+      "manacher",
+      "odd/even centers",
+      "longest palindromic substring"
+    ],
+    "tracks": [
+      "CSES",
+      "String algorithms"
+    ],
+    "note_path": "practice/ladders/strings/palindromes/longestpalindrome.md",
+    "ladder_path": "practice/ladders/strings/palindromes/README.md",
+    "tutorial_path": "topics/strings/palindromes/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/palindromes/longestpalindrome.cpp"
+  },
+  {
     "code": "REPEATINGSUBSTRING",
     "title": "Repeating Substring",
     "full_title": "Repeating Substring",

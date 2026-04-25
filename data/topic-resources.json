@@ -2541,6 +2541,66 @@
       }
     ]
   },
+  "strings/palindromes": {
+    "title": "Strings -> Palindromes / Manacher",
+    "summary": "Odd/even palindrome radii on one static string, with Manacher as the exact linear-time baseline.",
+    "topic_path": "topics/strings/palindromes/README.md",
+    "ladder_path": "practice/ladders/strings/palindromes/README.md",
+    "microtopics": [
+      "manacher",
+      "odd-centers",
+      "even-centers",
+      "palindrome-radii",
+      "longest-palindromic-substring",
+      "center-expansion"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Manacher",
+        "url": "https://cp-algorithms.com/string/manacher.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Longest Palindrome",
+        "url": "https://cses.fi/problemset/task/1111",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES All Palindromes",
+        "url": "https://cses.fi/problemset/task/3138",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Palindrome Queries",
+        "url": "https://cses.fi/problemset/task/2420",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Enumerate Palindromes",
+        "url": "https://judge.yosupo.jp/problem/enumerate_palindromes",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Palindromes hot sheet",
+        "path": "notebook/palindromes-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Longest Palindrome note",
+        "path": "practice/ladders/strings/palindromes/longestpalindrome.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "String Hashing",
+        "path": "topics/strings/hashing/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "strings/z-function": {
     "title": "Strings -> Z-Function",
     "summary": "Maintain a Z-box to measure longest prefix matches at every position and solve period/border problems efficiently.",

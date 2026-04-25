@@ -10422,6 +10422,88 @@
       "bucket": "core"
     }
   ],
+  "strings/palindromes": [
+    {
+      "title": "Longest Palindrome",
+      "url": "https://cses.fi/problemset/task/1111",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "strings/palindromes",
+        "Strings",
+        "Manacher",
+        "Palindromes"
+      ],
+      "tags": [
+        "Manacher",
+        "Longest Palindromic Substring",
+        "Odd-Even Centers",
+        "Exact Scan"
+      ],
+      "why_fit": "The cleanest first Manacher task: recover one longest palindromic substring from a static string.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Static Scan"
+      ],
+      "prerequisites": [
+        "Odd/Even Centers"
+      ]
+    },
+    {
+      "title": "All Palindromes",
+      "url": "https://cses.fi/problemset/task/3138",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "strings/palindromes",
+        "Strings",
+        "Manacher",
+        "Palindrome Radii"
+      ],
+      "tags": [
+        "Manacher",
+        "Palindrome Radii",
+        "Per-Position Output",
+        "Static String"
+      ],
+      "why_fit": "Pushes past one longest answer into a full-radius style output problem.",
+      "bucket": "challenge",
+      "styles": [
+        "Implementation",
+        "Output Transformation"
+      ],
+      "prerequisites": [
+        "Odd/Even Centers",
+        "Radius-To-Answer Conversion"
+      ]
+    },
+    {
+      "title": "Enumerate Palindromes",
+      "url": "https://judge.yosupo.jp/problem/enumerate_palindromes",
+      "source": "Library Checker",
+      "difficulty": "medium",
+      "tracks": [
+        "strings/palindromes",
+        "Manacher",
+        "Palindrome Radii"
+      ],
+      "tags": [
+        "Official",
+        "Odd-Even Centers",
+        "Radius Arrays"
+      ],
+      "why_fit": "Official benchmark that asks for the raw palindrome-radii style output directly.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Verification"
+      ],
+      "prerequisites": [
+        "Odd/Even Centers"
+      ]
+    }
+  ],
   "strings/z-function": [
     {
       "title": "String Functions",

@@ -11757,6 +11757,82 @@
     "why_fit": "Uses the KMP automaton as the backbone of a counting DP."
   },
   {
+    "slug": "strings/palindromes",
+    "topic": "Strings -> Palindromes / Manacher",
+    "title": "Enumerate Palindromes",
+    "url": "https://judge.yosupo.jp/problem/enumerate_palindromes",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Manacher",
+      "Palindrome Radii"
+    ],
+    "tags": [
+      "Odd-Even Centers",
+      "Radius Arrays"
+    ],
+    "styles": [
+      "Implementation",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Odd/Even Centers"
+    ],
+    "bucket": "core",
+    "why_fit": "Official benchmark that asks for the raw palindrome-radii style output directly."
+  },
+  {
+    "slug": "strings/palindromes",
+    "topic": "Strings -> Palindromes / Manacher",
+    "title": "Longest Palindrome",
+    "url": "https://cses.fi/problemset/task/1111",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Manacher"
+    ],
+    "tags": [
+      "Longest Palindromic Substring",
+      "Odd-Even Centers",
+      "Exact Scan"
+    ],
+    "styles": [
+      "Implementation",
+      "Static Scan"
+    ],
+    "prerequisites": [
+      "Odd/Even Centers"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first Manacher task: recover one longest palindromic substring from a static string."
+  },
+  {
+    "slug": "strings/palindromes",
+    "topic": "Strings -> Palindromes / Manacher",
+    "title": "All Palindromes",
+    "url": "https://cses.fi/problemset/task/3138",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Manacher",
+      "Palindrome Radii"
+    ],
+    "tags": [
+      "Per-Position Output",
+      "Static String"
+    ],
+    "styles": [
+      "Implementation",
+      "Output Transformation"
+    ],
+    "prerequisites": [
+      "Odd/Even Centers",
+      "Radius-To-Answer Conversion"
+    ],
+    "bucket": "challenge",
+    "why_fit": "Pushes past one longest answer into a full-radius style output problem."
+  },
+  {
     "slug": "strings/suffix-array-lcp",
     "topic": "Strings -> Suffix Array And LCP",
     "title": "Distinct Substrings",

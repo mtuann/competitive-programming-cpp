@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `85`
+- Total tracked problem notes: `86`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -20,7 +20,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Greedy | 3 |
 | Math | 10 |
 | Combinatorics | 4 |
-| Strings | 8 |
+| Strings | 9 |
 | Geometry | 8 |
 | Advanced | 3 |
 
@@ -134,6 +134,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `FINDINGPATTERNS` | Finding Patterns | `Strings -> Aho-Corasick` | Strings -> Trie | aho-corasick automaton; failure links; multi-pattern presence queries | `medium` | CSES, String algorithms | [Map](topic-maps/strings/aho-corasick.md) / [Ladder](../practice/ladders/strings/aho-corasick/README.md) / [Tutorial](../topics/strings/aho-corasick/README.md) | [Note](../practice/ladders/strings/aho-corasick/findingpatterns.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/aho-corasick/findingpatterns.cpp) |
 | `FINDINGBORDERS` | Finding Borders | `Strings -> Hashing` | Advanced -> Randomized Algorithms | rolling hash; prefix-suffix equality; proper borders enumeration | `easy` | CSES, String algorithms | [Map](topic-maps/strings/hashing.md) / [Ladder](../practice/ladders/strings/hashing/README.md) / [Tutorial](../topics/strings/hashing/README.md) | [Note](../practice/ladders/strings/hashing/findingborders.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/hashing/findingborders.cpp) |
 | `STRINGMATCHING` | String Matching | `Strings -> KMP` | - | prefix function; border fallback; overlapping occurrence counting | `easy` | CSES, String algorithms | [Map](topic-maps/strings/kmp.md) / [Ladder](../practice/ladders/strings/kmp/README.md) / [Tutorial](../topics/strings/kmp/README.md) | [Note](../practice/ladders/strings/kmp/stringmatching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/kmp/stringmatching.cpp) |
+| `LONGESTPALINDROME` | Longest Palindrome | `Strings -> Palindromes / Manacher` | - | manacher; odd/even centers; longest palindromic substring | `medium` | CSES, String algorithms | [Map](topic-maps/strings/palindromes.md) / [Ladder](../practice/ladders/strings/palindromes/README.md) / [Tutorial](../topics/strings/palindromes/README.md) | [Note](../practice/ladders/strings/palindromes/longestpalindrome.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/palindromes/longestpalindrome.cpp) |
 | `REPEATINGSUBSTRING` | Repeating Substring | `Strings -> Suffix Array And LCP` | - | suffix array doubling; kasai lcp; maximum adjacent lcp | `medium` | CSES, String algorithms | [Map](topic-maps/strings/suffix-array-lcp.md) / [Ladder](../practice/ladders/strings/suffix-array-lcp/README.md) / [Tutorial](../topics/strings/suffix-array-lcp/README.md) | [Note](../practice/ladders/strings/suffix-array-lcp/repeatingsubstring.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-array-lcp/repeatingsubstring.cpp) |
 | `DISTINCTSUBSTRINGS` | Distinct Substrings | `Strings -> Suffix Automaton` | Strings -> Suffix Array And LCP | suffix automaton construction; clone states; state contribution counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/suffix-automaton.md) / [Ladder](../practice/ladders/strings/suffix-automaton/README.md) / [Tutorial](../topics/strings/suffix-automaton/README.md) | [Note](../practice/ladders/strings/suffix-automaton/distinctsubstrings.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp) |
 | `WORDCOMBINATIONS` | Word Combinations | `Strings -> Trie` | - | trie plus dp; dictionary segmentation; suffix counting | `medium` | CSES, String algorithms | [Map](topic-maps/strings/trie.md) / [Ladder](../practice/ladders/strings/trie/README.md) / [Tutorial](../topics/strings/trie/README.md) | [Note](../practice/ladders/strings/trie/wordcombinations.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/trie/wordcombinations.cpp) |
