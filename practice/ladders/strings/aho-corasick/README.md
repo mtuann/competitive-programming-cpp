@@ -4,6 +4,12 @@
 
 Use this ladder when one-pattern string matching is comfortable, and you are ready to preprocess a whole dictionary of patterns into one automaton.
 
+This lane is still thin inside the repo, so the intended loop is:
+
+- hot sheet for retrieval
+- one flagship repo note
+- topic page for deeper variants like automaton DP
+
 ## Warm-Up
 
 - build trie and failure links
@@ -13,6 +19,12 @@ Use this ladder when one-pattern string matching is comfortable, and you are rea
 
 - output propagation
 - automaton-based DP later
+
+## Retrieval Layer
+
+- exact quick sheet -> [Aho-Corasick hot sheet](../../../../notebook/aho-corasick-hot-sheet.md)
+- lowercase fixed-array starter -> [aho-corasick.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/aho-corasick.cpp)
+- flagship repo note -> [Finding Patterns](findingpatterns.md)
 
 ## Exit Criteria
 

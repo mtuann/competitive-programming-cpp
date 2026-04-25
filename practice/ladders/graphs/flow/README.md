@@ -36,6 +36,10 @@ Target skill:
 - [MINCOST](mincost.md)
 - compare bipartite matching reductions with plain flow reductions
 
+Transition note:
+
+- `MINCOST` is not just “Dinic with costs”; it switches to a min-cost-flow engine with shortest augmenting paths, reduced costs, and potentials
+
 Target skill:
 
 - see flow as a modeling language, not just one algorithm
@@ -45,7 +49,8 @@ Target skill:
 
 - max flow / min cut route -> [Flow hot sheet](../../../../notebook/flow-hot-sheet.md)
 - clean max-flow starter -> [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
-- costed flow route -> [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
+- costed flow route -> [Min-Cost Flow hot sheet](../../../../notebook/min-cost-flow-hot-sheet.md)
+- cost-aware starter -> [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
 - compare against matching when the reduction is ambiguous -> [Matching hot sheet](../../../../notebook/matching-hot-sheet.md)
 
 ## Exit Criteria

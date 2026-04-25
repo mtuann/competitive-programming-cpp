@@ -46,6 +46,12 @@ You are ready to move on when:
 - you always attach original indices to reordered queries
 - you can tell when offline processing removes the need for a heavier online structure
 
+## Retrieval Layer
+
+- exact quick sheet -> [Offline Tricks hot sheet](../../../../notebook/offline-tricks-hot-sheet.md)
+- one-key monotone sweep starter -> [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
+- flagship repo note -> [Distinct Values Queries](distinctvaluesqueries.md)
+
 ## External Practice
 
 - [USACO Guide](https://usaco.guide/)

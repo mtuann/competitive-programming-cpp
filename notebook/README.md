@@ -54,7 +54,7 @@ It should not try to reteach the full topic. If you need proofs or slower walkth
 
 When you are mid-problem and want the shortest route back to something reusable:
 
-1. open the matching cheatsheet for the family
+1. open the relevant cheatsheet for the family
 2. pick a template or invariant from there
 3. jump back into the topic page only if you need proof, pitfalls, or a slower explanation
 
@@ -85,10 +85,13 @@ The shortest useful scan order is:
 - [Fenwick hot sheet](fenwick-hot-sheet.md)
 - [DSU hot sheet](dsu-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
+- [Sparse Table hot sheet](sparse-table-hot-sheet.md)
+- [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
 - [Graph cheatsheet](graph-cheatsheet.md)
 - [HLD hot sheet](hld-hot-sheet.md)
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
+- [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [DP cheatsheet](dp-cheatsheet.md)
 - [Digit DP hot sheet](digit-dp-hot-sheet.md)
@@ -97,6 +100,8 @@ The shortest useful scan order is:
 - [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - [String cheatsheet](string-cheatsheet.md)
 - [String Hashing hot sheet](string-hashing-hot-sheet.md)
+- [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md)
+- [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 - [Geometry cheatsheet](geometry-cheatsheet.md)
 - [Contest checklist](contest-checklist.md)
 - [Stress testing workflow](stress-testing-workflow.md)
@@ -107,14 +112,19 @@ The shortest useful scan order is:
 - Fenwick / dynamic prefix counts -> [Fenwick hot sheet](fenwick-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
 - merge-only components -> [DSU hot sheet](dsu-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
 - segment tree under pressure -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
+- static idempotent range queries -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
+- reorderable query batches -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
 - tree path queries -> [HLD hot sheet](hld-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - shortest paths -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - flow / cuts / transport -> [Flow hot sheet](flow-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
+- costed transport under capacities -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md)
 - bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous
 - digit-counting on large ranges -> [Digit DP hot sheet](digit-dp-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - substring fingerprints -> [String Hashing hot sheet](string-hashing-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)
+- many patterns in one text -> [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)
+- exact static suffix structure -> [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
 - interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)
@@ -126,8 +136,8 @@ Use this layer as the `Retrieve` step, not the first step:
 | If you need... | Open first | Then |
 | --- | --- | --- |
 | proof or slower explanation | [Topics](../topics/README.md) | come back here after the idea is trusted |
-| a concrete next problem | [Problem Finder](../docs/problem-finder.md) | then reopen the matching sheet |
-| a pasteable snippet | [Build Kit](../docs/build-kit.md) | then the matching template |
+| a concrete next problem | [Problem Finder](../docs/problem-finder.md) | then reopen the relevant sheet |
+| a pasteable snippet | [Build Kit](../docs/build-kit.md) | then the relevant template |
 
 ## Reopen Rules
 

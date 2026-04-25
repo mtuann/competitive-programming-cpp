@@ -45,6 +45,12 @@ You are ready to move on when:
 - you can build the log table confidently
 - you know when segment tree is the better choice
 
+## Retrieval Layer
+
+- exact quick sheet -> [Sparse Table hot sheet](../../../../notebook/sparse-table-hot-sheet.md)
+- static RMQ starter -> [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp)
+- compare against heavier mutable range structures -> [Segment Tree hot sheet](../../../../notebook/segment-tree-hot-sheet.md)
+
 ## External Practice
 
 - [CP-Algorithms - Sparse Table](https://cp-algorithms.com/data_structures/sparse-table.html)

@@ -12,8 +12,8 @@ Use this page when the string task is close to a known family but you want the f
 
 - one exact pattern in one text: KMP or Z
 - many substring equality checks: [String Hashing hot sheet](string-hashing-hot-sheet.md)
-- many patterns in one text: Aho-Corasick
-- suffix-order / distinct-substring style tasks: suffix array
+- many patterns in one text: [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md)
+- suffix-order / repeated-substring / lexicographic suffix tasks: [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 
 ## KMP
 
@@ -52,7 +52,7 @@ The classic string failure is choosing a heavier structure than the task needs, 
 
 ## Reopen Paths
 
-- topic pages -> [KMP](../topics/strings/kmp/README.md), [Z-Function](../topics/strings/z-function/README.md), [Hashing](../topics/strings/hashing/README.md), [Aho-Corasick](../topics/strings/aho-corasick/README.md)
-- exact quick sheet -> [String Hashing hot sheet](string-hashing-hot-sheet.md)
+- topic pages -> [KMP](../topics/strings/kmp/README.md), [Z-Function](../topics/strings/z-function/README.md), [Hashing](../topics/strings/hashing/README.md), [Aho-Corasick](../topics/strings/aho-corasick/README.md), [Suffix Array And LCP](../topics/strings/suffix-array-lcp/README.md)
+- exact quick sheets -> [String Hashing hot sheet](string-hashing-hot-sheet.md), [Aho-Corasick hot sheet](aho-corasick-hot-sheet.md), [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 - template layer -> [Template library](../template-library.md)
 - repo anchors -> [String Matching](../practice/ladders/strings/kmp/stringmatching.md), [String Functions](../practice/ladders/strings/z-function/stringfunctions.md), [Finding Patterns](../practice/ladders/strings/aho-corasick/findingpatterns.md)

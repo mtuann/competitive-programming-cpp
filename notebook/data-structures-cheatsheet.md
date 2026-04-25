@@ -13,7 +13,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - static range sums -> prefix sums
 - point add + prefix/range sum -> [Fenwick hot sheet](fenwick-hot-sheet.md)
 - arbitrary merge with updates -> segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md)
-- static idempotent range query -> sparse table
+- static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
 - current top / min / max only -> heap
 - predecessor / successor / erase-one with duplicates -> multiset
@@ -41,15 +41,15 @@ Use this page when you know the operations but have not yet picked the lightest 
 - "largest ticket not exceeding x" -> multiset predecessor
 - "median of the current window" -> two multisets before reaching for PBDS
 - "minimum on every sliding window" -> monotonic deque, not a segment tree
-- "all queries known first" -> check whether an offline sweep replaces a heavier online structure
+- "all queries known first" -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) before building a heavier online structure
 
 ## Quick Anchors In This Repo
 
 - Fenwick -> [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
 - DSU -> [DSU hot sheet](dsu-hot-sheet.md) + [C11XU](../practice/ladders/data-structures/dsu/c11xu.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
-- offline sweep -> [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
-- sparse table -> [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
+- offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
+- sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
 - segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 
 ## Common Mistakes
@@ -76,6 +76,8 @@ Ask:
 - [Fenwick hot sheet](fenwick-hot-sheet.md)
 - [DSU hot sheet](dsu-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
+- [Sparse Table hot sheet](sparse-table-hot-sheet.md)
+- [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)

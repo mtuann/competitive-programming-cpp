@@ -125,10 +125,13 @@ nav:
       - Fenwick Hot Sheet: notebook/fenwick-hot-sheet.md
       - DSU Hot Sheet: notebook/dsu-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
+      - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
+      - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
+      - Min-Cost Flow Hot Sheet: notebook/min-cost-flow-hot-sheet.md
       - Matching Hot Sheet: notebook/matching-hot-sheet.md
       - DP Cheatsheet: notebook/dp-cheatsheet.md
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
@@ -137,6 +140,8 @@ nav:
       - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md
       - String Cheatsheet: notebook/string-cheatsheet.md
       - String Hashing Hot Sheet: notebook/string-hashing-hot-sheet.md
+      - Aho-Corasick Hot Sheet: notebook/aho-corasick-hot-sheet.md
+      - Suffix Array LCP Hot Sheet: notebook/suffix-array-lcp-hot-sheet.md
       - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
       - Contest Checklist: notebook/contest-checklist.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md

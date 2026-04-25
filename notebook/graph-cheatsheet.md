@@ -38,6 +38,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "fewest edges" or "minimum moves" -> start from BFS
 - "weights are only 0 and 1" -> do not jump to Dijkstra first
 - "negative edge" or "check for negative cycle" -> Bellman-Ford family
+- "cheapest transport under capacities" -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - "tree paths" -> LCA for ancestor/meet questions, HLD for repeated path aggregates, Euler flattening for subtree-only aggregation
 - "same component after many merges" -> maybe DSU, not BFS/DFS
 
@@ -56,6 +57,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - HLD retrieval route -> [HLD hot sheet](hld-hot-sheet.md)
 - flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
+- min-cost transport -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [MINCOST](../practice/ladders/graphs/flow/mincost.md)
 - matching / bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md)
 - general-matching / edge-cover boundary compare point -> [QBFLOWER](../practice/ladders/graphs/matching/qbflower.md)
 
@@ -66,6 +68,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [HLD hot sheet](hld-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
+- [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Flow topic](../topics/graphs/flow/README.md)
