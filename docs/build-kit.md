@@ -31,10 +31,14 @@ Use these when the topic is already mostly trusted and you want the shortest pat
 
 | Need | Learn / check first | Reuse | Compare against |
 | --- | --- | --- | --- |
+| point updates plus prefix/range sums | [Fenwick hot sheet](../notebook/fenwick-hot-sheet.md) | [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp) | [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) |
+| merge-only connectivity or Kruskal-style components | [DSU hot sheet](../notebook/dsu-hot-sheet.md) | [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp) | [C11XU](../practice/ladders/data-structures/dsu/c11xu.md) |
 | exact one-pattern matching | [KMP](../topics/strings/kmp/README.md) | [kmp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/kmp.cpp) | [String Matching](../practice/ladders/strings/kmp/stringmatching.md) |
-| static tree, point updates, path maximum | [Heavy-Light Decomposition](../topics/graphs/hld/README.md) | [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp) | [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) |
-| exact convolution modulo `998244353` | [FFT / NTT](../topics/math/fft-ntt/README.md) | [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) | [FFT ladder](../practice/ladders/math/fft/README.md) |
-| one inverse under composite modulus or `ax + by = c` | [Modular Arithmetic](../topics/math/modular-arithmetic/README.md) | [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp) | [GCD / LCM ladder](../practice/ladders/math/gcd-lcm/README.md) |
+| static tree, point updates, path maximum | [HLD hot sheet](../notebook/hld-hot-sheet.md) | [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp) | [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) |
+| decimal range counting with a small digit state | [Digit DP hot sheet](../notebook/digit-dp-hot-sheet.md) | [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp) | [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md) |
+| same-length substring fingerprints | [String Hashing hot sheet](../notebook/string-hashing-hot-sheet.md) | [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp) | [Finding Borders](../practice/ladders/strings/hashing/findingborders.md) |
+| exact convolution modulo `998244353` | [FFT / NTT](../topics/math/fft-ntt/README.md) | [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) | [POST2](../practice/ladders/math/fft/post2.md) |
+| one inverse under composite modulus or `ax + by = c` | [Modular Arithmetic hot sheet](../notebook/modular-arithmetic-hot-sheet.md) | [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp) | no exact repo note yet; reopen [Modular Arithmetic](../topics/math/modular-arithmetic/README.md) |
 
 ## Choose The Smallest Useful Tool
 
@@ -77,12 +81,16 @@ Open a workflow page when the algorithm feels right but the solution still feels
 
 ## Best Pairings
 
+- Fenwick / dynamic prefix counts -> [Fenwick hot sheet](../notebook/fenwick-hot-sheet.md) + data-structures templates
+- merge-only connectivity -> [DSU hot sheet](../notebook/dsu-hot-sheet.md) + graph/data-structure templates
 - shortest paths -> [Shortest Paths hot sheet](../notebook/shortest-paths-hot-sheet.md) + graph templates
-- tree path queries -> [Graph cheatsheet](../notebook/graph-cheatsheet.md) + [Heavy-Light Decomposition](../topics/graphs/hld/README.md)
+- tree path queries -> [HLD hot sheet](../notebook/hld-hot-sheet.md) + [Heavy-Light Decomposition](../topics/graphs/hld/README.md)
 - range-query structures -> [Segment Tree hot sheet](../notebook/segment-tree-hot-sheet.md) + [Data structures cheatsheet](../notebook/data-structures-cheatsheet.md)
 - flow or cuts -> [Flow hot sheet](../notebook/flow-hot-sheet.md) + graph templates
 - matching -> [Matching hot sheet](../notebook/matching-hot-sheet.md) + [Flow hot sheet](../notebook/flow-hot-sheet.md) when the reduction is ambiguous
+- digit-counting over huge ranges -> [Digit DP hot sheet](../notebook/digit-dp-hot-sheet.md) + DP templates
 - modular arithmetic -> [Modular Arithmetic hot sheet](../notebook/modular-arithmetic-hot-sheet.md) + math templates
+- substring fingerprints -> [String Hashing hot sheet](../notebook/string-hashing-hot-sheet.md) + string templates
 - geometry predicates -> [Geometry cheatsheet](../notebook/geometry-cheatsheet.md) + geometry templates
 
 ## After This Page

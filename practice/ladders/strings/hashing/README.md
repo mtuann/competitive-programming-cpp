@@ -18,6 +18,12 @@ Use this ladder when exact string tools feel too rigid, and you want a flexible 
 
 - distinct-substring style counting
 
+## Retrieval Layer
+
+- exact quick sheet -> [String Hashing hot sheet](../../../../notebook/string-hashing-hot-sheet.md)
+- rolling fingerprint starter -> [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp)
+- compare against exact string-family chooser -> [String cheatsheet](../../../../notebook/string-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when you can:

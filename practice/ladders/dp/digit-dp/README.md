@@ -38,6 +38,12 @@ Target skill:
 
 - see when digit DP is the correct representation-layer DP and when direct combinatorics may be simpler
 
+## Retrieval Layer
+
+- exact quick sheet -> [Digit DP hot sheet](../../../../notebook/digit-dp-hot-sheet.md)
+- prev-digit flavored starter -> [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp)
+- general state-design refresher -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

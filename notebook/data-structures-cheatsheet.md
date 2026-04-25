@@ -11,10 +11,10 @@ Use this page when you know the operations but have not yet picked the lightest 
 ## Choose By Operations
 
 - static range sums -> prefix sums
-- point add + prefix/range sum -> Fenwick
+- point add + prefix/range sum -> [Fenwick hot sheet](fenwick-hot-sheet.md)
 - arbitrary merge with updates -> segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - static idempotent range query -> sparse table
-- connectivity merges -> DSU
+- connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
 - current top / min / max only -> heap
 - predecessor / successor / erase-one with duplicates -> multiset
 - sliding median -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
@@ -46,6 +46,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 ## Quick Anchors In This Repo
 
 - Fenwick -> [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
+- DSU -> [DSU hot sheet](dsu-hot-sheet.md) + [C11XU](../practice/ladders/data-structures/dsu/c11xu.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - sparse table -> [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
@@ -72,6 +73,8 @@ Ask:
 
 - [Heaps and ordered sets topic](../topics/data-structures/heaps-and-ordered-sets/README.md)
 - [Offline tricks topic](../topics/data-structures/offline-tricks/README.md)
+- [Fenwick hot sheet](fenwick-hot-sheet.md)
+- [DSU hot sheet](dsu-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)

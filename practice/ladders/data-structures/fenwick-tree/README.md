@@ -40,6 +40,12 @@ Target skill:
 
 - recognize the BIT variants that still stay natural
 
+## Retrieval Layer
+
+- exact quick sheet -> [Fenwick hot sheet](../../../../notebook/fenwick-hot-sheet.md)
+- point add plus prefix/range sum starter -> [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp)
+- compare against heavier range structures -> [Segment Tree hot sheet](../../../../notebook/segment-tree-hot-sheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

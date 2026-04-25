@@ -122,16 +122,21 @@ nav:
       - Notebook Overview: notebook/README.md
       - Foundations Cheatsheet: notebook/foundations-cheatsheet.md
       - Data Structures Cheatsheet: notebook/data-structures-cheatsheet.md
+      - Fenwick Hot Sheet: notebook/fenwick-hot-sheet.md
+      - DSU Hot Sheet: notebook/dsu-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
+      - HLD Hot Sheet: notebook/hld-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
       - Matching Hot Sheet: notebook/matching-hot-sheet.md
       - DP Cheatsheet: notebook/dp-cheatsheet.md
+      - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md
       - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md
       - String Cheatsheet: notebook/string-cheatsheet.md
+      - String Hashing Hot Sheet: notebook/string-hashing-hot-sheet.md
       - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
       - Contest Checklist: notebook/contest-checklist.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md

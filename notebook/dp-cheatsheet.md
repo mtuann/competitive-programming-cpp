@@ -12,7 +12,7 @@ Use this page when the state is close, but you still need to stabilize what each
 
 - best answer on a prefix -> 1D DP
 - extra small parameter on a prefix -> 2D or layered DP
-- decimal representation with tight bound -> digit DP
+- decimal representation with tight bound -> [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - shrinking subarray / interval -> interval DP
 - subtree choices combine upward -> tree DP
 - subsets or masks are the natural state -> bitmask DP
@@ -40,7 +40,7 @@ dp[i][j] = answer on prefix i with extra parameter j
 
 - value or feasibility over prefixes -> classic 1D DP
 - tree structure decides the subproblems -> tree DP
-- digits with tight constraints -> digit DP
+- digits with tight constraints -> [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - intervals shrink from both ends -> interval DP
 - moving window contributes a min / max / median -> combine DP thinking with a window structure
 
@@ -75,4 +75,5 @@ The classic DP bug is not syntax. It is a state that silently throws away inform
 ## Reopen Paths
 
 - topic pages -> [DP Foundations](../topics/dp/foundations/README.md), [Digit DP](../topics/dp/digit-dp/README.md), [Tree DP](../topics/dp/tree-dp/README.md), [Interval DP](../topics/dp/interval-dp/README.md)
+- exact quick sheet -> [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - repo anchors -> [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md), [Removal Game](../practice/ladders/dp/interval-dp/removalgame.md), [Tree Matching](../practice/ladders/dp/tree-dp/treematching.md)

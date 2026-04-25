@@ -41,6 +41,12 @@ Target skill:
 
 - understand the limits of plain DSU and when variants appear
 
+## Retrieval Layer
+
+- exact quick sheet -> [DSU hot sheet](../../../../notebook/dsu-hot-sheet.md)
+- merge-only connectivity starter -> [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp)
+- compare against Kruskal usage -> [Road Reparation](../../graphs/mst/roadreparation.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

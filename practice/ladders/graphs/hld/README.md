@@ -40,6 +40,12 @@ Target skill:
 
 - know when HLD is the right hammer and when it is overkill
 
+## Retrieval Layer
+
+- exact quick sheet -> [HLD hot sheet](../../../../notebook/hld-hot-sheet.md)
+- static node-update path-max starter -> [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
+- compare against lighter tree tooling -> [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

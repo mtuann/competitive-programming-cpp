@@ -11,7 +11,7 @@ Use this page when the string task is close to a known family but you want the f
 ## Choose Fast
 
 - one exact pattern in one text: KMP or Z
-- many substring equality checks: hashing
+- many substring equality checks: [String Hashing hot sheet](string-hashing-hot-sheet.md)
 - many patterns in one text: Aho-Corasick
 - suffix-order / distinct-substring style tasks: suffix array
 
@@ -53,5 +53,6 @@ The classic string failure is choosing a heavier structure than the task needs, 
 ## Reopen Paths
 
 - topic pages -> [KMP](../topics/strings/kmp/README.md), [Z-Function](../topics/strings/z-function/README.md), [Hashing](../topics/strings/hashing/README.md), [Aho-Corasick](../topics/strings/aho-corasick/README.md)
+- exact quick sheet -> [String Hashing hot sheet](string-hashing-hot-sheet.md)
 - template layer -> [Template library](../template-library.md)
 - repo anchors -> [String Matching](../practice/ladders/strings/kmp/stringmatching.md), [String Functions](../practice/ladders/strings/z-function/stringfunctions.md), [Finding Patterns](../practice/ladders/strings/aho-corasick/findingpatterns.md)
