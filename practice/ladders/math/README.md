@@ -6,16 +6,18 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 
 1. modular arithmetic
 2. number theory basics
-3. linear recurrence / matrix exponentiation
-4. gcd / lcm constructions
-5. FFT
+3. gcd / lcm constructions
+4. chinese remainder / linear congruences
+5. linear recurrence / matrix exponentiation
+6. FFT
 
 ## Subtopic Ladders
 
 - [Modular arithmetic](modular-arithmetic/README.md)
 - [Number theory basics](number-theory-basics/README.md)
-- [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
 - [GCD / LCM](gcd-lcm/README.md)
+- [Chinese remainder / linear congruences](chinese-remainder/README.md)
+- [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
 - [FFT](fft/README.md)
 
 ## Representative Solved Notes
@@ -26,4 +28,5 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Common Divisors](gcd-lcm/commondivisors.md)
 - [GCD on Blackboard](gcd-lcm/gcdonblackboard.md)
 - [CRYPTKEY](gcd-lcm/cryptkey.md)
+- [General Chinese Remainder](chinese-remainder/generalchineseremainder.md)
 - [POST2](fft/post2.md)

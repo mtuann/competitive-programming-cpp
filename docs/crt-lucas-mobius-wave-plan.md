@@ -71,6 +71,10 @@ Teach the learner to recognize:
 
 #### A1. Chinese Remainder / Linear Congruences
 
+Status:
+
+- shipped on `2026-04-25`
+
 Planned lane:
 
 - topic: `topics/math/chinese-remainder/README.md`

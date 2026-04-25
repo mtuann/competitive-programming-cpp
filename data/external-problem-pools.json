@@ -9470,6 +9470,61 @@
       "bucket": "core"
     }
   ],
+  "math/chinese-remainder": [
+    {
+      "title": "General Chinese Remainder",
+      "url": "https://open.kattis.com/problems/generalchineseremainder",
+      "source": "Kattis",
+      "difficulty": "medium",
+      "tracks": [
+        "math/chinese-remainder",
+        "Congruence Systems",
+        "Math"
+      ],
+      "tags": [
+        "Chinese Remainder Theorem",
+        "Extended Euclid",
+        "Non-Coprime Moduli"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "GCD",
+        "Extended Euclid",
+        "Modular Arithmetic"
+      ],
+      "why_fit": "The cleanest first rep for non-coprime congruence merges with an explicit no-solution branch."
+    },
+    {
+      "title": "System of Linear Congruence",
+      "url": "https://judge.yosupo.jp/problem/system_of_linear_congruence",
+      "source": "Library Checker",
+      "difficulty": "medium",
+      "tracks": [
+        "math/chinese-remainder",
+        "Congruence Systems",
+        "Math"
+      ],
+      "tags": [
+        "Chinese Remainder Theorem",
+        "Linear Congruence",
+        "Extended Euclid"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Extended Euclid",
+        "Congruence Merging"
+      ],
+      "why_fit": "A direct benchmark for solving and merging full congruence systems after the two-modulus route is trusted."
+    }
+  ],
   "math/linear-recurrence": [
     {
       "title": "Fibonacci Numbers",

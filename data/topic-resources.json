@@ -2247,6 +2247,66 @@
       }
     ]
   },
+  "math/chinese-remainder": {
+    "title": "Math -> Chinese Remainder And Linear Congruences",
+    "summary": "Congruence systems, gcd-consistent residue merges, and the extended-Euclid doorway from linear congruences to one merged class modulo lcm.",
+    "topic_path": "topics/math/chinese-remainder/README.md",
+    "ladder_path": "practice/ladders/math/chinese-remainder/README.md",
+    "microtopics": [
+      "crt-merge",
+      "non-coprime-moduli",
+      "gcd-consistency",
+      "linear-congruence",
+      "bezout-inverse",
+      "lcm-reconstruction"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Chinese remainder theorem",
+        "url": "https://cp-algorithms.com/algebra/chinese-remainder-theorem.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms linear congruence equation",
+        "url": "https://cp-algorithms.com/algebra/linear_congruence_equation.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Kattis General Chinese Remainder",
+        "url": "https://open.kattis.com/problems/generalchineseremainder",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker System of Linear Congruence",
+        "url": "https://judge.yosupo.jp/problem/system_of_linear_congruence",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Chinese Remainder hot sheet",
+        "path": "notebook/chinese-remainder-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "General Chinese Remainder",
+        "path": "practice/ladders/math/chinese-remainder/generalchineseremainder.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
+    ]
+  },
   "math/linear-recurrence": {
     "title": "Math -> Linear Recurrence And Matrix Exponentiation",
     "summary": "Fixed-width linear recurrences and repeated small linear transitions, turned into companion matrices and powered quickly by repeated squaring.",

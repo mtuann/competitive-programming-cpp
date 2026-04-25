@@ -140,6 +140,7 @@ nav:
           - Overview: topics/math/README.md
           - Modular Arithmetic: topics/math/modular-arithmetic/README.md
           - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - Chinese Remainder / Linear Congruences: topics/math/chinese-remainder/README.md
           - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
           - FFT / NTT: topics/math/fft-ntt/README.md
       - Combinatorics:
@@ -235,8 +236,9 @@ nav:
               - Overview: practice/ladders/math/README.md
               - Modular Arithmetic: practice/ladders/math/modular-arithmetic/README.md
               - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
-              - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
               - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
+              - Chinese Remainder / Linear Congruences: practice/ladders/math/chinese-remainder/README.md
+              - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
               - FFT / NTT: practice/ladders/math/fft/README.md
           - Combinatorics:
               - Overview: practice/ladders/combinatorics/README.md
@@ -327,6 +329,7 @@ nav:
       - Linear Recurrence Hot Sheet: notebook/linear-recurrence-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md
+      - Chinese Remainder Hot Sheet: notebook/chinese-remainder-hot-sheet.md
       - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md
       - String Cheatsheet: notebook/string-cheatsheet.md
       - Palindromes Hot Sheet: notebook/palindromes-hot-sheet.md

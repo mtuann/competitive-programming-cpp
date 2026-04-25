@@ -164,6 +164,11 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `practice/ladders/math/linear-recurrence/README.md`
 - [x] add one flagship linear-recurrence note plus solution
 - [x] add a [`CRT / Lucas / Möbius` wave plan](crt-lucas-mobius-wave-plan.md), then split it into at most `2` math waves instead of bulk-shipping everything together
+- [x] add `topics/math/chinese-remainder/README.md`
+- [x] add `templates/math/chinese-remainder.cpp`
+- [x] add `notebook/chinese-remainder-hot-sheet.md`
+- [x] add `practice/ladders/math/chinese-remainder/README.md`
+- [x] add one flagship CRT / congruence-system note plus solution
 
 ### Phase 8. Contest-Source Lane B
 

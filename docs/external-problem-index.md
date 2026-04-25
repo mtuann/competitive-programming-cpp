@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `535`
+- Total curated external problems: `537`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -361,6 +361,8 @@ This page lists curated external problems imported into the topic-map system.
 
 | Topic | Bucket | Problem | Source | Difficulty | Context | Style | Tags |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| `Math -> Chinese Remainder And Linear Congruences` | `Core` | [General Chinese Remainder](https://open.kattis.com/problems/generalchineseremainder) | `Kattis` | `Medium` | Congruence Systems | Math; Implementation | Chinese Remainder Theorem; Extended Euclid; Non-Coprime Moduli |
+| `Math -> Chinese Remainder And Linear Congruences` | `Stretch` | [System of Linear Congruence](https://judge.yosupo.jp/problem/system_of_linear_congruence) | `Library Checker` | `Medium` | Congruence Systems | Math; Implementation | Chinese Remainder Theorem; Linear Congruence; Extended Euclid |
 | `Math -> FFT And NTT` | `Core` | [Convolution](https://atcoder.jp/contests/practice2/tasks/practice2_f) | `AtCoder` | `Easy` | Convolution, NTT, Polynomial Multiplication | Implementation; Math | Number Theoretic Transform; Acl |
 | `Math -> FFT And NTT` | `Core` | [Convolution](https://judge.yosupo.jp/problem/convolution) | `Library Checker` | `Easy-Medium` | Polynomial Multiplication, NTT | - | Convolution; 998244353 |
 | `Math -> FFT And NTT` | `Core` | [Convolution Mod](https://judge.yosupo.jp/problem/convolution_mod) | `Library Checker` | `Medium` | Polynomial Multiplication, NTT | - | Mod Convolution; NTT-Friendly; Formal Power Series |

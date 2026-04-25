@@ -10466,6 +10466,59 @@
     "why_fit": "A compact prefix-constraint problem where the feasibility check is driven by a simple greedy invariant."
   },
   {
+    "slug": "math/chinese-remainder",
+    "topic": "Math -> Chinese Remainder And Linear Congruences",
+    "title": "General Chinese Remainder",
+    "url": "https://open.kattis.com/problems/generalchineseremainder",
+    "source": "Kattis",
+    "difficulty": "medium",
+    "tracks": [
+      "Congruence Systems"
+    ],
+    "tags": [
+      "Chinese Remainder Theorem",
+      "Extended Euclid",
+      "Non-Coprime Moduli"
+    ],
+    "styles": [
+      "Math",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "GCD",
+      "Extended Euclid",
+      "Modular Arithmetic"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first rep for non-coprime congruence merges with an explicit no-solution branch."
+  },
+  {
+    "slug": "math/chinese-remainder",
+    "topic": "Math -> Chinese Remainder And Linear Congruences",
+    "title": "System of Linear Congruence",
+    "url": "https://judge.yosupo.jp/problem/system_of_linear_congruence",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Congruence Systems"
+    ],
+    "tags": [
+      "Chinese Remainder Theorem",
+      "Linear Congruence",
+      "Extended Euclid"
+    ],
+    "styles": [
+      "Math",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Extended Euclid",
+      "Congruence Merging"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A direct benchmark for solving and merging full congruence systems after the two-modulus route is trusted."
+  },
+  {
     "slug": "math/fft",
     "topic": "Math -> FFT And NTT",
     "title": "Convolution",

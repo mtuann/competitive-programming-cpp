@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `89`
+- Total tracked problem notes: `90`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -18,7 +18,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Graphs | 21 |
 | DP | 10 |
 | Greedy | 3 |
-| Math | 11 |
+| Math | 12 |
 | Combinatorics | 4 |
 | Strings | 9 |
 | Geometry | 8 |
@@ -109,6 +109,7 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `GENERALCHINESEREMAINDER` | Chinese Remainder Theorem (non-relatively prime moduli) | `Math -> Chinese Remainder And Linear Congruences` | - | - | `medium` | - | [Map](topic-maps/math/chinese-remainder.md) / [Ladder](../practice/ladders/math/chinese-remainder/README.md) / [Tutorial](../topics/math/chinese-remainder/README.md) | [Note](../practice/ladders/math/chinese-remainder/generalchineseremainder.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/chinese-remainder/generalchineseremainder.cpp) |
 | `CONVOLUTION` | Convolution | `Math -> FFT And NTT` | - | - | `medium` | - | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/convolution.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/convolution.cpp) |
 | `POST2` | A cộng B version 2 | `Math -> FFT And NTT` | - | convolution; digit aggregation; big integer addition | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
 | `COMMONDIVISORS` | Common Divisors | `Math -> GCD And LCM` | Math -> Number Theory Basics | divisor frequency scan; count multiples; maximize pair gcd | `medium` | CSES, Mathematics | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/commondivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp) |

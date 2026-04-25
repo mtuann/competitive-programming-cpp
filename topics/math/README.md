@@ -6,6 +6,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 
 - [Modular Arithmetic](modular-arithmetic/README.md)
 - [Number Theory Basics](number-theory-basics/README.md)
+- [Chinese Remainder / Linear Congruences](chinese-remainder/README.md)
 - [Linear Recurrence / Matrix Exponentiation](linear-recurrence/README.md)
 - [FFT And NTT](fft-ntt/README.md)
 
@@ -24,6 +25,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 2. Contest core
 - modular inverses and binomial coefficients
 - sieve patterns
+- congruence-system merges and gcd consistency checks
 - recurrence and matrix-exponentiation style tools
 - fixed-size linear transitions under one modulus
 
@@ -56,6 +58,7 @@ After this section, you should be able to use modular arithmetic and standard co
 - [Common Divisors](../../practice/ladders/math/gcd-lcm/commondivisors.md): maximize pair gcd by scanning divisor frequencies
 - [GCD on Blackboard](../../practice/ladders/math/gcd-lcm/gcdonblackboard.md): all-except-one gcd via prefix/suffix aggregates
 - [CRYPTKEY - Chìa khóa mã số](../../practice/ladders/math/gcd-lcm/cryptkey.md): gcd/lcm construction through prime-exponent reasoning
+- [General Chinese Remainder](../../practice/ladders/math/chinese-remainder/generalchineseremainder.md): merge congruences one pair at a time and detect impossible systems early
 - [POST2 - A cộng B version 2](../../practice/ladders/math/fft/post2.md): convolution modeling with FFT
 
 ## Go Deeper

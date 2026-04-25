@@ -49,6 +49,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | DP -> Sliding Window And Window DP | 2 | 2 | 16 | [Open](dp/sliding-window.md) |
 | DP -> Tree DP | 3 | 0 | 10 | [Open](dp/tree-dp.md) |
 | Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
+| Math -> Chinese Remainder And Linear Congruences | 1 | 3 | 2 | [Open](math/chinese-remainder.md) |
 | Math -> FFT And NTT | 2 | 0 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 6 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Linear Recurrence And Matrix Exponentiation | 1 | 3 | 3 | [Open](math/linear-recurrence.md) |

@@ -2245,6 +2245,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
   },
   {
+    "code": "GENERALCHINESEREMAINDER",
+    "title": "Chinese Remainder Theorem (non-relatively prime moduli)",
+    "full_title": "Chinese Remainder Theorem (non-relatively prime moduli)",
+    "judge": "Kattis",
+    "judge_url": "https://open.kattis.com/problems/generalchineseremainder",
+    "main_topic": "Math -> Chinese Remainder And Linear Congruences",
+    "secondary_topics": [
+      "Chinese remainder theorem",
+      "Extended Euclid",
+      "Congruence merge"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/chinese-remainder",
+    "topic_tags": [
+      "math/chinese-remainder"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/chinese-remainder/generalchineseremainder.md",
+    "ladder_path": "practice/ladders/math/chinese-remainder/README.md",
+    "tutorial_path": "topics/math/chinese-remainder/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/chinese-remainder/generalchineseremainder.cpp"
+  },
+  {
     "code": "CONVOLUTION",
     "title": "Convolution",
     "full_title": "Convolution",
