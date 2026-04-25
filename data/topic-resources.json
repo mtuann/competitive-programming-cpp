@@ -3002,6 +3002,81 @@
       }
     ]
   },
+  "math/probability": {
+    "title": "Math -> Probability",
+    "summary": "Finite-state probability modeling with PMFs, expectation, total probability, and exact discrete-process DP.",
+    "topic_path": "topics/math/probability/README.md",
+    "ladder_path": "practice/ladders/math/probability/README.md",
+    "microtopics": [
+      "probability-dp",
+      "pmf",
+      "expected-value",
+      "linearity-of-expectation",
+      "total-probability",
+      "finite-state-process"
+    ],
+    "learning_sources": [
+      {
+        "label": "Harvard Stat 110",
+        "url": "https://stat110.hsites.harvard.edu/",
+        "kind": "reference"
+      },
+      {
+        "label": "MIT 18.600 Probability and Random Variables",
+        "url": "https://ocw.mit.edu/courses/18-600-probability-and-random-variables-fall-2019/resources/lecture-notes/",
+        "kind": "reference"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Dice Probability",
+        "url": "https://cses.fi/problemset/task/1725/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Candy Lottery",
+        "url": "https://cses.fi/problemset/task/1727/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Moving Robots",
+        "url": "https://cses.fi/problemset/task/1726/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Inversion Probability",
+        "url": "https://cses.fi/problemset/task/1728/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Probability hot sheet",
+        "path": "notebook/probability-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Dice Probability",
+        "path": "practice/ladders/math/probability/diceprobability.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Probability starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Randomized Algorithms",
+        "path": "topics/advanced/randomized-algorithms/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "math/xor-basis": {
     "title": "Math -> XOR Basis / Linear Basis",
     "summary": "Gaussian elimination over GF(2) for subset-xor span, representability, maximum subset xor, and cycle-space xor reductions.",

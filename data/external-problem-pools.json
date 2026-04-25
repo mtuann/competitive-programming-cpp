@@ -10301,6 +10301,112 @@
       "why_fit": "Shows the same repeated-linear-transition worldview outside one-dimensional recurrences."
     }
   ],
+  "math/probability": [
+    {
+      "title": "Dice Probability",
+      "url": "https://cses.fi/problemset/task/1725",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/probability",
+        "Probability",
+        "Distributions"
+      ],
+      "tags": [
+        "Probability-DP",
+        "PMF",
+        "Dice"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Dynamic Programming"
+      ],
+      "prerequisites": [
+        "Basic Probability",
+        "State DP"
+      ],
+      "why_fit": "The cleanest first benchmark where an exact probability answer comes from propagating a bounded sum distribution over repeated random steps."
+    },
+    {
+      "title": "Candy Lottery",
+      "url": "https://cses.fi/problemset/task/1727",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/probability",
+        "Probability",
+        "Expected Value"
+      ],
+      "tags": [
+        "Expected-Value",
+        "Distribution-Of-Maximum",
+        "Independence"
+      ],
+      "bucket": "bridge",
+      "styles": [
+        "Math",
+        "Observation"
+      ],
+      "prerequisites": [
+        "Basic Probability",
+        "Expected Value"
+      ],
+      "why_fit": "A strong compare point where the shortest solution derives a distribution first and only then takes expectation."
+    },
+    {
+      "title": "Moving Robots",
+      "url": "https://cses.fi/problemset/task/1726",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/probability",
+        "Probability",
+        "Random Walks"
+      ],
+      "tags": [
+        "Transition-Probability",
+        "Independence",
+        "Expectation"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "State Transitions"
+      ],
+      "prerequisites": [
+        "Probability DP",
+        "Independent Events"
+      ],
+      "why_fit": "A natural next step where one finite-state transition distribution is combined across many independent walkers."
+    },
+    {
+      "title": "Inversion Probability",
+      "url": "https://cses.fi/problemset/task/1728",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/probability",
+        "Probability",
+        "Expected Value"
+      ],
+      "tags": [
+        "Linearity-Of-Expectation",
+        "Pairs",
+        "Expectation"
+      ],
+      "bucket": "challenge",
+      "styles": [
+        "Math",
+        "Counting"
+      ],
+      "prerequisites": [
+        "Expected Value",
+        "Counting Basics"
+      ],
+      "why_fit": "A harder compare point where linearity of expectation beats any attempt to model the full joint distribution directly."
+    }
+  ],
   "math/xor-basis": [
     {
       "title": "XMAX - XOR Maximization",

@@ -205,7 +205,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Eertree / Palindromic Tree`
 - [x] `XOR Basis / Linear Basis`
 - [x] `Game Theory / Sprague-Grundy`
-- [ ] `Probability`
+- [x] `Probability`
 
 ### Long-Tail Contest-System Ideas
 
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Probability`
+1. `interactive protocol clinic`
 
 That is now the best follow-up because:
 
-- the main remaining long-tail algorithm list is now much smaller and mostly theory-shaped
-- `Probability` is the clearest remaining canonical lane that still deserves a dedicated topic / retrieval / practice route
-- it adds a different style of modeling than the recently shipped xor, game, and data-structure waves
+- the remaining explicit backlog is now mostly contest-system reinforcement rather than one more canonical algorithm lane
+- an `interactive protocol clinic` is the clearest next high-leverage addition for the contest-source side
+- it strengthens the playbook/workflow layer after a long stretch of algorithm-lane expansions

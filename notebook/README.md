@@ -114,6 +114,7 @@ The shortest useful scan order is:
 - [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md)
 - [XOR Basis hot sheet](xor-basis-hot-sheet.md)
 - [Sprague-Grundy hot sheet](sprague-grundy-hot-sheet.md)
+- [Probability hot sheet](probability-hot-sheet.md)
 - [Lucas Theorem hot sheet](lucas-hot-sheet.md)
 - [Mobius hot sheet](mobius-hot-sheet.md)
 - [Number theory cheatsheet](number-theory-cheatsheet.md)
@@ -163,6 +164,7 @@ The shortest useful scan order is:
 - linear recurrence under one modulus -> [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md) + [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - subset xor span / maximum subset xor -> [XOR Basis hot sheet](xor-basis-hot-sheet.md) + [Binary Trie hot sheet](binary-trie-hot-sheet.md) when xor semantics are ambiguous
 - impartial normal-play heaps/components -> [Sprague-Grundy hot sheet](sprague-grundy-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
+- finite random processes / exact expectation -> [Probability hot sheet](probability-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - congruence systems or one inverse under composite modulus -> [Chinese Remainder hot sheet](chinese-remainder-hot-sheet.md) + [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)

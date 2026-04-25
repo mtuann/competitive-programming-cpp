@@ -2879,6 +2879,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
   },
   {
+    "code": "DICEPROBABILITY",
+    "title": "Dice Probability",
+    "full_title": "Dice Probability",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1725",
+    "main_topic": "Math -> Probability",
+    "secondary_topics": [
+      "Probability DP",
+      "Distributions",
+      "Expected value compare"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/probability",
+    "topic_tags": [
+      "math/probability"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/probability/diceprobability.md",
+    "ladder_path": "practice/ladders/math/probability/README.md",
+    "tutorial_path": "topics/math/probability/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/probability/diceprobability.cpp"
+  },
+  {
     "code": "XMAX",
     "title": "XOR Maximization",
     "full_title": "XMAX - XOR Maximization",

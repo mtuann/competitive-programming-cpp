@@ -13,7 +13,8 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 7. linear recurrence / matrix exponentiation
 8. xor basis / linear basis
 9. game theory / Sprague-Grundy
-10. FFT
+10. probability
+11. FFT
 
 ## Subtopic Ladders
 
@@ -26,6 +27,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
 - [XOR basis / linear basis](xor-basis/README.md)
 - [Game theory / Sprague-Grundy](game-theory/README.md)
+- [Probability](probability/README.md)
 - [FFT](fft/README.md)
 
 ## Representative Solved Notes
@@ -41,4 +43,5 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Counting Coprime Pairs](mobius-multiplicative/countingcoprimepairs.md)
 - [XMAX](xor-basis/xmax.md)
 - [S-Nim](game-theory/snim.md)
+- [Dice Probability](probability/diceprobability.md)
 - [POST2](fft/post2.md)

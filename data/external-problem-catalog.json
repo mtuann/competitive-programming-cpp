@@ -12320,6 +12320,107 @@
     "why_fit": "Bundle of the three textbook divisor-function formulas."
   },
   {
+    "slug": "math/probability",
+    "topic": "Math -> Probability",
+    "title": "Dice Probability",
+    "url": "https://cses.fi/problemset/task/1725",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Distributions"
+    ],
+    "tags": [
+      "Probability-DP",
+      "Pmf",
+      "Dice"
+    ],
+    "styles": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "prerequisites": [
+      "Basic Probability",
+      "State DP"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first benchmark where an exact probability answer comes from propagating a bounded sum distribution over repeated random steps."
+  },
+  {
+    "slug": "math/probability",
+    "topic": "Math -> Probability",
+    "title": "Moving Robots",
+    "url": "https://cses.fi/problemset/task/1726",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Random Walks"
+    ],
+    "tags": [
+      "Transition-Probability",
+      "Independence",
+      "Expectation"
+    ],
+    "styles": [
+      "Math",
+      "State Transitions"
+    ],
+    "prerequisites": [
+      "Probability DP",
+      "Independent Events"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A natural next step where one finite-state transition distribution is combined across many independent walkers."
+  },
+  {
+    "slug": "math/probability",
+    "topic": "Math -> Probability",
+    "title": "Inversion Probability",
+    "url": "https://cses.fi/problemset/task/1728",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Expected Value"
+    ],
+    "tags": [
+      "Linearity-Of-Expectation",
+      "Pairs",
+      "Expectation"
+    ],
+    "styles": [
+      "Math",
+      "Counting"
+    ],
+    "prerequisites": [
+      "Counting Basics"
+    ],
+    "bucket": "challenge",
+    "why_fit": "A harder compare point where linearity of expectation beats any attempt to model the full joint distribution directly."
+  },
+  {
+    "slug": "math/probability",
+    "topic": "Math -> Probability",
+    "title": "Candy Lottery",
+    "url": "https://cses.fi/problemset/task/1727",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Expected Value"
+    ],
+    "tags": [
+      "Distribution-Of-Maximum",
+      "Independence"
+    ],
+    "styles": [
+      "Math",
+      "Observation"
+    ],
+    "prerequisites": [
+      "Basic Probability"
+    ],
+    "bucket": "bridge",
+    "why_fit": "A strong compare point where the shortest solution derives a distribution first and only then takes expectation."
+  },
+  {
     "slug": "math/xor-basis",
     "topic": "Math -> XOR Basis / Linear Basis",
     "title": "XMAX - XOR Maximization",
