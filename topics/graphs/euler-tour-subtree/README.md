@@ -41,7 +41,7 @@ Strong anti-cues:
 - arbitrary path queries `u -> v` -> [Heavy-Light Decomposition](../hld/README.md)
 - only ancestor checks -> `tin/tout` alone or [LCA](../lca/README.md), no range structure required
 - the real work is merging child states -> [Tree DP](../../dp/tree-dp/README.md)
-- the tree itself changes online -> this page is too static
+- the tree itself changes online -> this page is too static; compare [Euler Tour Tree](../euler-tour-tree/README.md) for dynamic subtree-side queries or [Link-Cut Tree](../link-cut-tree/README.md) when the live query is still one path
 
 ## Prerequisites
 

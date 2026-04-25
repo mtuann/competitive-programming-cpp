@@ -318,6 +318,7 @@ HLD is a query/update data-structure reduction, not a replacement for tree DP.
 ### Use Link-Cut Trees Or Other Dynamic-Tree Tools Instead When
 
 - the tree topology itself changes online
+- exact repo route: [Link-Cut Tree](../link-cut-tree/README.md)
 
 HLD assumes the tree is fixed during all queries.
 

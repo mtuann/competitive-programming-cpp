@@ -8,7 +8,7 @@ It is worth learning as more than "that one binary lifting trick", because once 
 - ancestor checks
 - path decomposition through a meeting point
 - "move upward by `k` steps"
-- many later tree techniques, especially [Heavy-Light Decomposition](../hld/README.md)
+- many later tree techniques, especially [Virtual Tree / Auxiliary Tree](../virtual-tree/README.md) and [Heavy-Light Decomposition](../hld/README.md)
 
 This page treats LCA as a reusable tree-query toolkit, not just one function.
 
@@ -52,6 +52,7 @@ What success looks like after studying this page:
 
 Helpful neighboring topics:
 
+- [Virtual Tree / Auxiliary Tree](../virtual-tree/README.md) when each query only marks a small subset but still needs LCAs and one compressed tree
 - [Heavy-Light Decomposition](../hld/README.md) when path queries also need online updates or aggregates
 - [Sparse Table](../../data-structures/sparse-table/README.md) for the Euler-tour RMQ viewpoint
 

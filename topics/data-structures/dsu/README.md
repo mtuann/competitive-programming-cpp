@@ -56,6 +56,8 @@ Helpful neighboring topics:
 
 - [Minimum Spanning Tree](../../graphs/mst/README.md)
 - [BFS And DFS](../../graphs/bfs-dfs/README.md)
+- [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md)
+- [DSU On Tree / Small-To-Large](../dsu-on-tree/README.md)
 
 ## Problem Model And Notation
 

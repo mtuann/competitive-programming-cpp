@@ -23,6 +23,7 @@ It is the family page that teaches what tree structure gives you *before* you sp
 
 - [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 - [LCA](../lca/README.md)
+- [Virtual Tree / Auxiliary Tree](../virtual-tree/README.md)
 - [Tree DP](../../dp/tree-dp/README.md)
 - [Heavy-Light Decomposition](../hld/README.md)
 
@@ -43,6 +44,7 @@ Helpful neighboring topics:
 
 - [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 - [LCA](../lca/README.md)
+- [Virtual Tree / Auxiliary Tree](../virtual-tree/README.md)
 - [Tree DP](../../dp/tree-dp/README.md)
 - [Heavy-Light Decomposition](../hld/README.md)
 
