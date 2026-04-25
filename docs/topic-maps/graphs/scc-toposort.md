@@ -5,7 +5,7 @@ Compress directed graphs into DAGs, reason about dependencies, and detect strong
 - Topic slug: `graphs/scc-toposort`
 - Tutorial page: [Open tutorial](../../../topics/graphs/scc-toposort/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/scc-toposort/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
 - Curated external problems: `9`
 
@@ -91,6 +91,7 @@ Compress directed graphs into DAGs, reason about dependencies, and detect strong
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `COURSESCHEDULE` | Course Schedule | `primary` | `medium` | kahn topological sort; indegree peeling; cycle by failed ordering | [Note](../../../practice/ladders/graphs/scc-toposort/courseschedule.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/scc-toposort/courseschedule.cpp) |
+| `GIANTPIZZA` | Giant Pizza | `secondary` | `medium` | 2-sat; implication graph; assignment extraction | [Note](../../../practice/ladders/graphs/two-sat/giantpizza.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/two-sat/giantpizza.cpp) |
 
 ## Regeneration
 

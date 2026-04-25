@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `500`
+- Total curated external problems: `504`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -216,6 +216,10 @@ This page lists curated external problems imported into the topic-map system.
 | `Graphs -> Trees` | `Subtree Sizes` | [Subordinates](https://cses.fi/problemset/task/1674) | `CSES` | `Easy` | DFS, Subtree Sizes | Postorder DFS; Size Accumulation; Rooted Traversal | Subtree Size; Rooted Tree; Counting |
 | `Graphs -> Trees` | `Tree Diameter` | [Tree Diameter](https://cses.fi/problemset/task/1131) | `CSES` | `Easy` | DFS, Diameter | Double Sweep; DFS/BFS Diameter; Farthest Node | Two BFS; Longest Path |
 | `Graphs -> Trees` | `Tree DP` | [Tree Matching](https://cses.fi/problemset/task/1130) | `CSES` | `Medium` | Tree DP, Greedy | Bottom-Up DP; Leaf Processing; Pairing Choices | Matching; Independent Edges; Independent Edge Set |
+| `Graphs -> Two-SAT` | `Warm-Up` | [Two SAT](https://judge.yosupo.jp/problem/two_sat) | `Library Checker` | `Medium` | 2-SAT | Implication Graph; SCC Check; Witness Recovery | Implication Graph; SCC; Assignment Extraction |
+| `Graphs -> Two-SAT` | `Core` | [Giant Pizza](https://cses.fi/problemset/task/1684) | `CSES` | `Medium` | 2-SAT, Assignment | Clause Rewrite; Implication Graph; Assignment Extraction | Implication Graph; Clause Modeling; SCC; Witness |
+| `Graphs -> Two-SAT` | `Classics` | [Wedding](https://onlinejudge.org/external/112/11294.pdf) | `UVa` | `Medium` | 2-SAT, Classic | Boolean Modeling; Complement Pairs; SCC Assignment | Seating Constraints; Implication Graph |
+| `Graphs -> Two-SAT` | `Stretch` | [The Door Problem](https://codeforces.com/problemset/problem/776/D) | `Codeforces` | `Hard` | 2-SAT, Modeling | Constraint Reframing; Implication Graph; Witness Recovery | Boolean Constraints; Parity-Like Modeling; Assignment |
 
 ## DP
 

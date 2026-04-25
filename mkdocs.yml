@@ -119,6 +119,7 @@ nav:
           - MST: topics/graphs/mst/README.md
           - Topological Sort And SCC: topics/graphs/scc-toposort/README.md
           - Shortest Paths: topics/graphs/shortest-paths/README.md
+          - Two-SAT: topics/graphs/two-sat/README.md
           - Trees: topics/graphs/trees/README.md
       - Dynamic Programming:
           - Overview: topics/dp/README.md
@@ -202,6 +203,7 @@ nav:
               - MST: practice/ladders/graphs/mst/README.md
               - Topological Sort And SCC: practice/ladders/graphs/scc-toposort/README.md
               - Shortest Paths: practice/ladders/graphs/shortest-paths/README.md
+              - Two-SAT: practice/ladders/graphs/two-sat/README.md
               - Tree DP Bridges: practice/ladders/graphs/tree-dp/README.md
               - Trees: practice/ladders/graphs/trees/README.md
           - Dynamic Programming:
@@ -280,6 +282,7 @@ nav:
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
+      - Two-SAT Hot Sheet: notebook/two-sat-hot-sheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
@@ -309,4 +312,5 @@ nav:
       - Topic Template: docs/topic-template.md
       - Problem Note Contract: docs/authoring/problem-note-contract.md
       - Roadmap: docs/roadmap.md
+      - Expansion Roadmap: docs/expansion-roadmap.md
       - Markdown Math Style: docs/authoring/markdown-math-style.md

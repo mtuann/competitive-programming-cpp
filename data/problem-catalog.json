@@ -1883,6 +1883,40 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp"
   },
   {
+    "code": "GIANTPIZZA",
+    "title": "Giant Pizza",
+    "full_title": "Giant Pizza",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1684",
+    "main_topic": "Graphs -> Two-SAT",
+    "secondary_topics": [
+      "2-SAT",
+      "Implication graph",
+      "SCC assignment extraction"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/two-sat",
+    "topic_tags": [
+      "graphs/two-sat",
+      "graphs/graph-modeling",
+      "graphs/scc-toposort"
+    ],
+    "patterns": [
+      "2-sat",
+      "implication graph",
+      "assignment extraction"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/two-sat/giantpizza.md",
+    "ladder_path": "practice/ladders/graphs/two-sat/README.md",
+    "tutorial_path": "topics/graphs/two-sat/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/two-sat/giantpizza.cpp"
+  },
+  {
     "code": "LEMONADELINE",
     "title": "Lemonade Line",
     "full_title": "Lemonade Line",

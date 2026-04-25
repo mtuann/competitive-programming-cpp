@@ -526,7 +526,7 @@ This page is intentionally centered on the core contest tools:
 
 Important next-layer directions include:
 
-- 2-SAT via implication graph SCCs
+- [2-SAT](../two-sat/README.md) via implication graph SCCs
 - DP and counting on condensation DAGs
 - dominator-style directed-graph structure
 - dynamic or online SCC variants

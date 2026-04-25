@@ -3438,6 +3438,126 @@
       ]
     }
   ],
+  "graphs/two-sat": [
+    {
+      "title": "Two SAT",
+      "url": "https://judge.yosupo.jp/problem/two_sat",
+      "source": "Library Checker",
+      "difficulty": "medium",
+      "tracks": [
+        "graphs/two-sat",
+        "Graphs",
+        "2-SAT",
+        "Verification"
+      ],
+      "tags": [
+        "Implication Graph",
+        "SCC",
+        "Assignment Extraction",
+        "Verification"
+      ],
+      "why_fit": "The cleanest exact verifier for a reusable 2-SAT starter.",
+      "bucket": "warm-up",
+      "styles": [
+        "Implication Graph",
+        "SCC Check",
+        "Witness Recovery"
+      ],
+      "prerequisites": [
+        "SCC",
+        "Directed Graphs",
+        "Boolean Variables"
+      ]
+    },
+    {
+      "title": "Giant Pizza",
+      "url": "https://cses.fi/problemset/task/1684",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "graphs/two-sat",
+        "Graphs",
+        "2-SAT",
+        "Assignment"
+      ],
+      "tags": [
+        "Implication Graph",
+        "Clause Modeling",
+        "SCC",
+        "Witness"
+      ],
+      "why_fit": "The cleanest contest-format 2-SAT modeling problem with one recovered assignment.",
+      "bucket": "core",
+      "styles": [
+        "Clause Rewrite",
+        "Implication Graph",
+        "Assignment Extraction"
+      ],
+      "prerequisites": [
+        "SCC",
+        "Literal Encoding",
+        "Boolean Modeling"
+      ]
+    },
+    {
+      "title": "Wedding",
+      "url": "https://onlinejudge.org/external/112/11294.pdf",
+      "source": "UVa",
+      "difficulty": "medium",
+      "tracks": [
+        "graphs/two-sat",
+        "Graphs",
+        "2-SAT",
+        "Classic"
+      ],
+      "tags": [
+        "Seating Constraints",
+        "Implication Graph",
+        "Classic"
+      ],
+      "why_fit": "A classic 2-SAT reduction where statement semantics matter more than SCC code.",
+      "bucket": "classic",
+      "styles": [
+        "Boolean Modeling",
+        "Complement Pairs",
+        "SCC Assignment"
+      ],
+      "prerequisites": [
+        "2-SAT Basics",
+        "SCC",
+        "Logical Modeling"
+      ]
+    },
+    {
+      "title": "The Door Problem",
+      "url": "https://codeforces.com/problemset/problem/776/D",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/two-sat",
+        "Graphs",
+        "2-SAT",
+        "Modeling"
+      ],
+      "tags": [
+        "Boolean Constraints",
+        "Parity-Like Modeling",
+        "Assignment"
+      ],
+      "why_fit": "A strong next step once the implication-graph route itself is trusted.",
+      "bucket": "stretch",
+      "styles": [
+        "Constraint Reframing",
+        "Implication Graph",
+        "Witness Recovery"
+      ],
+      "prerequisites": [
+        "2-SAT Basics",
+        "Clause Rewriting",
+        "SCC"
+      ]
+    }
+  ],
   "graphs/trees": [
     {
       "title": "Subordinates",

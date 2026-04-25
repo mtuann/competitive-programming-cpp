@@ -529,7 +529,7 @@ Important next-layer directions include:
 
 - state compression for DP-heavy search spaces
 - layered graphs for time / parity / coupon states
-- implication graphs for 2-SAT
+- implication graphs for [2-SAT](../two-sat/README.md)
 - reduced graphs such as SCC condensation or flow transformations
 
 The right study order is:

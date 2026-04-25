@@ -123,6 +123,21 @@
       "Graph algorithms"
     ]
   },
+  "GIANTPIZZA": {
+    "topic_tags": [
+      "graphs/graph-modeling",
+      "graphs/scc-toposort"
+    ],
+    "patterns": [
+      "2-sat",
+      "implication graph",
+      "assignment extraction"
+    ],
+    "tracks": [
+      "CSES",
+      "Graph algorithms"
+    ]
+  },
   "DISTINCTSUBSTRINGS": {
     "topic_tags": [
       "strings/suffix-array-lcp"

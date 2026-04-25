@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `79`
+- Total tracked problem notes: `80`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -15,7 +15,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | ---: |
 | Foundations | 11 |
 | Data Structures | 6 |
-| Graphs | 17 |
+| Graphs | 18 |
 | DP | 9 |
 | Greedy | 3 |
 | Math | 10 |
@@ -74,6 +74,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `VOSTRIP` | VOSTRIP | `Graphs -> Tree DP` | DP -> Tree DP; Graphs -> Trees | tree endpoint pairing; path decomposition; local imbalance formula | `hard` | VN SPOJ, OI-style | [Map](topic-maps/graphs/tree-dp.md) / [Ladder](../practice/ladders/graphs/tree-dp/README.md) / [Tutorial](../topics/dp/tree-dp/README.md) | [Note](../practice/ladders/graphs/tree-dp/vostrip.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp) |
 | `MTREECOL` | Color a tree | `Graphs -> Trees` | - | ratio greedy; tree contraction; exchange argument | `hard` | VN SPOJ, OI-style | [Map](topic-maps/graphs/trees.md) / [Ladder](../practice/ladders/graphs/trees/README.md) / [Tutorial](../topics/graphs/trees/README.md) | [Note](../practice/ladders/graphs/trees/mtreecol.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp) |
 | `VMWTREE` | Lại là cây khung | `Graphs -> Trees` | Data Structures -> Segment Tree; Graphs -> Heavy-Light Decomposition | path reverse; path sequence queries; heavy-light decomposition | `hard` | VN SPOJ, OI-style | [Map](topic-maps/graphs/trees.md) / [Ladder](../practice/ladders/graphs/trees/README.md) / [Tutorial](../topics/graphs/trees/README.md) | [Note](../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
+| `GIANTPIZZA` | Giant Pizza | `Graphs -> Two-SAT` | Graphs -> Graph Modeling; Graphs -> Topological Sort And SCC | 2-sat; implication graph; assignment extraction | `medium` | CSES, Graph algorithms | [Map](topic-maps/graphs/two-sat.md) / [Ladder](../practice/ladders/graphs/two-sat/README.md) / [Tutorial](../topics/graphs/two-sat/README.md) | [Note](../practice/ladders/graphs/two-sat/giantpizza.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/two-sat/giantpizza.cpp) |
 
 ### DP
 

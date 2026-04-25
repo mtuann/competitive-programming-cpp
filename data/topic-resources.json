@@ -913,6 +913,71 @@
       }
     ]
   },
+  "graphs/two-sat": {
+    "title": "Graphs -> Two-SAT",
+    "summary": "Boolean variables, implication graphs, and SCC-based feasibility plus assignment extraction.",
+    "topic_path": "topics/graphs/two-sat/README.md",
+    "ladder_path": "practice/ladders/graphs/two-sat/README.md",
+    "microtopics": [
+      "literal",
+      "implication-graph",
+      "clause-rewrite",
+      "assignment-extraction",
+      "not-both",
+      "exactly-one"
+    ],
+    "learning_sources": [
+      {
+        "label": "Aspvall, Plass, Tarjan - A Linear-Time Algorithm for Testing the Truth of Certain Quantified Boolean Formulas",
+        "url": "https://www.cs.princeton.edu/courses/archive/fall13/cos521/Handouts/2SAT.pdf",
+        "kind": "paper"
+      },
+      {
+        "label": "cp-algorithms 2-SAT",
+        "url": "https://cp-algorithms.com/graph/2SAT.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki 2-SAT",
+        "url": "https://en.oi-wiki.org/graph/2-sat/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Two SAT",
+        "url": "https://judge.yosupo.jp/problem/two_sat",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Two-SAT hot sheet",
+        "path": "notebook/two-sat-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Giant Pizza note",
+        "path": "practice/ladders/graphs/two-sat/giantpizza.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Topological Sort And SCC tutorial",
+        "path": "topics/graphs/scc-toposort/README.md",
+        "kind": "adjacent tutorial"
+      }
+    ]
+  },
   "graphs/trees": {
     "title": "Graphs -> Trees",
     "summary": "Tree structure, rooting, Euler tours, diameters, and decomposition ideas that power most advanced tree problems.",

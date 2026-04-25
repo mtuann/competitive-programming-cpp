@@ -9,6 +9,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Shortest Paths](shortest-paths/README.md)
 - [Minimum Spanning Tree](mst/README.md)
 - [Topological Sort And SCC](scc-toposort/README.md)
+- [2-SAT](two-sat/README.md)
 - [Trees](trees/README.md)
 - [LCA](lca/README.md)
 - [Heavy-Light Decomposition](hld/README.md)
@@ -32,6 +33,7 @@ Graphs are one of the central contest areas because many problems are really abo
 
 2. Contest core
 - SCC
+- 2-SAT once SCC condensation is comfortable
 - trees, LCA, and rerooting-style thinking
 - bridge and articulation ideas
 
@@ -61,6 +63,7 @@ After this section, you should be able to recognize the common graph models, cho
 - [Counting Rooms](../../practice/ladders/graphs/graph-modeling/countingrooms.md): grid cells become vertices, and rooms become connected components
 - [Building Roads](../../practice/ladders/graphs/graph-modeling/buildingroads.md): component representatives turn a connectivity repair task into a clean constructive graph solution
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
+- [Giant Pizza](../../practice/ladders/graphs/two-sat/giantpizza.md): binary clause modeling and SCC-based assignment extraction
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
 - [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling

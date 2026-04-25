@@ -15,6 +15,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - `0/1` weights -> `0-1 BFS` -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - nonnegative weights -> Dijkstra -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - negative edges -> Bellman-Ford -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- binary clauses over boolean choices -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 
 ## Core Families
 
@@ -22,6 +23,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - DAG dependencies -> toposort
 - undirected cheapest backbone -> MST
 - directed compression -> SCC
+- binary clause feasibility -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - tree path queries -> LCA or [HLD hot sheet](hld-hot-sheet.md)
 - capacities -> [Flow hot sheet](flow-hot-sheet.md)
 - pairing -> [Matching hot sheet](matching-hot-sheet.md)
@@ -39,6 +41,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "weights are only 0 and 1" -> do not jump to Dijkstra first
 - "negative edge" or "check for negative cycle" -> Bellman-Ford family
 - "cheapest transport under capacities" -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
+- "every object has two modes and each constraint touches two literals" -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - "tree paths" -> LCA for ancestor/meet questions, HLD for repeated path aggregates, Euler flattening for subtree-only aggregation
 - "same component after many merges" -> maybe DSU, not BFS/DFS
 
@@ -54,6 +57,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - shortest-path family -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Message Route](../practice/ladders/graphs/bfs-dfs/messageroute.md) + [QOS](../practice/ladders/graphs/shortest-paths/qos.md)
 - MST -> [Road Reparation](../practice/ladders/graphs/mst/roadreparation.md)
 - SCC / DAG ordering -> [Course Schedule](../practice/ladders/graphs/scc-toposort/courseschedule.md)
+- 2-SAT / implication graph -> [Two-SAT hot sheet](two-sat-hot-sheet.md) + [Giant Pizza](../practice/ladders/graphs/two-sat/giantpizza.md) + [two-sat.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/two-sat.cpp)
 - tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - HLD retrieval route -> [HLD hot sheet](hld-hot-sheet.md)
 - flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
@@ -70,6 +74,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Flow hot sheet](flow-hot-sheet.md)
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
+- [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Flow topic](../topics/graphs/flow/README.md)
 - [LCA topic](../topics/graphs/lca/README.md)

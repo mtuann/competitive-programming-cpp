@@ -23,16 +23,17 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Maximum Flow | 4 | 2 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 0 | 7 | [Open](graphs/gomory-hu.md) |
-| Graphs -> Graph Modeling | 3 | 2 | 9 | [Open](graphs/graph-modeling.md) |
+| Graphs -> Graph Modeling | 4 | 2 | 9 | [Open](graphs/graph-modeling.md) |
 | Graphs -> Heavy-Light Decomposition | 2 | 0 | 8 | [Open](graphs/hld.md) |
 | Graphs -> LCA | 1 | 0 | 6 | [Open](graphs/lca.md) |
 | Graphs -> Matching | 2 | 0 | 11 | [Open](graphs/matching.md) |
 | Graphs -> Min-Cost Flow | 1 | 0 | 10 | [Open](graphs/min-cost-flow.md) |
 | Graphs -> Minimum Spanning Tree | 1 | 0 | 6 | [Open](graphs/mst.md) |
-| Graphs -> Topological Sort And SCC | 1 | 0 | 9 | [Open](graphs/scc-toposort.md) |
+| Graphs -> Topological Sort And SCC | 2 | 0 | 9 | [Open](graphs/scc-toposort.md) |
 | Graphs -> Shortest Paths | 1 | 0 | 9 | [Open](graphs/shortest-paths.md) |
 | Graphs -> Tree DP | 1 | 0 | 7 | [Open](graphs/tree-dp.md) |
 | Graphs -> Trees | 9 | 0 | 10 | [Open](graphs/trees.md) |
+| Graphs -> Two-SAT | 1 | 3 | 4 | [Open](graphs/two-sat.md) |
 | DP -> Bitmask DP | 1 | 0 | 11 | [Open](dp/bitmask-dp.md) |
 | DP -> Digit DP | 1 | 0 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 0 | 12 | [Open](dp/foundations.md) |
