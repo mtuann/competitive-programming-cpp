@@ -7448,6 +7448,112 @@
       "bucket": "core"
     }
   ],
+  "dp/cht-li-chao": [
+    {
+      "title": "Monster Game I",
+      "url": "https://cses.fi/problemset/task/2084",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/cht-li-chao",
+        "DP",
+        "Convex Hull Trick"
+      ],
+      "tags": [
+        "Affine DP",
+        "Monotone Hull",
+        "Line Container"
+      ],
+      "why_fit": "The clean compare-point problem where the same affine DP family still admits a lighter monotone-hull route.",
+      "bucket": "core",
+      "styles": [
+        "Optimization",
+        "Monotone Structure"
+      ],
+      "prerequisites": [
+        "Affine DP Transform",
+        "Slope / Query Monotonicity"
+      ]
+    },
+    {
+      "title": "Monster Game II",
+      "url": "https://cses.fi/problemset/task/2085",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/cht-li-chao",
+        "DP",
+        "Li Chao Tree"
+      ],
+      "tags": [
+        "Affine DP",
+        "Li Chao Tree",
+        "Line Container"
+      ],
+      "why_fit": "The cleanest flagship for generic online min queries over lines with arbitrary insertion/query order.",
+      "bucket": "core",
+      "styles": [
+        "Optimization",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Affine DP Transform",
+        "Line Evaluation"
+      ]
+    },
+    {
+      "title": "Line Add Get Min",
+      "url": "https://judge.yosupo.jp/problem/line_add_get_min",
+      "source": "Library Checker",
+      "difficulty": "medium",
+      "tracks": [
+        "dp/cht-li-chao",
+        "Li Chao Tree",
+        "Line Container"
+      ],
+      "tags": [
+        "Official",
+        "Line Container",
+        "Point Queries"
+      ],
+      "why_fit": "The most direct official verifier for the exact full-domain Li Chao starter.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Verification"
+      ],
+      "prerequisites": [
+        "Line Evaluation",
+        "Li Chao Midpoint Invariant"
+      ]
+    },
+    {
+      "title": "Segment Add Get Min",
+      "url": "https://judge.yosupo.jp/problem/segment_add_get_min",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/cht-li-chao",
+        "Li Chao Tree",
+        "Segment Li Chao"
+      ],
+      "tags": [
+        "Official",
+        "Segment-Limited Lines",
+        "Advanced"
+      ],
+      "why_fit": "The next-layer verifier once the basic full-domain Li Chao route is trusted and line activity ranges matter.",
+      "bucket": "challenge",
+      "styles": [
+        "Implementation",
+        "Verification"
+      ],
+      "prerequisites": [
+        "Li Chao Tree",
+        "Segment Tree Thinking"
+      ]
+    }
+  ],
   "dp/interval-dp": [
     {
       "title": "Slimes",

@@ -130,6 +130,7 @@ nav:
           - Overview: topics/dp/README.md
           - DP Foundations: topics/dp/foundations/README.md
           - Bitmask DP: topics/dp/bitmask-dp/README.md
+          - Convex Hull Trick / Li Chao Tree: topics/dp/cht-li-chao/README.md
           - Digit DP: topics/dp/digit-dp/README.md
           - Interval DP: topics/dp/interval-dp/README.md
           - Knapsack Family: topics/dp/knapsack-family/README.md
@@ -221,6 +222,7 @@ nav:
               - Overview: practice/ladders/dp/README.md
               - Foundations: practice/ladders/dp/foundations/README.md
               - Bitmask DP: practice/ladders/dp/bitmask-dp/README.md
+              - CHT / Li Chao: practice/ladders/dp/cht-li-chao/README.md
               - Digit DP: practice/ladders/dp/digit-dp/README.md
               - Interval DP: practice/ladders/dp/interval-dp/README.md
               - Knapsack Family: practice/ladders/dp/knapsack-family/README.md
@@ -315,6 +317,7 @@ nav:
       - Min-Cost Flow Hot Sheet: notebook/min-cost-flow-hot-sheet.md
       - Matching Hot Sheet: notebook/matching-hot-sheet.md
       - DP Cheatsheet: notebook/dp-cheatsheet.md
+      - CHT Li Chao Hot Sheet: notebook/cht-hot-sheet.md
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md

@@ -51,6 +51,7 @@ Use these when the topic is already mostly trusted and you want the shortest pat
 | all-roots sum of distances on a tree | [Tree DP](../topics/dp/tree-dp/README.md) | [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp) | [Tree Distances II](../practice/ladders/dp/tree-dp/treedistances2.md) |
 | fixed-value costed flow with nonnegative initial forward costs | [Min-Cost Flow hot sheet](../notebook/min-cost-flow-hot-sheet.md) | [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp) | [MINCOST](../practice/ladders/graphs/flow/mincost.md) |
 | decimal range counting with a small digit state | [Digit DP hot sheet](../notebook/digit-dp-hot-sheet.md) | [digit-dp-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/digit-dp-skeleton.cpp) | [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md) |
+| affine DP with online line insertion on one known integer x-domain | [CHT / Li Chao hot sheet](../notebook/cht-hot-sheet.md) | [li-chao-tree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp) | [Monster Game II](../practice/ladders/dp/cht-li-chao/monstergame2.md) |
 | fixed-size window minimum on a forward-only stream | [Data structures cheatsheet](../notebook/data-structures-cheatsheet.md) | [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp) | [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md) |
 | same-length substring fingerprints | [String Hashing hot sheet](../notebook/string-hashing-hot-sheet.md) | [rolling-hash.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/rolling-hash.cpp) | [Finding Borders](../practice/ladders/strings/hashing/findingborders.md) |
 | exact convolution modulo `998244353` | [FFT / NTT](../topics/math/fft-ntt/README.md) | [ntt.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/ntt.cpp) | [Convolution](../practice/ladders/math/fft/convolution.md) |
@@ -115,6 +116,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 - fixed-value costed transport -> [Min-Cost Flow hot sheet](../notebook/min-cost-flow-hot-sheet.md) + graph templates
 - matching -> [Matching hot sheet](../notebook/matching-hot-sheet.md) + [Flow hot sheet](../notebook/flow-hot-sheet.md) when the reduction is ambiguous
 - digit-counting over huge ranges -> [Digit DP hot sheet](../notebook/digit-dp-hot-sheet.md) + DP templates
+- affine DP / online line minimum -> [CHT / Li Chao hot sheet](../notebook/cht-hot-sheet.md) + DP templates
 - modular arithmetic -> [Modular Arithmetic hot sheet](../notebook/modular-arithmetic-hot-sheet.md) + math templates
 - one static palindrome scan -> [Palindromes hot sheet](../notebook/palindromes-hot-sheet.md) + string templates
 - substring fingerprints -> [String Hashing hot sheet](../notebook/string-hashing-hot-sheet.md) + string templates

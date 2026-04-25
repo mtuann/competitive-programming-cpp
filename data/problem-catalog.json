@@ -525,6 +525,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp"
   },
   {
+    "code": "MONSTERGAME2",
+    "title": "Monster Game II",
+    "full_title": "Monster Game II",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2085",
+    "main_topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "secondary_topics": [
+      "Li Chao tree",
+      "Affine DP",
+      "Line container"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/cht-li-chao",
+    "topic_tags": [
+      "dp/cht-li-chao"
+    ],
+    "patterns": [
+      "li chao tree",
+      "affine dp",
+      "online line minimum"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ],
+    "note_path": "practice/ladders/dp/cht-li-chao/monstergame2.md",
+    "ladder_path": "practice/ladders/dp/cht-li-chao/README.md",
+    "tutorial_path": "topics/dp/cht-li-chao/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/cht-li-chao/monstergame2.cpp"
+  },
+  {
     "code": "COUNTINGNUMBERS",
     "title": "Counting Numbers",
     "full_title": "Counting Numbers",

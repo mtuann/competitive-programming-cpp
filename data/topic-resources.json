@@ -1964,6 +1964,61 @@
       }
     ]
   },
+  "dp/cht-li-chao": {
+    "title": "DP -> Convex Hull Trick / Li Chao Tree",
+    "summary": "Affine-DP optimization where previous states become lines and current states become point queries.",
+    "topic_path": "topics/dp/cht-li-chao/README.md",
+    "ladder_path": "practice/ladders/dp/cht-li-chao/README.md",
+    "microtopics": [
+      "affine-dp",
+      "line-container",
+      "li-chao-tree",
+      "monotone-hull",
+      "slope-intercept-transform",
+      "online-min-query"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Convex Hull Trick and Li Chao tree",
+        "url": "https://cp-algorithms.com/geometry/convex_hull_trick.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Monster Game I",
+        "url": "https://cses.fi/problemset/task/2084",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Monster Game II",
+        "url": "https://cses.fi/problemset/task/2085",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Line Add Get Min",
+        "url": "https://judge.yosupo.jp/problem/line_add_get_min",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "CHT / Li Chao hot sheet",
+        "path": "notebook/cht-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Monster Game II note",
+        "path": "practice/ladders/dp/cht-li-chao/monstergame2.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "parent router"
+      }
+    ]
+  },
   "dp/interval-dp": {
     "title": "DP -> Interval DP",
     "summary": "Reason over contiguous ranges and split points when the optimal structure is built by merging intervals.",

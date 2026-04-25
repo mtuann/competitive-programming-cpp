@@ -10,7 +10,8 @@ These ladders follow the DP path from state design to structured variants.
 4. tree DP
 5. digit DP
 6. interval DP
-7. sliding window / mixed optimization notes
+7. CHT / Li Chao
+8. sliding window / mixed optimization notes
 
 ## Subtopic Ladders
 
@@ -20,9 +21,11 @@ These ladders follow the DP path from state design to structured variants.
 - [Tree DP](tree-dp/README.md)
 - [Digit DP](digit-dp/README.md)
 - [Interval DP](interval-dp/README.md)
+- [CHT / Li Chao](cht-li-chao/README.md)
 - [Sliding window](sliding-window/README.md)
 
 ## Representative Solved Note
 
 - [VMSCALE](foundations/vmscale.md): exact budget DP for a non-uniform comparison tree
+- [Monster Game II](cht-li-chao/monstergame2.md): affine-DP optimization via online line insertion and point queries
 - [TFIELD](sliding-window/tfield.md): weighted window reasoning over sorted polygon layers

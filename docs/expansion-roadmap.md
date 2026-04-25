@@ -150,11 +150,11 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/palindromes-hot-sheet.md`
 - [x] add `practice/ladders/strings/palindromes/README.md`
 - [x] add one flagship palindrome note plus solution
-- [ ] add `topics/dp/cht-li-chao/README.md`
-- [ ] add `templates/dp/li-chao-tree.cpp`
-- [ ] add `notebook/cht-hot-sheet.md`
-- [ ] add `practice/ladders/dp/cht-li-chao/README.md`
-- [ ] add one flagship CHT / Li Chao note plus solution
+- [x] add `topics/dp/cht-li-chao/README.md`
+- [x] add `templates/dp/li-chao-tree.cpp`
+- [x] add `notebook/cht-hot-sheet.md`
+- [x] add `practice/ladders/dp/cht-li-chao/README.md`
+- [x] add one flagship CHT / Li Chao note plus solution
 
 ### Phase 7. Math Modern Wave
 
@@ -214,8 +214,8 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Convex Hull Trick / Li Chao Tree`
-2. `Persistent Data Structures`
+1. `Persistent Data Structures`
+2. `Linear Recurrence / Matrix Exponentiation`
 
 That pair has the best balance of:
 

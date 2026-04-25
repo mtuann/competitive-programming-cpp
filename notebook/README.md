@@ -100,6 +100,7 @@ The shortest useful scan order is:
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [DP cheatsheet](dp-cheatsheet.md)
+- [CHT / Li Chao hot sheet](cht-hot-sheet.md)
 - [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - [Combinatorics cheatsheet](combinatorics-cheatsheet.md)
 - [Number theory cheatsheet](number-theory-cheatsheet.md)
@@ -134,6 +135,7 @@ The shortest useful scan order is:
 - costed transport under capacities -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md)
 - bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous
 - digit-counting on large ranges -> [Digit DP hot sheet](digit-dp-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
+- affine DP / online line minimum -> [CHT / Li Chao hot sheet](cht-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - one static palindrome scan -> [Palindromes hot sheet](palindromes-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)

@@ -40,6 +40,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> Trees | 11 | 0 | 10 | [Open](graphs/trees.md) |
 | Graphs -> Two-SAT | 1 | 3 | 4 | [Open](graphs/two-sat.md) |
 | DP -> Bitmask DP | 1 | 0 | 11 | [Open](dp/bitmask-dp.md) |
+| DP -> Convex Hull Trick / Li Chao Tree | 1 | 3 | 4 | [Open](dp/cht-li-chao.md) |
 | DP -> Digit DP | 1 | 0 | 15 | [Open](dp/digit-dp.md) |
 | DP -> Foundations | 2 | 0 | 12 | [Open](dp/foundations.md) |
 | DP -> Interval DP | 1 | 0 | 12 | [Open](dp/interval-dp.md) |

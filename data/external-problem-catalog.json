@@ -3026,6 +3026,107 @@
     "why_fit": "classic compressed-state packing DP"
   },
   {
+    "slug": "dp/cht-li-chao",
+    "topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "title": "Line Add Get Min",
+    "url": "https://judge.yosupo.jp/problem/line_add_get_min",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Li Chao Tree",
+      "Line Container"
+    ],
+    "tags": [
+      "Point Queries"
+    ],
+    "styles": [
+      "Implementation",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Line Evaluation",
+      "Li Chao Midpoint Invariant"
+    ],
+    "bucket": "core",
+    "why_fit": "The most direct official verifier for the exact full-domain Li Chao starter."
+  },
+  {
+    "slug": "dp/cht-li-chao",
+    "topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "title": "Monster Game I",
+    "url": "https://cses.fi/problemset/task/2084",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Convex Hull Trick"
+    ],
+    "tags": [
+      "Affine DP",
+      "Monotone Hull",
+      "Line Container"
+    ],
+    "styles": [
+      "Optimization",
+      "Monotone Structure"
+    ],
+    "prerequisites": [
+      "Affine DP Transform",
+      "Slope / Query Monotonicity"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean compare-point problem where the same affine DP family still admits a lighter monotone-hull route."
+  },
+  {
+    "slug": "dp/cht-li-chao",
+    "topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "title": "Monster Game II",
+    "url": "https://cses.fi/problemset/task/2085",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Li Chao Tree"
+    ],
+    "tags": [
+      "Affine DP",
+      "Line Container"
+    ],
+    "styles": [
+      "Optimization",
+      "Data-Structure-Heavy"
+    ],
+    "prerequisites": [
+      "Affine DP Transform",
+      "Line Evaluation"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest flagship for generic online min queries over lines with arbitrary insertion/query order."
+  },
+  {
+    "slug": "dp/cht-li-chao",
+    "topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "title": "Segment Add Get Min",
+    "url": "https://judge.yosupo.jp/problem/segment_add_get_min",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Li Chao Tree",
+      "Segment Li Chao"
+    ],
+    "tags": [
+      "Segment-Limited Lines",
+      "Advanced"
+    ],
+    "styles": [
+      "Implementation",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Segment Tree Thinking"
+    ],
+    "bucket": "challenge",
+    "why_fit": "The next-layer verifier once the basic full-domain Li Chao route is trusted and line activity ranges matter."
+  },
+  {
     "slug": "dp/digit-dp",
     "topic": "DP -> Digit DP",
     "title": "Almost Everywhere Zero",

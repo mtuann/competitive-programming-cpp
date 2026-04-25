@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `527`
+- Total curated external problems: `531`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -256,6 +256,10 @@ This page lists curated external problems imported into the topic-map system.
 | `DP -> Bitmask DP` | `Small N Graph Editing` | [Friendship Editing](https://usaco.org/index.php?cpid=1499&page=viewproblem2) | `USACO Gold` | `Hard` | Graph-Subset-DP | Tabulation | Graphs |
 | `DP -> Bitmask DP` | `State Compressed Traversal` | [Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes) | `LeetCode` | `Hard` | Graph-Search | BFS; State-Compression | BFS |
 | `DP -> Bitmask DP` | `Subset Packing` | [Elevator Rides](https://cses.fi/problemset/task/1653) | `CSES` | `Hard` | Subset-Packaging | Tabulation | Packing; Subset DP |
+| `DP -> Convex Hull Trick / Li Chao Tree` | `Core` | [Line Add Get Min](https://judge.yosupo.jp/problem/line_add_get_min) | `Library Checker` | `Medium` | Li Chao Tree, Line Container | Implementation; Verification | Point Queries |
+| `DP -> Convex Hull Trick / Li Chao Tree` | `Core` | [Monster Game I](https://cses.fi/problemset/task/2084) | `CSES` | `Hard` | Convex Hull Trick | Optimization; Monotone Structure | Affine DP; Monotone Hull; Line Container |
+| `DP -> Convex Hull Trick / Li Chao Tree` | `Core` | [Monster Game II](https://cses.fi/problemset/task/2085) | `CSES` | `Hard` | Li Chao Tree | Optimization; Data-Structure-Heavy | Affine DP; Line Container |
+| `DP -> Convex Hull Trick / Li Chao Tree` | `Challenge` | [Segment Add Get Min](https://judge.yosupo.jp/problem/segment_add_get_min) | `Library Checker` | `Hard` | Li Chao Tree, Segment Li Chao | Implementation; Verification | Segment-Limited Lines; Advanced |
 | `DP -> Digit DP` | `Core` | [Almost Everywhere Zero](https://atcoder.jp/contests/abc154/tasks/abc154_e) | `AtCoder Beginner Contest 154` | `Medium` | - | - | Tight DP; Count Digits |
 | `DP -> Digit DP` | `Core` | [Digit Sum](https://atcoder.jp/contests/dp/tasks/dp_s) | `AtCoder DP Contest` | `Medium` | - | - | Tight DP; Mod Sum |
 | `DP -> Digit DP` | `Core` | [Digit Products](https://atcoder.jp/contests/abc208/tasks/abc208_e) | `AtCoder Beginner Contest 208` | `Hard` | - | - | Tight DP; Digit Product |

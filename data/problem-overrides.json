@@ -138,6 +138,18 @@
       "Dynamic programming"
     ]
   },
+  "MONSTERGAME2": {
+    "topic_tags": [],
+    "patterns": [
+      "li chao tree",
+      "affine dp",
+      "online line minimum"
+    ],
+    "tracks": [
+      "CSES",
+      "Dynamic programming"
+    ]
+  },
   "COUNTINGROOMS": {
     "topic_tags": [
       "graphs/bfs-dfs"

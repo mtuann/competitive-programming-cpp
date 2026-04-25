@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `86`
+- Total tracked problem notes: `87`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -16,7 +16,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Foundations | 11 |
 | Data Structures | 8 |
 | Graphs | 21 |
-| DP | 9 |
+| DP | 10 |
 | Greedy | 3 |
 | Math | 10 |
 | Combinatorics | 4 |
@@ -86,6 +86,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | `VMMARBLE` | Phân loại bi | `DP -> Bitmask DP` | Advanced -> Constructive | final-color assignment; residual-state dp; capacity-2 moves | `medium` | VN SPOJ, OI-style | [Map](topic-maps/dp/bitmask-dp.md) / [Ladder](../practice/ladders/dp/bitmask-dp/README.md) / [Tutorial](../topics/dp/bitmask-dp/README.md) | [Note](../practice/ladders/dp/bitmask-dp/vmmarble.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp) |
+| `MONSTERGAME2` | Monster Game II | `DP -> Convex Hull Trick / Li Chao Tree` | - | li chao tree; affine dp; online line minimum | `hard` | CSES, Dynamic programming | [Map](topic-maps/dp/cht-li-chao.md) / [Ladder](../practice/ladders/dp/cht-li-chao/README.md) / [Tutorial](../topics/dp/cht-li-chao/README.md) | [Note](../practice/ladders/dp/cht-li-chao/monstergame2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/cht-li-chao/monstergame2.cpp) |
 | `COUNTINGNUMBERS` | Counting Numbers | `DP -> Digit DP` | - | digit dp; previous digit state; range counting | `medium` | CSES, Dynamic programming | [Map](topic-maps/dp/digit-dp.md) / [Ladder](../practice/ladders/dp/digit-dp/README.md) / [Tutorial](../topics/dp/digit-dp/README.md) | [Note](../practice/ladders/dp/digit-dp/countingnumbers.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp) |
 | `VMSCALE` | Chiếc cân kỳ diệu | `DP -> Foundations` | Math -> Number Theory Basics | budget dp; balanced ternary; decision-tree optimization | `hard` | VN SPOJ, OI-style | [Map](topic-maps/dp/foundations.md) / [Ladder](../practice/ladders/dp/foundations/README.md) / [Tutorial](../topics/dp/foundations/README.md) | [Note](../practice/ladders/dp/foundations/vmscale.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp) |
 | `REMOVALGAME` | Removal Game | `DP -> Interval DP` | - | score difference dp; take from ends; interval minimax | `medium` | CSES, Dynamic programming | [Map](topic-maps/dp/interval-dp.md) / [Ladder](../practice/ladders/dp/interval-dp/README.md) / [Tutorial](../topics/dp/interval-dp/README.md) | [Note](../practice/ladders/dp/interval-dp/removalgame.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/interval-dp/removalgame.cpp) |

@@ -10,6 +10,7 @@ Dynamic programming is about choosing a state that captures exactly what still m
 - [Tree DP](tree-dp/README.md)
 - [Digit DP](digit-dp/README.md)
 - [Interval DP](interval-dp/README.md)
+- [Convex Hull Trick / Li Chao Tree](cht-li-chao/README.md)
 
 ## Entry
 
@@ -31,6 +32,7 @@ Dynamic programming is about choosing a state that captures exactly what still m
 
 3. Advanced later
 - optimization techniques
+- convex hull trick / Li Chao tree
 - rerooting-style DP patterns
 - profile and divide-and-conquer style DP
 
