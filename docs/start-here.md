@@ -145,3 +145,16 @@ If you want a broader chooser instead of that default handoff:
 - [Route Map](route-map.md)
 - [Problem Finder](problem-finder.md)
 - [Build Kit](build-kit.md)
+
+## Stage Plan After The First Week
+
+Use this instead of guessing what "intermediate" is supposed to mean in the repo.
+
+| Stage | Main goal | Best route |
+| --- | --- | --- |
+| `Stage 1` | make the local C++ loop and first recognition cues stable | stay in [Foundations ladders](../practice/ladders/foundations/README.md) until basic notes feel routine |
+| `Stage 2` | learn one family at a time and build exact topic-note-template links | use [Learning Areas](../topics/README.md), then the matching ladder, then one anchored note |
+| `Stage 3` | stop relearning and start retrieving under pressure | use [Problem Finder](problem-finder.md), [Notebook](../notebook/README.md), and [Build Kit](build-kit.md) together |
+| `Stage 4` | train for one contest style or go deeper into theory | use [Contest Playbooks](../practice/contest-playbooks/README.md) or [Explore](explore.md) |
+
+The repo does not expect you to jump from Stage 1 straight into mixed rounds. Build one stable topic loop first, then widen.

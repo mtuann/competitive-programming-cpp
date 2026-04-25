@@ -13,9 +13,10 @@ Use it when you need one of these instead:
 | If you are here because... | Start with | Then go next |
 | --- | --- | --- |
 | you are completely new | [Start Here](start-here.md) | [Foundations ladders](../practice/ladders/foundations/README.md) |
+| you want a stage-based route instead of a topic list | [Start Here](start-here.md) | the `Stage Plan` section there, then the stage-matching door |
 | you know basics but your practice is inconsistent | [Practice hub](../practice/README.md) | [Ladders](../practice/ladders/README.md) |
 | you already know the weak topic | [Learning Areas](../topics/README.md) | the matching ladder, then one repo note |
-| you want contest-style training | [Mixed Rounds](../practice/mixed-rounds/README.md) | [Contest Playbooks](../practice/contest-playbooks/README.md) |
+| you want contest-style training | [Contest Playbooks](../practice/contest-playbooks/README.md) | [Mixed Rounds](../practice/mixed-rounds/README.md) and [Problem Finder](problem-finder.md) |
 | you are debugging or implementing under pressure | [Build Kit](build-kit.md) | [Notebook](../notebook/README.md) |
 
 ## Door Meanings

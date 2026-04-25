@@ -55,6 +55,15 @@
 
 </div>
 
+## Pick Your Stage
+
+| Stage | Use this when... | Open first | Then |
+| --- | --- | --- | --- |
+| `Stage 1` | syntax, local loop, and first easy reps are still unstable | [Start Here](docs/start-here.md) | [Foundations](topics/foundations/README.md) |
+| `Stage 2` | you can already solve some basics and want topic-by-topic growth | [Learning Areas](topics/README.md) | the matching ladder and one repo note |
+| `Stage 3` | you know several families but retrieval and switching are the bottleneck | [Practice hub](practice/README.md) | [Problem Finder](docs/problem-finder.md), then [Mixed Rounds](practice/mixed-rounds/README.md) |
+| `Stage 4` | you want track-specific training or deeper source-backed reading | [Contest Playbooks](practice/contest-playbooks/README.md) or [Explore](docs/explore.md) | the matching topic map, playbook, or external follow-up pool |
+
 ## What Makes This Repo Different
 
 <div class="grid cards" markdown>

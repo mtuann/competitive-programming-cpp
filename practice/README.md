@@ -63,6 +63,18 @@ Use the repo layers in this order whenever possible:
 
 That is the default `topic -> ladder -> note -> retrieve -> switch` loop of the repo.
 
+## Session Shapes
+
+Use one of these when you want the repo to feel like a training system, not a library shelf.
+
+| Session shape | Start with | Best follow-through |
+| --- | --- | --- |
+| `Resume queue` | [Problem Finder](../docs/problem-finder.md) with `Resume attempted` | reopen the topic only if recognition is shaky, then finish the note |
+| `Review queue` | [Problem Finder](../docs/problem-finder.md) with `Review solved` | one repo note, then one fresh external rep |
+| `Fresh external reps` | [Problem Finder](../docs/problem-finder.md) with `Fresh external` or `Core external set` | reopen the matching topic map or ladder only if the new rep exposes drift |
+| `Switch drill` | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) or [Build Kit](../docs/build-kit.md) only after the round shows a real gap |
+| `Track-specific block` | [Contest Playbooks](contest-playbooks/README.md) | return to [Problem Finder](../docs/problem-finder.md) for the next concrete queue |
+
 ## Choose By Bottleneck
 
 | If your bottleneck is... | Best first door | Then |
@@ -95,7 +107,7 @@ That is the default `topic -> ladder -> note -> retrieve -> switch` loop of the 
 
 - [Problem index](../docs/problem-index.md): one table for every currently tracked solved note, with links to the note, code, ladder, and tutorial hub
 - [External problem index](../docs/external-problem-index.md): curated official and trusted problems outside the repo, organized by topic and usable as the next practice queue
-- [Topic maps](../docs/topic-maps/index.md): source-backed pages for each subtopic, including trusted learning references, practice and follow-up sources, and every repo problem tagged there
+- [Topic maps](../docs/topic-maps/index.md): source-backed pages for each subtopic, including learning references, exact practice sources, follow-up reading, and every repo problem tagged there
 
 ## After One Practice Session
 

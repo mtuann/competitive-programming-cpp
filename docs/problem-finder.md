@@ -14,6 +14,8 @@ This page is best when you treat it like a practice control panel, not just a se
 - `Status` is the repo-note training log: `todo`, `attempted`, `solved`, `reviewed`
 - `Kind` splits internal notes from fresh external follow-up
 - session presets are meant to answer `what do I do right now?`, not only `what exists?`
+- `Session size` turns a long filtered list into one concrete queue for the current block
+- `Queue board` tells you whether you should resume, review, or leave the repo for fresh reps
 
 ## Best Use Cases
 
@@ -96,16 +98,34 @@ External problems do not use repo-note status. Treat them as fresh follow-up rep
           <option value="">All</option>
         </select>
       </div>
+      <div class="problem-finder-field">
+        <label for="finder-limit">Session size</label>
+        <select id="finder-limit">
+          <option value="3">3 picks</option>
+          <option value="5">5 picks</option>
+          <option value="10">10 picks</option>
+          <option value="all">Show all</option>
+        </select>
+      </div>
+      <div class="problem-finder-field">
+        <label for="finder-sort">Sort</label>
+        <select id="finder-sort">
+          <option value="queue">Queue order</option>
+          <option value="difficulty">Difficulty</option>
+          <option value="topic">Topic</option>
+          <option value="source">Source</option>
+        </select>
+      </div>
     </div>
     <div class="problem-finder-meta">
       <div id="finder-stats" class="problem-finder-stats"></div>
       <div class="finder-shortcuts">
-        <a href="../practice/">Practice hub</a>
-        <a href="../practice/mixed-rounds/">Mixed rounds</a>
-        <a href="../practice/contest-playbooks/">Contest playbooks</a>
-        <a href="../notebook/">Notebook</a>
+        <a href="../../practice/">Practice hub</a>
+        <a href="../../practice/mixed-rounds/">Mixed rounds</a>
+        <a href="../../practice/contest-playbooks/">Contest playbooks</a>
+        <a href="../../notebook/">Notebook</a>
         <a href="../build-kit/">Build Kit</a>
-        <a href="../template-library/">Template library</a>
+        <a href="../../template-library/">Template library</a>
         <a href="../problem-index/">Repo index</a>
         <a href="../external-problem-index/">External index</a>
         <a href="../topic-maps/">Topic maps</a>
@@ -129,7 +149,9 @@ External problems do not use repo-note status. Treat them as fresh follow-up rep
     </div>
   </div>
 
+  <div id="finder-queue-board" class="problem-finder-queue-board"></div>
   <div id="finder-route" class="problem-finder-route" hidden></div>
+  <div id="finder-session" class="problem-finder-session" hidden></div>
 
   <div class="problem-finder-results">
     <h2>Results</h2>

@@ -17,15 +17,43 @@
     difficulty: document.getElementById("finder-difficulty"),
     source: document.getElementById("finder-source"),
     bucket: document.getElementById("finder-bucket"),
+    limit: document.getElementById("finder-limit"),
+    sort: document.getElementById("finder-sort"),
   };
 
   const resultsBody = document.getElementById("finder-results");
   const emptyState = document.getElementById("finder-empty");
   const stats = document.getElementById("finder-stats");
+  const queueBoard = document.getElementById("finder-queue-board");
   const routeCard = document.getElementById("finder-route");
+  const sessionCard = document.getElementById("finder-session");
   const presetButtons = Array.from(root.querySelectorAll("[data-finder-preset]"));
   const resetButton = root.querySelector("[data-finder-reset]");
   const STATUS_VALUES = ["todo", "attempted", "solved", "reviewed"];
+  const DIFFICULTY_ORDER = {
+    easy: 0,
+    "easy-medium": 1,
+    medium: 2,
+    "medium-hard": 3,
+    hard: 4,
+    "very-hard": 5,
+    theory: 6,
+  };
+  const BUCKET_ORDER = {
+    "warm-up": 0,
+    core: 1,
+    classic: 2,
+    variants: 3,
+    stretch: 4,
+    advanced: 5,
+    challenge: 6,
+    "cross-topic": 7,
+    "theory/course": 8,
+  };
+  const KIND_ORDER = {
+    "Repo note": 0,
+    External: 1,
+  };
 
   function docHref(path) {
     if (!path) {
@@ -165,12 +193,17 @@
       difficulty: fields.difficulty.value,
       source: fields.source.value,
       bucket: fields.bucket.value,
+      limit: fields.limit.value,
+      sort: fields.sort.value,
     };
   }
 
   function updateUrl(state) {
     const params = new URLSearchParams();
     Object.entries(state).forEach(([key, value]) => {
+      if ((key === "limit" && value === "5") || (key === "sort" && value === "queue")) {
+        return;
+      }
       if (value) {
         params.set(key, value);
       }
@@ -196,6 +229,63 @@
           `<span class="finder-chip">Status ${entry.status} ${entry.count}</span>`
       ),
     ].join("");
+  }
+
+  function difficultyRank(value) {
+    const key = textOf(value).toLowerCase();
+    return Object.prototype.hasOwnProperty.call(DIFFICULTY_ORDER, key)
+      ? DIFFICULTY_ORDER[key]
+      : Number.MAX_SAFE_INTEGER;
+  }
+
+  function bucketRank(value) {
+    const key = textOf(value).toLowerCase();
+    return Object.prototype.hasOwnProperty.call(BUCKET_ORDER, key)
+      ? BUCKET_ORDER[key]
+      : Number.MAX_SAFE_INTEGER;
+  }
+
+  function queueSort(a, b) {
+    const kindDiff = (KIND_ORDER[a.kind] ?? 99) - (KIND_ORDER[b.kind] ?? 99);
+    if (kindDiff) return kindDiff;
+    const statusRank = (value) => {
+      const idx = STATUS_VALUES.indexOf(value || "");
+      return idx === -1 ? STATUS_VALUES.length : idx;
+    };
+    const statusDiff = statusRank(a.status) - statusRank(b.status);
+    if (statusDiff) return statusDiff;
+    const bucketDiff = bucketRank(a.bucket) - bucketRank(b.bucket);
+    if (bucketDiff) return bucketDiff;
+    const diffRank = difficultyRank(a.difficulty) - difficultyRank(b.difficulty);
+    if (diffRank) return diffRank;
+    return (
+      a.area.localeCompare(b.area) ||
+      a.topic.localeCompare(b.topic) ||
+      a.title.localeCompare(b.title)
+    );
+  }
+
+  function sortItems(items, state) {
+    const sorted = [...items];
+    sorted.sort((a, b) => {
+      if (state.sort === "difficulty") {
+        const diffRank = difficultyRank(a.difficulty) - difficultyRank(b.difficulty);
+        if (diffRank) return diffRank;
+        return queueSort(a, b);
+      }
+      if (state.sort === "topic") {
+        return (
+          a.area.localeCompare(b.area) ||
+          a.topic.localeCompare(b.topic) ||
+          a.title.localeCompare(b.title)
+        );
+      }
+      if (state.sort === "source") {
+        return a.source.localeCompare(b.source) || queueSort(a, b);
+      }
+      return queueSort(a, b);
+    });
+    return sorted;
   }
 
   function renderRows(items) {
@@ -225,6 +315,99 @@
     });
   }
 
+  function queueSummaryCard(presetName, title, body, count) {
+    const active = stateMatchesPreset(currentState(), presetName);
+    return `
+      <button type="button" class="finder-queue-card${active ? " finder-queue-card--active" : ""}" data-finder-queue="${presetName}">
+        <span class="finder-queue-title">${title}</span>
+        <span class="finder-queue-count">${count}</span>
+        <span class="finder-queue-copy">${body}</span>
+      </button>
+    `;
+  }
+
+  function renderQueueBoard(allItems) {
+    if (!queueBoard) {
+      return;
+    }
+    const attempted = allItems.filter((item) => item.kind === "Repo note" && item.status === "attempted").length;
+    const solved = allItems.filter((item) => item.kind === "Repo note" && item.status === "solved").length;
+    const reviewed = allItems.filter((item) => item.kind === "Repo note" && item.status === "reviewed").length;
+    const todo = allItems.filter((item) => item.kind === "Repo note" && item.status === "todo").length;
+    const coreExternal = allItems.filter((item) => item.kind === "External" && item.bucket === "core").length;
+    const challengeExternal = allItems.filter((item) => item.kind === "External" && item.bucket === "challenge").length;
+
+    queueBoard.innerHTML = `
+      <h2>Queue Board</h2>
+      <p class="finder-helper">Start from one queue, then use filters only to narrow the current block. This keeps the page operational instead of turning it back into a giant catalog.</p>
+      <div class="finder-queue-grid">
+        ${queueSummaryCard("resume-attempted", "Resume attempted", "Return to unfinished repo notes with the smallest clean restart path.", attempted)}
+        ${queueSummaryCard("review-solved", "Review solved", "Use already-solved notes as the first review queue before fresh reps.", solved)}
+        ${queueSummaryCard("reopen-reviewed", "Reopen reviewed", "Keep stable anchors available without letting them dominate the queue.", reviewed)}
+        ${queueSummaryCard("fresh-external", "Fresh external reps", "Leave the repo and test a mostly-trusted topic on new statements.", allItems.filter((item) => item.kind === "External").length)}
+        ${queueSummaryCard("core-external", "Core external set", "Take a focused, teachable block of external reps.", coreExternal)}
+        ${queueSummaryCard("challenge-push", "Challenge push", "Use harder external problems only after the family already feels stable.", challengeExternal)}
+      </div>
+      <div class="problem-finder-stats">
+        <span class="finder-chip">Todo ${todo}</span>
+        <span class="finder-chip">Attempted ${attempted}</span>
+        <span class="finder-chip">Solved ${solved}</span>
+        <span class="finder-chip">Reviewed ${reviewed}</span>
+      </div>
+    `;
+
+    Array.from(queueBoard.querySelectorAll("[data-finder-queue]")).forEach((button) => {
+      button.addEventListener("click", () => {
+        setState(presetState(button.dataset.finderQueue, currentState()), allItems);
+      });
+    });
+  }
+
+  function renderSession(state, items) {
+    if (!sessionCard) {
+      return;
+    }
+    const limit = state.limit === "all" ? items.length : Number.parseInt(state.limit || "5", 10);
+    const picks = state.limit === "all" ? items : items.slice(0, limit);
+    if (!picks.length) {
+      sessionCard.hidden = true;
+      sessionCard.innerHTML = "";
+      return;
+    }
+
+    const hiddenCount = Math.max(items.length - picks.length, 0);
+    sessionCard.hidden = false;
+    sessionCard.innerHTML = `
+      <h2>Session Picks</h2>
+      <p class="finder-helper">Treat this as the working queue for the current block. Finish or intentionally stop one pick before widening the filters again.</p>
+      <div class="problem-finder-stats">
+        <span class="finder-chip">Queue size ${picks.length}</span>
+        ${hiddenCount ? `<span class="finder-chip">${hiddenCount} more in filtered results</span>` : ""}
+      </div>
+      <div class="finder-session-grid">
+        ${picks
+          .map(
+            (item) => `
+              <article class="finder-session-card">
+                <div class="finder-session-header">
+                  <strong>${item.title}</strong>
+                  <code>${labelOf(item.kind)}</code>
+                </div>
+                <div class="finder-session-meta">
+                  <span class="finder-chip">${labelOf(item.topic)}</span>
+                  <span class="finder-chip">${labelOf(item.difficulty)}</span>
+                  ${item.status ? `<span class="finder-chip">status ${item.status}</span>` : ""}
+                  ${item.bucket ? `<span class="finder-chip">${item.bucket}</span>` : ""}
+                </div>
+                <div class="finder-links">${item.links.join("")}</div>
+              </article>
+            `
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
   function applyFilters(allItems) {
     const state = currentState();
     const filtered = allItems.filter((item) => {
@@ -239,20 +422,14 @@
       return true;
     });
 
-    filtered.sort((a, b) => {
-      return (
-        a.area.localeCompare(b.area) ||
-        a.topic.localeCompare(b.topic) ||
-        a.kind.localeCompare(b.kind) ||
-        a.title.localeCompare(b.title)
-      );
-    });
+    const sorted = sortItems(filtered, state);
 
     updateUrl(state);
-    renderStats(allItems, filtered);
-    renderRoute(state, filtered);
+    renderStats(allItems, sorted);
+    renderRoute(state, sorted);
+    renderSession(state, sorted);
     updatePresetSelection(state);
-    renderRows(filtered);
+    renderRows(sorted);
   }
 
   function setState(nextState, allItems) {
@@ -265,6 +442,8 @@
     fields.difficulty.value = nextState.difficulty || "";
     fields.source.value = nextState.source || "";
     fields.bucket.value = nextState.bucket || "";
+    fields.limit.value = nextState.limit || "5";
+    fields.sort.value = nextState.sort || "queue";
     applyFilters(allItems);
   }
 
@@ -408,7 +587,7 @@
     );
   }
 
-  function presetState(name) {
+  function presetState(name, current = {}) {
     const base = {
       query: "",
       kind: "",
@@ -418,6 +597,8 @@
       difficulty: "",
       source: "",
       bucket: "",
+      limit: current.limit || "5",
+      sort: current.sort || "queue",
     };
 
     if (name === "resume-attempted") {
@@ -444,6 +625,9 @@
   function stateMatchesPreset(state, presetName) {
     const preset = presetState(presetName);
     return Object.keys(preset).every((key) => {
+      if (key === "limit" || key === "sort") {
+        return true;
+      }
       if (!preset[key]) {
         return true;
       }
@@ -496,6 +680,8 @@
       difficulty: params.get("difficulty") || "",
       source: params.get("source") || "",
       bucket: params.get("bucket") || "",
+      limit: params.get("limit") || "5",
+      sort: params.get("sort") || "queue",
     };
 
     fillSelect(fields.kind, uniqueSorted(allItems.map((item) => item.kind)), initial.kind);
@@ -508,6 +694,10 @@
     fillSelect(fields.bucket, uniqueSorted(allItems.map((item) => item.bucket)), initial.bucket);
     syncTopicOptions(allItems);
     fields.topic.value = initial.topic;
+    fields.limit.value = initial.limit;
+    fields.sort.value = initial.sort;
+
+    renderQueueBoard(allItems);
 
     Object.values(fields).forEach((field) => {
       field.addEventListener("input", () => {
@@ -526,13 +716,13 @@
 
     presetButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        setState(presetState(button.dataset.finderPreset), allItems);
+        setState(presetState(button.dataset.finderPreset, currentState()), allItems);
       });
     });
 
     if (resetButton) {
       resetButton.addEventListener("click", () => {
-        setState(presetState(""), allItems);
+        setState(presetState("", { limit: "5", sort: "queue" }), allItems);
       });
     }
 

@@ -37,6 +37,17 @@ Use the repo layers in this order whenever possible:
 
 If you already know the weak topic and just need the next problem set, jump to [Problem Finder](../docs/problem-finder.md) instead of browsing area pages.
 
+## Best Next Area By Stage
+
+| If you are here because... | Start with | Then |
+| --- | --- | --- |
+| you are still building the first real loop | [Foundations](foundations/README.md) | one foundations ladder and one note |
+| you are ready for reusable contest tools | [Data Structures](data-structures/README.md) | [DSU](data-structures/dsu/README.md) or [Fenwick Tree](data-structures/fenwick-tree/README.md) |
+| graph problems keep feeling fuzzy or overmodeled | [Graphs](graphs/README.md) | [BFS And DFS](graphs/bfs-dfs/README.md) or [Shortest Paths](graphs/shortest-paths/README.md) |
+| you can code basics but state design is the bottleneck | [Dynamic Programming](dp/README.md) | [DP Foundations](dp/foundations/README.md) |
+| math is the real blocker, not syntax | [Math](math/README.md) | [Number Theory Basics](math/number-theory-basics/README.md) or [Modular Arithmetic](math/modular-arithmetic/README.md) |
+| you want advanced reading after the core loop already exists | [Advanced](advanced/README.md) | the matching deep topic, topic map, or external follow-up |
+
 ## Representative Solved Notes
 
 Use these if you want one concrete repo-native anchor before diving into a whole area:
