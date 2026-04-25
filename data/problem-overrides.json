@@ -1039,5 +1039,20 @@
       "CSES",
       "Tree algorithms"
     ]
+  },
+  "SUBTREEQUERIES": {
+    "topic_tags": [
+      "graphs/trees",
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "euler tour flattening",
+      "subtree interval",
+      "fenwick point set range sum"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ]
   }
 }

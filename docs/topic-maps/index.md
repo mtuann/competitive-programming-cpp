@@ -15,7 +15,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
 | Data Structures -> DSU | 2 | 0 | 5 | [Open](data-structures/dsu.md) |
-| Data Structures -> Fenwick Tree | 3 | 0 | 6 | [Open](data-structures/fenwick-tree.md) |
+| Data Structures -> Fenwick Tree | 4 | 0 | 6 | [Open](data-structures/fenwick-tree.md) |
 | Data Structures -> Heaps And Ordered Sets | 1 | 2 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Lazy Segment Tree | 1 | 4 | 4 | [Open](data-structures/lazy-segment-tree.md) |
 | Data Structures -> Offline Tricks | 1 | 0 | 7 | [Open](data-structures/offline-tricks.md) |
@@ -23,6 +23,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Data Structures -> Sparse Table | 1 | 0 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Bridges, Articulation, And BCC | 1 | 4 | 5 | [Open](graphs/bridges-articulation.md) |
+| Graphs -> Euler Tour / Subtree Queries | 1 | 4 | 4 | [Open](graphs/euler-tour-subtree.md) |
 | Graphs -> Maximum Flow | 4 | 2 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 0 | 7 | [Open](graphs/gomory-hu.md) |
 | Graphs -> Graph Modeling | 4 | 2 | 9 | [Open](graphs/graph-modeling.md) |
@@ -34,7 +35,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> Topological Sort And SCC | 2 | 0 | 9 | [Open](graphs/scc-toposort.md) |
 | Graphs -> Shortest Paths | 1 | 0 | 9 | [Open](graphs/shortest-paths.md) |
 | Graphs -> Tree DP | 1 | 0 | 7 | [Open](graphs/tree-dp.md) |
-| Graphs -> Trees | 9 | 0 | 10 | [Open](graphs/trees.md) |
+| Graphs -> Trees | 10 | 0 | 10 | [Open](graphs/trees.md) |
 | Graphs -> Two-SAT | 1 | 3 | 4 | [Open](graphs/two-sat.md) |
 | DP -> Bitmask DP | 1 | 0 | 11 | [Open](dp/bitmask-dp.md) |
 | DP -> Digit DP | 1 | 0 | 15 | [Open](dp/digit-dp.md) |

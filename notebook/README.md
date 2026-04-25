@@ -91,6 +91,7 @@ The shortest useful scan order is:
 - [Graph cheatsheet](graph-cheatsheet.md)
 - [Low-Link hot sheet](lowlink-hot-sheet.md)
 - [Two-SAT hot sheet](two-sat-hot-sheet.md)
+- [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - [HLD hot sheet](hld-hot-sheet.md)
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
@@ -122,6 +123,7 @@ The shortest useful scan order is:
 - shortest paths -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - low-link critical structure -> [Low-Link hot sheet](lowlink-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - binary clause feasibility -> [Two-SAT hot sheet](two-sat-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
+- subtree-only tree aggregation -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - flow / cuts / transport -> [Flow hot sheet](flow-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - costed transport under capacities -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md)
 - bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous

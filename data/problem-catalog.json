@@ -1429,6 +1429,40 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bridges-articulation/necessaryroads.cpp"
   },
   {
+    "code": "SUBTREEQUERIES",
+    "title": "Subtree Queries",
+    "full_title": "Subtree Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1137",
+    "main_topic": "Graphs -> Euler Tour / Subtree Queries",
+    "secondary_topics": [
+      "Euler tour flattening",
+      "Subtree interval",
+      "Fenwick tree"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/euler-tour-subtree",
+    "topic_tags": [
+      "graphs/euler-tour-subtree",
+      "graphs/trees",
+      "data-structures/fenwick-tree"
+    ],
+    "patterns": [
+      "euler tour flattening",
+      "subtree interval",
+      "fenwick point set range sum"
+    ],
+    "tracks": [
+      "CSES",
+      "Tree algorithms"
+    ],
+    "note_path": "practice/ladders/graphs/euler-tour-subtree/subtreequeries.md",
+    "ladder_path": "practice/ladders/graphs/euler-tour-subtree/README.md",
+    "tutorial_path": "topics/graphs/euler-tour-subtree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-subtree/subtreequeries.cpp"
+  },
+  {
     "code": "FFLOW",
     "title": "Fast Maximum Flow",
     "full_title": "Fast Maximum Flow",

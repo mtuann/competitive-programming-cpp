@@ -11,9 +11,10 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 5. toposort and SCC
 6. bridges / articulation / low-link on undirected graphs
 7. 2-SAT once implication graphs and SCCs feel natural
-8. trees and LCA
-9. heavy-light decomposition when path queries need a range structure
-10. flow and matching
+8. trees and subtree flattening
+9. LCA
+10. heavy-light decomposition when path queries need a range structure
+11. flow and matching
 
 ## Subtopic Ladders
 
@@ -25,6 +26,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Toposort and SCC](scc-toposort/README.md)
 - [Two-SAT](two-sat/README.md)
 - [Trees](trees/README.md)
+- [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
 - [Heavy-light decomposition](hld/README.md)
 - [Flow](flow/README.md)
@@ -38,6 +40,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Necessary Roads](bridges-articulation/necessaryroads.md)
 - [QOS](shortest-paths/qos.md)
 - [Giant Pizza](two-sat/giantpizza.md)
+- [Subtree Queries](euler-tour-subtree/subtreequeries.md)
 - [FFLOW](flow/fflow.md)
 - [MINCOST](flow/mincost.md)
 - [Path Queries II](hld/pathqueries2.md)

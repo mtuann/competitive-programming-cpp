@@ -7169,6 +7169,119 @@
     "why_fit": "The strongest practical reason to go beyond plain articulation points into full block-cut structure."
   },
   {
+    "slug": "graphs/euler-tour-subtree",
+    "topic": "Graphs -> Euler Tour / Subtree Queries",
+    "title": "Subtree Queries",
+    "url": "https://cses.fi/problemset/task/1137",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Trees",
+      "Euler Tour"
+    ],
+    "tags": [
+      "Subtree Sum",
+      "Updates",
+      "Fenwick"
+    ],
+    "styles": [
+      "Flatten Tree",
+      "Fenwick Tree",
+      "Range Sum Queries"
+    ],
+    "prerequisites": [
+      "Rooted Tree",
+      "Fenwick Tree"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical subtree-interval problem where flattening a rooted tree turns each subtree into one range query."
+  },
+  {
+    "slug": "graphs/euler-tour-subtree",
+    "topic": "Graphs -> Euler Tour / Subtree Queries",
+    "title": "Count Descendants",
+    "url": "https://atcoder.jp/contests/abc202/tasks/abc202_e",
+    "source": "AtCoder",
+    "difficulty": "medium",
+    "tracks": [
+      "Trees",
+      "Euler Tour"
+    ],
+    "tags": [
+      "Subtree Interval",
+      "Depth Buckets",
+      "Offline"
+    ],
+    "styles": [
+      "Flatten Tree",
+      "Offline Counting",
+      "Binary Search"
+    ],
+    "prerequisites": [
+      "Subtree Intervals",
+      "Binary Search"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A clean next step where subtree intervals stay the same but you intersect them with depth-grouped positions."
+  },
+  {
+    "slug": "graphs/euler-tour-subtree",
+    "topic": "Graphs -> Euler Tour / Subtree Queries",
+    "title": "Distinct Colors",
+    "url": "https://cses.fi/problemset/task/1139",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Trees"
+    ],
+    "tags": [
+      "Distinct Values",
+      "Subtree Aggregation",
+      "Offline"
+    ],
+    "styles": [
+      "Flatten Tree",
+      "Offline Queries",
+      "Subtree Aggregation"
+    ],
+    "prerequisites": [
+      "Euler Tour",
+      "Subtree Intervals",
+      "Offline Reasoning"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A stretch problem showing that the same subtree interval view can feed a different offline engine once sum/count is no longer enough."
+  },
+  {
+    "slug": "graphs/euler-tour-subtree",
+    "topic": "Graphs -> Euler Tour / Subtree Queries",
+    "title": "Path Queries",
+    "url": "https://cses.fi/problemset/task/1138",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Trees",
+      "Euler Tour"
+    ],
+    "tags": [
+      "Root Path Sum",
+      "Updates",
+      "Tree Flattening"
+    ],
+    "styles": [
+      "Euler Tour",
+      "Fenwick Tree",
+      "Prefix On Tree"
+    ],
+    "prerequisites": [
+      "Tree Flattening",
+      "Fenwick Tree",
+      "Rooted Tree"
+    ],
+    "bucket": "bridge",
+    "why_fit": "A strong compare point once subtree intervals are trusted and you want to see how similar flattening ideas answer a different rooted-tree query."
+  },
+  {
     "slug": "graphs/flow",
     "topic": "Graphs -> Maximum Flow",
     "title": "Download Speed",

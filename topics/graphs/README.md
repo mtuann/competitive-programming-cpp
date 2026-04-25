@@ -12,6 +12,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Topological Sort And SCC](scc-toposort/README.md)
 - [2-SAT](two-sat/README.md)
 - [Trees](trees/README.md)
+- [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
 - [Heavy-Light Decomposition](hld/README.md)
 - [Maximum Flow](flow/README.md)
@@ -36,7 +37,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - SCC
 - bridges, articulation points, and low-link structure
 - 2-SAT once SCC condensation is comfortable
-- trees, LCA, and rerooting-style thinking
+- trees, subtree flattening, LCA, and rerooting-style thinking
 
 3. Advanced later
 - flow
@@ -66,6 +67,7 @@ After this section, you should be able to recognize the common graph models, cho
 - [Necessary Roads](../../practice/ladders/graphs/bridges-articulation/necessaryroads.md): low-link bridge detection and critical-edge reasoning
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
 - [Giant Pizza](../../practice/ladders/graphs/two-sat/giantpizza.md): binary clause modeling and SCC-based assignment extraction
+- [Subtree Queries](../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md): subtree intervals reduced to one Fenwick-backed range query
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
 - [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling

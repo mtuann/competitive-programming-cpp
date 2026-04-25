@@ -53,7 +53,6 @@ This file exists so future expansion work stays phased, source-backed, and small
 These are the most valuable missing topics or families relative to the repo's current maturity.
 
 - `Lazy Segment Tree`
-- `Euler Tour / Subtree Queries`
 - `Centroid Decomposition`
 - `DSU Rollback / Offline Dynamic Connectivity`
 - `Persistent Data Structures`
@@ -113,11 +112,11 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 - [x] add `notebook/lazy-segment-tree-hot-sheet.md`
 - [x] add `practice/ladders/data-structures/lazy-segment-tree/README.md`
 - [x] add one flagship lazy-segtree note plus solution
-- [ ] add `topics/graphs/euler-tour-subtree/README.md`
-- [ ] add `templates/graphs/euler-tour-subtree.cpp`
-- [ ] add `notebook/subtree-queries-hot-sheet.md`
-- [ ] add `practice/ladders/graphs/euler-tour-subtree/README.md`
-- [ ] add one flagship subtree-query note plus solution
+- [x] add `topics/graphs/euler-tour-subtree/README.md`
+- [x] add `templates/graphs/euler-tour-subtree.cpp`
+- [x] add `notebook/subtree-queries-hot-sheet.md`
+- [x] add `practice/ladders/graphs/euler-tour-subtree/README.md`
+- [x] add one flagship subtree-query note plus solution
 
 ### Phase 4. Codeforces Operating Layer
 
@@ -215,8 +214,8 @@ A wave is only considered shipped when:
 
 The cleanest next task after this file lands is:
 
-1. `Euler Tour / Subtree Queries`
-2. `Codeforces Operating Layer`
+1. `Codeforces Operating Layer`
+2. `Centroid Decomposition`
 
 That pair has the best balance of:
 

@@ -5,7 +5,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 - Topic slug: `graphs/trees`
 - Tutorial page: [Open tutorial](../../../topics/graphs/trees/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/trees/README.md)
-- Repo problems currently tagged here: `9`
+- Repo problems currently tagged here: `10`
 - Repo companion pages: `0`
 - Curated external problems: `10`
 
@@ -105,6 +105,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 | `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MTREECOL` | Color a tree | `primary` | `hard` | ratio greedy; tree contraction; exchange argument | [Note](../../../practice/ladders/graphs/trees/mtreecol.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/mtreecol.cpp) |
 | `PATHQUERIES2` | Path Queries II | `secondary` | `medium` | heavy light decomposition; path query decomposition; segment tree on base array | [Note](../../../practice/ladders/graphs/hld/pathqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp) |
+| `SUBTREEQUERIES` | Subtree Queries | `secondary` | `medium` | euler tour flattening; subtree interval; fenwick point set range sum | [Note](../../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-subtree/subtreequeries.cpp) |
 | `TREEMATCHING` | Tree Matching | `secondary` | `medium` | tree matching dp; matched or unmatched state; child swap contribution | [Note](../../../practice/ladders/dp/tree-dp/treematching.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/tree-dp/treematching.cpp) |
 | `VMWTREE` | Lại là cây khung | `primary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../../../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
 | `VOITSORT` | Cây hoán vị | `secondary` | `hard` | lexicographic enumeration; stack-sortability; cartesian tree view | [Note](../../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp) |

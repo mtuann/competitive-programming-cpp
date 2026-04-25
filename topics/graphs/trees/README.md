@@ -21,6 +21,7 @@ This page is not about one algorithm.
 
 It is the family page that teaches what tree structure gives you *before* you specialize into:
 
+- [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 - [LCA](../lca/README.md)
 - [Tree DP](../../dp/tree-dp/README.md)
 - [Heavy-Light Decomposition](../hld/README.md)
@@ -40,6 +41,7 @@ It is the family page that teaches what tree structure gives you *before* you sp
 
 Helpful neighboring topics:
 
+- [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 - [LCA](../lca/README.md)
 - [Tree DP](../../dp/tree-dp/README.md)
 - [Heavy-Light Decomposition](../hld/README.md)
@@ -116,7 +118,8 @@ That is why so many formulas on trees are simple.
 
 Once the rooted facts are available, you can branch into specialized tools:
 
-- subtree aggregation -> [Tree DP](../../dp/tree-dp/README.md)
+- subtree interval queries -> [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
+- subtree aggregation by merging child states -> [Tree DP](../../dp/tree-dp/README.md)
 - ancestor queries -> [LCA](../lca/README.md)
 - many path queries -> [Heavy-Light Decomposition](../hld/README.md)
 
@@ -216,6 +219,7 @@ That is the mental bridge to reroot DP.
 
 - queries are subtree-based
 - contiguous subtree intervals on an array are enough
+- exact next stop: [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 
 ### Use LCA When
 
@@ -264,6 +268,7 @@ This is one of the cleanest examples of how the unique-path property makes a gra
 
 The repo has several notes where the first step is simply "extract the rooted-tree structure correctly," and the harder idea comes later:
 
+- [Subtree Queries](../../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md)
 - [MTREECOL](../../../practice/ladders/graphs/trees/mtreecol.md)
 - [VMWTREE](../../../practice/ladders/graphs/trees/vmwtree.md)
 

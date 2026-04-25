@@ -918,6 +918,77 @@
       }
     ]
   },
+  "graphs/euler-tour-subtree": {
+    "title": "Graphs -> Euler Tour / Subtree Queries",
+    "summary": "Flatten one rooted subtree into one contiguous interval so subtree-only queries become array range queries.",
+    "topic_path": "topics/graphs/euler-tour-subtree/README.md",
+    "ladder_path": "practice/ladders/graphs/euler-tour-subtree/README.md",
+    "microtopics": [
+      "tin-tout",
+      "single-entry-tour",
+      "subtree-interval",
+      "flatten-tree",
+      "fenwick-on-tour",
+      "subtree-sum",
+      "point-update"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Euler Tour Technique",
+        "url": "https://usaco.guide/gold/tree-euler/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki tree basics",
+        "url": "https://en.oi-wiki.org/graph/tree-basic/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CSES Subtree Queries",
+        "url": "https://cses.fi/problemset/task/1137/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "USACO contest archive",
+        "url": "https://usaco.org/index.php?page=contests",
+        "kind": "contest archive"
+      },
+      {
+        "label": "AtCoder problems archive",
+        "url": "https://atcoder.jp/contests/archive",
+        "kind": "contest archive"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Subtree Queries hot sheet",
+        "path": "notebook/subtree-queries-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Euler Tour subtree starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Subtree Queries note",
+        "path": "practice/ladders/graphs/euler-tour-subtree/subtreequeries.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Trees tutorial",
+        "path": "topics/graphs/trees/README.md",
+        "kind": "adjacent tutorial"
+      }
+    ]
+  },
   "graphs/shortest-paths": {
     "title": "Graphs -> Shortest Paths",
     "summary": "From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool that matches the edge model.",
