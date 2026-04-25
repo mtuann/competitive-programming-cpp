@@ -163,7 +163,7 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/linear-recurrence-hot-sheet.md`
 - [x] add `practice/ladders/math/linear-recurrence/README.md`
 - [x] add one flagship linear-recurrence note plus solution
-- [ ] add a `CRT / Lucas / Möbius` wave plan, then split it into at most `2` math waves instead of bulk-shipping everything together
+- [x] add a [`CRT / Lucas / Möbius` wave plan](crt-lucas-mobius-wave-plan.md), then split it into at most `2` math waves instead of bulk-shipping everything together
 
 ### Phase 8. Contest-Source Lane B
 
@@ -214,7 +214,7 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `CRT / Lucas / Möbius wave plan`
+1. `Chinese Remainder / Linear Congruences`
 2. `Contest-Source Lane B`
 
 That pair has the best balance of:

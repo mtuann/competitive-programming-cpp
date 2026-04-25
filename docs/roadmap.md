@@ -7,7 +7,7 @@
 - Status: active
 - Last reviewed: 2026-04-24
 - Update triggers: after any major topic-page pass, new content layer, or roadmap reprioritization
-- Canonical companion docs: [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md), [Expansion Roadmap](expansion-roadmap.md)
+- Canonical companion docs: [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md), [Expansion Roadmap](expansion-roadmap.md), [CRT / Lucas / Möbius Wave Plan](crt-lucas-mobius-wave-plan.md)
 
 This file exists so future work does not drift into memory or scattered chat history.
 
