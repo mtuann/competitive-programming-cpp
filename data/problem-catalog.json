@@ -589,6 +589,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp"
   },
   {
+    "code": "SLIDINGWINDOWMINIMUM",
+    "title": "Sliding Window Minimum",
+    "full_title": "Sliding Window Minimum",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/3221",
+    "main_topic": "DP -> Sliding Window And Window DP",
+    "secondary_topics": [
+      "Monotonic deque",
+      "Generated input",
+      "Window aggregate"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/sliding-window",
+    "topic_tags": [
+      "dp/sliding-window"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/sliding-window/slidingwindowminimum.md",
+    "ladder_path": "practice/ladders/dp/sliding-window/README.md",
+    "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/slidingwindowminimum.cpp"
+  },
+  {
     "code": "TFIELD",
     "title": "Ruộng bậc thang",
     "full_title": "Ruộng bậc thang",
@@ -621,6 +646,31 @@
     "ladder_path": "practice/ladders/dp/sliding-window/README.md",
     "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp"
+  },
+  {
+    "code": "TREEDISTANCES2",
+    "title": "Tree Distances II",
+    "full_title": "Tree Distances II",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1133",
+    "main_topic": "DP -> Tree DP",
+    "secondary_topics": [
+      "Rerooting",
+      "Subtree sizes",
+      "All-roots answers"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/tree-dp",
+    "topic_tags": [
+      "dp/tree-dp"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/tree-dp/treedistances2.md",
+    "ladder_path": "practice/ladders/dp/tree-dp/README.md",
+    "tutorial_path": "topics/dp/tree-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/tree-dp/treedistances2.cpp"
   },
   {
     "code": "TREEMATCHING",
@@ -1609,6 +1659,31 @@
     "ladder_path": "practice/ladders/graphs/matching/README.md",
     "tutorial_path": "topics/graphs/matching/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp"
+  },
+  {
+    "code": "SCHOOLDANCE",
+    "title": "School Dance",
+    "full_title": "School Dance",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1696",
+    "main_topic": "Graphs -> Matching",
+    "secondary_topics": [
+      "Hopcroft-Karp",
+      "Bipartite graph modeling",
+      "Matching reconstruction"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/matching",
+    "topic_tags": [
+      "graphs/matching"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/matching/schooldance.md",
+    "ladder_path": "practice/ladders/graphs/matching/README.md",
+    "tutorial_path": "topics/graphs/matching/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/schooldance.cpp"
   },
   {
     "code": "ROADREPARATION",

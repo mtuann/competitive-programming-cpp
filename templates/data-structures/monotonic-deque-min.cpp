@@ -6,7 +6,7 @@
 // Main trap: using it when the valid set is not a contiguous forward-moving window.
 // Links:
 //   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
-//   Note: no exact repo note yet; reopen practice/ladders/dp/sliding-window/README.md
+//   Note: practice/ladders/dp/sliding-window/slidingwindowminimum.md
 
 #include <deque>
 #include <iostream>

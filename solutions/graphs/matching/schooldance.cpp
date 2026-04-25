@@ -1,12 +1,9 @@
-// Template: Hopcroft-Karp
-// Signal: bipartite maximum matching at a scale where Kuhn would start to drag.
-// Assumes: the graph is bipartite with left/right parts fixed in advance.
-// Exposes: HopcroftKarp with add_edge(u, v), max_matching(), and match_left / match_right for reconstruction.
-// Complexity: O(m * sqrt(n)).
-// Main trap: feeding it a graph that is not actually bipartite and trusting the answer anyway.
-// Links:
-//   Topic: topics/graphs/matching/README.md
-//   Note: practice/ladders/graphs/matching/schooldance.md
+// Problem: School Dance
+// Judge: CSES
+// Source URL: https://cses.fi/problemset/task/1696
+// Topic: bipartite matching, Hopcroft-Karp, matching reconstruction
+// Idea: model boys and girls as the two sides of a bipartite graph, run
+// Hopcroft-Karp, and print every matched left-side vertex with its partner.
 
 #include <iostream>
 #include <queue>
@@ -34,10 +31,10 @@ struct HopcroftKarp {
     bool bfs() {
         queue<int> q;
         fill(dist.begin(), dist.end(), -1);
-        for (int i = 0; i < n_left; ++i) {
-            if (match_left[i] == -1) {
-                dist[i] = 0;
-                q.push(i);
+        for (int u = 0; u < n_left; ++u) {
+            if (match_left[u] == -1) {
+                dist[u] = 0;
+                q.push(u);
             }
         }
 
@@ -74,8 +71,8 @@ struct HopcroftKarp {
     int max_matching() {
         int matching = 0;
         while (bfs()) {
-            for (int i = 0; i < n_left; ++i) {
-                if (match_left[i] == -1 && dfs(i)) {
+            for (int u = 0; u < n_left; ++u) {
+                if (match_left[u] == -1 && dfs(u)) {
                     ++matching;
                 }
             }
@@ -85,11 +82,25 @@ struct HopcroftKarp {
 };
 
 int main() {
-    HopcroftKarp hk(3, 3);
-    hk.add_edge(0, 0);
-    hk.add_edge(0, 1);
-    hk.add_edge(1, 1);
-    hk.add_edge(2, 2);
-    cout << hk.max_matching() << '\n';
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m, k;
+    cin >> n >> m >> k;
+
+    HopcroftKarp hk(n, m);
+    for (int i = 0; i < k; ++i) {
+        int a, b;
+        cin >> a >> b;
+        hk.add_edge(a - 1, b - 1);
+    }
+
+    int matching = hk.max_matching();
+    cout << matching << '\n';
+    for (int u = 0; u < n; ++u) {
+        if (hk.match_left[u] != -1) {
+            cout << u + 1 << ' ' << hk.match_left[u] + 1 << '\n';
+        }
+    }
     return 0;
 }

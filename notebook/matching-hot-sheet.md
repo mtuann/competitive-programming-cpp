@@ -30,6 +30,7 @@ Use this page when the statement is really about pairing two sides of a compatib
 ## Exact Starters In This Repo
 
 - bipartite maximum matching -> [`hopcroft-karp.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
+- flagship in-lane rep -> [School Dance](../practice/ladders/graphs/matching/schooldance.md)
 - compare-point boundary note -> [QBFLOWER](../practice/ladders/graphs/matching/qbflower.md)
 - when the cleaner reduction is capacity flow -> [`dinic.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
 

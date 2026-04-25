@@ -85,9 +85,9 @@ This easily fits the limits.
 - Topic page: [FFT And NTT](../../../../topics/math/fft-ntt/README.md)
 - Practice ladder: [FFT And NTT ladder](README.md)
 - Starter template: [fft.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/fft.cpp)
-- Notebook refresher: [Notebook overview](../../../../notebook/README.md)
+- Topic refresher: [FFT And NTT](../../../../topics/math/fft-ntt/README.md)
 - Carry forward: separate the algebraic transform from the problem-specific coefficient interpretation.
-- This note adds: the coefficient encoding and big-integer reconstruction layered on top of convolution.
+- This note adds: the frequency-array encoding and final weighted accumulation layered on top of convolution.
 
 ## Solutions
 

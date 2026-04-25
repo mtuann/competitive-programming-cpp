@@ -59,6 +59,7 @@ Useful snippets when a DP or greedy transition needs the best value over a recen
 
 Repo anchor:
 
+- [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md)
 - [TFIELD](../practice/ladders/dp/sliding-window/tfield.md)
 
 ## Safety Checks
@@ -76,4 +77,4 @@ The classic DP bug is not syntax. It is a state that silently throws away inform
 
 - topic pages -> [DP Foundations](../topics/dp/foundations/README.md), [Digit DP](../topics/dp/digit-dp/README.md), [Tree DP](../topics/dp/tree-dp/README.md), [Interval DP](../topics/dp/interval-dp/README.md)
 - exact quick sheet -> [Digit DP hot sheet](digit-dp-hot-sheet.md)
-- repo anchors -> [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md), [Removal Game](../practice/ladders/dp/interval-dp/removalgame.md), [Tree Matching](../practice/ladders/dp/tree-dp/treematching.md)
+- repo anchors -> [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md), [Removal Game](../practice/ladders/dp/interval-dp/removalgame.md), [Tree Matching](../practice/ladders/dp/tree-dp/treematching.md), [Tree Distances II](../practice/ladders/dp/tree-dp/treedistances2.md)

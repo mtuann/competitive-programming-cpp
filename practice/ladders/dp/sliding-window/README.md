@@ -19,9 +19,11 @@ Use this ladder when a problem sits between DP and window techniques, and the ma
 - moving minimum / best recent transition -> [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
 - balanced lower median in a dynamic window -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
 - short reminder sheet -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- exact monotone-window rep -> [Sliding Window Minimum](slidingwindowminimum.md)
 
 ## Example Notes
 
+- [Sliding Window Minimum](slidingwindowminimum.md)
 - [TFIELD](tfield.md)
 
 ## Exit Criteria

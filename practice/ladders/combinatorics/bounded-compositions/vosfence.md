@@ -120,7 +120,7 @@ This is easily fast enough for the official limits.
 
 - Topic page: [Bounded Compositions](../../../../topics/combinatorics/bounded-compositions/README.md)
 - Practice ladder: [Bounded Compositions ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter route: no exact starter template here; reopen [Bounded Compositions](../../../../topics/combinatorics/bounded-compositions/README.md) and [Combinatorics cheatsheet](../../../../notebook/combinatorics-cheatsheet.md)
 - Notebook refresher: [Combinatorics cheatsheet](../../../../notebook/combinatorics-cheatsheet.md)
 - Carry forward: translate counting constraints into slots, gaps, or bounded choices before coding.
 - This note adds: the combinatorial decomposition and edge-case bookkeeping for this exact counting model.

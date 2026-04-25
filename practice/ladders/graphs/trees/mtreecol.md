@@ -151,10 +151,10 @@ W(a) * S(b) ? W(b) * S(a)
 
 - Topic page: [Trees](../../../../topics/graphs/trees/README.md)
 - Practice ladder: [Trees ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter route: no exact starter template here; reopen [Trees](../../../../topics/graphs/trees/README.md) and use the solution file as the concrete reference
 - Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
-- Carry forward: compute parent, depth, and subtree facts once so later tree logic has something stable to build on.
-- This note adds: the tree-specific invariant or decomposition that goes beyond the plain rooted-tree setup.
+- Carry forward: when a rooted tree only imposes precedence, compare available components by one scheduling score instead of defaulting to subtree DP.
+- This note adds: the density-order contraction invariant for this exact weighted-completion-time tree problem.
 
 ## Solutions
 

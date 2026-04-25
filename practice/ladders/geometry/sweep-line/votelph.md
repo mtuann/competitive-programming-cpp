@@ -108,12 +108,12 @@ With `N <= 2000`, `Q <= 500000`, this fits.
 
 ## Reusable Pattern
 
-- Topic page: [Sweep Line](../../../../topics/geometry/sweep-line/README.md)
+- Topic page: [Counting Geometry](../../../../topics/geometry/counting-geometry/README.md)
 - Practice ladder: [Sweep Line ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter route: no exact repo starter here; reopen [Counting Geometry](../../../../topics/geometry/counting-geometry/README.md), then use the solution file as the concrete reference
 - Notebook refresher: [Geometry cheatsheet](../../../../notebook/geometry-cheatsheet.md)
-- Carry forward: sort events first, then make the active-set invariant explicit.
-- This note adds: the event meaning and state maintenance for this geometric sweep.
+- Carry forward: split each concave-function query into left-endpoint, right-endpoint, and interior-peak cases before building any range structure.
+- This note adds: the endpoint-grid preprocessing and RMQ decomposition for this exact geometry model.
 
 ## Solutions
 

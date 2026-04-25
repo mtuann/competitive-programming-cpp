@@ -51,6 +51,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
 - segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
+- monotone window minimum -> [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md)
 
 ## Common Mistakes
 

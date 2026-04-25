@@ -5,7 +5,7 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 - Topic slug: `graphs/matching`
 - Tutorial page: [Open tutorial](../../../topics/graphs/matching/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/matching/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
 - Curated external problems: `11`
 
@@ -72,6 +72,7 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `QBFLOWER` | Tặng hoa | `primary` | `medium` | minimum edge cover; general matching; graph transformation | [Note](../../../practice/ladders/graphs/matching/qbflower.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/qbflower.cpp) |
+| `SCHOOLDANCE` | School Dance | `primary` | `medium` | - | [Note](../../../practice/ladders/graphs/matching/schooldance.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/matching/schooldance.cpp) |
 
 ## Regeneration
 

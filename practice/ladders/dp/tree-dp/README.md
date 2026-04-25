@@ -23,15 +23,23 @@ Target skill:
 
 - merge child answers
 - root the tree cleanly
-- rerooting later if needed
+- [Tree Distances II](treedistances2.md)
+- rerooting when every node needs an answer
 
 Target skill:
 
 - reason in terms of subtree boundaries and child merges
 
+## Retrieval Layer
+
+- exact rerooting note -> [Tree Distances II](treedistances2.md)
+- sum-of-distances rerooting starter -> [tree-dp-rerooting.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/tree-dp-rerooting.cpp)
+- short reminder sheet -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
+
 ## Example Notes
 
 - [VOSTRIP](../../graphs/tree-dp/vostrip.md)
+- [Tree Distances II](treedistances2.md)
 
 ## Stretch
 

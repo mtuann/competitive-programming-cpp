@@ -26,7 +26,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> Graph Modeling | 3 | 2 | 9 | [Open](graphs/graph-modeling.md) |
 | Graphs -> Heavy-Light Decomposition | 2 | 0 | 8 | [Open](graphs/hld.md) |
 | Graphs -> LCA | 1 | 0 | 6 | [Open](graphs/lca.md) |
-| Graphs -> Matching | 1 | 0 | 11 | [Open](graphs/matching.md) |
+| Graphs -> Matching | 2 | 0 | 11 | [Open](graphs/matching.md) |
 | Graphs -> Min-Cost Flow | 1 | 0 | 10 | [Open](graphs/min-cost-flow.md) |
 | Graphs -> Minimum Spanning Tree | 1 | 0 | 6 | [Open](graphs/mst.md) |
 | Graphs -> Topological Sort And SCC | 1 | 0 | 9 | [Open](graphs/scc-toposort.md) |
@@ -38,8 +38,8 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | DP -> Foundations | 2 | 0 | 12 | [Open](dp/foundations.md) |
 | DP -> Interval DP | 1 | 0 | 12 | [Open](dp/interval-dp.md) |
 | DP -> Knapsack Family | 1 | 0 | 15 | [Open](dp/knapsack-family.md) |
-| DP -> Sliding Window And Window DP | 1 | 2 | 16 | [Open](dp/sliding-window.md) |
-| DP -> Tree DP | 2 | 0 | 10 | [Open](dp/tree-dp.md) |
+| DP -> Sliding Window And Window DP | 2 | 2 | 16 | [Open](dp/sliding-window.md) |
+| DP -> Tree DP | 3 | 0 | 10 | [Open](dp/tree-dp.md) |
 | Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> FFT And NTT | 1 | 0 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 5 | 0 | 11 | [Open](math/gcd-lcm.md) |

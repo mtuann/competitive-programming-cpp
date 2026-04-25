@@ -64,10 +64,10 @@ Because the graph is not guaranteed to be bipartite, the solution uses Edmonds' 
 
 ## Pitfalls / Judge Notes
 
-The main trap is mixing up the clean graph-theory statement with the judge-facing output rule.
+The main trap is forgetting the precondition behind the clean graph-theory formula.
 
 - In strict graph theory, an edge cover exists only when there is no isolated vertex.
-- This judge does not ask for a special impossible-case output, so the accepted submission uses the direct formula:
+- The accepted solution uses the direct formula because the judge data for this task supports that edge-cover precondition.
 
 `answer = N - maximum_matching`
 
@@ -86,7 +86,7 @@ So the optimal count becomes:
 
 - Topic page: [Matching](../../../../topics/graphs/matching/README.md)
 - Practice ladder: [Matching ladder](README.md)
-- Starter template: [Template library overview](../../../../template-library.md)
+- Starter route: no exact blossom starter in the repo; compare [School Dance](schooldance.md) for the bipartite case, then reopen [Matching](../../../../topics/graphs/matching/README.md)
 - Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
 - Carry forward: pin down whether the graph is bipartite or general before choosing a matching engine.
 - This note adds: the transformation from edge-cover language to the matching formulation used here.
