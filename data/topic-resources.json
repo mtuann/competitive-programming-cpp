@@ -597,6 +597,76 @@
       }
     ]
   },
+  "data-structures/segment-tree-beats": {
+    "title": "Data Structures -> Segment Tree Beats",
+    "summary": "Richer segment-tree summaries for online range chmin / chmax / add / sum when ordinary lazy tags stop closing cleanly.",
+    "topic_path": "topics/data-structures/segment-tree-beats/README.md",
+    "ladder_path": "practice/ladders/data-structures/segment-tree-beats/README.md",
+    "microtopics": [
+      "range-chmin",
+      "range-chmax",
+      "second-maximum",
+      "second-minimum",
+      "beats-pruning",
+      "amortized-pushdown"
+    ],
+    "learning_sources": [
+      {
+        "label": "Codeforces simple introduction to Segment Tree Beats",
+        "url": "https://codeforces.com/blog/entry/57319",
+        "kind": "trusted tutorial"
+      },
+      {
+        "label": "Library Checker Range Chmin Chmax Add Range Sum",
+        "url": "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum",
+        "kind": "problem"
+      },
+      {
+        "label": "ACL-based Segment Tree Beats reference",
+        "url": "https://hitonanode.github.io/cplib-cpp/segmenttree/acl_beats.hpp.html",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker",
+        "url": "https://judge.yosupo.jp/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces Problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Segment Tree Beats hot sheet",
+        "path": "notebook/segment-tree-beats-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Range Chmin Chmax Add Range Sum note",
+        "path": "practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Segment Tree Beats starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Lazy Segment Tree tutorial",
+        "path": "topics/data-structures/lazy-segment-tree/README.md",
+        "kind": "adjacent tutorial"
+      },
+      {
+        "label": "Segment Tree hot sheet",
+        "path": "notebook/segment-tree-hot-sheet.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/dsu-rollback": {
     "title": "Data Structures -> DSU Rollback / Offline Dynamic Connectivity",
     "summary": "Rollback-friendly union-find plus segment tree over time for offline add/remove connectivity timelines.",

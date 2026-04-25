@@ -14,6 +14,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - point add + prefix/range sum -> [Fenwick hot sheet](fenwick-hot-sheet.md)
 - arbitrary merge with updates -> segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - online range add + range sum -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
+- online range `chmin / chmax / add / sum` where one simple lazy tag no longer closes -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md)
 - old versions stay queryable and point updates create new versions -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md)
 - static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
@@ -65,6 +66,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
 - segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 - lazy segment tree -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md) + [HORRIBLE](../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md)
+- segment tree beats -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md) + [Range Chmin Chmax Add Range Sum](../practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md)
 - monotone window minimum -> [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md)
 
 ## Common Mistakes
@@ -95,6 +97,7 @@ Ask:
 - [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
+- [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
 - [Mo's hot sheet](mos-hot-sheet.md)
@@ -102,6 +105,7 @@ Ask:
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)
 - [Lazy Segment Tree topic](../topics/data-structures/lazy-segment-tree/README.md)
+- [Segment Tree Beats topic](../topics/data-structures/segment-tree-beats/README.md)
 - [Persistent Data Structures topic](../topics/data-structures/persistent-data-structures/README.md)
 - [Mo's Algorithm topic](../topics/data-structures/mos-algorithm/README.md)
 - [Binary Trie / XOR Queries topic](../topics/data-structures/binary-trie-xor/README.md)

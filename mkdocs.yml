@@ -111,6 +111,7 @@ nav:
           - Persistent Data Structures: topics/data-structures/persistent-data-structures/README.md
           - Segment Tree: topics/data-structures/segment-tree/README.md
           - Lazy Segment Tree: topics/data-structures/lazy-segment-tree/README.md
+          - Segment Tree Beats: topics/data-structures/segment-tree-beats/README.md
           - Sparse Table: topics/data-structures/sparse-table/README.md
       - Graphs:
           - Overview: topics/graphs/README.md
@@ -212,6 +213,7 @@ nav:
               - Persistent Data Structures: practice/ladders/data-structures/persistent-data-structures/README.md
               - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
               - Lazy Segment Tree: practice/ladders/data-structures/lazy-segment-tree/README.md
+              - Segment Tree Beats: practice/ladders/data-structures/segment-tree-beats/README.md
               - Sparse Table: practice/ladders/data-structures/sparse-table/README.md
           - Graphs:
               - Overview: practice/ladders/graphs/README.md
@@ -326,6 +328,7 @@ nav:
       - DSU Rollback Hot Sheet: notebook/dsu-rollback-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
       - Lazy Segment Tree Hot Sheet: notebook/lazy-segment-tree-hot-sheet.md
+      - Segment Tree Beats Hot Sheet: notebook/segment-tree-beats-hot-sheet.md
       - Persistent Data Structures Hot Sheet: notebook/persistent-data-structures-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md

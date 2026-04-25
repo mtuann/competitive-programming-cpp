@@ -16,6 +16,7 @@ Use this page when the problem has true online range updates and interval querie
 - many offline range adds, then read final values -> [Difference Arrays](../topics/foundations/patterns/difference-arrays/README.md)
 - range add + point query only -> difference-array or Fenwick route before reaching for lazy
 - range assign or add+assign -> reopen the full topic first; the starter here is too narrow
+- range `chmin / chmax` style clamps matter -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md), not one additive-tag lazy tree
 
 ## Core Invariants
 
@@ -43,5 +44,6 @@ Use this page when the problem has true online range updates and interval querie
 
 - full lesson and tag-semantics discussion -> [Lazy Segment Tree](../topics/data-structures/lazy-segment-tree/README.md)
 - point-update-only baseline -> [Segment Tree](../topics/data-structures/segment-tree/README.md)
+- harder clamp-update route -> [Segment Tree Beats](../topics/data-structures/segment-tree-beats/README.md)
 - lighter structure chooser -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - snippet chooser -> [Template Library](../template-library.md)

@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `552`
+- Total curated external problems: `554`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -117,6 +117,8 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Segment Tree` | `Advanced` | [Polynomial Queries](https://cses.fi/problemset/task/1736) | `CSES` | `Hard` | - | Data-Structure-Heavy; Math-Heavy | Lazy-Propagation; Range-Add; Arithmetic-Progression; Range-Update |
 | `Data Structures -> Segment Tree` | `Advanced` | [Range Updates and Sums](https://cses.fi/problemset/task/1735) | `CSES` | `Hard` | - | Data-Structure-Heavy | Lazy-Propagation; Range-Add; Range-Assign |
 | `Data Structures -> Segment Tree` | `Advanced` | [Subarray Sum Queries](https://cses.fi/problemset/task/1190) | `CSES` | `Hard` | - | Data-Structure-Heavy; Query-Heavy | Max-Subarray; Point-Update |
+| `Data Structures -> Segment Tree Beats` | `Core` | [Range Chmin Chmax Add Range Sum](https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum) | `Library Checker` | `Hard` | Range Queries | Data-Structure-Heavy; Verification | Range-Chmin; Range-Chmax; Range-Add |
+| `Data Structures -> Segment Tree Beats` | `Bridge` | [The Child and Sequence](https://codeforces.com/problemset/problem/438/D) | `Codeforces` | `Hard` | Compare Point | Data-Structure-Heavy; Compare-Point | Beats-Like-Pruning; Range-Modulo; Range-Sum |
 | `Data Structures -> Sparse Table` | `Core` | [Static Range Minimum Queries](https://cses.fi/problemset/task/1647) | `CSES` | `Easy` | - | Query-Heavy; Data-Structure-Heavy | Range-Min; Static-Queries; Idempotent |
 | `Data Structures -> Sparse Table` | `Core` | [Range GCD Query](https://judge.yosupo.jp/problem/range_gcd_query) | `Library Checker` | `Medium` | - | - | GCD; Idempotent |
 | `Data Structures -> Sparse Table` | `Classics` | [Static RMQ](https://judge.yosupo.jp/problem/staticrmq) | `Library Checker` | `Easy` | - | Query-Heavy | Range-Min; Idempotent |

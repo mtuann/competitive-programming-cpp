@@ -2966,6 +2966,60 @@
     "why_fit": "A classic advanced segment-tree problem for storing subarray summary states."
   },
   {
+    "slug": "data-structures/segment-tree-beats",
+    "topic": "Data Structures -> Segment Tree Beats",
+    "title": "Range Chmin Chmax Add Range Sum",
+    "url": "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Range Queries"
+    ],
+    "tags": [
+      "Range-Chmin",
+      "Range-Chmax",
+      "Range-Add"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Lazy Segment Tree",
+      "Second Extremum Summaries",
+      "Amortized Pushdown"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest official verifier for the exact canonical beats starter shipped in this repo."
+  },
+  {
+    "slug": "data-structures/segment-tree-beats",
+    "topic": "Data Structures -> Segment Tree Beats",
+    "title": "The Child and Sequence",
+    "url": "https://codeforces.com/problemset/problem/438/D",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "Compare Point"
+    ],
+    "tags": [
+      "Beats-Like-Pruning",
+      "Range-Modulo",
+      "Range-Sum"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Compare-Point"
+    ],
+    "prerequisites": [
+      "Segment Tree",
+      "Current Maximum Pruning",
+      "Amortized Reasoning"
+    ],
+    "bucket": "bridge",
+    "why_fit": "The classic compare point where the same pruning mindset appears, but the exact canonical chmin/chmax/add/sum starter does not apply directly."
+  },
+  {
     "slug": "data-structures/sparse-table",
     "topic": "Data Structures -> Sparse Table",
     "title": "Static Range Minimum Queries",

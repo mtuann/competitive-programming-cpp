@@ -12,6 +12,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [Mo's Algorithm](mos-algorithm/README.md)
 - [Segment Tree](segment-tree/README.md)
 - [Lazy Segment Tree](lazy-segment-tree/README.md)
+- [Segment Tree Beats](segment-tree-beats/README.md)
 - [Sparse Table](sparse-table/README.md)
 - [Heaps And Ordered Sets](heaps-and-ordered-sets/README.md)
 - [Offline Tricks](offline-tricks/README.md)
@@ -31,6 +32,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 2. Contest core
 - segment tree
 - lazy segment tree once point-update trees and difference-array contrasts are comfortable
+- segment tree beats once `range chmin / chmax` style updates appear and simple lazy tags stop closing cleanly
 - sparse table
 - ordered sets and offline query habits
 - binary trie once xor-max queries over one live set start appearing
@@ -66,6 +68,7 @@ After this section, you should know which standard structure to reach for in com
 - [Powerful Array](../../practice/ladders/data-structures/mos-algorithm/powerfularray.md): the first exact in-repo route for current-range maintenance under Mo ordering
 - [Vasiliy's Multiset](../../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md): the first exact in-repo route for insert / erase-one / max-xor over one live multiset
 - [HORRIBLE - Horrible Queries](../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the first exact in-repo route for online `range add + range sum`
+- [Range Chmin Chmax Add Range Sum](../../practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md): the exact verifier-style anchor for the canonical Beats lane
 
 ## Go Deeper
 

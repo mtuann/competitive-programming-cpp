@@ -543,6 +543,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree/dynamicrangesumqueries.cpp"
   },
   {
+    "code": "RANGECHMINCHMAXADDRANGESUM",
+    "title": "Range Chmin Chmax Add Range Sum",
+    "full_title": "Range Chmin Chmax Add Range Sum",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/range_chmin_chmax_add_range_sum",
+    "main_topic": "Data Structures -> Segment Tree Beats",
+    "secondary_topics": [
+      "Segment Tree Beats",
+      "Range chmin",
+      "Range chmax"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/segment-tree-beats",
+    "topic_tags": [
+      "data-structures/segment-tree-beats"
+    ],
+    "patterns": [
+      "segment tree beats",
+      "range chmin",
+      "range chmax",
+      "second extremum summaries"
+    ],
+    "tracks": [
+      "Library Checker",
+      "Verification"
+    ],
+    "note_path": "practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md",
+    "ladder_path": "practice/ladders/data-structures/segment-tree-beats/README.md",
+    "tutorial_path": "topics/data-structures/segment-tree-beats/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.cpp"
+  },
+  {
     "code": "STATICRANGEMINIMUMQUERIES",
     "title": "Static Range Minimum Queries",
     "full_title": "Static Range Minimum Queries",

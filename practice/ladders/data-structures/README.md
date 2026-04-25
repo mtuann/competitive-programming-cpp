@@ -12,6 +12,7 @@ These ladders connect reusable structures to focused practice.
 - [Mo's algorithm](mos-algorithm/README.md)
 - [Segment tree](segment-tree/README.md)
 - [Lazy segment tree](lazy-segment-tree/README.md)
+- [Segment Tree Beats](segment-tree-beats/README.md)
 - [Sparse table](sparse-table/README.md)
 - [Heaps and ordered sets](heaps-and-ordered-sets/README.md)
 - [Offline tricks](offline-tricks/README.md)
@@ -24,3 +25,4 @@ These ladders connect reusable structures to focused practice.
 - [Powerful Array](mos-algorithm/powerfularray.md): exact first `Mo` route where one current range and one frequency-weighted score are the whole state
 - [Vasiliy's Multiset](binary-trie-xor/vasiliysmultiset.md): exact first binary-trie route for live xor-max queries with duplicates
 - [HORRIBLE](lazy-segment-tree/horriblequeries.md): exact `range add + range sum` lazy-propagation baseline
+- [Range Chmin Chmax Add Range Sum](segment-tree-beats/rangechminchmaxaddrangesum.md): exact canonical verifier for `range chmin / chmax / add / sum`

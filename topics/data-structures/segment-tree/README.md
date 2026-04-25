@@ -32,6 +32,7 @@ Strong anti-cues:
 - the query is additive and fundamentally prefix-based, so [Fenwick Tree](../fenwick-tree/README.md) is lighter
 - the operation is offline and [Difference Arrays](../../foundations/patterns/difference-arrays/README.md) or sorting tricks already solve it
 - the merge is not associative, so there is no stable node summary to store
+- interval `chmin` / `chmax` updates now matter, so one ordinary merge-only tree is no longer enough -> compare [Segment Tree Beats](../segment-tree-beats/README.md)
 
 What success looks like after studying this page:
 
@@ -248,9 +249,10 @@ Quick contest chooser:
 | recursive basic tree | same as above | after iterative is comfortable | when recursive interval code feels clearer |
 | descent-query tree | point update + first position satisfying condition | early | `k`-th, `first >= x`, `max_right` style tasks |
 | lazy propagation tree | range update + range query | later | range add / range assign online |
+| segment tree beats | harder clamp-style range updates | much later | range `chmin / chmax / add / sum` |
 | custom-node tree | point or lazy updates with richer node states | after basics | max subarray, brackets, prefix/suffix summaries |
 
-This page should make the **basic** and **descent** forms feel automatic. Lazy propagation belongs here as a forward pointer, not as the first thing to memorize.
+This page should make the **basic** and **descent** forms feel automatic. Lazy propagation and Beats belong here as forward pointers, not as the first thing to memorize.
 
 ## Worked Examples
 

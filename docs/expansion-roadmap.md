@@ -199,7 +199,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Mo's Algorithm`
 - [x] `Binary Trie / XOR Queries`
 - [x] `Flow with Lower Bounds`
-- [ ] `Segment Tree Beats`
+- [x] `Segment Tree Beats`
 - [ ] `Wavelet Tree`
 - [ ] `Treap / Implicit Treap`
 - [ ] `Eertree / Palindromic Tree`

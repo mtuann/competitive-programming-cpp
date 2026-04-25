@@ -14,6 +14,7 @@ Use this page when a mutable array needs an associative range aggregate and you 
 - tree path aggregate plus updates -> HLD plus segment tree, not a plain array tree
 - first position whose prefix/segment aggregate crosses a threshold and the node summary supports left-first monotone descent -> segment-tree walking
 - true online range updates -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md); the repo's main point-update starter is **not** the right drop-in
+- online `range chmin / chmax` plus sum -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md); one plain monoid tree is no longer enough
 
 ## Core Invariants
 
@@ -32,6 +33,7 @@ Use this page when a mutable array needs an associative range aggregate and you 
 
 - array range sums with point updates -> [`segment-tree-iterative.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
 - array range add + range sum -> [`segment-tree-lazy-range-add-sum.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-lazy-range-add-sum.cpp)
+- range `chmin / chmax / add / sum` -> [`segment-tree-beats.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-beats.cpp)
 - static tree path maximum with point updates -> [`hld-path-max.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - baseline note -> [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 
@@ -39,5 +41,6 @@ Use this page when a mutable array needs an associative range aggregate and you 
 
 - proof, variants, lazy, and descent queries -> [Segment Tree](../topics/data-structures/segment-tree/README.md)
 - exact lazy route -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
+- stronger clamp-update route -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md)
 - lighter neighboring structures -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - pasteable snippet route -> [Template Library](../template-library.md)

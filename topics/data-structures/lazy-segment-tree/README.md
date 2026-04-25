@@ -34,6 +34,7 @@ Strong anti-cues:
 - all updates are known first and you only need the final array -> [Difference Arrays](../../foundations/patterns/difference-arrays/README.md)
 - updates are range add but queries are only point queries -> difference-array / Fenwick routes are lighter
 - the statement needs both `range assign` and `range add`, but you only have a simple additive tag skeleton
+- the statement now asks for `range chmin` / `range chmax`, so the update family is no longer one simple lazy-tag algebra -> compare [Segment Tree Beats](../segment-tree-beats/README.md)
 - the real structure is a tree, so you first need Euler flattening or HLD before any array lazy tree matters
 
 ## Prerequisites
