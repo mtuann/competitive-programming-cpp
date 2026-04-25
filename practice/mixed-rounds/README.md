@@ -50,7 +50,7 @@ Default operating loop:
 
 When one slot exposes a weak point, do not guess where to go next:
 
-- weak topic understanding -> the matching deep topic page in [topics/](../../topics/README.md), then the matching ladder for that slot
+- weak topic understanding -> the corresponding deep topic page in [topics/](../../topics/README.md), then the corresponding ladder for that slot
 - weak problem selection -> [Problem Finder](../../docs/problem-finder.md)
 - weak retrieval of invariant/template -> [Notebook](../../notebook/README.md) or [Template Library](../../template-library.md)
 - weak implementation trust or local-testing discipline -> [Build Kit](../../docs/build-kit.md)
@@ -107,7 +107,7 @@ Research snapshot: reviewed against official pages on `2026-04-24`.
 | Bottleneck | Time budget | Start with | If it breaks, go back to |
 | --- | --- | --- | --- |
 | first retrieval session after the beginner route | `90-120 min` | [Stage 0 Review Pack 01](stage0-review-pack-01.md) | [Foundations ladders](../ladders/foundations/README.md) or [BFS And DFS ladder](../ladders/graphs/bfs-dfs/README.md) |
-| broad contest-core switching | `2.5-3.5 h` | [Contest Core Switching 01](contest-core-switching-01.md) | the weakest matching ladder for the failed slot, then [Problem Finder](../../docs/problem-finder.md) |
+| broad contest-core switching | `2.5-3.5 h` | [Contest Core Switching 01](contest-core-switching-01.md) | the weakest corresponding ladder for the failed slot, then [Problem Finder](../../docs/problem-finder.md) |
 | graph-modeling vs DP-state reset | `3-4 h` | [Graphs And DP Switching 01](graphs-dp-switching-01.md) | [Graph Modeling](../ladders/graphs/graph-modeling/README.md), [Knapsack Family](../ladders/dp/knapsack-family/README.md), or [Digit DP](../ladders/dp/digit-dp/README.md) |
 | symbolic switching across strings, modular arithmetic, and counting | `2.5-3.5 h` | [Strings, Math, And Counting 01](strings-math-counting-01.md) | [KMP](../ladders/strings/kmp/README.md), [Modular Arithmetic](../ladders/math/modular-arithmetic/README.md), or [Counting Basics](../ladders/combinatorics/counting-basics/README.md) |
 | data-structure choice keeps drifting between static, dynamic, ordered, and offline | `3-4 h` | [Data Structures And Offline 01](data-structures-and-offline-01.md) | [Sparse Table](../ladders/data-structures/sparse-table/README.md), [Heaps And Ordered Sets](../ladders/data-structures/heaps-and-ordered-sets/README.md), [Offline Tricks](../ladders/data-structures/offline-tricks/README.md), or [Segment Tree](../ladders/data-structures/segment-tree/README.md) |

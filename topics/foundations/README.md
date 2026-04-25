@@ -37,7 +37,7 @@ The idea is simple:
 Treat foundations as a loop, not a one-time read:
 
 1. read one tutorial page until the core idea feels simple
-2. open the matching ladder and solve one warm-up or anchor note
+2. open the corresponding ladder and solve one warm-up or anchor note
 3. keep one tiny template or pattern in your head, not ten
 4. after each bug, come back here and tighten the habit that failed
 

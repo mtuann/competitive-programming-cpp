@@ -211,7 +211,7 @@ If a post-contest note ends with five vague lessons, it is too weak.
 | mis-triage or weak first `20` minutes | [Mixed Rounds](../mixed-rounds/README.md) and this page's triage drill |
 | bad handoff or unclear ownership | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 | close solve died in debugging | [Build Kit](../../docs/build-kit.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
-| standard graph/data-structure family was not recognized | [Ladders](../ladders/README.md) or the missed family's matching graph/data-structure ladder |
+| standard graph/data-structure family was not recognized | [Ladders](../ladders/README.md) or the missed family's corresponding graph/data-structure ladder |
 
 ## Progress Markers
 

@@ -137,7 +137,7 @@ If the first week went well, use this exact next route:
 1. [Foundations ladders](../practice/ladders/foundations/README.md)
 2. [Data Structures overview](../topics/data-structures/README.md)
 3. [DSU](../topics/data-structures/dsu/README.md) or [Fenwick Tree](../topics/data-structures/fenwick-tree/README.md)
-4. the matching ladder and one anchored note
+4. the corresponding ladder and one anchored note
 5. [Practice hub](../practice/README.md) only after you want more than one ladder at a time
 
 If you want a broader chooser instead of that default handoff:
@@ -146,15 +146,17 @@ If you want a broader chooser instead of that default handoff:
 - [Problem Finder](problem-finder.md)
 - [Build Kit](build-kit.md)
 
-## Stage Plan After The First Week
+## Learner Stage Plan After The First Week
+
+These stages describe readiness inside the repo. They are different from the curriculum `Level 0-5` map in [Project Overview](../project-readme.md).
 
 Use this instead of guessing what "intermediate" is supposed to mean in the repo.
 
 | Stage | Main goal | Best route |
 | --- | --- | --- |
 | `Stage 1` | make the local C++ loop and first recognition cues stable | stay in [Foundations ladders](../practice/ladders/foundations/README.md) until basic notes feel routine |
-| `Stage 2` | learn one family at a time and build exact topic-note-template links | use [Learning Areas](../topics/README.md), then the matching ladder, then one anchored note |
-| `Stage 3` | stop relearning and start retrieving under pressure | use [Problem Finder](problem-finder.md), [Notebook](../notebook/README.md), and [Build Kit](build-kit.md) together |
-| `Stage 4` | train for one contest style or go deeper into theory | use [Contest Playbooks](../practice/contest-playbooks/README.md) or [Explore](explore.md) |
+| `Stage 2` | learn one family at a time and build exact topic-note-template links | use [Learning Areas](../topics/README.md), then the corresponding ladder, then one anchored note |
+| `Stage 3` | stop relearning and start retrieving under pressure | use [Practice hub](../practice/README.md), then [Problem Finder](problem-finder.md), [Notebook](../notebook/README.md), and [Build Kit](build-kit.md) together |
+| `Stage 4` | train for one contest style or add deeper theory follow-up after the core loop is stable | use [Contest Playbooks](../practice/contest-playbooks/README.md) first, then [Explore](explore.md) when the gap is deeper source-backed reading |
 
 The repo does not expect you to jump from Stage 1 straight into mixed rounds. Build one stable topic loop first, then widen.

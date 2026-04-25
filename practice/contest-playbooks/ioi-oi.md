@@ -199,7 +199,7 @@ The goal is not only to know the editorial. It is to know where your own proof o
 | unsafe proof or hand-wavy optimization | [Reasoning](../../topics/foundations/reasoning/README.md) |
 | missed safe partial score | this page's `Subtask Planning Sheet` and `Subtask-First Drill 01` |
 | grader or validation issue | [Local Judge Workflow](../../notebook/local-judge-workflow.md) and [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
-| topic depth still too weak | the missed family's matching ladder or deep topic page in `topics/` |
+| topic depth still too weak | the missed family's corresponding ladder or deep topic page in `topics/` |
 
 ## Progress Markers
 

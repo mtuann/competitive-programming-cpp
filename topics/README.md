@@ -32,7 +32,7 @@ Use the repo layers in this order whenever possible:
 | Layer | Main question | Best door |
 | --- | --- | --- |
 | `Learn` | what is the idea and why does it work? | one area page here, then one leaf topic |
-| `Practice` | where do I solve the idea on purpose? | the matching [ladder](../practice/ladders/README.md), then one anchored note |
+| `Practice` | where do I solve the idea on purpose? | the corresponding [ladder](../practice/ladders/README.md), then one anchored note |
 | `Retrieve` | what is the shortest way back under pressure? | [Build Kit](../docs/build-kit.md) |
 
 If you already know the weak topic and just need the next problem set, jump to [Problem Finder](../docs/problem-finder.md) instead of browsing area pages.
@@ -46,7 +46,7 @@ If you already know the weak topic and just need the next problem set, jump to [
 | graph problems keep feeling fuzzy or overmodeled | [Graphs](graphs/README.md) | [BFS And DFS](graphs/bfs-dfs/README.md) or [Shortest Paths](graphs/shortest-paths/README.md) |
 | you can code basics but state design is the bottleneck | [Dynamic Programming](dp/README.md) | [DP Foundations](dp/foundations/README.md) |
 | math is the real blocker, not syntax | [Math](math/README.md) | [Number Theory Basics](math/number-theory-basics/README.md) or [Modular Arithmetic](math/modular-arithmetic/README.md) |
-| you want advanced reading after the core loop already exists | [Advanced](advanced/README.md) | the matching deep topic, topic map, or external follow-up |
+| you want advanced reading after the core loop already exists | [Advanced](advanced/README.md) | the corresponding deep topic, topic map, or external follow-up |
 
 ## Representative Solved Notes
 

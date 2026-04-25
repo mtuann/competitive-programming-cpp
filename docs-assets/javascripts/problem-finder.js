@@ -198,6 +198,46 @@
     };
   }
 
+  function normalizeState(state) {
+    const next = { ...state };
+
+    if (next.status && next.kind !== "Repo note") {
+      next.kind = "Repo note";
+    }
+    if (next.bucket && next.kind !== "External") {
+      next.kind = "External";
+    }
+
+    if (next.kind === "External") {
+      next.status = "";
+    }
+    if (next.kind === "Repo note") {
+      next.bucket = "";
+    }
+
+    return next;
+  }
+
+  function syncCompatibilityState(state) {
+    const normalized = normalizeState(state);
+    fields.status.disabled = normalized.kind === "External";
+    fields.bucket.disabled = normalized.kind === "Repo note";
+  }
+
+  function syncFieldsFromState(state) {
+    fields.query.value = state.query || "";
+    fields.kind.value = state.kind || "";
+    fields.status.value = state.status || "";
+    fields.area.value = state.area || "";
+    fields.topic.value = state.topic || "";
+    fields.difficulty.value = state.difficulty || "";
+    fields.source.value = state.source || "";
+    fields.bucket.value = state.bucket || "";
+    fields.limit.value = state.limit || "5";
+    fields.sort.value = state.sort || "queue";
+    syncCompatibilityState(state);
+  }
+
   function updateUrl(state) {
     const params = new URLSearchParams();
     Object.entries(state).forEach(([key, value]) => {
@@ -316,7 +356,7 @@
   }
 
   function queueSummaryCard(presetName, title, body, count) {
-    const active = stateMatchesPreset(currentState(), presetName);
+    const active = stateMatchesPreset(normalizeState(currentState()), presetName);
     return `
       <button type="button" class="finder-queue-card${active ? " finder-queue-card--active" : ""}" data-finder-queue="${presetName}">
         <span class="finder-queue-title">${title}</span>
@@ -363,8 +403,25 @@
     });
   }
 
+  function updateQueueSelection(state) {
+    if (!queueBoard) {
+      return;
+    }
+    Array.from(queueBoard.querySelectorAll("[data-finder-queue]")).forEach((button) => {
+      button.classList.toggle(
+        "finder-queue-card--active",
+        stateMatchesPreset(state, button.dataset.finderQueue)
+      );
+    });
+  }
+
   function renderSession(state, items) {
     if (!sessionCard) {
+      return;
+    }
+    if (state.limit === "all") {
+      sessionCard.hidden = true;
+      sessionCard.innerHTML = "";
       return;
     }
     const limit = state.limit === "all" ? items.length : Number.parseInt(state.limit || "5", 10);
@@ -409,7 +466,8 @@
   }
 
   function applyFilters(allItems) {
-    const state = currentState();
+    const state = normalizeState(currentState());
+    syncFieldsFromState(state);
     const filtered = allItems.filter((item) => {
       if (state.kind && item.kind !== state.kind) return false;
       if (state.status && item.status !== state.status) return false;
@@ -429,21 +487,24 @@
     renderRoute(state, sorted);
     renderSession(state, sorted);
     updatePresetSelection(state);
+    updateQueueSelection(state);
     renderRows(sorted);
   }
 
   function setState(nextState, allItems) {
-    fields.query.value = nextState.query || "";
-    fields.kind.value = nextState.kind || "";
-    fields.status.value = nextState.status || "";
-    fields.area.value = nextState.area || "";
+    const normalized = normalizeState(nextState);
+    fields.query.value = normalized.query || "";
+    fields.kind.value = normalized.kind || "";
+    fields.status.value = normalized.status || "";
+    fields.area.value = normalized.area || "";
     syncTopicOptions(allItems);
-    fields.topic.value = nextState.topic || "";
-    fields.difficulty.value = nextState.difficulty || "";
-    fields.source.value = nextState.source || "";
-    fields.bucket.value = nextState.bucket || "";
-    fields.limit.value = nextState.limit || "5";
-    fields.sort.value = nextState.sort || "queue";
+    fields.topic.value = normalized.topic || "";
+    fields.difficulty.value = normalized.difficulty || "";
+    fields.source.value = normalized.source || "";
+    fields.bucket.value = normalized.bucket || "";
+    fields.limit.value = normalized.limit || "5";
+    fields.sort.value = normalized.sort || "queue";
+    syncCompatibilityState(normalized);
     applyFilters(allItems);
   }
 
@@ -636,12 +697,13 @@
   }
 
   function updatePresetSelection(state) {
+    const normalized = normalizeState(state);
     let bestPreset = "";
     let bestScore = -1;
 
     presetButtons.forEach((button) => {
       const presetName = button.dataset.finderPreset;
-      if (!stateMatchesPreset(state, presetName)) {
+      if (!stateMatchesPreset(normalized, presetName)) {
         return;
       }
 
@@ -696,21 +758,51 @@
     fields.topic.value = initial.topic;
     fields.limit.value = initial.limit;
     fields.sort.value = initial.sort;
+    syncCompatibilityState(initial);
 
     renderQueueBoard(allItems);
 
     Object.values(fields).forEach((field) => {
-      field.addEventListener("input", () => {
+      const handleFieldChange = () => {
+        const nextState = currentState();
+
         if (field === fields.area) {
           syncTopicOptions(allItems);
+          nextState.topic = fields.topic.value;
         }
+
+        if (field === fields.kind) {
+          if (nextState.kind === "External") {
+            nextState.status = "";
+          } else if (nextState.kind === "Repo note") {
+            nextState.bucket = "";
+          }
+          setState(nextState, allItems);
+          return;
+        }
+
+        if (field === fields.status && nextState.status) {
+          nextState.kind = "Repo note";
+          nextState.bucket = "";
+          setState(nextState, allItems);
+          return;
+        }
+
+        if (field === fields.bucket && nextState.bucket) {
+          nextState.kind = "External";
+          nextState.status = "";
+          setState(nextState, allItems);
+          return;
+        }
+
         applyFilters(allItems);
+      };
+
+      field.addEventListener("input", () => {
+        handleFieldChange();
       });
       field.addEventListener("change", () => {
-        if (field === fields.area) {
-          syncTopicOptions(allItems);
-        }
-        applyFilters(allItems);
+        handleFieldChange();
       });
     });
 

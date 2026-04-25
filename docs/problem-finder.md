@@ -32,7 +32,7 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
 
 | If you found... | Go next |
 | --- | --- |
-| one weak subtopic | [Practice hub](../practice/README.md) or the matching ladder |
+| one weak subtopic | [Practice hub](../practice/README.md) or the corresponding ladder |
 | one weak contest skill | [Contest Playbooks](../practice/contest-playbooks/README.md) |
 | one weak retrieval family | [Notebook](../notebook/README.md) |
 | one weak implementation family | [Build Kit](build-kit.md) |

@@ -2,7 +2,7 @@
 
 These ladders are the practice side of the beginner layer.
 
-Use them after reading the matching tutorial pages in `topics/foundations/`.
+Use them after reading the corresponding tutorial pages in `topics/foundations/`.
 
 ## Subtopic Ladders
 

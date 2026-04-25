@@ -26,7 +26,7 @@ Do **not** use ladders as the first door when:
 The repo-wide default loop is:
 
 1. read one topic page in `topics/`
-2. open the matching ladder here
+2. open the corresponding ladder here
 3. solve one anchored repo note
 4. compare your solution against the note's `Recognition Cue` and `Problem-Specific Transformation`
 5. reopen [Notebook](../../notebook/README.md) or [Build Kit](../../docs/build-kit.md) only if retrieval or implementation is the weak point
@@ -63,7 +63,7 @@ When a ladder exposes a weakness, use the smallest next door:
 
 | If the problem is... | Reopen |
 | --- | --- |
-| I still do not trust the idea | the matching tutorial in [topics/](../../topics/README.md) |
+| I still do not trust the idea | the corresponding tutorial in [topics/](../../topics/README.md) |
 | I know the idea but my code drifts | [Build Kit](../../docs/build-kit.md) |
 | I know the family and need more reps | [Problem Finder](../../docs/problem-finder.md) |
 | I know several ladders and switch badly | [Mixed Rounds](../mixed-rounds/README.md) |

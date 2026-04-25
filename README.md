@@ -14,25 +14,27 @@ If you want the repo organized by routes instead of folders, open the [Route Map
 | If you are... | Start with | Goal |
 | --- | --- | --- |
 | New to competitive programming | [Start Here](docs/start-here.md) | Build C++ fluency, asymptotics, and the core toolkit without self-routing too early |
-| Comfortable with basics but inconsistent in contests | [Data Structures](topics/data-structures/README.md), [Graphs](topics/graphs/README.md), [Dynamic Programming](topics/dp/README.md) | Build the standard contest toolbox and learn when to use it |
-| Preparing for `USACO` / olympiad-style contests | [Learning Areas](topics/README.md) + [Practice](practice/README.md) | Train topic by topic with stronger modeling and proof habits |
-| Preparing for `ICPC` / team contests | [Practice](practice/README.md) + [Notebook](notebook/README.md) | Build breadth, workflow, and contest-ready references |
+| Comfortable with basics but inconsistent in contests | [Route Map](docs/route-map.md) + [Practice](practice/README.md) | Turn weak topics into focused ladder/note loops and start retrieval work |
+| Preparing for `USACO` / olympiad-style contests | [Contest Playbooks](practice/contest-playbooks/README.md) + [Practice](practice/README.md) | Train topic by topic, then move into solo-track drills and archive follow-up |
+| Preparing for `ICPC` / team contests | [Contest Playbooks](practice/contest-playbooks/README.md) + [Practice](practice/README.md) | Build breadth, switching, and one-machine/team workflows |
 | Contributing content later | [Topic Template](docs/topic-template.md) + [Content Blueprint](docs/content-blueprint.md) | Follow one stable teaching format instead of adding ad hoc notes |
 
-## Curriculum Map
+## Curriculum Map By Level
 
-The repo uses `stages` as the main progression language.
+The repo uses `curriculum levels` as the content-progression language.
 
-| Stage | Main focus | Typical folders |
+This is separate from the learner `Stage 1-4` route model used in [Start Here](docs/start-here.md) and the [Route Map](docs/route-map.md).
+
+| Curriculum level | Main focus | Typical folders |
 | --- | --- | --- |
-| `Stage 0` | Foundations: C++ workflow, STL, asymptotics, proof habits, sorting, binary search, prefix ideas | `topics/foundations/` |
-| `Stage 1` | Core data structures and query/update tools | `topics/data-structures/` |
-| `Stage 2` | Graphs and dynamic programming as contest core | `topics/graphs/`, `topics/dp/` |
-| `Stage 3` | Math, combinatorics, strings, and geometry for broader coverage | `topics/math/`, `topics/combinatorics/`, `topics/strings/`, `topics/geometry/` |
-| `Stage 4` | Advanced algorithms and theory | `topics/advanced/` |
-| `Stage 5` | Contest engineering: notebooks, drills, workflows, and upsolving discipline | `notebook/`, `practice/contest-playbooks/` |
+| `Level 0` | Foundations: C++ workflow, STL, asymptotics, proof habits, sorting, binary search, prefix ideas | `topics/foundations/` |
+| `Level 1` | Core data structures and query/update tools | `topics/data-structures/` |
+| `Level 2` | Graphs and dynamic programming as contest core | `topics/graphs/`, `topics/dp/` |
+| `Level 3` | Math, combinatorics, strings, and geometry for broader coverage | `topics/math/`, `topics/combinatorics/`, `topics/strings/`, `topics/geometry/` |
+| `Level 4` | Advanced algorithms and theory | `topics/advanced/` |
+| `Level 5` | Contest engineering: notebooks, drills, workflows, and upsolving discipline | `notebook/`, `practice/contest-playbooks/` |
 
-Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these stages. They change emphasis, not the core learning path.
+Contest tracks such as `USACO`, `IOI/OI`, and `ICPC` sit on top of these levels. They change emphasis, not the core learning path.
 
 ## How This Repo Works
 

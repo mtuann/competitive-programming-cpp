@@ -55,14 +55,16 @@
 
 </div>
 
-## Pick Your Stage
+## Pick Your Learner Stage
+
+These stages describe learner readiness inside the repo. They are not the same as the curriculum `Level 0-5` map in the project overview.
 
 | Stage | Use this when... | Open first | Then |
 | --- | --- | --- | --- |
 | `Stage 1` | syntax, local loop, and first easy reps are still unstable | [Start Here](docs/start-here.md) | [Foundations](topics/foundations/README.md) |
-| `Stage 2` | you can already solve some basics and want topic-by-topic growth | [Learning Areas](topics/README.md) | the matching ladder and one repo note |
-| `Stage 3` | you know several families but retrieval and switching are the bottleneck | [Practice hub](practice/README.md) | [Problem Finder](docs/problem-finder.md), then [Mixed Rounds](practice/mixed-rounds/README.md) |
-| `Stage 4` | you want track-specific training or deeper source-backed reading | [Contest Playbooks](practice/contest-playbooks/README.md) or [Explore](docs/explore.md) | the matching topic map, playbook, or external follow-up pool |
+| `Stage 2` | you can already solve some basics and want topic-by-topic growth | [Learning Areas](topics/README.md) | the corresponding ladder and one repo note |
+| `Stage 3` | you know several families but retrieval and switching are the bottleneck | [Practice hub](practice/README.md) | [Problem Finder](docs/problem-finder.md), [Notebook](notebook/README.md), and [Build Kit](docs/build-kit.md), then [Mixed Rounds](practice/mixed-rounds/README.md) |
+| `Stage 4` | you want track-specific training or theory follow-up after the core loop is stable | [Contest Playbooks](practice/contest-playbooks/README.md) | [Explore](docs/explore.md) when the need is deeper source-backed reading, or one track page when training is the goal |
 
 ## What Makes This Repo Different
 

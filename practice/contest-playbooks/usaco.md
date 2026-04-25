@@ -190,7 +190,7 @@ The review should identify the first break in your process, not only the final a
 
 | Failure | Reopen |
 | --- | --- |
-| misread statement or constraint detail | [Start Here](../../docs/start-here.md) or the matching foundations topic page |
+| misread statement or constraint detail | [Start Here](../../docs/start-here.md) or the corresponding foundations topic page |
 | implementation WA/TLE on mostly-known ideas | [Local Judge Workflow](../../notebook/local-judge-workflow.md) and [Build Kit](../../docs/build-kit.md) |
 | wrong division-level practice choice | this page's `Division Route Table` and [Problem Finder](../../docs/problem-finder.md) |
 | no clean contest block rhythm | this page's `Solo Archive Block 01` |

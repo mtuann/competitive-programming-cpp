@@ -8,14 +8,16 @@ Use it when you need one of these instead:
 - one route that fits your current bottleneck
 - one route that fits your contest track
 
+This page uses learner `Stage 1-4` language. If you want the content-progression map by area, use the curriculum `Level 0-5` view in [Project Overview](../project-readme.md).
+
 ## Pick By Situation
 
 | If you are here because... | Start with | Then go next |
 | --- | --- | --- |
 | you are completely new | [Start Here](start-here.md) | [Foundations ladders](../practice/ladders/foundations/README.md) |
-| you want a stage-based route instead of a topic list | [Start Here](start-here.md) | the `Stage Plan` section there, then the stage-matching door |
+| you want a learner-stage route instead of a topic list | [Start Here](start-here.md) | the `Learner Stage Plan` section there, then either [Foundations ladders](../practice/ladders/foundations/README.md), [Learning Areas](../topics/README.md), [Practice hub](../practice/README.md), or [Contest Playbooks](../practice/contest-playbooks/README.md) |
 | you know basics but your practice is inconsistent | [Practice hub](../practice/README.md) | [Ladders](../practice/ladders/README.md) |
-| you already know the weak topic | [Learning Areas](../topics/README.md) | the matching ladder, then one repo note |
+| you already know the weak topic | [Learning Areas](../topics/README.md) | the corresponding ladder, then one repo note |
 | you want contest-style training | [Contest Playbooks](../practice/contest-playbooks/README.md) | [Mixed Rounds](../practice/mixed-rounds/README.md) and [Problem Finder](problem-finder.md) |
 | you are debugging or implementing under pressure | [Build Kit](build-kit.md) | [Notebook](../notebook/README.md) |
 
@@ -50,7 +52,7 @@ Use this when syntax, local workflow, and first recognition cues are still the b
 1. [Learning Areas](../topics/README.md)
 2. one area overview
 3. one leaf topic page
-4. the matching ladder
+4. the corresponding ladder
 5. one repo note
 6. [Build Kit](build-kit.md) or [Notebook](../notebook/README.md) only after the idea is trusted
 
@@ -61,7 +63,7 @@ Use this when you want depth before speed.
 1. [Practice hub](../practice/README.md)
 2. [Problem Finder](problem-finder.md)
 3. one ladder or one mixed round
-4. the matching topic page only when recognition is fuzzy
+4. the corresponding topic page only when recognition is fuzzy
 5. [Notebook](../notebook/README.md) or [Build Kit](build-kit.md) when retrieval or implementation becomes the bottleneck
 
 Use this when you already know some ideas and need more reps, not more taxonomy.
@@ -92,7 +94,7 @@ Use this when your question is no longer “what is this algorithm?” and is no
 When in doubt, fall back to this:
 
 1. learn one idea in `topics/`
-2. stay inside the matching ladder in `practice/ladders/`
+2. stay inside the corresponding ladder in `practice/ladders/`
 3. solve one anchored note there
 4. reopen one reusable snippet or workflow through [Build Kit](build-kit.md)
 5. compress the invariant in [Notebook](../notebook/README.md)
@@ -105,4 +107,4 @@ That is the repo's default `Learn -> Practice -> Retrieve -> Reuse -> Switch` lo
 - [Build Kit](build-kit.md): templates, notebook, and workflows
 - [Problem Finder](problem-finder.md): choose the next problem set
 - [Topic Maps](topic-maps/index.md): source-backed reading and coverage lookup
-- [Project Overview](../project-readme.md): the full stage-based curriculum
+- [Project Overview](../project-readme.md): the full curriculum-level map
