@@ -1037,6 +1037,76 @@
       }
     ]
   },
+  "data-structures/treap-implicit": {
+    "title": "Data Structures -> Treap / Implicit Treap",
+    "summary": "Randomized split/merge tree family for ordered-set-by-key treaps and mutable-sequence-by-position implicit treaps.",
+    "topic_path": "topics/data-structures/treap-implicit/README.md",
+    "ladder_path": "practice/ladders/data-structures/treap-implicit/README.md",
+    "microtopics": [
+      "random-priorities",
+      "split-merge",
+      "implicit-key",
+      "subtree-size",
+      "sequence-surgery",
+      "ordered-set-vs-sequence"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Treaps",
+        "url": "https://usaco.guide/adv/treaps",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CP-Algorithms Treap",
+        "url": "https://cp-algorithms.com/data_structures/treap.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Cut and Paste",
+        "url": "https://cses.fi/problemset/task/2072",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Substring Reversals",
+        "url": "https://cses.fi/problemset/task/2073",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Dynamic Sequence Range Affine Range Sum",
+        "url": "https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Treap / Implicit Treap hot sheet",
+        "path": "notebook/treap-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Treap starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Cut and Paste note",
+        "path": "practice/ladders/data-structures/treap-implicit/cutandpaste.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Heaps And Ordered Sets tutorial",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Lazy Segment Tree tutorial",
+        "path": "topics/data-structures/lazy-segment-tree/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

@@ -16,6 +16,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - online range add + range sum -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - online range `chmin / chmax / add / sum` where one simple lazy tag no longer closes -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md)
 - old versions stay queryable and point updates create new versions -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md)
+- mutable sequence with insert / erase / cut / paste by position -> [Treap / Implicit Treap hot sheet](treap-hot-sheet.md)
 - static subarray k-th / count `<= x` / count `== x` by value -> [Wavelet Tree hot sheet](wavelet-tree-hot-sheet.md)
 - static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
@@ -53,6 +54,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - "all queries known first" -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) before building a heavier online structure
 - "one current range and symmetric add/remove are the whole story" -> [Mo's hot sheet](mos-hot-sheet.md)
 - "insert / erase / maximum xor query" -> [Binary Trie hot sheet](binary-trie-hot-sheet.md)
+- "cut / paste / insert / erase by current position" -> [Treap / Implicit Treap hot sheet](treap-hot-sheet.md)
 - "static subarray k-th smallest or threshold count" -> [Wavelet Tree hot sheet](wavelet-tree-hot-sheet.md)
 
 ## Quick Anchors In This Repo
@@ -61,6 +63,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - DSU -> [DSU hot sheet](dsu-hot-sheet.md) + [C11XU](../practice/ladders/data-structures/dsu/c11xu.md)
 - rollback connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - persistent range sums -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md) + [Range Queries and Copies](../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md)
+- sequence surgery by position -> [Treap / Implicit Treap hot sheet](treap-hot-sheet.md) + [Cut and Paste](../practice/ladders/data-structures/treap-implicit/cutandpaste.md)
 - static range order statistics -> [Wavelet Tree hot sheet](wavelet-tree-hot-sheet.md) + [MKTHNUM - K-th Number](../practice/ladders/data-structures/wavelet-tree/mkthnum.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
@@ -103,6 +106,7 @@ Ask:
 - [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
+- [Treap / Implicit Treap hot sheet](treap-hot-sheet.md)
 - [Wavelet Tree hot sheet](wavelet-tree-hot-sheet.md)
 - [Mo's hot sheet](mos-hot-sheet.md)
 - [Template library](../template-library.md)
@@ -111,6 +115,7 @@ Ask:
 - [Lazy Segment Tree topic](../topics/data-structures/lazy-segment-tree/README.md)
 - [Segment Tree Beats topic](../topics/data-structures/segment-tree-beats/README.md)
 - [Persistent Data Structures topic](../topics/data-structures/persistent-data-structures/README.md)
+- [Treap / Implicit Treap topic](../topics/data-structures/treap-implicit/README.md)
 - [Wavelet Tree topic](../topics/data-structures/wavelet-tree/README.md)
 - [Mo's Algorithm topic](../topics/data-structures/mos-algorithm/README.md)
 - [Binary Trie / XOR Queries topic](../topics/data-structures/binary-trie-xor/README.md)

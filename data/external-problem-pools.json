@@ -2845,6 +2845,92 @@
       ]
     }
   ],
+  "data-structures/treap-implicit": [
+    {
+      "title": "Cut and Paste",
+      "url": "https://cses.fi/problemset/task/2072",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/treap-implicit",
+        "Data Structures",
+        "Implicit Treap",
+        "Sequence Surgery"
+      ],
+      "tags": [
+        "Implicit-Treap",
+        "Split-Merge",
+        "Sequence-Edits"
+      ],
+      "why_fit": "The cleanest first benchmark where cut/paste by position becomes a short split/merge script.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Modeling-Heavy"
+      ],
+      "prerequisites": [
+        "Split And Merge",
+        "Subtree Sizes",
+        "Implicit Position"
+      ]
+    },
+    {
+      "title": "Substring Reversals",
+      "url": "https://cses.fi/problemset/task/2073",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/treap-implicit",
+        "Implicit Treap",
+        "Sequence Lazy Tags",
+        "CSES"
+      ],
+      "tags": [
+        "Implicit-Treap",
+        "Reverse",
+        "Lazy-Tag"
+      ],
+      "why_fit": "A direct follow-up once split/merge is trusted and one reverse tag becomes the next natural extension.",
+      "bucket": "practice",
+      "styles": [
+        "Data-Structure-Heavy",
+        "String-Like"
+      ],
+      "prerequisites": [
+        "Implicit Treap",
+        "Split And Merge",
+        "Lazy Reversal Tag"
+      ]
+    },
+    {
+      "title": "Dynamic Sequence Range Affine Range Sum",
+      "url": "https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum",
+      "source": "Library Checker",
+      "difficulty": "very hard",
+      "tracks": [
+        "data-structures/treap-implicit",
+        "Library Checker",
+        "Implicit Treap",
+        "Advanced"
+      ],
+      "tags": [
+        "Implicit-Treap",
+        "Affine-Lazy",
+        "Range-Sum"
+      ],
+      "why_fit": "The canonical verifier-style stretch once the implicit-treap family is extended with aggregates and lazy tags.",
+      "bucket": "stretch",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Verification"
+      ],
+      "prerequisites": [
+        "Implicit Treap",
+        "Lazy Propagation",
+        "Split And Merge"
+      ]
+    }
+  ],
   "graphs/graph-modeling": [
     {
       "title": "Counting Rooms",

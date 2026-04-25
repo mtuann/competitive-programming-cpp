@@ -608,6 +608,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp"
   },
   {
+    "code": "CUTANDPASTE",
+    "title": "Cut and Paste",
+    "full_title": "Cut and Paste",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2072",
+    "main_topic": "Data Structures -> Treap / Implicit Treap",
+    "secondary_topics": [
+      "Implicit treap",
+      "Split/merge sequence surgery",
+      "Subtree size as position"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/treap-implicit",
+    "topic_tags": [
+      "data-structures/treap-implicit"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/treap-implicit/cutandpaste.md",
+    "ladder_path": "practice/ladders/data-structures/treap-implicit/README.md",
+    "tutorial_path": "topics/data-structures/treap-implicit/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/treap-implicit/cutandpaste.cpp"
+  },
+  {
     "code": "MKTHNUM",
     "title": "K-th Number",
     "full_title": "MKTHNUM - K-th Number",

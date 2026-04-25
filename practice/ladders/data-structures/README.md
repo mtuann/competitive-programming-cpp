@@ -9,6 +9,7 @@ These ladders connect reusable structures to focused practice.
 - [Fenwick tree](fenwick-tree/README.md)
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [Persistent data structures](persistent-data-structures/README.md)
+- [Treap / Implicit Treap](treap-implicit/README.md)
 - [Wavelet Tree](wavelet-tree/README.md)
 - [Mo's algorithm](mos-algorithm/README.md)
 - [Segment tree](segment-tree/README.md)
@@ -23,6 +24,7 @@ These ladders connect reusable structures to focused practice.
 - [Dynamic Connectivity](dsu-rollback/dynamicconnectivity.md): exact rollback-DSU route for component counts under add/remove edge events
 - [CVP00001](fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
 - [Range Queries and Copies](persistent-data-structures/rangequeriesandcopies.md): exact first persistent segment-tree route for versioned point updates and old-version range sums
+- [Cut and Paste](treap-implicit/cutandpaste.md): exact first sequence-surgery route where split/merge by position replaces explicit index maintenance
 - [MKTHNUM - K-th Number](wavelet-tree/mkthnum.md): exact first static order-statistics route where one range is translated through value partitions
 - [Powerful Array](mos-algorithm/powerfularray.md): exact first `Mo` route where one current range and one frequency-weighted score are the whole state
 - [Vasiliy's Multiset](binary-trie-xor/vasiliysmultiset.md): exact first binary-trie route for live xor-max queries with duplicates

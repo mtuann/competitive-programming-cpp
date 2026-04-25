@@ -3085,6 +3085,85 @@
     "why_fit": "A concise official benchmark for validating a sparse table implementation."
   },
   {
+    "slug": "data-structures/treap-implicit",
+    "topic": "Data Structures -> Treap / Implicit Treap",
+    "title": "Cut and Paste",
+    "url": "https://cses.fi/problemset/task/2072",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Implicit Treap",
+      "Sequence Surgery"
+    ],
+    "tags": [
+      "Split-Merge",
+      "Sequence-Edits"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Modeling-Heavy"
+    ],
+    "prerequisites": [
+      "Split And Merge",
+      "Subtree Sizes",
+      "Implicit Position"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first benchmark where cut/paste by position becomes a short split/merge script."
+  },
+  {
+    "slug": "data-structures/treap-implicit",
+    "topic": "Data Structures -> Treap / Implicit Treap",
+    "title": "Substring Reversals",
+    "url": "https://cses.fi/problemset/task/2073",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Implicit Treap",
+      "Sequence Lazy Tags"
+    ],
+    "tags": [
+      "Reverse",
+      "Lazy-Tag"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "String-Like"
+    ],
+    "prerequisites": [
+      "Split And Merge",
+      "Lazy Reversal Tag"
+    ],
+    "bucket": "practice",
+    "why_fit": "A direct follow-up once split/merge is trusted and one reverse tag becomes the next natural extension."
+  },
+  {
+    "slug": "data-structures/treap-implicit",
+    "topic": "Data Structures -> Treap / Implicit Treap",
+    "title": "Dynamic Sequence Range Affine Range Sum",
+    "url": "https://judge.yosupo.jp/problem/dynamic_sequence_range_affine_range_sum",
+    "source": "Library Checker",
+    "difficulty": "very-hard",
+    "tracks": [
+      "Implicit Treap",
+      "Advanced"
+    ],
+    "tags": [
+      "Affine-Lazy",
+      "Range-Sum"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Lazy Propagation",
+      "Split And Merge"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The canonical verifier-style stretch once the implicit-treap family is extended with aggregates and lazy tags."
+  },
+  {
     "slug": "data-structures/wavelet-tree",
     "topic": "Data Structures -> Wavelet Tree",
     "title": "MKTHNUM - K-th Number",

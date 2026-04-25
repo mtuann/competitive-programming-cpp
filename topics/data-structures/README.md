@@ -9,6 +9,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [Fenwick Tree](fenwick-tree/README.md)
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [Persistent Data Structures](persistent-data-structures/README.md)
+- [Treap / Implicit Treap](treap-implicit/README.md)
 - [Wavelet Tree](wavelet-tree/README.md)
 - [Mo's Algorithm](mos-algorithm/README.md)
 - [Segment Tree](segment-tree/README.md)
@@ -42,6 +43,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - ordinary Mo on static arrays once offline right-endpoint sweeps feel natural
 - rollback DSU / offline dynamic connectivity
 - persistent structures once ordinary segment-tree updates are automatic
+- treap / implicit treap once mutable sequence edits or split/merge by position start appearing
 - wavelet tree once static range order statistics or value-count queries start appearing
 - lazy propagation variants
 - coordinate compression patterns

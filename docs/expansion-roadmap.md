@@ -201,7 +201,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Flow with Lower Bounds`
 - [x] `Segment Tree Beats`
 - [x] `Wavelet Tree`
-- [ ] `Treap / Implicit Treap`
+- [x] `Treap / Implicit Treap`
 - [ ] `Eertree / Palindromic Tree`
 - [ ] `XOR Basis / Linear Basis`
 - [ ] `Game Theory / Sprague-Grundy`
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Segment Tree Beats`
+1. `Eertree / Palindromic Tree`
 
 That is now the best follow-up because:
 
-- the repo has now opened the strongest remaining flow-family extension short of costed b-flow
-- `Segment Tree Beats` is the sharpest remaining reusable range-structure lane still missing as its own family
-- it deepens the data-structures side without reopening too many routing surfaces at once
+- the strings lane already has `KMP`, `Z`, `Aho-Corasick`, `Suffix Array`, `Suffix Automaton`, and `Manacher`, so the next meaningful gap is the palindromic automaton family
+- `Eertree` is the cleanest remaining canonical string structure not yet given its own exact lane
+- it adds a new retrieval surface without reopening too many contest-system docs at once
