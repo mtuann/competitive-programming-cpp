@@ -1139,6 +1139,81 @@
       }
     ]
   },
+  "graphs/eulerian-path-cycle": {
+    "title": "Graphs -> Eulerian Path / Cycle",
+    "summary": "Degree conditions, Hierholzer traversal, and use-every-edge-once constructions in directed and undirected graphs.",
+    "topic_path": "topics/graphs/eulerian-path-cycle/README.md",
+    "ladder_path": "practice/ladders/graphs/eulerian-path-cycle/README.md",
+    "microtopics": [
+      "hierholzer",
+      "eulerian-trail",
+      "eulerian-cycle",
+      "degree-parity",
+      "indegree-outdegree-balance",
+      "de-bruijn-reduction"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Eulerian Path",
+        "url": "https://cp-algorithms.com/graph/euler_path.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Euler graph",
+        "url": "https://en.oi-wiki.org/graph/euler/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CSES Mail Delivery",
+        "url": "https://cses.fi/problemset/task/1691/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Teleporters Path",
+        "url": "https://cses.fi/problemset/task/1693/",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Eulerian hot sheet",
+        "path": "notebook/eulerian-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Eulerian starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Mail Delivery note",
+        "path": "practice/ladders/graphs/eulerian-path-cycle/maildelivery.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Graph cheatsheet",
+        "path": "notebook/graph-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Euler Tour / Subtree Queries tutorial",
+        "path": "topics/graphs/euler-tour-subtree/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "graphs/centroid-decomposition": {
     "title": "Graphs -> Centroid Decomposition",
     "summary": "Balanced recursive tree splitting, centroid-tree ancestors, and path-through-centroid divide and conquer on static trees.",

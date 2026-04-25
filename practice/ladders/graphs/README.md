@@ -10,18 +10,20 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 4. minimum spanning tree
 5. toposort and SCC
 6. bridges / articulation / low-link on undirected graphs
-7. 2-SAT once implication graphs and SCCs feel natural
-8. trees and subtree flattening
-9. LCA
-10. heavy-light decomposition when path queries need a range structure
-11. centroid decomposition when balanced recursive splits become the main tool
-12. flow and matching
+7. Eulerian path / cycle once "use every edge exactly once" becomes a repeated pattern
+8. 2-SAT once implication graphs and SCCs feel natural
+9. trees and subtree flattening
+10. LCA
+11. heavy-light decomposition when path queries need a range structure
+12. centroid decomposition when balanced recursive splits become the main tool
+13. flow and matching
 
 ## Subtopic Ladders
 
 - [Graph modeling](graph-modeling/README.md)
 - [BFS / DFS](bfs-dfs/README.md)
 - [Bridges / articulation / BCC](bridges-articulation/README.md)
+- [Eulerian path / cycle](eulerian-path-cycle/README.md)
 - [Shortest paths](shortest-paths/README.md)
 - [Minimum spanning tree](mst/README.md)
 - [Toposort and SCC](scc-toposort/README.md)
@@ -40,6 +42,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Counting Rooms](graph-modeling/countingrooms.md)
 - [Building Roads](graph-modeling/buildingroads.md)
 - [Necessary Roads](bridges-articulation/necessaryroads.md)
+- [Mail Delivery](eulerian-path-cycle/maildelivery.md)
 - [QOS](shortest-paths/qos.md)
 - [Giant Pizza](two-sat/giantpizza.md)
 - [Subtree Queries](euler-tour-subtree/subtreequeries.md)

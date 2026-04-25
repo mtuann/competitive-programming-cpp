@@ -7657,6 +7657,119 @@
     "why_fit": "A strong compare point once subtree intervals are trusted and you want to see how similar flattening ideas answer a different rooted-tree query."
   },
   {
+    "slug": "graphs/eulerian-path-cycle",
+    "topic": "Graphs -> Eulerian Path / Cycle",
+    "title": "Mail Delivery",
+    "url": "https://cses.fi/problemset/task/1691",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Undirected"
+    ],
+    "tags": [
+      "Eulerian Cycle",
+      "Hierholzer",
+      "Degree Parity",
+      "Undirected Graphs"
+    ],
+    "styles": [
+      "Hierholzer Traversal",
+      "Degree Check",
+      "Witness Output"
+    ],
+    "prerequisites": [
+      "Undirected Graphs",
+      "Degree Parity",
+      "DFS-Style Traversal"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first contest problem for undirected Eulerian cycles: parity, connected support, and one Hierholzer walk."
+  },
+  {
+    "slug": "graphs/eulerian-path-cycle",
+    "topic": "Graphs -> Eulerian Path / Cycle",
+    "title": "Teleporters Path",
+    "url": "https://cses.fi/problemset/task/1693",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Directed"
+    ],
+    "tags": [
+      "Eulerian Path",
+      "Directed Graphs",
+      "In-Out Balance",
+      "Hierholzer"
+    ],
+    "styles": [
+      "Directed Hierholzer",
+      "Balance Check",
+      "Start-End Enforcement"
+    ],
+    "prerequisites": [
+      "Directed Graphs",
+      "Indegree And Outdegree",
+      "Eulerian Trail Conditions"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical directed-path benchmark where start and end are fixed and in/out balance matters more than parity."
+  },
+  {
+    "slug": "graphs/eulerian-path-cycle",
+    "topic": "Graphs -> Eulerian Path / Cycle",
+    "title": "Play on Words",
+    "url": "https://onlinejudge.org/external/1/10129.pdf",
+    "source": "UVa",
+    "difficulty": "medium",
+    "tracks": [
+      "Classic"
+    ],
+    "tags": [
+      "String To Graph",
+      "Directed Eulerian Path"
+    ],
+    "styles": [
+      "Modeling",
+      "Balance Check",
+      "Connected Support"
+    ],
+    "prerequisites": [
+      "Directed Graphs",
+      "Eulerian Path Conditions",
+      "Graph Modeling"
+    ],
+    "bucket": "classic",
+    "why_fit": "A classic Eulerian-reduction problem where statement parsing and graph support checks matter as much as the traversal itself."
+  },
+  {
+    "slug": "graphs/eulerian-path-cycle",
+    "topic": "Graphs -> Eulerian Path / Cycle",
+    "title": "De Bruijn Sequence",
+    "url": "https://cses.fi/problemset/task/1692",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Construction"
+    ],
+    "tags": [
+      "De Bruijn Graph",
+      "Eulerian Cycle",
+      "Bitmask States"
+    ],
+    "styles": [
+      "State Graph Modeling",
+      "Eulerian Construction",
+      "String Reconstruction"
+    ],
+    "prerequisites": [
+      "Graph Modeling",
+      "Eulerian Cycle",
+      "Bitmask States"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A flagship construction problem where the whole graph model exists only to make an Eulerian cycle encode the answer string."
+  },
+  {
     "slug": "graphs/flow",
     "topic": "Graphs -> Maximum Flow",
     "title": "Download Speed",

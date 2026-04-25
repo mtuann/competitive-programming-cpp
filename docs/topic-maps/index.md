@@ -27,6 +27,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> Bridges, Articulation, And BCC | 1 | 4 | 5 | [Open](graphs/bridges-articulation.md) |
 | Graphs -> Centroid Decomposition | 1 | 5 | 5 | [Open](graphs/centroid-decomposition.md) |
 | Graphs -> Euler Tour / Subtree Queries | 1 | 4 | 4 | [Open](graphs/euler-tour-subtree.md) |
+| Graphs -> Eulerian Path / Cycle | 1 | 5 | 4 | [Open](graphs/eulerian-path-cycle.md) |
 | Graphs -> Maximum Flow | 4 | 2 | 8 | [Open](graphs/flow.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 0 | 7 | [Open](graphs/gomory-hu.md) |
 | Graphs -> Graph Modeling | 4 | 2 | 9 | [Open](graphs/graph-modeling.md) |

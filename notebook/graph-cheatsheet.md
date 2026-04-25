@@ -16,6 +16,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - nonnegative weights -> Dijkstra -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - negative edges -> Bellman-Ford -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - delete one edge/vertex and connectivity changes -> [Low-Link hot sheet](lowlink-hot-sheet.md)
+- use every edge exactly once -> [Eulerian hot sheet](eulerian-hot-sheet.md)
 - connectivity under offline add/remove edge events -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - binary clauses over boolean choices -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - one rooted subtree aggregate becomes one contiguous interval -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
@@ -25,6 +26,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 
 - connectivity / traversal -> BFS, DFS
 - critical roads / cities -> [Low-Link hot sheet](lowlink-hot-sheet.md)
+- use-every-edge-once walks -> [Eulerian hot sheet](eulerian-hot-sheet.md)
 - DAG dependencies -> toposort
 - undirected cheapest backbone -> MST
 - directed compression -> SCC
@@ -49,6 +51,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "negative edge" or "check for negative cycle" -> Bellman-Ford family
 - "cheapest transport under capacities" -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - "remove one road or city and connectivity breaks" -> [Low-Link hot sheet](lowlink-hot-sheet.md)
+- "use every road / teleporter exactly once" -> [Eulerian hot sheet](eulerian-hot-sheet.md)
 - "every object has two modes and each constraint touches two literals" -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - "one rooted subtree" or "all descendants of one node" -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - "tree paths" -> LCA for ancestor/meet questions, HLD for repeated path aggregates, Euler flattening for subtree-only aggregation
@@ -67,6 +70,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 
 - shortest-path family -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Message Route](../practice/ladders/graphs/bfs-dfs/messageroute.md) + [QOS](../practice/ladders/graphs/shortest-paths/qos.md)
 - bridges / cut vertices / block-cut entry -> [Low-Link hot sheet](lowlink-hot-sheet.md) + [Necessary Roads](../practice/ladders/graphs/bridges-articulation/necessaryroads.md) + [bridges-articulation-lowlink.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bridges-articulation-lowlink.cpp)
+- Eulerian trail / cycle -> [Eulerian hot sheet](eulerian-hot-sheet.md) + [Mail Delivery](../practice/ladders/graphs/eulerian-path-cycle/maildelivery.md) + [eulerian-path-cycle.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/eulerian-path-cycle.cpp)
 - MST -> [Road Reparation](../practice/ladders/graphs/mst/roadreparation.md)
 - SCC / DAG ordering -> [Course Schedule](../practice/ladders/graphs/scc-toposort/courseschedule.md)
 - 2-SAT / implication graph -> [Two-SAT hot sheet](two-sat-hot-sheet.md) + [Giant Pizza](../practice/ladders/graphs/two-sat/giantpizza.md) + [two-sat.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/two-sat.cpp)
@@ -92,6 +96,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [Low-Link hot sheet](lowlink-hot-sheet.md)
+- [Eulerian hot sheet](eulerian-hot-sheet.md)
 - [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - [Template library](../template-library.md)

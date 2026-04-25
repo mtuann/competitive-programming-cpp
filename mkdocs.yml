@@ -114,6 +114,7 @@ nav:
           - Overview: topics/graphs/README.md
           - BFS And DFS: topics/graphs/bfs-dfs/README.md
           - Bridges / Articulation / BCC: topics/graphs/bridges-articulation/README.md
+          - Eulerian Path / Cycle: topics/graphs/eulerian-path-cycle/README.md
           - Euler Tour / Subtree Queries: topics/graphs/euler-tour-subtree/README.md
           - Centroid Decomposition: topics/graphs/centroid-decomposition/README.md
           - Flow: topics/graphs/flow/README.md
@@ -211,6 +212,7 @@ nav:
               - Overview: practice/ladders/graphs/README.md
               - BFS And DFS: practice/ladders/graphs/bfs-dfs/README.md
               - Bridges / Articulation / BCC: practice/ladders/graphs/bridges-articulation/README.md
+              - Eulerian Path / Cycle: practice/ladders/graphs/eulerian-path-cycle/README.md
               - Centroid Decomposition: practice/ladders/graphs/centroid-decomposition/README.md
               - Euler Tour / Subtree Queries: practice/ladders/graphs/euler-tour-subtree/README.md
               - Flow: practice/ladders/graphs/flow/README.md
@@ -324,6 +326,7 @@ nav:
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
       - Low-Link Hot Sheet: notebook/lowlink-hot-sheet.md
+      - Eulerian Hot Sheet: notebook/eulerian-hot-sheet.md
       - Two-SAT Hot Sheet: notebook/two-sat-hot-sheet.md
       - Subtree Queries Hot Sheet: notebook/subtree-queries-hot-sheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md

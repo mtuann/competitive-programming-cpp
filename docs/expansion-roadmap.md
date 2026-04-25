@@ -195,7 +195,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 
 ### Long-Tail Algorithm Candidates
 
-- [ ] `Eulerian Path / Cycle`
+- [x] `Eulerian Path / Cycle`
 - [ ] `Mo's Algorithm`
 - [ ] `Binary Trie / XOR Queries`
 - [ ] `Flow with Lower Bounds`
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Eulerian Path / Cycle`
+1. `Mo's Algorithm`
 
 That is now the best follow-up because:
 
 - the freshness backbone now exists, so the repo can safely open another long-tail algorithm lane
-- `Eulerian Path / Cycle` is one of the highest-value remaining canonical gaps from the external-source comparison work
-- it connects cleanly to already-mature graph routing, ladders, and retrieval pages
+- `Mo's Algorithm` remains one of the highest-value remaining canonical gaps from the external-source comparison work
+- it connects cleanly to the repo's now-mature `offline tricks`, `range queries`, and retrieval routes

@@ -1595,6 +1595,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-subtree/subtreequeries.cpp"
   },
   {
+    "code": "MAILDELIVERY",
+    "title": "Mail Delivery",
+    "full_title": "Mail Delivery",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1691",
+    "main_topic": "Graphs -> Eulerian Path / Cycle",
+    "secondary_topics": [
+      "Eulerian cycle",
+      "Hierholzer",
+      "Degree parity"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/eulerian-path-cycle",
+    "topic_tags": [
+      "graphs/eulerian-path-cycle"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/eulerian-path-cycle/maildelivery.md",
+    "ladder_path": "practice/ladders/graphs/eulerian-path-cycle/README.md",
+    "tutorial_path": "topics/graphs/eulerian-path-cycle/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/eulerian-path-cycle/maildelivery.cpp"
+  },
+  {
     "code": "FFLOW",
     "title": "Fast Maximum Flow",
     "full_title": "Fast Maximum Flow",
