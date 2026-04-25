@@ -20,8 +20,11 @@ Most failures in geometry are not from "not knowing the theorem." They are from 
 - [Segment Intersection](segment-intersection/README.md)
 - [Polygon Area And Point Location](polygon-area-point-location/README.md)
 - [Convex Hull](convex-hull/README.md)
+- [Minkowski Sum](minkowski-sum/README.md)
 - [Sweep Line](sweep-line/README.md)
+- [Nearest Pair of Points](nearest-pair/README.md)
 - [Counting Geometry](counting-geometry/README.md)
+- [Half-Plane Intersection](half-plane-intersection/README.md)
 
 ## Entry
 
@@ -39,13 +42,15 @@ Most failures in geometry are not from "not knowing the theorem." They are from 
 
 2. Contest core
 - convex hull
+- Minkowski sum on convex polygons
 - sweep-line basics
+- nearest-pair sweeps
 - counting geometry by normalization
 
 3. Advanced later
 - rotating calipers extensions
+- half-plane intersection
 - circle geometry
-- half-plane style ideas
 - precision-heavy continuous cases
 
 ## Recognition Cues
@@ -75,8 +80,11 @@ After this section, you should be comfortable with:
 
 - [Polygon Area](../../practice/ladders/geometry/polygon-area-point-location/polygonarea.md): shoelace accumulation around a closed polygon with exact integer output
 - [Point in Polygon](../../practice/ladders/geometry/polygon-area-point-location/pointinpolygon.md): boundary-aware ray casting for inside, outside, and on-edge queries
+- [Mogohu-Rea Idol](../../practice/ladders/geometry/minkowski-sum/mogohureaidol.md): stretch anchor after the first two-polygon Minkowski merge route is already trusted
+- [Closest Pair](../../practice/ladders/geometry/nearest-pair/closestpair.md): active-strip sweep for the global nearest Euclidean pair
 - [PRAVO - Tam giác vuông](../../practice/ladders/geometry/right-triangles/pravo.md): normalized directions and right-triangle counting
 - [KINGDOMS - Các vương quốc lồng nhau](../../practice/ladders/geometry/sweep-line/kingdoms.md): sweep-line ordering for nested polygons
+- [Big Brother](../../practice/ladders/geometry/half-plane-intersection/bigbrother.md): polygon kernel as the intersection of inward edge half-planes
 
 ## Go Deeper
 

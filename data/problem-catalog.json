@@ -98,6 +98,56 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp"
   },
   {
+    "code": "PICKYOUROWNNIM",
+    "title": "Pick Your Own Nim",
+    "full_title": "Pick Your Own Nim",
+    "judge": "Codeforces Gym",
+    "judge_url": "https://codeforces.com/gym/102156/problem/D",
+    "main_topic": "Advanced -> Matroid Intersection",
+    "secondary_topics": [
+      "Linear matroid",
+      "Partition matroid",
+      "XOR basis"
+    ],
+    "difficulty": "very-hard",
+    "status": "solved",
+    "primary_slug": "advanced/matroid-intersection",
+    "topic_tags": [
+      "advanced/matroid-intersection"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/matroid-intersection/pickyourownnim.md",
+    "ladder_path": "practice/ladders/advanced/matroid-intersection/README.md",
+    "tutorial_path": "topics/advanced/matroid-intersection/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/matroid-intersection/pickyourownnim.cpp"
+  },
+  {
+    "code": "CHEESEIFYOUPLEASE",
+    "title": "Cheese, If You Please",
+    "full_title": "Cheese, If You Please",
+    "judge": "Kattis",
+    "judge_url": "https://open.kattis.com/problems/cheeseifyouplease",
+    "main_topic": "Advanced -> Simplex",
+    "secondary_topics": [
+      "Linear programming",
+      "Simplex",
+      "Resource allocation"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "advanced/simplex",
+    "topic_tags": [
+      "advanced/simplex"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/simplex/cheeseifyouplease.md",
+    "ladder_path": "practice/ladders/advanced/simplex/README.md",
+    "tutorial_path": "topics/advanced/simplex/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/simplex/cheeseifyouplease.cpp"
+  },
+  {
     "code": "VOSFENCE",
     "title": "Xay hang rao",
     "full_title": "Xay hang rao",
@@ -289,6 +339,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp"
   },
   {
+    "code": "DISTINCTCOLORS",
+    "title": "Distinct Colors",
+    "full_title": "Distinct Colors",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1139/",
+    "main_topic": "Data Structures -> DSU On Tree / Small-To-Large",
+    "secondary_topics": [
+      "Tree traversal",
+      "Frequency maps",
+      "Subtree distinct count"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/dsu-on-tree",
+    "topic_tags": [
+      "data-structures/dsu-on-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/dsu-on-tree/distinctcolors.md",
+    "ladder_path": "practice/ladders/data-structures/dsu-on-tree/README.md",
+    "tutorial_path": "topics/data-structures/dsu-on-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-on-tree/distinctcolors.cpp"
+  },
+  {
     "code": "DYNAMICCONNECTIVITY",
     "title": "Dynamic Connectivity",
     "full_title": "Dynamic Connectivity",
@@ -445,6 +520,32 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/mos-algorithm/powerfularray.cpp"
   },
   {
+    "code": "WILLEMCHTHOLLYANDSENIORIOUS",
+    "title": "Willem, Chtholly and Seniorious",
+    "full_title": "896C - Willem, Chtholly and Seniorious",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/896/C?mobile=true",
+    "main_topic": "Data Structures -> ODT / Chtholly",
+    "secondary_topics": [
+      "ODT",
+      "Range assign",
+      "Ordered set",
+      "Expected complexity"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/odt-chtholly",
+    "topic_tags": [
+      "data-structures/odt-chtholly"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/odt-chtholly/willemchthollyandseniorious.md",
+    "ladder_path": "practice/ladders/data-structures/odt-chtholly/README.md",
+    "tutorial_path": "topics/data-structures/odt-chtholly/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/odt-chtholly/willemchthollyandseniorious.cpp"
+  },
+  {
     "code": "DISTINCTVALUESQUERIES",
     "title": "Distinct Values Queries",
     "full_title": "Distinct Values Queries",
@@ -478,6 +579,57 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp"
   },
   {
+    "code": "MERGEABLEHEAP1",
+    "title": "P3377 [Template] Mergeable Heap 1",
+    "full_title": "P3377 [Template] Mergeable Heap 1",
+    "judge": "Luogu",
+    "judge_url": "https://www.luogu.com.cn/problem/P3377",
+    "main_topic": "Data Structures -> Pairing Heap / Leftist Heap",
+    "secondary_topics": [
+      "Leftist heap",
+      "Meldable heap",
+      "DSU"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/pairing-leftist-heap",
+    "topic_tags": [
+      "data-structures/pairing-leftist-heap"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/pairing-leftist-heap/mergeableheap1.md",
+    "ladder_path": "practice/ladders/data-structures/pairing-leftist-heap/README.md",
+    "tutorial_path": "topics/data-structures/pairing-leftist-heap/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/pairing-leftist-heap/mergeableheap1.cpp"
+  },
+  {
+    "code": "ORDERSET",
+    "title": "Order Statistic Set",
+    "full_title": "ORDERSET - Order Statistic Set",
+    "judge": "SPOJ",
+    "judge_url": "https://www.spoj.com/problems/ORDERSET/",
+    "main_topic": "Data Structures -> PBDS / Order Statistics Tree",
+    "secondary_topics": [
+      "PBDS",
+      "Ordered set",
+      "k-th smallest",
+      "count smaller"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/pbds-order-statistics",
+    "topic_tags": [
+      "data-structures/pbds-order-statistics"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/pbds-order-statistics/orderset.md",
+    "ladder_path": "practice/ladders/data-structures/pbds-order-statistics/README.md",
+    "tutorial_path": "topics/data-structures/pbds-order-statistics/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/pbds-order-statistics/orderset.cpp"
+  },
+  {
     "code": "RANGEQUERIESANDCOPIES",
     "title": "Range Queries and Copies",
     "full_title": "Range Queries and Copies",
@@ -509,6 +661,32 @@
     "ladder_path": "practice/ladders/data-structures/persistent-data-structures/README.md",
     "tutorial_path": "topics/data-structures/persistent-data-structures/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/persistent-data-structures/rangequeriesandcopies.cpp"
+  },
+  {
+    "code": "PERSISTENTLIST",
+    "title": "Persistent List",
+    "full_title": "Persistent List",
+    "judge": "E-olymp",
+    "judge_url": "https://eolymp.com/en/problems/2957",
+    "main_topic": "Data Structures -> Persistent Treap",
+    "secondary_topics": [
+      "Persistent treap",
+      "Implicit treap",
+      "Split / merge persistence",
+      "Branching list versions"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/persistent-treap",
+    "topic_tags": [
+      "data-structures/persistent-treap"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/persistent-treap/persistentlist.md",
+    "ladder_path": "practice/ladders/data-structures/persistent-treap/README.md",
+    "tutorial_path": "topics/data-structures/persistent-treap/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/persistent-treap/persistentlist.cpp"
   },
   {
     "code": "DYNAMICRANGESUMQUERIES",
@@ -608,6 +786,32 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp"
   },
   {
+    "code": "ORDINARYBALANCEDTREE",
+    "title": "普通平衡树",
+    "full_title": "普通平衡树",
+    "judge": "Luogu",
+    "judge_url": "https://www.luogu.com.cn/problem/P3369",
+    "main_topic": "Data Structures -> Splay Tree",
+    "secondary_topics": [
+      "Splay tree",
+      "Ordered multiset",
+      "Rank",
+      "k-th"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/splay-tree",
+    "topic_tags": [
+      "data-structures/splay-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/splay-tree/ordinarybalancedtree.md",
+    "ladder_path": "practice/ladders/data-structures/splay-tree/README.md",
+    "tutorial_path": "topics/data-structures/splay-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/splay-tree/ordinarybalancedtree.cpp"
+  },
+  {
     "code": "CUTANDPASTE",
     "title": "Cut and Paste",
     "full_title": "Cut and Paste",
@@ -631,6 +835,32 @@
     "ladder_path": "practice/ladders/data-structures/treap-implicit/README.md",
     "tutorial_path": "topics/data-structures/treap-implicit/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/treap-implicit/cutandpaste.cpp"
+  },
+  {
+    "code": "SALARYQUERIES",
+    "title": "Salary Queries",
+    "full_title": "Salary Queries",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1144",
+    "main_topic": "Data Structures -> Treap / Implicit Treap",
+    "secondary_topics": [
+      "Key-based treap",
+      "Order statistics",
+      "Pair-key wrapper",
+      "Dynamic range count"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/treap-implicit",
+    "topic_tags": [
+      "data-structures/treap-implicit"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/treap-implicit/salaryqueries.md",
+    "ladder_path": "practice/ladders/data-structures/treap-implicit/README.md",
+    "tutorial_path": "topics/data-structures/treap-implicit/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/treap-implicit/salaryqueries.cpp"
   },
   {
     "code": "MKTHNUM",
@@ -689,6 +919,56 @@
     "ladder_path": "practice/ladders/dp/bitmask-dp/README.md",
     "tutorial_path": "topics/dp/bitmask-dp/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bitmask-dp/vmmarble.cpp"
+  },
+  {
+    "code": "COUNTINGTILINGS",
+    "title": "Counting Tilings",
+    "full_title": "Counting Tilings",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2181",
+    "main_topic": "DP -> Broken Profile / Plug DP",
+    "secondary_topics": [
+      "Frontier mask",
+      "Column sweep",
+      "Domino tilings"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/broken-profile",
+    "topic_tags": [
+      "dp/broken-profile"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/broken-profile/countingtilings.md",
+    "ladder_path": "practice/ladders/dp/broken-profile/README.md",
+    "tutorial_path": "topics/dp/broken-profile/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/broken-profile/countingtilings.cpp"
+  },
+  {
+    "code": "LINEADDGETMIN",
+    "title": "Line Add Get Min",
+    "full_title": "Line Add Get Min",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/line_add_get_min",
+    "main_topic": "DP -> Convex Hull Trick / Li Chao Tree",
+    "secondary_topics": [
+      "LineContainer",
+      "Convex hull trick",
+      "Online line minimum"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "dp/cht-li-chao",
+    "topic_tags": [
+      "dp/cht-li-chao"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/cht-li-chao/lineaddgetmin.md",
+    "ladder_path": "practice/ladders/dp/cht-li-chao/README.md",
+    "tutorial_path": "topics/dp/cht-li-chao/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/cht-li-chao/lineaddgetmin.cpp"
   },
   {
     "code": "MONSTERGAME2",
@@ -753,6 +1033,31 @@
     "ladder_path": "practice/ladders/dp/digit-dp/README.md",
     "tutorial_path": "topics/dp/digit-dp/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/digit-dp/countingnumbers.cpp"
+  },
+  {
+    "code": "CIELANDGONDOLAS",
+    "title": "Ciel and Gondolas",
+    "full_title": "Ciel and Gondolas",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/321/E",
+    "main_topic": "DP -> Divide and Conquer DP",
+    "secondary_topics": [
+      "Partition DP",
+      "2D prefix sums",
+      "Monotone-opt"
+    ],
+    "difficulty": "very hard",
+    "status": "solved",
+    "primary_slug": "dp/divide-and-conquer-dp",
+    "topic_tags": [
+      "dp/divide-and-conquer-dp"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/divide-and-conquer-dp/cielandgondolas.md",
+    "ladder_path": "practice/ladders/dp/divide-and-conquer-dp/README.md",
+    "tutorial_path": "topics/dp/divide-and-conquer-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/divide-and-conquer-dp/cielandgondolas.cpp"
   },
   {
     "code": "VMSCALE",
@@ -853,6 +1158,56 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knapsack-family/bookshop.cpp"
   },
   {
+    "code": "KNUTHDIVISION",
+    "title": "Knuth Division",
+    "full_title": "Knuth Division",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2088/",
+    "main_topic": "DP -> Knuth Optimization",
+    "secondary_topics": [
+      "Interval DP",
+      "Prefix sums",
+      "Opt monotonicity"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/knuth-optimization",
+    "topic_tags": [
+      "dp/knuth-optimization"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/knuth-optimization/knuthdivision.md",
+    "ladder_path": "practice/ladders/dp/knuth-optimization/README.md",
+    "tutorial_path": "topics/dp/knuth-optimization/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/knuth-optimization/knuthdivision.cpp"
+  },
+  {
+    "code": "REDANDBLUELAMPS",
+    "title": "Red and Blue Lamps",
+    "full_title": "Red and Blue Lamps",
+    "judge": "AtCoder ABC218 H",
+    "judge_url": "https://atcoder.jp/contests/abc218/tasks/abc218_h",
+    "main_topic": "DP -> Lagrangian Relaxation / Aliens Trick",
+    "secondary_topics": [
+      "Aliens Trick",
+      "Weighted independent set on a path",
+      "Penalty search"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/lagrangian-relaxation",
+    "topic_tags": [
+      "dp/lagrangian-relaxation"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/lagrangian-relaxation/redandbluelamps.md",
+    "ladder_path": "practice/ladders/dp/lagrangian-relaxation/README.md",
+    "tutorial_path": "topics/dp/lagrangian-relaxation/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/lagrangian-relaxation/redandbluelamps.cpp"
+  },
+  {
     "code": "SLIDINGWINDOWMINIMUM",
     "title": "Sliding Window Minimum",
     "full_title": "Sliding Window Minimum",
@@ -910,6 +1265,56 @@
     "ladder_path": "practice/ladders/dp/sliding-window/README.md",
     "tutorial_path": "topics/foundations/patterns/two-pointers/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sliding-window/tfield.cpp"
+  },
+  {
+    "code": "SNUKETOON",
+    "title": "Snuketoon",
+    "full_title": "Snuketoon",
+    "judge": "AtCoder ABC217 H",
+    "judge_url": "https://atcoder.jp/contests/abc217/tasks/abc217_h",
+    "main_topic": "DP -> Slope Trick",
+    "secondary_topics": [
+      "Slope trick",
+      "Convex DP",
+      "Two heaps"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/slope-trick",
+    "topic_tags": [
+      "dp/slope-trick"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/slope-trick/snuketoon.md",
+    "ladder_path": "practice/ladders/dp/slope-trick/README.md",
+    "tutorial_path": "topics/dp/slope-trick/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/slope-trick/snuketoon.cpp"
+  },
+  {
+    "code": "COMPATIBLENUMBERS",
+    "title": "Compatible Numbers",
+    "full_title": "Compatible Numbers",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/165/E",
+    "main_topic": "DP -> SOS DP",
+    "secondary_topics": [
+      "Bitwise complements",
+      "Subset zeta sweep",
+      "Witness propagation"
+    ],
+    "difficulty": "2200",
+    "status": "solved",
+    "primary_slug": "dp/sos-dp",
+    "topic_tags": [
+      "dp/sos-dp"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/sos-dp/compatiblenumbers.md",
+    "ladder_path": "practice/ladders/dp/sos-dp/README.md",
+    "tutorial_path": "topics/dp/sos-dp/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/sos-dp/compatiblenumbers.cpp"
   },
   {
     "code": "TREEDISTANCES2",
@@ -1362,6 +1767,80 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/convex-hull/convexhull.cpp"
   },
   {
+    "code": "BIGBROTHER",
+    "title": "Big Brother",
+    "full_title": "Big Brother",
+    "judge": "Kattis",
+    "judge_url": "https://open.kattis.com/problems/bigbrother",
+    "main_topic": "Geometry -> Half-Plane Intersection",
+    "secondary_topics": [
+      "Polygon kernel",
+      "Half-plane intersection",
+      "Polygon orientation"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "geometry/half-plane-intersection",
+    "topic_tags": [
+      "geometry/half-plane-intersection"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/geometry/half-plane-intersection/bigbrother.md",
+    "ladder_path": "practice/ladders/geometry/half-plane-intersection/README.md",
+    "tutorial_path": "topics/geometry/half-plane-intersection/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/half-plane-intersection/bigbrother.cpp"
+  },
+  {
+    "code": "MOGOHUREAIDOL",
+    "title": "Mogohu-Rea Idol",
+    "full_title": "Mogohu-Rea Idol",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/87/E",
+    "main_topic": "Geometry -> Minkowski Sum",
+    "secondary_topics": [
+      "Point in convex polygon",
+      "Convex polygons"
+    ],
+    "difficulty": "very-hard",
+    "status": "solved",
+    "primary_slug": "geometry/minkowski-sum",
+    "topic_tags": [
+      "geometry/minkowski-sum"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/geometry/minkowski-sum/mogohureaidol.md",
+    "ladder_path": "practice/ladders/geometry/minkowski-sum/README.md",
+    "tutorial_path": "topics/geometry/minkowski-sum/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/minkowski-sum/mogohureaidol.cpp"
+  },
+  {
+    "code": "CLOSESTPAIR",
+    "title": "Closest Pair",
+    "full_title": "Closest Pair",
+    "judge": "AOJ",
+    "judge_url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_5_A",
+    "main_topic": "Geometry -> Nearest Pair of Points",
+    "secondary_topics": [
+      "Nearest pair",
+      "Sweep line",
+      "Active strip"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "geometry/nearest-pair",
+    "topic_tags": [
+      "geometry/nearest-pair"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/geometry/nearest-pair/closestpair.md",
+    "ladder_path": "practice/ladders/geometry/nearest-pair/README.md",
+    "tutorial_path": "topics/geometry/nearest-pair/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/geometry/nearest-pair/closestpair.cpp"
+  },
+  {
     "code": "POINTINPOLYGON",
     "title": "Point in Polygon",
     "full_title": "Point in Polygon",
@@ -1728,6 +2207,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-subtree/subtreequeries.cpp"
   },
   {
+    "code": "DYNAMICTREEVERTEXADDSUBTREESUM",
+    "title": "Dynamic Tree Vertex Add Subtree Sum",
+    "full_title": "Dynamic Tree Vertex Add Subtree Sum",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_subtree_sum",
+    "main_topic": "Graphs -> Euler Tour Tree",
+    "secondary_topics": [
+      "Dynamic trees",
+      "Treap / split-merge",
+      "Subtree aggregates"
+    ],
+    "difficulty": "very hard",
+    "status": "solved",
+    "primary_slug": "graphs/euler-tour-tree",
+    "topic_tags": [
+      "graphs/euler-tour-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/euler-tour-tree/dynamictreevertexaddsubtreesum.md",
+    "ladder_path": "practice/ladders/graphs/euler-tour-tree/README.md",
+    "tutorial_path": "topics/graphs/euler-tour-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/euler-tour-tree/dynamictreevertexaddsubtreesum.cpp"
+  },
+  {
     "code": "MAILDELIVERY",
     "title": "Mail Delivery",
     "full_title": "Mail Delivery",
@@ -2051,6 +2555,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/lca/companyqueries2.cpp"
   },
   {
+    "code": "DYNAMICTREEVERTEXADDPATHSUM",
+    "title": "Dynamic Tree Vertex Add Path Sum",
+    "full_title": "Dynamic Tree Vertex Add Path Sum",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum",
+    "main_topic": "Graphs -> Link-Cut Tree",
+    "secondary_topics": [
+      "Dynamic forest",
+      "Preferred paths",
+      "Splay-based path aggregate"
+    ],
+    "difficulty": "very hard",
+    "status": "solved",
+    "primary_slug": "graphs/link-cut-tree",
+    "topic_tags": [
+      "graphs/link-cut-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/link-cut-tree/dynamictreevertexaddpathsum.md",
+    "ladder_path": "practice/ladders/graphs/link-cut-tree/README.md",
+    "tutorial_path": "topics/graphs/link-cut-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/link-cut-tree/dynamictreevertexaddpathsum.cpp"
+  },
+  {
     "code": "QBFLOWER",
     "title": "Tặng hoa",
     "full_title": "Tặng hoa",
@@ -2338,6 +2867,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/two-sat/giantpizza.cpp"
   },
   {
+    "code": "KINGDOMANDITSCITIES",
+    "title": "Kingdom and its Cities",
+    "full_title": "Kingdom and its Cities",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/613/D",
+    "main_topic": "Graphs -> Virtual Tree / Auxiliary Tree",
+    "secondary_topics": [
+      "Marked subset queries",
+      "Tree DP",
+      "Minimum separator"
+    ],
+    "difficulty": "very hard",
+    "status": "solved",
+    "primary_slug": "graphs/virtual-tree",
+    "topic_tags": [
+      "graphs/virtual-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/virtual-tree/kingdomanditscities.md",
+    "ladder_path": "practice/ladders/graphs/virtual-tree/README.md",
+    "tutorial_path": "topics/graphs/virtual-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/virtual-tree/kingdomanditscities.cpp"
+  },
+  {
     "code": "LEMONADELINE",
     "title": "Lemonade Line",
     "full_title": "Lemonade Line",
@@ -2436,6 +2990,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
   },
   {
+    "code": "DISCRETELOGARITHMMOD",
+    "title": "Discrete Logarithm Mod",
+    "full_title": "Discrete Logarithm Mod",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/discrete_logarithm_mod",
+    "main_topic": "Math -> BSGS / Discrete Log",
+    "secondary_topics": [
+      "Baby-step giant-step",
+      "Meet-in-the-middle",
+      "gcd reduction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/bsgs-discrete-log",
+    "topic_tags": [
+      "math/bsgs-discrete-log"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/bsgs-discrete-log/discretelogarithmmod.md",
+    "ladder_path": "practice/ladders/math/bsgs-discrete-log/README.md",
+    "tutorial_path": "topics/math/bsgs-discrete-log/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/bsgs-discrete-log/discretelogarithmmod.cpp"
+  },
+  {
     "code": "GENERALCHINESEREMAINDER",
     "title": "Chinese Remainder Theorem (non-relatively prime moduli)",
     "full_title": "Chinese Remainder Theorem (non-relatively prime moduli)",
@@ -2459,6 +3038,31 @@
     "ladder_path": "practice/ladders/math/chinese-remainder/README.md",
     "tutorial_path": "topics/math/chinese-remainder/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/chinese-remainder/generalchineseremainder.cpp"
+  },
+  {
+    "code": "SUMOFDIVISORS",
+    "title": "Sum of Divisors",
+    "full_title": "Sum of Divisors",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1082",
+    "main_topic": "Math -> Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions",
+    "secondary_topics": [
+      "Dirichlet convolution",
+      "Summatory sigma",
+      "Quotient grouping"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/dirichlet-prefix-sums",
+    "topic_tags": [
+      "math/dirichlet-prefix-sums"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/dirichlet-prefix-sums/sumofdivisors.md",
+    "ladder_path": "practice/ladders/math/dirichlet-prefix-sums/README.md",
+    "tutorial_path": "topics/math/dirichlet-prefix-sums/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/dirichlet-prefix-sums/sumofdivisors.cpp"
   },
   {
     "code": "CONVOLUTION",
@@ -2540,6 +3144,31 @@
     "ladder_path": "practice/ladders/math/game-theory/README.md",
     "tutorial_path": "topics/math/game-theory/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/game-theory/snim.cpp"
+  },
+  {
+    "code": "SYSTEMOFLINEAREQUATIONS",
+    "title": "System of Linear Equations",
+    "full_title": "System of Linear Equations",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/3154",
+    "main_topic": "Math -> Gaussian Elimination And Linear Algebra",
+    "secondary_topics": [
+      "Gaussian elimination",
+      "Linear algebra",
+      "Modular inverse"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/gaussian-elimination",
+    "topic_tags": [
+      "math/gaussian-elimination"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/gaussian-elimination/systemoflinearequations.md",
+    "ladder_path": "practice/ladders/math/gaussian-elimination/README.md",
+    "tutorial_path": "topics/math/gaussian-elimination/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gaussian-elimination/systemoflinearequations.cpp"
   },
   {
     "code": "COMMONDIVISORS",
@@ -2723,6 +3352,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/lucas-theorem/binomialcoefficientprimemod.cpp"
   },
   {
+    "code": "SUMOFTOTIENTFUNCTION",
+    "title": "Sum of Totient Function",
+    "full_title": "Sum of Totient Function",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/sum_of_totient_function",
+    "main_topic": "Math -> Min_25 / Du Jiao",
+    "secondary_topics": [
+      "Du Jiao sieve",
+      "Quotient set",
+      "Dirichlet inverse recurrence"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/min25-du-jiao",
+    "topic_tags": [
+      "math/min25-du-jiao"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/min25-du-jiao/sumoftotientfunction.md",
+    "ladder_path": "practice/ladders/math/min25-du-jiao/README.md",
+    "tutorial_path": "topics/math/min25-du-jiao/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/min25-du-jiao/sumoftotientfunction.cpp"
+  },
+  {
     "code": "COUNTINGCOPRIMEPAIRS",
     "title": "Counting Coprime Pairs",
     "full_title": "Counting Coprime Pairs",
@@ -2812,6 +3466,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp"
   },
   {
+    "code": "SQRTMOD",
+    "title": "Sqrt Mod",
+    "full_title": "Sqrt Mod",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/sqrt_mod",
+    "main_topic": "Math -> Modular Square Root / Discrete Root",
+    "secondary_topics": [
+      "Quadratic residues",
+      "Tonelli-Shanks",
+      "Modular arithmetic"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/modular-square-root-discrete-root",
+    "topic_tags": [
+      "math/modular-square-root-discrete-root"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/modular-square-root-discrete-root/sqrtmod.md",
+    "ladder_path": "practice/ladders/math/modular-square-root-discrete-root/README.md",
+    "tutorial_path": "topics/math/modular-square-root-discrete-root/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-square-root-discrete-root/sqrtmod.cpp"
+  },
+  {
     "code": "COUNTINGDIVISORS",
     "title": "Counting Divisors",
     "full_title": "Counting Divisors",
@@ -2877,6 +3556,81 @@
     "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
     "tutorial_path": "topics/math/number-theory-basics/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
+  },
+  {
+    "code": "FACTORIZE",
+    "title": "Factorize",
+    "full_title": "Factorize",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/factorize",
+    "main_topic": "Math -> Pollard-Rho",
+    "secondary_topics": [
+      "Miller-Rabin",
+      "Pollard-Rho",
+      "64-bit factorization"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/pollard-rho",
+    "topic_tags": [
+      "math/pollard-rho"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/pollard-rho/factorize.md",
+    "ladder_path": "practice/ladders/math/pollard-rho/README.md",
+    "tutorial_path": "topics/math/pollard-rho/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/pollard-rho/factorize.cpp"
+  },
+  {
+    "code": "INVOFFORMALPOWERSERIES",
+    "title": "Inv of Formal Power Series",
+    "full_title": "Inv of Formal Power Series",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/inv_of_formal_power_series",
+    "main_topic": "Math -> Polynomial / Formal Power Series",
+    "secondary_topics": [
+      "Formal power series",
+      "NTT",
+      "Newton iteration"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/polynomial-fps",
+    "topic_tags": [
+      "math/polynomial-fps"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/polynomial-fps/invofformalpowerseries.md",
+    "ladder_path": "practice/ladders/math/polynomial-fps/README.md",
+    "tutorial_path": "topics/math/polynomial-fps/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/polynomial-fps/invofformalpowerseries.cpp"
+  },
+  {
+    "code": "PRIMITIVEROOT",
+    "title": "Primitive Root",
+    "full_title": "Primitive Root",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/primitive_root",
+    "main_topic": "Math -> Primitive Root",
+    "secondary_topics": [
+      "Generator test",
+      "Factorization of p-1",
+      "Fast power"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/primitive-root",
+    "topic_tags": [
+      "math/primitive-root"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/primitive-root/primitiveroot.md",
+    "ladder_path": "practice/ladders/math/primitive-root/README.md",
+    "tutorial_path": "topics/math/primitive-root/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/primitive-root/primitiveroot.cpp"
   },
   {
     "code": "DICEPROBABILITY",
@@ -3147,6 +3901,31 @@
     "ladder_path": "practice/ladders/strings/suffix-automaton/README.md",
     "tutorial_path": "topics/strings/suffix-automaton/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-automaton/distinctsubstrings.cpp"
+  },
+  {
+    "code": "PATTERNPOSITIONS",
+    "title": "Pattern Positions",
+    "full_title": "Pattern Positions",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2104",
+    "main_topic": "Strings -> Suffix Tree",
+    "secondary_topics": [
+      "Compressed suffix trie",
+      "Edge-interval matching",
+      "Subtree minimum"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "strings/suffix-tree",
+    "topic_tags": [
+      "strings/suffix-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/strings/suffix-tree/patternpositions.md",
+    "ladder_path": "practice/ladders/strings/suffix-tree/README.md",
+    "tutorial_path": "topics/strings/suffix-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/suffix-tree/patternpositions.cpp"
   },
   {
     "code": "WORDCOMBINATIONS",

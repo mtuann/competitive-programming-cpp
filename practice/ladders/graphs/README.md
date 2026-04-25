@@ -14,9 +14,12 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 8. 2-SAT once implication graphs and SCCs feel natural
 9. trees and subtree flattening
 10. LCA
-11. heavy-light decomposition when path queries need a range structure
-12. centroid decomposition when balanced recursive splits become the main tool
-13. flow and matching
+11. virtual tree when each query only marks a small subset of vertices but the union of marked paths still matters
+12. heavy-light decomposition when path queries need a range structure
+13. centroid decomposition when balanced recursive splits become the main tool
+14. link-cut tree when the tree topology itself changes online
+15. Euler tour tree when the topology changes online but the live query is still subtree-side
+16. flow and matching
 
 ## Subtopic Ladders
 
@@ -31,8 +34,11 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [Trees](trees/README.md)
 - [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
+- [Virtual Tree / Auxiliary Tree](virtual-tree/README.md)
 - [Heavy-light decomposition](hld/README.md)
 - [Centroid decomposition](centroid-decomposition/README.md)
+- [Link-cut tree](link-cut-tree/README.md)
+- [Euler tour tree](euler-tour-tree/README.md)
 - [Flow](flow/README.md)
 - [Matching](matching/README.md)
 - [Tree DP notes](tree-dp/README.md)
@@ -46,7 +52,10 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 - [QOS](shortest-paths/qos.md)
 - [Giant Pizza](two-sat/giantpizza.md)
 - [Subtree Queries](euler-tour-subtree/subtreequeries.md)
+- [Kingdom and its Cities](virtual-tree/kingdomanditscities.md)
 - [Ciel the Commander](centroid-decomposition/cielthecommander.md)
+- [Dynamic Tree Vertex Add Path Sum](link-cut-tree/dynamictreevertexaddpathsum.md)
+- [Dynamic Tree Vertex Add Subtree Sum](euler-tour-tree/dynamictreevertexaddsubtreesum.md)
 - [FFLOW](flow/fflow.md)
 - [MINCOST](flow/mincost.md)
 - [Path Queries II](hld/pathqueries2.md)

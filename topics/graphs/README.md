@@ -15,8 +15,11 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Trees](trees/README.md)
 - [Euler Tour / Subtree Queries](euler-tour-subtree/README.md)
 - [LCA](lca/README.md)
+- [Virtual Tree / Auxiliary Tree](virtual-tree/README.md)
 - [Heavy-Light Decomposition](hld/README.md)
 - [Centroid Decomposition](centroid-decomposition/README.md)
+- [Link-Cut Tree](link-cut-tree/README.md)
+- [Euler Tour Tree](euler-tour-tree/README.md)
 - [Maximum Flow](flow/README.md)
 - [Flow With Lower Bounds](flow-lower-bounds/README.md)
 - [Min-Cost Flow](min-cost-flow/README.md)
@@ -41,10 +44,10 @@ Graphs are one of the central contest areas because many problems are really abo
 - bridges, articulation points, and low-link structure
 - Eulerian path / cycle when edge-exhaustion walks start repeating
 - 2-SAT once SCC condensation is comfortable
-- trees, subtree flattening, LCA, and rerooting-style thinking
+- trees, subtree flattening, LCA, virtual-tree compression on marked subsets, and rerooting-style thinking
 
 3. Advanced later
-- heavy-light and more specialized tree machinery such as centroid decomposition
+- heavy-light, centroid decomposition, and dynamic-tree machinery such as link-cut trees and Euler tour trees
 - flow, lower-bounded circulation, and min-cost flow
 - matching
 
@@ -73,7 +76,10 @@ After this section, you should be able to recognize the common graph models, cho
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
 - [Giant Pizza](../../practice/ladders/graphs/two-sat/giantpizza.md): binary clause modeling and SCC-based assignment extraction
 - [Subtree Queries](../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md): subtree intervals reduced to one Fenwick-backed range query
+- [Kingdom and its Cities](../../practice/ladders/graphs/virtual-tree/kingdomanditscities.md): marked-subset compression via LCAs before a query-local tree DP
 - [Ciel the Commander](../../practice/ladders/graphs/centroid-decomposition/cielthecommander.md): build the centroid tree itself and use centroid depth as the answer
+- [Dynamic Tree Vertex Add Path Sum](../../practice/ladders/graphs/link-cut-tree/dynamictreevertexaddpathsum.md): online `link / cut` plus vertex-add path-sum queries on one changing forest
+- [Dynamic Tree Vertex Add Subtree Sum](../../practice/ladders/graphs/euler-tour-tree/dynamictreevertexaddsubtreesum.md): online `link / cut` plus subtree-side sums via a dynamic Euler-tour sequence
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
 - [Reactor Cooling](../../practice/ladders/graphs/flow/reactorcooling.md): feasible circulation under lower and upper edge bounds
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling

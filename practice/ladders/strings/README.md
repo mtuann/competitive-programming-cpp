@@ -11,7 +11,8 @@ Use these ladders when string problems start blurring together and you want a cl
 5. trie
 6. Aho-Corasick
 7. suffix array
-8. suffix automaton
+8. suffix tree
+9. suffix automaton
 
 ## Warm Start
 
@@ -46,3 +47,4 @@ That route keeps the focus on exact prefix-style reasoning, then one clean palin
 - [Finding Periods](z-function/findingperiods.md)
 - [Longest Palindrome](palindromes/longestpalindrome.md)
 - [Distinct Palindromic Substrings](eertree/distinctpalindromicsubstrings.md)
+- [Pattern Positions](suffix-tree/patternpositions.md)

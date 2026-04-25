@@ -7,10 +7,16 @@ Dynamic programming is about choosing a state that captures exactly what still m
 - [DP Foundations](foundations/README.md)
 - [Knapsack Family](knapsack-family/README.md)
 - [Bitmask DP](bitmask-dp/README.md)
+- [SOS DP](sos-dp/README.md)
+- [Broken Profile / Plug DP](broken-profile/README.md)
 - [Tree DP](tree-dp/README.md)
 - [Digit DP](digit-dp/README.md)
 - [Interval DP](interval-dp/README.md)
+- [Divide and Conquer DP](divide-and-conquer-dp/README.md)
+- [Knuth Optimization](knuth-optimization/README.md)
 - [Convex Hull Trick / Li Chao Tree](cht-li-chao/README.md)
+- [Slope Trick](slope-trick/README.md)
+- [Lagrangian Relaxation / Aliens Trick](lagrangian-relaxation/README.md)
 
 ## Entry
 
@@ -31,8 +37,13 @@ Dynamic programming is about choosing a state that captures exactly what still m
 - interval DP
 
 3. Advanced later
-- optimization techniques
+- SOS / subset-superset transforms on the full mask cube
+- broken profile / frontier-mask DP on grids
+- optimization techniques such as divide-and-conquer DP
+- Knuth-style or other stronger interval / partition optimizations
 - convex hull trick / Li Chao tree
+- slope trick for convex piecewise-linear position/value DP
+- Lagrangian relaxation / Aliens trick when exact `K` is the expensive dimension
 - rerooting-style DP patterns
 - profile and divide-and-conquer style DP
 
@@ -55,6 +66,12 @@ After this section, you should be able to define states deliberately, justify tr
 ## Solved Examples In This Repo
 
 - [TFIELD - Ruộng bậc thang](../../practice/ladders/dp/sliding-window/tfield.md): weighted window reasoning over sorted polygon layers
+- [Compatible Numbers](../../practice/ladders/dp/sos-dp/compatiblenumbers.md): complement-mask witness propagation over the full boolean cube
+- [Ciel and Gondolas](../../practice/ladders/dp/divide-and-conquer-dp/cielandgondolas.md): partition DP with precomputed interval cost and monotone split optimization
+- [Knuth Division](../../practice/ladders/dp/knuth-optimization/knuthdivision.md): merge-style interval DP where the split search shrinks to the Knuth window
+- [Line Add Get Min](../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md): direct online line-container verifier for the full-domain branch of the affine-DP family
+- [Snuketoon](../../practice/ladders/dp/slope-trick/snuketoon.md): convex position-DP maintained by slope trick with one-sided penalties and bounded movement
+- [Red and Blue Lamps](../../practice/ladders/dp/lagrangian-relaxation/redandbluelamps.md): exact-`R` path selection recovered from a penalized linear DP
 
 ## Go Deeper
 

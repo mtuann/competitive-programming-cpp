@@ -30,6 +30,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - [Eertree / Palindromic Tree](eertree/README.md)
 - [Trie](trie/README.md)
 - [Aho-Corasick](aho-corasick/README.md)
+- [Suffix Tree](suffix-tree/README.md)
 - [Suffix Array And LCP](suffix-array-lcp/README.md)
 - [Suffix Automaton](suffix-automaton/README.md)
 
@@ -54,6 +55,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - suffix array and LCP
 
 3. Advanced later
+- suffix tree
 - suffix automaton
 - border-heavy variants
 - substring data-structure combinations
@@ -80,7 +82,8 @@ After this section, you should be able to:
 - know when one static palindrome scan wants Manacher instead of hashing
 - know when a growing string wants the dictionary of distinct palindromes instead of raw radii
 - recognize when a trie or Aho-Corasick is the right many-pattern structure
-- use suffix array for static-string substring structure
+- use suffix tree when one fixed text should act like a compressed substring index
+- use suffix array for static-string suffix-order and LCP structure
 - know when suffix automaton is worth the extra conceptual weight
 
 ## Go Deeper

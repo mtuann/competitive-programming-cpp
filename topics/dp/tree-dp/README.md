@@ -470,7 +470,7 @@ Important next-layer directions include:
 
 - rerooting / all-roots DP in full detail
 - tree knapsack
-- DP on virtual trees
+- DP on [virtual trees](../../graphs/virtual-tree/README.md)
 - combining tree DP with bitmask or other secondary state dimensions
 
 The right study order is:

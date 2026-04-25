@@ -742,6 +742,81 @@
       }
     ]
   },
+  "data-structures/dsu-on-tree": {
+    "title": "Data Structures -> DSU On Tree / Small-To-Large",
+    "summary": "Rooted-tree subtree queries where each child contributes a mergeable container and smaller containers are merged into larger surviving ones.",
+    "topic_path": "topics/data-structures/dsu-on-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/dsu-on-tree/README.md",
+    "microtopics": [
+      "small-to-large-merging",
+      "subtree-container",
+      "frequency-map-merge",
+      "sack-compare-point",
+      "subtree-distinct",
+      "amortized-doubling"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Small-To-Large Merging",
+        "url": "https://usaco.guide/plat/merging",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki DSU on Tree",
+        "url": "https://en.oi-wiki.org/graph/dsu-on-tree/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "SOI Wiki Smaller to Larger",
+        "url": "https://soi.ch/wiki/smaller-to-larger/",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Distinct Colors",
+        "url": "https://cses.fi/problemset/task/1139/",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces Lomsat gelral",
+        "url": "https://codeforces.com/problemset/problem/600/E",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "DSU On Tree hot sheet",
+        "path": "notebook/dsu-on-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Distinct Colors note",
+        "path": "practice/ladders/data-structures/dsu-on-tree/distinctcolors.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "DSU on tree starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "DSU tutorial",
+        "path": "topics/data-structures/dsu/README.md",
+        "kind": "adjacent tutorial"
+      },
+      {
+        "label": "Tree DP tutorial",
+        "path": "topics/dp/tree-dp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Mo's Algorithm tutorial",
+        "path": "topics/data-structures/mos-algorithm/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/persistent-data-structures": {
     "title": "Data Structures -> Persistent Data Structures",
     "summary": "Path-copying data structures where updates create new version roots and old snapshots remain queryable.",
@@ -813,6 +888,66 @@
       {
         "label": "DSU Rollback tutorial",
         "path": "topics/data-structures/dsu-rollback/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "data-structures/persistent-treap": {
+    "title": "Data Structures -> Persistent Treap",
+    "summary": "Persistent split/merge treap for branching list or sequence versions where old roots remain alive.",
+    "topic_path": "topics/data-structures/persistent-treap/README.md",
+    "ladder_path": "practice/ladders/data-structures/persistent-treap/README.md",
+    "microtopics": [
+      "persistent-treap",
+      "persistent-implicit-treap",
+      "split-merge-persistence",
+      "branching-list-versions",
+      "path-copying",
+      "subtree-sum"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki persistent balanced tree",
+        "url": "https://en.oi-wiki.org/ds/persistent-balanced/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide treaps",
+        "url": "https://usaco.guide/adv/treaps",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "E-olymp Persistent list",
+        "url": "https://eolymp.com/en/problems/2957",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Persistent Treap hot sheet",
+        "path": "notebook/persistent-treap-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Persistent List note",
+        "path": "practice/ladders/data-structures/persistent-treap/persistentlist.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Persistent Treap starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Persistent Data Structures tutorial",
+        "path": "topics/data-structures/persistent-data-structures/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Treap / Implicit Treap tutorial",
+        "path": "topics/data-structures/treap-implicit/README.md",
         "kind": "compare point"
       }
     ]
@@ -967,6 +1102,252 @@
       }
     ]
   },
+  "data-structures/pbds-order-statistics": {
+    "title": "Data Structures -> PBDS / Order Statistics Tree",
+    "summary": "GNU PBDS ordered tree for online rank, k-th, and count-smaller queries, with a pair-key wrapper when duplicates matter.",
+    "topic_path": "topics/data-structures/pbds-order-statistics/README.md",
+    "ladder_path": "practice/ladders/data-structures/pbds-order-statistics/README.md",
+    "microtopics": [
+      "order-of-key",
+      "find-by-order",
+      "dynamic-rank",
+      "kth-smallest",
+      "pair-key-wrapper",
+      "gnu-pbds"
+    ],
+    "learning_sources": [
+      {
+        "label": "GCC tree_order_statistics_node_update",
+        "url": "https://gcc.gnu.org/onlinedocs/libstdc%2B%2B/ext/pb_ds/tree_order_statistics_node_update.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "GCC PBDS manual",
+        "url": "https://gcc.gnu.org/onlinedocs/gcc-9.3.0/libstdc%2B%2B/manual/manual/policy_data_structures.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://cses.fi/book/book.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "SPOJ ORDERSET",
+        "url": "https://www.spoj.com/problems/ORDERSET/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Josephus Problem II",
+        "url": "https://cses.fi/problemset/task/2163",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Salary Queries",
+        "url": "https://cses.fi/problemset/task/1144",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Order Statistics Tree hot sheet",
+        "path": "notebook/order-statistics-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "PBDS starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "ORDERSET note",
+        "path": "practice/ladders/data-structures/pbds-order-statistics/orderset.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Heaps And Ordered Sets tutorial",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Fenwick Tree tutorial",
+        "path": "topics/data-structures/fenwick-tree/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "data-structures/balanced-bsts": {
+    "title": "Data Structures -> Balanced BSTs For Contests",
+    "summary": "Compare note for AVL, Red-Black, Scapegoat, Size Balanced Tree, and sibling textbook balancing families, explaining when PBDS or treap is still the cleaner contest retrieval route.",
+    "topic_path": "topics/data-structures/balanced-bsts/README.md",
+    "ladder_path": "practice/ladders/data-structures/balanced-bsts/README.md",
+    "microtopics": [
+      "avl-balance-invariant",
+      "red-black-invariants",
+      "scapegoat-rebuilds",
+      "size-balanced-tree-invariants",
+      "ll-rr-lr-rl-rotations",
+      "deterministic-balanced-bst",
+      "library-style-ordered-container",
+      "rebuild-based-balancing",
+      "size-driven-balancing",
+      "ordered-set-compare",
+      "pbds-vs-treap-vs-avl",
+      "duplicates-via-count"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki AVL",
+        "url": "https://oi-wiki.org/ds/avl/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Red-Black Tree",
+        "url": "https://oi-wiki.org/ds/rbtree/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Scapegoat Tree",
+        "url": "https://oi-wiki.org/ds/sgt/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Size Balanced Tree",
+        "url": "https://oi-wiki.org/ds/sbt/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cppreference std::set",
+        "url": "https://en.cppreference.com/w/cpp/container/set",
+        "kind": "official docs"
+      },
+      {
+        "label": "GCC PBDS manual",
+        "url": "https://gcc.gnu.org/onlinedocs/gcc-9.3.0/libstdc%2B%2B/manual/manual/policy_data_structures.html",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Luogu P3369 - 普通平衡树",
+        "url": "https://www.luogu.com.cn/problem/P3369",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ ORDERSET",
+        "url": "https://www.spoj.com/problems/ORDERSET/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Salary Queries",
+        "url": "https://cses.fi/problemset/task/1144",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Balanced BST hot sheet",
+        "path": "notebook/balanced-bst-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "PBDS / Order Statistics Tree tutorial",
+        "path": "topics/data-structures/pbds-order-statistics/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Treap / Implicit Treap tutorial",
+        "path": "topics/data-structures/treap-implicit/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Splay Tree tutorial",
+        "path": "topics/data-structures/splay-tree/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Balanced BSTs ladder",
+        "path": "practice/ladders/data-structures/balanced-bsts/README.md",
+        "kind": "compare track"
+      },
+      {
+        "label": "Heaps And Ordered Sets tutorial",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "adjacent tutorial"
+      }
+    ]
+  },
+  "data-structures/splay-tree": {
+    "title": "Data Structures -> Splay Tree",
+    "summary": "Self-adjusting ordered multiset with parent-pointer rotations, subtree-size order statistics, duplicate counts, and a direct bridge into link-cut tree auxiliary splay machinery.",
+    "topic_path": "topics/data-structures/splay-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/splay-tree/README.md",
+    "microtopics": [
+      "self-adjusting-bst",
+      "zig-zig-zag",
+      "subtree-size-order-statistics",
+      "duplicate-counts",
+      "amortized-logarithmic",
+      "auxiliary-splay-bridge"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki Splay",
+        "url": "https://en.oi-wiki.org/ds/splay/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Self-Adjusting Binary Search Trees",
+        "url": "https://www.cs.cmu.edu/~sleator/papers/self-adjusting.pdf",
+        "kind": "paper"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Luogu P3369 - 普通平衡树",
+        "url": "https://www.luogu.com.cn/problem/P3369",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ ORDERSET",
+        "url": "https://www.spoj.com/problems/ORDERSET/",
+        "kind": "problem"
+      },
+      {
+        "label": "Luogu P3391 - 文艺平衡树",
+        "url": "https://www.luogu.com.cn/problem/P3391",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Splay Tree hot sheet",
+        "path": "notebook/splay-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Ordinary Balanced Tree note",
+        "path": "practice/ladders/data-structures/splay-tree/ordinarybalancedtree.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Link-Cut Tree tutorial",
+        "path": "topics/graphs/link-cut-tree/README.md",
+        "kind": "bridge topic"
+      },
+      {
+        "label": "Balanced BSTs For Contests",
+        "path": "topics/data-structures/balanced-bsts/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/wavelet-tree": {
     "title": "Data Structures -> Wavelet Tree",
     "summary": "Static range order-statistics and value-counting structure that rewrites one queried interval through value partitions with prefix-left counts.",
@@ -1044,11 +1425,13 @@
     "ladder_path": "practice/ladders/data-structures/treap-implicit/README.md",
     "microtopics": [
       "random-priorities",
+      "key-order-statistics",
       "split-merge",
       "implicit-key",
       "subtree-size",
       "sequence-surgery",
-      "ordered-set-vs-sequence"
+      "ordered-set-vs-sequence",
+      "pair-key-wrapper"
     ],
     "learning_sources": [
       {
@@ -1063,6 +1446,11 @@
       }
     ],
     "practice_sources": [
+      {
+        "label": "CSES Salary Queries",
+        "url": "https://cses.fi/problemset/task/1144",
+        "kind": "problem"
+      },
       {
         "label": "CSES Cut and Paste",
         "url": "https://cses.fi/problemset/task/2072",
@@ -1086,14 +1474,34 @@
         "kind": "quick reference"
       },
       {
-        "label": "Treap starter route",
+        "label": "Key-based Treap starter route",
         "path": "template-library.md",
         "kind": "starter route"
+      },
+      {
+        "label": "Implicit Treap family route",
+        "path": "practice/ladders/data-structures/treap-implicit/README.md",
+        "kind": "family route"
+      },
+      {
+        "label": "Salary Queries note",
+        "path": "practice/ladders/data-structures/treap-implicit/salaryqueries.md",
+        "kind": "anchor note"
       },
       {
         "label": "Cut and Paste note",
         "path": "practice/ladders/data-structures/treap-implicit/cutandpaste.md",
         "kind": "anchor note"
+      },
+      {
+        "label": "Persistent Treap tutorial",
+        "path": "topics/data-structures/persistent-treap/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "PBDS / Order Statistics Tree tutorial",
+        "path": "topics/data-structures/pbds-order-statistics/README.md",
+        "kind": "compare point"
       },
       {
         "label": "Heaps And Ordered Sets tutorial",
@@ -1203,6 +1611,136 @@
         "label": "Templates overview",
         "path": "template-library.md",
         "kind": "template guide"
+      }
+    ]
+  },
+  "data-structures/pairing-leftist-heap": {
+    "title": "Data Structures -> Pairing Heap / Leftist Heap",
+    "summary": "Use a meldable heap when many singleton heaps keep unioning and the real primitive is merge rather than push.",
+    "topic_path": "topics/data-structures/pairing-leftist-heap/README.md",
+    "ladder_path": "practice/ladders/data-structures/pairing-leftist-heap/README.md",
+    "microtopics": [
+      "meldable-heap",
+      "leftist-heap",
+      "pairing-heap",
+      "merge",
+      "delete-min",
+      "owner-tracking"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki leftist tree",
+        "url": "https://en.oi-wiki.org/ds/leftist-tree/",
+        "kind": "reference"
+      },
+      {
+        "label": "OI Wiki pairing heap",
+        "url": "https://en.oi-wiki.org/ds/pairing-heap/",
+        "kind": "reference"
+      },
+      {
+        "label": "Luogu P3377",
+        "url": "https://www.luogu.com.cn/problem/P3377",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Luogu P3377",
+        "url": "https://www.luogu.com.cn/problem/P3377",
+        "kind": "problem"
+      },
+      {
+        "label": "Luogu P1456",
+        "url": "https://www.luogu.com.cn/problem/P1456",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Pairing / Leftist Heap hot sheet",
+        "path": "notebook/pairing-leftist-heap-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Mergeable Heap 1",
+        "path": "practice/ladders/data-structures/pairing-leftist-heap/mergeableheap1.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Heaps And Ordered Sets",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "data-structures/odt-chtholly": {
+    "title": "Data Structures -> ODT / Chtholly",
+    "summary": "Ordered-set interval partition for piecewise-constant arrays where range assign keeps collapsing runs and range walks are acceptable.",
+    "topic_path": "topics/data-structures/odt-chtholly/README.md",
+    "ladder_path": "practice/ladders/data-structures/odt-chtholly/README.md",
+    "microtopics": [
+      "split",
+      "interval-partition",
+      "range-assign",
+      "piecewise-constant",
+      "kth-over-runs",
+      "expected-complexity"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki ODT",
+        "url": "https://oi-wiki.org/misc/odt/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Codeforces Round #449 Editorial",
+        "url": "https://codeforces.com/topic/56423/en2?mobile=false",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "CF896C Willem, Chtholly and Seniorious",
+        "url": "https://codeforces.com/problemset/problem/896/C?mobile=true",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CF896C Willem, Chtholly and Seniorious",
+        "url": "https://codeforces.com/problemset/problem/896/C?mobile=true",
+        "kind": "problem"
+      },
+      {
+        "label": "CF915E Physical Education Lessons",
+        "url": "https://codeforces.com/problemset/problem/915/E",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "ODT / Chtholly hot sheet",
+        "path": "notebook/odt-chtholly-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Willem, Chtholly and Seniorious",
+        "path": "practice/ladders/data-structures/odt-chtholly/willemchthollyandseniorious.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Lazy Segment Tree tutorial",
+        "path": "topics/data-structures/lazy-segment-tree/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },
@@ -1649,6 +2187,163 @@
       }
     ]
   },
+  "graphs/link-cut-tree": {
+    "title": "Graphs -> Link-Cut Tree",
+    "summary": "Dynamic-forest path structure for online link/cut, connectivity, and path aggregates on one changing tree forest.",
+    "topic_path": "topics/graphs/link-cut-tree/README.md",
+    "ladder_path": "practice/ladders/graphs/link-cut-tree/README.md",
+    "microtopics": [
+      "preferred-path",
+      "access",
+      "makeroot",
+      "splay-auxiliary-tree",
+      "dynamic-forest",
+      "path-aggregate",
+      "link-cut"
+    ],
+    "learning_sources": [
+      {
+        "label": "Sleator and Tarjan - A Data Structure for Dynamic Trees",
+        "url": "https://www.cs.cmu.edu/~sleator/papers/dynamic-trees.pdf",
+        "kind": "paper"
+      },
+      {
+        "label": "USACO Guide Link Cut Tree",
+        "url": "https://usaco.guide/adv/link-cut-tree?lang=cpp",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Link-Cut Tree",
+        "url": "https://en.oi-wiki.org/ds/lct/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Dynamic Tree Vertex Add Path Sum",
+        "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Dynamic Tree Vertex Set Path Composite",
+        "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_set_path_composite",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide Link Cut Tree",
+        "url": "https://usaco.guide/adv/link-cut-tree?lang=cpp",
+        "kind": "trusted guide"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Link-Cut Tree hot sheet",
+        "path": "notebook/link-cut-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Link-Cut starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Dynamic Tree Vertex Add Path Sum note",
+        "path": "practice/ladders/graphs/link-cut-tree/dynamictreevertexaddpathsum.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Splay Tree tutorial",
+        "path": "topics/data-structures/splay-tree/README.md",
+        "kind": "bridge topic"
+      },
+      {
+        "label": "Heavy-Light Decomposition tutorial",
+        "path": "topics/graphs/hld/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Euler Tour / Subtree Queries tutorial",
+        "path": "topics/graphs/euler-tour-subtree/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "graphs/euler-tour-tree": {
+    "title": "Graphs -> Euler Tour Tree",
+    "summary": "Dynamic-forest subtree structure for online link/cut, reroot by sequence rotation, and subtree-side aggregates on one changing tree forest.",
+    "topic_path": "topics/graphs/euler-tour-tree/README.md",
+    "ladder_path": "practice/ladders/graphs/euler-tour-tree/README.md",
+    "microtopics": [
+      "self-loop-token",
+      "directed-edge-token",
+      "make-root-by-rotation",
+      "split-merge-sequence",
+      "dynamic-forest",
+      "subtree-interval",
+      "edge-oriented-subtree"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki Euler Tour Tree",
+        "url": "https://en.oi-wiki.org/ds/ett/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Library Checker Dynamic Tree Vertex Add Subtree Sum statement",
+        "url": "https://github.com/yosupo06/library-checker-problems/blob/master/tree/dynamic_tree_vertex_add_subtree_sum/task.md",
+        "kind": "official docs"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Dynamic Tree Vertex Add Subtree Sum",
+        "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_subtree_sum",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Dynamic Tree Subtree Add Subtree Sum",
+        "url": "https://judge.yosupo.jp/problem/dynamic_tree_subtree_add_subtree_sum",
+        "kind": "problem"
+      },
+      {
+        "label": "OI Wiki Euler Tour Tree",
+        "url": "https://en.oi-wiki.org/ds/ett/",
+        "kind": "trusted guide"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Euler Tour Tree hot sheet",
+        "path": "notebook/euler-tour-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Euler Tour Tree starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Dynamic Tree Vertex Add Subtree Sum note",
+        "path": "practice/ladders/graphs/euler-tour-tree/dynamictreevertexaddsubtreesum.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Link-Cut Tree tutorial",
+        "path": "topics/graphs/link-cut-tree/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Euler Tour / Subtree Queries tutorial",
+        "path": "topics/graphs/euler-tour-subtree/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Treap / Implicit Treap tutorial",
+        "path": "topics/data-structures/treap-implicit/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "graphs/shortest-paths": {
     "title": "Graphs -> Shortest Paths",
     "summary": "From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool that matches the edge model.",
@@ -1944,6 +2639,81 @@
         "label": "USACO contest archive",
         "url": "https://usaco.org/index.php?page=contests",
         "kind": "contest archive"
+      }
+    ]
+  },
+  "graphs/virtual-tree": {
+    "title": "Graphs -> Virtual Tree / Auxiliary Tree",
+    "summary": "Compress one marked subset of a static rooted tree into the LCAs and branch points that still matter, then run the real query-local DP on that smaller tree.",
+    "topic_path": "topics/graphs/virtual-tree/README.md",
+    "ladder_path": "practice/ladders/graphs/virtual-tree/README.md",
+    "microtopics": [
+      "marked-subset",
+      "dfs-order",
+      "consecutive-lca",
+      "ancestor-stack",
+      "compressed-tree",
+      "query-local-dp"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki virtual tree",
+        "url": "https://en.oi-wiki.org/graph/virtual-tree/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Codeforces Round #339 editorial",
+        "url": "https://codeforces.com/topic/22942/en1",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "Codeforces 613D - Kingdom and its Cities",
+        "url": "https://codeforces.com/problemset/problem/613/D",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      },
+      {
+        "label": "AtCoder problems archive",
+        "url": "https://atcoder.jp/contests/archive",
+        "kind": "contest archive"
+      },
+      {
+        "label": "OI Wiki virtual tree",
+        "url": "https://en.oi-wiki.org/graph/virtual-tree/",
+        "kind": "trusted guide"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Virtual Tree hot sheet",
+        "path": "notebook/virtual-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Virtual Tree starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Kingdom and its Cities note",
+        "path": "practice/ladders/graphs/virtual-tree/kingdomanditscities.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "LCA tutorial",
+        "path": "topics/graphs/lca/README.md",
+        "kind": "prerequisite tutorial"
+      },
+      {
+        "label": "Tree DP tutorial",
+        "path": "topics/dp/tree-dp/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -2458,6 +3228,141 @@
       }
     ]
   },
+  "dp/broken-profile": {
+    "title": "DP -> Broken Profile / Plug DP",
+    "summary": "Frontier-mask DP on small-width grids, with occupancy masks first and connectivity-labeled plug states as the stronger follow-up.",
+    "topic_path": "topics/dp/broken-profile/README.md",
+    "ladder_path": "practice/ladders/dp/broken-profile/README.md",
+    "microtopics": [
+      "frontier-mask",
+      "profile-dp",
+      "column-sweep",
+      "next-mask-generation",
+      "domino-tiling",
+      "plug-dp"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms broken profile",
+        "url": "https://cp-algorithms.com/dynamic_programming/profile-dynamics.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide broken profile",
+        "url": "https://usaco.guide/adv/dp-broken-profile",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki plug DP",
+        "url": "https://en.oi-wiki.org/dp/plug/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Counting Tilings",
+        "url": "https://cses.fi/problemset/task/2181/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide broken profile",
+        "url": "https://usaco.guide/adv/dp-broken-profile",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Broken Profile hot sheet",
+        "path": "notebook/broken-profile-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Counting Tilings note",
+        "path": "practice/ladders/dp/broken-profile/countingtilings.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Bitmask DP",
+        "path": "topics/dp/bitmask-dp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "dp/sos-dp": {
+    "title": "DP -> SOS DP",
+    "summary": "Subset/superset zeta sweeps on the full boolean cube, including witness propagation after complement-mask modeling.",
+    "topic_path": "topics/dp/sos-dp/README.md",
+    "ladder_path": "practice/ladders/dp/sos-dp/README.md",
+    "microtopics": [
+      "subset-zeta",
+      "superset-zeta",
+      "mask-cube-sweep",
+      "subset-aggregates",
+      "complement-masks",
+      "witness-propagation"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Sum over Subsets DP",
+        "url": "https://usaco.guide/plat/dp-sos?lang=py",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki prefix sum and SOS subsection",
+        "url": "https://oi-wiki.org/basic/prefix-sum/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces Compatible Numbers",
+        "url": "https://codeforces.com/problemset/problem/165/E",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES SOS Bit Problem",
+        "url": "https://cses.fi/problemset/task/1654/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "SOS DP hot sheet",
+        "path": "notebook/sos-dp-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Compatible Numbers",
+        "path": "practice/ladders/dp/sos-dp/compatiblenumbers.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Bitmask DP",
+        "path": "topics/dp/bitmask-dp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "quick reference"
+      }
+    ]
+  },
   "dp/tree-dp": {
     "title": "DP -> Tree DP",
     "summary": "DP on rooted trees, rerooting, subtree merges, and local state design for hierarchical structures.",
@@ -2549,6 +3454,146 @@
       }
     ]
   },
+  "dp/divide-and-conquer-dp": {
+    "title": "DP -> Divide and Conquer DP",
+    "summary": "Monotone-opt partition DP where one row cur[i] = min(prev[k] + cost(k+1, i)) is computed by recursive split-range shrinking.",
+    "topic_path": "topics/dp/divide-and-conquer-dp/README.md",
+    "ladder_path": "practice/ladders/dp/divide-and-conquer-dp/README.md",
+    "microtopics": [
+      "partition-dp",
+      "monotone-argmin",
+      "row-optimization",
+      "interval-cost-precompute",
+      "opt-range-shrink",
+      "divide-and-conquer-row"
+    ],
+    "learning_sources": [
+      {
+        "label": "CP-Algorithms Divide and Conquer DP",
+        "url": "https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Divide & Conquer - DP",
+        "url": "https://usaco.guide/plat/DC-DP",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces Ciel and Gondolas",
+        "url": "https://codeforces.com/problemset/problem/321/E",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces Yet Another Minimization Problem",
+        "url": "https://codeforces.com/problemset/problem/868/F",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Divide and Conquer DP hot sheet",
+        "path": "notebook/divide-and-conquer-dp-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Ciel and Gondolas",
+        "path": "practice/ladders/dp/divide-and-conquer-dp/cielandgondolas.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Convex Hull Trick / Li Chao Tree tutorial",
+        "path": "topics/dp/cht-li-chao/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "dp/knuth-optimization": {
+    "title": "DP -> Knuth Optimization",
+    "summary": "O(n^2) optimization for split-point interval DP dp[l][r] = min(dp[l][k] + dp[k+1][r] + cost(l, r)) when the opt window is monotone.",
+    "topic_path": "topics/dp/knuth-optimization/README.md",
+    "ladder_path": "practice/ladders/dp/knuth-optimization/README.md",
+    "microtopics": [
+      "interval-dp-optimization",
+      "knuth-window",
+      "opt-monotonicity",
+      "quadrangle-inequality",
+      "merge-cost-dp",
+      "rightmost-argmin"
+    ],
+    "learning_sources": [
+      {
+        "label": "CP-Algorithms Knuth's Optimization",
+        "url": "https://cp-algorithms.com/dynamic_programming/knuth-optimization.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Knuth Division",
+        "url": "https://cses.fi/problemset/task/2088/",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder DP N - Slimes",
+        "url": "https://atcoder.jp/contests/dp/tasks/dp_n",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Knuth Optimization hot sheet",
+        "path": "notebook/knuth-optimization-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Knuth Division",
+        "path": "practice/ladders/dp/knuth-optimization/knuthdivision.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Interval DP tutorial",
+        "path": "topics/dp/interval-dp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Divide and Conquer DP tutorial",
+        "path": "topics/dp/divide-and-conquer-dp/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "dp/cht-li-chao": {
     "title": "DP -> Convex Hull Trick / Li Chao Tree",
     "summary": "Affine-DP optimization where previous states become lines and current states become point queries.",
@@ -2593,9 +3638,159 @@
         "kind": "quick reference"
       },
       {
+        "label": "Line Add Get Min note",
+        "path": "practice/ladders/dp/cht-li-chao/lineaddgetmin.md",
+        "kind": "flagship note"
+      },
+      {
         "label": "Monster Game II note",
         "path": "practice/ladders/dp/cht-li-chao/monstergame2.md",
         "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "dp/slope-trick": {
+    "title": "DP -> Slope Trick",
+    "summary": "Convex piecewise-linear DP over one integer coordinate maintained by hinge additions and bounded argmin shifts.",
+    "topic_path": "topics/dp/slope-trick/README.md",
+    "ladder_path": "practice/ladders/dp/slope-trick/README.md",
+    "microtopics": [
+      "convex-piecewise-linear-dp",
+      "two-heaps",
+      "hinge-penalties",
+      "argmin-interval",
+      "shift-min",
+      "movement-relaxation"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ABC217 H Editorial",
+        "url": "https://atcoder.jp/contests/abc217/editorial/2620?lang=en",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "AtCoder ABC406 G Editorial",
+        "url": "https://atcoder.jp/contests/abc406/editorial/13055",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "AtCoder ARC163 F Editorial",
+        "url": "https://atcoder.jp/contests/arc163/editorial/6731?lang=en",
+        "kind": "problem writeup"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder ABC127 F Absolute Minima",
+        "url": "https://atcoder.jp/contests/abc127/tasks/abc127_f",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC217 H Snuketoon",
+        "url": "https://atcoder.jp/contests/abc217/tasks/abc217_h",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC406 G Travelling Salesman Problem",
+        "url": "https://atcoder.jp/contests/abc406/tasks/abc406_g",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Slope Trick hot sheet",
+        "path": "notebook/slope-trick-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Snuketoon note",
+        "path": "practice/ladders/dp/slope-trick/snuketoon.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Convex Hull Trick / Li Chao Tree tutorial",
+        "path": "topics/dp/cht-li-chao/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "dp/lagrangian-relaxation": {
+    "title": "DP -> Lagrangian Relaxation / Aliens Trick",
+    "summary": "Exact-K DP optimization where one global integer penalty removes the count dimension and the relaxed solver returns both value and count.",
+    "topic_path": "topics/dp/lagrangian-relaxation/README.md",
+    "ladder_path": "practice/ladders/dp/lagrangian-relaxation/README.md",
+    "microtopics": [
+      "exact-k-optimization",
+      "lagrangian-relaxation",
+      "aliens-trick",
+      "wqs-binary-search",
+      "count-tie-break",
+      "concave-envelope"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ABC218 H Editorial",
+        "url": "https://atcoder.jp/contests/abc218/editorial/2634?lang=en",
+        "kind": "problem writeup"
+      },
+      {
+        "label": "AtCoder ABC305 Ex Shojin",
+        "url": "https://atcoder.jp/contests/abc305/tasks/abc305_h",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AtCoder ABC218 H Red and Blue Lamps",
+        "url": "https://atcoder.jp/contests/abc218/tasks/abc218_h",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC305 Ex Shojin",
+        "url": "https://atcoder.jp/contests/abc305/tasks/abc305_h",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC400 G Patisserie ABC 3",
+        "url": "https://atcoder.jp/contests/abc400/tasks/abc400_g",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder WTF22 Day1 D Welcome to Tokyo!",
+        "url": "https://atcoder.jp/contests/wtf22-day1-open/tasks/wtf22_day1_d",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Aliens Trick hot sheet",
+        "path": "notebook/aliens-trick-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Red and Blue Lamps note",
+        "path": "practice/ladders/dp/lagrangian-relaxation/redandbluelamps.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "DP cheatsheet",
+        "path": "notebook/dp-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Slope Trick tutorial",
+        "path": "topics/dp/slope-trick/README.md",
+        "kind": "compare point"
       },
       {
         "label": "Template Library exact starter route",
@@ -2754,6 +3949,331 @@
         "label": "Templates overview",
         "path": "template-library.md",
         "kind": "template guide"
+      }
+    ]
+  },
+  "math/bsgs-discrete-log": {
+    "title": "Math -> BSGS / Discrete Log",
+    "summary": "Recover the exponent in a^x ≡ b (mod m) with gcd reduction first and baby-step giant-step second, when square-root storage is still contest-safe.",
+    "topic_path": "topics/math/bsgs-discrete-log/README.md",
+    "ladder_path": "practice/ladders/math/bsgs-discrete-log/README.md",
+    "microtopics": [
+      "discrete-log",
+      "baby-step-giant-step",
+      "meet-in-the-middle",
+      "gcd-reduction",
+      "mod-inverse",
+      "minimum-exponent"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms discrete logarithm",
+        "url": "https://cp-algorithms.com/algebra/discrete-log.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki BSGS",
+        "url": "https://en.oi-wiki.org/math/bsgs/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Library Checker Discrete Logarithm Mod",
+        "url": "https://judge.yosupo.jp/problem/discrete_logarithm_mod",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Discrete Logarithm Mod",
+        "url": "https://judge.yosupo.jp/problem/discrete_logarithm_mod",
+        "kind": "problem"
+      },
+      {
+        "label": "LibreOJ #6542",
+        "url": "https://loj.ac/p/6542",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Discrete Log hot sheet",
+        "path": "notebook/discrete-log-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Discrete Logarithm Mod",
+        "path": "practice/ladders/math/bsgs-discrete-log/discretelogarithmmod.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Chinese Remainder / Linear Congruences",
+        "path": "topics/math/chinese-remainder/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "math/modular-square-root-discrete-root": {
+    "title": "Math -> Modular Square Root / Discrete Root",
+    "summary": "Prime-mod square-root extraction through quadratic-residue tests and Tonelli-Shanks first, with primitive-root and discrete-root machinery kept as the follow-up boundary.",
+    "topic_path": "topics/math/modular-square-root-discrete-root/README.md",
+    "ladder_path": "practice/ladders/math/modular-square-root-discrete-root/README.md",
+    "microtopics": [
+      "quadratic-residue",
+      "legendre-symbol",
+      "tonelli-shanks",
+      "modular-square-root",
+      "primitive-root-boundary",
+      "discrete-root-boundary"
+    ],
+    "learning_sources": [
+      {
+        "label": "CP-Algorithms Library Sqrt Mod",
+        "url": "https://lib.cp-algorithms.com/verify/number_theory/modsqrt.test.cpp.html",
+        "kind": "reference"
+      },
+      {
+        "label": "cp-algorithms Discrete Root",
+        "url": "https://cp-algorithms.com/algebra/discrete-root.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Primitive Root",
+        "url": "https://en.oi-wiki.org/math/primitive-root/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Library Checker Sqrt Mod",
+        "url": "https://judge.yosupo.jp/problem/sqrt_mod",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Sqrt Mod",
+        "url": "https://judge.yosupo.jp/problem/sqrt_mod",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker K-th Root Mod",
+        "url": "https://judge.yosupo.jp/problem/kth_root_mod",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Modular Square Root hot sheet",
+        "path": "notebook/modular-square-root-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Sqrt Mod",
+        "path": "practice/ladders/math/modular-square-root-discrete-root/sqrtmod.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "BSGS / Discrete Log",
+        "path": "topics/math/bsgs-discrete-log/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "math/primitive-root": {
+    "title": "Math -> Primitive Root",
+    "summary": "Find one generator of the nonzero residues modulo prime p by factoring p - 1 and rejecting candidates whose reduced-order powers collapse to 1.",
+    "topic_path": "topics/math/primitive-root/README.md",
+    "ladder_path": "practice/ladders/math/primitive-root/README.md",
+    "microtopics": [
+      "primitive-root",
+      "generator",
+      "cyclic-group-mod-prime",
+      "factor-p-minus-one",
+      "order-test",
+      "discrete-root-boundary"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms primitive root",
+        "url": "https://cp-algorithms.com/algebra/primitive-root.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Primitive Root",
+        "url": "https://en.oi-wiki.org/math/primitive-root/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Primitive Root",
+        "url": "https://judge.yosupo.jp/problem/primitive_root",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker K-th Root Mod",
+        "url": "https://judge.yosupo.jp/problem/kth_root_mod",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Primitive Root hot sheet",
+        "path": "notebook/primitive-root-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Primitive Root",
+        "path": "practice/ladders/math/primitive-root/primitiveroot.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "BSGS / Discrete Log",
+        "path": "topics/math/bsgs-discrete-log/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "math/pollard-rho": {
+    "title": "Math -> Pollard-Rho",
+    "summary": "Factor one 64-bit integer into prime factors with deterministic Miller-Rabin first and Pollard-Rho recursive splitting second.",
+    "topic_path": "topics/math/pollard-rho/README.md",
+    "ladder_path": "practice/ladders/math/pollard-rho/README.md",
+    "microtopics": [
+      "pollard-rho",
+      "miller-rabin-64bit",
+      "factorize-u64",
+      "prime-multiset",
+      "recursive-splitting",
+      "sorted-prime-factors"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms integer factorization",
+        "url": "https://cp-algorithms.com/algebra/factorization.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CP-Algorithms Library Factorize",
+        "url": "https://lib.cp-algorithms.com/verify/number_theory/factorize.test.cpp.html",
+        "kind": "reference"
+      },
+      {
+        "label": "Library Checker Factorize",
+        "url": "https://judge.yosupo.jp/problem/factorize",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Factorize",
+        "url": "https://judge.yosupo.jp/problem/factorize",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Pollard-Rho hot sheet",
+        "path": "notebook/pollard-rho-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Factorize",
+        "path": "practice/ladders/math/pollard-rho/factorize.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Primitive Root",
+        "path": "topics/math/primitive-root/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "math/gaussian-elimination": {
+    "title": "Math -> Gaussian Elimination And Linear Algebra",
+    "summary": "Solve dense linear systems over one field by pivoting columns, eliminating rows, and reconstructing any valid assignment or detecting inconsistency.",
+    "topic_path": "topics/math/gaussian-elimination/README.md",
+    "ladder_path": "practice/ladders/math/gaussian-elimination/README.md",
+    "microtopics": [
+      "gaussian-elimination",
+      "augmented-matrix",
+      "pivot-column",
+      "free-variables",
+      "mod-prime-linear-system",
+      "gauss-jordan"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Gauss & system of linear equations",
+        "url": "https://cp-algorithms.com/linear_algebra/linear-system-gauss.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Gaussian elimination",
+        "url": "https://en.oi-wiki.org/math/gauss/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CSES System of Linear Equations",
+        "url": "https://cses.fi/problemset/task/3154/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES System of Linear Equations",
+        "url": "https://cses.fi/problemset/task/3154/",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker System of Linear Equations",
+        "url": "https://judge.yosupo.jp/problem/system_of_linear_equations",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Gaussian Elimination hot sheet",
+        "path": "notebook/gaussian-elimination-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "System of Linear Equations",
+        "path": "practice/ladders/math/gaussian-elimination/systemoflinearequations.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "XOR Basis / Linear Basis",
+        "path": "topics/math/xor-basis/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -2934,6 +4454,126 @@
         "label": "Template Library exact starter route",
         "path": "template-library.md",
         "kind": "starter route"
+      }
+    ]
+  },
+  "math/dirichlet-prefix-sums": {
+    "title": "Math -> Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions",
+    "summary": "Summatory arithmetic functions opened through one direct Dirichlet convolution, then compressed with quotient grouping on equal floor-division blocks.",
+    "topic_path": "topics/math/dirichlet-prefix-sums/README.md",
+    "ladder_path": "practice/ladders/math/dirichlet-prefix-sums/README.md",
+    "microtopics": [
+      "dirichlet-convolution",
+      "summatory-sigma",
+      "sigma-equals-one-convolution-id",
+      "floor-division-blocks",
+      "quotient-grouping",
+      "harmonic-lemma"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Prefix Sums of Number-Theoretic Functions (Part 1)",
+        "url": "https://usaco.guide/adv/prefix-sums-nt-1",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms Number of divisors / sum of divisors",
+        "url": "https://cp-algorithms.com/algebra/divisors.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Sum of Divisors",
+        "url": "https://cses.fi/problemset/task/1082",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Dirichlet prefix sums hot sheet",
+        "path": "notebook/dirichlet-prefix-sums-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Sum of Divisors",
+        "path": "practice/ladders/math/dirichlet-prefix-sums/sumofdivisors.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Mobius And Multiplicative Counting",
+        "path": "topics/math/mobius-multiplicative/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "math/min25-du-jiao": {
+    "title": "Math -> Min_25 / Du Jiao",
+    "summary": "Implicit prefix sums of phi or mu recovered on the quotient set Q_n from one Dirichlet relation, with full Min_25 kept as the next boundary rather than the first implementation.",
+    "topic_path": "topics/math/min25-du-jiao/README.md",
+    "ladder_path": "practice/ladders/math/min25-du-jiao/README.md",
+    "microtopics": [
+      "du-jiao-sieve",
+      "quotient-set",
+      "prefix-phi",
+      "prefix-mu",
+      "dirichlet-inverse-recurrence",
+      "min25-boundary"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Prefix Sums of Number-Theoretic Functions (Part 1)",
+        "url": "https://usaco.guide/adv/prefix-sums-nt-1",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Prefix Sums of Number-Theoretic Functions (Part 2)",
+        "url": "https://usaco.guide/adv/prefix-sums-nt-2",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Library Checker Sum of Totient Function",
+        "url": "https://judge.yosupo.jp/problem/sum_of_totient_function",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Sum of Totient Function",
+        "url": "https://judge.yosupo.jp/problem/sum_of_totient_function",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Totient sums",
+        "url": "https://cses.fi/ioi17/task/947",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Min_25 / Du Jiao hot sheet",
+        "path": "notebook/min25-du-jiao-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Sum of Totient Function",
+        "path": "practice/ladders/math/min25-du-jiao/sumoftotientfunction.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions",
+        "path": "topics/math/dirichlet-prefix-sums/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -3364,6 +5004,81 @@
         "label": "CSES Apples and Bananas",
         "url": "https://cses.fi/problemset/task/2112/",
         "kind": "problem"
+      }
+    ]
+  },
+  "math/polynomial-fps": {
+    "title": "Math -> Polynomial / Formal Power Series",
+    "summary": "Truncated formal power series algebra under an NTT-friendly prime, with FPS inverse as the first exact route and log/exp/pow as follow-ups.",
+    "topic_path": "topics/math/polynomial-fps/README.md",
+    "ladder_path": "practice/ladders/math/polynomial-fps/README.md",
+    "microtopics": [
+      "formal-power-series",
+      "polynomial-inverse",
+      "newton-doubling",
+      "truncation-mod-xn",
+      "ntt-backed-convolution",
+      "fps-log-exp-pow"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ACL Convolution",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/convolution.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "Library Checker Inv of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/inv_of_formal_power_series",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Log of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/log_of_formal_power_series",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Inv of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/inv_of_formal_power_series",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Log of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/log_of_formal_power_series",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Exp of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/exp_of_formal_power_series",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Pow of Formal Power Series",
+        "url": "https://judge.yosupo.jp/problem/pow_of_formal_power_series",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Polynomial / FPS hot sheet",
+        "path": "notebook/polynomial-fps-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Inv of Formal Power Series note",
+        "path": "practice/ladders/math/polynomial-fps/invofformalpowerseries.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "FFT / NTT tutorial",
+        "path": "topics/math/fft-ntt/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },
@@ -3943,6 +5658,81 @@
       }
     ]
   },
+  "strings/suffix-tree": {
+    "title": "Strings -> Suffix Tree",
+    "summary": "Compressed suffix-trie index for one static text, edge-interval matching, and subtree metadata over suffix leaves.",
+    "topic_path": "topics/strings/suffix-tree/README.md",
+    "ladder_path": "practice/ladders/strings/suffix-tree/README.md",
+    "microtopics": [
+      "compressed-suffix-trie",
+      "ukkonen",
+      "terminator",
+      "edge-intervals",
+      "subtree-minimum",
+      "pattern-walk"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms suffix tree",
+        "url": "https://cp-algorithms.com/string/suffix-tree-ukkonen.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide string suffix structures",
+        "url": "https://usaco.guide/adv/string-suffix",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki suffix tree",
+        "url": "https://en.oi-wiki.org/string/suffix-tree/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Pattern Positions",
+        "url": "https://cses.fi/problemset/task/2104",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Distinct Substrings",
+        "url": "https://cses.fi/problemset/task/2105/",
+        "kind": "problem"
+      },
+      {
+        "label": "USACO Guide string suffix structures",
+        "url": "https://usaco.guide/adv/string-suffix",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Suffix Tree hot sheet",
+        "path": "notebook/suffix-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Pattern Positions note",
+        "path": "practice/ladders/strings/suffix-tree/patternpositions.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Suffix Array And LCP",
+        "path": "topics/strings/suffix-array-lcp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Suffix Automaton",
+        "path": "topics/strings/suffix-automaton/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "strings/suffix-automaton": {
     "title": "Strings -> Suffix Automaton",
     "summary": "Compact automaton of all substrings, with endpos classes, clones, and counting applications.",
@@ -4211,6 +6001,181 @@
         "label": "CSES Polygon Area",
         "url": "https://cses.fi/problemset/task/2191/",
         "kind": "problem"
+      }
+    ]
+  },
+  "geometry/half-plane-intersection": {
+    "title": "Geometry -> Half-Plane Intersection",
+    "summary": "Intersect directed half-planes by angle sorting and deque cleanup to recover one bounded convex feasible region or polygon kernel.",
+    "topic_path": "topics/geometry/half-plane-intersection/README.md",
+    "ladder_path": "practice/ladders/geometry/half-plane-intersection/README.md",
+    "microtopics": [
+      "directed-half-plane",
+      "angle-sort",
+      "parallel-tie-break",
+      "deque-intersection",
+      "polygon-kernel",
+      "bounded-region"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms half-plane intersection",
+        "url": "https://cp-algorithms.com/geometry/halfplane-intersection.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Masaryk University half-plane intersection",
+        "url": "https://is.muni.cz/do/sci/UMS/el/geometricke-alg/pages/05-intersection.html?lang=en",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Kattis Big Brother",
+        "url": "https://open.kattis.com/problems/bigbrother",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Half-Plane Intersection hot sheet",
+        "path": "notebook/half-plane-intersection-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Big Brother",
+        "path": "practice/ladders/geometry/half-plane-intersection/bigbrother.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Convex Hull",
+        "path": "topics/geometry/convex-hull/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "geometry/minkowski-sum": {
+    "title": "Geometry -> Minkowski Sum",
+    "summary": "Sum two convex polygons in CCW order by normalizing the lowest vertex and merging edge directions, then reuse the result for repeated sums or point-in-convex queries.",
+    "topic_path": "topics/geometry/minkowski-sum/README.md",
+    "ladder_path": "practice/ladders/geometry/minkowski-sum/README.md",
+    "microtopics": [
+      "minkowski-sum",
+      "convex-polygons",
+      "edge-merge",
+      "lowest-vertex-normalization",
+      "repeated-sum",
+      "point-in-convex"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Minkowski sum",
+        "url": "https://cp-algorithms.com/geometry/minkowski.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces Mogohu-Rea Idol",
+        "url": "https://codeforces.com/problemset/problem/87/E",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Minkowski Sum hot sheet",
+        "path": "notebook/minkowski-sum-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Mogohu-Rea Idol (stretch anchor)",
+        "path": "practice/ladders/geometry/minkowski-sum/mogohureaidol.md",
+        "kind": "stretch note"
+      },
+      {
+        "label": "Convex Hull",
+        "path": "topics/geometry/convex-hull/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Geometry cheatsheet",
+        "path": "notebook/geometry-cheatsheet.md",
+        "kind": "chooser"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "geometry/nearest-pair": {
+    "title": "Geometry -> Nearest Pair of Points",
+    "summary": "Find the global closest Euclidean pair in one static planar point set through an x-sorted sweep and a y-ordered active strip.",
+    "topic_path": "topics/geometry/nearest-pair/README.md",
+    "ladder_path": "practice/ladders/geometry/nearest-pair/README.md",
+    "microtopics": [
+      "closest-pair",
+      "active-strip",
+      "x-sweep",
+      "y-ordered-set",
+      "packing-bound",
+      "squared-distance"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms closest pair",
+        "url": "https://cp-algorithms.com/geometry/nearest_points.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "AOJ Closest Pair",
+        "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_5_A",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Minimum Euclidean Distance",
+        "url": "https://cses.fi/problemset/task/2194/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AOJ Closest Pair",
+        "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_5_A",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Minimum Euclidean Distance",
+        "url": "https://cses.fi/problemset/task/2194/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Nearest Pair hot sheet",
+        "path": "notebook/nearest-pair-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Closest Pair",
+        "path": "practice/ladders/geometry/nearest-pair/closestpair.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Minimum Euclidean Distance note",
+        "path": "practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -4811,6 +6776,131 @@
         "label": "Maximum Flow tutorial",
         "path": "topics/graphs/flow/README.md",
         "kind": "adjacent tutorial"
+      }
+    ]
+  },
+  "advanced/simplex": {
+    "title": "Advanced -> Simplex",
+    "summary": "Contest-time linear programming in the narrow max-form route maximize c^T x subject to Ax <= b and x >= 0.",
+    "topic_path": "topics/advanced/simplex/README.md",
+    "ladder_path": "practice/ladders/advanced/simplex/README.md",
+    "microtopics": [
+      "linear-programming",
+      "simplex-method",
+      "phase-1-phase-2",
+      "continuous-optimization",
+      "resource-allocation-lp",
+      "tableau-pivoting"
+    ],
+    "learning_sources": [
+      {
+        "label": "KACTL Simplex header",
+        "url": "https://raw.githubusercontent.com/kth-competitive-programming/kactl/main/content/numerical/Simplex.h",
+        "kind": "reference"
+      },
+      {
+        "label": "ICPC World Finals 2016 Problem I",
+        "url": "https://icpc.global/worldfinals/problems/2016-ICPC-World-Finals/icpc2016.pdf",
+        "kind": "problem set"
+      },
+      {
+        "label": "KTH Finals 2016 Solutions Overview",
+        "url": "https://www.csc.kth.se/~austrin/icpc/finals2016solutions.pdf",
+        "kind": "problem writeup"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Kattis Cheese, If You Please",
+        "url": "https://open.kattis.com/problems/cheeseifyouplease",
+        "kind": "problem"
+      },
+      {
+        "label": "ICPC World Finals 2016 Problem I",
+        "url": "https://icpc.global/worldfinals/problems/2016-ICPC-World-Finals/icpc2016.pdf",
+        "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Simplex hot sheet",
+        "path": "notebook/simplex-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Cheese, If You Please note",
+        "path": "practice/ladders/advanced/simplex/cheeseifyouplease.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Optimization And Duality tutorial",
+        "path": "topics/advanced/optimization-and-duality/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "advanced/matroid-intersection": {
+    "title": "Advanced -> Matroid Intersection",
+    "summary": "Maximum-cardinality common independent set on one explicit ground set using exchange-graph augmentation and structure-aware matroid modeling.",
+    "topic_path": "topics/advanced/matroid-intersection/README.md",
+    "ladder_path": "practice/ladders/advanced/matroid-intersection/README.md",
+    "microtopics": [
+      "matroid-intersection",
+      "exchange-graph",
+      "augmenting-paths",
+      "partition-matroid",
+      "linear-matroid",
+      "independence-oracles"
+    ],
+    "learning_sources": [
+      {
+        "label": "Extremal Combinatorics notes: Matroid Intersection",
+        "url": "https://extremalcombinatorics.com/optimization/notes/sec_matroidIntersection.html",
+        "kind": "reference"
+      },
+      {
+        "label": "Codeforces Gym 102156 D - Pick Your Own Nim",
+        "url": "https://codeforces.com/gym/102156/problem/D",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces Gym 102156 D - Pick Your Own Nim",
+        "url": "https://codeforces.com/gym/102156/problem/D",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Matroid Intersection hot sheet",
+        "path": "notebook/matroid-intersection-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Pick Your Own Nim note",
+        "path": "practice/ladders/advanced/matroid-intersection/pickyourownnim.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Optimization And Duality tutorial",
+        "path": "topics/advanced/optimization-and-duality/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "XOR Basis tutorial",
+        "path": "topics/math/xor-basis/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },

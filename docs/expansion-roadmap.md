@@ -7,7 +7,7 @@
 - Status: active
 - Last reviewed: 2026-04-25
 - Update triggers: after each expansion wave, after any major reprioritization, or after a new external-source audit
-- Canonical companion docs: [Roadmap](roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
+- Canonical companion docs: [Roadmap](roadmap.md), [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
 
 This file exists so future expansion work stays phased, source-backed, and small enough to preserve quality.
 
@@ -70,6 +70,8 @@ These should still be treated as content-source families, not just random inspir
 ### Open Candidate Pools, Not Standing Commitments
 
 These are legitimate future directions, but none of them should open automatically without an audit trigger or strong repo-fit anchor.
+
+The main standing queue for those future algorithm-family additions now lives in [Algorithm Gap Roadmap](algorithm-gap-roadmap.md).
 
 - `contest-source reinforcement`:
   - `communication / output-only / output-scored` drills if a later olympiad or Google-style audit justifies them

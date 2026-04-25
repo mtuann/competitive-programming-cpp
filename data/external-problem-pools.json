@@ -2045,6 +2045,66 @@
       ]
     }
   ],
+  "data-structures/dsu-on-tree": [
+    {
+      "title": "Distinct Colors",
+      "url": "https://cses.fi/problemset/task/1139",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/dsu-on-tree",
+        "Data Structures",
+        "DSU On Tree",
+        "Subtree Queries"
+      ],
+      "tags": [
+        "Distinct Values",
+        "Subtree Aggregation",
+        "Small-To-Large"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Small-To-Large Merging",
+        "Subtree Frequency Maps",
+        "Offline Aggregation"
+      ],
+      "prerequisites": [
+        "Rooted Tree",
+        "Frequency Maps",
+        "Subtree Traversal"
+      ],
+      "why_fit": "The cleanest first benchmark where each subtree owns a mergeable color-frequency container and the whole optimization is just small-to-large merging."
+    },
+    {
+      "title": "Lomsat gelral",
+      "url": "https://codeforces.com/problemset/problem/600/E",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/dsu-on-tree",
+        "Data Structures",
+        "DSU On Tree",
+        "Subtree Queries"
+      ],
+      "tags": [
+        "Color Frequency",
+        "Subtree Aggregation",
+        "Small-To-Large"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Small-To-Large Merging",
+        "Frequency Aggregation",
+        "Heavy Child Compare Point"
+      ],
+      "prerequisites": [
+        "DSU On Tree",
+        "Frequency Maps",
+        "Subtree Traversal"
+      ],
+      "why_fit": "A classic follow-up where the merged container must track richer frequency information than just distinct-count size."
+    }
+  ],
   "data-structures/persistent-data-structures": [
     {
       "title": "Range Queries and Copies",
@@ -2380,6 +2440,127 @@
       "styles": [],
       "prerequisites": [],
       "bucket": "core"
+    }
+  ],
+  "data-structures/pairing-leftist-heap": [
+    {
+      "title": "P3377 [Template] Mergeable Heap 1",
+      "url": "https://www.luogu.com.cn/problem/P3377",
+      "source": "Luogu",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/pairing-leftist-heap",
+        "Data-Structures",
+        "Meldable-Heap",
+        "Leftist-Heap"
+      ],
+      "tags": [
+        "Meldable Heap",
+        "Leftist Heap",
+        "Delete Min",
+        "DSU",
+        "Simulation"
+      ],
+      "why_fit": "The cleanest verifier-style first rep where every item starts in its own heap, heaps meld online, and delete-min is asked by naming one item's current heap.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Priority Queues",
+        "Heap Merge",
+        "Owner Tracking"
+      ]
+    },
+    {
+      "title": "P1456 Monkey King",
+      "url": "https://www.luogu.com.cn/problem/P1456",
+      "source": "Luogu",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/pairing-leftist-heap",
+        "Data-Structures",
+        "Meldable-Heap"
+      ],
+      "tags": [
+        "Meldable Heap",
+        "Leftist Heap",
+        "Heap Merge",
+        "Greedy"
+      ],
+      "why_fit": "A classic follow-up where the same meldable-heap route survives after each duel mutates the current roots before the heaps merge again.",
+      "bucket": "challenge",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Heap Merge",
+        "Delete Min",
+        "Owner Tracking"
+      ]
+    }
+  ],
+  "data-structures/odt-chtholly": [
+    {
+      "title": "896C - Willem, Chtholly and Seniorious",
+      "url": "https://codeforces.com/problemset/problem/896/C?mobile=true",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/odt-chtholly",
+        "Data-Structures",
+        "Interval-Partition",
+        "ODT"
+      ],
+      "tags": [
+        "ODT",
+        "Range Assign",
+        "Ordered Set",
+        "Expected Complexity",
+        "Kth Query"
+      ],
+      "why_fit": "The canonical Chtholly-tree benchmark where split, assign, and interval walks over the current runs are the whole model.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Implementation",
+        "Randomized-Input"
+      ],
+      "prerequisites": [
+        "Ordered Set Iteration",
+        "split(l) / split(r + 1)",
+        "Range Assign"
+      ]
+    },
+    {
+      "title": "915E - Physical Education Lessons",
+      "url": "https://codeforces.com/problemset/problem/915/E",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/odt-chtholly",
+        "Data-Structures",
+        "Interval-Partition",
+        "ODT"
+      ],
+      "tags": [
+        "Range Assign",
+        "Piecewise Constant",
+        "Interval Counting"
+      ],
+      "why_fit": "A clean deterministic bridge where interval assign and counting over the current partition are the real invariants even without the full CF896C random-data flavor.",
+      "bucket": "bridge",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Query-Heavy"
+      ],
+      "prerequisites": [
+        "Ordered Set Iteration",
+        "Range Assign",
+        "Current Interval Partition"
+      ]
     }
   ],
   "data-structures/offline-tricks": [
@@ -2759,6 +2940,299 @@
       ]
     }
   ],
+  "data-structures/persistent-treap": [
+    {
+      "title": "Persistent List",
+      "url": "https://eolymp.com/en/problems/2957",
+      "source": "E-olymp",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/persistent-treap",
+        "Persistent Treap",
+        "Implicit Treap",
+        "Persistence"
+      ],
+      "tags": [
+        "Split-Merge",
+        "Branching-Versions",
+        "Sequence-Persistence"
+      ],
+      "why_fit": "The cleanest first benchmark where merge/head/tail on old list roots force persistent split/merge treap rather than fixed-array path copying.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Modeling-Heavy"
+      ],
+      "prerequisites": [
+        "Implicit Treap",
+        "Persistence",
+        "Split And Merge"
+      ]
+    }
+  ],
+  "data-structures/pbds-order-statistics": [
+    {
+      "title": "ORDERSET - Order Statistic Set",
+      "url": "https://www.spoj.com/problems/ORDERSET/",
+      "source": "SPOJ",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/pbds-order-statistics",
+        "Data Structures",
+        "PBDS",
+        "Order Statistics"
+      ],
+      "tags": [
+        "PBDS",
+        "Kth-Smallest",
+        "Rank-Query"
+      ],
+      "why_fit": "The cleanest first benchmark where the whole problem is insert, delete, k-th, and count-smaller on one dynamic ordered set.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Classic"
+      ],
+      "prerequisites": [
+        "Ordered Set Invariant",
+        "order_of_key",
+        "find_by_order"
+      ]
+    },
+    {
+      "title": "Josephus Problem II",
+      "url": "https://cses.fi/problemset/task/2163",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/pbds-order-statistics",
+        "Data Structures",
+        "PBDS",
+        "Circular Elimination"
+      ],
+      "tags": [
+        "PBDS",
+        "find-by-order",
+        "Josephus"
+      ],
+      "why_fit": "A clean follow-up where the alive set stays explicit and find_by_order drives repeated circular removals.",
+      "bucket": "practice",
+      "styles": [
+        "Simulation-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "find_by_order",
+        "Alive Set Maintenance",
+        "Modulo Indexing"
+      ]
+    },
+    {
+      "title": "Salary Queries",
+      "url": "https://cses.fi/problemset/task/1144",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/pbds-order-statistics",
+        "Data Structures",
+        "PBDS",
+        "Order Statistics"
+      ],
+      "tags": [
+        "Duplicate-Safe-Wrapper",
+        "Range-Count",
+        "Order-Statistics"
+      ],
+      "why_fit": "A very teachable bridge from unique sets to duplicate-safe pair-key wrappers for count-in-range queries under updates.",
+      "bucket": "bridge",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Pair-Key Wrapper",
+        "order_of_key",
+        "Count In Range"
+      ]
+    }
+  ],
+  "data-structures/balanced-bsts": [
+    {
+      "title": "Luogu P3369 - 普通平衡树",
+      "url": "https://www.luogu.com.cn/problem/P3369",
+      "source": "Luogu",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/balanced-bsts",
+        "Data Structures",
+        "AVL",
+        "Red-Black",
+        "Scapegoat",
+        "Size-Balanced-Tree",
+        "Balanced BST"
+      ],
+      "tags": [
+        "AVL",
+        "Rotations",
+        "Order-Statistics",
+        "Predecessor-Successor"
+      ],
+      "why_fit": "A canonical implementation challenge if you want to hand-code AVL-style, Red-Black-style, Scapegoat-style, or SBT-style balancing and support the textbook ordered-set operation bundle end to end.",
+      "bucket": "implementation-challenge",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Implementation-Heavy"
+      ],
+      "prerequisites": [
+        "AVL Balance Invariant",
+        "Rotations",
+        "Duplicate Counts"
+      ]
+    },
+    {
+      "title": "ORDERSET - Order Statistic Set",
+      "url": "https://www.spoj.com/problems/ORDERSET/",
+      "source": "SPOJ",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/balanced-bsts",
+        "Data Structures",
+        "Balanced BST Compare",
+        "Order Statistics"
+      ],
+      "tags": [
+        "Rank-Query",
+        "Kth-Smallest",
+        "Compare-Route"
+      ],
+      "why_fit": "Good compare practice after the AVL note because the same interface is often better served by PBDS than by hand-coding deterministic balancing.",
+      "bucket": "compare",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Classic"
+      ],
+      "prerequisites": [
+        "Ordered Set Invariant",
+        "Rank Queries",
+        "K-th Queries"
+      ]
+    },
+    {
+      "title": "Salary Queries",
+      "url": "https://cses.fi/problemset/task/1144",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/balanced-bsts",
+        "Data Structures",
+        "Balanced BST Compare",
+        "Treap Compare"
+      ],
+      "tags": [
+        "Duplicate-Safe-Wrapper",
+        "Range-Count",
+        "Compare-Route"
+      ],
+      "why_fit": "A strong compare exercise showing that once split/merge by key or duplicate-safe wrappers matter, treap or PBDS is usually the cleaner in-repo route than AVL.",
+      "bucket": "compare",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Query-Heavy"
+      ],
+      "prerequisites": [
+        "Duplicate Counts",
+        "Order Statistics",
+        "Pair-Key Wrapper"
+      ]
+    }
+  ],
+  "data-structures/splay-tree": [
+    {
+      "title": "Luogu P3369 - 普通平衡树",
+      "url": "https://www.luogu.com.cn/problem/P3369",
+      "source": "Luogu",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/splay-tree",
+        "Data Structures",
+        "Splay Tree",
+        "Order Statistics"
+      ],
+      "tags": [
+        "Splay",
+        "Rank-Query",
+        "Kth-Smallest",
+        "Predecessor-Successor"
+      ],
+      "why_fit": "The cleanest first benchmark where the whole statement is one self-adjusting ordered multiset interface and the splay machinery itself is the lesson.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Implementation-Heavy"
+      ],
+      "prerequisites": [
+        "BST Order",
+        "Subtree Sizes",
+        "Rotate And Splay"
+      ]
+    },
+    {
+      "title": "ORDERSET - Order Statistic Set",
+      "url": "https://www.spoj.com/problems/ORDERSET/",
+      "source": "SPOJ",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/splay-tree",
+        "Data Structures",
+        "Splay Tree",
+        "Compare Route"
+      ],
+      "tags": [
+        "Splay",
+        "Order-Statistics",
+        "Compare-Route"
+      ],
+      "why_fit": "A useful compare rep once the splay implementation is trusted, because the same interface can then be contrasted directly against PBDS.",
+      "bucket": "compare",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Classic"
+      ],
+      "prerequisites": [
+        "Rotate And Splay",
+        "Rank Queries",
+        "K-th Queries"
+      ]
+    },
+    {
+      "title": "Luogu P3391 - 文艺平衡树",
+      "url": "https://www.luogu.com.cn/problem/P3391",
+      "source": "Luogu",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/splay-tree",
+        "Data Structures",
+        "Splay Tree",
+        "Sequence Route"
+      ],
+      "tags": [
+        "Splay",
+        "Sequence",
+        "Reverse-Interval"
+      ],
+      "why_fit": "A natural stretch once ordered-set splaying is stable and you want to see the same rotation machinery move into sequence edits with lazy reversal.",
+      "bucket": "stretch",
+      "styles": [
+        "Data-Structure-Heavy",
+        "String-Like"
+      ],
+      "prerequisites": [
+        "Rotate And Splay",
+        "Lazy Reversal Tag",
+        "Sequence View"
+      ]
+    }
+  ],
   "data-structures/wavelet-tree": [
     {
       "title": "MKTHNUM - K-th Number",
@@ -2847,6 +3321,34 @@
   ],
   "data-structures/treap-implicit": [
     {
+      "title": "Salary Queries",
+      "url": "https://cses.fi/problemset/task/1144",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/treap-implicit",
+        "Data Structures",
+        "Key-Based Treap",
+        "Order Statistics"
+      ],
+      "tags": [
+        "Key-Based-Treap",
+        "Range-Count",
+        "Pair-Key-Wrapper"
+      ],
+      "why_fit": "A strong first key-based benchmark where duplicate-safe pair keys and rank differences are the whole story.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Query-Heavy"
+      ],
+      "prerequisites": [
+        "Split And Merge",
+        "Pair Key Wrapper",
+        "Order Statistics"
+      ]
+    },
+    {
       "title": "Cut and Paste",
       "url": "https://cses.fi/problemset/task/2072",
       "source": "CSES",
@@ -2863,7 +3365,7 @@
         "Sequence-Edits"
       ],
       "why_fit": "The cleanest first benchmark where cut/paste by position becomes a short split/merge script.",
-      "bucket": "core",
+      "bucket": "practice",
       "styles": [
         "Data-Structure-Heavy",
         "Modeling-Heavy"
@@ -3922,6 +4424,130 @@
         "Centroid Decomposition",
         "Fixed-Length Paths I",
         "Prefix Sums"
+      ]
+    }
+  ],
+  "graphs/link-cut-tree": [
+    {
+      "title": "Dynamic Tree Vertex Add Path Sum",
+      "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_path_sum",
+      "source": "Library Checker",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/link-cut-tree",
+        "Graphs",
+        "Dynamic Trees",
+        "Link-Cut Tree"
+      ],
+      "tags": [
+        "Link-Cut Tree",
+        "Dynamic Forest",
+        "Path Sum",
+        "Vertex Add"
+      ],
+      "why_fit": "The cleanest exact verifier for the first narrow link-cut route: dynamic forest, point add on vertices, and path sums.",
+      "bucket": "core",
+      "styles": [
+        "Dynamic Trees",
+        "Path Aggregate",
+        "Verifier"
+      ],
+      "prerequisites": [
+        "Rooted Tree Intuition",
+        "Preferred Paths",
+        "makeroot / access"
+      ]
+    },
+    {
+      "title": "Dynamic Tree Vertex Set Path Composite",
+      "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_set_path_composite",
+      "source": "Library Checker",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/link-cut-tree",
+        "Graphs",
+        "Dynamic Trees",
+        "Link-Cut Tree"
+      ],
+      "tags": [
+        "Link-Cut Tree",
+        "Dynamic Forest",
+        "Path Composite",
+        "Non-Commutative"
+      ],
+      "why_fit": "A natural stretch once the basic route is trusted and the path aggregate becomes non-commutative.",
+      "bucket": "stretch",
+      "styles": [
+        "Dynamic Trees",
+        "Non-Commutative Query",
+        "Verifier"
+      ],
+      "prerequisites": [
+        "Link-Cut Tree",
+        "Path Query Ordering",
+        "Function Composition"
+      ]
+    }
+  ],
+  "graphs/euler-tour-tree": [
+    {
+      "title": "Dynamic Tree Vertex Add Subtree Sum",
+      "url": "https://judge.yosupo.jp/problem/dynamic_tree_vertex_add_subtree_sum",
+      "source": "Library Checker",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/euler-tour-tree",
+        "Graphs",
+        "Dynamic Trees",
+        "Euler Tour Tree"
+      ],
+      "tags": [
+        "Euler Tour Tree",
+        "Dynamic Forest",
+        "Subtree Sum",
+        "Vertex Add"
+      ],
+      "why_fit": "The cleanest exact verifier for the first narrow Euler-tour-tree route: dynamic forest, point add on vertices, and subtree-side sums on one existing edge.",
+      "bucket": "core",
+      "styles": [
+        "Dynamic Trees",
+        "Subtree Aggregate",
+        "Verifier"
+      ],
+      "prerequisites": [
+        "Rooted Tree Intuition",
+        "Split / Merge Sequence",
+        "make_root by Rotation"
+      ]
+    },
+    {
+      "title": "Dynamic Tree Subtree Add Subtree Sum",
+      "url": "https://judge.yosupo.jp/problem/dynamic_tree_subtree_add_subtree_sum",
+      "source": "Library Checker",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/euler-tour-tree",
+        "Graphs",
+        "Dynamic Trees",
+        "Euler Tour Tree"
+      ],
+      "tags": [
+        "Euler Tour Tree",
+        "Dynamic Forest",
+        "Lazy Propagation",
+        "Subtree Sum"
+      ],
+      "why_fit": "A natural stretch once the point-add route is trusted and the same subtree-side interval view must carry a stronger lazy update.",
+      "bucket": "stretch",
+      "styles": [
+        "Dynamic Trees",
+        "Lazy Range Update",
+        "Verifier"
+      ],
+      "prerequisites": [
+        "Euler Tour Tree",
+        "Subtree Interval View",
+        "Lazy Propagation"
       ]
     }
   ],
@@ -5242,6 +5868,69 @@
       "styles": [],
       "prerequisites": [],
       "bucket": "core"
+    }
+  ],
+  "graphs/virtual-tree": [
+    {
+      "title": "Kingdom and its Cities",
+      "url": "https://codeforces.com/problemset/problem/613/D",
+      "source": "Codeforces",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/virtual-tree",
+        "Graphs",
+        "Trees",
+        "Virtual Tree"
+      ],
+      "tags": [
+        "Marked Nodes",
+        "Virtual Tree",
+        "LCA",
+        "Tree DP",
+        "Minimum Separator"
+      ],
+      "why_fit": "The classic first full virtual-tree problem: each query marks only a small set, and the whole solution is compress-then-DP.",
+      "bucket": "core",
+      "styles": [
+        "Marked-Subset Compression",
+        "LCA",
+        "Query-Local DP"
+      ],
+      "prerequisites": [
+        "LCA",
+        "DFS Order",
+        "Tree DP"
+      ]
+    },
+    {
+      "title": "Leaf Color",
+      "url": "https://atcoder.jp/contests/abc340/tasks/abc340_g",
+      "source": "AtCoder",
+      "difficulty": "very hard",
+      "tracks": [
+        "graphs/virtual-tree",
+        "Graphs",
+        "Trees",
+        "Virtual Tree"
+      ],
+      "tags": [
+        "Marked Nodes",
+        "Color Grouping",
+        "Virtual Tree",
+        "Compressed Tree"
+      ],
+      "why_fit": "A strong stretch rep once the build step feels automatic and the real challenge becomes choosing the right summary on the compressed tree.",
+      "bucket": "stretch",
+      "styles": [
+        "Marked-Subset Compression",
+        "Per-Color Processing",
+        "Tree DP"
+      ],
+      "prerequisites": [
+        "Virtual Tree Build",
+        "LCA",
+        "Compressed-Tree Reasoning"
+      ]
     }
   ],
   "graphs/tree-dp": [
@@ -7551,6 +8240,126 @@
       "bucket": "core"
     }
   ],
+  "dp/broken-profile": [
+    {
+      "title": "Counting Tilings",
+      "url": "https://cses.fi/problemset/task/2181",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/broken-profile",
+        "DP",
+        "Broken-Profile",
+        "Grid-DP"
+      ],
+      "tags": [
+        "Broken Profile",
+        "Domino Tiling",
+        "Frontier Mask",
+        "Column Sweep"
+      ],
+      "why_fit": "The cleanest first verifier for occupancy-mask profile DP on a small-width grid.",
+      "bucket": "core",
+      "styles": [
+        "Counting",
+        "Frontier DP"
+      ],
+      "prerequisites": [
+        "Bitmask Basics",
+        "Grid DP",
+        "Local Placements"
+      ]
+    },
+    {
+      "title": "Compound Escape",
+      "url": "https://usaco.org/index.php?cpid=949&page=viewproblem2",
+      "source": "USACO Platinum",
+      "difficulty": "very hard",
+      "tracks": [
+        "dp/broken-profile",
+        "DP",
+        "Broken-Profile",
+        "Plug-DP"
+      ],
+      "tags": [
+        "Frontier State",
+        "Counting",
+        "Challenge"
+      ],
+      "why_fit": "A challenge-level extension once simple occupancy masks are no longer the only frontier information you can reason about.",
+      "bucket": "challenge",
+      "styles": [
+        "Counting",
+        "Frontier DP"
+      ],
+      "prerequisites": [
+        "Occupancy Masks",
+        "Grid Frontier Thinking"
+      ]
+    }
+  ],
+  "dp/sos-dp": [
+    {
+      "title": "Compatible Numbers",
+      "url": "https://codeforces.com/problemset/problem/165/E",
+      "source": "Codeforces",
+      "difficulty": "2200",
+      "tracks": [
+        "dp/sos-dp",
+        "DP",
+        "Bitmask",
+        "SOS DP"
+      ],
+      "tags": [
+        "Bitmasks",
+        "Subset Zeta",
+        "Witness Propagation",
+        "Bitwise Complement"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Full-Cube Sweep",
+        "Complement Modeling",
+        "Offline Propagation"
+      ],
+      "prerequisites": [
+        "Bitmask States",
+        "Complement Masks",
+        "Subset Direction"
+      ],
+      "why_fit": "The cleanest first rep where one subset-direction SOS sweep carries a witness value and the real modeling step is querying the complement mask."
+    },
+    {
+      "title": "SOS Bit Problem",
+      "url": "https://cses.fi/problemset/task/1654",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/sos-dp",
+        "DP",
+        "Bitmask",
+        "SOS DP"
+      ],
+      "tags": [
+        "Subset Zeta",
+        "Superset Zeta",
+        "Bitwise OR",
+        "Bitwise AND"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Full-Cube Sweep",
+        "Count Aggregation",
+        "Complement Counting"
+      ],
+      "prerequisites": [
+        "SOS DP",
+        "Bitwise Predicates",
+        "Mask Bucketing"
+      ],
+      "why_fit": "A strong follow-up where the same lane has to support both subset-side and superset-side counting in one problem."
+    }
+  ],
   "dp/tree-dp": [
     {
       "title": "Independent Set",
@@ -8142,6 +8951,130 @@
       "bucket": "core"
     }
   ],
+  "dp/divide-and-conquer-dp": [
+    {
+      "title": "Ciel and Gondolas",
+      "url": "https://codeforces.com/problemset/problem/321/E",
+      "source": "Codeforces",
+      "difficulty": "2600",
+      "tracks": [
+        "dp/divide-and-conquer-dp",
+        "DP",
+        "Partition DP",
+        "Divide and Conquer DP"
+      ],
+      "tags": [
+        "Partition DP",
+        "Monotone Opt",
+        "2D Prefix Sums",
+        "Contiguous Groups"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Partition DP",
+        "Cost Preprocessing",
+        "Decision Monotonicity"
+      ],
+      "prerequisites": [
+        "Prefix Sums",
+        "Partition DP",
+        "Monotone Argmins"
+      ],
+      "why_fit": "The canonical first benchmark where interval-cost preprocessing and monotone split decisions combine into one exact divide-and-conquer DP row optimization."
+    },
+    {
+      "title": "Yet Another Minimization Problem",
+      "url": "https://codeforces.com/problemset/problem/868/F",
+      "source": "Codeforces",
+      "difficulty": "2500",
+      "tracks": [
+        "dp/divide-and-conquer-dp",
+        "DP",
+        "Partition DP",
+        "Divide and Conquer DP"
+      ],
+      "tags": [
+        "Partition DP",
+        "Monotone Opt",
+        "Mo-Style Cost Maintenance",
+        "Distinct Pair Cost"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Partition DP",
+        "Cost Maintenance",
+        "Decision Monotonicity"
+      ],
+      "prerequisites": [
+        "Divide and Conquer DP",
+        "Incremental Cost Updates",
+        "Two Pointers Or Mo Intuition"
+      ],
+      "why_fit": "A strong follow-up where the row optimization stays the same but the real challenge becomes maintaining the interval cost fast enough."
+    }
+  ],
+  "dp/knuth-optimization": [
+    {
+      "title": "Knuth Division",
+      "url": "https://cses.fi/problemset/task/2088",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/knuth-optimization",
+        "DP",
+        "Interval DP",
+        "Knuth Optimization"
+      ],
+      "tags": [
+        "Interval DP",
+        "Knuth Optimization",
+        "Prefix Sums",
+        "Merge Cost"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Interval DP",
+        "Cost Preprocessing",
+        "Opt Window Monotonicity"
+      ],
+      "prerequisites": [
+        "Interval DP",
+        "Prefix Sums",
+        "Split-Point Recurrence"
+      ],
+      "why_fit": "The cleanest first benchmark where the classic merge-cost interval recurrence matches the exact Knuth optimization window."
+    },
+    {
+      "title": "Slimes",
+      "url": "https://atcoder.jp/contests/dp/tasks/dp_n",
+      "source": "AtCoder DP Contest",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/knuth-optimization",
+        "DP",
+        "Interval DP",
+        "Knuth Optimization"
+      ],
+      "tags": [
+        "Interval DP",
+        "Merge Cost",
+        "Prefix Sums",
+        "Optimization Compare Point"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Interval DP",
+        "Cost Preprocessing",
+        "Optimization Compare Point"
+      ],
+      "prerequisites": [
+        "Interval DP",
+        "Prefix Sums",
+        "Split-Point Recurrence"
+      ],
+      "why_fit": "A canonical compare point with the same merge-style recurrence, useful for seeing the structure before or after importing the stronger Knuth optimization lens."
+    }
+  ],
   "dp/cht-li-chao": [
     {
       "title": "Monster Game I",
@@ -8202,7 +9135,6 @@
       "difficulty": "medium",
       "tracks": [
         "dp/cht-li-chao",
-        "Li Chao Tree",
         "Line Container"
       ],
       "tags": [
@@ -8210,7 +9142,7 @@
         "Line Container",
         "Point Queries"
       ],
-      "why_fit": "The most direct official verifier for the exact full-domain Li Chao starter.",
+      "why_fit": "The most direct official verifier for the exact full-domain LineContainer route under the affine line-container family.",
       "bucket": "core",
       "styles": [
         "Implementation",
@@ -8218,7 +9150,7 @@
       ],
       "prerequisites": [
         "Line Evaluation",
-        "Li Chao Midpoint Invariant"
+        "Lower Envelope Breakpoints"
       ]
     },
     {
@@ -8245,6 +9177,233 @@
       "prerequisites": [
         "Li Chao Tree",
         "Segment Tree Thinking"
+      ]
+    }
+  ],
+  "dp/slope-trick": [
+    {
+      "title": "Absolute Minima",
+      "url": "https://atcoder.jp/contests/abc127/tasks/abc127_f",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/slope-trick",
+        "DP",
+        "Slope Trick"
+      ],
+      "tags": [
+        "Official",
+        "Absolute Value Updates",
+        "Median Maintenance",
+        "Convex Function"
+      ],
+      "why_fit": "The clean warm-up where the same convex-function family appears without movement-style shift_min, so a lighter same-family route becomes visible.",
+      "bucket": "warmup",
+      "styles": [
+        "Online Queries",
+        "Median Structure"
+      ],
+      "prerequisites": [
+        "Absolute Value Cost",
+        "Convex Minimizers"
+      ]
+    },
+    {
+      "title": "Snuketoon",
+      "url": "https://atcoder.jp/contests/abc217/tasks/abc217_h",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/slope-trick",
+        "DP",
+        "Slope Trick"
+      ],
+      "tags": [
+        "Official",
+        "One-Sided Penalties",
+        "Shift Min",
+        "Convex DP"
+      ],
+      "why_fit": "The cleanest flagship where time gaps become bounded argmin shifts and each event adds one one-sided hinge penalty.",
+      "bucket": "core",
+      "styles": [
+        "Convex DP",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Convex Function State",
+        "One-Sided Hinges",
+        "Lazy Shifts"
+      ]
+    },
+    {
+      "title": "Travelling Salesman Problem",
+      "url": "https://atcoder.jp/contests/abc406/tasks/abc406_g",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/slope-trick",
+        "DP",
+        "Slope Trick"
+      ],
+      "tags": [
+        "Official",
+        "Absolute Distance",
+        "Shift Min",
+        "Follow-Up"
+      ],
+      "why_fit": "A strong follow-up where the same slope-trick machinery survives a different story skin and both movement and meeting costs shape the convex state.",
+      "bucket": "stretch",
+      "styles": [
+        "Convex DP",
+        "Follow-Up"
+      ],
+      "prerequisites": [
+        "Slope Trick",
+        "Absolute Distance DP"
+      ]
+    },
+    {
+      "title": "Many Increasing Problems",
+      "url": "https://atcoder.jp/contests/arc163/tasks/arc163_f",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/slope-trick",
+        "DP",
+        "Slope Trick"
+      ],
+      "tags": [
+        "Official",
+        "Monotone Sequence DP",
+        "Convex DP",
+        "Advanced"
+      ],
+      "why_fit": "The advanced follow-up where the slope-trick view still applies, but the problem is no longer a direct event-by-event coordinate process.",
+      "bucket": "challenge",
+      "styles": [
+        "Convex DP",
+        "Theory-Heavy"
+      ],
+      "prerequisites": [
+        "Slope Trick",
+        "Sequence DP"
+      ]
+    }
+  ],
+  "dp/lagrangian-relaxation": [
+    {
+      "title": "Red and Blue Lamps",
+      "url": "https://atcoder.jp/contests/abc218/tasks/abc218_h",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/lagrangian-relaxation",
+        "DP",
+        "Lagrangian Relaxation",
+        "Aliens Trick"
+      ],
+      "tags": [
+        "Official",
+        "Exact K",
+        "Penalty Search",
+        "Non-Adjacent Picks"
+      ],
+      "why_fit": "The clean flagship where the exact-K non-adjacent selection constraint becomes one integer penalty and the relaxed solver is a linear path DP.",
+      "bucket": "core",
+      "styles": [
+        "Penalty Search",
+        "Linear DP",
+        "Binary Search On Answer Space"
+      ],
+      "prerequisites": [
+        "Exact-K DP",
+        "Non-Adjacent DP",
+        "Count Tie-Breaking"
+      ]
+    },
+    {
+      "title": "Shojin",
+      "url": "https://atcoder.jp/contests/abc305/tasks/abc305_h",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/lagrangian-relaxation",
+        "DP",
+        "Lagrangian Relaxation",
+        "Aliens Trick"
+      ],
+      "tags": [
+        "Official",
+        "Exact K",
+        "Penalty Search",
+        "Follow-Up"
+      ],
+      "why_fit": "A strong follow-up where the same penalty-search worldview survives a different exact-K DP skin and the count dimension is still the true bottleneck.",
+      "bucket": "stretch",
+      "styles": [
+        "Penalty Search",
+        "Follow-Up"
+      ],
+      "prerequisites": [
+        "Aliens Trick",
+        "Monotone Counts"
+      ]
+    },
+    {
+      "title": "Patisserie ABC 3",
+      "url": "https://atcoder.jp/contests/abc400/tasks/abc400_g",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/lagrangian-relaxation",
+        "DP",
+        "Lagrangian Relaxation",
+        "Aliens Trick"
+      ],
+      "tags": [
+        "Official",
+        "Exact K",
+        "Penalty Search",
+        "Advanced"
+      ],
+      "why_fit": "An advanced same-family route where the core alien-DP idea remains, but the relaxed transition and structure are less direct than the flagship.",
+      "bucket": "challenge",
+      "styles": [
+        "Penalty Search",
+        "Advanced Modeling"
+      ],
+      "prerequisites": [
+        "Aliens Trick",
+        "Advanced DP Modeling"
+      ]
+    },
+    {
+      "title": "Welcome to Tokyo!",
+      "url": "https://atcoder.jp/contests/wtf22-day1-open/tasks/wtf22_day1_d",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "dp/lagrangian-relaxation",
+        "DP",
+        "Lagrangian Relaxation",
+        "Aliens Trick"
+      ],
+      "tags": [
+        "Official",
+        "Exact K",
+        "Penalty Search",
+        "Challenge"
+      ],
+      "why_fit": "A challenge anchor for recognizing the same exact-K penalty-search worldview once the flagship route feels routine.",
+      "bucket": "challenge",
+      "styles": [
+        "Penalty Search",
+        "Theory-Heavy"
+      ],
+      "prerequisites": [
+        "Aliens Trick",
+        "DP Modeling"
       ]
     }
   ],
@@ -10081,6 +11240,380 @@
       "bucket": "core"
     }
   ],
+  "math/polynomial-fps": [
+    {
+      "title": "Inv of Formal Power Series",
+      "url": "https://judge.yosupo.jp/problem/inv_of_formal_power_series",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/polynomial-fps",
+        "Polynomial",
+        "Formal Power Series",
+        "NTT"
+      ],
+      "tags": [
+        "Formal Power Series",
+        "Inverse",
+        "Newton Iteration",
+        "NTT"
+      ],
+      "why_fit": "The clean first benchmark where the entire task is one truncated FPS inverse and Newton doubling is the exact intended route.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Algebra"
+      ],
+      "prerequisites": [
+        "Exact Convolution",
+        "Formal Power Series Mod x^n"
+      ]
+    },
+    {
+      "title": "Log of Formal Power Series",
+      "url": "https://judge.yosupo.jp/problem/log_of_formal_power_series",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/polynomial-fps",
+        "Polynomial",
+        "Formal Power Series",
+        "NTT"
+      ],
+      "tags": [
+        "Formal Power Series",
+        "Logarithm",
+        "Derivative",
+        "Inverse"
+      ],
+      "why_fit": "The natural follow-up once the inverse route is trusted, because FPS log is just derivative, inverse, product, and integral glued together.",
+      "bucket": "stretch",
+      "styles": [
+        "Implementation",
+        "Algebra"
+      ],
+      "prerequisites": [
+        "FPS Inverse",
+        "Derivative And Integral"
+      ]
+    },
+    {
+      "title": "Exp of Formal Power Series",
+      "url": "https://judge.yosupo.jp/problem/exp_of_formal_power_series",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/polynomial-fps",
+        "Polynomial",
+        "Formal Power Series",
+        "NTT"
+      ],
+      "tags": [
+        "Formal Power Series",
+        "Exponential",
+        "Newton Iteration",
+        "Advanced"
+      ],
+      "why_fit": "A major step up where the same FPS worldview survives but the contract grows beyond plain inversion.",
+      "bucket": "challenge",
+      "styles": [
+        "Implementation",
+        "Advanced Algebra"
+      ],
+      "prerequisites": [
+        "FPS Inverse",
+        "FPS Log"
+      ]
+    },
+    {
+      "title": "Pow of Formal Power Series",
+      "url": "https://judge.yosupo.jp/problem/pow_of_formal_power_series",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/polynomial-fps",
+        "Polynomial",
+        "Formal Power Series",
+        "NTT"
+      ],
+      "tags": [
+        "Formal Power Series",
+        "Power",
+        "Log-Exp",
+        "Advanced"
+      ],
+      "why_fit": "A good later verifier once inverse/log/exp are in place and FPS algebra starts to feel compositional instead of magical.",
+      "bucket": "challenge",
+      "styles": [
+        "Implementation",
+        "Advanced Algebra"
+      ],
+      "prerequisites": [
+        "FPS Log",
+        "FPS Exp"
+      ]
+    }
+  ],
+  "math/bsgs-discrete-log": [
+    {
+      "title": "Discrete Logarithm Mod",
+      "url": "https://judge.yosupo.jp/problem/discrete_logarithm_mod",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/bsgs-discrete-log",
+        "Discrete Logarithm",
+        "Math"
+      ],
+      "tags": [
+        "BSGS",
+        "Discrete Log",
+        "Meet In The Middle",
+        "GCD Reduction"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Meet-In-The-Middle",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Arithmetic",
+        "Extended Euclid",
+        "Square Root Decomposition"
+      ],
+      "why_fit": "The cleanest verifier for the repo's exact route: general discrete log with gcd reduction and a minimum-answer BSGS implementation."
+    },
+    {
+      "title": "LibreOJ #6542",
+      "url": "https://loj.ac/p/6542",
+      "source": "LibreOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "math/bsgs-discrete-log",
+        "Discrete Logarithm",
+        "Math"
+      ],
+      "tags": [
+        "BSGS",
+        "Template",
+        "Discrete Log"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "BSGS",
+        "Modular Arithmetic"
+      ],
+      "why_fit": "A classic template-style benchmark once the first verifier route is already trusted."
+    }
+  ],
+  "math/modular-square-root-discrete-root": [
+    {
+      "title": "Sqrt Mod",
+      "url": "https://judge.yosupo.jp/problem/sqrt_mod",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/modular-square-root-discrete-root",
+        "Quadratic Residues",
+        "Math"
+      ],
+      "tags": [
+        "Modular Square Root",
+        "Tonelli-Shanks",
+        "Quadratic Residue",
+        "Prime Modulus"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Arithmetic",
+        "Binary Exponentiation",
+        "Prime Modulus"
+      ],
+      "why_fit": "The cleanest verifier-style benchmark where the first exact route is just: test quadratic-residue reachability, then recover one root with Tonelli-Shanks."
+    },
+    {
+      "title": "K-th Root Mod",
+      "url": "https://judge.yosupo.jp/problem/kth_root_mod",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/modular-square-root-discrete-root",
+        "Discrete Root",
+        "Math"
+      ],
+      "tags": [
+        "Discrete Root",
+        "Primitive Root",
+        "BSGS",
+        "Linear Congruence In Exponents"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Square Root",
+        "Discrete Log",
+        "Primitive Root"
+      ],
+      "why_fit": "The natural follow-up once the square-root lane is trusted and the learner is ready to reduce x^k ≡ a (mod p) to primitive-root and discrete-log machinery."
+    }
+  ],
+  "math/primitive-root": [
+    {
+      "title": "Primitive Root",
+      "url": "https://judge.yosupo.jp/problem/primitive_root",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/primitive-root",
+        "Primitive Root",
+        "Math"
+      ],
+      "tags": [
+        "Primitive Root",
+        "Generator",
+        "Prime Modulus",
+        "Factorization"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Arithmetic",
+        "Fast Power",
+        "Prime Factorization"
+      ],
+      "why_fit": "The cleanest verifier for the repo's exact route: factor p - 1, then reject candidate generators whose reduced-order powers collapse to 1."
+    },
+    {
+      "title": "K-th Root Mod",
+      "url": "https://judge.yosupo.jp/problem/kth_root_mod",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/primitive-root",
+        "Discrete Root",
+        "Math"
+      ],
+      "tags": [
+        "Primitive Root",
+        "Discrete Root",
+        "Discrete Log",
+        "Linear Congruence In Exponents"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Primitive Root",
+        "Discrete Log",
+        "Modular Arithmetic"
+      ],
+      "why_fit": "The natural follow-up once generator finding is trusted and the learner is ready to reduce x^k ≡ a (mod p) to exponent arithmetic."
+    }
+  ],
+  "math/pollard-rho": [
+    {
+      "title": "Factorize",
+      "url": "https://judge.yosupo.jp/problem/factorize",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/pollard-rho",
+        "Integer Factorization",
+        "Math"
+      ],
+      "tags": [
+        "Pollard-Rho",
+        "Miller-Rabin",
+        "Prime Factorization",
+        "64-bit"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Arithmetic",
+        "Fast Power",
+        "Prime Testing"
+      ],
+      "why_fit": "The cleanest verifier for the repo's exact route: deterministic 64-bit primality plus Pollard-Rho recursive splitting with sorted prime-multiset output."
+    }
+  ],
+  "math/gaussian-elimination": [
+    {
+      "title": "System of Linear Equations",
+      "url": "https://cses.fi/problemset/task/3154/",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/gaussian-elimination",
+        "Linear Systems",
+        "Math"
+      ],
+      "tags": [
+        "Gaussian Elimination",
+        "Linear Algebra",
+        "Mod Prime",
+        "Free Variables"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Modular Arithmetic",
+        "Matrix Modeling",
+        "Gaussian Elimination"
+      ],
+      "why_fit": "The cleanest first verifier for the repo's exact route: solve one dense linear system modulo one prime and output any valid assignment."
+    },
+    {
+      "title": "System of Linear Equations",
+      "url": "https://judge.yosupo.jp/problem/system_of_linear_equations",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/gaussian-elimination",
+        "Linear Systems",
+        "Math"
+      ],
+      "tags": [
+        "Gaussian Elimination",
+        "Affine Solution Space",
+        "Mod Prime"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Gaussian Elimination",
+        "Free Variables",
+        "Basis Output"
+      ],
+      "why_fit": "Same elimination worldview, but the output contract is stricter because the full affine solution space must be exposed instead of only one assignment."
+    }
+  ],
   "math/chinese-remainder": [
     {
       "title": "General Chinese Remainder",
@@ -10219,6 +11752,122 @@
         "Linear Sieve"
       ],
       "why_fit": "The cleanest first benchmark where divisor frequencies plus Mobius cancellation replace pairwise gcd checks entirely."
+    }
+  ],
+  "math/dirichlet-prefix-sums": [
+    {
+      "title": "Sum of Divisors",
+      "url": "https://cses.fi/problemset/task/1082",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/dirichlet-prefix-sums",
+        "Summatory Arithmetic Functions",
+        "Math"
+      ],
+      "tags": [
+        "Dirichlet Convolution",
+        "Sigma Function",
+        "Quotient Grouping",
+        "Harmonic Lemma"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Number Theory Basics",
+        "Arithmetic Progression Sums",
+        "Floor Division Grouping"
+      ],
+      "why_fit": "The cleanest first benchmark where sigma = 1 * id opens a divisor-side sum and equal floor(n / d) quotients collapse the runtime to O(sqrt(n))."
+    },
+    {
+      "title": "Totient sums",
+      "url": "https://cses.fi/ioi17/task/947",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/dirichlet-prefix-sums",
+        "Summatory Arithmetic Functions",
+        "Math"
+      ],
+      "tags": [
+        "Totient",
+        "Prefix Sums",
+        "Quotient Grouping",
+        "Follow-Up"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Dirichlet Convolution",
+        "Quotient Grouping",
+        "Euler Totient"
+      ],
+      "why_fit": "A useful compare point once the first direct sigma-prefix route is trusted; the same quotient-grouping worldview survives, but the arithmetic function is no longer available by one immediate convolution expansion."
+    }
+  ],
+  "math/min25-du-jiao": [
+    {
+      "title": "Sum of Totient Function",
+      "url": "https://judge.yosupo.jp/problem/sum_of_totient_function",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "math/min25-du-jiao",
+        "Prefix Sums",
+        "Math"
+      ],
+      "tags": [
+        "Du Jiao Sieve",
+        "Euler Totient",
+        "Quotient Set",
+        "Dirichlet Convolution"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Dirichlet Convolution",
+        "Euler Totient",
+        "Quotient Grouping"
+      ],
+      "why_fit": "The cleanest first benchmark where phi * 1 = id stops being one direct divisor-side expansion and instead becomes a quotient-set recurrence for the prefix sum itself."
+    },
+    {
+      "title": "Totient sums",
+      "url": "https://cses.fi/ioi17/task/947",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/min25-du-jiao",
+        "Prefix Sums",
+        "Math"
+      ],
+      "tags": [
+        "Totient",
+        "Prefix Sums",
+        "Quotient Set",
+        "Follow-Up"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Du Jiao Sieve",
+        "Euler Totient",
+        "Quotient Grouping"
+      ],
+      "why_fit": "A natural compare point after the first Du Jiao verifier route is trusted; it asks for the same implicit prefix-sum recovery worldview without forcing the lane to overclaim full Min_25 as the starter."
     }
   ],
   "math/linear-recurrence": [
@@ -12484,6 +14133,63 @@
       "bucket": "core"
     }
   ],
+  "strings/suffix-tree": [
+    {
+      "title": "Pattern Positions",
+      "url": "https://cses.fi/problemset/task/2104",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "strings/suffix-tree",
+        "Strings",
+        "Suffix-Tree",
+        "Substring-Index"
+      ],
+      "tags": [
+        "Suffix Tree",
+        "Substring Index",
+        "Earliest Occurrence",
+        "Pattern Matching"
+      ],
+      "why_fit": "The cleanest first verifier for one static text used as a compressed substring index with earliest-occurrence metadata.",
+      "bucket": "core",
+      "styles": [
+        "Many Queries",
+        "Suffix Processing"
+      ],
+      "prerequisites": [
+        "Compressed Edges",
+        "Suffix Leaves",
+        "Subtree Minimum"
+      ]
+    },
+    {
+      "title": "Distinct Substrings",
+      "url": "https://cses.fi/problemset/task/2105",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "strings/suffix-tree",
+        "Strings",
+        "Suffix-Tree"
+      ],
+      "tags": [
+        "Suffix Tree",
+        "Distinct Substrings",
+        "Compressed Edges"
+      ],
+      "why_fit": "A good compare-point problem once the tree is trusted and you want the usable-edge-length counting view.",
+      "bucket": "stretch",
+      "styles": [
+        "Counting",
+        "Suffix Processing"
+      ],
+      "prerequisites": [
+        "Compressed Edges",
+        "Unique Terminator"
+      ]
+    }
+  ],
   "strings/suffix-automaton": [
     {
       "title": "Martian Strings",
@@ -13166,6 +14872,131 @@
       "styles": [],
       "prerequisites": [],
       "bucket": "core"
+    }
+  ],
+  "geometry/half-plane-intersection": [
+    {
+      "title": "Big Brother",
+      "url": "https://open.kattis.com/problems/bigbrother",
+      "source": "Kattis",
+      "difficulty": "medium",
+      "tracks": [
+        "geometry/half-plane-intersection",
+        "Geometry",
+        "Half-Plane-Intersection",
+        "Polygon-Kernel"
+      ],
+      "tags": [
+        "Half-Plane Intersection",
+        "Polygon Kernel",
+        "Directed Lines",
+        "Continuous Geometry",
+        "Deque"
+      ],
+      "why_fit": "The cleanest polygon-kernel benchmark where every polygon edge turns into one inward half-plane and the intended route is exactly angle-sorted half-plane intersection.",
+      "bucket": "core",
+      "styles": [
+        "Geometry",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Orientation",
+        "Polygon Area",
+        "Directed Line Sidedness"
+      ]
+    }
+  ],
+  "geometry/minkowski-sum": [
+    {
+      "title": "Mogohu-Rea Idol",
+      "url": "https://codeforces.com/problemset/problem/87/E",
+      "source": "Codeforces",
+      "difficulty": "very-hard",
+      "tracks": [
+        "geometry/minkowski-sum",
+        "Geometry",
+        "Minkowski-Sum",
+        "Point-In-Convex"
+      ],
+      "tags": [
+        "Minkowski Sum",
+        "Convex Polygon",
+        "Repeated Sum",
+        "Point Query",
+        "Center of Mass"
+      ],
+      "why_fit": "A stretch repeated-sum model where the basic two-polygon merge is already assumed and the real lesson is reusing it for three convex polygons plus scaled point-in-convex queries.",
+      "bucket": "stretch",
+      "styles": [
+        "Geometry",
+        "Modeling",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Convex Polygon Order",
+        "Cross Product",
+        "Point In Convex Polygon"
+      ]
+    }
+  ],
+  "geometry/nearest-pair": [
+    {
+      "title": "Closest Pair",
+      "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=CGL_5_A",
+      "source": "AOJ",
+      "difficulty": "medium",
+      "tracks": [
+        "geometry/nearest-pair",
+        "Geometry",
+        "Nearest-Pair",
+        "Sweep-Line"
+      ],
+      "tags": [
+        "Closest Pair",
+        "Sweep Line",
+        "Active Strip",
+        "Euclidean Distance",
+        "Ordered Set"
+      ],
+      "why_fit": "The cleanest official nearest-pair benchmark where the intended route is exactly the standard x-sorted sweep with a y-ordered active strip.",
+      "bucket": "core",
+      "styles": [
+        "Geometry",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Sorting Points",
+        "Ordered Set By Y",
+        "Squared Distance Bookkeeping"
+      ]
+    },
+    {
+      "title": "Minimum Euclidean Distance",
+      "url": "https://cses.fi/problemset/task/2194",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "geometry/nearest-pair",
+        "Geometry",
+        "Nearest-Pair"
+      ],
+      "tags": [
+        "Closest Pair",
+        "Sweep Line",
+        "Squared Distance",
+        "Plane Geometry"
+      ],
+      "bucket": "challenge",
+      "styles": [
+        "Implementation",
+        "Sweep-Line"
+      ],
+      "prerequisites": [
+        "Sorting Points",
+        "Active Strip",
+        "Integer Distance Arithmetic"
+      ],
+      "why_fit": "A harder verifier-style sibling where the same nearest-pair sweep must be implemented carefully enough for contest-sized integer input."
     }
   ],
   "geometry/sweep-line": [
@@ -14546,6 +16377,97 @@
       "styles": [],
       "prerequisites": [],
       "bucket": "core"
+    }
+  ],
+  "advanced/simplex": [
+    {
+      "title": "Cheese, If You Please",
+      "url": "https://open.kattis.com/problems/cheeseifyouplease",
+      "source": "Kattis",
+      "difficulty": "medium-hard",
+      "tracks": [
+        "advanced/simplex",
+        "Advanced",
+        "Optimization",
+        "Linear Programming"
+      ],
+      "tags": [
+        "Simplex",
+        "Continuous Optimization",
+        "Resource Allocation",
+        "Blending"
+      ],
+      "why_fit": "The cleanest first simplex rep in the repo because the story is already one continuous blend-planning LP with one variable per product.",
+      "bucket": "core",
+      "styles": [
+        "Modeling",
+        "Floating Point"
+      ],
+      "prerequisites": [
+        "Linear Constraints",
+        "Continuous Variables"
+      ]
+    },
+    {
+      "title": "Road Times",
+      "url": "https://icpc.global/worldfinals/problems/2016-ICPC-World-Finals/icpc2016.pdf",
+      "source": "ICPC World Finals",
+      "difficulty": "very-hard",
+      "tracks": [
+        "advanced/simplex",
+        "Advanced",
+        "Optimization",
+        "Linear Programming"
+      ],
+      "tags": [
+        "Simplex",
+        "LP Modeling",
+        "Shortest Paths",
+        "Challenge"
+      ],
+      "why_fit": "A famous stretch problem where the LP layer is real contest substance, not just background theory.",
+      "bucket": "challenge",
+      "styles": [
+        "Modeling",
+        "Theory-Heavy"
+      ],
+      "prerequisites": [
+        "Simplex",
+        "Shortest Paths",
+        "Optimization And Duality"
+      ]
+    }
+  ],
+  "advanced/matroid-intersection": [
+    {
+      "title": "Pick Your Own Nim",
+      "url": "https://codeforces.com/gym/102156/problem/D",
+      "source": "Codeforces Gym",
+      "difficulty": "very-hard",
+      "tracks": [
+        "advanced/matroid-intersection",
+        "Advanced",
+        "Matroid Intersection",
+        "Optimization"
+      ],
+      "tags": [
+        "Matroid Intersection",
+        "Partition Matroid",
+        "Linear Matroid",
+        "Xor Basis"
+      ],
+      "why_fit": "A clean contest anchor where one choice per box forms a partition matroid and the xor-independence condition forms a linear matroid relative to Alice's fixed heaps.",
+      "bucket": "core",
+      "styles": [
+        "Modeling",
+        "Augmenting Path",
+        "Theory-Heavy"
+      ],
+      "prerequisites": [
+        "XOR Basis",
+        "Matching",
+        "Optimization And Duality"
+      ]
     }
   ],
   "advanced/contest-engineering": [

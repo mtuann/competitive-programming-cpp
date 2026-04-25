@@ -8,9 +8,12 @@ Use these ladders when the main challenge is geometric modeling rather than raw 
 2. segment intersection
 3. polygon area and point location
 4. convex hull
-5. sweep line
-6. counting geometry
-7. right-triangle / angle-counting notes
+5. minkowski sum
+6. sweep line
+7. nearest pair
+8. counting geometry
+9. half-plane intersection
+10. right-triangle / angle-counting notes
 
 ## How To Use This Section
 
@@ -28,5 +31,8 @@ Use these ladders when the main challenge is geometric modeling rather than raw 
 
 - [Polygon Area](polygon-area-point-location/polygonarea.md)
 - [Point in Polygon](polygon-area-point-location/pointinpolygon.md)
+- [Mogohu-Rea Idol](minkowski-sum/mogohureaidol.md) as the stretch repeated-sum anchor after the first two-polygon route
+- [Closest Pair](nearest-pair/closestpair.md)
 - [PRAVO](right-triangles/pravo.md)
 - [KINGDOMS](sweep-line/kingdoms.md)
+- [Big Brother](half-plane-intersection/bigbrother.md)

@@ -105,15 +105,22 @@ nav:
           - DSU Rollback / Offline Dynamic Connectivity: topics/data-structures/dsu-rollback/README.md
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
           - Binary Trie / XOR Queries: topics/data-structures/binary-trie-xor/README.md
+          - PBDS / Order Statistics Tree: topics/data-structures/pbds-order-statistics/README.md
+          - Balanced BSTs For Contests: topics/data-structures/balanced-bsts/README.md
+          - Splay Tree: topics/data-structures/splay-tree/README.md
+          - Pairing Heap / Leftist Heap: topics/data-structures/pairing-leftist-heap/README.md
+          - DSU On Tree / Small-To-Large: topics/data-structures/dsu-on-tree/README.md
           - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
           - Mo's Algorithm: topics/data-structures/mos-algorithm/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
           - Persistent Data Structures: topics/data-structures/persistent-data-structures/README.md
+          - Persistent Treap: topics/data-structures/persistent-treap/README.md
           - Treap / Implicit Treap: topics/data-structures/treap-implicit/README.md
           - Wavelet Tree: topics/data-structures/wavelet-tree/README.md
           - Segment Tree: topics/data-structures/segment-tree/README.md
           - Lazy Segment Tree: topics/data-structures/lazy-segment-tree/README.md
           - Segment Tree Beats: topics/data-structures/segment-tree-beats/README.md
+          - ODT / Chtholly: topics/data-structures/odt-chtholly/README.md
           - Sparse Table: topics/data-structures/sparse-table/README.md
       - Graphs:
           - Overview: topics/graphs/README.md
@@ -121,7 +128,10 @@ nav:
           - Bridges / Articulation / BCC: topics/graphs/bridges-articulation/README.md
           - Eulerian Path / Cycle: topics/graphs/eulerian-path-cycle/README.md
           - Euler Tour / Subtree Queries: topics/graphs/euler-tour-subtree/README.md
+          - Virtual Tree / Auxiliary Tree: topics/graphs/virtual-tree/README.md
           - Centroid Decomposition: topics/graphs/centroid-decomposition/README.md
+          - Link-Cut Tree: topics/graphs/link-cut-tree/README.md
+          - Euler Tour Tree: topics/graphs/euler-tour-tree/README.md
           - Flow: topics/graphs/flow/README.md
           - Flow With Lower Bounds: topics/graphs/flow-lower-bounds/README.md
           - Graph Modeling: topics/graphs/graph-modeling/README.md
@@ -138,7 +148,13 @@ nav:
           - Overview: topics/dp/README.md
           - DP Foundations: topics/dp/foundations/README.md
           - Bitmask DP: topics/dp/bitmask-dp/README.md
+          - SOS DP: topics/dp/sos-dp/README.md
+          - Broken Profile / Plug DP: topics/dp/broken-profile/README.md
+          - Divide and Conquer DP: topics/dp/divide-and-conquer-dp/README.md
+          - Knuth Optimization: topics/dp/knuth-optimization/README.md
           - Convex Hull Trick / Li Chao Tree: topics/dp/cht-li-chao/README.md
+          - Slope Trick: topics/dp/slope-trick/README.md
+          - Lagrangian Relaxation / Aliens Trick: topics/dp/lagrangian-relaxation/README.md
           - Digit DP: topics/dp/digit-dp/README.md
           - Interval DP: topics/dp/interval-dp/README.md
           - Knapsack Family: topics/dp/knapsack-family/README.md
@@ -147,14 +163,22 @@ nav:
           - Overview: topics/math/README.md
           - Modular Arithmetic: topics/math/modular-arithmetic/README.md
           - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - BSGS / Discrete Log: topics/math/bsgs-discrete-log/README.md
+          - Modular Square Root / Discrete Root: topics/math/modular-square-root-discrete-root/README.md
+          - Primitive Root: topics/math/primitive-root/README.md
+          - Pollard-Rho: topics/math/pollard-rho/README.md
+          - Gaussian Elimination / Linear Algebra: topics/math/gaussian-elimination/README.md
           - Chinese Remainder / Linear Congruences: topics/math/chinese-remainder/README.md
           - Lucas Theorem / Large Binomial Mod Prime: topics/math/lucas-theorem/README.md
           - Mobius And Multiplicative Counting: topics/math/mobius-multiplicative/README.md
+          - Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions: topics/math/dirichlet-prefix-sums/README.md
+          - Min_25 / Du Jiao: topics/math/min25-du-jiao/README.md
           - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
           - XOR Basis / Linear Basis: topics/math/xor-basis/README.md
           - Game Theory / Sprague-Grundy: topics/math/game-theory/README.md
           - Probability: topics/math/probability/README.md
           - FFT / NTT: topics/math/fft-ntt/README.md
+          - Polynomial / Formal Power Series: topics/math/polynomial-fps/README.md
       - Combinatorics:
           - Overview: topics/combinatorics/README.md
           - Bounded Compositions: topics/combinatorics/bounded-compositions/README.md
@@ -168,6 +192,7 @@ nav:
           - KMP: topics/strings/kmp/README.md
           - Palindromes / Manacher: topics/strings/palindromes/README.md
           - Eertree / Palindromic Tree: topics/strings/eertree/README.md
+          - Suffix Tree: topics/strings/suffix-tree/README.md
           - Suffix Array And LCP: topics/strings/suffix-array-lcp/README.md
           - Suffix Automaton: topics/strings/suffix-automaton/README.md
           - Trie: topics/strings/trie/README.md
@@ -176,6 +201,9 @@ nav:
           - Overview: topics/geometry/README.md
           - Convex Hull: topics/geometry/convex-hull/README.md
           - Counting Geometry: topics/geometry/counting-geometry/README.md
+          - Half-Plane Intersection: topics/geometry/half-plane-intersection/README.md
+          - Minkowski Sum: topics/geometry/minkowski-sum/README.md
+          - Nearest Pair of Points: topics/geometry/nearest-pair/README.md
           - Polygon Area And Point Location: topics/geometry/polygon-area-point-location/README.md
           - Segment Intersection: topics/geometry/segment-intersection/README.md
           - Sweep Line: topics/geometry/sweep-line/README.md
@@ -191,6 +219,8 @@ nav:
           - Constructive: topics/advanced/constructive/README.md
           - Contest Engineering: topics/advanced/contest-engineering/README.md
           - Optimization And Duality: topics/advanced/optimization-and-duality/README.md
+          - Simplex: topics/advanced/simplex/README.md
+          - Matroid Intersection: topics/advanced/matroid-intersection/README.md
           - Randomized Algorithms: topics/advanced/randomized-algorithms/README.md
   - Practice:
       - Practice Hub: practice/README.md
@@ -213,15 +243,22 @@ nav:
               - DSU Rollback / Offline Dynamic Connectivity: practice/ladders/data-structures/dsu-rollback/README.md
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
               - Binary Trie / XOR Queries: practice/ladders/data-structures/binary-trie-xor/README.md
+              - PBDS / Order Statistics Tree: practice/ladders/data-structures/pbds-order-statistics/README.md
+              - Balanced BSTs For Contests: practice/ladders/data-structures/balanced-bsts/README.md
+              - Splay Tree: practice/ladders/data-structures/splay-tree/README.md
+              - Pairing Heap / Leftist Heap: practice/ladders/data-structures/pairing-leftist-heap/README.md
+              - DSU On Tree / Small-To-Large: practice/ladders/data-structures/dsu-on-tree/README.md
               - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
               - Mo's Algorithm: practice/ladders/data-structures/mos-algorithm/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
               - Persistent Data Structures: practice/ladders/data-structures/persistent-data-structures/README.md
+              - Persistent Treap: practice/ladders/data-structures/persistent-treap/README.md
               - Treap / Implicit Treap: practice/ladders/data-structures/treap-implicit/README.md
               - Wavelet Tree: practice/ladders/data-structures/wavelet-tree/README.md
               - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
               - Lazy Segment Tree: practice/ladders/data-structures/lazy-segment-tree/README.md
               - Segment Tree Beats: practice/ladders/data-structures/segment-tree-beats/README.md
+              - ODT / Chtholly: practice/ladders/data-structures/odt-chtholly/README.md
               - Sparse Table: practice/ladders/data-structures/sparse-table/README.md
           - Graphs:
               - Overview: practice/ladders/graphs/README.md
@@ -230,6 +267,9 @@ nav:
               - Eulerian Path / Cycle: practice/ladders/graphs/eulerian-path-cycle/README.md
               - Centroid Decomposition: practice/ladders/graphs/centroid-decomposition/README.md
               - Euler Tour / Subtree Queries: practice/ladders/graphs/euler-tour-subtree/README.md
+              - Virtual Tree / Auxiliary Tree: practice/ladders/graphs/virtual-tree/README.md
+              - Link-Cut Tree: practice/ladders/graphs/link-cut-tree/README.md
+              - Euler Tour Tree: practice/ladders/graphs/euler-tour-tree/README.md
               - Flow: practice/ladders/graphs/flow/README.md
               - Graph Modeling: practice/ladders/graphs/graph-modeling/README.md
               - Heavy-Light Decomposition: practice/ladders/graphs/hld/README.md
@@ -245,7 +285,13 @@ nav:
               - Overview: practice/ladders/dp/README.md
               - Foundations: practice/ladders/dp/foundations/README.md
               - Bitmask DP: practice/ladders/dp/bitmask-dp/README.md
+              - SOS DP: practice/ladders/dp/sos-dp/README.md
+              - Broken Profile / Plug DP: practice/ladders/dp/broken-profile/README.md
+              - Divide and Conquer DP: practice/ladders/dp/divide-and-conquer-dp/README.md
+              - Knuth Optimization: practice/ladders/dp/knuth-optimization/README.md
               - CHT / Li Chao: practice/ladders/dp/cht-li-chao/README.md
+              - Slope Trick: practice/ladders/dp/slope-trick/README.md
+              - Lagrangian Relaxation / Aliens Trick: practice/ladders/dp/lagrangian-relaxation/README.md
               - Digit DP: practice/ladders/dp/digit-dp/README.md
               - Interval DP: practice/ladders/dp/interval-dp/README.md
               - Knapsack Family: practice/ladders/dp/knapsack-family/README.md
@@ -256,14 +302,22 @@ nav:
               - Modular Arithmetic: practice/ladders/math/modular-arithmetic/README.md
               - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
               - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
+              - BSGS / Discrete Log: practice/ladders/math/bsgs-discrete-log/README.md
+              - Modular Square Root / Discrete Root: practice/ladders/math/modular-square-root-discrete-root/README.md
+              - Primitive Root: practice/ladders/math/primitive-root/README.md
+              - Pollard-Rho: practice/ladders/math/pollard-rho/README.md
+              - Gaussian Elimination / Linear Algebra: practice/ladders/math/gaussian-elimination/README.md
               - Chinese Remainder / Linear Congruences: practice/ladders/math/chinese-remainder/README.md
               - Lucas Theorem / Large Binomial Mod Prime: practice/ladders/math/lucas-theorem/README.md
               - Mobius And Multiplicative Counting: practice/ladders/math/mobius-multiplicative/README.md
+              - Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions: practice/ladders/math/dirichlet-prefix-sums/README.md
+              - Min_25 / Du Jiao: practice/ladders/math/min25-du-jiao/README.md
               - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
               - XOR Basis / Linear Basis: practice/ladders/math/xor-basis/README.md
               - Game Theory / Sprague-Grundy: practice/ladders/math/game-theory/README.md
               - Probability: practice/ladders/math/probability/README.md
               - FFT / NTT: practice/ladders/math/fft/README.md
+              - Polynomial / Formal Power Series: practice/ladders/math/polynomial-fps/README.md
           - Combinatorics:
               - Overview: practice/ladders/combinatorics/README.md
               - Bounded Compositions: practice/ladders/combinatorics/bounded-compositions/README.md
@@ -277,6 +331,7 @@ nav:
               - KMP: practice/ladders/strings/kmp/README.md
               - Palindromes: practice/ladders/strings/palindromes/README.md
               - Eertree / Palindromic Tree: practice/ladders/strings/eertree/README.md
+              - Suffix Tree: practice/ladders/strings/suffix-tree/README.md
               - Suffix Array And LCP: practice/ladders/strings/suffix-array-lcp/README.md
               - Suffix Automaton: practice/ladders/strings/suffix-automaton/README.md
               - Trie: practice/ladders/strings/trie/README.md
@@ -285,6 +340,9 @@ nav:
               - Overview: practice/ladders/geometry/README.md
               - Convex Hull: practice/ladders/geometry/convex-hull/README.md
               - Counting Geometry: practice/ladders/geometry/counting-geometry/README.md
+              - Half-Plane Intersection: practice/ladders/geometry/half-plane-intersection/README.md
+              - Minkowski Sum: practice/ladders/geometry/minkowski-sum/README.md
+              - Nearest Pair: practice/ladders/geometry/nearest-pair/README.md
               - Polygon Area And Point Location: practice/ladders/geometry/polygon-area-point-location/README.md
               - Right Triangles: practice/ladders/geometry/right-triangles/README.md
               - Segment Intersection: practice/ladders/geometry/segment-intersection/README.md
@@ -301,6 +359,8 @@ nav:
               - Constructive: practice/ladders/advanced/constructive/README.md
               - Contest Engineering: practice/ladders/advanced/contest-engineering/README.md
               - Optimization And Duality: practice/ladders/advanced/optimization-and-duality/README.md
+              - Simplex: practice/ladders/advanced/simplex/README.md
+              - Matroid Intersection: practice/ladders/advanced/matroid-intersection/README.md
               - Randomized Algorithms: practice/ladders/advanced/randomized-algorithms/README.md
       - Mixed Rounds:
           - Overview: practice/mixed-rounds/README.md
@@ -341,37 +401,63 @@ nav:
       - Fenwick Hot Sheet: notebook/fenwick-hot-sheet.md
       - DSU Hot Sheet: notebook/dsu-hot-sheet.md
       - DSU Rollback Hot Sheet: notebook/dsu-rollback-hot-sheet.md
+      - DSU On Tree Hot Sheet: notebook/dsu-on-tree-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
       - Lazy Segment Tree Hot Sheet: notebook/lazy-segment-tree-hot-sheet.md
       - Segment Tree Beats Hot Sheet: notebook/segment-tree-beats-hot-sheet.md
       - Persistent Data Structures Hot Sheet: notebook/persistent-data-structures-hot-sheet.md
+      - Persistent Treap Hot Sheet: notebook/persistent-treap-hot-sheet.md
+      - Balanced BST Hot Sheet: notebook/balanced-bst-hot-sheet.md
+      - Pairing / Leftist Heap Hot Sheet: notebook/pairing-leftist-heap-hot-sheet.md
+      - ODT / Chtholly Hot Sheet: notebook/odt-chtholly-hot-sheet.md
       - Treap / Implicit Treap Hot Sheet: notebook/treap-hot-sheet.md
       - Wavelet Tree Hot Sheet: notebook/wavelet-tree-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Mo's Hot Sheet: notebook/mos-hot-sheet.md
       - Binary Trie Hot Sheet: notebook/binary-trie-hot-sheet.md
+      - Order Statistics Tree Hot Sheet: notebook/order-statistics-tree-hot-sheet.md
+      - Splay Tree Hot Sheet: notebook/splay-tree-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
       - Low-Link Hot Sheet: notebook/lowlink-hot-sheet.md
       - Eulerian Hot Sheet: notebook/eulerian-hot-sheet.md
       - Two-SAT Hot Sheet: notebook/two-sat-hot-sheet.md
       - Subtree Queries Hot Sheet: notebook/subtree-queries-hot-sheet.md
+      - Virtual Tree Hot Sheet: notebook/virtual-tree-hot-sheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md
       - Centroid Decomposition Hot Sheet: notebook/centroid-hot-sheet.md
+      - Link-Cut Tree Hot Sheet: notebook/link-cut-tree-hot-sheet.md
+      - Euler Tour Tree Hot Sheet: notebook/euler-tour-tree-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
       - Flow With Lower Bounds Hot Sheet: notebook/flow-lower-bounds-hot-sheet.md
       - Min-Cost Flow Hot Sheet: notebook/min-cost-flow-hot-sheet.md
       - Matching Hot Sheet: notebook/matching-hot-sheet.md
       - DP Cheatsheet: notebook/dp-cheatsheet.md
+      - SOS DP Hot Sheet: notebook/sos-dp-hot-sheet.md
+      - Divide and Conquer DP Hot Sheet: notebook/divide-and-conquer-dp-hot-sheet.md
+      - Knuth Optimization Hot Sheet: notebook/knuth-optimization-hot-sheet.md
       - CHT Li Chao Hot Sheet: notebook/cht-hot-sheet.md
+      - Slope Trick Hot Sheet: notebook/slope-trick-hot-sheet.md
+      - Aliens Trick Hot Sheet: notebook/aliens-trick-hot-sheet.md
+      - Simplex Hot Sheet: notebook/simplex-hot-sheet.md
+      - Matroid Intersection Hot Sheet: notebook/matroid-intersection-hot-sheet.md
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
+      - Broken Profile Hot Sheet: notebook/broken-profile-hot-sheet.md
       - Linear Recurrence Hot Sheet: notebook/linear-recurrence-hot-sheet.md
+      - Gaussian Elimination Hot Sheet: notebook/gaussian-elimination-hot-sheet.md
       - XOR Basis Hot Sheet: notebook/xor-basis-hot-sheet.md
       - Sprague-Grundy Hot Sheet: notebook/sprague-grundy-hot-sheet.md
       - Probability Hot Sheet: notebook/probability-hot-sheet.md
+      - Polynomial / FPS Hot Sheet: notebook/polynomial-fps-hot-sheet.md
       - Lucas Theorem Hot Sheet: notebook/lucas-hot-sheet.md
+      - Discrete Log Hot Sheet: notebook/discrete-log-hot-sheet.md
+      - Modular Square Root Hot Sheet: notebook/modular-square-root-hot-sheet.md
+      - Primitive Root Hot Sheet: notebook/primitive-root-hot-sheet.md
+      - Pollard-Rho Hot Sheet: notebook/pollard-rho-hot-sheet.md
       - Mobius Hot Sheet: notebook/mobius-hot-sheet.md
+      - Dirichlet Prefix Sums Hot Sheet: notebook/dirichlet-prefix-sums-hot-sheet.md
+      - Min_25 / Du Jiao Hot Sheet: notebook/min25-du-jiao-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md
       - Chinese Remainder Hot Sheet: notebook/chinese-remainder-hot-sheet.md
@@ -381,8 +467,12 @@ nav:
       - Eertree Hot Sheet: notebook/eertree-hot-sheet.md
       - String Hashing Hot Sheet: notebook/string-hashing-hot-sheet.md
       - Aho-Corasick Hot Sheet: notebook/aho-corasick-hot-sheet.md
+      - Suffix Tree Hot Sheet: notebook/suffix-tree-hot-sheet.md
       - Suffix Array LCP Hot Sheet: notebook/suffix-array-lcp-hot-sheet.md
       - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
+      - Half-Plane Intersection Hot Sheet: notebook/half-plane-intersection-hot-sheet.md
+      - Minkowski Sum Hot Sheet: notebook/minkowski-sum-hot-sheet.md
+      - Nearest Pair Hot Sheet: notebook/nearest-pair-hot-sheet.md
       - Contest Checklist: notebook/contest-checklist.md
       - Anti-Hack Workflow: notebook/anti-hack-workflow.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md
@@ -402,5 +492,6 @@ nav:
       - Freshness Backbone: docs/freshness-backbone.md
       - Roadmap: docs/roadmap.md
       - Expansion Roadmap: docs/expansion-roadmap.md
+      - Algorithm Gap Roadmap: docs/algorithm-gap-roadmap.md
       - CRT / Lucas / Mobius Wave Plan: docs/crt-lucas-mobius-wave-plan.md
       - Markdown Math Style: docs/authoring/markdown-math-style.md
