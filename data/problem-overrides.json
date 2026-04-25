@@ -150,6 +150,20 @@
       "Dynamic programming"
     ]
   },
+  "RANGEQUERIESANDCOPIES": {
+    "topic_tags": [
+      "data-structures/segment-tree"
+    ],
+    "patterns": [
+      "persistent segment tree",
+      "path copying",
+      "versioned range sum"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ]
+  },
   "COUNTINGROOMS": {
     "topic_tags": [
       "graphs/bfs-dfs"

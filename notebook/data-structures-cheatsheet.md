@@ -14,6 +14,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - point add + prefix/range sum -> [Fenwick hot sheet](fenwick-hot-sheet.md)
 - arbitrary merge with updates -> segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - online range add + range sum -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
+- old versions stay queryable and point updates create new versions -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md)
 - static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
 - connectivity under offline edge add/remove timeline -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
@@ -35,6 +36,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 
 - Fenwick / prefix structures: one stable prefix meaning
 - segment tree: every node represents one mergeable segment summary
+- persistent segment tree: every version is one root and untouched subtrees are shared
 - DSU: every element belongs to one representative-led component
 - rollback DSU: the current component forest must be exactly restorable from snapshots
 - ordered-set logic: duplicates and erase policy must be explicit
@@ -51,6 +53,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - Fenwick -> [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
 - DSU -> [DSU hot sheet](dsu-hot-sheet.md) + [C11XU](../practice/ladders/data-structures/dsu/c11xu.md)
 - rollback connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
+- persistent range sums -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md) + [Range Queries and Copies](../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
@@ -61,6 +64,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 ## Common Mistakes
 
 - using a segment tree when the query is static
+- mutating a shared node and corrupting an old version
 - forgetting that `set` drops duplicates
 - trying to erase arbitrary heap items without a lazy-delete plan
 - missing the original-order bookkeeping in offline processing
@@ -82,6 +86,7 @@ Ask:
 - [Fenwick hot sheet](fenwick-hot-sheet.md)
 - [DSU hot sheet](dsu-hot-sheet.md)
 - [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
+- [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)
@@ -90,3 +95,4 @@ Ask:
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)
 - [Lazy Segment Tree topic](../topics/data-structures/lazy-segment-tree/README.md)
+- [Persistent Data Structures topic](../topics/data-structures/persistent-data-structures/README.md)

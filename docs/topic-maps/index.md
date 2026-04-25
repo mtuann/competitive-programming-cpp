@@ -20,7 +20,8 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Data Structures -> Heaps And Ordered Sets | 1 | 2 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Lazy Segment Tree | 1 | 4 | 4 | [Open](data-structures/lazy-segment-tree.md) |
 | Data Structures -> Offline Tricks | 2 | 0 | 7 | [Open](data-structures/offline-tricks.md) |
-| Data Structures -> Segment Tree | 3 | 0 | 8 | [Open](data-structures/segment-tree.md) |
+| Data Structures -> Persistent Data Structures | 1 | 5 | 3 | [Open](data-structures/persistent-data-structures.md) |
+| Data Structures -> Segment Tree | 4 | 0 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Sparse Table | 1 | 0 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Bridges, Articulation, And BCC | 1 | 4 | 5 | [Open](graphs/bridges-articulation.md) |

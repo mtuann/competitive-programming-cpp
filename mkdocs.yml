@@ -106,6 +106,7 @@ nav:
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
           - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
+          - Persistent Data Structures: topics/data-structures/persistent-data-structures/README.md
           - Segment Tree: topics/data-structures/segment-tree/README.md
           - Lazy Segment Tree: topics/data-structures/lazy-segment-tree/README.md
           - Sparse Table: topics/data-structures/sparse-table/README.md
@@ -198,6 +199,7 @@ nav:
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
               - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
+              - Persistent Data Structures: practice/ladders/data-structures/persistent-data-structures/README.md
               - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
               - Lazy Segment Tree: practice/ladders/data-structures/lazy-segment-tree/README.md
               - Sparse Table: practice/ladders/data-structures/sparse-table/README.md
@@ -304,6 +306,7 @@ nav:
       - DSU Rollback Hot Sheet: notebook/dsu-rollback-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
       - Lazy Segment Tree Hot Sheet: notebook/lazy-segment-tree-hot-sheet.md
+      - Persistent Data Structures Hot Sheet: notebook/persistent-data-structures-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md

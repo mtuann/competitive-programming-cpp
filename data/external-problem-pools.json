@@ -1988,6 +1988,89 @@
       ]
     }
   ],
+  "data-structures/persistent-data-structures": [
+    {
+      "title": "Range Queries and Copies",
+      "url": "https://cses.fi/problemset/task/1737",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/persistent-data-structures",
+        "CSES",
+        "Persistent Segment Tree"
+      ],
+      "tags": [
+        "Path-Copying",
+        "Version-Roots",
+        "Range-Sum"
+      ],
+      "why_fit": "The cleanest first exact benchmark where each point update creates a new segment-tree root and old versions stay queryable.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Versioned Queries"
+      ],
+      "prerequisites": [
+        "Segment Tree",
+        "Point Update",
+        "Path Copying"
+      ]
+    },
+    {
+      "title": "K-th Number",
+      "url": "https://www.spoj.com/problems/MKTHNUM/",
+      "source": "SPOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/persistent-data-structures",
+        "Order Statistics",
+        "Persistent Segment Tree"
+      ],
+      "tags": [
+        "Persistent-Segment-Tree",
+        "Order-Statistics",
+        "Prefix-Versions"
+      ],
+      "why_fit": "The classic stretch problem once path copying is trusted and the persistent tree stores frequencies instead of plain sums.",
+      "bucket": "stretch",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Value Compression"
+      ],
+      "prerequisites": [
+        "Persistent Segment Tree",
+        "Coordinate Compression",
+        "Prefix Version Difference"
+      ]
+    },
+    {
+      "title": "Persistent Union Find",
+      "url": "https://judge.yosupo.jp/problem/persistent_unionfind",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/persistent-data-structures",
+        "Verification",
+        "Persistent Union Find"
+      ],
+      "tags": [
+        "Persistence",
+        "Versioned Connectivity",
+        "Official"
+      ],
+      "why_fit": "A family-broadening verifier showing that the persistent worldview is larger than segment-tree snapshots alone.",
+      "bucket": "challenge",
+      "styles": [
+        "Verification",
+        "Versioned Queries"
+      ],
+      "prerequisites": [
+        "Persistence Worldview",
+        "Version Handles",
+        "DSU Basics"
+      ]
+    }
+  ],
   "data-structures/sparse-table": [
     {
       "title": "Static Range Minimum Queries",

@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `87`
+- Total tracked problem notes: `88`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -14,7 +14,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Area | Count |
 | --- | ---: |
 | Foundations | 11 |
-| Data Structures | 8 |
+| Data Structures | 9 |
 | Graphs | 21 |
 | DP | 10 |
 | Greedy | 3 |
@@ -52,6 +52,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `CONCERTTICKETS` | Concert Tickets | `Data Structures -> Heaps And Ordered Sets` | - | multiset predecessor; erase one occurrence; greedy ticket assignment | `medium` | CSES, Sorting and searching | [Map](topic-maps/data-structures/heaps-and-ordered-sets.md) / [Ladder](../practice/ladders/data-structures/heaps-and-ordered-sets/README.md) / [Tutorial](../topics/data-structures/heaps-and-ordered-sets/README.md) | [Note](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp) |
 | `HORRIBLEQUERIES` | Horrible Queries | `Data Structures -> Lazy Segment Tree` | - | lazy segment tree; range add range sum; deferred propagation | `medium` | SPOJ, Range queries | [Map](topic-maps/data-structures/lazy-segment-tree.md) / [Ladder](../practice/ladders/data-structures/lazy-segment-tree/README.md) / [Tutorial](../topics/data-structures/lazy-segment-tree/README.md) | [Note](../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/lazy-segment-tree/horriblequeries.cpp) |
 | `DISTINCTVALUESQUERIES` | Distinct Values Queries | `Data Structures -> Offline Tricks` | Data Structures -> Fenwick Tree | offline right-endpoint sweep; last occurrence activation; fenwick range count | `hard` | CSES, Range queries | [Map](topic-maps/data-structures/offline-tricks.md) / [Ladder](../practice/ladders/data-structures/offline-tricks/README.md) / [Tutorial](../topics/data-structures/offline-tricks/README.md) | [Note](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp) |
+| `RANGEQUERIESANDCOPIES` | Range Queries and Copies | `Data Structures -> Persistent Data Structures` | Data Structures -> Segment Tree | persistent segment tree; path copying; versioned range sum | `hard` | CSES, Range queries | [Map](topic-maps/data-structures/persistent-data-structures.md) / [Ladder](../practice/ladders/data-structures/persistent-data-structures/README.md) / [Tutorial](../topics/data-structures/persistent-data-structures/README.md) | [Note](../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/persistent-data-structures/rangequeriesandcopies.cpp) |
 | `DYNAMICRANGESUMQUERIES` | Dynamic Range Sum Queries | `Data Structures -> Segment Tree` | - | iterative segment tree; point assignment; range sum query | `medium` | CSES, Range queries | [Map](topic-maps/data-structures/segment-tree.md) / [Ladder](../practice/ladders/data-structures/segment-tree/README.md) / [Tutorial](../topics/data-structures/segment-tree/README.md) | [Note](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree/dynamicrangesumqueries.cpp) |
 | `STATICRANGEMINIMUMQUERIES` | Static Range Minimum Queries | `Data Structures -> Sparse Table` | - | sparse table rmq; idempotent overlap query; log table preprocessing | `easy` | CSES, Range queries | [Map](topic-maps/data-structures/sparse-table.md) / [Ladder](../practice/ladders/data-structures/sparse-table/README.md) / [Tutorial](../topics/data-structures/sparse-table/README.md) | [Note](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp) |
 

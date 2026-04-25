@@ -5,7 +5,7 @@ General range query/update structure built on monoids and lazy propagation, with
 - Topic slug: `data-structures/segment-tree`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/segment-tree/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/segment-tree/README.md)
-- Repo problems currently tagged here: `3`
+- Repo problems currently tagged here: `4`
 - Repo companion pages: `0`
 - Curated external problems: `8`
 
@@ -65,6 +65,7 @@ General range query/update structure built on monoids and lazy propagation, with
 | --- | --- | --- | --- | --- | --- | --- |
 | `DYNAMICRANGESUMQUERIES` | Dynamic Range Sum Queries | `primary` | `medium` | iterative segment tree; point assignment; range sum query | [Note](../../../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree/dynamicrangesumqueries.cpp) |
 | `PATHQUERIES2` | Path Queries II | `secondary` | `medium` | heavy light decomposition; path query decomposition; segment tree on base array | [Note](../../../practice/ladders/graphs/hld/pathqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp) |
+| `RANGEQUERIESANDCOPIES` | Range Queries and Copies | `secondary` | `hard` | persistent segment tree; path copying; versioned range sum | [Note](../../../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/persistent-data-structures/rangequeriesandcopies.cpp) |
 | `VMWTREE` | Lại là cây khung | `secondary` | `hard` | path reverse; path sequence queries; heavy-light decomposition | [Note](../../../practice/ladders/graphs/trees/vmwtree.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/trees/vmwtree.cpp) |
 
 ## Regeneration

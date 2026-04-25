@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `531`
+- Total curated external problems: `534`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -99,6 +99,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Offline Tricks` | `Advanced` | [Rectangle Sum](https://judge.yosupo.jp/problem/rectangle_sum) | `Library Checker` | `Medium` | - | Query-Heavy; Modeling-Heavy | Sweep Line; 2D-Queries; Fenwick |
 | `Data Structures -> Offline Tricks` | `Advanced` | [Distinct Values Queries II](https://cses.fi/problemset/task/3356) | `CSES` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Updates; Distinctness; Query-Processing |
 | `Data Structures -> Offline Tricks` | `Cross-Topic` | [Salary Queries](https://cses.fi/problemset/task/1144) | `CSES` | `Medium` | - | Query-Heavy; Data-Structure-Heavy | Coordinate-Compression; Range-Count; Updates; Fenwick |
+| `Data Structures -> Persistent Data Structures` | `Core` | [Range Queries and Copies](https://cses.fi/problemset/task/1737) | `CSES` | `Hard` | Persistent Segment Tree | Data-Structure-Heavy; Versioned Queries | Path-Copying; Version-Roots; Range-Sum |
+| `Data Structures -> Persistent Data Structures` | `Stretch` | [K-th Number](https://www.spoj.com/problems/MKTHNUM/) | `SPOJ` | `Hard` | Order Statistics, Persistent Segment Tree | Data-Structure-Heavy; Value Compression | Prefix-Versions |
+| `Data Structures -> Persistent Data Structures` | `Challenge` | [Persistent Union Find](https://judge.yosupo.jp/problem/persistent_unionfind) | `Library Checker` | `Hard` | Persistent Union Find | Verification; Versioned Queries | Persistence; Versioned Connectivity |
 | `Data Structures -> Segment Tree` | `Core` | [Dynamic Range Minimum Queries](https://cses.fi/problemset/task/1649) | `CSES` | `Medium` | - | Data-Structure-Heavy | Range-Min; Point-Update |
 | `Data Structures -> Segment Tree` | `Core` | [Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648) | `CSES` | `Medium` | - | Data-Structure-Heavy; Query-Heavy | Point-Update; Range-Sum |
 | `Data Structures -> Segment Tree` | `Classics` | [Hotel Queries](https://cses.fi/problemset/task/1143) | `CSES` | `Medium` | - | Data-Structure-Heavy; Greedy-Heavy | First-Fit; Prefix-Max; Max-Query |

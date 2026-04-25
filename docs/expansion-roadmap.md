@@ -140,7 +140,7 @@ These should follow after the `Now` block ships cleanly.
 - [x] add one flagship centroid note plus solution
 - [x] choose one of the following as the paired second topic:
   - [x] `topics/data-structures/dsu-rollback/README.md`
-  - [ ] `topics/data-structures/persistent-data-structures/README.md`
+  - [x] `topics/data-structures/persistent-data-structures/README.md`
 - [x] add the matching template, hot sheet, ladder, and flagship note for the paired second topic
 
 ### Phase 6. Strings / DP Modern Wave
@@ -214,8 +214,8 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Persistent Data Structures`
-2. `Linear Recurrence / Matrix Exponentiation`
+1. `Linear Recurrence / Matrix Exponentiation`
+2. `Contest-Source Lane B`
 
 That pair has the best balance of:
 

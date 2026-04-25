@@ -672,6 +672,81 @@
       }
     ]
   },
+  "data-structures/persistent-data-structures": {
+    "title": "Data Structures -> Persistent Data Structures",
+    "summary": "Path-copying data structures where updates create new version roots and old snapshots remain queryable.",
+    "topic_path": "topics/data-structures/persistent-data-structures/README.md",
+    "ladder_path": "practice/ladders/data-structures/persistent-data-structures/README.md",
+    "microtopics": [
+      "path-copying",
+      "version-roots",
+      "persistent-segment-tree",
+      "copy-on-write",
+      "snapshot-query",
+      "branching-versions"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms segment tree persistent section",
+        "url": "https://cp-algorithms.com/data_structures/segment_tree.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide persistent data structures",
+        "url": "https://usaco.guide/adv/persistent?lang=java",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CSES Range Queries and Copies",
+        "url": "https://cses.fi/problemset/task/1737",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Range Queries and Copies",
+        "url": "https://cses.fi/problemset/task/1737",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ MKTHNUM",
+        "url": "https://www.spoj.com/problems/MKTHNUM/",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Persistent Union Find",
+        "url": "https://judge.yosupo.jp/problem/persistent_unionfind",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Persistent Data Structures hot sheet",
+        "path": "notebook/persistent-data-structures-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Range Queries and Copies note",
+        "path": "practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Persistent starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Segment Tree tutorial",
+        "path": "topics/data-structures/segment-tree/README.md",
+        "kind": "adjacent tutorial"
+      },
+      {
+        "label": "DSU Rollback tutorial",
+        "path": "topics/data-structures/dsu-rollback/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

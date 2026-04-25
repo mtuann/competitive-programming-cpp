@@ -428,6 +428,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp"
   },
   {
+    "code": "RANGEQUERIESANDCOPIES",
+    "title": "Range Queries and Copies",
+    "full_title": "Range Queries and Copies",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1737",
+    "main_topic": "Data Structures -> Persistent Data Structures",
+    "secondary_topics": [
+      "Persistent segment tree",
+      "Path copying",
+      "Versioned queries"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/persistent-data-structures",
+    "topic_tags": [
+      "data-structures/persistent-data-structures",
+      "data-structures/segment-tree"
+    ],
+    "patterns": [
+      "persistent segment tree",
+      "path copying",
+      "versioned range sum"
+    ],
+    "tracks": [
+      "CSES",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md",
+    "ladder_path": "practice/ladders/data-structures/persistent-data-structures/README.md",
+    "tutorial_path": "topics/data-structures/persistent-data-structures/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/persistent-data-structures/rangequeriesandcopies.cpp"
+  },
+  {
     "code": "DYNAMICRANGESUMQUERIES",
     "title": "Dynamic Range Sum Queries",
     "full_title": "Dynamic Range Sum Queries",
