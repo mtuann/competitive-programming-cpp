@@ -20,9 +20,9 @@ Use this page when divisibility, residues, or algebraic constraints appear and y
 
 ## Choose By Signal
 
-- repeated powers modulo `MOD` -> [modular-arithmetic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/modular-arithmetic.cpp)
-- many `nCk mod prime` queries -> [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
-- `ax + by = c` or inverse under composite modulus -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
+- repeated powers modulo `MOD` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
+- many `nCk mod prime` queries -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
+- `ax + by = c` or inverse under composite modulus -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - plain divisibility / factors / totients -> [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
 
 ## Prime-Exponent View
@@ -48,7 +48,7 @@ lcm: take the larger exponent
 
 ## Quick Anchors In This Repo
 
-- modular power / tower reasoning -> [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
+- modular power / tower reasoning -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
 - gcd / divisibility -> [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md)
 - broader workflow -> [Modular Arithmetic topic](../topics/math/modular-arithmetic/README.md)
 
@@ -59,4 +59,5 @@ The most common wrong turn is treating “mod arithmetic” as if every denomina
 ## Reopen Paths
 
 - topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md)
+- exact quick sheet -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - template layer -> [Template library](../template-library.md)

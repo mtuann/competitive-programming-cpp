@@ -59,7 +59,7 @@ Use this ladder in two passes:
 - `0/1` edges -> [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
 - nonnegative weights -> [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
 - negative edges -> [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
-- quick reminder sheet -> [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- quick reminder sheet -> [Shortest Paths hot sheet](../../../../notebook/shortest-paths-hot-sheet.md)
 
 There is still only one direct weighted repo note in this ladder, so if the family feels thin do **not** browse randomly. Reopen:
 

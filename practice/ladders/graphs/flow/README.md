@@ -41,6 +41,13 @@ Target skill:
 - see flow as a modeling language, not just one algorithm
 - recognize when a whole family of min-cuts can be compressed into one tree
 
+## Retrieval Layer
+
+- max flow / min cut route -> [Flow hot sheet](../../../../notebook/flow-hot-sheet.md)
+- clean max-flow starter -> [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- costed flow route -> [min-cost-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
+- compare against matching when the reduction is ambiguous -> [Matching hot sheet](../../../../notebook/matching-hot-sheet.md)
+
 ## Exit Criteria
 
 You are ready to move on when:

@@ -77,10 +77,12 @@ Open a workflow page when the algorithm feels right but the solution still feels
 
 ## Best Pairings
 
-- shortest paths -> [Graph cheatsheet](../notebook/graph-cheatsheet.md) + graph templates
+- shortest paths -> [Shortest Paths hot sheet](../notebook/shortest-paths-hot-sheet.md) + graph templates
 - tree path queries -> [Graph cheatsheet](../notebook/graph-cheatsheet.md) + [Heavy-Light Decomposition](../topics/graphs/hld/README.md)
-- range-query structures -> [Data structures cheatsheet](../notebook/data-structures-cheatsheet.md) + [Template Library](../template-library.md)
-- modular arithmetic -> [Number theory cheatsheet](../notebook/number-theory-cheatsheet.md) + math templates
+- range-query structures -> [Segment Tree hot sheet](../notebook/segment-tree-hot-sheet.md) + [Data structures cheatsheet](../notebook/data-structures-cheatsheet.md)
+- flow or cuts -> [Flow hot sheet](../notebook/flow-hot-sheet.md) + graph templates
+- matching -> [Matching hot sheet](../notebook/matching-hot-sheet.md) + [Flow hot sheet](../notebook/flow-hot-sheet.md) when the reduction is ambiguous
+- modular arithmetic -> [Modular Arithmetic hot sheet](../notebook/modular-arithmetic-hot-sheet.md) + math templates
 - geometry predicates -> [Geometry cheatsheet](../notebook/geometry-cheatsheet.md) + geometry templates
 
 ## After This Page

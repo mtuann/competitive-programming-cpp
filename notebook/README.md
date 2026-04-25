@@ -82,10 +82,15 @@ The shortest useful scan order is:
 
 - [Foundations cheatsheet](foundations-cheatsheet.md)
 - [Data structures cheatsheet](data-structures-cheatsheet.md)
+- [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Graph cheatsheet](graph-cheatsheet.md)
+- [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- [Flow hot sheet](flow-hot-sheet.md)
+- [Matching hot sheet](matching-hot-sheet.md)
 - [DP cheatsheet](dp-cheatsheet.md)
 - [Combinatorics cheatsheet](combinatorics-cheatsheet.md)
 - [Number theory cheatsheet](number-theory-cheatsheet.md)
+- [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - [String cheatsheet](string-cheatsheet.md)
 - [Geometry cheatsheet](geometry-cheatsheet.md)
 - [Contest checklist](contest-checklist.md)
@@ -94,9 +99,12 @@ The shortest useful scan order is:
 
 ## Good Pairings
 
-- shortest paths -> [Graph cheatsheet](graph-cheatsheet.md) + [Template library](../template-library.md)
+- segment tree under pressure -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
+- shortest paths -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
+- flow / cuts / transport -> [Flow hot sheet](flow-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
+- bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
-- modular arithmetic / `nCk` -> [Number theory cheatsheet](number-theory-cheatsheet.md)
+- modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
 - interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)

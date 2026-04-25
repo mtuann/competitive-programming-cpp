@@ -12,7 +12,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 
 - static range sums -> prefix sums
 - point add + prefix/range sum -> Fenwick
-- arbitrary merge with updates -> segment tree
+- arbitrary merge with updates -> segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - static idempotent range query -> sparse table
 - connectivity merges -> DSU
 - current top / min / max only -> heap
@@ -49,7 +49,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - sparse table -> [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
-- segment tree -> [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
+- segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 
 ## Common Mistakes
 
@@ -72,6 +72,7 @@ Ask:
 
 - [Heaps and ordered sets topic](../topics/data-structures/heaps-and-ordered-sets/README.md)
 - [Offline tricks topic](../topics/data-structures/offline-tricks/README.md)
+- [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)

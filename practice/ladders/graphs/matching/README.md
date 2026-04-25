@@ -44,7 +44,7 @@ Target skill:
 
 - bipartite maximum matching -> [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
 - when the cleaner model is actually capacity flow -> [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
-- quick reminder sheet -> [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
+- quick reminder sheet -> [Matching hot sheet](../../../../notebook/matching-hot-sheet.md)
 
 ## Repo Anchors And Compare Points
 

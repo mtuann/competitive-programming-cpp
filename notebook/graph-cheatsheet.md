@@ -10,10 +10,11 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 
 ## Choose By Edge Model
 
-- unweighted shortest path -> BFS -> [bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bfs.cpp)
-- `0/1` weights -> `0-1 BFS` -> [zero-one-bfs.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/zero-one-bfs.cpp)
-- nonnegative weights -> Dijkstra -> [dijkstra.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dijkstra.cpp)
-- negative edges -> Bellman-Ford -> [bellman-ford.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/bellman-ford.cpp)
+- unweighted shortest path -> BFS -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- trusted topological order on a DAG -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- `0/1` weights -> `0-1 BFS` -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- nonnegative weights -> Dijkstra -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- negative edges -> Bellman-Ford -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 
 ## Core Families
 
@@ -22,8 +23,8 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - undirected cheapest backbone -> MST
 - directed compression -> SCC
 - tree path queries -> LCA or HLD
-- capacities -> flow
-- pairing -> matching
+- capacities -> [Flow hot sheet](flow-hot-sheet.md)
+- pairing -> [Matching hot sheet](matching-hot-sheet.md)
 
 ## Core Invariants
 
@@ -48,16 +49,21 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 
 ## Quick Anchors In This Repo
 
-- unweighted shortest path -> [Message Route](../practice/ladders/graphs/bfs-dfs/messageroute.md)
-- weighted shortest path / reconstruction -> [QOS](../practice/ladders/graphs/shortest-paths/qos.md)
+- shortest-path family -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md) + [Message Route](../practice/ladders/graphs/bfs-dfs/messageroute.md) + [QOS](../practice/ladders/graphs/shortest-paths/qos.md)
 - MST -> [Road Reparation](../practice/ladders/graphs/mst/roadreparation.md)
 - SCC / DAG ordering -> [Course Schedule](../practice/ladders/graphs/scc-toposort/courseschedule.md)
 - tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
+- flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
+- matching / bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md)
+- general-matching / edge-cover boundary compare point -> [QBFLOWER](../practice/ladders/graphs/matching/qbflower.md)
 
 ## Next Stops
 
 - [Shortest Paths topic](../topics/graphs/shortest-paths/README.md)
 - [Graphs ladder](../practice/ladders/graphs/README.md)
+- [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
+- [Flow hot sheet](flow-hot-sheet.md)
+- [Matching hot sheet](matching-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Flow topic](../topics/graphs/flow/README.md)
 - [LCA topic](../topics/graphs/lca/README.md)
