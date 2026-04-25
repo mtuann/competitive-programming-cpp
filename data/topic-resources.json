@@ -3002,6 +3002,76 @@
       }
     ]
   },
+  "math/xor-basis": {
+    "title": "Math -> XOR Basis / Linear Basis",
+    "summary": "Gaussian elimination over GF(2) for subset-xor span, representability, maximum subset xor, and cycle-space xor reductions.",
+    "topic_path": "topics/math/xor-basis/README.md",
+    "ladder_path": "practice/ladders/math/xor-basis/README.md",
+    "microtopics": [
+      "xor-basis",
+      "linear-basis",
+      "gf2-elimination",
+      "maximum-subset-xor",
+      "representability",
+      "cycle-space-xor"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki Linear Basis",
+        "url": "https://en.oi-wiki.org/math/basis/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Principles of Algorithmic Problem Solving",
+        "url": "https://usaco.guide/PAPS.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "SPOJ XMAX",
+        "url": "https://www.spoj.com/problems/XMAX/",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces 845G",
+        "url": "https://codeforces.com/problemset/problem/845/G",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces 1101G",
+        "url": "https://codeforces.com/contest/1101/problem/G",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "XOR Basis hot sheet",
+        "path": "notebook/xor-basis-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "XMAX - XOR Maximization",
+        "path": "practice/ladders/math/xor-basis/xmax.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "XOR Basis starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Binary Trie / XOR Queries",
+        "path": "topics/data-structures/binary-trie-xor/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "math/number-theory-basics": {
     "title": "Math -> Number Theory Basics",
     "summary": "Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.",

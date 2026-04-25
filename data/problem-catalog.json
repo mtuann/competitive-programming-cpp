@@ -2854,6 +2854,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
   },
   {
+    "code": "XMAX",
+    "title": "XOR Maximization",
+    "full_title": "XMAX - XOR Maximization",
+    "judge": "SPOJ",
+    "judge_url": "https://www.spoj.com/problems/XMAX/",
+    "main_topic": "Math -> XOR Basis / Linear Basis",
+    "secondary_topics": [
+      "XOR basis",
+      "Linear independence over GF(2)",
+      "Maximum subset xor"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/xor-basis",
+    "topic_tags": [
+      "math/xor-basis"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/xor-basis/xmax.md",
+    "ladder_path": "practice/ladders/math/xor-basis/README.md",
+    "tutorial_path": "topics/math/xor-basis/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/xor-basis/xmax.cpp"
+  },
+  {
     "code": "FINDINGPATTERNS",
     "title": "Finding Patterns",
     "full_title": "Finding Patterns",

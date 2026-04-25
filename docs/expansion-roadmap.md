@@ -203,7 +203,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Wavelet Tree`
 - [x] `Treap / Implicit Treap`
 - [x] `Eertree / Palindromic Tree`
-- [ ] `XOR Basis / Linear Basis`
+- [x] `XOR Basis / Linear Basis`
 - [ ] `Game Theory / Sprague-Grundy`
 - [ ] `Probability`
 
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `XOR Basis / Linear Basis`
+1. `Game Theory / Sprague-Grundy`
 
 That is now the best follow-up because:
 
-- the remaining long-tail list is now more algebraic and xor-heavy than string-heavy
-- `XOR Basis` is the cleanest remaining competitive-programming staple that still deserves one exact lane
-- it adds a reusable bitwise-algebra route without reopening the contest-system cluster again
+- the clean algebraic xor lane is now already covered
+- the remaining long-tail list needs a principled game / state-value lane more than another data-structure family
+- `Sprague-Grundy` is the clearest next exact route for impartial-game modeling without reopening the contest-system cluster again

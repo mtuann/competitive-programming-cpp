@@ -112,6 +112,7 @@ The shortest useful scan order is:
 - [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - [Combinatorics cheatsheet](combinatorics-cheatsheet.md)
 - [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md)
+- [XOR Basis hot sheet](xor-basis-hot-sheet.md)
 - [Lucas Theorem hot sheet](lucas-hot-sheet.md)
 - [Mobius hot sheet](mobius-hot-sheet.md)
 - [Number theory cheatsheet](number-theory-cheatsheet.md)
@@ -159,6 +160,7 @@ The shortest useful scan order is:
 - digit-counting on large ranges -> [Digit DP hot sheet](digit-dp-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - affine DP / online line minimum -> [CHT / Li Chao hot sheet](cht-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - linear recurrence under one modulus -> [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md) + [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
+- subset xor span / maximum subset xor -> [XOR Basis hot sheet](xor-basis-hot-sheet.md) + [Binary Trie hot sheet](binary-trie-hot-sheet.md) when xor semantics are ambiguous
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - congruence systems or one inverse under composite modulus -> [Chinese Remainder hot sheet](chinese-remainder-hot-sheet.md) + [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)

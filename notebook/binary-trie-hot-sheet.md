@@ -34,7 +34,7 @@ Use this sheet when one evolving multiset of non-negative integers is queried by
 
 - exact starter -> [binary-trie-xor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/binary-trie-xor.cpp)
 - flagship in-lane rep -> [Vasiliy's Multiset](../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md)
-- compare points -> [Trie](../topics/strings/trie/README.md), [Data structures cheatsheet](data-structures-cheatsheet.md)
+- compare points -> [Trie](../topics/strings/trie/README.md), [XOR Basis / Linear Basis](../topics/math/xor-basis/README.md), [Data structures cheatsheet](data-structures-cheatsheet.md)
 
 ## Reopen Paths
 

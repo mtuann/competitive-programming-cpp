@@ -14,6 +14,7 @@ The repo's exact first route for this family is:
 - starter -> [binary-trie-xor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/binary-trie-xor.cpp)
 - flagship note -> [Vasiliy's Multiset](../../../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md)
 - compare point -> [Trie](../../strings/trie/README.md)
+- compare point -> [XOR Basis / Linear Basis](../../math/xor-basis/README.md)
 
 ## At A Glance
 
@@ -46,6 +47,7 @@ Strong anti-cues:
 Helpful compare points:
 
 - [Trie](../../strings/trie/README.md): same prefix-tree idea, but over characters rather than bits
+- [XOR Basis / Linear Basis](../../math/xor-basis/README.md): use this when xor is taken against **any subset** rather than one stored element
 - [Fenwick Tree](../fenwick-tree/README.md): not a fit when the target is "best xor partner" instead of one mergeable prefix aggregate
 - [Offline Tricks](../offline-tricks/README.md): reordering queries does not remove the need for the xor data structure itself
 

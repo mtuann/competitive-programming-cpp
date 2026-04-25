@@ -10301,6 +10301,89 @@
       "why_fit": "Shows the same repeated-linear-transition worldview outside one-dimensional recurrences."
     }
   ],
+  "math/xor-basis": [
+    {
+      "title": "XMAX - XOR Maximization",
+      "url": "https://www.spoj.com/problems/XMAX/",
+      "source": "SPOJ",
+      "difficulty": "medium",
+      "tracks": [
+        "math/xor-basis",
+        "Bitwise Algebra",
+        "Math"
+      ],
+      "tags": [
+        "XOR-Basis",
+        "Linear-Basis",
+        "Maximum-Subset-XOR"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Bitwise Operations",
+        "Greedy Elimination",
+        "Subset XOR"
+      ],
+      "why_fit": "The cleanest first benchmark where a linear basis replaces brute-force subset xor search entirely."
+    },
+    {
+      "title": "Shortest Path Problem?",
+      "url": "https://codeforces.com/problemset/problem/845/G",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "math/xor-basis",
+        "Graphs/Cycle XOR",
+        "Bitwise Algebra"
+      ],
+      "tags": [
+        "XOR-Basis",
+        "Cycle-Space",
+        "Path-XOR"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Graphs",
+        "Math"
+      ],
+      "prerequisites": [
+        "XOR Basis",
+        "DFS",
+        "Cycle Reasoning"
+      ],
+      "why_fit": "The flagship bridge from subset xor span to graph cycle-space reductions, where each non-tree edge contributes one xor cycle vector."
+    },
+    {
+      "title": "ZC's School",
+      "url": "https://codeforces.com/contest/1101/problem/G",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "math/xor-basis",
+        "Prefix XOR",
+        "Bitwise Algebra"
+      ],
+      "tags": [
+        "XOR-Basis",
+        "Prefix-XOR",
+        "Dimension"
+      ],
+      "bucket": "challenge",
+      "styles": [
+        "Math",
+        "Observation"
+      ],
+      "prerequisites": [
+        "XOR Basis",
+        "Prefix XOR",
+        "Invariant Reasoning"
+      ],
+      "why_fit": "A harder compare point where basis dimension over prefix xor values becomes the real invariant instead of direct maximum-subset-xor extraction."
+    }
+  ],
   "combinatorics/counting-basics": [
     {
       "title": "Choose Cards 1",

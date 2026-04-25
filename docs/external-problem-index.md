@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `563`
+- Total curated external problems: `566`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -430,6 +430,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Math -> Number Theory Basics` | `Practice` | [Common Divisors](https://cses.fi/problemset/task/1081) | `CSES` | `Medium` | GCD/LCM, Frequency-Ideas | Number Theory; Sieving | GCD; Max-Frequency Divisor |
 | `Math -> Number Theory Basics` | `Practice` | [Sum of Divisors](https://cses.fi/problemset/task/1082) | `CSES` | `Medium` | Divisors, Prefix-Sums, Divisor Sums, Arithmetical Functions | Math; Optimization | Sigma Function; Divisor Summatory Function; Sigma(n); Floor Division; Mod Arithmetic |
 | `Math -> Number Theory Basics` | `Stretch` | [Divisor Analysis](https://cses.fi/problemset/task/2182) | `CSES` | `Medium` | Divisors, Modular-Arithmetic, Prime Factorization, Multiplicative Functions | Math; Precomputation | Number Of Divisors; Sum Of Divisors; Product Of Divisors |
+| `Math -> XOR Basis / Linear Basis` | `Core` | [XMAX - XOR Maximization](https://www.spoj.com/problems/XMAX/) | `SPOJ` | `Medium` | Bitwise Algebra | Math; Implementation | Linear-Basis; Maximum-Subset-XOR |
+| `Math -> XOR Basis / Linear Basis` | `Stretch` | [Shortest Path Problem?](https://codeforces.com/problemset/problem/845/G) | `Codeforces` | `Hard` | Graphs/Cycle XOR, Bitwise Algebra | Graphs; Math | Cycle-Space; Path-XOR |
+| `Math -> XOR Basis / Linear Basis` | `Challenge` | [ZC's School](https://codeforces.com/contest/1101/problem/G) | `Codeforces` | `Hard` | Prefix XOR, Bitwise Algebra | Math; Observation | Dimension |
 
 ## Combinatorics
 

@@ -12215,6 +12215,84 @@
     "why_fit": "Bundle of the three textbook divisor-function formulas."
   },
   {
+    "slug": "math/xor-basis",
+    "topic": "Math -> XOR Basis / Linear Basis",
+    "title": "XMAX - XOR Maximization",
+    "url": "https://www.spoj.com/problems/XMAX/",
+    "source": "SPOJ",
+    "difficulty": "medium",
+    "tracks": [
+      "Bitwise Algebra"
+    ],
+    "tags": [
+      "Linear-Basis",
+      "Maximum-Subset-XOR"
+    ],
+    "styles": [
+      "Math",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Bitwise Operations",
+      "Greedy Elimination",
+      "Subset XOR"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first benchmark where a linear basis replaces brute-force subset xor search entirely."
+  },
+  {
+    "slug": "math/xor-basis",
+    "topic": "Math -> XOR Basis / Linear Basis",
+    "title": "Shortest Path Problem?",
+    "url": "https://codeforces.com/problemset/problem/845/G",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "Graphs/Cycle XOR",
+      "Bitwise Algebra"
+    ],
+    "tags": [
+      "Cycle-Space",
+      "Path-XOR"
+    ],
+    "styles": [
+      "Graphs",
+      "Math"
+    ],
+    "prerequisites": [
+      "XOR Basis",
+      "DFS",
+      "Cycle Reasoning"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The flagship bridge from subset xor span to graph cycle-space reductions, where each non-tree edge contributes one xor cycle vector."
+  },
+  {
+    "slug": "math/xor-basis",
+    "topic": "Math -> XOR Basis / Linear Basis",
+    "title": "ZC's School",
+    "url": "https://codeforces.com/contest/1101/problem/G",
+    "source": "Codeforces",
+    "difficulty": "hard",
+    "tracks": [
+      "Prefix XOR",
+      "Bitwise Algebra"
+    ],
+    "tags": [
+      "Dimension"
+    ],
+    "styles": [
+      "Math",
+      "Observation"
+    ],
+    "prerequisites": [
+      "XOR Basis",
+      "Invariant Reasoning"
+    ],
+    "bucket": "challenge",
+    "why_fit": "A harder compare point where basis dimension over prefix xor values becomes the real invariant instead of direct maximum-subset-xor extraction."
+  },
+  {
     "slug": "strings/aho-corasick",
     "topic": "Strings -> Aho-Corasick",
     "title": "Finding Patterns",

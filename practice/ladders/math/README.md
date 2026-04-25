@@ -11,7 +11,8 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 5. lucas theorem / large binomial mod prime
 6. mobius and multiplicative counting
 7. linear recurrence / matrix exponentiation
-8. FFT
+8. xor basis / linear basis
+9. FFT
 
 ## Subtopic Ladders
 
@@ -22,6 +23,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Lucas theorem / large binomial mod prime](lucas-theorem/README.md)
 - [Mobius and multiplicative counting](mobius-multiplicative/README.md)
 - [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
+- [XOR basis / linear basis](xor-basis/README.md)
 - [FFT](fft/README.md)
 
 ## Representative Solved Notes
@@ -35,4 +37,5 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [General Chinese Remainder](chinese-remainder/generalchineseremainder.md)
 - [Binomial Coefficient (Prime Mod)](lucas-theorem/binomialcoefficientprimemod.md)
 - [Counting Coprime Pairs](mobius-multiplicative/countingcoprimepairs.md)
+- [XMAX](xor-basis/xmax.md)
 - [POST2](fft/post2.md)
