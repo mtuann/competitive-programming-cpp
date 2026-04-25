@@ -138,9 +138,10 @@ nav:
           - Tree DP: topics/dp/tree-dp/README.md
       - Math:
           - Overview: topics/math/README.md
-          - FFT / NTT: topics/math/fft-ntt/README.md
           - Modular Arithmetic: topics/math/modular-arithmetic/README.md
           - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
+          - FFT / NTT: topics/math/fft-ntt/README.md
       - Combinatorics:
           - Overview: topics/combinatorics/README.md
           - Bounded Compositions: topics/combinatorics/bounded-compositions/README.md
@@ -232,10 +233,11 @@ nav:
               - Tree DP: practice/ladders/dp/tree-dp/README.md
           - Math:
               - Overview: practice/ladders/math/README.md
-              - FFT / NTT: practice/ladders/math/fft/README.md
-              - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
               - Modular Arithmetic: practice/ladders/math/modular-arithmetic/README.md
               - Number Theory Basics: practice/ladders/math/number-theory-basics/README.md
+              - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
+              - GCD / LCM: practice/ladders/math/gcd-lcm/README.md
+              - FFT / NTT: practice/ladders/math/fft/README.md
           - Combinatorics:
               - Overview: practice/ladders/combinatorics/README.md
               - Bounded Compositions: practice/ladders/combinatorics/bounded-compositions/README.md
@@ -322,6 +324,7 @@ nav:
       - DP Cheatsheet: notebook/dp-cheatsheet.md
       - CHT Li Chao Hot Sheet: notebook/cht-hot-sheet.md
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
+      - Linear Recurrence Hot Sheet: notebook/linear-recurrence-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md
       - Modular Arithmetic Hot Sheet: notebook/modular-arithmetic-hot-sheet.md
       - Combinatorics Cheatsheet: notebook/combinatorics-cheatsheet.md

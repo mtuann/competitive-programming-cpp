@@ -2247,6 +2247,71 @@
       }
     ]
   },
+  "math/linear-recurrence": {
+    "title": "Math -> Linear Recurrence And Matrix Exponentiation",
+    "summary": "Fixed-width linear recurrences and repeated small linear transitions, turned into companion matrices and powered quickly by repeated squaring.",
+    "topic_path": "topics/math/linear-recurrence/README.md",
+    "ladder_path": "practice/ladders/math/linear-recurrence/README.md",
+    "microtopics": [
+      "companion-matrix",
+      "state-vector",
+      "matrix-power",
+      "linear-transition",
+      "recurrence-jump",
+      "fast-doubling-compare"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Fibonacci numbers",
+        "url": "https://cp-algorithms.com/algebra/fibonacci-numbers.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Principles of Algorithmic Problem Solving",
+        "url": "https://usaco.guide/PAPS.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Throwing Dice",
+        "url": "https://cses.fi/problemset/task/1096/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Fibonacci Numbers",
+        "url": "https://cses.fi/problemset/task/1722/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Graph Paths I",
+        "url": "https://cses.fi/problemset/task/1723/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Linear Recurrence hot sheet",
+        "path": "notebook/linear-recurrence-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Throwing Dice",
+        "path": "practice/ladders/math/linear-recurrence/throwingdice.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
+    ]
+  },
   "math/number-theory-basics": {
     "title": "Math -> Number Theory Basics",
     "summary": "Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.",

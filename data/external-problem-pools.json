@@ -8575,60 +8575,6 @@
       "why_fit": "Standard modular combinations with precomputation."
     },
     {
-      "title": "Fibonacci Numbers",
-      "url": "https://cses.fi/problemset/task/1722",
-      "source": "CSES",
-      "difficulty": "medium",
-      "tracks": [
-        "math/modular-arithmetic",
-        "Recurrences",
-        "Matrix/Recurrence",
-        "Mod Arithmetic"
-      ],
-      "tags": [
-        "Matrix Exponentiation",
-        "Recurrence",
-        "Mod Arithmetic",
-        "Linear Recurrence",
-        "Doubling"
-      ],
-      "bucket": "core",
-      "styles": [
-        "DP",
-        "Math"
-      ],
-      "prerequisites": [
-        "Recurrences",
-        "Modular Arithmetic"
-      ],
-      "why_fit": "Classic recurrence computation under a modulus."
-    },
-    {
-      "title": "Throwing Dice",
-      "url": "https://cses.fi/problemset/task/1096",
-      "source": "CSES",
-      "difficulty": "medium",
-      "tracks": [
-        "math/modular-arithmetic",
-        "DP/Recurrences"
-      ],
-      "tags": [
-        "Combinatorics",
-        "DP",
-        "Mod Arithmetic"
-      ],
-      "bucket": "practice",
-      "styles": [
-        "Dynamic Programming",
-        "Implementation"
-      ],
-      "prerequisites": [
-        "Basic DP",
-        "Modular Arithmetic"
-      ],
-      "why_fit": "A compact recurrence with large n that reinforces modulo-safe DP transitions."
-    },
-    {
       "title": "Counting Necklaces",
       "url": "https://cses.fi/problemset/task/2209",
       "source": "CSES",
@@ -9522,6 +9468,86 @@
       "styles": [],
       "prerequisites": [],
       "bucket": "core"
+    }
+  ],
+  "math/linear-recurrence": [
+    {
+      "title": "Fibonacci Numbers",
+      "url": "https://cses.fi/problemset/task/1722",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/linear-recurrence",
+        "Matrix/Recurrence",
+        "Math"
+      ],
+      "tags": [
+        "Matrix Exponentiation",
+        "Linear Recurrence",
+        "Fibonacci",
+        "Fast Doubling Compare"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Binary Exponentiation",
+        "Modular Arithmetic"
+      ],
+      "why_fit": "The smallest exact recurrence-lifting example and the cleanest compare point against fast doubling."
+    },
+    {
+      "title": "Throwing Dice",
+      "url": "https://cses.fi/problemset/task/1096",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/linear-recurrence",
+        "DP/Recurrences"
+      ],
+      "tags": [
+        "Matrix Exponentiation",
+        "Linear Recurrence",
+        "Companion Matrix",
+        "Mod Arithmetic"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Dynamic Programming",
+        "Math"
+      ],
+      "prerequisites": [
+        "Basic DP",
+        "Modular Arithmetic"
+      ],
+      "why_fit": "A fixed-width order-6 recurrence where huge n turns an ordinary DP into a companion-matrix route."
+    },
+    {
+      "title": "Graph Paths I",
+      "url": "https://cses.fi/problemset/task/1723",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "math/linear-recurrence",
+        "Graphs/Walk Counting"
+      ],
+      "tags": [
+        "Matrix Exponentiation",
+        "Adjacency Matrix",
+        "Walk Counting"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Graphs",
+        "Math"
+      ],
+      "prerequisites": [
+        "Matrix Exponentiation",
+        "Graph Modeling"
+      ],
+      "why_fit": "Shows the same repeated-linear-transition worldview outside one-dimensional recurrences."
     }
   ],
   "combinatorics/counting-basics": [

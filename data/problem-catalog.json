@@ -2425,6 +2425,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp"
   },
   {
+    "code": "THROWINGDICE",
+    "title": "Throwing Dice",
+    "full_title": "Throwing Dice",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1096",
+    "main_topic": "Math -> Linear Recurrence And Matrix Exponentiation",
+    "secondary_topics": [
+      "Matrix exponentiation",
+      "Linear recurrence",
+      "Companion matrix"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/linear-recurrence",
+    "topic_tags": [
+      "math/linear-recurrence"
+    ],
+    "patterns": [
+      "linear recurrence",
+      "companion matrix",
+      "matrix exponentiation"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/math/linear-recurrence/throwingdice.md",
+    "ladder_path": "practice/ladders/math/linear-recurrence/README.md",
+    "tutorial_path": "topics/math/linear-recurrence/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/linear-recurrence/throwingdice.cpp"
+  },
+  {
     "code": "EXPONENTIATION",
     "title": "Exponentiation",
     "full_title": "Exponentiation",

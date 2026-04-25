@@ -158,11 +158,11 @@ These should follow after the `Now` block ships cleanly.
 
 ### Phase 7. Math Modern Wave
 
-- [ ] add `topics/math/linear-recurrence/README.md`
-- [ ] add `templates/math/matrix-exponentiation.cpp`
-- [ ] add `notebook/linear-recurrence-hot-sheet.md`
-- [ ] add `practice/ladders/math/linear-recurrence/README.md`
-- [ ] add one flagship linear-recurrence note plus solution
+- [x] add `topics/math/linear-recurrence/README.md`
+- [x] add `templates/math/matrix-exponentiation.cpp`
+- [x] add `notebook/linear-recurrence-hot-sheet.md`
+- [x] add `practice/ladders/math/linear-recurrence/README.md`
+- [x] add one flagship linear-recurrence note plus solution
 - [ ] add a `CRT / Lucas / Möbius` wave plan, then split it into at most `2` math waves instead of bulk-shipping everything together
 
 ### Phase 8. Contest-Source Lane B
@@ -214,7 +214,7 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Linear Recurrence / Matrix Exponentiation`
+1. `CRT / Lucas / Möbius wave plan`
 2. `Contest-Source Lane B`
 
 That pair has the best balance of:

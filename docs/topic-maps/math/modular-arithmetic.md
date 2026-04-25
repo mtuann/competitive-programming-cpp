@@ -7,7 +7,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 - Ladder page: [Open ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
 - Repo problems currently tagged here: `3`
 - Repo companion pages: `2`
-- Curated external problems: `10`
+- Curated external problems: `8`
 
 ## Microtopics
 
@@ -52,13 +52,6 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 | [Binomial Coefficients](https://cses.fi/problemset/task/1079) | `CSES` | `Medium` | Combinatorics/Counting-Basics, Mod Inverses, Combinatorics | Math; Precomputation | Factorials; Modular Inverse; Combinations | Ncr; Factorials; Modular Inverse; Inverse Factorials | Standard modular combinations with precomputation. |
 | [Creating Strings II](https://cses.fi/problemset/task/1715) | `CSES` | `Medium` | Factorials, Mod Inverses | - | - | Multiset Permutations; Combinatorics; Mod Arithmetic | Distinct-string counting via modular combinatorics. |
 | [Exponentiation II](https://cses.fi/problemset/task/1712) | `CSES` | `Medium` | Fast-Exponentiation, Mod-Inverse, Totient Tricks | Implementation; Number Theory | Binary Exponentiation; Modular Arithmetic; Fermat's Little Theorem | Tower Exponentiation; Fermats-Little-Theorem; Mod Arithmetic; Phi | Adds exponent towers and modulus reduction logic. |
-| [Fibonacci Numbers](https://cses.fi/problemset/task/1722) | `CSES` | `Medium` | Recurrences, Matrix/Recurrence, Mod Arithmetic | DP; Math | Modular Arithmetic | Matrix Exponentiation; Recurrence; Linear Recurrence; Doubling | Classic recurrence computation under a modulus. |
-
-### Practice
-
-| Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| [Throwing Dice](https://cses.fi/problemset/task/1096) | `CSES` | `Medium` | DP/Recurrences | Dynamic Programming; Implementation | Basic DP; Modular Arithmetic | Combinatorics; DP; Mod Arithmetic | A compact recurrence with large n that reinforces modulo-safe DP transitions. |
 
 ### Stretch
 

@@ -104,6 +104,7 @@ The shortest useful scan order is:
 - [CHT / Li Chao hot sheet](cht-hot-sheet.md)
 - [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - [Combinatorics cheatsheet](combinatorics-cheatsheet.md)
+- [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md)
 - [Number theory cheatsheet](number-theory-cheatsheet.md)
 - [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - [String cheatsheet](string-cheatsheet.md)
@@ -138,6 +139,7 @@ The shortest useful scan order is:
 - bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous
 - digit-counting on large ranges -> [Digit DP hot sheet](digit-dp-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
 - affine DP / online line minimum -> [CHT / Li Chao hot sheet](cht-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)
+- linear recurrence under one modulus -> [Linear Recurrence hot sheet](linear-recurrence-hot-sheet.md) + [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - ordered sets / sliding windows -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - modular arithmetic / `nCk` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Number theory cheatsheet](number-theory-cheatsheet.md)
 - one static palindrome scan -> [Palindromes hot sheet](palindromes-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)

@@ -6,6 +6,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 
 - [Modular Arithmetic](modular-arithmetic/README.md)
 - [Number Theory Basics](number-theory-basics/README.md)
+- [Linear Recurrence / Matrix Exponentiation](linear-recurrence/README.md)
 - [FFT And NTT](fft-ntt/README.md)
 
 ## Entry
@@ -24,6 +25,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - modular inverses and binomial coefficients
 - sieve patterns
 - recurrence and matrix-exponentiation style tools
+- fixed-size linear transitions under one modulus
 
 3. Advanced later
 - FFT / NTT
@@ -49,6 +51,7 @@ After this section, you should be able to use modular arithmetic and standard co
 ## Solved Examples In This Repo
 
 - [Exponentiation](../../practice/ladders/math/modular-arithmetic/exponentiation.md): the core fast-power pattern under modulo arithmetic
+- [Throwing Dice](../../practice/ladders/math/linear-recurrence/throwingdice.md): fixed-order recurrence lifted into a companion matrix
 - [Counting Divisors](../../practice/ladders/math/number-theory-basics/countingdivisors.md): divisor-count sieve for many bounded queries
 - [Common Divisors](../../practice/ladders/math/gcd-lcm/commondivisors.md): maximize pair gcd by scanning divisor frequencies
 - [GCD on Blackboard](../../practice/ladders/math/gcd-lcm/gcdonblackboard.md): all-except-one gcd via prefix/suffix aggregates

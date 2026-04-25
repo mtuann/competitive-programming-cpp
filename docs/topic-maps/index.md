@@ -51,7 +51,8 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> FFT And NTT | 2 | 0 | 8 | [Open](math/fft.md) |
 | Math -> GCD And LCM | 6 | 0 | 11 | [Open](math/gcd-lcm.md) |
-| Math -> Modular Arithmetic | 3 | 2 | 10 | [Open](math/modular-arithmetic.md) |
+| Math -> Linear Recurrence And Matrix Exponentiation | 1 | 3 | 3 | [Open](math/linear-recurrence.md) |
+| Math -> Modular Arithmetic | 3 | 2 | 8 | [Open](math/modular-arithmetic.md) |
 | Math -> Number Theory Basics | 7 | 0 | 13 | [Open](math/number-theory-basics.md) |
 | Combinatorics -> Bounded Compositions | 1 | 0 | 6 | [Open](combinatorics/bounded-compositions.md) |
 | Combinatorics -> Counting Basics | 2 | 0 | 13 | [Open](combinatorics/counting-basics.md) |

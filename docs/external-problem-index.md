@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `534`
+- Total curated external problems: `535`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -380,13 +380,14 @@ This page lists curated external problems imported into the topic-map system.
 | `Math -> GCD And LCM` | `Practice` | [Common Divisors](https://cses.fi/problemset/task/1081) | `CSES` | `Medium` | Frequency-Ideas, Divisibility | Number Theory | GCD; Divisor Frequency; Maximum GCD; Frequency Over Divisors; Array GCD |
 | `Math -> GCD And LCM` | `Practice` | [LCM on Whiteboard](https://atcoder.jp/contests/abc259/tasks/abc259_e) | `AtCoder` | `Medium` | Prime-Factorization | Number Theory; Implementation | LCM; Prime Exponents; Set Cover |
 | `Math -> GCD And LCM` | `Practice` | [Large LCM](https://atcoder.jp/contests/typical90/tasks/typical90_al) | `AtCoder` | `Medium` | Overflow-Safety | Implementation; Math | LCM; Overflow; Large Integers |
+| `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Fibonacci Numbers](https://cses.fi/problemset/task/1722) | `CSES` | `Medium` | Matrix/Recurrence | Math; Implementation | Matrix Exponentiation; Fibonacci; Fast Doubling Compare |
+| `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Throwing Dice](https://cses.fi/problemset/task/1096) | `CSES` | `Medium` | DP/Recurrences | Dynamic Programming; Math | Matrix Exponentiation; Companion Matrix; Mod Arithmetic |
+| `Math -> Linear Recurrence And Matrix Exponentiation` | `Stretch` | [Graph Paths I](https://cses.fi/problemset/task/1723) | `CSES` | `Hard` | Graphs/Walk Counting | Graphs; Math | Matrix Exponentiation; Adjacency Matrix; Walk Counting |
 | `Math -> Modular Arithmetic` | `Core` | [Exponentiation](https://cses.fi/problemset/task/1095) | `CSES` | `Easy` | Fast-Exponentiation, Mod Arithmetic | Implementation; Math | Binary Exponentiation; Pow |
 | `Math -> Modular Arithmetic` | `Core` | [Distributing Apples](https://cses.fi/problemset/task/1716) | `CSES` | `Easy-Medium` | Stars And Bars, Mod Arithmetic | - | Combinations; Distributions |
 | `Math -> Modular Arithmetic` | `Core` | [Binomial Coefficients](https://cses.fi/problemset/task/1079) | `CSES` | `Medium` | Combinatorics/Counting-Basics, Mod Inverses, Combinatorics | Math; Precomputation | Ncr; Factorials; Modular Inverse; Inverse Factorials |
 | `Math -> Modular Arithmetic` | `Core` | [Creating Strings II](https://cses.fi/problemset/task/1715) | `CSES` | `Medium` | Factorials, Mod Inverses | - | Multiset Permutations; Combinatorics; Mod Arithmetic |
 | `Math -> Modular Arithmetic` | `Core` | [Exponentiation II](https://cses.fi/problemset/task/1712) | `CSES` | `Medium` | Fast-Exponentiation, Mod-Inverse, Totient Tricks | Implementation; Number Theory | Tower Exponentiation; Fermats-Little-Theorem; Mod Arithmetic; Phi |
-| `Math -> Modular Arithmetic` | `Core` | [Fibonacci Numbers](https://cses.fi/problemset/task/1722) | `CSES` | `Medium` | Recurrences, Matrix/Recurrence, Mod Arithmetic | DP; Math | Matrix Exponentiation; Recurrence; Linear Recurrence; Doubling |
-| `Math -> Modular Arithmetic` | `Practice` | [Throwing Dice](https://cses.fi/problemset/task/1096) | `CSES` | `Medium` | DP/Recurrences | Dynamic Programming; Implementation | Combinatorics; DP; Mod Arithmetic |
 | `Math -> Modular Arithmetic` | `Stretch` | [Counting Grids](https://cses.fi/problemset/task/2210) | `CSES` | `Hard` | Combinatorics/Bracelet-Counting | Combinatorics; Algebra | Burnside; Pólya Counting; Mod Arithmetic |
 | `Math -> Modular Arithmetic` | `Stretch` | [Counting Necklaces](https://cses.fi/problemset/task/2209) | `CSES` | `Hard` | Combinatorics/Burnside | Combinatorics; Number Theory | Burnside; Group Actions; Mod Arithmetic |
 | `Math -> Modular Arithmetic` | `Stretch` | [Graph Paths I](https://cses.fi/problemset/task/1723) | `CSES` | `Hard` | Matrix-Exponentiation | Graphs; Math | Graph Walks; Mod Arithmetic |

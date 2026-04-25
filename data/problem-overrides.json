@@ -56,6 +56,18 @@
       "Advanced techniques"
     ]
   },
+  "THROWINGDICE": {
+    "topic_tags": [],
+    "patterns": [
+      "linear recurrence",
+      "companion matrix",
+      "matrix exponentiation"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ]
+  },
   "COMPANYQUERIES2": {
     "topic_tags": [
       "graphs/trees"
