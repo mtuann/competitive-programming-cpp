@@ -2,6 +2,7 @@
 // Signal: the transition becomes min_j(m_j * x_i + b_j), with online line insertion
 // and online point queries over a known integer x-domain.
 // Assumes: lines are active on the full domain [x_low, x_high]; this starter is minimum-only.
+// Querying before adding any line returns +INF, so treat an empty structure explicitly if that case matters.
 // Exposes: LiChaoMin(x_low, x_high), add_line(m, b), and query(x).
 // Complexity: O(log C) per add/query, where C = x_high - x_low + 1.
 // Main trap: using Li Chao before checking for a lighter monotone-hull route, or forgetting
@@ -14,6 +15,7 @@
 #include <cstdint>
 #include <deque>
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -35,6 +37,7 @@ struct LiChaoMin {
     };
 
     static constexpr __int128 INF128 = (static_cast<__int128>(1) << 120);
+    static constexpr long long INF = numeric_limits<long long>::max();
 
     long long x_low;
     long long x_high;
@@ -53,7 +56,8 @@ struct LiChaoMin {
     }
 
     long long query(long long x) const {
-        return static_cast<long long>(query(0, x_low, x_high, x));
+        __int128 ans = query(0, x_low, x_high, x);
+        return ans >= INF128 / 2 ? INF : static_cast<long long>(ans);
     }
 
 private:

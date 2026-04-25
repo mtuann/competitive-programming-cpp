@@ -128,6 +128,7 @@ The heavy lifting is only one gcd / extended-gcd merge.
   - [Euclid Problem](../../../../practice/ladders/math/gcd-lcm/euclidproblem.md)
   - [Modular Arithmetic hot sheet](../../../../notebook/modular-arithmetic-hot-sheet.md)
 - This note adds: the first exact non-coprime congruence merge route in the repo.
+- Standalone `a x ≡ b (mod m)` uses the same worldview, but the repo treats it as a compare-point reduction through extended Euclid rather than this note's main lane.
 
 ## Solutions
 

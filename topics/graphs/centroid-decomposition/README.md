@@ -9,7 +9,7 @@ solve the contribution that passes through that pivot,
 then recurse on the remaining components.
 ```
 
-That makes it the right next stop after [Trees](../trees/README.md), [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md), and [Heavy-Light Decomposition](../hld/README.md):
+It also sits naturally next to [Trees](../trees/README.md), [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md), and [Heavy-Light Decomposition](../hld/README.md):
 
 - subtree flattening handles one rooted subtree
 - HLD handles online path aggregates
@@ -43,11 +43,11 @@ Strong anti-cues:
 ## Prerequisites
 
 - [Trees](../trees/README.md)
-- [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md) for one lighter tree-reduction neighbor
-- [Heavy-Light Decomposition](../hld/README.md) for the main “path queries, but different family” compare point
 
 Helpful neighboring topics:
 
+- [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md) for one lighter tree-reduction neighbor
+- [Heavy-Light Decomposition](../hld/README.md) for the main “path queries, but different family” compare point
 - [Tree DP](../../dp/tree-dp/README.md)
 - [Offline Tricks](../../data-structures/offline-tricks/README.md)
 - [Algorithm Engineering](../../advanced/algorithm-engineering/README.md) once constants and memory layout start to matter
@@ -364,6 +364,7 @@ For path-counting problems, it often means:
 ## Repo Anchors
 
 - [Centroid Decomposition ladder](../../../practice/ladders/graphs/centroid-decomposition/README.md)
+- [Exact starter template](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/centroid-decomposition.cpp)
 - [Centroid hot sheet](../../../notebook/centroid-hot-sheet.md)
 - [Ciel the Commander note](../../../practice/ladders/graphs/centroid-decomposition/cielthecommander.md)
 - [Trees](../trees/README.md)

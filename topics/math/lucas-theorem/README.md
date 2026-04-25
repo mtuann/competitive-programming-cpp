@@ -49,11 +49,11 @@ Strong anti-cues:
 ## Prerequisites
 
 - [Modular Arithmetic](../modular-arithmetic/README.md)
-- [Chinese Remainder / Linear Congruences](../chinese-remainder/README.md) only as a future compare point for composite-mod extensions
 - [Counting Basics](../../combinatorics/counting-basics/README.md) if the combinatorial meaning of `nCk` is still shaky
 
 Helpful nearby anchors:
 
+- [Chinese Remainder / Linear Congruences](../chinese-remainder/README.md) as a future compare point for composite-mod extensions
 - [factorial-binomial-mod.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/factorial-binomial-mod.cpp)
 - [Distributing Apples](../../../practice/ladders/combinatorics/counting-basics/distributingapples.md)
 

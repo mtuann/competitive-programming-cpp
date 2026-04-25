@@ -14,7 +14,7 @@ Use this ladder when you are comfortable with modular arithmetic basics, but sta
 
 - merge two congruences into one equivalent congruence
 - detect impossible systems with the gcd-consistency check
-- solve one linear congruence by reducing to extended Euclid
+- solve one linear congruence by reducing to extended Euclid, even if the exact starter here focuses on system merges
 
 ## Stretch
 
@@ -24,9 +24,9 @@ Use this ladder when you are comfortable with modular arithmetic basics, but sta
 
 ## Retrieval Layer
 
-- exact starter -> [chinese-remainder.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/chinese-remainder.cpp)
+- exact starter -> [chinese-remainder.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/chinese-remainder.cpp) for congruence merges
 - quick reminder sheet -> [Chinese Remainder hot sheet](../../../../notebook/chinese-remainder-hot-sheet.md)
-- compare inverse route -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
+- compare-point doorway for one `a x ≡ b (mod m)` equation -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 
 ## Repo Anchors
 

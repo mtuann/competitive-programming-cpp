@@ -5,7 +5,7 @@
 // Assumes: the tree is static, nodes are 0-indexed, and you want a reusable
 // centroid tree plus per-node centroid ancestors/distances.
 // Exposes: CentroidDecomposition with add_edge(u, v), build(root), centroid_parent,
-// centroid_depth, centroid_ancestors(u), and centroid_distances(u).
+// centroid_depth, centroid_ancestors(u), and centroid_distances(u) in nearest-centroid-first order.
 // Complexity: O(n log n) build, and ancestor walks are O(log n) per node/query.
 // Main trap: confusing the centroid tree with the original tree or erasing edges
 // instead of guarding recursion with removed[].

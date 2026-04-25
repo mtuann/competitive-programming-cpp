@@ -46,10 +46,10 @@ Strong anti-cues:
 ## Prerequisites
 
 - [Strings overview](../README.md)
-- [Z-Function](../z-function/README.md) helps, because the reuse invariant feels similar
 
 Helpful neighboring topics:
 
+- [Z-Function](../z-function/README.md) as one useful compare point, because the reuse invariant feels similar
 - [String Hashing](../hashing/README.md)
 - [Suffix Array And LCP](../suffix-array-lcp/README.md) for longest repeated substring and other static-substring structure questions
 

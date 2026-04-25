@@ -136,15 +136,15 @@ nav:
           - Interval DP: topics/dp/interval-dp/README.md
           - Knapsack Family: topics/dp/knapsack-family/README.md
           - Tree DP: topics/dp/tree-dp/README.md
-          - Math:
-              - Overview: topics/math/README.md
-              - Modular Arithmetic: topics/math/modular-arithmetic/README.md
-              - Number Theory Basics: topics/math/number-theory-basics/README.md
-              - Chinese Remainder / Linear Congruences: topics/math/chinese-remainder/README.md
-              - Lucas Theorem / Large Binomial Mod Prime: topics/math/lucas-theorem/README.md
-              - Mobius And Multiplicative Counting: topics/math/mobius-multiplicative/README.md
-              - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
-              - FFT / NTT: topics/math/fft-ntt/README.md
+      - Math:
+          - Overview: topics/math/README.md
+          - Modular Arithmetic: topics/math/modular-arithmetic/README.md
+          - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - Chinese Remainder / Linear Congruences: topics/math/chinese-remainder/README.md
+          - Lucas Theorem / Large Binomial Mod Prime: topics/math/lucas-theorem/README.md
+          - Mobius And Multiplicative Counting: topics/math/mobius-multiplicative/README.md
+          - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
+          - FFT / NTT: topics/math/fft-ntt/README.md
       - Combinatorics:
           - Overview: topics/combinatorics/README.md
           - Bounded Compositions: topics/combinatorics/bounded-compositions/README.md

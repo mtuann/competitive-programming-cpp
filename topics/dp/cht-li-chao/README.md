@@ -401,6 +401,7 @@ for each state i in order:
 
 - DP routing: [DP overview](../README.md)
 - Retrieval layer: [DP cheatsheet](../../../notebook/dp-cheatsheet.md)
+- Exact hot sheet: [CHT / Li Chao hot sheet](../../../notebook/cht-hot-sheet.md)
 - Exact starter: [li-chao-tree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
 - Flagship rep: [Monster Game II](../../../practice/ladders/dp/cht-li-chao/monstergame2.md)
 - Compare point: [Lazy Segment Tree](../../data-structures/lazy-segment-tree/README.md) for "same tree shape, very different invariant"

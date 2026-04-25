@@ -444,6 +444,7 @@ not `cnt * cnt`.
 ## Repo Anchors
 
 - [Mobius And Multiplicative Counting ladder](../../../practice/ladders/math/mobius-multiplicative/README.md)
+- [Exact starter template](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/mobius-linear-sieve.cpp)
 - [Mobius hot sheet](../../../notebook/mobius-hot-sheet.md)
 - [Counting Coprime Pairs note](../../../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md)
 - Compare points:

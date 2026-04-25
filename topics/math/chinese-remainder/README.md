@@ -18,7 +18,11 @@ For contest work, this is the clean exact route for:
 
 - `x ≡ a_i (mod m_i)` systems
 - non-coprime modulus merges with gcd consistency checks
-- linear congruences like `a x ≡ b (mod m)` after one extended-Euclid reduction
+- the same extended-Euclid worldview also explains linear congruences like `a x ≡ b (mod m)`
+
+In this repo, the exact starter and flagship note cover the **congruence-merge side** directly.
+For one standalone `a x ≡ b (mod m)` equation, treat [Euclid Problem](../../../practice/ladders/math/gcd-lcm/euclidproblem.md)
+and `extended-gcd-diophantine.cpp` as the compare-point doorway.
 
 ## At A Glance
 
@@ -437,7 +441,7 @@ crt_system(list):
 - [Chinese Remainder / Linear Congruences ladder](../../../practice/ladders/math/chinese-remainder/README.md)
 - [Chinese Remainder hot sheet](../../../notebook/chinese-remainder-hot-sheet.md)
 - [General Chinese Remainder note](../../../practice/ladders/math/chinese-remainder/generalchineseremainder.md)
-- [starter template](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/chinese-remainder.cpp)
+- [starter template](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/chinese-remainder.cpp): exact congruence-merge route
 - compare points:
   - [Modular Arithmetic](../modular-arithmetic/README.md)
   - [Euclid Problem](../../../practice/ladders/math/gcd-lcm/euclidproblem.md)

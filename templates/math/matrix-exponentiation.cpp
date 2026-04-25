@@ -1,6 +1,7 @@
 // Template: matrix exponentiation
 // Signal: one fixed linear recurrence or one repeated linear transition under a modulus.
-// Assumes: the transition dimension is small enough for dense O(k^3 log e) matrix powers.
+// Assumes: the transition dimension is small enough for dense O(k^3 log e) matrix powers,
+// and this starter keeps one fixed MOD = 1e9+7 unless you edit the constant below.
 // Exposes: Matrix(n, ident), operator*, mat_pow(base, exp), and multiply_vec(mat, vec).
 // Complexity: O(k^3 log e) for mat_pow on a k x k matrix.
 // Main trap: building the right recurrence but ordering the state vector incorrectly.

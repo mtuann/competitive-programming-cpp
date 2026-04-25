@@ -40,10 +40,10 @@ Strong anti-cues:
 ## Prerequisites
 
 - [Modular Arithmetic](../modular-arithmetic/README.md)
-- [DP Foundations](../../dp/foundations/README.md)
 
 Helpful neighboring topics:
 
+- [DP Foundations](../../dp/foundations/README.md) if the hard part is still identifying the right repeated state
 - [Number Theory Basics](../number-theory-basics/README.md) if modulo arithmetic and overflow discipline still feel shaky
 - [Convex Hull Trick / Li Chao Tree](../../dp/cht-li-chao/README.md) as a compare point for "DP transition becomes another algebraic object"
 
