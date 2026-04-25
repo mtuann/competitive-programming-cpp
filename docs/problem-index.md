@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `97`
+- Total tracked problem notes: `98`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -14,7 +14,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Area | Count |
 | --- | ---: |
 | Foundations | 11 |
-| Data Structures | 12 |
+| Data Structures | 13 |
 | Graphs | 23 |
 | DP | 10 |
 | Greedy | 3 |
@@ -58,6 +58,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `DYNAMICRANGESUMQUERIES` | Dynamic Range Sum Queries | `Data Structures -> Segment Tree` | - | iterative segment tree; point assignment; range sum query | `medium` | CSES, Range queries | [Map](topic-maps/data-structures/segment-tree.md) / [Ladder](../practice/ladders/data-structures/segment-tree/README.md) / [Tutorial](../topics/data-structures/segment-tree/README.md) | [Note](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree/dynamicrangesumqueries.cpp) |
 | `RANGECHMINCHMAXADDRANGESUM` | Range Chmin Chmax Add Range Sum | `Data Structures -> Segment Tree Beats` | - | segment tree beats; range chmin; range chmax; second extremum summaries | `hard` | Library Checker, Verification | [Map](topic-maps/data-structures/segment-tree-beats.md) / [Ladder](../practice/ladders/data-structures/segment-tree-beats/README.md) / [Tutorial](../topics/data-structures/segment-tree-beats/README.md) | [Note](../practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.cpp) |
 | `STATICRANGEMINIMUMQUERIES` | Static Range Minimum Queries | `Data Structures -> Sparse Table` | - | sparse table rmq; idempotent overlap query; log table preprocessing | `easy` | CSES, Range queries | [Map](topic-maps/data-structures/sparse-table.md) / [Ladder](../practice/ladders/data-structures/sparse-table/README.md) / [Tutorial](../topics/data-structures/sparse-table/README.md) | [Note](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp) |
+| `MKTHNUM` | K-th Number | `Data Structures -> Wavelet Tree` | - | - | `hard` | - | [Map](topic-maps/data-structures/wavelet-tree.md) / [Ladder](../practice/ladders/data-structures/wavelet-tree/README.md) / [Tutorial](../topics/data-structures/wavelet-tree/README.md) | [Note](../practice/ladders/data-structures/wavelet-tree/mkthnum.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/wavelet-tree/mkthnum.cpp) |
 
 ### Graphs
 

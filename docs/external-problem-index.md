@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `554`
+- Total curated external problems: `557`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -122,6 +122,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Sparse Table` | `Core` | [Static Range Minimum Queries](https://cses.fi/problemset/task/1647) | `CSES` | `Easy` | - | Query-Heavy; Data-Structure-Heavy | Range-Min; Static-Queries; Idempotent |
 | `Data Structures -> Sparse Table` | `Core` | [Range GCD Query](https://judge.yosupo.jp/problem/range_gcd_query) | `Library Checker` | `Medium` | - | - | GCD; Idempotent |
 | `Data Structures -> Sparse Table` | `Classics` | [Static RMQ](https://judge.yosupo.jp/problem/staticrmq) | `Library Checker` | `Easy` | - | Query-Heavy | Range-Min; Idempotent |
+| `Data Structures -> Wavelet Tree` | `Core` | [MKTHNUM - K-th Number](https://www.spoj.com/problems/MKTHNUM/) | `SPOJ` | `Hard` | Order Statistics | Query-Heavy; Data-Structure-Heavy | Range-Kth; Static-Queries |
+| `Data Structures -> Wavelet Tree` | `Practice` | [Range K-th Smallest](https://judge.yosupo.jp/problem/range_kth_smallest) | `Library Checker` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Range-Kth |
+| `Data Structures -> Wavelet Tree` | `Classics` | [K-query](https://www.spoj.com/problems/KQUERY/) | `SPOJ` | `Hard` | Threshold Counting, Classic | Query-Heavy; Classic | Threshold-Count |
 
 ## Graphs
 

@@ -26,6 +26,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Data Structures -> Segment Tree | 4 | 0 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Segment Tree Beats | 1 | 5 | 2 | [Open](data-structures/segment-tree-beats.md) |
 | Data Structures -> Sparse Table | 1 | 0 | 3 | [Open](data-structures/sparse-table.md) |
+| Data Structures -> Wavelet Tree | 1 | 5 | 3 | [Open](data-structures/wavelet-tree.md) |
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |
 | Graphs -> Bridges, Articulation, And BCC | 1 | 4 | 5 | [Open](graphs/bridges-articulation.md) |
 | Graphs -> Centroid Decomposition | 1 | 5 | 5 | [Open](graphs/centroid-decomposition.md) |

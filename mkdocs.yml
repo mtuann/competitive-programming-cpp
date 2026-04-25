@@ -109,6 +109,7 @@ nav:
           - Mo's Algorithm: topics/data-structures/mos-algorithm/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
           - Persistent Data Structures: topics/data-structures/persistent-data-structures/README.md
+          - Wavelet Tree: topics/data-structures/wavelet-tree/README.md
           - Segment Tree: topics/data-structures/segment-tree/README.md
           - Lazy Segment Tree: topics/data-structures/lazy-segment-tree/README.md
           - Segment Tree Beats: topics/data-structures/segment-tree-beats/README.md
@@ -211,6 +212,7 @@ nav:
               - Mo's Algorithm: practice/ladders/data-structures/mos-algorithm/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
               - Persistent Data Structures: practice/ladders/data-structures/persistent-data-structures/README.md
+              - Wavelet Tree: practice/ladders/data-structures/wavelet-tree/README.md
               - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
               - Lazy Segment Tree: practice/ladders/data-structures/lazy-segment-tree/README.md
               - Segment Tree Beats: practice/ladders/data-structures/segment-tree-beats/README.md
@@ -330,6 +332,7 @@ nav:
       - Lazy Segment Tree Hot Sheet: notebook/lazy-segment-tree-hot-sheet.md
       - Segment Tree Beats Hot Sheet: notebook/segment-tree-beats-hot-sheet.md
       - Persistent Data Structures Hot Sheet: notebook/persistent-data-structures-hot-sheet.md
+      - Wavelet Tree Hot Sheet: notebook/wavelet-tree-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Mo's Hot Sheet: notebook/mos-hot-sheet.md

@@ -200,7 +200,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Binary Trie / XOR Queries`
 - [x] `Flow with Lower Bounds`
 - [x] `Segment Tree Beats`
-- [ ] `Wavelet Tree`
+- [x] `Wavelet Tree`
 - [ ] `Treap / Implicit Treap`
 - [ ] `Eertree / Palindromic Tree`
 - [ ] `XOR Basis / Linear Basis`

@@ -967,6 +967,76 @@
       }
     ]
   },
+  "data-structures/wavelet-tree": {
+    "title": "Data Structures -> Wavelet Tree",
+    "summary": "Static range order-statistics and value-counting structure that rewrites one queried interval through value partitions with prefix-left counts.",
+    "topic_path": "topics/data-structures/wavelet-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/wavelet-tree/README.md",
+    "microtopics": [
+      "range-kth-smallest",
+      "prefix-left-counts",
+      "static-order-statistics",
+      "coordinate-compression",
+      "count-leq",
+      "wavelet-vs-persistent"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide Wavelet Tree",
+        "url": "https://usaco.guide/adv/wavelet?lang=java",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "IOI Journal Wavelet Trees for Competitive Programming",
+        "url": "https://ioinformatics.org/files/volume10.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "SPOJ MKTHNUM",
+        "url": "https://www.spoj.com/problems/MKTHNUM/",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Range K-th Smallest",
+        "url": "https://judge.yosupo.jp/problem/range_kth_smallest",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ KQUERY",
+        "url": "https://www.spoj.com/problems/KQUERY/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Wavelet Tree hot sheet",
+        "path": "notebook/wavelet-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Wavelet Tree starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "MKTHNUM note",
+        "path": "practice/ladders/data-structures/wavelet-tree/mkthnum.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Persistent Data Structures tutorial",
+        "path": "topics/data-structures/persistent-data-structures/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Persistent Data Structures hot sheet",
+        "path": "notebook/persistent-data-structures-hot-sheet.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

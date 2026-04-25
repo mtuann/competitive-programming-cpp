@@ -3085,6 +3085,81 @@
     "why_fit": "A concise official benchmark for validating a sparse table implementation."
   },
   {
+    "slug": "data-structures/wavelet-tree",
+    "topic": "Data Structures -> Wavelet Tree",
+    "title": "MKTHNUM - K-th Number",
+    "url": "https://www.spoj.com/problems/MKTHNUM/",
+    "source": "SPOJ",
+    "difficulty": "hard",
+    "tracks": [
+      "Order Statistics"
+    ],
+    "tags": [
+      "Range-Kth",
+      "Static-Queries"
+    ],
+    "styles": [
+      "Query-Heavy",
+      "Data-Structure-Heavy"
+    ],
+    "prerequisites": [
+      "Coordinate Compression",
+      "Wavelet Tree",
+      "Range Order Statistics"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical first static range k-th-smallest problem and the cleanest first benchmark for this lane."
+  },
+  {
+    "slug": "data-structures/wavelet-tree",
+    "topic": "Data Structures -> Wavelet Tree",
+    "title": "Range K-th Smallest",
+    "url": "https://judge.yosupo.jp/problem/range_kth_smallest",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [],
+    "tags": [
+      "Range-Kth"
+    ],
+    "styles": [
+      "Query-Heavy",
+      "Data-Structure-Heavy"
+    ],
+    "prerequisites": [
+      "Wavelet Tree",
+      "Coordinate Compression",
+      "Static Queries"
+    ],
+    "bucket": "practice",
+    "why_fit": "An official verifier-style benchmark once the basic wavelet-tree descent is trusted."
+  },
+  {
+    "slug": "data-structures/wavelet-tree",
+    "topic": "Data Structures -> Wavelet Tree",
+    "title": "K-query",
+    "url": "https://www.spoj.com/problems/KQUERY/",
+    "source": "SPOJ",
+    "difficulty": "hard",
+    "tracks": [
+      "Threshold Counting",
+      "Classic"
+    ],
+    "tags": [
+      "Threshold-Count"
+    ],
+    "styles": [
+      "Query-Heavy",
+      "Classic"
+    ],
+    "prerequisites": [
+      "Wavelet Tree",
+      "Range Counting",
+      "Coordinate Compression"
+    ],
+    "bucket": "classic",
+    "why_fit": "A classic follow-up showing the same lane extends naturally from k-th queries to value-threshold counts."
+  },
+  {
     "slug": "dp/bitmask-dp",
     "topic": "DP -> Bitmask DP",
     "title": "Travelling Salesman Problem",

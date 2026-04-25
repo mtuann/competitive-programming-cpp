@@ -2759,6 +2759,92 @@
       ]
     }
   ],
+  "data-structures/wavelet-tree": [
+    {
+      "title": "MKTHNUM - K-th Number",
+      "url": "https://www.spoj.com/problems/MKTHNUM/",
+      "source": "SPOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/wavelet-tree",
+        "Data Structures",
+        "Wavelet Tree",
+        "Order Statistics"
+      ],
+      "tags": [
+        "Wavelet-Tree",
+        "Range-Kth",
+        "Static-Queries"
+      ],
+      "why_fit": "The canonical first static range k-th-smallest problem and the cleanest first benchmark for this lane.",
+      "bucket": "core",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Coordinate Compression",
+        "Wavelet Tree",
+        "Range Order Statistics"
+      ]
+    },
+    {
+      "title": "Range K-th Smallest",
+      "url": "https://judge.yosupo.jp/problem/range_kth_smallest",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/wavelet-tree",
+        "Library Checker",
+        "Wavelet Tree",
+        "Verification"
+      ],
+      "tags": [
+        "Wavelet-Tree",
+        "Range-Kth",
+        "Verification"
+      ],
+      "why_fit": "An official verifier-style benchmark once the basic wavelet-tree descent is trusted.",
+      "bucket": "practice",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Wavelet Tree",
+        "Coordinate Compression",
+        "Static Queries"
+      ]
+    },
+    {
+      "title": "K-query",
+      "url": "https://www.spoj.com/problems/KQUERY/",
+      "source": "SPOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/wavelet-tree",
+        "Wavelet Tree",
+        "Threshold Counting",
+        "Classic"
+      ],
+      "tags": [
+        "Wavelet-Tree",
+        "Threshold-Count",
+        "Classic"
+      ],
+      "why_fit": "A classic follow-up showing the same lane extends naturally from k-th queries to value-threshold counts.",
+      "bucket": "classic",
+      "styles": [
+        "Query-Heavy",
+        "Classic"
+      ],
+      "prerequisites": [
+        "Wavelet Tree",
+        "Range Counting",
+        "Coordinate Compression"
+      ]
+    }
+  ],
   "graphs/graph-modeling": [
     {
       "title": "Counting Rooms",

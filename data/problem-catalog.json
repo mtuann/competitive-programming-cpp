@@ -608,6 +608,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/sparse-table/staticrangeminimumqueries.cpp"
   },
   {
+    "code": "MKTHNUM",
+    "title": "K-th Number",
+    "full_title": "MKTHNUM - K-th Number",
+    "judge": "SPOJ",
+    "judge_url": "https://www.spoj.com/problems/MKTHNUM/",
+    "main_topic": "Data Structures -> Wavelet Tree",
+    "secondary_topics": [
+      "Wavelet tree",
+      "Static order statistics",
+      "Coordinate compression"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/wavelet-tree",
+    "topic_tags": [
+      "data-structures/wavelet-tree"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/wavelet-tree/mkthnum.md",
+    "ladder_path": "practice/ladders/data-structures/wavelet-tree/README.md",
+    "tutorial_path": "topics/data-structures/wavelet-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/wavelet-tree/mkthnum.cpp"
+  },
+  {
     "code": "VMMARBLE",
     "title": "Phân loại bi",
     "full_title": "VMMARBLE - Phân loại bi",
