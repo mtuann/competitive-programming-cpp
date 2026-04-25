@@ -73,6 +73,16 @@ Suggested emphasis by level:
 - `Silver / early Gold`: binary search, graphs, DSU, ordered sets, implementation speed
 - `Gold+`: DP families, stronger graph topics, offline reasoning, more deliberate proof checks
 
+## Division Route Table
+
+Use this when “practice more” is too vague.
+
+| If your current bottleneck looks like... | Best first repo doors |
+| --- | --- |
+| `Bronze`: reading, loops, arrays, simple implementation misses | [Start Here](../../docs/start-here.md), [Foundations ladders](../ladders/foundations/README.md), [Foundations cheatsheet](../../notebook/foundations-cheatsheet.md) |
+| `Silver`: sorted scans, graph basics, binary search, implementation speed | [Foundations ladders](../ladders/foundations/README.md), [BFS And DFS](../../topics/graphs/bfs-dfs/README.md), [Problem Finder](../../docs/problem-finder.md) |
+| `Gold`: DP families, stronger graphs, offline reasoning | [DP ladders](../ladders/dp/README.md), [Shortest Paths ladder](../ladders/graphs/shortest-paths/README.md), [Offline Tricks](../../topics/data-structures/offline-tricks/README.md) |
+
 ## Before A Contest
 
 Default checklist:
@@ -90,6 +100,29 @@ For **training**, templates are useful.
 For **official USACO contests**, do **not** assume you can rely on a prewritten personal template kit the way you might in ICPC training. Recheck the current official instructions each season and follow them strictly.
 
 This repo's template layer is for learning and practice speed. It is not a license to import your full personal codebook into official USACO submissions.
+
+## Training vs Official Contest
+
+| Tool or habit | Allowed in training | Recheck before official | Repo door |
+| --- | --- | --- | --- |
+| local template snippets | yes | yes, always | [Template Library](../../template-library.md) |
+| stress harnesses and brute-force scripts | yes | recheck contest instructions | [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
+| personal notebook / hot sheets | yes | recheck contest instructions | [Notebook](../../notebook/README.md) |
+| giant personal codebook mindset | bad habit even in training | definitely no | [Build Kit](../../docs/build-kit.md) |
+
+The safe default is simple: practice with tools that teach you the idea, then re-read the current official rules before every real contest.
+
+## Solo Archive Block 01
+
+Run this as one clean solo session:
+
+1. choose `3-4` problems through [Problem Finder](../../docs/problem-finder.md) or one official archive block
+2. classify them as `safe`, `likely with work`, `too early right now`
+3. solve in that order with one honest time limit
+4. for every miss, log the first real failure: reading, modeling, implementation, or testing
+5. reopen exactly one repo door before the next session
+
+This drill is good when the topic knowledge is there but contest execution still feels noisy.
 
 ## During A Contest
 
@@ -152,6 +185,15 @@ The review should identify the first break in your process, not only the final a
 - polishing one nearly-solved problem for too long while cleaner points are available
 - doing no serious local validation because the code "looks right"
 - skipping post-contest upsolve because the result felt good enough
+
+## Failure -> Next Repo Door
+
+| Failure | Reopen |
+| --- | --- |
+| misread statement or constraint detail | [Start Here](../../docs/start-here.md) or the matching foundations topic page |
+| implementation WA/TLE on mostly-known ideas | [Local Judge Workflow](../../notebook/local-judge-workflow.md) and [Build Kit](../../docs/build-kit.md) |
+| wrong division-level practice choice | this page's `Division Route Table` and [Problem Finder](../../docs/problem-finder.md) |
+| no clean contest block rhythm | this page's `Solo Archive Block 01` |
 
 ## Progress Markers
 

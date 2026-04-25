@@ -49,6 +49,16 @@ first.
 | partial scoring and proof-heavy tasks | [IOI / OI](ioi-oi.md) |
 | breadth, switching, and one-machine teamwork | [ICPC](icpc.md) |
 
+## Track Drill Index
+
+Use this table when you want one executable drill instead of more prose.
+
+| Track | First drill | Use when | If it breaks, reopen |
+| --- | --- | --- | --- |
+| [USACO](usaco.md) | `Solo Archive Block 01` in [USACO](usaco.md) | you want a clean timed solo block with explicit post-contest review | [Foundations ladders](../ladders/foundations/README.md), [Problem Finder](../../docs/problem-finder.md), or [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| [IOI / OI](ioi-oi.md) | `Subtask-First Drill 01` in [IOI / OI](ioi-oi.md) | you need to practice safe-point collection before gambling on the full solve | [Reasoning](../../topics/foundations/reasoning/README.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md), or the missed family's matching topic/ladders |
+| [ICPC](icpc.md) | `ICPC Triage Drill 01` in [ICPC](icpc.md) | you want a repeatable opening protocol and one-machine plan | [Mixed Rounds](../mixed-rounds/README.md), [Contest Engineering](../../topics/advanced/contest-engineering/README.md), or [Build Kit](../../docs/build-kit.md) |
+
 ## Shared Repo Kit
 
 Every mature playbook should route through the same repo layers:

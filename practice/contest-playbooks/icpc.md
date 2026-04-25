@@ -89,6 +89,30 @@ Default checklist:
 
 The goal before ICPC is not to feel clever. It is to remove avoidable friction.
 
+## Opening Triage Board
+
+Use one shared board in the first pass instead of letting triage stay verbal.
+
+| Problem | banker / medium / investment | owner | machine priority | bailout minute | next route if parked |
+| --- | --- | --- | --- | --- | --- |
+| `A` |  |  | `high / medium / low` |  |  |
+| `B` |  |  | `high / medium / low` |  |  |
+| `C` |  |  | `high / medium / low` |  |  |
+
+Fill it fast. The goal is not perfect prediction. The goal is to stop the team from improvising machine usage problem by problem.
+
+## ICPC Triage Drill 01
+
+Run this on one recent contest set or one curated five-problem block.
+
+1. Spend `15-20 minutes` reading and tagging the set only.
+2. Fill the triage board above before anyone writes real contest code.
+3. Commit the workstation to the safest first solve.
+4. At minute `25`, ask whether the board still matches reality or whether one tag should change.
+5. After the session, log one triage miss and one machine-usage win.
+
+This drill is good when your team often says “we knew the solve, but we started the wrong thing first.”
+
 ## During A Contest
 
 ### Opening 20 Minutes
@@ -113,6 +137,16 @@ Before a teammate gives a problem to the typist, they should be able to say:
 - whether the main risk is modeling, implementation, or proof
 
 If that summary is not clean yet, the handoff is early.
+
+## Handoff Drill
+
+Force every handoff through one short summary card:
+
+| idea | complexity | edge cases | current risk | exact next coding step |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+
+If the card cannot be filled in one or two minutes, the handoff is probably still too early.
 
 ### Bailout Rule
 
@@ -169,6 +203,15 @@ If a post-contest note ends with five vague lessons, it is too weak.
 - carrying a huge notebook that no one can navigate quickly
 - debugging only by editing code instead of shrinking the failing case
 - confusing "interesting" with "high-ROI" in the first hour
+
+## Failure -> Next Repo Door
+
+| Failure | Reopen |
+| --- | --- |
+| mis-triage or weak first `20` minutes | [Mixed Rounds](../mixed-rounds/README.md) and this page's triage drill |
+| bad handoff or unclear ownership | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
+| close solve died in debugging | [Build Kit](../../docs/build-kit.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| standard graph/data-structure family was not recognized | [Ladders](../ladders/README.md) or the missed family's matching graph/data-structure ladder |
 
 ## Progress Markers
 

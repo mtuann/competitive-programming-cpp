@@ -81,6 +81,18 @@ Default checklist:
 4. make sure stress-test or brute-force scaffolding feels automatic
 5. warm up with one modeling problem, not only a syntax problem
 
+## Subtask Planning Sheet
+
+Use one worksheet per problem before you commit hard to the full route.
+
+| Subtask | points | smallest valid algorithm | proof status | validation plan | submit checkpoint |
+| --- | --- | --- | --- | --- | --- |
+| `1` |  |  | `idea / proved / coded` |  |  |
+| `2` |  |  | `idea / proved / coded` |  |  |
+| `3` |  |  | `idea / proved / coded` |  |  |
+
+This is the most direct way to stop “full solution tunnel vision” from swallowing safe points.
+
 ## During A Contest
 
 ### Subtask Worksheet
@@ -108,6 +120,16 @@ Submit when you have:
 
 Do **not** overwrite safe points too early with an unproven full attempt.
 
+## Subtask-First Drill 01
+
+Run this on one official task or one olympiad-style note with visible easier routes.
+
+1. Fill the `Subtask Planning Sheet` before writing the full algorithm.
+2. Choose one safe score path and state the smallest valid algorithm for it.
+3. Code and validate that score path first.
+4. Only then decide whether the next step is optimization, a proof upgrade, or one more stress pass.
+5. After the session, log which points were safe, which were speculative, and where the first false assumption appeared.
+
 ### Proof Discipline
 
 Before trusting an optimization, force yourself to state:
@@ -119,6 +141,20 @@ Before trusting an optimization, force yourself to state:
 - and what complexity bound is actually proved
 
 If you cannot say that yet, you probably have an intuition, not a proof.
+
+## Proof Gate Before Coding
+
+Use this gate before trusting a nontrivial optimization or DP state design:
+
+| item | your answer |
+| --- | --- |
+| state |  |
+| invariant |  |
+| transition completeness |  |
+| optimization justification |  |
+| failure example if false |  |
+
+If any row stays vague, delay the optimization and bank the safer score path first.
 
 ### Validation Rule
 
@@ -158,6 +194,15 @@ The goal is not only to know the editorial. It is to know where your own proof o
 - submitting unstable code and losing a safe score floor
 - doing no brute-force or stress validation near subtask boundaries
 - finishing a contest with vague lessons instead of one precise next step
+
+## Failure -> Next Repo Door
+
+| Failure | Reopen |
+| --- | --- |
+| unsafe proof or hand-wavy optimization | [Reasoning](../../topics/foundations/reasoning/README.md) |
+| missed safe partial score | this page's `Subtask Planning Sheet` and `Subtask-First Drill 01` |
+| grader or validation issue | [Local Judge Workflow](../../notebook/local-judge-workflow.md) and [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
+| topic depth still too weak | the missed family's matching ladder or deep topic page in `topics/` |
 
 ## Progress Markers
 
