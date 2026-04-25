@@ -5,8 +5,8 @@ Affine-DP optimization where previous states become lines and current states bec
 - Topic slug: `dp/cht-li-chao`
 - Tutorial page: [Open tutorial](../../../topics/dp/cht-li-chao/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/dp/cht-li-chao/README.md)
-- Repo problems currently tagged here: `1`
-- Repo companion pages: `3`
+- Repo problems currently tagged here: `2`
+- Repo companion pages: `4`
 - Curated external problems: `4`
 
 ## Microtopics
@@ -37,6 +37,7 @@ Affine-DP optimization where previous states become lines and current states bec
 | Material | Type |
 | --- | --- |
 | [CHT / Li Chao hot sheet](../../../notebook/cht-hot-sheet.md) | `quick reference` |
+| [Line Add Get Min note](../../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md) | `flagship note` |
 | [Monster Game II note](../../../practice/ladders/dp/cht-li-chao/monstergame2.md) | `flagship note` |
 | [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
@@ -46,7 +47,7 @@ Affine-DP optimization where previous states become lines and current states bec
 
 | Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| [Line Add Get Min](https://judge.yosupo.jp/problem/line_add_get_min) | `Library Checker` | `Medium` | Li Chao Tree, Line Container | Implementation; Verification | Line Evaluation; Li Chao Midpoint Invariant | Point Queries | The most direct official verifier for the exact full-domain Li Chao starter. |
+| [Line Add Get Min](https://judge.yosupo.jp/problem/line_add_get_min) | `Library Checker` | `Medium` | Line Container | Implementation; Verification | Line Evaluation; Lower Envelope Breakpoints | Point Queries | The most direct official verifier for the exact full-domain LineContainer route under the affine line-container family. |
 | [Monster Game I](https://cses.fi/problemset/task/2084) | `CSES` | `Hard` | Convex Hull Trick | Optimization; Monotone Structure | Affine DP Transform; Slope / Query Monotonicity | Affine DP; Monotone Hull; Line Container | The clean compare-point problem where the same affine DP family still admits a lighter monotone-hull route. |
 | [Monster Game II](https://cses.fi/problemset/task/2085) | `CSES` | `Hard` | Li Chao Tree | Optimization; Data-Structure-Heavy | Affine DP Transform; Line Evaluation | Affine DP; Line Container | The cleanest flagship for generic online min queries over lines with arbitrary insertion/query order. |
 
@@ -60,6 +61,7 @@ Affine-DP optimization where previous states become lines and current states bec
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `LINEADDGETMIN` | Line Add Get Min | `primary` | `medium` | - | [Note](../../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/cht-li-chao/lineaddgetmin.cpp) |
 | `MONSTERGAME2` | Monster Game II | `primary` | `hard` | li chao tree; affine dp; online line minimum | [Note](../../../practice/ladders/dp/cht-li-chao/monstergame2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/cht-li-chao/monstergame2.cpp) |
 
 ## Regeneration

@@ -31,7 +31,8 @@ Target skill:
 
 ## Stretch
 
-- SOS / subset-over-subset ideas later
+- [SOS DP](../sos-dp/README.md) / subset-over-subset ideas later
+- broken profile / frontier-mask DP later
 - combine with shortest paths or BFS on subsets
 - [VMMARBLE](vmmarble.md)
 

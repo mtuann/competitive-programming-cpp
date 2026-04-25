@@ -441,3 +441,5 @@ Practice / repo anchors:
 - [Knapsack Family](../knapsack-family/README.md)
 - [Bitmask DP](../bitmask-dp/README.md)
 - [Prefix Sums](../../foundations/patterns/prefix-sums/README.md)
+- [Knuth Optimization](../knuth-optimization/README.md)
+- [Divide and Conquer DP](../divide-and-conquer-dp/README.md)

@@ -18,6 +18,7 @@ or the max analogue, and the real question is which line-container variant fits.
 ## Choose By Signal
 
 - slopes inserted in monotone order and query `x` values are monotone -> lighter monotone hull route -> reopen the topic
+- online inserts + online queries on full-domain lines with arbitrary integer `x` -> LineContainer -> [`line-container.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/line-container.cpp)
 - online inserts + online queries on one known integer domain -> Li Chao tree -> [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
 - segment-limited line insertion -> reopen the full topic first; the starter here is too narrow
 - the statement still feels like generic DP state design -> go back to [DP cheatsheet](dp-cheatsheet.md)
@@ -26,6 +27,7 @@ or the max analogue, and the real question is which line-container variant fits.
 
 - every previous candidate is represented as one line `y = m x + b`
 - each query is just "best line at one x"
+- in LineContainer, each line owns one breakpoint after which it stops being the best one
 - in a Li Chao node, the stored line is best at that node midpoint
 - the losing line can still matter on at most one side of the interval
 - query answer is the best value among the lines stored on one root-to-leaf path
@@ -36,10 +38,13 @@ or the max analogue, and the real question is which line-container variant fits.
 - mixing up min and max conventions
 - using a domain that does not cover every query `x`
 - ignoring overflow in `m * x + b`
+- using LineContainer when lines are only active on subsegments
 - shipping a Li Chao tree when `Monster Game I`-style monotonicity would have made a deque hull cleaner
 
 ## Exact Starters In This Repo
 
+- exact sibling route -> [`line-container.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/line-container.cpp)
+- sibling rep -> [Line Add Get Min](../practice/ladders/dp/cht-li-chao/lineaddgetmin.md)
 - exact starter -> [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
 - flagship in-lane rep -> [Monster Game II](../practice/ladders/dp/cht-li-chao/monstergame2.md)
 - compare lighter hull route -> [Monster Game I](https://cses.fi/problemset/task/2084)

@@ -31,7 +31,8 @@ Target skill:
 
 ## Stretch
 
-- Knuth / divide-and-conquer optimization later
+- [Knuth Optimization](../../../../topics/dp/knuth-optimization/README.md)
+- [Divide and Conquer DP](../../../../topics/dp/divide-and-conquer-dp/README.md)
 - connect interval DP with prefix-sum precomputations
 
 Target skill:
@@ -55,3 +56,4 @@ You are ready to move on when:
 ## Tutorial Link
 
 - [Interval DP](../../../../topics/dp/interval-dp/README.md)
+- [Knuth Optimization](../../../../topics/dp/knuth-optimization/README.md)

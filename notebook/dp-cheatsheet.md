@@ -16,7 +16,13 @@ Use this page when the state is close, but you still need to stabilize what each
 - shrinking subarray / interval -> interval DP
 - subtree choices combine upward -> tree DP
 - subsets or masks are the natural state -> bitmask DP
+- one full mask cube needs all-submask or all-superset aggregates -> [SOS DP hot sheet](sos-dp-hot-sheet.md)
+- one grid dimension is small and the state is the current frontier -> [Broken Profile hot sheet](broken-profile-hot-sheet.md)
+- partition prefixes into groups with monotone best split points -> [Divide and Conquer DP hot sheet](divide-and-conquer-dp-hot-sheet.md)
+- split-point interval DP with additive interval cost and monotone opt windows -> [Knuth Optimization hot sheet](knuth-optimization-hot-sheet.md)
 - affine transition `m * x + b` over previous states -> [CHT / Li Chao hot sheet](cht-hot-sheet.md)
+- one convex function over coordinate `x` is updated by hinge penalties or bounded argmin shifts -> [Slope Trick hot sheet](slope-trick-hot-sheet.md)
+- exact `K` picks / segments become cheap after charging one integer penalty per use -> [Aliens Trick hot sheet](aliens-trick-hot-sheet.md)
 
 ## State Checklist
 
@@ -44,7 +50,13 @@ dp[i][j] = answer on prefix i with extra parameter j
 - digits with tight constraints -> [Digit DP hot sheet](digit-dp-hot-sheet.md)
 - intervals shrink from both ends -> interval DP
 - moving window contributes a min / max / median -> combine DP thinking with a window structure
+- the answer for each mask needs all of its submasks or supersets -> [SOS DP hot sheet](sos-dp-hot-sheet.md)
+- local placements only depend on a small grid frontier -> [Broken Profile hot sheet](broken-profile-hot-sheet.md)
+- one last segment `k + 1 .. i` plus monotone argmins -> [Divide and Conquer DP hot sheet](divide-and-conquer-dp-hot-sheet.md)
+- one interval `[l, r]`, one split `k`, plus `cost(l, r)` only -> [Knuth Optimization hot sheet](knuth-optimization-hot-sheet.md)
 - previous states become lines and current states become one query point -> [CHT / Li Chao hot sheet](cht-hot-sheet.md)
+- the DP state itself is one convex piecewise-linear function of `x` -> [Slope Trick hot sheet](slope-trick-hot-sheet.md)
+- the expensive exact-count dimension disappears after penalizing each use by `lambda` -> [Aliens Trick hot sheet](aliens-trick-hot-sheet.md)
 
 ## Core Invariant
 
@@ -77,6 +89,6 @@ The classic DP bug is not syntax. It is a state that silently throws away inform
 
 ## Reopen Paths
 
-- topic pages -> [DP Foundations](../topics/dp/foundations/README.md), [Digit DP](../topics/dp/digit-dp/README.md), [Tree DP](../topics/dp/tree-dp/README.md), [Interval DP](../topics/dp/interval-dp/README.md), [Convex Hull Trick / Li Chao Tree](../topics/dp/cht-li-chao/README.md)
-- exact quick sheet -> [Digit DP hot sheet](digit-dp-hot-sheet.md), [CHT / Li Chao hot sheet](cht-hot-sheet.md)
-- repo anchors -> [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md), [Removal Game](../practice/ladders/dp/interval-dp/removalgame.md), [Tree Matching](../practice/ladders/dp/tree-dp/treematching.md), [Tree Distances II](../practice/ladders/dp/tree-dp/treedistances2.md), [Monster Game II](../practice/ladders/dp/cht-li-chao/monstergame2.md)
+- topic pages -> [DP Foundations](../topics/dp/foundations/README.md), [Digit DP](../topics/dp/digit-dp/README.md), [Tree DP](../topics/dp/tree-dp/README.md), [Interval DP](../topics/dp/interval-dp/README.md), [SOS DP](../topics/dp/sos-dp/README.md), [Broken Profile / Plug DP](../topics/dp/broken-profile/README.md), [Divide and Conquer DP](../topics/dp/divide-and-conquer-dp/README.md), [Knuth Optimization](../topics/dp/knuth-optimization/README.md), [Convex Hull Trick / Li Chao Tree](../topics/dp/cht-li-chao/README.md), [Slope Trick](../topics/dp/slope-trick/README.md), [Lagrangian Relaxation / Aliens Trick](../topics/dp/lagrangian-relaxation/README.md)
+- exact quick sheet -> [Digit DP hot sheet](digit-dp-hot-sheet.md), [SOS DP hot sheet](sos-dp-hot-sheet.md), [Broken Profile hot sheet](broken-profile-hot-sheet.md), [Divide and Conquer DP hot sheet](divide-and-conquer-dp-hot-sheet.md), [Knuth Optimization hot sheet](knuth-optimization-hot-sheet.md), [CHT / Li Chao hot sheet](cht-hot-sheet.md), [Slope Trick hot sheet](slope-trick-hot-sheet.md), [Aliens Trick hot sheet](aliens-trick-hot-sheet.md)
+- repo anchors -> [Counting Numbers](../practice/ladders/dp/digit-dp/countingnumbers.md), [Compatible Numbers](../practice/ladders/dp/sos-dp/compatiblenumbers.md), [Removal Game](../practice/ladders/dp/interval-dp/removalgame.md), [Counting Tilings](../practice/ladders/dp/broken-profile/countingtilings.md), [Tree Matching](../practice/ladders/dp/tree-dp/treematching.md), [Tree Distances II](../practice/ladders/dp/tree-dp/treedistances2.md), [Ciel and Gondolas](../practice/ladders/dp/divide-and-conquer-dp/cielandgondolas.md), [Knuth Division](../practice/ladders/dp/knuth-optimization/knuthdivision.md), [Line Add Get Min](../practice/ladders/dp/cht-li-chao/lineaddgetmin.md), [Monster Game II](../practice/ladders/dp/cht-li-chao/monstergame2.md), [Snuketoon](../practice/ladders/dp/slope-trick/snuketoon.md), [Red and Blue Lamps](../practice/ladders/dp/lagrangian-relaxation/redandbluelamps.md)

@@ -16,20 +16,26 @@ The important shift is:
 
 That line-view is what people usually mean by `Convex Hull Trick` in contest discussion.
 
-For this repo, the first exact starter in the family is a **Li Chao tree**:
+For this repo, the family now has two exact shipped routes:
 
-- lines are added online
-- queries arrive online
-- the `x` domain is known and discrete
-- no monotonicity assumptions are needed
+- **Li Chao tree**
+  - lines are added online
+  - queries arrive online
+  - the `x` domain is known and discrete
+  - no monotonicity assumptions are needed
+- **LineContainer**
+  - lines are added online
+  - queries arrive online
+  - every line is active on the full domain
+  - no x-domain declaration is needed up front
 
 ## At A Glance
 
 - **Use when:** the expensive part of the recurrence is a min/max over affine functions `m x + b`
 - **Core worldview:** each previous candidate becomes one line; each current state is just "query at `x_i`"
-- **Main tools:** monotone hull / deque CHT, static hull + binary search, Li Chao tree
-- **Typical complexity:** `O(log C)` per insertion/query for Li Chao, where `C` is the size of the `x` domain
-- **Main trap:** jumping straight to Li Chao before checking whether a lighter monotone-hull route already fits
+- **Main tools:** monotone hull / deque CHT, LineContainer, static hull + binary search, Li Chao tree
+- **Typical complexity:** amortized `O(log n)` for LineContainer, `O(log C)` per insertion/query for Li Chao where `C` is the size of the `x` domain
+- **Main trap:** jumping straight to Li Chao before checking whether a lighter monotone-hull or LineContainer route already fits
 
 Strong contest signals:
 
@@ -134,24 +140,30 @@ This means the optimization layer is geometric:
 
 Not every line-container problem needs the same machinery.
 
-There are three common lanes:
+There are four common lanes:
 
 1. **Monotone hull / deque CHT**
    - slopes inserted in monotone order
    - query `x` values are also monotone
    - often `O(1)` amortized per operation
 
-2. **Static hull + binary search**
+2. **LineContainer**
+   - online line insertion
+   - online point queries
+   - full-domain lines only
+   - no bounded x-domain declaration is needed
+
+3. **Static hull + binary search**
    - all lines are known first, or the offline order is manageable
    - queries can use crossing-order logic
 
-3. **Li Chao tree**
+4. **Li Chao tree**
    - online line insertion
    - online queries
    - no monotonicity assumptions
    - known query domain
 
-For this repo, the first shipped starter is lane `3`, because it is the safest general exact route for many contest problems once the affine transformation is real.
+For this repo, the first shipped starter was lane `4`, and this page now adds lane `2` as the exact sibling route when the domain should stay implicit and full-domain lines are enough.
 
 ## Core Invariant And Why It Works
 
@@ -253,6 +265,16 @@ That is the standard Li Chao complexity.
 
 This is the clean lane behind problems like `Monster Game I`.
 
+### Use LineContainer When
+
+- lines are added online
+- queries arrive online
+- every line is active on the full domain
+- query order is arbitrary
+- you do not want to predeclare or discretize the `x` domain
+
+This is the sibling route shipped in this repo and the lane used by [Line Add Get Min](../../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md).
+
 ### Use Li Chao Tree When
 
 - lines are added online
@@ -330,7 +352,23 @@ This is why the topic title is `CHT / Li Chao` rather than just `Li Chao`:
 - same affine DP family
 - different exact starter depending on order structure
 
-### Example 3: Max Instead Of Min
+### Example 3: Line Add Get Min
+
+In `Line Add Get Min`, the statement is already the pure data-structure contract:
+
+- add line `y = ax + b`
+- query minimum at one integer `x`
+
+There is no DP transform left to discover.
+
+The only real choice is container shape:
+
+- Li Chao if you want midpoint recursion on a declared domain
+- LineContainer if you want a full-domain online hull with breakpoint search
+
+This repo ships the second route as the exact sibling refinement.
+
+### Example 4: Max Instead Of Min
 
 If the problem asks for:
 
@@ -370,12 +408,19 @@ for each state i in order:
 
 ## Implementation Notes
 
-- The repo starter is:
-  - `min` only
-  - full-domain line insertion only
-  - integer `x` domain `[x_low, x_high]`
+- The repo now ships two exact starters:
+  - `line-container.cpp`
+    - `min` only
+    - full-domain line insertion only
+    - integer query points
+    - no declared x-domain needed
+  - `li-chao-tree.cpp`
+    - `min` only
+    - full-domain line insertion only
+    - integer `x` domain `[x_low, x_high]`
 - Use `__int128` inside line evaluation if `m * x + b` may approach `1e18`.
 - Check whether the problem wants:
+  - a full-domain online hull with breakpoint search
   - full-domain line insertion
   - segment-limited insertion
   - minimum or maximum
@@ -387,6 +432,7 @@ for each state i in order:
 - affine DP with arbitrary line/query order
 - online line insertion + point query
 - "previous state becomes a line" optimizations
+- full-domain integer queries with no declared x-domain
 - bounded integer query domain with exact min/max
 
 ## References
@@ -402,6 +448,6 @@ for each state i in order:
 - DP routing: [DP overview](../README.md)
 - Retrieval layer: [DP cheatsheet](../../../notebook/dp-cheatsheet.md)
 - Exact hot sheet: [CHT / Li Chao hot sheet](../../../notebook/cht-hot-sheet.md)
-- Exact starter: [li-chao-tree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
-- Flagship rep: [Monster Game II](../../../practice/ladders/dp/cht-li-chao/monstergame2.md)
+- Exact starters: [line-container.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/line-container.cpp), [li-chao-tree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
+- Flagship reps: [Line Add Get Min](../../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md), [Monster Game II](../../../practice/ladders/dp/cht-li-chao/monstergame2.md)
 - Compare point: [Lazy Segment Tree](../../data-structures/lazy-segment-tree/README.md) for "same tree shape, very different invariant"

@@ -333,13 +333,13 @@ This often happens around:
 
 Then splitting into two halves may be much better than a full subset DP.
 
-### Think About SOS / Subset Transforms Only After Basic Bitmask DP
+### Think About [SOS DP / Subset Transforms](../sos-dp/README.md) Only After Basic Bitmask DP
 
 Some heavier techniques iterate over:
 
 - all submasks of every mask
 - zeta / mobius transforms
-- SOS DP
+- [SOS DP](../sos-dp/README.md)
 
 Those belong to the next layer. First master:
 
@@ -658,7 +658,7 @@ The core contest layer is:
 
 Important next-layer directions include:
 
-- SOS DP / subset transforms
+- [SOS DP / subset transforms](../sos-dp/README.md)
 - profile DP on grids
 - meet-in-the-middle
 - bitmask DP combined with shortest paths or BFS on state graphs
@@ -723,6 +723,8 @@ Repo anchors:
 ## Related Topics
 
 - [DP Foundations](../foundations/README.md)
+- [SOS DP](../sos-dp/README.md)
+- [Broken Profile / Plug DP](../broken-profile/README.md)
 - [Knapsack Family](../knapsack-family/README.md)
 - [Tree DP](../tree-dp/README.md)
 - [Graph Modeling](../../graphs/graph-modeling/README.md)

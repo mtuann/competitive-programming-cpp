@@ -11,7 +11,7 @@
 
 ## Why Practice This
 
-This is the cleanest in-repo anchor for the first generic `Li Chao` lane.
+This is the cleanest in-repo anchor for the exact `Li Chao` route inside the `CHT / Li Chao` family.
 
 The problem gives a recurrence family where:
 
@@ -129,7 +129,7 @@ so the solution fits comfortably.
 - Practice ladder: [CHT / Li Chao ladder](README.md)
 - Starter template: [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
 - Notebook refresher: [CHT / Li Chao hot sheet](../../../../notebook/cht-hot-sheet.md)
-- Compare points: [Monster Game I](https://cses.fi/problemset/task/2084), [DP Cheatsheet](../../../../notebook/dp-cheatsheet.md)
+- Compare points: [Line Add Get Min](lineaddgetmin.md), [Monster Game I](https://cses.fi/problemset/task/2084), [DP Cheatsheet](../../../../notebook/dp-cheatsheet.md)
 - This note adds: the exact generic online route where the affine DP no longer depends on monotone order.
 
 ## Solutions

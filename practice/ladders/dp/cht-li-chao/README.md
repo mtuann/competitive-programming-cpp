@@ -12,8 +12,10 @@ Use this lane if:
 
 This is a thin lane on purpose:
 
-- one exact starter
-- one direct in-repo flagship rep
+- one family
+- two exact starters
+- one direct in-repo DP flagship rep
+- one direct structure-verifier rep
 - strong compare points back into `DP Foundations`, `DP cheatsheet`, and lighter hull routes
 
 ## Warm-Up
@@ -33,12 +35,12 @@ Warm-up compare points:
 
 ## Core
 
-- one exact starter -> [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
-- exact flagship rep -> [Monster Game II](monstergame2.md)
+- exact LineContainer route -> [`line-container.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/line-container.cpp) -> [Line Add Get Min](lineaddgetmin.md)
+- exact Li Chao route -> [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp) -> [Monster Game II](monstergame2.md)
 
 Target skill:
 
-- know when generic online insertion + query order forces Li Chao instead of a deque hull
+- know when generic online insertion + query order wants LineContainer, when bounded-domain midpoint recursion wants Li Chao, and when a deque hull is still lighter
 
 ## Stretch
 
@@ -53,7 +55,7 @@ Target skill:
 ## Retrieval Layer
 
 - exact quick sheet -> [CHT / Li Chao hot sheet](../../../../notebook/cht-hot-sheet.md)
-- exact starter -> [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
+- exact starters -> [`line-container.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/line-container.cpp), [`li-chao-tree.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/dp/li-chao-tree.cpp)
 - parent DP retrieval -> [DP cheatsheet](../../../../notebook/dp-cheatsheet.md)
 - broader route -> [DP ladders](../README.md)
 
@@ -62,21 +64,23 @@ Target skill:
 - topic page -> [Convex Hull Trick / Li Chao Tree](../../../../topics/dp/cht-li-chao/README.md)
 - parent DP worldview -> [DP Foundations](../../../../topics/dp/foundations/README.md)
 - broader DP router -> [Dynamic Programming](../../../../topics/dp/README.md)
+- direct verifier rep -> [Line Add Get Min](lineaddgetmin.md)
 - exact flagship rep -> [Monster Game II](monstergame2.md)
 
 The cleanest in-repo loop here is:
 
 1. derive the line transformation from the [Convex Hull Trick / Li Chao Tree topic](../../../../topics/dp/cht-li-chao/README.md)
-2. trust one exact implementation through [Monster Game II](monstergame2.md)
-3. compare it back against `Monster Game I` so the chooser between monotone hull and Li Chao becomes real
+2. trust one exact implementation through [Monster Game II](monstergame2.md) or [Line Add Get Min](lineaddgetmin.md)
+3. compare it back against `Monster Game I` so the chooser between monotone hull, LineContainer, and Li Chao becomes real
 
 ## Exit Criteria
 
 You are ready to move on when:
 
 - you can derive `m`, `b`, and `x` cleanly from the recurrence
-- you can say when monotone hull is enough and when Li Chao is safer
+- you can say when monotone hull is enough, when LineContainer fits, and when Li Chao is safer
 - you can explain why a Li Chao node stores the line that wins at its midpoint
+- you can explain why a LineContainer line owns one breakpoint interval on the lower envelope
 
 ## External Practice
 
