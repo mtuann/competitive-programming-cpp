@@ -170,6 +170,7 @@ When you run one freshness pass, do it in this order:
    - `new opportunity`
 5. patch the governed repo pages
 6. record the snapshot date here if the pass changed meaningfully
+7. if the pass materially changes priorities, patch [Expansion Roadmap](expansion-roadmap.md) in the same turn
 
 ## Findings Taxonomy
 
@@ -182,7 +183,7 @@ Use these labels internally when triaging audit results.
 
 ## Current Snapshot Summary
 
-The `2026-04-25` baseline pass supports these current repo stances:
+The `2026-04-25` baseline pass and first reprioritization pass support these current repo stances:
 
 - `VNOI Wiki`, `USACO Guide Advanced`, and `CP-Algorithms` are the main `coverage radar` trio for algorithm-gap discovery
 - `IOI` should still be treated as `syllabus + task-stats + partial-scoring discipline`
@@ -190,6 +191,41 @@ The `2026-04-25` baseline pass supports these current repo stances:
 - `Codeforces` should still be treated as `official rules + interactive / anti-hack / upsolve discipline`
 - `Google` contest content must be described as `archive-based`
 - `Topcoder` should stay framed around `one hard problem`, `weird-task surfaces`, and official operating guidance
+
+## 2026-04-25 Reprioritization Findings
+
+This pass rechecked the repo's main freshness-sensitive source families and used that review to reprioritize future expansion.
+
+### Link Drift
+
+- no blocker-level link drift was found in the spot-checked source families used by the current contest-system layer:
+  - `VNOI Wiki`
+  - `USACO Guide Advanced`
+  - `CP-Algorithms`
+  - `IOI stats`
+  - `ICPC WF official pages`
+  - `Codeforces official ecosystem`
+  - `Google coding competitions archive`
+  - `Topcoder SRM / Marathon support pages`
+
+### Role Drift
+
+- `Google` should continue to be written as an `archive-based` source family, not as a live contest circuit
+- `Topcoder Marathon` should remain an `intro / clinic` lane until the repo has exact internal heuristic anchors strong enough to support a deeper learning family
+- `Codeforces` official pages remain fragmented, so wording should continue to preserve each exact page role instead of flattening them into one generic "official syllabus"
+
+### Scope Drift
+
+- the repo's explicit `contest-system` backlog is now mature enough that future waves should not open purely from momentum
+- the repo's earlier `highest-value canonical gaps` have largely been shipped, so the expansion spine should now be treated as `audit-driven` rather than `missing-core-topics-driven`
+
+### New Opportunity Rule
+
+Open a new expansion wave only when at least one of these becomes true:
+
+- a quarterly audit finds real `scope drift` in a tracked source family
+- a review sweep finds a durable `retrieval / exact-anchor deficit`
+- at least one strong repo-fit flagship anchor appears for a topic or clinic that the repo does not currently support well
 
 ## Immediate Next Audit Window
 

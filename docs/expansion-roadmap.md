@@ -48,21 +48,17 @@ This file exists so future expansion work stays phased, source-backed, and small
 
 ## Current Synthesis
 
-### Highest-Value Canonical Gaps
+### 2026-04-25 Reprioritization Result
 
-These are the most valuable missing topics or families relative to the repo's current maturity.
+The repo is no longer in the same state as the early backlog that created this file.
 
-- `Lazy Segment Tree`
-- `DSU Rollback / Offline Dynamic Connectivity`
-- `Persistent Data Structures`
-- `Manacher`
-- `Convex Hull Trick / Li Chao Tree`
-- `Linear Recurrence / Matrix Exponentiation`
-- `CRT / Lucas / Mobius / multiplicative functions`
+- the old `highest-value canonical gaps` listed here have now been shipped
+- the explicit `contest-system` backlog in this file has also been shipped at the current intro / clinic / drill level
+- future waves should now open from `Freshness Backbone` findings, sweep results, or exact-anchor deficits rather than from a standing list of "obvious next missing topics"
 
-### Contest-Source Lanes Worth Mining
+### Source Families To Keep Watching
 
-These should be treated as content-source families, not just random inspiration.
+These should still be treated as content-source families, not just random inspiration.
 
 - `IOI / OI`: subtask-first planning, checkpointing, score-path design, proof discipline
 - `ICPC`: breadth, modeling under pressure, team triage, communication, implementation-heavy mixed sets
@@ -70,6 +66,20 @@ These should be treated as content-source families, not just random inspiration.
 - `Topcoder / TCO`: one-hard-problem culture, weird-task clinics, marathon / heuristic bridge
 - `Google archive lane (Code Jam / Kick Start / Distributed Code Jam)`: small-vs-large escalation, analysis-first solving, custom judge discipline, distributed decomposition
 - `Petrozavodsk / OpenCup / Andrew Stankevich`: advanced mixed modeling, hard implementation, camp-style drills
+
+### Open Candidate Pools, Not Standing Commitments
+
+These are legitimate future directions, but none of them should open automatically without an audit trigger or strong repo-fit anchor.
+
+- `contest-source reinforcement`:
+  - `communication / output-only / output-scored` drills if a later olympiad or Google-style audit justifies them
+  - a deeper `heuristic / marathon` lane only after the repo gains exact internal anchors beyond the current intro clinic
+- `long-tail algorithm expansions`:
+  - only when the `VNOI Wiki` / `USACO Guide Advanced` / `CP-Algorithms` trio still shows a persistent gap and the repo can support an exact starter route plus flagship note
+- `reinforcement rather than expansion`:
+  - sweep-driven router cleanup
+  - exact-anchor densification
+  - source-sensitive wording refreshes
 
 ## Now
 
@@ -80,6 +90,7 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 - [x] add `docs/freshness-backbone.md` as the maintainer page for external-source audits
 - [x] define a quarterly audit cadence for `VNOI Wiki`, `USACO Guide Advanced`, `CP-Algorithms`, `IOI syllabus/stats`, `ICPC WF problem sets`, official `Codeforces` ecosystem pages, and the newer contest-source lanes
 - [x] write a short maintainer checklist for deciding whether a new external pattern becomes a `topic page`, `playbook drill`, `mixed round`, or `hot sheet`
+- [x] run the first `freshness audit / reprioritization pass` and convert the expansion spine from `backlog-driven` to `audit-driven`
 
 ### Phase 1. Canonical Graph Wave A
 
@@ -227,13 +238,13 @@ A wave is only considered shipped when:
 
 ## Immediate Next Action
 
-The cleanest next task after the current shipped waves is:
+The cleanest default next step after the current shipped waves is:
 
-1. `quarterly freshness audit / reprioritization pass`
+1. wait for the next `quarterly freshness audit`, a sweep finding, or a strong exact-anchor opportunity before opening another expansion wave
 
-That is now the best follow-up because:
+That is now the best default because:
 
-- the remaining explicit backlog is now mostly contest-system reinforcement rather than one more canonical algorithm lane
-- the explicit contest-system backlog in this roadmap is now exhausted
-- the healthiest next move is a freshness-driven reprioritization pass before opening any new expansion wave
-- it strengthens the playbook/workflow layer after a long stretch of algorithm-lane expansions
+- the earlier explicit canonical and contest-system backlog in this file is now largely shipped
+- the repo now has a stronger risk of `quality dilution by momentum` than `coverage failure`
+- future expansion should be triggered by source-backed need, exact-anchor evidence, or retrieval/sweep findings
+- the next routine trigger is the `Q3 2026` freshness window unless a smaller justified wave appears first
