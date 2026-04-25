@@ -52,7 +52,6 @@ This file exists so future expansion work stays phased, source-backed, and small
 
 These are the most valuable missing topics or families relative to the repo's current maturity.
 
-- `Bridges / Articulation Points / Biconnected Components`
 - `Lazy Segment Tree`
 - `Euler Tour / Subtree Queries`
 - `Centroid Decomposition`
@@ -91,12 +90,12 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 - [x] add `notebook/two-sat-hot-sheet.md`
 - [x] add `practice/ladders/graphs/two-sat/README.md`
 - [x] add one flagship `2-SAT` note plus solution
-- [ ] add `topics/graphs/bridges-articulation/README.md`
-- [ ] add `templates/graphs/bridges-articulation-lowlink.cpp`
-- [ ] add `notebook/lowlink-hot-sheet.md`
-- [ ] add `practice/ladders/graphs/bridges-articulation/README.md`
-- [ ] add one flagship low-link note plus solution
-- [ ] wire both topics into `Build Kit`, `Template Library`, `Problem Finder`, and graph hub/router pages
+- [x] add `topics/graphs/bridges-articulation/README.md`
+- [x] add `templates/graphs/bridges-articulation-lowlink.cpp`
+- [x] add `notebook/lowlink-hot-sheet.md`
+- [x] add `practice/ladders/graphs/bridges-articulation/README.md`
+- [x] add one flagship low-link note plus solution
+- [x] wire both topics into `Build Kit`, `Template Library`, `Problem Finder`, and graph hub/router pages
 
 ### Phase 2. Contest-System Drill Wave A
 
@@ -216,8 +215,8 @@ A wave is only considered shipped when:
 
 The cleanest next task after this file lands is:
 
-1. `Bridges / Articulation / BCC`
-2. `Contest-System Drill Wave A`
+1. `Contest-System Drill Wave A`
+2. `Repo-Fit Data Structure Wave A`
 
 That pair has the best balance of:
 

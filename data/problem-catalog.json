@@ -1365,6 +1365,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bfs-dfs/messageroute.cpp"
   },
   {
+    "code": "NECESSARYROADS",
+    "title": "Necessary Roads",
+    "full_title": "Necessary Roads",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2076",
+    "main_topic": "Graphs -> Bridges, Articulation, And BCC",
+    "secondary_topics": [
+      "Bridge detection",
+      "DFS tree",
+      "Low-link"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/bridges-articulation",
+    "topic_tags": [
+      "graphs/bridges-articulation"
+    ],
+    "patterns": [
+      "low-link",
+      "bridge detection",
+      "dfs tree critical edge"
+    ],
+    "tracks": [
+      "CSES",
+      "Advanced techniques"
+    ],
+    "note_path": "practice/ladders/graphs/bridges-articulation/necessaryroads.md",
+    "ladder_path": "practice/ladders/graphs/bridges-articulation/README.md",
+    "tutorial_path": "topics/graphs/bridges-articulation/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/bridges-articulation/necessaryroads.cpp"
+  },
+  {
     "code": "FFLOW",
     "title": "Fast Maximum Flow",
     "full_title": "Fast Maximum Flow",

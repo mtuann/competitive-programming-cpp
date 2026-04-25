@@ -9,15 +9,17 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 3. shortest paths
 4. minimum spanning tree
 5. toposort and SCC
-6. 2-SAT once implication graphs and SCCs feel natural
-7. trees and LCA
-8. heavy-light decomposition when path queries need a range structure
-9. flow and matching
+6. bridges / articulation / low-link on undirected graphs
+7. 2-SAT once implication graphs and SCCs feel natural
+8. trees and LCA
+9. heavy-light decomposition when path queries need a range structure
+10. flow and matching
 
 ## Subtopic Ladders
 
 - [Graph modeling](graph-modeling/README.md)
 - [BFS / DFS](bfs-dfs/README.md)
+- [Bridges / articulation / BCC](bridges-articulation/README.md)
 - [Shortest paths](shortest-paths/README.md)
 - [Minimum spanning tree](mst/README.md)
 - [Toposort and SCC](scc-toposort/README.md)
@@ -33,6 +35,7 @@ These ladders follow the graph teaching spine from modeling to standard algorith
 
 - [Counting Rooms](graph-modeling/countingrooms.md)
 - [Building Roads](graph-modeling/buildingroads.md)
+- [Necessary Roads](bridges-articulation/necessaryroads.md)
 - [QOS](shortest-paths/qos.md)
 - [Giant Pizza](two-sat/giantpizza.md)
 - [FFLOW](flow/fflow.md)

@@ -123,6 +123,18 @@
       "Graph algorithms"
     ]
   },
+  "NECESSARYROADS": {
+    "topic_tags": [],
+    "patterns": [
+      "low-link",
+      "bridge detection",
+      "dfs tree critical edge"
+    ],
+    "tracks": [
+      "CSES",
+      "Advanced techniques"
+    ]
+  },
   "GIANTPIZZA": {
     "topic_tags": [
       "graphs/graph-modeling",

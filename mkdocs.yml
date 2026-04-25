@@ -110,6 +110,7 @@ nav:
       - Graphs:
           - Overview: topics/graphs/README.md
           - BFS And DFS: topics/graphs/bfs-dfs/README.md
+          - Bridges / Articulation / BCC: topics/graphs/bridges-articulation/README.md
           - Flow: topics/graphs/flow/README.md
           - Graph Modeling: topics/graphs/graph-modeling/README.md
           - Heavy-Light Decomposition: topics/graphs/hld/README.md
@@ -195,6 +196,7 @@ nav:
           - Graphs:
               - Overview: practice/ladders/graphs/README.md
               - BFS And DFS: practice/ladders/graphs/bfs-dfs/README.md
+              - Bridges / Articulation / BCC: practice/ladders/graphs/bridges-articulation/README.md
               - Flow: practice/ladders/graphs/flow/README.md
               - Graph Modeling: practice/ladders/graphs/graph-modeling/README.md
               - Heavy-Light Decomposition: practice/ladders/graphs/hld/README.md
@@ -282,6 +284,7 @@ nav:
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
+      - Low-Link Hot Sheet: notebook/lowlink-hot-sheet.md
       - Two-SAT Hot Sheet: notebook/two-sat-hot-sheet.md
       - HLD Hot Sheet: notebook/hld-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md

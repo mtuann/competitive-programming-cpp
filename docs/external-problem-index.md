@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `504`
+- Total curated external problems: `509`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -116,6 +116,11 @@ This page lists curated external problems imported into the topic-map system.
 | `Graphs -> BFS And DFS` | `Directed Cycle` | [Round Trip II](https://cses.fi/problemset/task/1678) | `CSES` | `Medium` | Directed Graphs | DFS State Colors; Stack-Based Recovery; Cycle Witness | Directed Cycle; Recursion Stack; Witness Path; Topological Intuition; Reconstruction |
 | `Graphs -> BFS And DFS` | `Undirected Cycle` | [Round Trip](https://cses.fi/problemset/task/1669) | `CSES` | `Medium` | Cycles | DFS Parent Tracking; Cycle Reconstruction; Component Scan | Undirected Cycle; Back Edge; Witness Path; Cycle Detection; Undirected Graph; Reconstruction |
 | `Graphs -> BFS And DFS` | `Unweighted BFS` | [Message Route](https://cses.fi/problemset/task/1667) | `CSES` | `Easy` | Paths | Layered BFS; Parent Tracking; Shortest Route Recovery | Unweighted Shortest Path; Path Reconstruction; Network; Shortest Path |
+| `Graphs -> Bridges, Articulation, And BCC` | `Core` | [Necessary Cities](https://cses.fi/problemset/task/2077) | `CSES` | `Medium` | Low-Link | Low-Link DFS; Root Special Case; Critical Vertex Output | Critical Vertices; Root Case; Cut Vertices |
+| `Graphs -> Bridges, Articulation, And BCC` | `Core` | [Necessary Roads](https://cses.fi/problemset/task/2076) | `CSES` | `Medium` | Low-Link | Low-Link DFS; Bridge Detection; Critical Edge Output | Critical Edges; DFS Tree; Bridge Detection |
+| `Graphs -> Bridges, Articulation, And BCC` | `Practice` | [Two-Edge-Connected Components](https://judge.yosupo.jp/problem/two_edge_connected_components) | `Library Checker` | `Medium` | Two-Edge-Connected Components | Bridge Removal; Component Compression; Tree Of Components | Bridge Compression; 2-Edge Connectivity |
+| `Graphs -> Bridges, Articulation, And BCC` | `Classics` | [Submerging Islands](https://www.spoj.com/problems/SUBMERGE/) | `SPOJ` | `Medium` | Classic | Low-Link DFS; Cut Vertex Counting; Root Handling | Cut Vertices; Articulation Points |
+| `Graphs -> Bridges, Articulation, And BCC` | `Stretch` | [Forbidden Cities](https://cses.fi/problemset/task/1705) | `CSES` | `Hard` | Bcc, Block-Cut Tree | Block-Cut Tree; LCA On Reduced Structure; Query Reduction | Vertex-Biconnected Components |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Download Speed](https://cses.fi/problemset/task/1694) | `CSES` | `Medium` | Cuts | - | Max Flow; Source-Sink Cut; Network |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Maximum Flow](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_A) | `AOJ` | `Medium` | Cuts | - | Max Flow; Min Cut; Baseline |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Police Chase](https://cses.fi/problemset/task/1695) | `CSES` | `Medium` | Min Cut, Edge-Disjoint Separation, Cuts | S-T Min Cut; Edge Extraction | Flow; Roads; Edge Cut; Certificate |

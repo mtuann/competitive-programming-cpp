@@ -6,6 +6,7 @@ Graphs are one of the central contest areas because many problems are really abo
 
 - [Graph Modeling](graph-modeling/README.md)
 - [BFS And DFS](bfs-dfs/README.md)
+- [Bridges, Articulation Points, And Biconnected Components](bridges-articulation/README.md)
 - [Shortest Paths](shortest-paths/README.md)
 - [Minimum Spanning Tree](mst/README.md)
 - [Topological Sort And SCC](scc-toposort/README.md)
@@ -33,9 +34,9 @@ Graphs are one of the central contest areas because many problems are really abo
 
 2. Contest core
 - SCC
+- bridges, articulation points, and low-link structure
 - 2-SAT once SCC condensation is comfortable
 - trees, LCA, and rerooting-style thinking
-- bridge and articulation ideas
 
 3. Advanced later
 - flow
@@ -62,6 +63,7 @@ After this section, you should be able to recognize the common graph models, cho
 
 - [Counting Rooms](../../practice/ladders/graphs/graph-modeling/countingrooms.md): grid cells become vertices, and rooms become connected components
 - [Building Roads](../../practice/ladders/graphs/graph-modeling/buildingroads.md): component representatives turn a connectivity repair task into a clean constructive graph solution
+- [Necessary Roads](../../practice/ladders/graphs/bridges-articulation/necessaryroads.md): low-link bridge detection and critical-edge reasoning
 - [QOS - Chất lượng dịch vụ](../../practice/ladders/graphs/shortest-paths/qos.md): shortest paths plus lexicographic constrained reconstruction
 - [Giant Pizza](../../practice/ladders/graphs/two-sat/giantpizza.md): binary clause modeling and SCC-based assignment extraction
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering

@@ -6926,6 +6926,143 @@
     "why_fit": "The standard shortest-path-in-an-unweighted-graph template."
   },
   {
+    "slug": "graphs/bridges-articulation",
+    "topic": "Graphs -> Bridges, Articulation, And BCC",
+    "title": "Necessary Cities",
+    "url": "https://cses.fi/problemset/task/2077",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Low-Link"
+    ],
+    "tags": [
+      "Critical Vertices",
+      "Root Case",
+      "Cut Vertices"
+    ],
+    "styles": [
+      "Low-Link DFS",
+      "Root Special Case",
+      "Critical Vertex Output"
+    ],
+    "prerequisites": [
+      "DFS",
+      "Undirected Graphs",
+      "Low-Link Inequalities"
+    ],
+    "bucket": "core",
+    "why_fit": "The matching articulation-point counterpart to Necessary Roads."
+  },
+  {
+    "slug": "graphs/bridges-articulation",
+    "topic": "Graphs -> Bridges, Articulation, And BCC",
+    "title": "Necessary Roads",
+    "url": "https://cses.fi/problemset/task/2076",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Low-Link"
+    ],
+    "tags": [
+      "Critical Edges",
+      "DFS Tree",
+      "Bridge Detection"
+    ],
+    "styles": [
+      "Low-Link DFS",
+      "Bridge Detection",
+      "Critical Edge Output"
+    ],
+    "prerequisites": [
+      "DFS",
+      "Undirected Graphs",
+      "Entry Times"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest bridge-only contest problem for learning the strict low-link inequality."
+  },
+  {
+    "slug": "graphs/bridges-articulation",
+    "topic": "Graphs -> Bridges, Articulation, And BCC",
+    "title": "Two-Edge-Connected Components",
+    "url": "https://judge.yosupo.jp/problem/two_edge_connected_components",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Two-Edge-Connected Components"
+    ],
+    "tags": [
+      "Bridge Compression",
+      "2-Edge Connectivity"
+    ],
+    "styles": [
+      "Bridge Removal",
+      "Component Compression",
+      "Tree Of Components"
+    ],
+    "prerequisites": [
+      "Bridge Detection",
+      "DFS",
+      "Connected Components"
+    ],
+    "bucket": "practice",
+    "why_fit": "A direct verifier once bridges themselves are trusted and you want the compression layer."
+  },
+  {
+    "slug": "graphs/bridges-articulation",
+    "topic": "Graphs -> Bridges, Articulation, And BCC",
+    "title": "Submerging Islands",
+    "url": "https://www.spoj.com/problems/SUBMERGE/",
+    "source": "SPOJ",
+    "difficulty": "medium",
+    "tracks": [
+      "Classic"
+    ],
+    "tags": [
+      "Cut Vertices",
+      "Articulation Points"
+    ],
+    "styles": [
+      "Low-Link DFS",
+      "Cut Vertex Counting",
+      "Root Handling"
+    ],
+    "prerequisites": [
+      "DFS",
+      "Undirected Graphs",
+      "Low-Link"
+    ],
+    "bucket": "classic",
+    "why_fit": "A classic articulation-point problem where the root case and repeated reporting both matter."
+  },
+  {
+    "slug": "graphs/bridges-articulation",
+    "topic": "Graphs -> Bridges, Articulation, And BCC",
+    "title": "Forbidden Cities",
+    "url": "https://cses.fi/problemset/task/1705",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Bcc",
+      "Block-Cut Tree"
+    ],
+    "tags": [
+      "Vertex-Biconnected Components"
+    ],
+    "styles": [
+      "Block-Cut Tree",
+      "LCA On Reduced Structure",
+      "Query Reduction"
+    ],
+    "prerequisites": [
+      "Articulation Points",
+      "Trees",
+      "LCA"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The strongest practical reason to go beyond plain articulation points into full block-cut structure."
+  },
+  {
     "slug": "graphs/flow",
     "topic": "Graphs -> Maximum Flow",
     "title": "Download Speed",
