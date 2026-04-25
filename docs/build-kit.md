@@ -116,6 +116,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 | “This task has a judge/protocol quirk” | [Local judge workflow](../notebook/local-judge-workflow.md) | the relevant playbook or note |
 | “I know the idea, but interactive tasks keep leaking to flush / budget / transcript discipline” | [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md) | [Local judge workflow](../notebook/local-judge-workflow.md) |
 | “This task allows many legal outputs, and I still cannot state the exact legality contract” | [Many-Valid-Answers / Validator-First Workflow](../notebook/many-valid-answers-validator-first-workflow.md) | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) |
+| “The model seems right, but numeric output, tolerance, or formatting still feels brittle” | [Precision / Formatting Robustness Clinic 01](../practice/contest-playbooks/precision-formatting-robustness-clinic-01.md) | [Foundations cheatsheet](../notebook/foundations-cheatsheet.md) or the relevant note |
 | “This batch task is checked by a predicate, validator, or score-aware output rule” | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) | [Local judge workflow](../notebook/local-judge-workflow.md) or the relevant clinic |
 
 ## Best Pairings

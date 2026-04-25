@@ -211,7 +211,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 
 - [x] `interactive protocol clinic` with richer local-testing patterns
 - [x] `many-valid-answers / validator-first` workflow page
-- [ ] `precision / formatting robustness` clinic for Google-style tasks
+- [x] `precision / formatting robustness` clinic for Google-style tasks
 - [ ] `heuristic / marathon intro` page if the repo opens a heuristic lane
 
 ## Definition Of Done For One Expansion Wave
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `precision / formatting robustness clinic`
+1. `heuristic / marathon intro`
 
 That is now the best follow-up because:
 
 - the remaining explicit backlog is now mostly contest-system reinforcement rather than one more canonical algorithm lane
-- the cleanest remaining reinforcement is now the `precision / formatting robustness` clinic for archive-style contest tasks
+- the clearest remaining contest-source reinforcement is now a `heuristic / marathon intro` lane if the repo wants to open that style at all
 - it strengthens the playbook/workflow layer after a long stretch of algorithm-lane expansions

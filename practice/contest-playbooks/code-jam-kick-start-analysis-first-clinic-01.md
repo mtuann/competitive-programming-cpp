@@ -90,6 +90,7 @@ If you cannot answer these in a few lines, reopen the topic page instead of forc
 
 - ordinary batch solution, trust is low -> [Stress Testing Workflow](../../notebook/stress-testing-workflow.md)
 - predicate-checked or many-valid-answers batch task -> [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md)
+- numeric output / tolerance / arithmetic-regime fragility -> [Precision / Formatting Robustness Clinic 01](precision-formatting-robustness-clinic-01.md)
 - statement compression is still fuzzy -> [Reasoning And Implementation Discipline](../../topics/foundations/reasoning/README.md)
 
 ## Allowed Refreshers
@@ -112,6 +113,7 @@ If you cannot answer these in a few lines, reopen the topic page instead of forc
 | --- | --- |
 | the topic family itself is still unstable | the corresponding deep topic page and ladder |
 | the statement never became a compact model | [Reasoning And Implementation Discipline](../../topics/foundations/reasoning/README.md) |
+| the model is fine, but numeric output still feels brittle | [Precision / Formatting Robustness Clinic 01](precision-formatting-robustness-clinic-01.md) |
 | the answer is predicate-checked and local validation is noisy | [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
 | the issue is implementation trust, not analysis | [Build Kit](../../docs/build-kit.md) |
 
