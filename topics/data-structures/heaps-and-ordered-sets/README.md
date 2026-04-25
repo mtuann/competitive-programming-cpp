@@ -244,6 +244,18 @@ If the task only needs:
 
 then plain `set` / `multiset` is usually simpler and safer.
 
+If rank or `k`-th is the real invariant, continue with:
+
+- [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
+
+If you are reaching for a hand-coded textbook balanced BST on purpose, reopen:
+
+- [Balanced BSTs For Contests](../balanced-bsts/README.md)
+
+If meld is the real invariant, continue with:
+
+- [Pairing Heap / Leftist Heap](../pairing-leftist-heap/README.md)
+
 ## Worked Examples
 
 ### Example 1: Heap Scheduling
@@ -501,5 +513,7 @@ Repo anchors:
 ## Related Topics
 
 - [Sorting](../../foundations/patterns/sorting/README.md)
+- [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
+- [Pairing Heap / Leftist Heap](../pairing-leftist-heap/README.md)
 - [Offline Tricks](../offline-tricks/README.md)
 - [Sweep Line](../../geometry/sweep-line/README.md)

@@ -5,11 +5,11 @@ Treap is the randomized split/merge family for two different but related jobs:
 - **key-based treap**: ordered-set operations where explicit key order still matters
 - **implicit treap**: sequence operations where the "key" is the element position and should not be stored explicitly
 
-The exact first route in this repo is:
+The repo now has two exact starter routes inside the same family:
 
-- starter -> [implicit-treap-sequence.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/implicit-treap-sequence.cpp)
-- flagship note -> [Cut and Paste](../../../practice/ladders/data-structures/treap-implicit/cutandpaste.md)
-- compare points -> [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md), [Lazy Segment Tree](../lazy-segment-tree/README.md)
+- key-based route -> [treap-key-ordered-set.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/treap-key-ordered-set.cpp) -> [Salary Queries](../../../practice/ladders/data-structures/treap-implicit/salaryqueries.md)
+- implicit route -> [implicit-treap-sequence.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/implicit-treap-sequence.cpp) -> [Cut and Paste](../../../practice/ladders/data-structures/treap-implicit/cutandpaste.md)
+- compare points -> [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md), [Persistent Treap](../persistent-treap/README.md), [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md), [Lazy Segment Tree](../lazy-segment-tree/README.md)
 
 This lane matters when arrays are too rigid and ordered sets are too weak:
 
@@ -32,11 +32,12 @@ and then reusing one pair of core operations:
 - **Core worldview:** priorities choose the shape, while BST order or implicit position determines the in-order sequence
 - **Main tools:** randomized priorities, subtree sizes, split, merge, and optional lazy tags later
 - **Typical complexity:** expected `O(log n)` per split/merge/insert/erase
-- **Main trap:** forgetting that implicit treap keys are positions derived from subtree sizes, not stored integers
+- **Main trap:** mixing up key-based split conventions and implicit split conventions as if they were the same API
 
 Strong contest signals:
 
 - "cut a substring and paste it somewhere else"
+- "ordered set is right, but I want a self-hosted split/merge tree instead of PBDS"
 - "insert / erase at position `i`"
 - "split one sequence into two, then merge back in a different order"
 - "a balanced BST with split/merge would be cleaner than fighting `std::set`"
@@ -57,8 +58,11 @@ Strong anti-cues:
 Helpful compare points:
 
 - [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md): use this first when plain `set / multiset / priority_queue` already solves the problem
+- [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md): use this first when GNU PBDS already gives a simpler exact route for rank / `k`-th
+- [Persistent Treap](../persistent-treap/README.md): use this when old sequence versions stay alive and split/merge itself must be non-destructive
 - [Lazy Segment Tree](../lazy-segment-tree/README.md): use this when indices are fixed and only interval aggregates/updates matter
 - [Lexicographic Enumeration](../../combinatorics/lexicographic-enumeration/README.md): sequence order reasoning sometimes appears, but the data-structure need is different
+- [Balanced BSTs For Contests](../balanced-bsts/README.md): use this if you want the AVL / Red-Black / Scapegoat / SBT compare note and the broader map of textbook balanced-BST variants
 
 ## Problem Model And Notation
 
@@ -98,7 +102,7 @@ all nodes in its left subtree
 
 That means position can be recovered while descending, so insert/erase by position stays logarithmic.
 
-The starter in this repo uses zero-based half-open sequence ranges `[l, r)`.
+The implicit starter in this repo uses zero-based half-open sequence ranges `[l, r)`.
 
 It supports:
 
@@ -299,6 +303,10 @@ This is the right treap flavor when:
 - explicit key order is the point
 - split/merge by key is cleaner than fighting `std::set`
 
+This repo's exact first key-based anchor is:
+
+- [Salary Queries](../../../practice/ladders/data-structures/treap-implicit/salaryqueries.md)
+
 ### Example 2: Implicit Cut And Paste
 
 Take the sequence:
@@ -413,7 +421,17 @@ That one identity is the first exact pattern worth memorizing in this lane.
 - sequence edits shift later positions
 - cut / paste / insert / erase by position are central
 
-This is the exact first route in this repo.
+This is the exact first implicit route in this repo.
+
+### Prefer PBDS When
+
+- the task is fundamentally online rank / `k`-th on one ordered set
+- GNU PBDS is allowed
+- you do not need a self-hosted split/merge structure
+
+The clean compare point is:
+
+- [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
 
 ### Prefer Ordered Sets When
 
@@ -438,12 +456,16 @@ not just values on a fixed index line.
 
 - you need range sums, min/max, reverse tags, or affine lazy tags
 - the problem is really a stronger implicit-treap-with-lazy lane
-- you need a key-based treap, not a sequence treap
+- you need the key-based starter, not the sequence starter
 
-The starter here is intentionally narrow:
+The two starters here are intentionally narrow:
 
-- sequence surgery by position
-- not the full dynamic-sequence algebra
+- [treap-key-ordered-set.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/treap-key-ordered-set.cpp):
+  ordered-set-by-key, expected `O(log n)` insert / erase / rank / `k`-th
+- [implicit-treap-sequence.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/implicit-treap-sequence.cpp):
+  sequence surgery by position
+
+Neither starter pretends to cover the whole family.
 
 ## Implementation Notes
 
@@ -495,11 +517,13 @@ That keeps the first route honest and easy to trust.
 
 ### First Rep In This Repo
 
+- [Salary Queries](../../../practice/ladders/data-structures/treap-implicit/salaryqueries.md)
 - [Cut and Paste](../../../practice/ladders/data-structures/treap-implicit/cutandpaste.md)
 
 ### Best Compare Points In This Repo
 
 - [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md)
+- [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
 - [Lazy Segment Tree](../lazy-segment-tree/README.md)
 
 ### Good External Follow-Ups
@@ -518,9 +542,12 @@ That keeps the first route honest and easy to trust.
 
 - [Treap / Implicit Treap ladder](../../../practice/ladders/data-structures/treap-implicit/README.md)
 - [Treap / Implicit Treap hot sheet](../../../notebook/treap-hot-sheet.md)
-- [Exact starter template](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/implicit-treap-sequence.cpp)
+- [Exact key-based starter](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/treap-key-ordered-set.cpp)
+- [Exact implicit starter](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/implicit-treap-sequence.cpp)
+- [Salary Queries note](../../../practice/ladders/data-structures/treap-implicit/salaryqueries.md)
 - [Cut and Paste note](../../../practice/ladders/data-structures/treap-implicit/cutandpaste.md)
 - Compare points:
+  - [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
   - [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md)
   - [Lazy Segment Tree](../lazy-segment-tree/README.md)
   - [Randomized Algorithms](../../advanced/randomized-algorithms/README.md)

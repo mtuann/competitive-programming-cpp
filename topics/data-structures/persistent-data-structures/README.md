@@ -48,6 +48,7 @@ Helpful neighboring topics:
 
 - [Lazy Segment Tree](../lazy-segment-tree/README.md) as a compare point for "update one current tree" vs "create a new tree version"
 - [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md) for the contrast `undo one active state` vs `query many historical states`
+- [Persistent Treap](../persistent-treap/README.md) for the contrast `versioned fixed array snapshots` vs `versioned split/merge sequences`
 
 ## Problem Model And Notation
 
