@@ -104,6 +104,7 @@ nav:
           - DSU: topics/data-structures/dsu/README.md
           - DSU Rollback / Offline Dynamic Connectivity: topics/data-structures/dsu-rollback/README.md
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
+          - Binary Trie / XOR Queries: topics/data-structures/binary-trie-xor/README.md
           - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
           - Mo's Algorithm: topics/data-structures/mos-algorithm/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
@@ -203,6 +204,7 @@ nav:
               - DSU: practice/ladders/data-structures/dsu/README.md
               - DSU Rollback / Offline Dynamic Connectivity: practice/ladders/data-structures/dsu-rollback/README.md
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
+              - Binary Trie / XOR Queries: practice/ladders/data-structures/binary-trie-xor/README.md
               - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
               - Mo's Algorithm: practice/ladders/data-structures/mos-algorithm/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
@@ -327,6 +329,7 @@ nav:
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
       - Mo's Hot Sheet: notebook/mos-hot-sheet.md
+      - Binary Trie Hot Sheet: notebook/binary-trie-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
       - Low-Link Hot Sheet: notebook/lowlink-hot-sheet.md
       - Eulerian Hot Sheet: notebook/eulerian-hot-sheet.md

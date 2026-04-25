@@ -822,6 +822,81 @@
       }
     ]
   },
+  "data-structures/binary-trie-xor": {
+    "title": "Data Structures -> Binary Trie / XOR Queries",
+    "summary": "Fixed-width bit-prefix trie for live insert / erase / maximum-xor queries against one multiset of non-negative integers.",
+    "topic_path": "topics/data-structures/binary-trie-xor/README.md",
+    "ladder_path": "practice/ladders/data-structures/binary-trie-xor/README.md",
+    "microtopics": [
+      "binary-trie",
+      "xor-queries",
+      "fixed-bit-width",
+      "subtree-counts",
+      "max-xor-greedy",
+      "prefix-xor-insertions"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki Trie",
+        "url": "https://en.oi-wiki.org/string/trie/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide Trie",
+        "url": "https://usaco.guide/gold/trie",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://cses.fi/book/book.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      },
+      {
+        "label": "CSES Maximum Xor Subarray",
+        "url": "https://cses.fi/problemset/task/1655",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ SUBXOR",
+        "url": "https://www.spoj.com/problems/SUBXOR/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Binary Trie hot sheet",
+        "path": "notebook/binary-trie-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Binary Trie starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Vasiliy's Multiset note",
+        "path": "practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Trie tutorial",
+        "path": "topics/strings/trie/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Prefix Sums tutorial",
+        "path": "topics/foundations/patterns/prefix-sums/README.md",
+        "kind": "adjacent tutorial"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

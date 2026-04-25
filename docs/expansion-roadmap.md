@@ -197,7 +197,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 
 - [x] `Eulerian Path / Cycle`
 - [x] `Mo's Algorithm`
-- [ ] `Binary Trie / XOR Queries`
+- [x] `Binary Trie / XOR Queries`
 - [ ] `Flow with Lower Bounds`
 - [ ] `Segment Tree Beats`
 - [ ] `Wavelet Tree`
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Binary Trie / XOR Queries`
+1. `Flow with Lower Bounds`
 
 That is now the best follow-up because:
 
 - the freshness backbone now exists, so the repo can safely open another long-tail algorithm lane
-- `Binary Trie / XOR Queries` is one of the highest-value remaining practical gaps from the external-source comparison work
-- it connects cleanly to the repo's now-mature `bit operations`, `range-query`, and `data-structure` retrieval routes
+- `Flow with Lower Bounds` is the strongest remaining graph / optimization extension after the repo's flow lanes matured
+- it connects cleanly to the current `Maximum Flow` and `Min-Cost Flow` retrieval routes without opening too many new surfaces at once

@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `548`
+- Total curated external problems: `550`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -68,6 +68,9 @@ This page lists curated external problems imported into the topic-map system.
 
 | Topic | Bucket | Problem | Source | Difficulty | Context | Style | Tags |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| `Data Structures -> Binary Trie / XOR Queries` | `Core` | [Vasiliy's Multiset](https://codeforces.com/problemset/problem/706/D) | `Codeforces` | `Medium` | Binary Trie, XOR Queries | Data-Structure-Heavy; Bitwise | Dynamic-Multiset; Maximum-XOR |
+| `Data Structures -> Binary Trie / XOR Queries` | `Stretch` | [SUBXOR](https://www.spoj.com/problems/SUBXOR/) | `SPOJ` | `Hard` | Binary Trie, Counting Variant, Classic | Bitwise; Classic | Prefix-XOR; Counting |
+| `Data Structures -> Binary Trie / XOR Queries` | `Bridge` | [Maximum Xor Subarray](https://cses.fi/problemset/task/1655) | `CSES` | `Hard` | Bitwise Operations, Prefix XOR, Binary Trie | Bitwise; Array Transformation | Maximum-XOR |
 | `Data Structures -> DSU` | `Warm-Up` | [Disjoint Set Union I](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=DSL_1_A&lang=en) | `AOJ` | `Easy` | - | Implementation-Heavy | Intro; Online-Judge |
 | `Data Structures -> DSU` | `Core` | [Building Roads](https://cses.fi/problemset/task/1666) | `CSES` | `Easy` | - | Data-Structure-Heavy; Implementation-Heavy | Components; Connectivity |
 | `Data Structures -> DSU` | `Core` | [Road Construction](https://cses.fi/problemset/task/1676) | `CSES` | `Easy` | - | Data-Structure-Heavy | Dynamic-Connectivity; Largest-Component; Component-Size |
@@ -498,7 +501,6 @@ This page lists curated external problems imported into the topic-map system.
 | `Strings -> Suffix Automaton` | `Challenge` | [A Trivial String Problem](https://codeforces.com/problemset/problem/2209/E) | `Codeforces` | `Hard` | - | Query Processing; Hybrid Techniques | Hashing |
 | `Strings -> Suffix Automaton` | `Challenge` | [Cyclical Quest](https://codeforces.com/problemset/problem/235/C) | `Codeforces` | `Hard` | - | String Compression; Counting | Cyclic Strings; Counting |
 | `Strings -> Suffix Automaton` | `Challenge` | [Martian Strings](https://codeforces.com/problemset/problem/149/E) | `Codeforces` | `Hard` | - | Multi-Pattern Checking | Substring Queries; Pattern Matching |
-| `Strings -> Trie` | `Core` | [Vasiliy's Multiset](https://codeforces.com/problemset/problem/706/D) | `Codeforces` | `Medium` | XOR | - | Binary-Trie; Bitwise |
 | `Strings -> Trie` | `Core` | [Watto and Mechanism](https://codeforces.com/problemset/problem/514/C) | `Codeforces` | `Medium` | Hashing | Implementation; Branching Search | Approximate Matching; One-Edit; Dictionary; Lookup |
 | `Strings -> Trie` | `Core` | [Word Combinations](https://cses.fi/problemset/task/1731) | `CSES` | `Medium` | DP | Dynamic Programming; Data-Structure-Heavy | Dictionary Matching; Dictionary; Prefixes; Counting |
 | `Strings -> Trie` | `Core` | [trie](https://judge.yosupo.jp/problem/trie) | `Library Checker` | `Medium` | Data-Structure | - | Insert; Lookup |

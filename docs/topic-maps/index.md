@@ -14,6 +14,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Foundations -> Sorting | 5 | 0 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
+| Data Structures -> Binary Trie / XOR Queries | 1 | 5 | 3 | [Open](data-structures/binary-trie-xor.md) |
 | Data Structures -> DSU | 3 | 0 | 5 | [Open](data-structures/dsu.md) |
 | Data Structures -> DSU Rollback / Offline Dynamic Connectivity | 1 | 5 | 2 | [Open](data-structures/dsu-rollback.md) |
 | Data Structures -> Fenwick Tree | 4 | 0 | 6 | [Open](data-structures/fenwick-tree.md) |
@@ -69,7 +70,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Strings -> Palindromes / Manacher | 1 | 3 | 3 | [Open](strings/palindromes.md) |
 | Strings -> Suffix Array And LCP | 2 | 0 | 9 | [Open](strings/suffix-array-lcp.md) |
 | Strings -> Suffix Automaton | 1 | 0 | 8 | [Open](strings/suffix-automaton.md) |
-| Strings -> Trie | 2 | 0 | 5 | [Open](strings/trie.md) |
+| Strings -> Trie | 2 | 0 | 4 | [Open](strings/trie.md) |
 | Strings -> Z-Function | 2 | 0 | 5 | [Open](strings/z-function.md) |
 | Geometry -> Convex Hull | 1 | 0 | 6 | [Open](geometry/convex-hull.md) |
 | Geometry -> Counting Geometry | 1 | 0 | 6 | [Open](geometry/counting-geometry.md) |

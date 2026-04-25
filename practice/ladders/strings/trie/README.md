@@ -12,7 +12,7 @@ Use this ladder when you want to move from one-string algorithms into multi-stri
 ## Core
 
 - prefix dictionary queries
-- xor trie variants
+- structural ancestor only; xor variants now live in [Binary Trie / XOR Queries](../../../../topics/data-structures/binary-trie-xor/README.md)
 
 ## Exit Criteria
 
@@ -21,7 +21,7 @@ You are ready to move on when you can:
 - design node fields intentionally instead of copying a template blindly
 - distinguish pass counts from terminal counts
 - choose between trie and sorting plus binary search
-- recognize the bitwise-xor version as the same core idea
+- know when to hand off from plain trie to [Binary Trie / XOR Queries](../../../../topics/data-structures/binary-trie-xor/README.md)
 
 ## External Practice
 

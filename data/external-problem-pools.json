@@ -2616,6 +2616,92 @@
       ]
     }
   ],
+  "data-structures/binary-trie-xor": [
+    {
+      "title": "Vasiliy's Multiset",
+      "url": "https://codeforces.com/problemset/problem/706/D",
+      "source": "Codeforces",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/binary-trie-xor",
+        "Data Structures",
+        "Binary Trie",
+        "XOR Queries"
+      ],
+      "tags": [
+        "Binary-Trie",
+        "Dynamic-Multiset",
+        "Maximum-XOR"
+      ],
+      "why_fit": "The cleanest first dynamic benchmark where insert, erase-one, and maximum-xor queries are the whole problem.",
+      "bucket": "core",
+      "styles": [
+        "Data-Structure-Heavy",
+        "Bitwise"
+      ],
+      "prerequisites": [
+        "Bitwise Prefix Walk",
+        "Subtree Counts",
+        "Dynamic Multiset"
+      ]
+    },
+    {
+      "title": "Maximum Xor Subarray",
+      "url": "https://cses.fi/problemset/task/1655",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/binary-trie-xor",
+        "Bitwise Operations",
+        "Prefix XOR",
+        "Binary Trie"
+      ],
+      "tags": [
+        "Prefix-XOR",
+        "Binary-Trie",
+        "Maximum-XOR"
+      ],
+      "why_fit": "The canonical bridge from one dynamic xor set to prefix-xor scans over an array.",
+      "bucket": "bridge",
+      "styles": [
+        "Bitwise",
+        "Array Transformation"
+      ],
+      "prerequisites": [
+        "Prefix XOR",
+        "Binary Trie",
+        "Maximum Xor Query"
+      ]
+    },
+    {
+      "title": "SUBXOR",
+      "url": "https://www.spoj.com/problems/SUBXOR/",
+      "source": "SPOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/binary-trie-xor",
+        "Binary Trie",
+        "Counting Variant",
+        "Classic"
+      ],
+      "tags": [
+        "Binary-Trie",
+        "Prefix-XOR",
+        "Counting"
+      ],
+      "why_fit": "A classic stretch problem showing that the same family extends beyond maximum-xor queries into richer counting variants.",
+      "bucket": "stretch",
+      "styles": [
+        "Bitwise",
+        "Classic"
+      ],
+      "prerequisites": [
+        "Prefix XOR",
+        "Binary Trie",
+        "Bitwise Counting"
+      ]
+    }
+  ],
   "graphs/graph-modeling": [
     {
       "title": "Counting Rooms",
@@ -11328,26 +11414,6 @@
         "Official"
       ],
       "why_fit": "Pure trie implementation benchmark with the cleanest possible scope.",
-      "styles": [],
-      "prerequisites": [],
-      "bucket": "core"
-    },
-    {
-      "title": "Vasiliy's Multiset",
-      "url": "https://codeforces.com/problemset/problem/706/D",
-      "source": "Codeforces",
-      "difficulty": "medium",
-      "tracks": [
-        "strings/trie",
-        "Trie",
-        "XOR"
-      ],
-      "tags": [
-        "Binary-Trie",
-        "Queries",
-        "Bitwise"
-      ],
-      "why_fit": "Binary trie plus updates and maximum-xor queries is canonical.",
       "styles": [],
       "prerequisites": [],
       "bucket": "core"

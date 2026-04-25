@@ -7,6 +7,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [DSU](dsu/README.md)
 - [DSU Rollback / Offline Dynamic Connectivity](dsu-rollback/README.md)
 - [Fenwick Tree](fenwick-tree/README.md)
+- [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [Persistent Data Structures](persistent-data-structures/README.md)
 - [Mo's Algorithm](mos-algorithm/README.md)
 - [Segment Tree](segment-tree/README.md)
@@ -32,6 +33,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - lazy segment tree once point-update trees and difference-array contrasts are comfortable
 - sparse table
 - ordered sets and offline query habits
+- binary trie once xor-max queries over one live set start appearing
 
 3. Advanced later
 - ordinary Mo on static arrays once offline right-endpoint sweeps feel natural
@@ -62,6 +64,7 @@ After this section, you should know which standard structure to reach for in com
 - [Dynamic Connectivity](../../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md): edge-lifetime intervals plus rollback DSU over a segment tree of time
 - [Range Queries and Copies](../../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md): versioned arrays where each point update creates a new persistent segment-tree root
 - [Powerful Array](../../practice/ladders/data-structures/mos-algorithm/powerfularray.md): the first exact in-repo route for current-range maintenance under Mo ordering
+- [Vasiliy's Multiset](../../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md): the first exact in-repo route for insert / erase-one / max-xor over one live multiset
 - [HORRIBLE - Horrible Queries](../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the first exact in-repo route for online `range add + range sum`
 
 ## Go Deeper

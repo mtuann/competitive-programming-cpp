@@ -1767,6 +1767,85 @@
     "why_fit": "A more specialized lexicographic ranking problem with a nice combinatorial twist."
   },
   {
+    "slug": "data-structures/binary-trie-xor",
+    "topic": "Data Structures -> Binary Trie / XOR Queries",
+    "title": "Vasiliy's Multiset",
+    "url": "https://codeforces.com/problemset/problem/706/D",
+    "source": "Codeforces",
+    "difficulty": "medium",
+    "tracks": [
+      "Binary Trie",
+      "XOR Queries"
+    ],
+    "tags": [
+      "Dynamic-Multiset",
+      "Maximum-XOR"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Bitwise"
+    ],
+    "prerequisites": [
+      "Bitwise Prefix Walk",
+      "Subtree Counts",
+      "Dynamic Multiset"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first dynamic benchmark where insert, erase-one, and maximum-xor queries are the whole problem."
+  },
+  {
+    "slug": "data-structures/binary-trie-xor",
+    "topic": "Data Structures -> Binary Trie / XOR Queries",
+    "title": "SUBXOR",
+    "url": "https://www.spoj.com/problems/SUBXOR/",
+    "source": "SPOJ",
+    "difficulty": "hard",
+    "tracks": [
+      "Binary Trie",
+      "Counting Variant",
+      "Classic"
+    ],
+    "tags": [
+      "Prefix-XOR",
+      "Counting"
+    ],
+    "styles": [
+      "Bitwise",
+      "Classic"
+    ],
+    "prerequisites": [
+      "Prefix XOR",
+      "Bitwise Counting"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A classic stretch problem showing that the same family extends beyond maximum-xor queries into richer counting variants."
+  },
+  {
+    "slug": "data-structures/binary-trie-xor",
+    "topic": "Data Structures -> Binary Trie / XOR Queries",
+    "title": "Maximum Xor Subarray",
+    "url": "https://cses.fi/problemset/task/1655",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Bitwise Operations",
+      "Prefix XOR",
+      "Binary Trie"
+    ],
+    "tags": [
+      "Maximum-XOR"
+    ],
+    "styles": [
+      "Bitwise",
+      "Array Transformation"
+    ],
+    "prerequisites": [
+      "Maximum XOR Query"
+    ],
+    "bucket": "bridge",
+    "why_fit": "The canonical bridge from one dynamic xor set to prefix-xor scans over an array."
+  },
+  {
     "slug": "data-structures/dsu",
     "topic": "Data Structures -> DSU",
     "title": "Disjoint Set Union I",
@@ -12755,25 +12834,6 @@
     ],
     "bucket": "challenge",
     "why_fit": "A classic suffix-structure problem with a strong automaton solution."
-  },
-  {
-    "slug": "strings/trie",
-    "topic": "Strings -> Trie",
-    "title": "Vasiliy's Multiset",
-    "url": "https://codeforces.com/problemset/problem/706/D",
-    "source": "Codeforces",
-    "difficulty": "medium",
-    "tracks": [
-      "XOR"
-    ],
-    "tags": [
-      "Binary-Trie",
-      "Bitwise"
-    ],
-    "styles": [],
-    "prerequisites": [],
-    "bucket": "core",
-    "why_fit": "Binary trie plus updates and maximum-xor queries is canonical."
   },
   {
     "slug": "strings/trie",

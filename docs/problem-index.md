@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `94`
+- Total tracked problem notes: `95`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -14,7 +14,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Area | Count |
 | --- | ---: |
 | Foundations | 11 |
-| Data Structures | 10 |
+| Data Structures | 11 |
 | Graphs | 22 |
 | DP | 10 |
 | Greedy | 3 |
@@ -46,6 +46,7 @@ This page lists every current solved problem note in the repo and maps it back t
 
 | Code | Title | Primary | Also Fits | Pattern | Difficulty | Track | Learn | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `VASILIYSMULTISET` | Vasiliy's Multiset | `Data Structures -> Binary Trie / XOR Queries` | - | - | `medium` | - | [Map](topic-maps/data-structures/binary-trie-xor.md) / [Ladder](../practice/ladders/data-structures/binary-trie-xor/README.md) / [Tutorial](../topics/data-structures/binary-trie-xor/README.md) | [Note](../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/binary-trie-xor/vasiliysmultiset.cpp) |
 | `C11XU` | Bộ sưu tập đồng xu | `Data Structures -> DSU` | Advanced -> Optimization And Duality | xor-independence; forest selection; augmenting exchange | `hard` | VN SPOJ, OI-style | [Map](topic-maps/data-structures/dsu.md) / [Ladder](../practice/ladders/data-structures/dsu/README.md) / [Tutorial](../topics/data-structures/dsu/README.md) | [Note](../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
 | `DYNAMICCONNECTIVITY` | Dynamic Connectivity | `Data Structures -> DSU Rollback / Offline Dynamic Connectivity` | Data Structures -> DSU; Data Structures -> Offline Tricks | dsu rollback; segment tree over time; offline dynamic connectivity | `hard` | CSES, Advanced techniques | [Map](topic-maps/data-structures/dsu-rollback.md) / [Ladder](../practice/ladders/data-structures/dsu-rollback/README.md) / [Tutorial](../topics/data-structures/dsu-rollback/README.md) | [Note](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-rollback/dynamicconnectivity.cpp) |
 | `CVP00001` | Ô ăn quan | `Data Structures -> Fenwick Tree` | Foundations -> Prefix Sums | circular updates; range-add point-query; query-from-initial-state | `hard` | VN SPOJ, OI-style | [Map](topic-maps/data-structures/fenwick-tree.md) / [Ladder](../practice/ladders/data-structures/fenwick-tree/README.md) / [Tutorial](../topics/data-structures/fenwick-tree/README.md) | [Note](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/fenwick-tree/cvp00001.cpp) |

@@ -231,6 +231,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp"
   },
   {
+    "code": "VASILIYSMULTISET",
+    "title": "Vasiliy's Multiset",
+    "full_title": "Vasiliy's Multiset",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/706/D",
+    "main_topic": "Data Structures -> Binary Trie / XOR Queries",
+    "secondary_topics": [
+      "Binary trie",
+      "Maximum xor query",
+      "Dynamic multiset"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/binary-trie-xor",
+    "topic_tags": [
+      "data-structures/binary-trie-xor"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md",
+    "ladder_path": "practice/ladders/data-structures/binary-trie-xor/README.md",
+    "tutorial_path": "topics/data-structures/binary-trie-xor/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/binary-trie-xor/vasiliysmultiset.cpp"
+  },
+  {
     "code": "C11XU",
     "title": "Bộ sưu tập đồng xu",
     "full_title": "C11XU - Bộ sưu tập đồng xu",

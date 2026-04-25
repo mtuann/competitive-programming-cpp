@@ -19,7 +19,7 @@ This page teaches the contest route that matters most:
 
 1. understand a node as a prefix, not a character
 2. know exactly when `pass_count` and `end_count` are the right metadata
-3. separate plain dictionary tries from xor tries and heavier descendants like Aho-Corasick
+3. separate plain dictionary tries from the dedicated [Binary Trie / XOR Queries](../../data-structures/binary-trie-xor/README.md) lane and heavier descendants like Aho-Corasick
 
 ## At A Glance
 
@@ -35,7 +35,6 @@ Strong contest triggers:
 - "how many words start with this prefix?"
 - "is this word in the dictionary?"
 - "autocomplete / prefix counting / dictionary queries"
-- "maximum xor / minimum xor with inserted numbers"
 - "build a structure over many patterns before doing heavier matching"
 
 Strong anti-cues:
@@ -64,6 +63,7 @@ Helpful neighboring topics:
 - [KMP](../kmp/README.md)
 - [Aho-Corasick](../aho-corasick/README.md)
 - [String Hashing](../hashing/README.md)
+- [Binary Trie / XOR Queries](../../data-structures/binary-trie-xor/README.md)
 
 ## Problem Model And Notation
 
@@ -588,6 +588,7 @@ Repo anchors:
 - practice note: [Word Combinations](../../../practice/ladders/strings/trie/wordcombinations.md)
 - starter template: [trie-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/strings/trie-basic.cpp)
 - notebook refresher: [String cheatsheet](../../../notebook/string-cheatsheet.md)
+- xor compare point: [Binary Trie / XOR Queries](../../data-structures/binary-trie-xor/README.md)
 
 ## Related Topics
 
