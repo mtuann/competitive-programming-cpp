@@ -1,7 +1,7 @@
-# CRT / Lucas / Möbius Wave Plan
+# CRT / Lucas / Mobius Wave Plan
 
 - Purpose: split the remaining `Phase 7` math backlog into repo-fit waves that can ship without dropping quality
-- Scope: topic pages, starter templates, hot sheets, ladders, flagship notes, and route wiring for the `CRT / Lucas / Möbius` family
+- Scope: topic pages, starter templates, hot sheets, ladders, flagship notes, and route wiring for the `CRT / Lucas / Mobius` family
 - Doc type: planning
 - Owner: repo maintainer
 - Status: active
@@ -16,14 +16,14 @@ These ideas are related, but they do **not** teach well as one bulk topic dump.
 
 - `CRT` is about combining congruence systems.
 - `Lucas` is about binomial coefficients modulo a prime when `n` is too large for ordinary factorial tables.
-- `Möbius` is about multiplicative inversion and divisor-structured counting.
+- `Mobius` is about multiplicative inversion and divisor-structured counting.
 
 They share number-theory language, but the contest signals are different enough that the repo should not pretend they are one technique.
 
 The right split for this repo is:
 
 1. `Congruence Systems And Large Binomials`
-2. `Möbius And Multiplicative Counting`
+2. `Mobius And Multiplicative Counting`
 
 That keeps the teaching lane aligned with what the learner actually sees in statements.
 
@@ -160,7 +160,7 @@ So they can be shipped together **if** the wave stays capped at exactly two topi
 
 If the Lucas flagship or source pass is not clean enough, ship `CRT` first and keep Lucas as the follow-up wave inside the same phase.
 
-## Wave B. Möbius And Multiplicative Counting
+## Wave B. Mobius And Multiplicative Counting
 
 This should ship only after Wave A lands cleanly.
 
@@ -169,7 +169,7 @@ This should ship only after Wave A lands cleanly.
 Teach the learner to recognize when inclusion-exclusion over gcd/divisibility structure is better expressed as:
 
 - multiplicative precomputation
-- Möbius inversion
+- Mobius inversion
 - divisor iteration over frequencies
 
 ### Planned Topic Surface
@@ -182,7 +182,7 @@ Planned lane:
 - starter: `templates/math/mobius-linear-sieve.cpp`
 - hot sheet: `notebook/mobius-hot-sheet.md`
 - ladder: `practice/ladders/math/mobius-multiplicative/README.md`
-- flagship note + solution: one gcd-counting problem where Möbius is the real unlock
+- flagship note + solution: one gcd-counting problem where Mobius is the real unlock
 
 Preferred flagship candidates:
 
@@ -191,13 +191,13 @@ Preferred flagship candidates:
 
 What this lane should teach:
 
-- Möbius as inversion over divisor structure, not as a symbol to memorize
+- Mobius as inversion over divisor structure, not as a symbol to memorize
 - relationship to:
   - inclusion-exclusion
   - divisor sums
   - multiplicative functions
   - linear sieve precomputation
-- when a direct divisor-frequency count is enough and when full Möbius inversion is the cleaner route
+- when a direct divisor-frequency count is enough and when full Mobius inversion is the cleaner route
 
 Strong compare points:
 
@@ -211,9 +211,9 @@ Out of scope for the first ship:
 - Min_25 sieve
 - prefix sums of multiplicative functions over very large `n`
 
-### Why Möbius Is Its Own Wave
+### Why Mobius Is Its Own Wave
 
-Even though Möbius sits under "number theory," its contest smell is much closer to:
+Even though Mobius sits under "number theory," its contest smell is much closer to:
 
 - arithmetic inclusion-exclusion
 - gcd-counting
@@ -229,7 +229,7 @@ Use this order for the remaining math phase:
 
 1. ship `Chinese Remainder / Linear Congruences`
 2. ship `Lucas Theorem / Large Binomial Mod Prime`
-3. only then ship `Möbius And Multiplicative Counting`
+3. only then ship `Mobius And Multiplicative Counting`
 
 This preserves the repo rule:
 
@@ -256,6 +256,8 @@ This plan is only considered complete when:
 
 ## Immediate Next Action
 
-The next highest-leverage math task after this plan is:
+This math wave plan is now fully shipped.
 
-1. ship `Möbius And Multiplicative Counting`
+The next highest-leverage follow-up is:
+
+1. return to [Expansion Roadmap](expansion-roadmap.md) and continue `Contest-Source Lane B`

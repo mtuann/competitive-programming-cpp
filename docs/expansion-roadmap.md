@@ -58,7 +58,7 @@ These are the most valuable missing topics or families relative to the repo's cu
 - `Manacher`
 - `Convex Hull Trick / Li Chao Tree`
 - `Linear Recurrence / Matrix Exponentiation`
-- `CRT / Lucas / Möbius / multiplicative functions`
+- `CRT / Lucas / Mobius / multiplicative functions`
 
 ### Contest-Source Lanes Worth Mining
 
@@ -163,7 +163,7 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/linear-recurrence-hot-sheet.md`
 - [x] add `practice/ladders/math/linear-recurrence/README.md`
 - [x] add one flagship linear-recurrence note plus solution
-- [x] add a [`CRT / Lucas / Möbius` wave plan](crt-lucas-mobius-wave-plan.md), then split it into at most `2` math waves instead of bulk-shipping everything together
+- [x] add a [`CRT / Lucas / Mobius` wave plan](crt-lucas-mobius-wave-plan.md), then split it into at most `2` math waves instead of bulk-shipping everything together
 - [x] add `topics/math/chinese-remainder/README.md`
 - [x] add `templates/math/chinese-remainder.cpp`
 - [x] add `notebook/chinese-remainder-hot-sheet.md`
@@ -174,6 +174,11 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/lucas-hot-sheet.md`
 - [x] add `practice/ladders/math/lucas-theorem/README.md`
 - [x] add one flagship Lucas note plus solution
+- [x] add `topics/math/mobius-multiplicative/README.md`
+- [x] add `templates/math/mobius-linear-sieve.cpp`
+- [x] add `notebook/mobius-hot-sheet.md`
+- [x] add `practice/ladders/math/mobius-multiplicative/README.md`
+- [x] add one flagship Mobius note plus solution
 
 ### Phase 8. Contest-Source Lane B
 
@@ -224,12 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Chinese Remainder / Linear Congruences`
-2. `Contest-Source Lane B`
+1. `Contest-Source Lane B`
 
-That pair has the best balance of:
+That is now the best follow-up because:
 
-- modern canonical value
-- clean fit with the current graph stack
-- strong template/hot-sheet payoff
-- strong contest payoff without opening too many new surfaces at once
+- the math roadmap wave has landed cleanly
+- the repo already has the right note/template/retrieval density for another contest-systems pass
+- it adds new practice behavior without opening another large algorithm family immediately

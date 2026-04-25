@@ -8,6 +8,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - [Number Theory Basics](number-theory-basics/README.md)
 - [Chinese Remainder / Linear Congruences](chinese-remainder/README.md)
 - [Lucas Theorem / Large Binomial Mod Prime](lucas-theorem/README.md)
+- [Mobius And Multiplicative Counting](mobius-multiplicative/README.md)
 - [Linear Recurrence / Matrix Exponentiation](linear-recurrence/README.md)
 - [FFT And NTT](fft-ntt/README.md)
 
@@ -28,12 +29,12 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - sieve patterns
 - congruence-system merges and gcd consistency checks
 - large binomial queries when `n` is too big for one factorial table
+- divisor-frequency counting plus Mobius cancellation for exact gcd structure
 - recurrence and matrix-exponentiation style tools
 - fixed-size linear transitions under one modulus
 
 3. Advanced later
 - FFT / NTT
-- Mobius-style transforms
 - deeper number-theory machinery
 
 ## Recognition Cues
@@ -62,6 +63,7 @@ After this section, you should be able to use modular arithmetic and standard co
 - [CRYPTKEY - Chìa khóa mã số](../../practice/ladders/math/gcd-lcm/cryptkey.md): gcd/lcm construction through prime-exponent reasoning
 - [General Chinese Remainder](../../practice/ladders/math/chinese-remainder/generalchineseremainder.md): merge congruences one pair at a time and detect impossible systems early
 - [Binomial Coefficient (Prime Mod)](../../practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md): switch from one factorial table to digit-by-digit base-`p` binomial reconstruction
+- [Counting Coprime Pairs](../../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md): divisor frequencies plus Mobius cancellation for unordered gcd-1 pair counts
 - [POST2 - A cộng B version 2](../../practice/ladders/math/fft/post2.md): convolution modeling with FFT
 
 ## Go Deeper

@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `91`
+- Total tracked problem notes: `92`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -18,7 +18,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Graphs | 21 |
 | DP | 10 |
 | Greedy | 3 |
-| Math | 13 |
+| Math | 14 |
 | Combinatorics | 4 |
 | Strings | 9 |
 | Geometry | 8 |
@@ -118,6 +118,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `GCDONBLACKBOARD` | GCD on Blackboard | `Math -> GCD And LCM` | Math -> Number Theory Basics | prefix suffix gcd; remove one element; maximize array gcd | `medium` | AtCoder, Number theory | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/gcdonblackboard.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/gcdonblackboard.cpp) |
 | `THROWINGDICE` | Throwing Dice | `Math -> Linear Recurrence And Matrix Exponentiation` | - | linear recurrence; companion matrix; matrix exponentiation | `medium` | CSES, Mathematics | [Map](topic-maps/math/linear-recurrence.md) / [Ladder](../practice/ladders/math/linear-recurrence/README.md) / [Tutorial](../topics/math/linear-recurrence/README.md) | [Note](../practice/ladders/math/linear-recurrence/throwingdice.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/linear-recurrence/throwingdice.cpp) |
 | `BINOMIALCOEFFICIENTPRIMEMOD` | Binomial Coefficient (Prime Mod) | `Math -> Lucas Theorem And Large Binomial Mod Prime` | - | - | `medium` | - | [Map](topic-maps/math/lucas-theorem.md) / [Ladder](../practice/ladders/math/lucas-theorem/README.md) / [Tutorial](../topics/math/lucas-theorem/README.md) | [Note](../practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/lucas-theorem/binomialcoefficientprimemod.cpp) |
+| `COUNTINGCOPRIMEPAIRS` | Counting Coprime Pairs | `Math -> Mobius And Multiplicative Counting` | - | - | `medium` | - | [Map](topic-maps/math/mobius-multiplicative.md) / [Ladder](../practice/ladders/math/mobius-multiplicative/README.md) / [Tutorial](../topics/math/mobius-multiplicative/README.md) | [Note](../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/mobius-multiplicative/countingcoprimepairs.cpp) |
 | `EXPONENTIATION` | Exponentiation | `Math -> Modular Arithmetic` | - | binary exponentiation; repeated squaring; modular fast power | `easy` | CSES, Mathematics | [Map](topic-maps/math/modular-arithmetic.md) / [Ladder](../practice/ladders/math/modular-arithmetic/README.md) / [Tutorial](../topics/math/modular-arithmetic/README.md) | [Note](../practice/ladders/math/modular-arithmetic/exponentiation.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation.cpp) |
 | `EXPONENTIATION2` | Exponentiation II | `Math -> Modular Arithmetic` | - | binary exponentiation; fermat exponent reduction; zero exponent edge case | `medium` | CSES, Mathematics | [Map](topic-maps/math/modular-arithmetic.md) / [Ladder](../practice/ladders/math/modular-arithmetic/README.md) / [Tutorial](../topics/math/modular-arithmetic/README.md) | [Note](../practice/ladders/math/modular-arithmetic/exponentiation2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp) |
 | `COUNTINGDIVISORS` | Counting Divisors | `Math -> Number Theory Basics` | Math -> GCD And LCM | divisor sieve; many queries preprocessing; divisor counting | `easy` | CSES, Mathematics | [Map](topic-maps/math/number-theory-basics.md) / [Ladder](../practice/ladders/math/number-theory-basics/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/number-theory-basics/countingdivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/countingdivisors.cpp) |

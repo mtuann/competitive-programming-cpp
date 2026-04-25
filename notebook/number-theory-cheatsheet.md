@@ -23,6 +23,7 @@ Use this page when divisibility, residues, or algebraic constraints appear and y
 - repeated powers modulo `MOD` -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - many `nCk mod prime` queries -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - `ax + by = c` or inverse under composite modulus -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
+- gcd/divisor counting over all multiples -> [Mobius hot sheet](mobius-hot-sheet.md)
 - plain divisibility / factors / totients -> [number-theory-basics.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/number-theory-basics.cpp)
 
 ## Prime-Exponent View
@@ -50,6 +51,7 @@ lcm: take the larger exponent
 
 - modular power / tower reasoning -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
 - gcd / divisibility -> [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md)
+- divisor-side inclusion-exclusion -> [Counting Coprime Pairs](../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md)
 - broader workflow -> [Modular Arithmetic topic](../topics/math/modular-arithmetic/README.md)
 
 ## Main Trap
@@ -58,6 +60,7 @@ The most common wrong turn is treating “mod arithmetic” as if every denomina
 
 ## Reopen Paths
 
-- topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md)
+- topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md), [Mobius And Multiplicative Counting](../topics/math/mobius-multiplicative/README.md)
 - exact quick sheet -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
+- exact gcd/divisor quick sheet -> [Mobius hot sheet](mobius-hot-sheet.md)
 - template layer -> [Template library](../template-library.md)

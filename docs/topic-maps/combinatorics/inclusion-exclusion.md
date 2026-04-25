@@ -1,6 +1,6 @@
 # Combinatorics -> Inclusion-Exclusion
 
-Count by overlaps, complements, and Möbius-style corrections when direct counting double-counts structure.
+Count by overlaps, complements, and Mobius-style corrections when direct counting double-counts structure.
 
 - Topic slug: `combinatorics/inclusion-exclusion`
 - Tutorial page: [Open tutorial](../../../topics/combinatorics/inclusion-exclusion/README.md)

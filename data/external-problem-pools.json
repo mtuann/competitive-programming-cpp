@@ -9580,6 +9580,36 @@
       "why_fit": "A strong compare point where Lucas with p = 2 exposes a structural parity pattern instead of only answering one binomial query."
     }
   ],
+  "math/mobius-multiplicative": [
+    {
+      "title": "Counting Coprime Pairs",
+      "url": "https://cses.fi/problemset/task/2417",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/mobius-multiplicative",
+        "Coprime Pair Counting",
+        "Math"
+      ],
+      "tags": [
+        "Mobius Function",
+        "Divisor Frequency",
+        "Coprime Pairs",
+        "Linear Sieve"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Number Theory Basics",
+        "Inclusion-Exclusion",
+        "Linear Sieve"
+      ],
+      "why_fit": "The cleanest first benchmark where divisor frequencies plus Mobius cancellation replace pairwise gcd checks entirely."
+    }
+  ],
   "math/linear-recurrence": [
     {
       "title": "Fibonacci Numbers",

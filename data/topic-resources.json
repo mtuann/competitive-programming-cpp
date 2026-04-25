@@ -2367,6 +2367,66 @@
       }
     ]
   },
+  "math/mobius-multiplicative": {
+    "title": "Math -> Mobius And Multiplicative Counting",
+    "summary": "Divisor-structured inclusion-exclusion, Mobius cancellation, and multiplicative counting over multiples using one linear sieve plus one divisor-frequency sweep.",
+    "topic_path": "topics/math/mobius-multiplicative/README.md",
+    "ladder_path": "practice/ladders/math/mobius-multiplicative/README.md",
+    "microtopics": [
+      "mobius-function",
+      "mobius-inversion",
+      "divisor-frequency",
+      "coprime-pair-counting",
+      "linear-sieve",
+      "multiplicative-counting"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki Mobius inversion formula",
+        "url": "https://en.oi-wiki.org/math/mobius/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms Linear Sieve",
+        "url": "https://cp-algorithms.com/algebra/prime-sieve-linear.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cp-algorithms Inclusion-Exclusion Principle",
+        "url": "https://cp-algorithms.com/combinatorics/inclusion-exclusion.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Counting Coprime Pairs",
+        "url": "https://cses.fi/problemset/task/2417/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Mobius hot sheet",
+        "path": "notebook/mobius-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Counting Coprime Pairs",
+        "path": "practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Templates overview",
+        "path": "template-library.md",
+        "kind": "template guide"
+      }
+    ]
+  },
   "math/linear-recurrence": {
     "title": "Math -> Linear Recurrence And Matrix Exponentiation",
     "summary": "Fixed-width linear recurrences and repeated small linear transitions, turned into companion matrices and powered quickly by repeated squaring.",
@@ -2627,7 +2687,7 @@
   },
   "combinatorics/inclusion-exclusion": {
     "title": "Combinatorics -> Inclusion-Exclusion",
-    "summary": "Count by overlaps, complements, and Möbius-style corrections when direct counting double-counts structure.",
+    "summary": "Count by overlaps, complements, and Mobius-style corrections when direct counting double-counts structure.",
     "topic_path": "topics/combinatorics/inclusion-exclusion/README.md",
     "ladder_path": "practice/ladders/combinatorics/inclusion-exclusion/README.md",
     "microtopics": [

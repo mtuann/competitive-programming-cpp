@@ -2507,6 +2507,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/lucas-theorem/binomialcoefficientprimemod.cpp"
   },
   {
+    "code": "COUNTINGCOPRIMEPAIRS",
+    "title": "Counting Coprime Pairs",
+    "full_title": "Counting Coprime Pairs",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2417",
+    "main_topic": "Math -> Mobius And Multiplicative Counting",
+    "secondary_topics": [
+      "Mobius inversion",
+      "Divisor-frequency counting",
+      "Linear sieve"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/mobius-multiplicative",
+    "topic_tags": [
+      "math/mobius-multiplicative"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md",
+    "ladder_path": "practice/ladders/math/mobius-multiplicative/README.md",
+    "tutorial_path": "topics/math/mobius-multiplicative/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/mobius-multiplicative/countingcoprimepairs.cpp"
+  },
+  {
     "code": "EXPONENTIATION",
     "title": "Exponentiation",
     "full_title": "Exponentiation",
