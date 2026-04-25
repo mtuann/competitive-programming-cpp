@@ -209,7 +209,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 
 ### Long-Tail Contest-System Ideas
 
-- [ ] `interactive protocol clinic` with richer local-testing patterns
+- [x] `interactive protocol clinic` with richer local-testing patterns
 - [ ] `many-valid-answers / validator-first` workflow page
 - [ ] `precision / formatting robustness` clinic for Google-style tasks
 - [ ] `heuristic / marathon intro` page if the repo opens a heuristic lane
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `interactive protocol clinic`
+1. `many-valid-answers / validator-first workflow page`
 
 That is now the best follow-up because:
 
 - the remaining explicit backlog is now mostly contest-system reinforcement rather than one more canonical algorithm lane
-- an `interactive protocol clinic` is the clearest next high-leverage addition for the contest-source side
+- the cleanest remaining reinforcement is now the `many-valid-answers / validator-first` workflow lane
 - it strengthens the playbook/workflow layer after a long stretch of algorithm-lane expansions

@@ -70,6 +70,7 @@ These are not full track playbooks yet. They are source-family clinics mined fro
 | --- | --- | --- | --- |
 | `Google archive lane (Code Jam / Kick Start)` | [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md) | you keep seeing the idea only after the official analysis because the `small -> large` bridge never became explicit | [Reasoning](../../topics/foundations/reasoning/README.md), [Binary Search](../../topics/foundations/patterns/binary-search/README.md), or [Digit DP](../../topics/dp/digit-dp/README.md) |
 | `Distributed Code Jam archive-style decomposition` | [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md) | you want to practice `split -> summarize -> merge` without opening a full distributed platform first | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Subtree Queries](../../topics/graphs/euler-tour-subtree/README.md), or [Reasoning](../../topics/foundations/reasoning/README.md) |
+| `Cross-track interactive protocol` | [Interactive Protocol Clinic 01](interactive-protocol-clinic-01.md) | you keep losing interactive tasks to flush, budget, transcript, or stop-condition leaks even when the idea is mostly known | [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Contest Checklist](../../notebook/contest-checklist.md), or [Codeforces](codeforces.md) |
 | `Topcoder one hard problem` | [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md) | one hard slot keeps eating the whole session even when the topic is mostly known | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md), [Reasoning](../../topics/foundations/reasoning/README.md), or the corresponding advanced ladder |
 | `Topcoder weird statement surfaces` | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md) | the wrapper looks exotic enough that you never stabilize the object model | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Constructive](../../topics/advanced/constructive/README.md), or [Counting Geometry](../../topics/geometry/counting-geometry/README.md) |
 
@@ -133,6 +134,7 @@ Canonical section set:
 - [ICPC](icpc.md): team contest operating manual for breadth, triage, and one-machine execution
 - [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md): archive-based `small -> large` promotion and analysis-first solving
 - [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md): archive-based local summary and merge-contract thinking
+- [Interactive Protocol Clinic 01](interactive-protocol-clinic-01.md): cross-track interactive discipline for flush, query-budget, transcript, and stop-condition handling
 - [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md): one-hard-slot proof and system-test discipline
 - [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md): strange statement surfaces turned into canonical models
 

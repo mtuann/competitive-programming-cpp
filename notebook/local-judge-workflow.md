@@ -6,7 +6,7 @@ This page is for the class of problems where "run the binary on stdin" is not en
 - Inputs needed: a solution binary plus either fixed tests, a simulator, or a saved transcript / seed
 - Output artifact: one reproducible failing transcript or enough evidence that the local harness is trustworthy
 - Stop condition: one clean harness loop that you can rerun without guessing
-- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md)
+- Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md), [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md)
 
 Use it when:
 
@@ -15,6 +15,8 @@ Use it when:
 - there is a simulator, hidden state, or query budget to enforce
 
 If you are still on ordinary batch tasks like `Weird Algorithm` or `Missing Number`, this page is too early. Stay with the normal stdin/stdout loop from the [Foundations cheatsheet](foundations-cheatsheet.md) first.
+
+If the harness exists but the leak is still `flush / budget / transcript / stop-condition`, pair this page with [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md).
 
 ## Which Workflow To Use Right Now
 
@@ -143,4 +145,5 @@ Make the harness enforce the query budget strictly.
 - [Contest checklist](contest-checklist.md)
 - [Stress testing workflow](stress-testing-workflow.md)
 - [Anti-Hack Workflow](anti-hack-workflow.md)
+- [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md)
 - [Contest Engineering](../topics/advanced/contest-engineering/README.md)

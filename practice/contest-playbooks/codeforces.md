@@ -111,6 +111,7 @@ Default checklist:
 - If constructive or many-valid-answers tasks keep leaking: [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md)
 - If medium implementation slots keep leaking: [Codeforces Implementation Clinic 01](codeforces-implementation-clinic-01.md)
 - If the main fear is hacks or rejudge fragility: [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md)
+- If interactive tasks keep leaking to flush, budget, or transcript discipline: [Interactive Protocol Clinic 01](interactive-protocol-clinic-01.md)
 
 Treat the short round as the executable session, the worksheet as the review artifact, and the clinics as targeted repair loops.
 
@@ -183,6 +184,7 @@ If the round announcement says an interactive problem may appear:
 
 - reopen the official guide before the round if you are rusty
 - treat flushing, transcript discipline, and query counts as first-class constraints
+- route live repairs through [Interactive Protocol Clinic 01](interactive-protocol-clinic-01.md) plus [Local Judge Workflow](../../notebook/local-judge-workflow.md) if the harness is not already trustworthy
 
 Do **not** rely on memory fragments from one old interactive problem.
 
@@ -231,6 +233,7 @@ If your post-round review ends with “I should get stronger,” it is too vague
 | --- | --- |
 | got hacked or fear rejudge on “accepted-looking” code | [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) |
 | constructive or many-answer task kept leaking | [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md), [Constructive](../../topics/advanced/constructive/README.md), and [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
+| interactive task kept leaking to flush, budget, transcript, or stop-condition mistakes | [Interactive Protocol Clinic 01](interactive-protocol-clinic-01.md) and [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
 | medium implementation slots keep leaking | [Codeforces Implementation Clinic 01](codeforces-implementation-clinic-01.md) and [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 | can solve after the round but not inside it | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md) and [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 | the missed family is genuinely weak | the corresponding ladder in [Ladders](../ladders/README.md), then come back through the worksheet |
