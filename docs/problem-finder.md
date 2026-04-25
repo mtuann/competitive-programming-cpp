@@ -24,6 +24,7 @@ Use this page when:
 - you know the weak topic but not the next good problem
 - you want to build a short ladder for one subtopic
 - a mixed round or contest exposed a weak slot and you want the next follow-up set quickly
+- you want to assemble a short `Codeforces`-style rep block by filtering `Source = Codeforces` and then jumping into the right playbook or drill
 - you want to resume attempted notes or build a light review queue without scanning the whole repo
 
 Do **not** stay here forever. After you narrow the list, jump into a real workflow.
@@ -33,6 +34,7 @@ Do **not** stay here forever. After you narrow the list, jump into a real workfl
 | If you found... | Go next |
 | --- | --- |
 | one weak subtopic | [Practice hub](../practice/README.md) or the corresponding ladder |
+| one weak `Codeforces` round skill such as shipping, anti-hack, or upsolve discipline | [Codeforces Playbook](../practice/contest-playbooks/codeforces.md) or [Codeforces Short Round 01](../practice/mixed-rounds/codeforces-short-round-01.md) |
 | one weak contest skill | [Contest Playbooks](../practice/contest-playbooks/README.md) |
 | one weak retrieval family | [Notebook](../notebook/README.md) |
 | one weak implementation family | [Build Kit](build-kit.md) |

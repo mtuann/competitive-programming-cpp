@@ -45,7 +45,7 @@
 
 -   __Contest Playbooks__
 
-    Train toward a contest style such as `ICPC`, `USACO`, or olympiad-style prep with clearer workflow guidance.
+    Train toward a contest style such as `Codeforces`, `ICPC`, `USACO`, or olympiad-style prep with clearer workflow guidance.
 
     [Open contest playbooks](contest-playbooks/README.md)
 
@@ -72,6 +72,7 @@ Use one of these when you want the repo to feel like a training system, not a li
 | `Resume queue` | [Problem Finder](../docs/problem-finder.md) with `Resume attempted` | reopen the topic only if recognition is shaky, then finish the note |
 | `Review queue` | [Problem Finder](../docs/problem-finder.md) with `Review solved` | one repo note, then one fresh external rep |
 | `Fresh external reps` | [Problem Finder](../docs/problem-finder.md) with `Fresh external` or `Core external set` | reopen the corresponding topic map or ladder only if the new rep exposes drift |
+| `Codeforces short round` | [Contest Playbooks](contest-playbooks/README.md) via [Codeforces](contest-playbooks/codeforces.md) | [Codeforces Short Round 01](mixed-rounds/codeforces-short-round-01.md), then [Codeforces Upsolve Worksheet](contest-playbooks/codeforces-upsolve-worksheet.md) |
 | `Switch drill` | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) or [Build Kit](../docs/build-kit.md) only after the round shows a real gap |
 | `Track-specific block` | [Contest Playbooks](contest-playbooks/README.md) | return to [Problem Finder](../docs/problem-finder.md) for the next concrete queue |
 
@@ -81,6 +82,7 @@ Use one of these when you want the repo to feel like a training system, not a li
 | --- | --- | --- |
 | I need the next good problems | [Problem Finder](../docs/problem-finder.md) | the corresponding ladder or playbook |
 | I need a clean resume or review queue | [Problem Finder](../docs/problem-finder.md) | the corresponding note, ladder, or mixed round |
+| I want Codeforces-style short-round shipping or anti-hack practice | [Codeforces](contest-playbooks/codeforces.md) | [Codeforces Short Round 01](mixed-rounds/codeforces-short-round-01.md) or [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) |
 | I am still learning one topic | the corresponding topic page in [topics/](../topics/README.md) | [Ladders](ladders/README.md) |
 | I know several topics but switch badly | [Mixed Rounds](mixed-rounds/README.md) | [Notebook](../notebook/README.md) |
 | I care about one contest format now | [Contest Playbooks](contest-playbooks/README.md) | [Problem Finder](../docs/problem-finder.md) |
@@ -116,6 +118,7 @@ Use one of these when you want the repo to feel like a training system, not a li
 - weak implementation trust -> reopen [Build Kit](../docs/build-kit.md)
 - weak retrieval under pressure -> reopen [Notebook](../notebook/README.md)
 - weak contest-time behavior -> reopen [Contest Playbooks](contest-playbooks/README.md)
+- weak Codeforces short-round shipping or hack discipline -> reopen [Codeforces](contest-playbooks/codeforces.md) and [Anti-Hack Workflow](../notebook/anti-hack-workflow.md)
 
 ## Path Shapes
 

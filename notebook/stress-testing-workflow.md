@@ -169,6 +169,7 @@ The goal is not “prove the program correct by testing.” The goal is to make 
 ## Good Pairings
 
 - [Contest checklist](contest-checklist.md)
+- [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Template library](../template-library.md)
 - [Algorithm Engineering](../topics/advanced/algorithm-engineering/README.md)
 - [Contest Engineering](../topics/advanced/contest-engineering/README.md)

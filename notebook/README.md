@@ -108,6 +108,7 @@ The shortest useful scan order is:
 - [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md)
 - [Geometry cheatsheet](geometry-cheatsheet.md)
 - [Contest checklist](contest-checklist.md)
+- [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Stress testing workflow](stress-testing-workflow.md)
 - [Local judge workflow](local-judge-workflow.md)
 
@@ -135,6 +136,7 @@ The shortest useful scan order is:
 - exact static suffix structure -> [Suffix Array / LCP hot sheet](suffix-array-lcp-hot-sheet.md) + [String cheatsheet](string-cheatsheet.md)
 - polygon and segment geometry -> [Geometry cheatsheet](geometry-cheatsheet.md)
 - debugging a suspicious implementation -> [Stress testing workflow](stress-testing-workflow.md)
+- hack-sensitive constructive or open-hack fragility -> [Anti-Hack Workflow](anti-hack-workflow.md)
 - interactive or validator-heavy tasks -> [Local judge workflow](local-judge-workflow.md)
 
 ## Learn -> Practice -> Retrieve

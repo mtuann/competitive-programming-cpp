@@ -73,6 +73,7 @@ Minimal pack contract:
 | If your bottleneck is... | Start with |
 | --- | --- |
 | first retrieval session after the beginner route | [Stage 0 Review Pack 01](stage0-review-pack-01.md) |
+| short-round shipping, anti-hack discipline, and clean CF-style debrief | [Codeforces Short Round 01](codeforces-short-round-01.md) |
 | broad contest-core switching | [Contest Core Switching 01](contest-core-switching-01.md) |
 | one-machine-style banker prioritization plus implementation stability | [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md) |
 | switching between graph modeling and DP state design | [Graphs And DP Switching 01](graphs-dp-switching-01.md) |
@@ -81,6 +82,7 @@ Minimal pack contract:
 | rooted-tree retrieval keeps drifting between ancestor, DP, and path-query views | [Trees And Queries 01](trees-and-queries-01.md) |
 
 - [Stage 0 Review Pack 01](stage0-review-pack-01.md): first retrieval session after the beginner route
+- [Codeforces Short Round 01](codeforces-short-round-01.md): short-round shipping drill with one anti-hack-heavy mid slot and one optional late-slot model
 - [Contest Core Switching 01](contest-core-switching-01.md): five-topic contest-core drill
 - [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md): banker-first ICPC-style breadth drill with one late implementation-heavy slot
 - [Graphs And DP Switching 01](graphs-dp-switching-01.md): alternate between graph modeling and state design
@@ -93,6 +95,7 @@ Minimal pack contract:
 Research snapshot: reviewed against official pages on `2026-04-24`.
 
 - [CSES Problem Set](https://cses.fi/problemset): best official follow-up pool when a pack reveals one weak core topic
+- [Codeforces Problemset](https://codeforces.com/problemset): best official follow-up pool when a short-round drill reveals one weak `CF` slot you want to replace immediately with another rep
 - [USACO Training](https://usaco.org/index.php?page=training): good for slower, lesson-style follow-up after a mixed round exposes a concept gap
 - [USACO Training Gateway](https://usaco.training/): legacy training gateway if you want a second official progression path
 
@@ -109,6 +112,7 @@ Research snapshot: reviewed against official pages on `2026-04-24`.
 | Bottleneck | Time budget | Start with | If it breaks, go back to |
 | --- | --- | --- | --- |
 | first retrieval session after the beginner route | `90-120 min` | [Stage 0 Review Pack 01](stage0-review-pack-01.md) | [Foundations ladders](../ladders/foundations/README.md) or [BFS And DFS ladder](../ladders/graphs/bfs-dfs/README.md) |
+| short-round shipping, anti-hack, and upsolve discipline | `2-2.5 h` | [Codeforces Short Round 01](codeforces-short-round-01.md) | [Codeforces Playbook](../contest-playbooks/codeforces.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md), [Constructive ladder](../ladders/advanced/constructive/README.md), or [Prefix Constraints ladder](../ladders/greedy/prefix-constraints/README.md) |
 | broad contest-core switching | `2.5-3.5 h` | [Contest Core Switching 01](contest-core-switching-01.md) | the weakest corresponding ladder for the failed slot, then [Problem Finder](../../docs/problem-finder.md) |
 | banker-first ICPC breadth plus implementation reliability | `3-4 h` | [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md) | [ICPC Playbook](../contest-playbooks/icpc.md), [Foundations ladders](../ladders/foundations/README.md), [Graphs ladders](../ladders/graphs/README.md), or [Segment Tree ladder](../ladders/data-structures/segment-tree/README.md) |
 | graph-modeling vs DP-state reset | `3-4 h` | [Graphs And DP Switching 01](graphs-dp-switching-01.md) | [Graph Modeling](../ladders/graphs/graph-modeling/README.md), [Knapsack Family](../ladders/dp/knapsack-family/README.md), or [Digit DP](../ladders/dp/digit-dp/README.md) |

@@ -156,4 +156,5 @@ Make the harness enforce the query budget strictly.
 
 - [Contest checklist](contest-checklist.md)
 - [Stress testing workflow](stress-testing-workflow.md)
+- [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Contest Engineering](../topics/advanced/contest-engineering/README.md)

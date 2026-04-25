@@ -38,6 +38,7 @@ first.
 | Track | Optimizes for | Practice mode | Biggest failure signal | Best first repo asset |
 | --- | --- | --- | --- | --- |
 | [USACO](usaco.md) | solo implementation, steady division progression, clean local testing | archive-first, topic ladders, timed solo blocks | you solve ideas after contest but miss easy implementation points during it | [C++ Language](../../topics/foundations/cpp-language/README.md) |
+| [Codeforces](codeforces.md) | short-round shipping, anti-hack discipline, and clean upsolve loops | short simulated rounds, validator-first clinics, fast review blocks | you often know the family after the round, but miss live solves to pacing, hack fear, or weak hardening | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 | [IOI / OI](ioi-oi.md) | deep modeling, proof confidence, partial-score planning | fewer tasks, deeper review, subtask-first thinking | you see the full idea too late or throw away safe partial points | [Reasoning](../../topics/foundations/reasoning/README.md) |
 | [ICPC](icpc.md) | breadth, switching, team workflow, one-machine execution | mixed rounds, live triage, notebook retrieval | your team burns time on one hard problem or loses solves to bad handoff/debug loops | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 
@@ -46,6 +47,7 @@ first.
 | If your current format target is... | Start with |
 | --- | --- |
 | solo progression with archive problems | [USACO](usaco.md) |
+| short rounds with hacks, rejudge pressure, or fast upsolve loops | [Codeforces](codeforces.md) |
 | partial scoring and proof-heavy tasks | [IOI / OI](ioi-oi.md) |
 | breadth, switching, and one-machine teamwork | [ICPC](icpc.md) |
 
@@ -56,6 +58,7 @@ Use this table when you want one executable drill instead of more prose.
 | Track | First drill | Use when | If it breaks, reopen |
 | --- | --- | --- | --- |
 | [USACO](usaco.md) | `Solo Archive Block 01` in [USACO](usaco.md) | you want a clean timed solo block with explicit post-contest review | [Foundations ladders](../ladders/foundations/README.md), [Problem Finder](../../docs/problem-finder.md), or [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| [Codeforces](codeforces.md) | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md) | you want one short simulated round with banker-first shipping, anti-hack passes, and a precise upsolve route | [Codeforces Upsolve Worksheet](codeforces-upsolve-worksheet.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md), or [Problem Finder](../../docs/problem-finder.md) |
 | [IOI / OI](ioi-oi.md) | [IOI Checkpoint / Score-Path Drill 01](ioi-checkpoint-score-path-drill-01.md) | you need to practice safe-point collection before gambling on the full solve | [Reasoning](../../topics/foundations/reasoning/README.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md), or [DP ladders](../ladders/dp/README.md) |
 | [ICPC](icpc.md) | [ICPC Modeling Under Pressure 01](icpc-modeling-under-pressure-01.md) | you want a repeatable opening model, priority board, and one-machine-ready handoff | [Mixed Rounds](../mixed-rounds/README.md), [Contest Engineering](../../topics/advanced/contest-engineering/README.md), or [Build Kit](../../docs/build-kit.md) |
 
@@ -114,6 +117,7 @@ Canonical section set:
 ## Current Playbooks
 
 - [USACO](usaco.md): solo archive-based progression with strict contest-conduct rules
+- [Codeforces](codeforces.md): short-round operating manual for shipping, anti-hack, validator-first construction, and upsolve discipline
 - [IOI / OI](ioi-oi.md): proof-heavy partial-scoring workflow
 - [ICPC](icpc.md): team contest operating manual for breadth, triage, and one-machine execution
 
@@ -133,6 +137,9 @@ Shared sources used for this pass:
 - [USACO Details / FAQ](https://usaco.org/current/current/index.php?page=details)
 - [USACO Contest Instructions and Rules](https://usaco.org/index.php/current/tpcm/current/data/index.php?page=instructions)
 - [USACO Training](https://usaco.org/index.php?page=training)
+- [Codeforces Contest Rules](https://codeforces.com/blog/entry/4088?locale=en)
+- [Rule Restricting the Use of AI [revision 2024-09-14]](https://codeforces.com/topic/134567/en4)
+- [Interactive Problems: Guide for Participants](https://codeforces.com/blog/entry/45307?mobile=true)
 - [ICPC World Finals Programming Environment](https://docs.icpc.global/worldfinals-programming-environment/)
 - [ICPC Regional Rules example (NCNA 2025/26)](https://nc.na.icpc.global/rules/)
 - [IOI Regulations](https://ioinformatics.org/files/regulations03.pdf)

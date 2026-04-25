@@ -22,6 +22,7 @@ This is the repo's `retrieve and execute` layer.
 | reusable contest code | [Template Library](../template-library.md) |
 | short invariant/trap reminders | [Notebook](../notebook/README.md) |
 | debug a suspicious implementation | [Stress testing workflow](../notebook/stress-testing-workflow.md) |
+| harden a hack-sensitive or many-answer solution before trusting it | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) |
 | validator-heavy / interactive / many-valid-answers local loop | [Local judge workflow](../notebook/local-judge-workflow.md) |
 | before-contest checklist | [Contest checklist](../notebook/contest-checklist.md) |
 
@@ -89,6 +90,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 | “I know the topic, just give me the snippet” | [Template Library](../template-library.md) | the relevant topic page only if trust is low |
 | “I know the topic, but I forgot the invariant” | [Notebook](../notebook/README.md) | the relevant template |
 | “The code compiles, but I do not trust it” | [Stress testing workflow](../notebook/stress-testing-workflow.md) | the relevant note or template |
+| “The idea seems right, but a hack or rejudge could still break it” | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) | [Stress testing workflow](../notebook/stress-testing-workflow.md) or [Local judge workflow](../notebook/local-judge-workflow.md) |
 | “This task has a judge/protocol quirk” | [Local judge workflow](../notebook/local-judge-workflow.md) | the relevant playbook or note |
 
 ## Best Pairings

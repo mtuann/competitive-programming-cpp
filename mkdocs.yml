@@ -267,6 +267,7 @@ nav:
           - Overview: practice/mixed-rounds/README.md
           - Stage 0 Review Pack 01: practice/mixed-rounds/stage0-review-pack-01.md
           - Contest Core Switching 01: practice/mixed-rounds/contest-core-switching-01.md
+          - Codeforces Short Round 01: practice/mixed-rounds/codeforces-short-round-01.md
           - ICPC Breadth And Implementation 01: practice/mixed-rounds/icpc-breadth-and-implementation-01.md
           - Graphs And DP Switching 01: practice/mixed-rounds/graphs-dp-switching-01.md
           - Strings, Math, And Counting 01: practice/mixed-rounds/strings-math-counting-01.md
@@ -274,6 +275,10 @@ nav:
           - Trees And Queries 01: practice/mixed-rounds/trees-and-queries-01.md
       - Contest Playbooks:
           - Overview: practice/contest-playbooks/README.md
+          - Codeforces: practice/contest-playbooks/codeforces.md
+          - Codeforces Implementation Clinic 01: practice/contest-playbooks/codeforces-implementation-clinic-01.md
+          - Codeforces Constructive / Validator-First Clinic 01: practice/contest-playbooks/codeforces-constructive-validator-first-clinic-01.md
+          - Codeforces Upsolve Worksheet: practice/contest-playbooks/codeforces-upsolve-worksheet.md
           - ICPC: practice/contest-playbooks/icpc.md
           - ICPC Modeling Under Pressure 01: practice/contest-playbooks/icpc-modeling-under-pressure-01.md
           - IOI / OI: practice/contest-playbooks/ioi-oi.md
@@ -312,6 +317,7 @@ nav:
       - Suffix Array LCP Hot Sheet: notebook/suffix-array-lcp-hot-sheet.md
       - Geometry Cheatsheet: notebook/geometry-cheatsheet.md
       - Contest Checklist: notebook/contest-checklist.md
+      - Anti-Hack Workflow: notebook/anti-hack-workflow.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md
       - Local Judge Workflow: notebook/local-judge-workflow.md
   - Explore:

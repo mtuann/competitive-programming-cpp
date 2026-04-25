@@ -120,13 +120,13 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 
 ### Phase 4. Codeforces Operating Layer
 
-- [ ] add `practice/contest-playbooks/codeforces.md`
-- [ ] add `notebook/anti-hack-workflow.md`
-- [ ] add one `Codeforces short-round` drill pack
-- [ ] add one `Codeforces implementation clinic`
-- [ ] add one `Codeforces constructive / validator-first clinic`
-- [ ] add a `Codeforces upsolve worksheet`
-- [ ] surface a `Codeforces` route from `Practice Hub` and `Problem Finder`
+- [x] add `practice/contest-playbooks/codeforces.md`
+- [x] add `notebook/anti-hack-workflow.md`
+- [x] add one `Codeforces short-round` drill pack
+- [x] add one `Codeforces implementation clinic`
+- [x] add one `Codeforces constructive / validator-first clinic`
+- [x] add a `Codeforces upsolve worksheet`
+- [x] surface a `Codeforces` route from `Practice Hub` and `Problem Finder`
 
 ## Next
 
@@ -214,12 +214,12 @@ A wave is only considered shipped when:
 
 The cleanest next task after this file lands is:
 
-1. `Codeforces Operating Layer`
-2. `Centroid Decomposition`
+1. `Centroid Decomposition`
+2. `DSU Rollback / Offline Dynamic Connectivity`
 
 That pair has the best balance of:
 
 - modern canonical value
 - clean fit with the current graph stack
 - strong template/hot-sheet payoff
-- low risk of opening too many new surfaces at once
+- strong contest payoff without opening too many new surfaces at once
