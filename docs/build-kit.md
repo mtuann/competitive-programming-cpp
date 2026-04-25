@@ -24,6 +24,7 @@ This is the repo's `retrieve and execute` layer.
 | debug a suspicious implementation | [Stress testing workflow](../notebook/stress-testing-workflow.md) |
 | harden a hack-sensitive or many-answer solution before trusting it | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) |
 | interactive or simulator-style local loop | [Local judge workflow](../notebook/local-judge-workflow.md) |
+| many-valid-answers task and the legality contract still feels fuzzy | [Many-Valid-Answers / Validator-First Workflow](../notebook/many-valid-answers-validator-first-workflow.md) |
 | predicate-checked batch output or custom-judge legality | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) |
 | before-contest checklist | [Contest checklist](../notebook/contest-checklist.md) |
 
@@ -114,6 +115,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 | “The idea seems right, but a hack or rejudge could still break it” | [Anti-Hack Workflow](../notebook/anti-hack-workflow.md) | [Stress testing workflow](../notebook/stress-testing-workflow.md) or [Local judge workflow](../notebook/local-judge-workflow.md) |
 | “This task has a judge/protocol quirk” | [Local judge workflow](../notebook/local-judge-workflow.md) | the relevant playbook or note |
 | “I know the idea, but interactive tasks keep leaking to flush / budget / transcript discipline” | [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md) | [Local judge workflow](../notebook/local-judge-workflow.md) |
+| “This task allows many legal outputs, and I still cannot state the exact legality contract” | [Many-Valid-Answers / Validator-First Workflow](../notebook/many-valid-answers-validator-first-workflow.md) | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) |
 | “This batch task is checked by a predicate, validator, or score-aware output rule” | [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md) | [Local judge workflow](../notebook/local-judge-workflow.md) or the relevant clinic |
 
 ## Best Pairings

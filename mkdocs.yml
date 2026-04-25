@@ -385,6 +385,7 @@ nav:
       - Anti-Hack Workflow: notebook/anti-hack-workflow.md
       - Stress Testing Workflow: notebook/stress-testing-workflow.md
       - Local Judge Workflow: notebook/local-judge-workflow.md
+      - Many-Valid-Answers Validator-First Workflow: notebook/many-valid-answers-validator-first-workflow.md
       - Special Judge Output Protocol Workflow: notebook/special-judge-output-protocol-workflow.md
   - Explore:
       - Explore Overview: docs/explore.md

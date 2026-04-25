@@ -2,11 +2,11 @@
 
 This page is for batch tasks where exact stdout diffing is the wrong trust model.
 
-- Trigger: special judge, custom validator, many-valid-answers output, or predicate-checked batch tasks
+- Trigger: special judge, custom validator, predicate-checked batch tasks, or many-valid-answers problems whose legality contract is already clear enough to implement a checker
 - Inputs needed: one candidate solution plus a checker, validator, predicate script, or score-aware harness
 - Output artifact: one reproducible local validation loop with at least one negative case and one accepted-looking positive case
 - Stop condition: legality and output protocol are separated cleanly from the solving logic
-- Pair with: [Local judge workflow](local-judge-workflow.md), [Anti-Hack Workflow](anti-hack-workflow.md)
+- Pair with: [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md), [Local judge workflow](local-judge-workflow.md), [Anti-Hack Workflow](anti-hack-workflow.md)
 
 Use it when:
 
@@ -14,6 +14,8 @@ Use it when:
 - correctness depends on a predicate, not one reference output
 - the judge computes legality or score through custom logic
 - simple stdin/stdout replay does not tell you whether the output is actually valid
+
+If the problem is still at the stage of "what exactly counts as a legal witness?", start one step earlier with [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md).
 
 Do **not** use this page if:
 
@@ -26,7 +28,8 @@ Do **not** use this page if:
 - ordinary unique-answer batch task -> [Stress testing workflow](stress-testing-workflow.md)
 - interactive simulator or transcript problem -> [Local judge workflow](local-judge-workflow.md)
 - hack-sensitive constructive task -> start here, then pair with [Anti-Hack Workflow](anti-hack-workflow.md)
-- predicate-checked batch output or special judge -> this page
+- many-valid-answers task and the legality contract is still fuzzy -> [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md)
+- predicate-checked batch output or special judge with a clear contract -> this page
 
 ## Core Goal
 
@@ -119,6 +122,7 @@ This split catches a lot of "the answer idea is fine, but the serialized output 
 ## Good Pairings
 
 - [Local judge workflow](local-judge-workflow.md)
+- [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md)
 - [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Codeforces Constructive / Validator-First Clinic 01](../practice/contest-playbooks/codeforces-constructive-validator-first-clinic-01.md)
 - [Code Jam / Kick Start Analysis-First Clinic 01](../practice/contest-playbooks/code-jam-kick-start-analysis-first-clinic-01.md)
@@ -135,6 +139,7 @@ Official / primary:
 
 Repo anchors:
 
+- [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md)
 - [Local judge workflow](local-judge-workflow.md)
 - [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Build the Permutation](../practice/ladders/advanced/constructive/buildthepermutation.md)

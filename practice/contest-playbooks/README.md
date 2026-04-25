@@ -86,7 +86,7 @@ Every mature playbook should route through the same repo layers:
 | `practice/mixed-rounds/` | retrieval and switching after topics are known | [Mixed Rounds](../mixed-rounds/README.md) |
 | `notebook/` | short contest-time recall | [Notebook](../../notebook/README.md), [Contest Checklist](../../notebook/contest-checklist.md) |
 | `templates/` | reusable code you can retrieve on demand | [Template Library](../../template-library.md) |
-| `workflow pages` | exact operational loops | [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
+| `workflow pages` | exact operational loops | [Many-Valid-Answers / Validator-First Workflow](../../notebook/many-valid-answers-validator-first-workflow.md), [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 
 ## Open This Next
 

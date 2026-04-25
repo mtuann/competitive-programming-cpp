@@ -131,6 +131,7 @@ The shortest useful scan order is:
 - [Anti-Hack Workflow](anti-hack-workflow.md)
 - [Stress testing workflow](stress-testing-workflow.md)
 - [Local judge workflow](local-judge-workflow.md)
+- [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md)
 - [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md)
 
 ## Good Pairings
@@ -180,6 +181,7 @@ The shortest useful scan order is:
 - hack-sensitive constructive or open-hack fragility -> [Anti-Hack Workflow](anti-hack-workflow.md)
 - interactive or simulator-style tasks -> [Local judge workflow](local-judge-workflow.md)
 - interactive task where the harness exists but the protocol loop still feels fragile -> [Local judge workflow](local-judge-workflow.md) + [Interactive Protocol Clinic 01](../practice/contest-playbooks/interactive-protocol-clinic-01.md)
+- many-valid-answers task where the legality contract is still fuzzy -> [Many-Valid-Answers / Validator-First Workflow](many-valid-answers-validator-first-workflow.md)
 - predicate-checked batch output or custom-judge legality -> [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md) + [Local judge workflow](local-judge-workflow.md)
 
 ## Learn -> Practice -> Retrieve

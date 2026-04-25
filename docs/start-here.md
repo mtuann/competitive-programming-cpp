@@ -125,8 +125,12 @@ Use the smallest workflow that matches the task:
   stay with the compile/run/diff loop from [Foundations cheatsheet](../notebook/foundations-cheatsheet.md)
 - samples pass, but the optimized solution still feels untrustworthy:
   move to [Stress testing workflow](../notebook/stress-testing-workflow.md)
-- interactive task, validator-heavy task, or many-valid-answers task:
+- interactive or simulator-style task:
   move to [Local judge workflow](../notebook/local-judge-workflow.md)
+- many-valid-answers task where legality is still fuzzy:
+  move to [Many-Valid-Answers / Validator-First Workflow](../notebook/many-valid-answers-validator-first-workflow.md)
+- validator-heavy or predicate-checked batch task:
+  move to [Special Judge / Output Protocol Workflow](../notebook/special-judge-output-protocol-workflow.md)
 
 Do not escalate too early. Most beginner problems should stay in the first bucket.
 
