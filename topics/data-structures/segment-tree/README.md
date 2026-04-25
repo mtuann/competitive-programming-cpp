@@ -550,6 +550,7 @@ Use segment tree when the problem sounds like one of these:
 Good internal practice anchors:
 
 - [Dynamic Range Sum Queries](../../../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md): the clean first anchor for point assignment + range sum
+- [HORRIBLE - Horrible Queries](../../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the exact next stop once range updates become genuinely online
 - [Static Range Minimum Queries](../../../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md): the reminder that static RMQ should usually go to Sparse Table instead
 - [Range Update Queries](../../../practice/ladders/foundations/difference-arrays/rangeupdatequeries.md): the reminder that some range-update tasks are really lighter offline/prefix problems, not lazy trees
 
@@ -558,7 +559,8 @@ Suggested progression:
 1. range sum with point assignment
 2. range minimum with point update
 3. first position / descent query
-4. only then lazy propagation and custom nodes
+4. [Lazy Segment Tree](../lazy-segment-tree/README.md)
+5. only then richer custom nodes
 
 ## References And Repo Anchors
 

@@ -13,7 +13,7 @@ Use this page when a mutable array needs an associative range aggregate and you 
 - point assignment or point add plus range sum/min/max -> segment tree
 - tree path aggregate plus updates -> HLD plus segment tree, not a plain array tree
 - first position whose prefix/segment aggregate crosses a threshold and the node summary supports left-first monotone descent -> segment-tree walking
-- true range updates -> lazy segment tree; the repo's main starter is **not** the right drop-in
+- true online range updates -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md); the repo's main point-update starter is **not** the right drop-in
 
 ## Core Invariants
 
@@ -31,11 +31,13 @@ Use this page when a mutable array needs an associative range aggregate and you 
 ## Exact Starters In This Repo
 
 - array range sums with point updates -> [`segment-tree-iterative.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-iterative.cpp)
+- array range add + range sum -> [`segment-tree-lazy-range-add-sum.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-lazy-range-add-sum.cpp)
 - static tree path maximum with point updates -> [`hld-path-max.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - baseline note -> [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 
 ## Reopen Paths
 
 - proof, variants, lazy, and descent queries -> [Segment Tree](../topics/data-structures/segment-tree/README.md)
+- exact lazy route -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - lighter neighboring structures -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - pasteable snippet route -> [Template Library](../template-library.md)

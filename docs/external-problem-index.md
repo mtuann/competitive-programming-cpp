@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `509`
+- Total curated external problems: `513`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -86,6 +86,10 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Heaps And Ordered Sets` | `Classics` | [Traffic Lights](https://cses.fi/problemset/task/1163) | `CSES` | `Medium` | - | Data-Structure-Heavy | Ordered-Set; Intervals; Max-Gap; Neighbors |
 | `Data Structures -> Heaps And Ordered Sets` | `Advanced` | [Sliding Window Cost](https://cses.fi/problemset/task/1077) | `CSES` | `Hard` | - | Data-Structure-Heavy | Median; Absolute-Deviation |
 | `Data Structures -> Heaps And Ordered Sets` | `Advanced` | [Sliding Window Median](https://cses.fi/problemset/task/1076) | `CSES` | `Hard` | - | Data-Structure-Heavy | Median; Sliding-Window |
+| `Data Structures -> Lazy Segment Tree` | `Core` | [HORRIBLE](https://www.spoj.com/problems/HORRIBLE/) | `SPOJ` | `Medium` | Range Queries, Lazy Propagation | Data-Structure-Heavy; Query-Heavy | Range-Add; Range-Sum; Classic |
+| `Data Structures -> Lazy Segment Tree` | `Stretch` | [Polynomial Queries](https://cses.fi/problemset/task/1736) | `CSES` | `Hard` | Range Queries | Data-Structure-Heavy; Math-Heavy | Lazy-Propagation; Range-Update; Arithmetic-Progression |
+| `Data Structures -> Lazy Segment Tree` | `Stretch` | [Range Updates and Sums](https://cses.fi/problemset/task/1735) | `CSES` | `Hard` | Range Queries | Data-Structure-Heavy | Lazy-Propagation; Range-Add; Range-Assign |
+| `Data Structures -> Lazy Segment Tree` | `Advanced` | [Range Affine Range Sum](https://atcoder.jp/contests/practice2/tasks/practice2_k) | `AtCoder` | `Hard` | - | Data-Structure-Heavy; Verification | Lazy-Propagation; Affine-Update; Acl-Style |
 | `Data Structures -> Offline Tricks` | `Core` | [Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct) | `Library Checker` | `Hard` | - | - | Mo's Algorithm; Distinct-Count |
 | `Data Structures -> Offline Tricks` | `Core` | [Point Add Rectangle Sum](https://judge.yosupo.jp/problem/point_add_rectangle_sum) | `Library Checker` | `Very Hard` | - | - | Sweep Line; Fenwick |
 | `Data Structures -> Offline Tricks` | `Classics` | [Distinct Values Queries](https://cses.fi/problemset/task/1734) | `CSES` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Mo's Algorithm; Range-Distinct; Frequency |

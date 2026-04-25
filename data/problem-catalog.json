@@ -329,6 +329,38 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp"
   },
   {
+    "code": "HORRIBLEQUERIES",
+    "title": "Horrible Queries",
+    "full_title": "HORRIBLE - Horrible Queries",
+    "judge": "SPOJ",
+    "judge_url": "https://www.spoj.com/problems/HORRIBLE/",
+    "main_topic": "Data Structures -> Lazy Segment Tree",
+    "secondary_topics": [
+      "Range add",
+      "Range sum",
+      "Lazy propagation"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/lazy-segment-tree",
+    "topic_tags": [
+      "data-structures/lazy-segment-tree"
+    ],
+    "patterns": [
+      "lazy segment tree",
+      "range add range sum",
+      "deferred propagation"
+    ],
+    "tracks": [
+      "SPOJ",
+      "Range queries"
+    ],
+    "note_path": "practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md",
+    "ladder_path": "practice/ladders/data-structures/lazy-segment-tree/README.md",
+    "tutorial_path": "topics/data-structures/lazy-segment-tree/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/lazy-segment-tree/horriblequeries.cpp"
+  },
+  {
     "code": "DISTINCTVALUESQUERIES",
     "title": "Distinct Values Queries",
     "full_title": "Distinct Values Queries",

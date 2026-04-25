@@ -7,6 +7,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [DSU](dsu/README.md)
 - [Fenwick Tree](fenwick-tree/README.md)
 - [Segment Tree](segment-tree/README.md)
+- [Lazy Segment Tree](lazy-segment-tree/README.md)
 - [Sparse Table](sparse-table/README.md)
 - [Heaps And Ordered Sets](heaps-and-ordered-sets/README.md)
 - [Offline Tricks](offline-tricks/README.md)
@@ -25,6 +26,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 
 2. Contest core
 - segment tree
+- lazy segment tree once point-update trees and difference-array contrasts are comfortable
 - sparse table
 - ordered sets and offline query habits
 
@@ -52,6 +54,7 @@ After this section, you should know which standard structure to reach for in com
 ## Solved Examples In This Repo
 
 - [CVP00001 - Ô ăn quan](../../practice/ladders/data-structures/fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
+- [HORRIBLE - Horrible Queries](../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the first exact in-repo route for online `range add + range sum`
 
 ## Go Deeper
 

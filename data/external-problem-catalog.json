@@ -2193,6 +2193,112 @@
     "why_fit": "A strong benchmark for maintaining order statistics with heap-like containers."
   },
   {
+    "slug": "data-structures/lazy-segment-tree",
+    "topic": "Data Structures -> Lazy Segment Tree",
+    "title": "HORRIBLE",
+    "url": "https://www.spoj.com/problems/HORRIBLE/",
+    "source": "SPOJ",
+    "difficulty": "medium",
+    "tracks": [
+      "Range Queries",
+      "Lazy Propagation"
+    ],
+    "tags": [
+      "Range-Add",
+      "Range-Sum",
+      "Classic"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Query-Heavy"
+    ],
+    "prerequisites": [
+      "Segment Tree Basics",
+      "Difference Arrays Contrast",
+      "Range Updates"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest exact range add + range sum benchmark for a first lazy segment tree."
+  },
+  {
+    "slug": "data-structures/lazy-segment-tree",
+    "topic": "Data Structures -> Lazy Segment Tree",
+    "title": "Polynomial Queries",
+    "url": "https://cses.fi/problemset/task/1736",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Range Queries"
+    ],
+    "tags": [
+      "Lazy-Propagation",
+      "Range-Update",
+      "Arithmetic-Progression"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Math-Heavy"
+    ],
+    "prerequisites": [
+      "Lazy Propagation",
+      "Range Arithmetic",
+      "Tag Design"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A memorable benchmark where the update itself carries structure, not just one additive delta."
+  },
+  {
+    "slug": "data-structures/lazy-segment-tree",
+    "topic": "Data Structures -> Lazy Segment Tree",
+    "title": "Range Updates and Sums",
+    "url": "https://cses.fi/problemset/task/1735",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Range Queries"
+    ],
+    "tags": [
+      "Lazy-Propagation",
+      "Range-Add",
+      "Range-Assign"
+    ],
+    "styles": [
+      "Data-Structure-Heavy"
+    ],
+    "prerequisites": [
+      "Lazy Propagation",
+      "Tag Composition",
+      "Range Assign"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The natural next benchmark once plain additive tags are stable and tag precedence becomes the real challenge."
+  },
+  {
+    "slug": "data-structures/lazy-segment-tree",
+    "topic": "Data Structures -> Lazy Segment Tree",
+    "title": "Range Affine Range Sum",
+    "url": "https://atcoder.jp/contests/practice2/tasks/practice2_k",
+    "source": "AtCoder",
+    "difficulty": "hard",
+    "tracks": [],
+    "tags": [
+      "Lazy-Propagation",
+      "Affine-Update",
+      "Acl-Style"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Verification"
+    ],
+    "prerequisites": [
+      "Lazy Propagation",
+      "Modular Arithmetic",
+      "Affine Tags"
+    ],
+    "bucket": "advanced",
+    "why_fit": "The cleanest external verifier once you want to think in generic lazy actions rather than one bespoke additive tag."
+  },
+  {
     "slug": "data-structures/offline-tricks",
     "topic": "Data Structures -> Offline Tricks",
     "title": "Static Range Count Distinct",

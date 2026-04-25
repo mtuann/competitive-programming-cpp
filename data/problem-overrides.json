@@ -150,6 +150,18 @@
       "Graph algorithms"
     ]
   },
+  "HORRIBLEQUERIES": {
+    "topic_tags": [],
+    "patterns": [
+      "lazy segment tree",
+      "range add range sum",
+      "deferred propagation"
+    ],
+    "tracks": [
+      "SPOJ",
+      "Range queries"
+    ]
+  },
   "DISTINCTSUBSTRINGS": {
     "topic_tags": [
       "strings/suffix-array-lcp"

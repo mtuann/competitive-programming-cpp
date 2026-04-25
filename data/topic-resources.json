@@ -526,6 +526,77 @@
       }
     ]
   },
+  "data-structures/lazy-segment-tree": {
+    "title": "Data Structures -> Lazy Segment Tree",
+    "summary": "Deferred-tag segment tree for online range updates and range queries when a full segment can absorb the update in closed form.",
+    "topic_path": "topics/data-structures/lazy-segment-tree/README.md",
+    "ladder_path": "practice/ladders/data-structures/lazy-segment-tree/README.md",
+    "microtopics": [
+      "lazy-propagation",
+      "range-add",
+      "range-sum",
+      "apply",
+      "push",
+      "tag-composition",
+      "range-assign"
+    ],
+    "learning_sources": [
+      {
+        "label": "AtCoder ACL Lazy Segtree",
+        "url": "https://atcoder.github.io/ac-library/production/document_en/lazysegtree.html",
+        "kind": "official docs"
+      },
+      {
+        "label": "cp-algorithms segment tree",
+        "url": "https://cp-algorithms.com/data_structures/segment_tree.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki segment tree",
+        "url": "https://en.oi-wiki.org/ds/seg/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "SPOJ Classical",
+        "url": "https://www.spoj.com/problems/classical/",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      },
+      {
+        "label": "AtCoder Library Practice Contest",
+        "url": "https://atcoder.jp/contests/practice2/tasks?lang=en",
+        "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Lazy Segment Tree hot sheet",
+        "path": "notebook/lazy-segment-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Lazy starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "HORRIBLE note",
+        "path": "practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Segment Tree hot sheet",
+        "path": "notebook/segment-tree-hot-sheet.md",
+        "kind": "quick reference"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",
