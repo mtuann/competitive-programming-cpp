@@ -50,7 +50,7 @@ Default operating loop:
 
 When one slot exposes a weak point, do not guess where to go next:
 
-- weak topic understanding -> the matching tutorial in [topics/](../../topics/README.md), then the matching ladder
+- weak topic understanding -> the matching deep topic page in [topics/](../../topics/README.md), then the matching ladder for that slot
 - weak problem selection -> [Problem Finder](../../docs/problem-finder.md)
 - weak retrieval of invariant/template -> [Notebook](../../notebook/README.md) or [Template Library](../../template-library.md)
 - weak implementation trust or local-testing discipline -> [Build Kit](../../docs/build-kit.md)
@@ -76,11 +76,15 @@ Minimal pack contract:
 | broad contest-core switching | [Contest Core Switching 01](contest-core-switching-01.md) |
 | switching between graph modeling and DP state design | [Graphs And DP Switching 01](graphs-dp-switching-01.md) |
 | switching between string processing, modular reasoning, and counting | [Strings, Math, And Counting 01](strings-math-counting-01.md) |
+| switching across static, dynamic, offline, and greedy data-structure choices | [Data Structures And Offline 01](data-structures-and-offline-01.md) |
+| rooted-tree retrieval keeps drifting between ancestor, DP, and path-query views | [Trees And Queries 01](trees-and-queries-01.md) |
 
 - [Stage 0 Review Pack 01](stage0-review-pack-01.md): first retrieval session after the beginner route
 - [Contest Core Switching 01](contest-core-switching-01.md): five-topic contest-core drill
 - [Graphs And DP Switching 01](graphs-dp-switching-01.md): alternate between graph modeling and state design
 - [Strings, Math, And Counting 01](strings-math-counting-01.md): pattern matching, modular reasoning, and combinatorial counting in one sitting
+- [Data Structures And Offline 01](data-structures-and-offline-01.md): switch across static RMQ, online updates, ordered containers, offline sweeps, and Fenwick-style range aggregation
+- [Trees And Queries 01](trees-and-queries-01.md): move between rooted-tree reasoning, ancestor jumps, rerooting, heavy-light decomposition, and a non-DP tree reduction
 
 ## Official Follow-Up Pools
 
@@ -97,3 +101,14 @@ Research snapshot: reviewed against official pages on `2026-04-24`.
 - every pack should leave the learner with a clear “go back to this topic next” signal
 - one pack should usually fit in one sitting
 - allowed refreshers should be explicit so the drill stays honest and repeatable
+
+## Choose Your Next Pack
+
+| Bottleneck | Time budget | Start with | If it breaks, go back to |
+| --- | --- | --- | --- |
+| first retrieval session after the beginner route | `90-120 min` | [Stage 0 Review Pack 01](stage0-review-pack-01.md) | [Foundations ladders](../ladders/foundations/README.md) or [BFS And DFS ladder](../ladders/graphs/bfs-dfs/README.md) |
+| broad contest-core switching | `2.5-3.5 h` | [Contest Core Switching 01](contest-core-switching-01.md) | the weakest matching ladder for the failed slot, then [Problem Finder](../../docs/problem-finder.md) |
+| graph-modeling vs DP-state reset | `3-4 h` | [Graphs And DP Switching 01](graphs-dp-switching-01.md) | [Graph Modeling](../ladders/graphs/graph-modeling/README.md), [Knapsack Family](../ladders/dp/knapsack-family/README.md), or [Digit DP](../ladders/dp/digit-dp/README.md) |
+| symbolic switching across strings, modular arithmetic, and counting | `2.5-3.5 h` | [Strings, Math, And Counting 01](strings-math-counting-01.md) | [KMP](../ladders/strings/kmp/README.md), [Modular Arithmetic](../ladders/math/modular-arithmetic/README.md), or [Counting Basics](../ladders/combinatorics/counting-basics/README.md) |
+| data-structure choice keeps drifting between static, dynamic, ordered, and offline | `3-4 h` | [Data Structures And Offline 01](data-structures-and-offline-01.md) | [Sparse Table](../ladders/data-structures/sparse-table/README.md), [Heaps And Ordered Sets](../ladders/data-structures/heaps-and-ordered-sets/README.md), [Offline Tricks](../ladders/data-structures/offline-tricks/README.md), or [Segment Tree](../ladders/data-structures/segment-tree/README.md) |
+| rooted-tree queries still feel like separate tricks instead of one family | `3-4 h` | [Trees And Queries 01](trees-and-queries-01.md) | [Trees](../ladders/graphs/trees/README.md), [LCA](../ladders/graphs/lca/README.md), [Tree DP](../ladders/dp/tree-dp/README.md), or [HLD](../ladders/graphs/hld/README.md) |
