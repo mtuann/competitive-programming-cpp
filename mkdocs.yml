@@ -152,6 +152,7 @@ nav:
           - Mobius And Multiplicative Counting: topics/math/mobius-multiplicative/README.md
           - Linear Recurrence / Matrix Exponentiation: topics/math/linear-recurrence/README.md
           - XOR Basis / Linear Basis: topics/math/xor-basis/README.md
+          - Game Theory / Sprague-Grundy: topics/math/game-theory/README.md
           - FFT / NTT: topics/math/fft-ntt/README.md
       - Combinatorics:
           - Overview: topics/combinatorics/README.md
@@ -259,6 +260,7 @@ nav:
               - Mobius And Multiplicative Counting: practice/ladders/math/mobius-multiplicative/README.md
               - Linear Recurrence / Matrix Exponentiation: practice/ladders/math/linear-recurrence/README.md
               - XOR Basis / Linear Basis: practice/ladders/math/xor-basis/README.md
+              - Game Theory / Sprague-Grundy: practice/ladders/math/game-theory/README.md
               - FFT / NTT: practice/ladders/math/fft/README.md
           - Combinatorics:
               - Overview: practice/ladders/combinatorics/README.md
@@ -361,6 +363,7 @@ nav:
       - Digit DP Hot Sheet: notebook/digit-dp-hot-sheet.md
       - Linear Recurrence Hot Sheet: notebook/linear-recurrence-hot-sheet.md
       - XOR Basis Hot Sheet: notebook/xor-basis-hot-sheet.md
+      - Sprague-Grundy Hot Sheet: notebook/sprague-grundy-hot-sheet.md
       - Lucas Theorem Hot Sheet: notebook/lucas-hot-sheet.md
       - Mobius Hot Sheet: notebook/mobius-hot-sheet.md
       - Number Theory Cheatsheet: notebook/number-theory-cheatsheet.md

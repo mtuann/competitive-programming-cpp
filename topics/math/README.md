@@ -11,6 +11,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - [Mobius And Multiplicative Counting](mobius-multiplicative/README.md)
 - [Linear Recurrence / Matrix Exponentiation](linear-recurrence/README.md)
 - [XOR Basis / Linear Basis](xor-basis/README.md)
+- [Game Theory / Sprague-Grundy](game-theory/README.md)
 - [FFT And NTT](fft-ntt/README.md)
 
 ## Entry
@@ -34,6 +35,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - recurrence and matrix-exponentiation style tools
 - fixed-size linear transitions under one modulus
 - xor-basis elimination over `GF(2)` for subset-xor span, representability, and maximum subset xor
+- impartial normal-play game sums through Grundy numbers, `mex`, and xor across independent components
 
 3. Advanced later
 - FFT / NTT
@@ -67,6 +69,7 @@ After this section, you should be able to use modular arithmetic and standard co
 - [Binomial Coefficient (Prime Mod)](../../practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md): switch from one factorial table to digit-by-digit base-`p` binomial reconstruction
 - [Counting Coprime Pairs](../../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md): divisor frequencies plus Mobius cancellation for unordered gcd-1 pair counts
 - [XMAX - XOR Maximization](../../practice/ladders/math/xor-basis/xmax.md): maintain an xor basis instead of searching all subset xor combinations
+- [S-Nim](../../practice/ladders/math/game-theory/snim.md): precompute Grundy values once for one subtraction set, then xor heap nimbers across each position
 - [POST2 - A cộng B version 2](../../practice/ladders/math/fft/post2.md): convolution modeling with FFT
 
 ## Go Deeper

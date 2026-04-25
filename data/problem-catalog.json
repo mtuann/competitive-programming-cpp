@@ -2517,6 +2517,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp"
   },
   {
+    "code": "SNIM",
+    "title": "S-Nim",
+    "full_title": "S-Nim",
+    "judge": "Kattis",
+    "judge_url": "https://open.kattis.com/problems/snim",
+    "main_topic": "Math -> Game Theory / Sprague-Grundy",
+    "secondary_topics": [
+      "Sprague-Grundy",
+      "Subtraction game",
+      "Nim sum"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "math/game-theory",
+    "topic_tags": [
+      "math/game-theory"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/game-theory/snim.md",
+    "ladder_path": "practice/ladders/math/game-theory/README.md",
+    "tutorial_path": "topics/math/game-theory/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/game-theory/snim.cpp"
+  },
+  {
     "code": "COMMONDIVISORS",
     "title": "Common Divisors",
     "full_title": "Common Divisors",

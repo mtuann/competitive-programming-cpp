@@ -58,6 +58,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Greedy -> Prefix Constraints | 3 | 3 | 8 | [Open](greedy/prefix-constraints.md) |
 | Math -> Chinese Remainder And Linear Congruences | 1 | 3 | 2 | [Open](math/chinese-remainder.md) |
 | Math -> FFT And NTT | 2 | 0 | 8 | [Open](math/fft.md) |
+| Math -> Game Theory / Sprague-Grundy | 1 | 4 | 4 | [Open](math/game-theory.md) |
 | Math -> GCD And LCM | 6 | 0 | 11 | [Open](math/gcd-lcm.md) |
 | Math -> Linear Recurrence And Matrix Exponentiation | 1 | 3 | 3 | [Open](math/linear-recurrence.md) |
 | Math -> Lucas Theorem And Large Binomial Mod Prime | 1 | 3 | 2 | [Open](math/lucas-theorem.md) |

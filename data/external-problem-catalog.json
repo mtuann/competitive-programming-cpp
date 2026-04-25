@@ -11263,6 +11263,111 @@
     "why_fit": "A classic FFT-powered string matching problem with a memorable, reusable trick."
   },
   {
+    "slug": "math/game-theory",
+    "topic": "Math -> Game Theory / Sprague-Grundy",
+    "title": "S-Nim",
+    "url": "https://open.kattis.com/problems/snim",
+    "source": "Kattis",
+    "difficulty": "medium",
+    "tracks": [
+      "Sprague-Grundy"
+    ],
+    "tags": [
+      "Subtraction-Game",
+      "Nim-Sum"
+    ],
+    "styles": [
+      "Math",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Impartial Game",
+      "Mex",
+      "XOR"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest exact starter route where one subtraction-game Grundy table is reused across many multi-heap positions."
+  },
+  {
+    "slug": "math/game-theory",
+    "topic": "Math -> Game Theory / Sprague-Grundy",
+    "title": "Nim Game II",
+    "url": "https://cses.fi/problemset/task/1098",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Sprague-Grundy",
+      "Multi-Heap Games"
+    ],
+    "tags": [
+      "Nim-Sum",
+      "Pattern",
+      "Subtraction-Game"
+    ],
+    "styles": [
+      "Math",
+      "Observation"
+    ],
+    "prerequisites": [
+      "XOR"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong follow-up where the SG values collapse to a short pattern, so the contest solution is theorem plus simplification rather than a full table."
+  },
+  {
+    "slug": "math/game-theory",
+    "topic": "Math -> Game Theory / Sprague-Grundy",
+    "title": "Dividing Game",
+    "url": "https://atcoder.jp/contests/abc368/tasks/abc368_f",
+    "source": "AtCoder",
+    "difficulty": "hard",
+    "tracks": [
+      "Number Theory"
+    ],
+    "tags": [
+      "Sprague-Grundy",
+      "Prime-Factor-Count",
+      "Independent-Heaps"
+    ],
+    "styles": [
+      "Math",
+      "Observation"
+    ],
+    "prerequisites": [
+      "Sprague-Grundy",
+      "Prime Factorization"
+    ],
+    "bucket": "challenge",
+    "why_fit": "A challenge compare point where the heap nimber is recognized through arithmetic structure instead of direct DP over all states."
+  },
+  {
+    "slug": "math/game-theory",
+    "topic": "Math -> Game Theory / Sprague-Grundy",
+    "title": "Stick Game",
+    "url": "https://cses.fi/problemset/task/1729",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Single-Heap Games",
+      "Sprague-Grundy"
+    ],
+    "tags": [
+      "Winning-Losing-DP",
+      "Subtraction-Game",
+      "Mex"
+    ],
+    "styles": [
+      "Math",
+      "Dynamic Programming"
+    ],
+    "prerequisites": [
+      "Impartial Game",
+      "State DP"
+    ],
+    "bucket": "bridge",
+    "why_fit": "The simplest compare point where SG precompute starts on one heap before xor across heaps matters."
+  },
+  {
     "slug": "math/gcd-lcm",
     "topic": "Math -> GCD And LCM",
     "title": "Calculate GCD",

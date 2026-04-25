@@ -204,7 +204,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Treap / Implicit Treap`
 - [x] `Eertree / Palindromic Tree`
 - [x] `XOR Basis / Linear Basis`
-- [ ] `Game Theory / Sprague-Grundy`
+- [x] `Game Theory / Sprague-Grundy`
 - [ ] `Probability`
 
 ### Long-Tail Contest-System Ideas
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Game Theory / Sprague-Grundy`
+1. `Probability`
 
 That is now the best follow-up because:
 
-- the clean algebraic xor lane is now already covered
-- the remaining long-tail list needs a principled game / state-value lane more than another data-structure family
-- `Sprague-Grundy` is the clearest next exact route for impartial-game modeling without reopening the contest-system cluster again
+- the main remaining long-tail algorithm list is now much smaller and mostly theory-shaped
+- `Probability` is the clearest remaining canonical lane that still deserves a dedicated topic / retrieval / practice route
+- it adds a different style of modeling than the recently shipped xor, game, and data-structure waves

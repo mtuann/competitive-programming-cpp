@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `101`
+- Total tracked problem notes: `102`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -18,7 +18,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | Graphs | 23 |
 | DP | 10 |
 | Greedy | 3 |
-| Math | 15 |
+| Math | 16 |
 | Combinatorics | 4 |
 | Strings | 10 |
 | Geometry | 8 |
@@ -119,6 +119,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `GENERALCHINESEREMAINDER` | Chinese Remainder Theorem (non-relatively prime moduli) | `Math -> Chinese Remainder And Linear Congruences` | - | - | `medium` | - | [Map](topic-maps/math/chinese-remainder.md) / [Ladder](../practice/ladders/math/chinese-remainder/README.md) / [Tutorial](../topics/math/chinese-remainder/README.md) | [Note](../practice/ladders/math/chinese-remainder/generalchineseremainder.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/chinese-remainder/generalchineseremainder.cpp) |
 | `CONVOLUTION` | Convolution | `Math -> FFT And NTT` | - | - | `medium` | - | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/convolution.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/convolution.cpp) |
 | `POST2` | A cộng B version 2 | `Math -> FFT And NTT` | - | convolution; digit aggregation; big integer addition | `medium` | VN SPOJ, ICPC-style | [Map](topic-maps/math/fft.md) / [Ladder](../practice/ladders/math/fft/README.md) / [Tutorial](../topics/math/fft-ntt/README.md) | [Note](../practice/ladders/math/fft/post2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/fft/post2.cpp) |
+| `SNIM` | S-Nim | `Math -> Game Theory / Sprague-Grundy` | - | - | `medium` | - | [Map](topic-maps/math/game-theory.md) / [Ladder](../practice/ladders/math/game-theory/README.md) / [Tutorial](../topics/math/game-theory/README.md) | [Note](../practice/ladders/math/game-theory/snim.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/game-theory/snim.cpp) |
 | `COMMONDIVISORS` | Common Divisors | `Math -> GCD And LCM` | Math -> Number Theory Basics | divisor frequency scan; count multiples; maximize pair gcd | `medium` | CSES, Mathematics | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/commondivisors.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/commondivisors.cpp) |
 | `CRYPTKEY` | Chìa khóa mã số | `Math -> GCD And LCM` | Math -> Number Theory Basics | gcd-lcm closure; prime-power characterization; constructibility | `hard` | VN SPOJ, OI-style | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/cryptkey.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/cryptkey.cpp) |
 | `EUCLIDPROBLEM` | Euclid Problem | `Math -> GCD And LCM` | - | - | `medium` | - | [Map](topic-maps/math/gcd-lcm.md) / [Ladder](../practice/ladders/math/gcd-lcm/README.md) / [Tutorial](../topics/math/number-theory-basics/README.md) | [Note](../practice/ladders/math/gcd-lcm/euclidproblem.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/gcd-lcm/euclidproblem.cpp) |

@@ -3072,6 +3072,81 @@
       }
     ]
   },
+  "math/game-theory": {
+    "title": "Math -> Game Theory / Sprague-Grundy",
+    "summary": "Impartial normal-play game modeling with mex-defined Grundy values and xor across independent subgames.",
+    "topic_path": "topics/math/game-theory/README.md",
+    "ladder_path": "practice/ladders/math/game-theory/README.md",
+    "microtopics": [
+      "sprague-grundy",
+      "impartial-game",
+      "mex",
+      "normal-play",
+      "nim-sum",
+      "subtraction-game"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Sprague-Grundy theorem",
+        "url": "https://cp-algorithms.com/game_theory/sprague-grundy-nim.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Impartial Game",
+        "url": "https://en.oi-wiki.org/math/game-theory/impartial-game/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://usaco.guide/CPH.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Kattis S-Nim",
+        "url": "https://open.kattis.com/problems/snim",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Stick Game",
+        "url": "https://cses.fi/problemset/task/1729/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Nim Game II",
+        "url": "https://cses.fi/problemset/task/1098/",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC368 F Dividing Game",
+        "url": "https://atcoder.jp/contests/abc368/tasks/abc368_f",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Sprague-Grundy hot sheet",
+        "path": "notebook/sprague-grundy-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "S-Nim",
+        "path": "practice/ladders/math/game-theory/snim.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Sprague-Grundy starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Interval DP",
+        "path": "topics/dp/interval-dp/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "math/number-theory-basics": {
     "title": "Math -> Number Theory Basics",
     "summary": "Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.",

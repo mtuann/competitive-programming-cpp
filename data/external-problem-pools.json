@@ -10384,6 +10384,113 @@
       "why_fit": "A harder compare point where basis dimension over prefix xor values becomes the real invariant instead of direct maximum-subset-xor extraction."
     }
   ],
+  "math/game-theory": [
+    {
+      "title": "S-Nim",
+      "url": "https://open.kattis.com/problems/snim",
+      "source": "Kattis",
+      "difficulty": "medium",
+      "tracks": [
+        "math/game-theory",
+        "Game Theory",
+        "Sprague-Grundy"
+      ],
+      "tags": [
+        "Sprague-Grundy",
+        "Subtraction-Game",
+        "Nim-Sum"
+      ],
+      "bucket": "core",
+      "styles": [
+        "Math",
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Impartial Game",
+        "mex",
+        "Xor"
+      ],
+      "why_fit": "The cleanest exact starter route where one subtraction-game Grundy table is reused across many multi-heap positions."
+    },
+    {
+      "title": "Stick Game",
+      "url": "https://cses.fi/problemset/task/1729",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/game-theory",
+        "Single-Heap Games",
+        "Sprague-Grundy"
+      ],
+      "tags": [
+        "Winning-Losing-DP",
+        "Subtraction-Game",
+        "mex"
+      ],
+      "bucket": "bridge",
+      "styles": [
+        "Math",
+        "Dynamic Programming"
+      ],
+      "prerequisites": [
+        "Impartial Game",
+        "State DP"
+      ],
+      "why_fit": "The simplest compare point where SG precompute starts on one heap before xor across heaps matters."
+    },
+    {
+      "title": "Nim Game II",
+      "url": "https://cses.fi/problemset/task/1098",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "math/game-theory",
+        "Sprague-Grundy",
+        "Multi-Heap Games"
+      ],
+      "tags": [
+        "Nim-Sum",
+        "Pattern",
+        "Subtraction-Game"
+      ],
+      "bucket": "stretch",
+      "styles": [
+        "Math",
+        "Observation"
+      ],
+      "prerequisites": [
+        "Sprague-Grundy",
+        "Xor"
+      ],
+      "why_fit": "A strong follow-up where the SG values collapse to a short pattern, so the contest solution is theorem plus simplification rather than a full table."
+    },
+    {
+      "title": "Dividing Game",
+      "url": "https://atcoder.jp/contests/abc368/tasks/abc368_f",
+      "source": "AtCoder",
+      "difficulty": "hard",
+      "tracks": [
+        "math/game-theory",
+        "Game Theory",
+        "Number Theory"
+      ],
+      "tags": [
+        "Sprague-Grundy",
+        "Prime-Factor-Count",
+        "Independent-Heaps"
+      ],
+      "bucket": "challenge",
+      "styles": [
+        "Math",
+        "Observation"
+      ],
+      "prerequisites": [
+        "Sprague-Grundy",
+        "Prime Factorization"
+      ],
+      "why_fit": "A challenge compare point where the heap nimber is recognized through arithmetic structure instead of direct DP over all states."
+    }
+  ],
   "combinatorics/counting-basics": [
     {
       "title": "Choose Cards 1",

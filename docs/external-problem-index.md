@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `566`
+- Total curated external problems: `570`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -403,6 +403,10 @@ This page lists curated external problems imported into the topic-map system.
 | `Math -> GCD And LCM` | `Practice` | [Common Divisors](https://cses.fi/problemset/task/1081) | `CSES` | `Medium` | Frequency-Ideas, Divisibility | Number Theory | GCD; Divisor Frequency; Maximum GCD; Frequency Over Divisors; Array GCD |
 | `Math -> GCD And LCM` | `Practice` | [LCM on Whiteboard](https://atcoder.jp/contests/abc259/tasks/abc259_e) | `AtCoder` | `Medium` | Prime-Factorization | Number Theory; Implementation | LCM; Prime Exponents; Set Cover |
 | `Math -> GCD And LCM` | `Practice` | [Large LCM](https://atcoder.jp/contests/typical90/tasks/typical90_al) | `AtCoder` | `Medium` | Overflow-Safety | Implementation; Math | LCM; Overflow; Large Integers |
+| `Math -> Game Theory / Sprague-Grundy` | `Core` | [S-Nim](https://open.kattis.com/problems/snim) | `Kattis` | `Medium` | Sprague-Grundy | Math; Implementation | Subtraction-Game; Nim-Sum |
+| `Math -> Game Theory / Sprague-Grundy` | `Stretch` | [Nim Game II](https://cses.fi/problemset/task/1098) | `CSES` | `Medium` | Sprague-Grundy, Multi-Heap Games | Math; Observation | Nim-Sum; Pattern; Subtraction-Game |
+| `Math -> Game Theory / Sprague-Grundy` | `Challenge` | [Dividing Game](https://atcoder.jp/contests/abc368/tasks/abc368_f) | `AtCoder` | `Hard` | Number Theory | Math; Observation | Sprague-Grundy; Prime-Factor-Count; Independent-Heaps |
+| `Math -> Game Theory / Sprague-Grundy` | `Bridge` | [Stick Game](https://cses.fi/problemset/task/1729) | `CSES` | `Medium` | Single-Heap Games, Sprague-Grundy | Math; Dynamic Programming | Winning-Losing-DP; Subtraction-Game; Mex |
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Fibonacci Numbers](https://cses.fi/problemset/task/1722) | `CSES` | `Medium` | Matrix/Recurrence | Math; Implementation | Matrix Exponentiation; Fibonacci; Fast Doubling Compare |
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Core` | [Throwing Dice](https://cses.fi/problemset/task/1096) | `CSES` | `Medium` | DP/Recurrences | Dynamic Programming; Math | Matrix Exponentiation; Companion Matrix; Mod Arithmetic |
 | `Math -> Linear Recurrence And Matrix Exponentiation` | `Stretch` | [Graph Paths I](https://cses.fi/problemset/task/1723) | `CSES` | `Hard` | Graphs/Walk Counting | Graphs; Math | Matrix Exponentiation; Adjacency Matrix; Walk Counting |
