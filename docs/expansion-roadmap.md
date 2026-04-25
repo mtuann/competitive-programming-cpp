@@ -212,7 +212,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `interactive protocol clinic` with richer local-testing patterns
 - [x] `many-valid-answers / validator-first` workflow page
 - [x] `precision / formatting robustness` clinic for Google-style tasks
-- [ ] `heuristic / marathon intro` page if the repo opens a heuristic lane
+- [x] `heuristic / marathon intro` page if the repo opens a heuristic lane
 
 ## Definition Of Done For One Expansion Wave
 
@@ -229,10 +229,11 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `heuristic / marathon intro`
+1. `quarterly freshness audit / reprioritization pass`
 
 That is now the best follow-up because:
 
 - the remaining explicit backlog is now mostly contest-system reinforcement rather than one more canonical algorithm lane
-- the clearest remaining contest-source reinforcement is now a `heuristic / marathon intro` lane if the repo wants to open that style at all
+- the explicit contest-system backlog in this roadmap is now exhausted
+- the healthiest next move is a freshness-driven reprioritization pass before opening any new expansion wave
 - it strengthens the playbook/workflow layer after a long stretch of algorithm-lane expansions
