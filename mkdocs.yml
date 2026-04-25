@@ -263,6 +263,7 @@ nav:
           - Overview: practice/mixed-rounds/README.md
           - Stage 0 Review Pack 01: practice/mixed-rounds/stage0-review-pack-01.md
           - Contest Core Switching 01: practice/mixed-rounds/contest-core-switching-01.md
+          - ICPC Breadth And Implementation 01: practice/mixed-rounds/icpc-breadth-and-implementation-01.md
           - Graphs And DP Switching 01: practice/mixed-rounds/graphs-dp-switching-01.md
           - Strings, Math, And Counting 01: practice/mixed-rounds/strings-math-counting-01.md
           - Data Structures And Offline 01: practice/mixed-rounds/data-structures-and-offline-01.md
@@ -270,7 +271,10 @@ nav:
       - Contest Playbooks:
           - Overview: practice/contest-playbooks/README.md
           - ICPC: practice/contest-playbooks/icpc.md
+          - ICPC Modeling Under Pressure 01: practice/contest-playbooks/icpc-modeling-under-pressure-01.md
           - IOI / OI: practice/contest-playbooks/ioi-oi.md
+          - IOI Subtask-First Worksheet: practice/contest-playbooks/ioi-subtask-first-worksheet.md
+          - IOI Checkpoint / Score-Path Drill 01: practice/contest-playbooks/ioi-checkpoint-score-path-drill-01.md
           - USACO: practice/contest-playbooks/usaco.md
   - Build Kit:
       - Build Kit Overview: docs/build-kit.md

@@ -53,7 +53,7 @@ It is:
 | --- | --- | --- |
 | Topics | [Shortest Paths](../../topics/graphs/shortest-paths/README.md), [BFS And DFS](../../topics/graphs/bfs-dfs/README.md), [Trees](../../topics/graphs/trees/README.md), [Flow](../../topics/graphs/flow/README.md), [Matching](../../topics/graphs/matching/README.md) | ICPC breadth is mostly graph/data-structure retrieval under pressure |
 | Ladders | [Contest Engineering ladder](../ladders/advanced/contest-engineering/README.md), [Graphs ladders](../ladders/graphs/README.md), [Data Structures ladders](../ladders/data-structures/README.md) | build repeatable solve order and cleaner implementation habits |
-| Mixed rounds | [Contest Core Switching 01](../mixed-rounds/contest-core-switching-01.md), [Graphs And DP Switching 01](../mixed-rounds/graphs-dp-switching-01.md) | closest current repo drills to ICPC-style switching |
+| Mixed rounds | [Contest Core Switching 01](../mixed-rounds/contest-core-switching-01.md), [ICPC Breadth And Implementation 01](../mixed-rounds/icpc-breadth-and-implementation-01.md), [Graphs And DP Switching 01](../mixed-rounds/graphs-dp-switching-01.md) | closest current repo drills to ICPC-style switching, banker ordering, and one-machine execution pressure |
 | Anchor notes | [Message Route](../ladders/graphs/bfs-dfs/messageroute.md), [Road Reparation](../ladders/graphs/mst/roadreparation.md), [Police Chase](../ladders/graphs/flow/policechase.md), [QBFLOWER](../ladders/graphs/matching/qbflower.md) | good recognition anchors for common contest-core families |
 | Notebook | [Contest Checklist](../../notebook/contest-checklist.md), [Graph cheatsheet](../../notebook/graph-cheatsheet.md), [Data structures cheatsheet](../../notebook/data-structures-cheatsheet.md) | retrieval layer for the first 10-20 minutes of a bug or modeling stall |
 | Workflow | [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) | best recovery loop when one attempted solve is close but unstable |
@@ -88,6 +88,14 @@ Default checklist:
 5. do one clean banker warm-up, not a hard puzzle
 
 The goal before ICPC is not to feel clever. It is to remove avoidable friction.
+
+## Exact Drill Doors
+
+- Start here: [ICPC Modeling Under Pressure 01](icpc-modeling-under-pressure-01.md)
+- Then reinforce with: [ICPC Triage Drill 01](#icpc-triage-drill-01) and [Handoff Drill](#handoff-drill)
+- Escalate to: [ICPC Breadth And Implementation 01](../mixed-rounds/icpc-breadth-and-implementation-01.md)
+
+Treat the modeling drill as the canonical first executable session. The triage and handoff drills are supporting micro-drills inside this playbook, and the mixed round is the broader follow-up session.
 
 ## Opening Triage Board
 
@@ -208,7 +216,7 @@ If a post-contest note ends with five vague lessons, it is too weak.
 
 | Failure | Reopen |
 | --- | --- |
-| mis-triage or weak first `20` minutes | [Mixed Rounds](../mixed-rounds/README.md) and this page's triage drill |
+| mis-triage or weak first `20` minutes | [ICPC Modeling Under Pressure 01](icpc-modeling-under-pressure-01.md), [ICPC Breadth And Implementation 01](../mixed-rounds/icpc-breadth-and-implementation-01.md), and this page's triage drill |
 | bad handoff or unclear ownership | [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 | close solve died in debugging | [Build Kit](../../docs/build-kit.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
 | standard graph/data-structure family was not recognized | [Ladders](../ladders/README.md) or the missed family's corresponding graph/data-structure ladder |

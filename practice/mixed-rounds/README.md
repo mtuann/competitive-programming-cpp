@@ -74,6 +74,7 @@ Minimal pack contract:
 | --- | --- |
 | first retrieval session after the beginner route | [Stage 0 Review Pack 01](stage0-review-pack-01.md) |
 | broad contest-core switching | [Contest Core Switching 01](contest-core-switching-01.md) |
+| one-machine-style banker prioritization plus implementation stability | [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md) |
 | switching between graph modeling and DP state design | [Graphs And DP Switching 01](graphs-dp-switching-01.md) |
 | switching between string processing, modular reasoning, and counting | [Strings, Math, And Counting 01](strings-math-counting-01.md) |
 | switching across static, dynamic, offline, and greedy data-structure choices | [Data Structures And Offline 01](data-structures-and-offline-01.md) |
@@ -81,6 +82,7 @@ Minimal pack contract:
 
 - [Stage 0 Review Pack 01](stage0-review-pack-01.md): first retrieval session after the beginner route
 - [Contest Core Switching 01](contest-core-switching-01.md): five-topic contest-core drill
+- [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md): banker-first ICPC-style breadth drill with one late implementation-heavy slot
 - [Graphs And DP Switching 01](graphs-dp-switching-01.md): alternate between graph modeling and state design
 - [Strings, Math, And Counting 01](strings-math-counting-01.md): pattern matching, modular reasoning, and combinatorial counting in one sitting
 - [Data Structures And Offline 01](data-structures-and-offline-01.md): switch across static RMQ, online updates, ordered containers, offline sweeps, and Fenwick-style range aggregation
@@ -108,6 +110,7 @@ Research snapshot: reviewed against official pages on `2026-04-24`.
 | --- | --- | --- | --- |
 | first retrieval session after the beginner route | `90-120 min` | [Stage 0 Review Pack 01](stage0-review-pack-01.md) | [Foundations ladders](../ladders/foundations/README.md) or [BFS And DFS ladder](../ladders/graphs/bfs-dfs/README.md) |
 | broad contest-core switching | `2.5-3.5 h` | [Contest Core Switching 01](contest-core-switching-01.md) | the weakest corresponding ladder for the failed slot, then [Problem Finder](../../docs/problem-finder.md) |
+| banker-first ICPC breadth plus implementation reliability | `3-4 h` | [ICPC Breadth And Implementation 01](icpc-breadth-and-implementation-01.md) | [ICPC Playbook](../contest-playbooks/icpc.md), [Foundations ladders](../ladders/foundations/README.md), [Graphs ladders](../ladders/graphs/README.md), or [Segment Tree ladder](../ladders/data-structures/segment-tree/README.md) |
 | graph-modeling vs DP-state reset | `3-4 h` | [Graphs And DP Switching 01](graphs-dp-switching-01.md) | [Graph Modeling](../ladders/graphs/graph-modeling/README.md), [Knapsack Family](../ladders/dp/knapsack-family/README.md), or [Digit DP](../ladders/dp/digit-dp/README.md) |
 | symbolic switching across strings, modular arithmetic, and counting | `2.5-3.5 h` | [Strings, Math, And Counting 01](strings-math-counting-01.md) | [KMP](../ladders/strings/kmp/README.md), [Modular Arithmetic](../ladders/math/modular-arithmetic/README.md), or [Counting Basics](../ladders/combinatorics/counting-basics/README.md) |
 | data-structure choice keeps drifting between static, dynamic, ordered, and offline | `3-4 h` | [Data Structures And Offline 01](data-structures-and-offline-01.md) | [Sparse Table](../ladders/data-structures/sparse-table/README.md), [Heaps And Ordered Sets](../ladders/data-structures/heaps-and-ordered-sets/README.md), [Offline Tricks](../ladders/data-structures/offline-tricks/README.md), or [Segment Tree](../ladders/data-structures/segment-tree/README.md) |

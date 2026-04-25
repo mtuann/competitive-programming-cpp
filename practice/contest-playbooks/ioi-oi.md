@@ -81,23 +81,20 @@ Default checklist:
 4. make sure stress-test or brute-force scaffolding feels automatic
 5. warm up with one modeling problem, not only a syntax problem
 
-## Subtask Planning Sheet
+## Exact Drill Doors
 
-Use one worksheet per problem before you commit hard to the full route.
+- Start here: [IOI Checkpoint / Score-Path Drill 01](ioi-checkpoint-score-path-drill-01.md)
+- Pair it with: [IOI Subtask-First Worksheet](ioi-subtask-first-worksheet.md)
 
-| Subtask | points | smallest valid algorithm | proof status | validation plan | submit checkpoint |
-| --- | --- | --- | --- | --- | --- |
-| `1` |  |  | `idea / proved / coded` |  |  |
-| `2` |  |  | `idea / proved / coded` |  |  |
-| `3` |  |  | `idea / proved / coded` |  |  |
+Treat the drill as the executable session and the worksheet as the artifact it runs on.
 
-This is the most direct way to stop “full solution tunnel vision” from swallowing safe points.
+Use these as the executable layer. Keep this playbook as the router and failure map.
 
 ## During A Contest
 
-### Subtask Worksheet
+### Worksheet Route
 
-Use the `Subtask Planning Sheet` above as the live worksheet during the contest. Fill it before you commit hard to the full route, then update only the columns that changed:
+Use [IOI Subtask-First Worksheet](ioi-subtask-first-worksheet.md) as the live worksheet during the contest. Fill it before you commit hard to the full route, then update only the columns that changed:
 
 - `proof status`
 - `validation plan`
@@ -117,15 +114,9 @@ Submit when you have:
 
 Do **not** overwrite safe points too early with an unproven full attempt.
 
-## Subtask-First Drill 01
+## Checkpoint / Score-Path Drill
 
-Run this on one official task or one olympiad-style note with visible easier routes.
-
-1. Fill the `Subtask Planning Sheet` before writing the full algorithm.
-2. Choose one safe score path and state the smallest valid algorithm for it.
-3. Code and validate that score path first.
-4. Only then decide whether the next step is optimization, a proof upgrade, or one more stress pass.
-5. After the session, log which points were safe, which were speculative, and where the first false assumption appeared.
+Run [IOI Checkpoint / Score-Path Drill 01](ioi-checkpoint-score-path-drill-01.md) when you want the timed protocol instead of only the worksheet.
 
 ### Proof Discipline
 
@@ -197,7 +188,7 @@ The goal is not only to know the editorial. It is to know where your own proof o
 | Failure | Reopen |
 | --- | --- |
 | unsafe proof or hand-wavy optimization | [Reasoning](../../topics/foundations/reasoning/README.md) |
-| missed safe partial score | this page's `Subtask Planning Sheet` and `Subtask-First Drill 01` |
+| missed safe partial score | [IOI Subtask-First Worksheet](ioi-subtask-first-worksheet.md) and [IOI Checkpoint / Score-Path Drill 01](ioi-checkpoint-score-path-drill-01.md) |
 | grader or validation issue | [Local Judge Workflow](../../notebook/local-judge-workflow.md) and [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 | topic depth still too weak | the missed family's corresponding ladder or deep topic page in `topics/` |
 

@@ -99,12 +99,12 @@ These are the next waves with the highest ROI and the cleanest fit with the curr
 
 ### Phase 2. Contest-System Drill Wave A
 
-- [ ] add an `IOI subtask-first worksheet`
-- [ ] add an `IOI checkpoint / score-path drill`
-- [ ] add an `ICPC modeling-under-pressure drill`
-- [ ] add one `ICPC breadth + implementation` mixed round
-- [ ] update `practice/contest-playbooks/ioi-oi.md` with exact drill doors
-- [ ] update `practice/contest-playbooks/icpc.md` with exact drill doors
+- [x] add an `IOI subtask-first worksheet`
+- [x] add an `IOI checkpoint / score-path drill`
+- [x] add an `ICPC modeling-under-pressure drill`
+- [x] add one `ICPC breadth + implementation` mixed round
+- [x] update `practice/contest-playbooks/ioi-oi.md` with exact drill doors
+- [x] update `practice/contest-playbooks/icpc.md` with exact drill doors
 
 ### Phase 3. Repo-Fit Data Structure Wave A
 
@@ -215,8 +215,8 @@ A wave is only considered shipped when:
 
 The cleanest next task after this file lands is:
 
-1. `Contest-System Drill Wave A`
-2. `Repo-Fit Data Structure Wave A`
+1. `Repo-Fit Data Structure Wave A`
+2. `Codeforces Operating Layer`
 
 That pair has the best balance of:
 
