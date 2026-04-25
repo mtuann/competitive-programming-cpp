@@ -61,7 +61,7 @@ The key mentality shift is:
 | Mixed rounds | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md), [Contest Core Switching 01](../mixed-rounds/contest-core-switching-01.md) | best current repo drills for short-round shipping and banker-first pacing |
 | Anchor notes | [Build the Permutation](../ladders/advanced/constructive/buildthepermutation.md), [Prefix Sum Addicts](../ladders/greedy/prefix-constraints/prefixsumaddicts.md), [Giant Pizza](../ladders/graphs/two-sat/giantpizza.md) | compact, high-signal notes that mirror common CF transforms: construction, feasibility, late-slot graph modeling |
 | Notebook | [Contest Checklist](../../notebook/contest-checklist.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md), [Foundations cheatsheet](../../notebook/foundations-cheatsheet.md) | best retrieval layer when the issue is not theory depth but round execution discipline |
-| Workflow | [Stress Testing Workflow](../../notebook/stress-testing-workflow.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) | the right loop depends on whether the risk is raw correctness, validator-heavy output, or hack sensitivity |
+| Workflow | [Stress Testing Workflow](../../notebook/stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) | the right loop depends on whether the risk is raw correctness, predicate-checked output, interactive protocol, or hack sensitivity |
 | Templates | [Template Library](../../template-library.md), `contest-main.cpp`, `fast-io.cpp` | the Codeforces default should still be a small, trusted kit rather than a giant contest blob |
 
 ## Training Rhythm
@@ -174,7 +174,7 @@ Instead:
 
 This is why the repo pairs Codeforces constructive work with:
 
-- [Local Judge Workflow](../../notebook/local-judge-workflow.md)
+- [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md)
 - [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md)
 
 ### Interactive Rule
@@ -230,7 +230,7 @@ If your post-round review ends with “I should get stronger,” it is too vague
 | Failure | Reopen |
 | --- | --- |
 | got hacked or fear rejudge on “accepted-looking” code | [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) |
-| constructive or many-answer task kept leaking | [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md), [Constructive](../../topics/advanced/constructive/README.md), and [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| constructive or many-answer task kept leaking | [Codeforces Constructive / Validator-First Clinic 01](codeforces-constructive-validator-first-clinic-01.md), [Constructive](../../topics/advanced/constructive/README.md), and [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
 | medium implementation slots keep leaking | [Codeforces Implementation Clinic 01](codeforces-implementation-clinic-01.md) and [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 | can solve after the round but not inside it | [Codeforces Short Round 01](../mixed-rounds/codeforces-short-round-01.md) and [Contest Engineering](../../topics/advanced/contest-engineering/README.md) |
 | the missed family is genuinely weak | the corresponding ladder in [Ladders](../ladders/README.md), then come back through the worksheet |

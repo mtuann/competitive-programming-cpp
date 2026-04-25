@@ -68,8 +68,8 @@ These are not full track playbooks yet. They are source-family clinics mined fro
 
 | Source lane | Start with | Use when | If it breaks, reopen |
 | --- | --- | --- | --- |
-| `Code Jam / Kick Start` | [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md) | you keep seeing the idea only after the official analysis because the `small -> large` bridge never became explicit | [Reasoning](../../topics/foundations/reasoning/README.md), [Binary Search](../../topics/foundations/patterns/binary-search/README.md), or [Digit DP](../../topics/dp/digit-dp/README.md) |
-| `Distributed Code Jam-style decomposition` | [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md) | you want to practice `split -> summarize -> merge` without opening a full distributed platform first | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Subtree Queries](../../topics/graphs/euler-tour-subtree/README.md), or [Reasoning](../../topics/foundations/reasoning/README.md) |
+| `Google archive lane (Code Jam / Kick Start)` | [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md) | you keep seeing the idea only after the official analysis because the `small -> large` bridge never became explicit | [Reasoning](../../topics/foundations/reasoning/README.md), [Binary Search](../../topics/foundations/patterns/binary-search/README.md), or [Digit DP](../../topics/dp/digit-dp/README.md) |
+| `Distributed Code Jam archive-style decomposition` | [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md) | you want to practice `split -> summarize -> merge` without opening a full distributed platform first | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Subtree Queries](../../topics/graphs/euler-tour-subtree/README.md), or [Reasoning](../../topics/foundations/reasoning/README.md) |
 | `Topcoder one hard problem` | [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md) | one hard slot keeps eating the whole session even when the topic is mostly known | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md), [Reasoning](../../topics/foundations/reasoning/README.md), or the corresponding advanced ladder |
 | `Topcoder weird statement surfaces` | [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md) | the wrapper looks exotic enough that you never stabilize the object model | [Graph Modeling](../../topics/graphs/graph-modeling/README.md), [Constructive](../../topics/advanced/constructive/README.md), or [Counting Geometry](../../topics/geometry/counting-geometry/README.md) |
 
@@ -85,7 +85,7 @@ Every mature playbook should route through the same repo layers:
 | `practice/mixed-rounds/` | retrieval and switching after topics are known | [Mixed Rounds](../mixed-rounds/README.md) |
 | `notebook/` | short contest-time recall | [Notebook](../../notebook/README.md), [Contest Checklist](../../notebook/contest-checklist.md) |
 | `templates/` | reusable code you can retrieve on demand | [Template Library](../../template-library.md) |
-| `workflow pages` | exact operational loops | [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
+| `workflow pages` | exact operational loops | [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md), [Local Judge Workflow](../../notebook/local-judge-workflow.md), [Stress Testing Workflow](../../notebook/stress-testing-workflow.md) |
 
 ## Open This Next
 
@@ -131,8 +131,8 @@ Canonical section set:
 - [Codeforces](codeforces.md): short-round operating manual for shipping, anti-hack, validator-first construction, and upsolve discipline
 - [IOI / OI](ioi-oi.md): proof-heavy partial-scoring workflow
 - [ICPC](icpc.md): team contest operating manual for breadth, triage, and one-machine execution
-- [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md): `small -> large` promotion and analysis-first solving
-- [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md): local summary and merge-contract thinking
+- [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md): archive-based `small -> large` promotion and analysis-first solving
+- [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md): archive-based local summary and merge-contract thinking
 - [Topcoder One-Hard-Problem Clinic 01](topcoder-one-hard-problem-clinic-01.md): one-hard-slot proof and system-test discipline
 - [Topcoder Weird-Task Clinic 01](topcoder-weird-task-clinic-01.md): strange statement surfaces turned into canonical models
 

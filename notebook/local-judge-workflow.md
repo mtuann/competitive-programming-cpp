@@ -3,7 +3,7 @@
 This page is for the class of problems where "run the binary on stdin" is not enough.
 
 - Trigger: interactive tasks, simulator-style judges, or hidden-state protocol tasks
-- Inputs needed: a solution binary plus either fixed tests, a validator, or a simulator
+- Inputs needed: a solution binary plus either fixed tests, a simulator, or a saved transcript / seed
 - Output artifact: one reproducible failing transcript or enough evidence that the local harness is trustworthy
 - Stop condition: one clean harness loop that you can rerun without guessing
 - Pair with: [Foundations cheatsheet](foundations-cheatsheet.md), [Stress testing workflow](stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md)

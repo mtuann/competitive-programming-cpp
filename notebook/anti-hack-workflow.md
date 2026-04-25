@@ -12,7 +12,7 @@ to:
 - Inputs needed: one candidate solution plus either a vulnerability table, a checker, a validator, or a tiny brute-force model
 - Output artifact: one concrete counterexample family, one failing test, or one signed-off vulnerability table
 - Stop condition: the first unexplained vulnerability is localized, or all main vulnerability families have been checked honestly
-- Pair with: [Stress testing workflow](stress-testing-workflow.md), [Local judge workflow](local-judge-workflow.md), [Contest checklist](contest-checklist.md)
+- Pair with: [Stress testing workflow](stress-testing-workflow.md), [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md), [Local judge workflow](local-judge-workflow.md), [Contest checklist](contest-checklist.md)
 
 Use it when:
 
@@ -32,8 +32,8 @@ Do **not** open this page first if:
 Choose this page only if you already mostly trust the main idea and now need to attack its assumptions.
 
 - ordinary unique-answer batch task, trust is low -> [Stress testing workflow](stress-testing-workflow.md)
-- constructive / many-valid-answers / open-hack fear -> this page
-- judge, protocol, or validator-heavy task -> [Local judge workflow](local-judge-workflow.md)
+- constructive / many-valid-answers / open-hack fear -> this page, then pair with [Special Judge / Output Protocol Workflow](special-judge-output-protocol-workflow.md) if legality is predicate-checked
+- interactive protocol or simulator-heavy task -> [Local judge workflow](local-judge-workflow.md)
 
 ## Core Goal
 

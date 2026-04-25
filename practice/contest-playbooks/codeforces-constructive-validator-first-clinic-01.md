@@ -84,7 +84,6 @@ Do **not** generalize first and validate later.
 ## Allowed Refreshers
 
 - [Constructive](../../topics/advanced/constructive/README.md)
-- [Local Judge Workflow](../../notebook/local-judge-workflow.md)
 - [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md)
 - [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md)
 - [Stress Testing Workflow](../../notebook/stress-testing-workflow.md)

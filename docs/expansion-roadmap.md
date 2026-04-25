@@ -68,7 +68,7 @@ These should be treated as content-source families, not just random inspiration.
 - `ICPC`: breadth, modeling under pressure, team triage, communication, implementation-heavy mixed sets
 - `Codeforces`: short-round shipping, anti-hack, validator-first constructive work, implementation clinics, interactive discipline
 - `Topcoder / TCO`: one-hard-problem culture, weird-task clinics, marathon / heuristic bridge
-- `Google Code Jam / Kick Start / Distributed Code Jam`: small-vs-large escalation, analysis-first solving, custom judge discipline, distributed decomposition
+- `Google archive lane (Code Jam / Kick Start / Distributed Code Jam)`: small-vs-large escalation, analysis-first solving, custom judge discipline, distributed decomposition
 - `Petrozavodsk / OpenCup / Andrew Stankevich`: advanced mixed modeling, hard implementation, camp-style drills
 
 ## Now
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Contest-Source Lane B`
+1. `Phase 0. Freshness Backbone`
 
 That is now the best follow-up because:
 
-- the math roadmap wave has landed cleanly
-- the repo already has the right note/template/retrieval density for another contest-systems pass
-- it adds new practice behavior without opening another large algorithm family immediately
+- the contest-source lanes are now broad enough that an audit spine should exist before more source-sensitive growth
+- the repo has enough fresh external-source coverage that quarterly review rules will pay back immediately
+- the next highest-leverage improvement is process quality, not one more new family

@@ -70,7 +70,7 @@ If you cannot name these branches, your implementation story is still too fuzzy.
 ### Step 4: Run The Right Safety Loop
 
 - ordinary batch logic suspicion -> [Stress Testing Workflow](../../notebook/stress-testing-workflow.md)
-- validator / many-answer suspicion -> [Local Judge Workflow](../../notebook/local-judge-workflow.md)
+- validator / many-answer suspicion -> [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md)
 - “looks accepted but feels fragile” suspicion -> [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md)
 
 ### Step 5: Patch One Leak Only
@@ -103,7 +103,7 @@ Instead:
 | --- | --- |
 | the topic itself is still unstable | the corresponding deep topic page and ladder |
 | the code feels fragile under adversarial tests | [Anti-Hack Workflow](../../notebook/anti-hack-workflow.md) |
-| the solution needs a validator rather than plain diffs | [Local Judge Workflow](../../notebook/local-judge-workflow.md) |
+| the solution needs a predicate checker rather than plain diffs | [Special Judge / Output Protocol Workflow](../../notebook/special-judge-output-protocol-workflow.md) |
 | the main issue is contest pacing, not code shape | [Codeforces Playbook](codeforces.md) |
 
 ## After This Clinic
