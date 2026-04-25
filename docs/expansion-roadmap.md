@@ -138,10 +138,10 @@ These should follow after the `Now` block ships cleanly.
 - [x] add `notebook/centroid-hot-sheet.md`
 - [x] add `practice/ladders/graphs/centroid-decomposition/README.md`
 - [x] add one flagship centroid note plus solution
-- [ ] choose one of the following as the paired second topic:
-  - [ ] `topics/data-structures/dsu-rollback/README.md`
+- [x] choose one of the following as the paired second topic:
+  - [x] `topics/data-structures/dsu-rollback/README.md`
   - [ ] `topics/data-structures/persistent-data-structures/README.md`
-- [ ] add the matching template, hot sheet, ladder, and flagship note for the paired second topic
+- [x] add the matching template, hot sheet, ladder, and flagship note for the paired second topic
 
 ### Phase 6. Strings / DP Modern Wave
 

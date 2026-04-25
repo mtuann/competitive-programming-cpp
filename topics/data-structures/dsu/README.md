@@ -554,6 +554,7 @@ Repo anchors:
 
 - practice ladder: [DSU ladder](../../../practice/ladders/data-structures/dsu/README.md)
 - advanced note: [C11XU](../../../practice/ladders/data-structures/dsu/c11xu.md)
+- rollback compare lane: [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md)
 - cross-topic note: [Road Reparation](../../../practice/ladders/graphs/mst/roadreparation.md)
 - starter template: [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp)
 - notebook refresher: [Data structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
@@ -562,4 +563,5 @@ Repo anchors:
 
 - [Minimum Spanning Tree](../../graphs/mst/README.md)
 - [BFS And DFS](../../graphs/bfs-dfs/README.md)
+- [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md)
 - [Fenwick Tree](../fenwick-tree/README.md)

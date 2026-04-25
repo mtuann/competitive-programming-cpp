@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `522`
+- Total curated external problems: `524`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -73,6 +73,8 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> DSU` | `Core` | [Road Construction](https://cses.fi/problemset/task/1676) | `CSES` | `Easy` | - | Data-Structure-Heavy | Dynamic-Connectivity; Largest-Component; Component-Size |
 | `Data Structures -> DSU` | `Classics` | [Road Reparation](https://cses.fi/problemset/task/1675) | `CSES` | `Medium` | - | Greedy-Heavy; Data-Structure-Heavy | Minimum-Spanning-Tree; Kruskal; MST |
 | `Data Structures -> DSU` | `Classics` | [Union Find](https://judge.yosupo.jp/problem/unionfind) | `Library Checker` | `Medium` | - | Data-Structure-Heavy | Connectivity |
+| `Data Structures -> DSU Rollback / Offline Dynamic Connectivity` | `Core` | [Dynamic Connectivity](https://cses.fi/problemset/task/2133) | `CSES` | `Hard` | Advanced Techniques, Dynamic Connectivity | Offline; Data-Structure-Heavy; Timeline Modeling | Rollback-DSU; Segment-Tree-Over-Time; Component-Count |
+| `Data Structures -> DSU Rollback / Offline Dynamic Connectivity` | `Stretch` | [Dynamic Graph Vertex Add Component Sum](https://judge.yosupo.jp/problem/dynamic_graph_vertex_add_component_sum) | `Library Checker` | `Hard` | Dynamic Connectivity | Offline; Verification; Data-Structure-Heavy | Rollback-DSU; Segment-Tree-Over-Time; Component Metadata |
 | `Data Structures -> Fenwick Tree` | `Core` | [Dynamic Range Sum Queries](https://cses.fi/problemset/task/1648) | `CSES` | `Medium` | - | Data-Structure-Heavy; Query-Heavy | Point-Update; Range-Sum |
 | `Data Structures -> Fenwick Tree` | `Core` | [Range Update Queries](https://cses.fi/problemset/task/1651) | `CSES` | `Medium` | - | Data-Structure-Heavy | Difference Array; Range-Update; Range-Add |
 | `Data Structures -> Fenwick Tree` | `Classics` | [Point Add Range Sum](https://judge.yosupo.jp/problem/point_add_range_sum) | `Library Checker` | `Medium` | - | Query-Heavy; Data-Structure-Heavy | Range-Sum |

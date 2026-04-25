@@ -5,6 +5,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 ## Subtopics
 
 - [DSU](dsu/README.md)
+- [DSU Rollback / Offline Dynamic Connectivity](dsu-rollback/README.md)
 - [Fenwick Tree](fenwick-tree/README.md)
 - [Segment Tree](segment-tree/README.md)
 - [Lazy Segment Tree](lazy-segment-tree/README.md)
@@ -31,9 +32,10 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - ordered sets and offline query habits
 
 3. Advanced later
+- rollback DSU / offline dynamic connectivity
 - lazy propagation variants
 - coordinate compression patterns
-- persistent and rollback-style structures
+- persistent structures
 
 ## Recognition Cues
 
@@ -54,6 +56,7 @@ After this section, you should know which standard structure to reach for in com
 ## Solved Examples In This Repo
 
 - [CVP00001 - Ô ăn quan](../../practice/ladders/data-structures/fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
+- [Dynamic Connectivity](../../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md): edge-lifetime intervals plus rollback DSU over a segment tree of time
 - [HORRIBLE - Horrible Queries](../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the first exact in-repo route for online `range add + range sum`
 
 ## Go Deeper

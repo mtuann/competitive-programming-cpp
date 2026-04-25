@@ -597,6 +597,81 @@
       }
     ]
   },
+  "data-structures/dsu-rollback": {
+    "title": "Data Structures -> DSU Rollback / Offline Dynamic Connectivity",
+    "summary": "Rollback-friendly union-find plus segment tree over time for offline add/remove connectivity timelines.",
+    "topic_path": "topics/data-structures/dsu-rollback/README.md",
+    "ladder_path": "practice/ladders/data-structures/dsu-rollback/README.md",
+    "microtopics": [
+      "rollback-dsu",
+      "snapshot",
+      "rollback",
+      "segment-tree-over-time",
+      "edge-active-interval",
+      "offline-dynamic-connectivity"
+    ],
+    "learning_sources": [
+      {
+        "label": "CP-Algorithms deleting from a data structure in O(T(n) log n)",
+        "url": "https://cp-algorithms.com/data_structures/deleting_in_log_n.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide offline deletion",
+        "url": "https://usaco.guide/adv/offline-del",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CSES Dynamic Connectivity",
+        "url": "https://cses.fi/problemset/task/2133/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Library Checker",
+        "url": "https://judge.yosupo.jp/",
+        "kind": "problem set"
+      },
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "DSU Rollback hot sheet",
+        "path": "notebook/dsu-rollback-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Dynamic Connectivity note",
+        "path": "practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "DSU rollback starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "DSU tutorial",
+        "path": "topics/data-structures/dsu/README.md",
+        "kind": "adjacent tutorial"
+      },
+      {
+        "label": "Offline Tricks tutorial",
+        "path": "topics/data-structures/offline-tricks/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

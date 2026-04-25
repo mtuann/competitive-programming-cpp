@@ -5,7 +5,7 @@ Sort events, reorder queries, and use rollback or CDQ to trade interactivity for
 - Topic slug: `data-structures/offline-tricks`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/offline-tricks/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/offline-tricks/README.md)
-- Repo problems currently tagged here: `1`
+- Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
 - Curated external problems: `7`
 
@@ -67,6 +67,7 @@ Sort events, reorder queries, and use rollback or CDQ to trade interactivity for
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `DISTINCTVALUESQUERIES` | Distinct Values Queries | `primary` | `hard` | offline right-endpoint sweep; last occurrence activation; fenwick range count | [Note](../../../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/offline-tricks/distinctvaluesqueries.cpp) |
+| `DYNAMICCONNECTIVITY` | Dynamic Connectivity | `secondary` | `hard` | dsu rollback; segment tree over time; offline dynamic connectivity | [Note](../../../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-rollback/dynamicconnectivity.cpp) |
 
 ## Regeneration
 

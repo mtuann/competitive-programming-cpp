@@ -16,6 +16,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - online range add + range sum -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
+- connectivity under offline edge add/remove timeline -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - current top / min / max only -> heap
 - predecessor / successor / erase-one with duplicates -> multiset
 - sliding median -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
@@ -35,6 +36,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - Fenwick / prefix structures: one stable prefix meaning
 - segment tree: every node represents one mergeable segment summary
 - DSU: every element belongs to one representative-led component
+- rollback DSU: the current component forest must be exactly restorable from snapshots
 - ordered-set logic: duplicates and erase policy must be explicit
 
 ## Retrieval Cues
@@ -48,6 +50,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 
 - Fenwick -> [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
 - DSU -> [DSU hot sheet](dsu-hot-sheet.md) + [C11XU](../practice/ladders/data-structures/dsu/c11xu.md)
+- rollback connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
@@ -78,6 +81,7 @@ Ask:
 - [Offline tricks topic](../topics/data-structures/offline-tricks/README.md)
 - [Fenwick hot sheet](fenwick-hot-sheet.md)
 - [DSU hot sheet](dsu-hot-sheet.md)
+- [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)

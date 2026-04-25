@@ -264,6 +264,40 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp"
   },
   {
+    "code": "DYNAMICCONNECTIVITY",
+    "title": "Dynamic Connectivity",
+    "full_title": "Dynamic Connectivity",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2133",
+    "main_topic": "Data Structures -> DSU Rollback / Offline Dynamic Connectivity",
+    "secondary_topics": [
+      "DSU rollback",
+      "Segment tree over time",
+      "Offline dynamic connectivity"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/dsu-rollback",
+    "topic_tags": [
+      "data-structures/dsu-rollback",
+      "data-structures/dsu",
+      "data-structures/offline-tricks"
+    ],
+    "patterns": [
+      "dsu rollback",
+      "segment tree over time",
+      "offline dynamic connectivity"
+    ],
+    "tracks": [
+      "CSES",
+      "Advanced techniques"
+    ],
+    "note_path": "practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md",
+    "ladder_path": "practice/ladders/data-structures/dsu-rollback/README.md",
+    "tutorial_path": "topics/data-structures/dsu-rollback/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-rollback/dynamicconnectivity.cpp"
+  },
+  {
     "code": "CVP00001",
     "title": "Ô ăn quan",
     "full_title": "Ô ăn quan",

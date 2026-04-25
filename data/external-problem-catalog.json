@@ -1884,6 +1884,63 @@
     "why_fit": "A clean official benchmark for validating a DSU implementation against a trusted judge."
   },
   {
+    "slug": "data-structures/dsu-rollback",
+    "topic": "Data Structures -> DSU Rollback / Offline Dynamic Connectivity",
+    "title": "Dynamic Connectivity",
+    "url": "https://cses.fi/problemset/task/2133",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Advanced Techniques",
+      "Dynamic Connectivity"
+    ],
+    "tags": [
+      "Rollback-DSU",
+      "Segment-Tree-Over-Time",
+      "Component-Count"
+    ],
+    "styles": [
+      "Offline",
+      "Data-Structure-Heavy",
+      "Timeline Modeling"
+    ],
+    "prerequisites": [
+      "DSU",
+      "Offline Reasoning",
+      "Half-Open Intervals"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first exact benchmark for edge-lifetime intervals, rollback DSU, and component answers at every time state."
+  },
+  {
+    "slug": "data-structures/dsu-rollback",
+    "topic": "Data Structures -> DSU Rollback / Offline Dynamic Connectivity",
+    "title": "Dynamic Graph Vertex Add Component Sum",
+    "url": "https://judge.yosupo.jp/problem/dynamic_graph_vertex_add_component_sum",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Dynamic Connectivity"
+    ],
+    "tags": [
+      "Rollback-DSU",
+      "Segment-Tree-Over-Time",
+      "Component Metadata"
+    ],
+    "styles": [
+      "Offline",
+      "Verification",
+      "Data-Structure-Heavy"
+    ],
+    "prerequisites": [
+      "Rollback DSU",
+      "Component Metadata",
+      "Offline Dynamic Connectivity"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong next-step verifier once rollback connectivity itself is trusted and component-value aggregation becomes the new difficulty."
+  },
+  {
     "slug": "data-structures/fenwick-tree",
     "topic": "Data Structures -> Fenwick Tree",
     "title": "Dynamic Range Sum Queries",

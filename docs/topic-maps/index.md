@@ -14,11 +14,12 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Foundations -> Sorting | 5 | 0 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
-| Data Structures -> DSU | 2 | 0 | 5 | [Open](data-structures/dsu.md) |
+| Data Structures -> DSU | 3 | 0 | 5 | [Open](data-structures/dsu.md) |
+| Data Structures -> DSU Rollback / Offline Dynamic Connectivity | 1 | 5 | 2 | [Open](data-structures/dsu-rollback.md) |
 | Data Structures -> Fenwick Tree | 4 | 0 | 6 | [Open](data-structures/fenwick-tree.md) |
 | Data Structures -> Heaps And Ordered Sets | 1 | 2 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Lazy Segment Tree | 1 | 4 | 4 | [Open](data-structures/lazy-segment-tree.md) |
-| Data Structures -> Offline Tricks | 1 | 0 | 7 | [Open](data-structures/offline-tricks.md) |
+| Data Structures -> Offline Tricks | 2 | 0 | 7 | [Open](data-structures/offline-tricks.md) |
 | Data Structures -> Segment Tree | 3 | 0 | 8 | [Open](data-structures/segment-tree.md) |
 | Data Structures -> Sparse Table | 1 | 0 | 3 | [Open](data-structures/sparse-table.md) |
 | Graphs -> BFS And DFS | 2 | 0 | 7 | [Open](graphs/bfs-dfs.md) |

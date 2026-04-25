@@ -33,8 +33,8 @@ Target skill:
 ## Stretch
 
 - parity constraints
-- rollback DSU
-- dynamic connectivity in offline form
+- rollback DSU -> [DSU Rollback / Offline Dynamic Connectivity ladder](../dsu-rollback/README.md)
+- dynamic connectivity in offline form -> [Dynamic Connectivity](../dsu-rollback/dynamicconnectivity.md)
 - [C11XU](c11xu.md)
 
 Target skill:
@@ -46,6 +46,7 @@ Target skill:
 - exact quick sheet -> [DSU hot sheet](../../../../notebook/dsu-hot-sheet.md)
 - merge-only connectivity starter -> [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp)
 - compare against Kruskal usage -> [Road Reparation](../../graphs/mst/roadreparation.md)
+- rollback / deletion compare lane -> [DSU Rollback hot sheet](../../../../notebook/dsu-rollback-hot-sheet.md)
 
 ## Exit Criteria
 

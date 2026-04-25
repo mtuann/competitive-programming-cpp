@@ -1930,6 +1930,64 @@
       ]
     }
   ],
+  "data-structures/dsu-rollback": [
+    {
+      "title": "Dynamic Connectivity",
+      "url": "https://cses.fi/problemset/task/2133",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/dsu-rollback",
+        "Advanced Techniques",
+        "Dynamic Connectivity"
+      ],
+      "tags": [
+        "Rollback-DSU",
+        "Segment-Tree-Over-Time",
+        "Component-Count"
+      ],
+      "why_fit": "The cleanest first exact benchmark for edge-lifetime intervals, rollback DSU, and component answers at every time state.",
+      "bucket": "core",
+      "styles": [
+        "Offline",
+        "Data-Structure-Heavy",
+        "Timeline Modeling"
+      ],
+      "prerequisites": [
+        "DSU",
+        "Offline Reasoning",
+        "Half-Open Intervals"
+      ]
+    },
+    {
+      "title": "Dynamic Graph Vertex Add Component Sum",
+      "url": "https://judge.yosupo.jp/problem/dynamic_graph_vertex_add_component_sum",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/dsu-rollback",
+        "Verification",
+        "Dynamic Connectivity"
+      ],
+      "tags": [
+        "Rollback-DSU",
+        "Segment-Tree-Over-Time",
+        "Component Metadata"
+      ],
+      "why_fit": "A strong next-step verifier once rollback connectivity itself is trusted and component-value aggregation becomes the new difficulty.",
+      "bucket": "stretch",
+      "styles": [
+        "Offline",
+        "Verification",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Rollback DSU",
+        "Component Metadata",
+        "Offline Dynamic Connectivity"
+      ]
+    }
+  ],
   "data-structures/sparse-table": [
     {
       "title": "Static Range Minimum Queries",

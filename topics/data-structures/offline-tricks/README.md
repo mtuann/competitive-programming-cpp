@@ -600,6 +600,7 @@ Repo anchors:
 - practice ladder: [Offline Tricks ladder](../../../practice/ladders/data-structures/offline-tricks/README.md)
 - practice note: [Distinct Values Queries](../../../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
 - starter template: [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
+- rollback compare lane: [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md)
 - notebook refresher: [Data Structures cheatsheet](../../../notebook/data-structures-cheatsheet.md)
 - adjacent practice note: [Road Reparation](../../../practice/ladders/graphs/mst/roadreparation.md) for threshold-style DSU sweeps
 - adjacent topic: [Fenwick Tree](../fenwick-tree/README.md)
@@ -609,6 +610,7 @@ Repo anchors:
 
 - [Fenwick Tree](../fenwick-tree/README.md)
 - [DSU](../dsu/README.md)
+- [DSU Rollback / Offline Dynamic Connectivity](../dsu-rollback/README.md)
 - [Sorting](../../foundations/patterns/sorting/README.md)
 - [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md)
 - [Graph Modeling](../../graphs/graph-modeling/README.md)

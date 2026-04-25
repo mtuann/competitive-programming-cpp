@@ -102,6 +102,7 @@ nav:
       - Data Structures:
           - Overview: topics/data-structures/README.md
           - DSU: topics/data-structures/dsu/README.md
+          - DSU Rollback / Offline Dynamic Connectivity: topics/data-structures/dsu-rollback/README.md
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
           - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
@@ -191,6 +192,7 @@ nav:
           - Data Structures:
               - Overview: practice/ladders/data-structures/README.md
               - DSU: practice/ladders/data-structures/dsu/README.md
+              - DSU Rollback / Offline Dynamic Connectivity: practice/ladders/data-structures/dsu-rollback/README.md
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
               - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
@@ -295,6 +297,7 @@ nav:
       - Data Structures Cheatsheet: notebook/data-structures-cheatsheet.md
       - Fenwick Hot Sheet: notebook/fenwick-hot-sheet.md
       - DSU Hot Sheet: notebook/dsu-hot-sheet.md
+      - DSU Rollback Hot Sheet: notebook/dsu-rollback-hot-sheet.md
       - Segment Tree Hot Sheet: notebook/segment-tree-hot-sheet.md
       - Lazy Segment Tree Hot Sheet: notebook/lazy-segment-tree-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md

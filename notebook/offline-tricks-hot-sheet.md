@@ -34,10 +34,12 @@ Use this page when all queries are known in advance and the main question is whi
 
 - one-key monotone sweep -> [`offline-query-skeleton.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
 - flagship repo note -> [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
+- deletion / rollback lane -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - compare against online range structures -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 
 ## Reopen Paths
 
 - family chooser, Mo, PBS, and rollback boundaries -> [Offline Tricks](../topics/data-structures/offline-tricks/README.md)
+- exact rollback-over-time route -> [DSU Rollback / Offline Dynamic Connectivity](../topics/data-structures/dsu-rollback/README.md)
 - lighter structure alternatives -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - snippet map -> [Template Library](../template-library.md)

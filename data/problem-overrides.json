@@ -41,6 +41,21 @@
       "OI-style"
     ]
   },
+  "DYNAMICCONNECTIVITY": {
+    "topic_tags": [
+      "data-structures/dsu",
+      "data-structures/offline-tricks"
+    ],
+    "patterns": [
+      "dsu rollback",
+      "segment tree over time",
+      "offline dynamic connectivity"
+    ],
+    "tracks": [
+      "CSES",
+      "Advanced techniques"
+    ]
+  },
   "COMPANYQUERIES2": {
     "topic_tags": [
       "graphs/trees"

@@ -34,6 +34,7 @@ Use these when the topic is already mostly trusted and you want the shortest pat
 | --- | --- | --- | --- |
 | point updates plus prefix/range sums | [Fenwick hot sheet](../notebook/fenwick-hot-sheet.md) | [fenwick-point-prefix.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/fenwick-point-prefix.cpp) | [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md) |
 | merge-only connectivity or Kruskal-style components | [DSU hot sheet](../notebook/dsu-hot-sheet.md) | [dsu-basic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-basic.cpp) | [C11XU](../practice/ladders/data-structures/dsu/c11xu.md) |
+| offline connectivity under an add/remove edge timeline | [DSU Rollback hot sheet](../notebook/dsu-rollback-hot-sheet.md) | [dsu-rollback-dynamic-connectivity.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/dsu-rollback-dynamic-connectivity.cpp) | [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md) |
 | static range minimum on immutable data | [Sparse Table hot sheet](../notebook/sparse-table-hot-sheet.md) | [sparse-table-rmq.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sparse-table-rmq.cpp) | [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md) |
 | online range add plus range sum on one array | [Lazy Segment Tree hot sheet](../notebook/lazy-segment-tree-hot-sheet.md) | [segment-tree-lazy-range-add-sum.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/segment-tree-lazy-range-add-sum.cpp) | [HORRIBLE](../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md) |
 | one-key monotone offline sweep | [Offline Tricks hot sheet](../notebook/offline-tricks-hot-sheet.md) | [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp) | [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md) |
@@ -98,6 +99,7 @@ Open a workflow page when the algorithm feels right but the solution still feels
 
 - Fenwick / dynamic prefix counts -> [Fenwick hot sheet](../notebook/fenwick-hot-sheet.md) + data-structures templates
 - merge-only connectivity -> [DSU hot sheet](../notebook/dsu-hot-sheet.md) + graph/data-structure templates
+- offline add/remove connectivity -> [DSU Rollback hot sheet](../notebook/dsu-rollback-hot-sheet.md) + [Offline Tricks hot sheet](../notebook/offline-tricks-hot-sheet.md)
 - static RMQ on immutable data -> [Sparse Table hot sheet](../notebook/sparse-table-hot-sheet.md) + data-structures templates
 - reorderable query batches -> [Offline Tricks hot sheet](../notebook/offline-tricks-hot-sheet.md) + data-structures templates
 - shortest paths -> [Shortest Paths hot sheet](../notebook/shortest-paths-hot-sheet.md) + graph templates

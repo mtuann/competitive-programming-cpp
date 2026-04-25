@@ -16,6 +16,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - nonnegative weights -> Dijkstra -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - negative edges -> Bellman-Ford -> [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - delete one edge/vertex and connectivity changes -> [Low-Link hot sheet](lowlink-hot-sheet.md)
+- connectivity under offline add/remove edge events -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - binary clauses over boolean choices -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - one rooted subtree aggregate becomes one contiguous interval -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - static tree problem split by one balanced pivot or `O(log n)` centroid ancestors -> [Centroid hot sheet](centroid-hot-sheet.md)
@@ -53,6 +54,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "tree paths" -> LCA for ancestor/meet questions, HLD for repeated path aggregates, Euler flattening for subtree-only aggregation
 - "tree paths, but the split is through one balanced center or one logarithmic ancestor chain" -> [Centroid hot sheet](centroid-hot-sheet.md)
 - "same component after many merges" -> maybe DSU, not BFS/DFS
+- "same component after adds and deletes, but all events are known first" -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 
 ## Invariants To Keep In Mind
 
@@ -72,6 +74,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - tree path decomposition -> [Heavy-Light Decomposition](../topics/graphs/hld/README.md) + [Path Queries II](../practice/ladders/graphs/hld/pathqueries2.md) + [hld-path-max.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hld-path-max.cpp)
 - HLD retrieval route -> [HLD hot sheet](hld-hot-sheet.md)
 - centroid-tree recursion -> [Centroid hot sheet](centroid-hot-sheet.md) + [Ciel the Commander](../practice/ladders/graphs/centroid-decomposition/cielthecommander.md) + [centroid-decomposition.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/centroid-decomposition.cpp)
+- offline dynamic connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
 - min-cost transport -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [MINCOST](../practice/ladders/graphs/flow/mincost.md)
 - matching / bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md)
@@ -84,6 +87,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [HLD hot sheet](hld-hot-sheet.md)
 - [Centroid hot sheet](centroid-hot-sheet.md)
+- [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)

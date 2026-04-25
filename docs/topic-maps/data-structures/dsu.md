@@ -5,7 +5,7 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 - Topic slug: `data-structures/dsu`
 - Tutorial page: [Open tutorial](../../../topics/data-structures/dsu/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/data-structures/dsu/README.md)
-- Repo problems currently tagged here: `2`
+- Repo problems currently tagged here: `3`
 - Repo companion pages: `0`
 - Curated external problems: `5`
 
@@ -60,6 +60,7 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `C11XU` | Bộ sưu tập đồng xu | `primary` | `hard` | xor-independence; forest selection; augmenting exchange | [Note](../../../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
+| `DYNAMICCONNECTIVITY` | Dynamic Connectivity | `secondary` | `hard` | dsu rollback; segment tree over time; offline dynamic connectivity | [Note](../../../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-rollback/dynamicconnectivity.cpp) |
 | `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 
 ## Regeneration

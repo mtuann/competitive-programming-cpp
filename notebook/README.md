@@ -84,6 +84,7 @@ The shortest useful scan order is:
 - [Data structures cheatsheet](data-structures-cheatsheet.md)
 - [Fenwick hot sheet](fenwick-hot-sheet.md)
 - [DSU hot sheet](dsu-hot-sheet.md)
+- [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)
@@ -117,6 +118,7 @@ The shortest useful scan order is:
 
 - Fenwick / dynamic prefix counts -> [Fenwick hot sheet](fenwick-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
 - merge-only components -> [DSU hot sheet](dsu-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
+- offline add/remove connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
 - segment tree under pressure -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
 - online range add + range sum -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md) + [Segment Tree hot sheet](segment-tree-hot-sheet.md)
 - static idempotent range queries -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Data structures cheatsheet](data-structures-cheatsheet.md)
