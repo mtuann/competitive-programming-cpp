@@ -370,7 +370,8 @@ Practical tradeoffs:
 Keep the topic boundary tight:
 
 - this page covers ordinary linear convolution by radix-2 FFT/NTT
-- CRT across multiple NTT primes, Bluestein, and formal power series belong later
+- CRT across multiple NTT primes and Bluestein belong later
+- formal power series now lives in the sibling lane [Polynomial / Formal Power Series](../polynomial-fps/README.md)
 
 Two indexing changes are worth seeing once before they appear in a contest:
 

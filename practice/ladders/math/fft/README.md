@@ -35,6 +35,7 @@ Use this ladder when you already know arrays and counting, and you want to learn
 - direct repo note -> [POST2](post2.md)
 - direct exact-mod note -> [Convolution](convolution.md)
 - compare floating vs exact viewpoints -> [FFT / NTT](../../../../topics/math/fft-ntt/README.md)
+- if one convolution is already trusted and the statement now wants inverse/log/exp under `x^n` -> [Polynomial / Formal Power Series](../../../../topics/math/polynomial-fps/README.md)
 - reopen the counting lens before the transform lens -> [Counting Basics](../../../../topics/combinatorics/counting-basics/README.md)
 - if coefficient shifts or mod arithmetic are the real bottleneck -> [Modular Arithmetic ladder](../modular-arithmetic/README.md)
 

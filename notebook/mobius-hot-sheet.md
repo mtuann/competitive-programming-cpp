@@ -47,5 +47,6 @@ and the real choice is whether plain divisor frequencies are enough or Mobius ca
 
 - full derivation and chooser -> [Mobius And Multiplicative Counting](../topics/math/mobius-multiplicative/README.md)
 - divisor/gcd refresh -> [Number theory cheatsheet](number-theory-cheatsheet.md)
+- direct summatory compare -> [Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions](../topics/math/dirichlet-prefix-sums/README.md)
 - explicit subset IE compare -> [Inclusion-Exclusion](../topics/combinatorics/inclusion-exclusion/README.md)
 - snippet chooser -> [Template Library](../template-library.md)

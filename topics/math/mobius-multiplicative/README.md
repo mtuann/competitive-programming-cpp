@@ -57,6 +57,7 @@ Helpful nearby anchors:
 - [Common Divisors](../../../practice/ladders/math/gcd-lcm/commondivisors.md)
 - [Prime Multiples](../../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md)
 - [Number theory cheatsheet](../../../notebook/number-theory-cheatsheet.md)
+- [Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions](../dirichlet-prefix-sums/README.md)
 
 ## Problem Model And Notation
 
