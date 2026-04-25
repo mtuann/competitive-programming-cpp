@@ -467,6 +467,10 @@ The hidden contract is:
 - `add(pos)` and `remove(pos)` must update the same maintained statistic consistently
 - the active range after the loop really is exactly `[q.L, q.R]`
 
+The repo now treats this as its own exact lane:
+
+- [Mo's Algorithm](../mos-algorithm/README.md)
+
 ### Offline Deletion / Rollback DSU Sketch
 
 ```text

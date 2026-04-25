@@ -105,6 +105,7 @@ nav:
           - DSU Rollback / Offline Dynamic Connectivity: topics/data-structures/dsu-rollback/README.md
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
           - Heaps And Ordered Sets: topics/data-structures/heaps-and-ordered-sets/README.md
+          - Mo's Algorithm: topics/data-structures/mos-algorithm/README.md
           - Offline Tricks: topics/data-structures/offline-tricks/README.md
           - Persistent Data Structures: topics/data-structures/persistent-data-structures/README.md
           - Segment Tree: topics/data-structures/segment-tree/README.md
@@ -203,6 +204,7 @@ nav:
               - DSU Rollback / Offline Dynamic Connectivity: practice/ladders/data-structures/dsu-rollback/README.md
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
               - Heaps And Ordered Sets: practice/ladders/data-structures/heaps-and-ordered-sets/README.md
+              - Mo's Algorithm: practice/ladders/data-structures/mos-algorithm/README.md
               - Offline Tricks: practice/ladders/data-structures/offline-tricks/README.md
               - Persistent Data Structures: practice/ladders/data-structures/persistent-data-structures/README.md
               - Segment Tree: practice/ladders/data-structures/segment-tree/README.md
@@ -324,6 +326,7 @@ nav:
       - Persistent Data Structures Hot Sheet: notebook/persistent-data-structures-hot-sheet.md
       - Sparse Table Hot Sheet: notebook/sparse-table-hot-sheet.md
       - Offline Tricks Hot Sheet: notebook/offline-tricks-hot-sheet.md
+      - Mo's Hot Sheet: notebook/mos-hot-sheet.md
       - Graph Cheatsheet: notebook/graph-cheatsheet.md
       - Low-Link Hot Sheet: notebook/lowlink-hot-sheet.md
       - Eulerian Hot Sheet: notebook/eulerian-hot-sheet.md

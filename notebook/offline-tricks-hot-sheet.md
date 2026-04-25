@@ -33,13 +33,16 @@ Use this page when all queries are known in advance and the main question is whi
 ## Exact Starters In This Repo
 
 - one-key monotone sweep -> [`offline-query-skeleton.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
+- current-range maintenance with symmetric endpoint moves -> [Mo's hot sheet](mos-hot-sheet.md)
 - flagship repo note -> [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
+- exact current-range route -> [Powerful Array](../practice/ladders/data-structures/mos-algorithm/powerfularray.md)
 - deletion / rollback lane -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - compare against online range structures -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 
 ## Reopen Paths
 
 - family chooser, Mo, PBS, and rollback boundaries -> [Offline Tricks](../topics/data-structures/offline-tricks/README.md)
+- exact Mo lane -> [Mo's Algorithm](../topics/data-structures/mos-algorithm/README.md)
 - exact rollback-over-time route -> [DSU Rollback / Offline Dynamic Connectivity](../topics/data-structures/dsu-rollback/README.md)
 - lighter structure alternatives -> [Data structures cheatsheet](data-structures-cheatsheet.md)
 - snippet map -> [Template Library](../template-library.md)

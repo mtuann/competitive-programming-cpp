@@ -8,6 +8,7 @@ These ladders connect reusable structures to focused practice.
 - [DSU Rollback / Offline Dynamic Connectivity](dsu-rollback/README.md)
 - [Fenwick tree](fenwick-tree/README.md)
 - [Persistent data structures](persistent-data-structures/README.md)
+- [Mo's algorithm](mos-algorithm/README.md)
 - [Segment tree](segment-tree/README.md)
 - [Lazy segment tree](lazy-segment-tree/README.md)
 - [Sparse table](sparse-table/README.md)
@@ -19,4 +20,5 @@ These ladders connect reusable structures to focused practice.
 - [Dynamic Connectivity](dsu-rollback/dynamicconnectivity.md): exact rollback-DSU route for component counts under add/remove edge events
 - [CVP00001](fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
 - [Range Queries and Copies](persistent-data-structures/rangequeriesandcopies.md): exact first persistent segment-tree route for versioned point updates and old-version range sums
+- [Powerful Array](mos-algorithm/powerfularray.md): exact first `Mo` route where one current range and one frequency-weighted score are the whole state
 - [HORRIBLE](lazy-segment-tree/horriblequeries.md): exact `range add + range sum` lazy-propagation baseline

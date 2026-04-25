@@ -395,6 +395,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/lazy-segment-tree/horriblequeries.cpp"
   },
   {
+    "code": "POWERFULARRAY",
+    "title": "Powerful Array",
+    "full_title": "Powerful Array",
+    "judge": "Codeforces",
+    "judge_url": "https://codeforces.com/problemset/problem/86/D",
+    "main_topic": "Data Structures -> Mo's Algorithm",
+    "secondary_topics": [
+      "Mo's Algorithm",
+      "Frequency maintenance",
+      "Offline range queries"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/mos-algorithm",
+    "topic_tags": [
+      "data-structures/mos-algorithm"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/mos-algorithm/powerfularray.md",
+    "ladder_path": "practice/ladders/data-structures/mos-algorithm/README.md",
+    "tutorial_path": "topics/data-structures/mos-algorithm/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/mos-algorithm/powerfularray.cpp"
+  },
+  {
     "code": "DISTINCTVALUESQUERIES",
     "title": "Distinct Values Queries",
     "full_title": "Distinct Values Queries",

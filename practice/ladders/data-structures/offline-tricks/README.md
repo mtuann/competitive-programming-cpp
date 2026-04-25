@@ -32,7 +32,7 @@ Target skill:
 
 - parallel binary search
 - rollback DSU -> [DSU Rollback / Offline Dynamic Connectivity ladder](../dsu-rollback/README.md)
-- Mo’s algorithm
+- Mo’s algorithm -> [Mo's Algorithm ladder](../mos-algorithm/README.md)
 
 Target skill:
 
@@ -51,6 +51,7 @@ You are ready to move on when:
 - exact quick sheet -> [Offline Tricks hot sheet](../../../../notebook/offline-tricks-hot-sheet.md)
 - one-key monotone sweep starter -> [offline-query-skeleton.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/offline-query-skeleton.cpp)
 - flagship repo note -> [Distinct Values Queries](distinctvaluesqueries.md)
+- current-range compare lane -> [Mo's hot sheet](../../../../notebook/mos-hot-sheet.md)
 - rollback compare lane -> [DSU Rollback hot sheet](../../../../notebook/dsu-rollback-hot-sheet.md)
 
 ## External Practice

@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `544`
+- Total curated external problems: `548`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -92,6 +92,10 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Lazy Segment Tree` | `Stretch` | [Polynomial Queries](https://cses.fi/problemset/task/1736) | `CSES` | `Hard` | Range Queries | Data-Structure-Heavy; Math-Heavy | Lazy-Propagation; Range-Update; Arithmetic-Progression |
 | `Data Structures -> Lazy Segment Tree` | `Stretch` | [Range Updates and Sums](https://cses.fi/problemset/task/1735) | `CSES` | `Hard` | Range Queries | Data-Structure-Heavy | Lazy-Propagation; Range-Add; Range-Assign |
 | `Data Structures -> Lazy Segment Tree` | `Advanced` | [Range Affine Range Sum](https://atcoder.jp/contests/practice2/tasks/practice2_k) | `AtCoder` | `Hard` | - | Data-Structure-Heavy; Verification | Lazy-Propagation; Affine-Update; Acl-Style |
+| `Data Structures -> Mo's Algorithm` | `Core` | [Powerful Array](https://codeforces.com/problemset/problem/86/D) | `Codeforces` | `Hard` | Frequency Maintenance | Query-Heavy; Data-Structure-Heavy | Range-Frequency; Offline |
+| `Data Structures -> Mo's Algorithm` | `Practice` | [Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct) | `Library Checker` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Distinct-Count; Offline |
+| `Data Structures -> Mo's Algorithm` | `Classics` | [D-query](https://www.spoj.com/problems/DQUERY/) | `SPOJ` | `Hard` | Classic | Query-Heavy; Data-Structure-Heavy | Distinct-Count; Offline Range Queries |
+| `Data Structures -> Mo's Algorithm` | `Bridge` | [Distinct Values Queries](https://cses.fi/problemset/task/1734) | `CSES` | `Hard` | Compare Point | Query-Heavy; Compare-Point | Distinct-Count; Offline |
 | `Data Structures -> Offline Tricks` | `Core` | [Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct) | `Library Checker` | `Hard` | - | - | Mo's Algorithm; Distinct-Count |
 | `Data Structures -> Offline Tricks` | `Core` | [Point Add Rectangle Sum](https://judge.yosupo.jp/problem/point_add_rectangle_sum) | `Library Checker` | `Very Hard` | - | - | Sweep Line; Fenwick |
 | `Data Structures -> Offline Tricks` | `Classics` | [Distinct Values Queries](https://cses.fi/problemset/task/1734) | `CSES` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Mo's Algorithm; Range-Distinct; Frequency |

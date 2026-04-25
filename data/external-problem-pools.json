@@ -2502,6 +2502,120 @@
       "bucket": "core"
     }
   ],
+  "data-structures/mos-algorithm": [
+    {
+      "title": "Powerful Array",
+      "url": "https://codeforces.com/problemset/problem/86/D",
+      "source": "Codeforces",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/mos-algorithm",
+        "Data Structures",
+        "Mo's Algorithm",
+        "Frequency Maintenance"
+      ],
+      "tags": [
+        "Mo's Algorithm",
+        "Range-Frequency",
+        "Offline"
+      ],
+      "why_fit": "A famous Mo benchmark where the current answer is one frequency-weighted score and add/remove are true local updates.",
+      "bucket": "core",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Offline Query Ordering",
+        "Frequency Maintenance",
+        "Current Range Invariant"
+      ]
+    },
+    {
+      "title": "Static Range Count Distinct",
+      "url": "https://judge.yosupo.jp/problem/static_range_count_distinct",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/mos-algorithm",
+        "Library Checker",
+        "Mo's Algorithm",
+        "Verification"
+      ],
+      "tags": [
+        "Mo's Algorithm",
+        "Distinct-Count",
+        "Offline"
+      ],
+      "why_fit": "An official verifier-style Mo benchmark once ordinary current-range maintenance is trusted.",
+      "bucket": "practice",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Mo's Algorithm",
+        "Frequency Counts",
+        "Coordinate Compression"
+      ]
+    },
+    {
+      "title": "D-query",
+      "url": "https://www.spoj.com/problems/DQUERY/",
+      "source": "SPOJ",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/mos-algorithm",
+        "Data Structures",
+        "Mo's Algorithm",
+        "Classic"
+      ],
+      "tags": [
+        "Distinct-Count",
+        "Offline Range Queries",
+        "Classic"
+      ],
+      "why_fit": "The classic static distinct-count Mo problem and a good second rep after one frequency-score benchmark.",
+      "bucket": "classic",
+      "styles": [
+        "Query-Heavy",
+        "Data-Structure-Heavy"
+      ],
+      "prerequisites": [
+        "Mo's Algorithm",
+        "Frequency Counts",
+        "Coordinate Compression"
+      ]
+    },
+    {
+      "title": "Distinct Values Queries",
+      "url": "https://cses.fi/problemset/task/1734",
+      "source": "CSES",
+      "difficulty": "hard",
+      "tracks": [
+        "data-structures/mos-algorithm",
+        "Data Structures",
+        "Mo's Algorithm",
+        "Compare Point"
+      ],
+      "tags": [
+        "Distinct-Count",
+        "Offline",
+        "Compare-Point"
+      ],
+      "why_fit": "A deliberate compare point: Mo works, but the monotone right-endpoint sweep is cleaner and should still be preferred.",
+      "bucket": "bridge",
+      "styles": [
+        "Query-Heavy",
+        "Compare-Point"
+      ],
+      "prerequisites": [
+        "Mo's Algorithm",
+        "Offline Sweeps",
+        "Frequency Counts"
+      ]
+    }
+  ],
   "graphs/graph-modeling": [
     {
       "title": "Counting Rooms",

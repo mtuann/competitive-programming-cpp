@@ -747,6 +747,81 @@
       }
     ]
   },
+  "data-structures/mos-algorithm": {
+    "title": "Data Structures -> Mo's Algorithm",
+    "summary": "Offline range-query ordering for static arrays when one current active interval can be updated cheaply by moving endpoints.",
+    "topic_path": "topics/data-structures/mos-algorithm/README.md",
+    "ladder_path": "practice/ladders/data-structures/mos-algorithm/README.md",
+    "microtopics": [
+      "block-ordering",
+      "snake-order",
+      "current-range",
+      "frequency-maintenance",
+      "symmetric-add-remove",
+      "sqrt-decomposition-order"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms sqrt decomposition / Mo's algorithm",
+        "url": "https://cp-algorithms.com/data_structures/sqrt_decomposition.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "OI Wiki Mo's algorithm intro",
+        "url": "https://en.oi-wiki.org/misc/mo-algo-intro/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide square root decomposition",
+        "url": "https://usaco.guide/plat/sqrt",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      },
+      {
+        "label": "Library Checker Static Range Count Distinct",
+        "url": "https://judge.yosupo.jp/problem/static_range_count_distinct",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ DQUERY",
+        "url": "https://www.spoj.com/problems/DQUERY/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Mo's hot sheet",
+        "path": "notebook/mos-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Mo starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Powerful Array note",
+        "path": "practice/ladders/data-structures/mos-algorithm/powerfularray.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Offline Tricks tutorial",
+        "path": "topics/data-structures/offline-tricks/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Distinct Values Queries note",
+        "path": "practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/sparse-table": {
     "title": "Data Structures -> Sparse Table",
     "summary": "Static range query structure for idempotent operations such as RMQ and LCA reductions.",

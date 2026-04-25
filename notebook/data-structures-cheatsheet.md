@@ -18,6 +18,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - static idempotent range query -> [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - connectivity merges -> [DSU hot sheet](dsu-hot-sheet.md)
 - connectivity under offline edge add/remove timeline -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
+- static range queries where one active interval can be updated by endpoint moves -> [Mo's hot sheet](mos-hot-sheet.md)
 - current top / min / max only -> heap
 - predecessor / successor / erase-one with duplicates -> multiset
 - sliding median -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
@@ -47,6 +48,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - "median of the current window" -> two multisets before reaching for PBDS
 - "minimum on every sliding window" -> monotonic deque, not a segment tree
 - "all queries known first" -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) before building a heavier online structure
+- "one current range and symmetric add/remove are the whole story" -> [Mo's hot sheet](mos-hot-sheet.md)
 
 ## Quick Anchors In This Repo
 
@@ -56,6 +58,7 @@ Use this page when you know the operations but have not yet picked the lightest 
 - persistent range sums -> [Persistent Data Structures hot sheet](persistent-data-structures-hot-sheet.md) + [Range Queries and Copies](../practice/ladders/data-structures/persistent-data-structures/rangequeriesandcopies.md)
 - ordered multiset -> [Concert Tickets](../practice/ladders/data-structures/heaps-and-ordered-sets/concerttickets.md)
 - offline sweep -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) + [Distinct Values Queries](../practice/ladders/data-structures/offline-tricks/distinctvaluesqueries.md)
+- current-range Mo maintenance -> [Mo's hot sheet](mos-hot-sheet.md) + [Powerful Array](../practice/ladders/data-structures/mos-algorithm/powerfularray.md)
 - sparse table -> [Sparse Table hot sheet](sparse-table-hot-sheet.md) + [Static Range Minimum Queries](../practice/ladders/data-structures/sparse-table/staticrangeminimumqueries.md)
 - segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 - lazy segment tree -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md) + [HORRIBLE](../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md)
@@ -91,8 +94,10 @@ Ask:
 - [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md)
 - [Sparse Table hot sheet](sparse-table-hot-sheet.md)
 - [Offline Tricks hot sheet](offline-tricks-hot-sheet.md)
+- [Mo's hot sheet](mos-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Fenwick Tree topic](../topics/data-structures/fenwick-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)
 - [Lazy Segment Tree topic](../topics/data-structures/lazy-segment-tree/README.md)
 - [Persistent Data Structures topic](../topics/data-structures/persistent-data-structures/README.md)
+- [Mo's Algorithm topic](../topics/data-structures/mos-algorithm/README.md)
