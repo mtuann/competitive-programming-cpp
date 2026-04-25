@@ -18,6 +18,7 @@ Graphs are one of the central contest areas because many problems are really abo
 - [Heavy-Light Decomposition](hld/README.md)
 - [Centroid Decomposition](centroid-decomposition/README.md)
 - [Maximum Flow](flow/README.md)
+- [Flow With Lower Bounds](flow-lower-bounds/README.md)
 - [Min-Cost Flow](min-cost-flow/README.md)
 - [Matching](matching/README.md)
 
@@ -44,7 +45,7 @@ Graphs are one of the central contest areas because many problems are really abo
 
 3. Advanced later
 - heavy-light and more specialized tree machinery such as centroid decomposition
-- flow
+- flow, lower-bounded circulation, and min-cost flow
 - matching
 
 ## Recognition Cues
@@ -74,6 +75,7 @@ After this section, you should be able to recognize the common graph models, cho
 - [Subtree Queries](../../practice/ladders/graphs/euler-tour-subtree/subtreequeries.md): subtree intervals reduced to one Fenwick-backed range query
 - [Ciel the Commander](../../practice/ladders/graphs/centroid-decomposition/cielthecommander.md): build the centroid tree itself and use centroid depth as the answer
 - [FFLOW - Fast Maximum Flow](../../practice/ladders/graphs/flow/fflow.md): max-flow implementation and judge-facing performance engineering
+- [Reactor Cooling](../../practice/ladders/graphs/flow/reactorcooling.md): feasible circulation under lower and upper edge bounds
 - [MINCOST - Luồng với chi phí nhỏ nhất](../../practice/ladders/graphs/flow/mincost.md): min-cost flow with judge-specific duplicate-edge handling
 - [QBFLOWER - Tặng hoa](../../practice/ladders/graphs/matching/qbflower.md): general matching and edge-cover modeling
 - [VOSTRIP - VOSTRIP](../../practice/ladders/graphs/tree-dp/vostrip.md): tree usage aggregation and endpoint accounting

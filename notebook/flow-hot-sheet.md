@@ -11,6 +11,7 @@ Use this page when capacities, cuts, disjoint routes, or source-sink transport a
 ## Choose By Signal
 
 - maximum throughput / minimum cut certificate / edge-disjoint paths -> [`dinic.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- every directed edge has mandatory lower and upper flow bounds -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - each unit of flow also pays a cost -> [`min-cost-flow.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
 - vertex capacities -> node splitting on top of max flow or min-cost flow
 - pure bipartite pairing with no costs -> check [Matching hot sheet](matching-hot-sheet.md) before defaulting to flow
@@ -25,12 +26,14 @@ Use this page when capacities, cuts, disjoint routes, or source-sink transport a
 
 - mutating only the forward edge and breaking the residual invariant
 - forgetting node splitting when the statement constrains vertices rather than edges
+- forgetting that lower bounds change the model before Dinic is the right engine
 - asking plain Dinic for a cost-sensitive answer
 - feeding the min-cost-flow starter negative-cost edges without first ensuring valid initial potentials
 
 ## Exact Starters In This Repo
 
 - max flow / min cut -> [`dinic.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- lower / upper bounded circulation -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - min-cost flow -> [`min-cost-flow.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
 - clean cut certificate note -> [Police Chase](../practice/ladders/graphs/flow/policechase.md)
 - costed transport note -> [MINCOST](../practice/ladders/graphs/flow/mincost.md)
@@ -38,6 +41,7 @@ Use this page when capacities, cuts, disjoint routes, or source-sink transport a
 ## Reopen Paths
 
 - modeling, cuts, and Dinic discipline -> [Maximum Flow](../topics/graphs/flow/README.md)
+- mandatory lower bounds on edges -> [Flow With Lower Bounds](../topics/graphs/flow-lower-bounds/README.md)
 - reduced costs and fixed-value transport -> [Min-Cost Flow](../topics/graphs/min-cost-flow/README.md)
 - broader graph-family chooser -> [Graph cheatsheet](graph-cheatsheet.md)
 - practice lane -> [Flow ladder](../practice/ladders/graphs/flow/README.md)

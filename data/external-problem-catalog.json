@@ -8139,6 +8139,60 @@
     "why_fit": "Uses node capacities, so it is a textbook vertex-splitting model."
   },
   {
+    "slug": "graphs/flow-lower-bounds",
+    "topic": "Graphs -> Flow With Lower Bounds",
+    "title": "Reactor Cooling",
+    "url": "https://codeforces.com/problemsets/acmsguru/problem/99999/194",
+    "source": "Codeforces acmsguru",
+    "difficulty": "hard",
+    "tracks": [
+      "Lower Bounds"
+    ],
+    "tags": [
+      "Feasible Circulation",
+      "Balance Array",
+      "Witness Output"
+    ],
+    "styles": [
+      "Reduction",
+      "Witness Output"
+    ],
+    "prerequisites": [
+      "Maximum Flow",
+      "Residual Graph",
+      "Super Source / Super Sink"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical first lower-bounds circulation problem: every edge has mandatory minimum and maximum flow, and you must print one witness in input order."
+  },
+  {
+    "slug": "graphs/flow-lower-bounds",
+    "topic": "Graphs -> Flow With Lower Bounds",
+    "title": "Minimum Cost b-Flow",
+    "url": "https://judge.yosupo.jp/problem/min_cost_b_flow",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Lower Bounds",
+      "Cost"
+    ],
+    "tags": [
+      "Node Supply/Demand",
+      "Costed Flow"
+    ],
+    "styles": [
+      "Verification",
+      "Cross-Topic"
+    ],
+    "prerequisites": [
+      "Flow With Lower Bounds",
+      "Min-Cost Flow",
+      "Supply / Demand Modeling"
+    ],
+    "bucket": "advanced",
+    "why_fit": "A strong official compare point showing how lower bounds and node balances grow into the costed b-flow family."
+  },
+  {
     "slug": "graphs/gomory-hu",
     "topic": "Graphs -> Gomory-Hu Tree",
     "title": "Download Speed",

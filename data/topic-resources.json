@@ -1845,6 +1845,81 @@
       }
     ]
   },
+  "graphs/flow-lower-bounds": {
+    "title": "Graphs -> Flow With Lower Bounds",
+    "summary": "Feasible circulation and lower/upper edge bounds reduced to one saturating max-flow check with super source and super sink.",
+    "topic_path": "topics/graphs/flow-lower-bounds/README.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "microtopics": [
+      "feasible-circulation",
+      "lower-bounds",
+      "balance-array",
+      "super-source-sink",
+      "t-to-s-reduction",
+      "flow-reconstruction"
+    ],
+    "learning_sources": [
+      {
+        "label": "CP-Algorithms flows with demands",
+        "url": "https://cp-algorithms.com/graph/flow_with_demands.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "USACO Guide flow with lower bounds",
+        "url": "https://usaco.guide/adv/flow-lb",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Illinois CS473 flow extensions",
+        "url": "https://courses.grainger.illinois.edu/cs473/sp2014/lec/19_lec.pdf",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces acmsguru Reactor Cooling",
+        "url": "https://codeforces.com/problemsets/acmsguru/problem/99999/194",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker min_cost_b_flow",
+        "url": "https://judge.yosupo.jp/problem/min_cost_b_flow",
+        "kind": "problem"
+      },
+      {
+        "label": "Codeforces problemset",
+        "url": "https://codeforces.com/problemset",
+        "kind": "problem bank"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Flow With Lower Bounds hot sheet",
+        "path": "notebook/flow-lower-bounds-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Reactor Cooling note",
+        "path": "practice/ladders/graphs/flow/reactorcooling.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Flow starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Maximum Flow tutorial",
+        "path": "topics/graphs/flow/README.md",
+        "kind": "adjacent tutorial"
+      },
+      {
+        "label": "Min-Cost Flow tutorial",
+        "path": "topics/graphs/min-cost-flow/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "graphs/min-cost-flow": {
     "title": "Graphs -> Min-Cost Flow",
     "summary": "Successive shortest augmenting paths, potentials, and reduced costs for transportation-style optimization.",

@@ -1803,6 +1803,39 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp"
   },
   {
+    "code": "REACTORCOOLING",
+    "title": "Reactor Cooling",
+    "full_title": "Reactor Cooling",
+    "judge": "Codeforces acmsguru",
+    "judge_url": "https://codeforces.com/problemsets/acmsguru/problem/99999/194",
+    "main_topic": "Graphs -> Maximum Flow",
+    "secondary_topics": [
+      "Feasible circulation",
+      "Lower bounds",
+      "Flow reconstruction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/flow",
+    "topic_tags": [
+      "graphs/flow",
+      "graphs/flow-lower-bounds"
+    ],
+    "patterns": [
+      "feasible circulation",
+      "lower bounds",
+      "flow reconstruction"
+    ],
+    "tracks": [
+      "Codeforces acmsguru",
+      "Advanced techniques"
+    ],
+    "note_path": "practice/ladders/graphs/flow/reactorcooling.md",
+    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "tutorial_path": "topics/graphs/flow/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/reactorcooling.cpp"
+  },
+  {
     "code": "BUILDINGROADS",
     "title": "Building Roads",
     "full_title": "Building Roads",

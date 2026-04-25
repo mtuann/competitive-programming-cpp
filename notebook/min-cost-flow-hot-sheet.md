@@ -34,9 +34,11 @@ Use this page when flow value and edge cost both matter and you want the shortes
 - fixed-value costed flow with nonnegative initial forward costs -> [`min-cost-flow.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/min-cost-flow.cpp)
 - flagship repo note -> [MINCOST](../practice/ladders/graphs/flow/mincost.md)
 - compare plain throughput first -> [Flow hot sheet](flow-hot-sheet.md)
+- compare lower / upper edge demands first -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 
 ## Reopen Paths
 
 - reduced costs, potentials, and modeling boundary -> [Min-Cost Flow](../topics/graphs/min-cost-flow/README.md)
+- lower-bound feasibility before costs -> [Flow With Lower Bounds](../topics/graphs/flow-lower-bounds/README.md)
 - broader capacity-family chooser -> [Flow hot sheet](flow-hot-sheet.md)
 - snippet map -> [Template Library](../template-library.md)

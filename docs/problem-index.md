@@ -2,7 +2,7 @@
 
 This page lists every current solved problem note in the repo and maps it back to the learning structure.
 
-- Total tracked problem notes: `95`
+- Total tracked problem notes: `96`
 - Data files: [problem-catalog.json](../data/problem-catalog.json), [repo-problem-catalog.csv](repo-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want filters instead of the full static table
 - External companion index: [external-problem-index.md](external-problem-index.md)
@@ -15,7 +15,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | --- | ---: |
 | Foundations | 11 |
 | Data Structures | 11 |
-| Graphs | 22 |
+| Graphs | 23 |
 | DP | 10 |
 | Greedy | 3 |
 | Math | 14 |
@@ -71,6 +71,7 @@ This page lists every current solved problem note in the repo and maps it back t
 | `MCQUERY` | MinCut Query | `Graphs -> Maximum Flow` | Data Structures -> DSU; Graphs -> Trees; Graphs -> Gomory-Hu Tree | all-pairs min-cut; cut tree; count pairs by threshold | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MINCOST` | Luồng với chi phí nhỏ nhất | `Graphs -> Maximum Flow` | Graphs -> Min-Cost Flow | transportation network; flow reconstruction; duplicate-edge overwrite | `hard` | VN SPOJ, ICPC-style | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
 | `POLICECHASE` | Police Chase | `Graphs -> Maximum Flow` | Advanced -> Optimization And Duality | unit capacity max flow; residual reachable cut; minimum edge cut certificate | `medium` | CSES, Graph algorithms | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/policechase.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp) |
+| `REACTORCOOLING` | Reactor Cooling | `Graphs -> Maximum Flow` | Graphs -> Flow With Lower Bounds | feasible circulation; lower bounds; flow reconstruction | `hard` | Codeforces acmsguru, Advanced techniques | [Map](topic-maps/graphs/flow.md) / [Ladder](../practice/ladders/graphs/flow/README.md) / [Tutorial](../topics/graphs/flow/README.md) | [Note](../practice/ladders/graphs/flow/reactorcooling.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/reactorcooling.cpp) |
 | `BUILDINGROADS` | Building Roads | `Graphs -> Graph Modeling` | - | connected components; component representatives; constructive graph connection | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/graph-modeling.md) / [Ladder](../practice/ladders/graphs/graph-modeling/README.md) / [Tutorial](../topics/graphs/graph-modeling/README.md) | [Note](../practice/ladders/graphs/graph-modeling/buildingroads.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/buildingroads.cpp) |
 | `COUNTINGROOMS` | Counting Rooms | `Graphs -> Graph Modeling` | Graphs -> BFS And DFS | grid graph modeling; iterative flood fill; connected components | `easy` | CSES, Graph algorithms | [Map](topic-maps/graphs/graph-modeling.md) / [Ladder](../practice/ladders/graphs/graph-modeling/README.md) / [Tutorial](../topics/graphs/graph-modeling/README.md) | [Note](../practice/ladders/graphs/graph-modeling/countingrooms.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/graph-modeling/countingrooms.cpp) |
 | `PATHQUERIES2` | Path Queries II | `Graphs -> Heavy-Light Decomposition` | Graphs -> Trees; Data Structures -> Segment Tree | heavy light decomposition; path query decomposition; segment tree on base array | `medium` | CSES, Tree algorithms | [Map](topic-maps/graphs/hld.md) / [Ladder](../practice/ladders/graphs/hld/README.md) / [Tutorial](../topics/graphs/hld/README.md) | [Note](../practice/ladders/graphs/hld/pathqueries2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp) |

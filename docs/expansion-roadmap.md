@@ -198,7 +198,7 @@ These are valuable, but should wait until the earlier phases land cleanly.
 - [x] `Eulerian Path / Cycle`
 - [x] `Mo's Algorithm`
 - [x] `Binary Trie / XOR Queries`
-- [ ] `Flow with Lower Bounds`
+- [x] `Flow with Lower Bounds`
 - [ ] `Segment Tree Beats`
 - [ ] `Wavelet Tree`
 - [ ] `Treap / Implicit Treap`
@@ -229,10 +229,10 @@ A wave is only considered shipped when:
 
 The cleanest next task after the current shipped waves is:
 
-1. `Flow with Lower Bounds`
+1. `Segment Tree Beats`
 
 That is now the best follow-up because:
 
-- the freshness backbone now exists, so the repo can safely open another long-tail algorithm lane
-- `Flow with Lower Bounds` is the strongest remaining graph / optimization extension after the repo's flow lanes matured
-- it connects cleanly to the current `Maximum Flow` and `Min-Cost Flow` retrieval routes without opening too many new surfaces at once
+- the repo has now opened the strongest remaining flow-family extension short of costed b-flow
+- `Segment Tree Beats` is the sharpest remaining reusable range-structure lane still missing as its own family
+- it deepens the data-structures side without reopening too many routing surfaces at once

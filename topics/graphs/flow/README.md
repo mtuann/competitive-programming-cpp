@@ -287,6 +287,7 @@ Why Dinic is the first implementation to internalize:
 | blocking / removal certificate | max flow then residual cut extraction | theorem gives the certificate directly | printing residual edges instead of original edges |
 | simple one-to-one bipartite compatibility | matching first | the statement is already a matching model | overbuilding a full flow reduction too early |
 | bipartite matching with capacities | flow reduction | source-left-right-sink structure is natural | using plain matching when capacities exceed `1` |
+| every edge has mandatory lower and upper flow bounds | lower-bounds circulation reduction | plain max flow becomes the engine after subtracting lowers | sign mistakes in the balance array |
 | minimum cost under capacities | min-cost flow | cost matters, not just amount | using plain max flow and losing the objective |
 | many pairwise min-cuts | Gomory-Hu on top of max flow | compresses all pair min-cuts into one tree | thinking repeated independent flow is the only route |
 
@@ -591,7 +592,7 @@ This page is intentionally centered on the core contest pattern:
 Important next-layer topics include:
 
 - [Min-Cost Flow](../min-cost-flow/README.md)
-- lower/upper bounds and feasible circulation
+- [Flow With Lower Bounds](../flow-lower-bounds/README.md)
 - push-relabel implementations
 - Gomory-Hu trees for many pairwise cuts
 
@@ -642,6 +643,7 @@ Repo anchors:
 - practice note: [FFLOW](../../../practice/ladders/graphs/flow/fflow.md)
 - practice note: [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
 - practice note: [MCQUERY](../../../practice/ladders/graphs/flow/mcquery.md)
+- practice note: [Reactor Cooling](../../../practice/ladders/graphs/flow/reactorcooling.md)
 - practice note: [MINCOST](../../../practice/ladders/graphs/flow/mincost.md)
 - starter template: [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
 - notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
@@ -650,5 +652,6 @@ Repo anchors:
 
 - [Matching](../matching/README.md)
 - [Shortest Paths](../shortest-paths/README.md)
+- [Flow With Lower Bounds](../flow-lower-bounds/README.md)
 - [Min-Cost Flow](../min-cost-flow/README.md)
 - [Graph Modeling](../graph-modeling/README.md)

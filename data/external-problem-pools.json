@@ -5424,6 +5424,67 @@
       "bucket": "core"
     }
   ],
+  "graphs/flow-lower-bounds": [
+    {
+      "title": "Reactor Cooling",
+      "url": "https://codeforces.com/problemsets/acmsguru/problem/99999/194",
+      "source": "Codeforces acmsguru",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/flow-lower-bounds",
+        "Graphs",
+        "Flow",
+        "Lower Bounds"
+      ],
+      "tags": [
+        "Feasible Circulation",
+        "Lower Bounds",
+        "Balance Array",
+        "Witness Output"
+      ],
+      "why_fit": "The canonical first lower-bounds circulation problem: every edge has mandatory minimum and maximum flow, and you must print one witness in input order.",
+      "bucket": "core",
+      "styles": [
+        "Reduction",
+        "Witness Output"
+      ],
+      "prerequisites": [
+        "Maximum Flow",
+        "Residual Graph",
+        "Super Source / Super Sink"
+      ]
+    },
+    {
+      "title": "Minimum Cost b-Flow",
+      "url": "https://judge.yosupo.jp/problem/min_cost_b_flow",
+      "source": "Library Checker",
+      "difficulty": "hard",
+      "tracks": [
+        "graphs/flow-lower-bounds",
+        "Graphs",
+        "Flow",
+        "Lower Bounds",
+        "Cost"
+      ],
+      "tags": [
+        "Lower Bounds",
+        "Node Supply/Demand",
+        "Costed Flow",
+        "Verification"
+      ],
+      "why_fit": "A strong official compare point showing how lower bounds and node balances grow into the costed b-flow family.",
+      "bucket": "advanced",
+      "styles": [
+        "Verification",
+        "Cross-Topic"
+      ],
+      "prerequisites": [
+        "Flow With Lower Bounds",
+        "Min-Cost Flow",
+        "Supply / Demand Modeling"
+      ]
+    }
+  ],
   "graphs/min-cost-flow": [
     {
       "title": "Another Assignment Problem",

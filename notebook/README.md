@@ -101,6 +101,7 @@ The shortest useful scan order is:
 - [Centroid Decomposition hot sheet](centroid-hot-sheet.md)
 - [Shortest Paths hot sheet](shortest-paths-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
+- [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [DP cheatsheet](dp-cheatsheet.md)
@@ -145,6 +146,7 @@ The shortest useful scan order is:
 - subtree-only tree aggregation -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - tree problems that want balanced recursive splits -> [Centroid Decomposition hot sheet](centroid-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
 - flow / cuts / transport -> [Flow hot sheet](flow-hot-sheet.md) + [Graph cheatsheet](graph-cheatsheet.md)
+- mandatory lower / upper edge flow bounds -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md)
 - costed transport under capacities -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md)
 - bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md) + [Flow hot sheet](flow-hot-sheet.md) when the reduction is ambiguous
 - digit-counting on large ranges -> [Digit DP hot sheet](digit-dp-hot-sheet.md) + [DP cheatsheet](dp-cheatsheet.md)

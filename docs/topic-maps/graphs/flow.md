@@ -5,7 +5,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 - Topic slug: `graphs/flow`
 - Tutorial page: [Open tutorial](../../../topics/graphs/flow/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
-- Repo problems currently tagged here: `4`
+- Repo problems currently tagged here: `5`
 - Repo companion pages: `2`
 - Curated external problems: `8`
 
@@ -79,6 +79,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 | `MCQUERY` | MinCut Query | `primary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 | `MINCOST` | Luồng với chi phí nhỏ nhất | `primary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../../../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
 | `POLICECHASE` | Police Chase | `primary` | `medium` | unit capacity max flow; residual reachable cut; minimum edge cut certificate | [Note](../../../practice/ladders/graphs/flow/policechase.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp) |
+| `REACTORCOOLING` | Reactor Cooling | `primary` | `hard` | feasible circulation; lower bounds; flow reconstruction | [Note](../../../practice/ladders/graphs/flow/reactorcooling.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/reactorcooling.cpp) |
 
 ## Regeneration
 

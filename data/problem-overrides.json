@@ -729,6 +729,20 @@
       "OI-style"
     ]
   },
+  "REACTORCOOLING": {
+    "topic_tags": [
+      "graphs/flow-lower-bounds"
+    ],
+    "patterns": [
+      "feasible circulation",
+      "lower bounds",
+      "flow reconstruction"
+    ],
+    "tracks": [
+      "Codeforces acmsguru",
+      "Advanced techniques"
+    ]
+  },
   "QOS": {
     "topic_tags": [
       "dp/foundations"

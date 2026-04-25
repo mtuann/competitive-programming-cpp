@@ -30,7 +30,8 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Graphs -> Centroid Decomposition | 1 | 5 | 5 | [Open](graphs/centroid-decomposition.md) |
 | Graphs -> Euler Tour / Subtree Queries | 1 | 4 | 4 | [Open](graphs/euler-tour-subtree.md) |
 | Graphs -> Eulerian Path / Cycle | 1 | 5 | 4 | [Open](graphs/eulerian-path-cycle.md) |
-| Graphs -> Maximum Flow | 4 | 2 | 8 | [Open](graphs/flow.md) |
+| Graphs -> Maximum Flow | 5 | 2 | 8 | [Open](graphs/flow.md) |
+| Graphs -> Flow With Lower Bounds | 1 | 5 | 2 | [Open](graphs/flow-lower-bounds.md) |
 | Graphs -> Gomory-Hu Tree | 1 | 0 | 7 | [Open](graphs/gomory-hu.md) |
 | Graphs -> Graph Modeling | 4 | 2 | 9 | [Open](graphs/graph-modeling.md) |
 | Graphs -> Heavy-Light Decomposition | 2 | 0 | 8 | [Open](graphs/hld.md) |

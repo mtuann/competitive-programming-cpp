@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `550`
+- Total curated external problems: `552`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -150,6 +150,8 @@ This page lists curated external problems imported into the topic-map system.
 | `Graphs -> Eulerian Path / Cycle` | `Core` | [Teleporters Path](https://cses.fi/problemset/task/1693) | `CSES` | `Hard` | Directed | Directed Hierholzer; Balance Check; Start-End Enforcement | Eulerian Path; Directed Graphs; In-Out Balance; Hierholzer |
 | `Graphs -> Eulerian Path / Cycle` | `Classics` | [Play on Words](https://onlinejudge.org/external/1/10129.pdf) | `UVa` | `Medium` | Classic | Modeling; Balance Check; Connected Support | String To Graph; Directed Eulerian Path |
 | `Graphs -> Eulerian Path / Cycle` | `Stretch` | [De Bruijn Sequence](https://cses.fi/problemset/task/1692) | `CSES` | `Hard` | Construction | State Graph Modeling; Eulerian Construction; String Reconstruction | De Bruijn Graph; Eulerian Cycle; Bitmask States |
+| `Graphs -> Flow With Lower Bounds` | `Core` | [Reactor Cooling](https://codeforces.com/problemsets/acmsguru/problem/99999/194) | `Codeforces acmsguru` | `Hard` | Lower Bounds | Reduction; Witness Output | Feasible Circulation; Balance Array; Witness Output |
+| `Graphs -> Flow With Lower Bounds` | `Advanced` | [Minimum Cost b-Flow](https://judge.yosupo.jp/problem/min_cost_b_flow) | `Library Checker` | `Hard` | Lower Bounds, Cost | Verification; Cross-Topic | Node Supply/Demand; Costed Flow |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Download Speed](https://cses.fi/problemset/task/1694) | `CSES` | `Medium` | Cuts | - | Max Flow; Source-Sink Cut; Network |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Maximum Flow](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_A) | `AOJ` | `Medium` | Cuts | - | Max Flow; Min Cut; Baseline |
 | `Graphs -> Gomory-Hu Tree` | `Core` | [Police Chase](https://cses.fi/problemset/task/1695) | `CSES` | `Medium` | Min Cut, Edge-Disjoint Separation, Cuts | S-T Min Cut; Edge Extraction | Flow; Roads; Edge Cut; Certificate |

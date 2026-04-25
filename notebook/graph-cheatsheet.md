@@ -21,6 +21,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - binary clauses over boolean choices -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
 - one rooted subtree aggregate becomes one contiguous interval -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - static tree problem split by one balanced pivot or `O(log n)` centroid ancestors -> [Centroid hot sheet](centroid-hot-sheet.md)
+- edge lower / upper bounds with conservation at every node -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 
 ## Core Families
 
@@ -35,6 +36,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - tree path queries -> LCA or [HLD hot sheet](hld-hot-sheet.md)
 - balanced recursive tree splits / centroid ancestors -> [Centroid hot sheet](centroid-hot-sheet.md)
 - capacities -> [Flow hot sheet](flow-hot-sheet.md)
+- lower-bounded circulation / mandatory edge throughput -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - pairing -> [Matching hot sheet](matching-hot-sheet.md)
 
 ## Core Invariants
@@ -50,6 +52,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - "weights are only 0 and 1" -> do not jump to Dijkstra first
 - "negative edge" or "check for negative cycle" -> Bellman-Ford family
 - "cheapest transport under capacities" -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
+- "every edge has both minimum and maximum allowed flow" -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - "remove one road or city and connectivity breaks" -> [Low-Link hot sheet](lowlink-hot-sheet.md)
 - "use every road / teleporter exactly once" -> [Eulerian hot sheet](eulerian-hot-sheet.md)
 - "every object has two modes and each constraint touches two literals" -> [Two-SAT hot sheet](two-sat-hot-sheet.md)
@@ -80,6 +83,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - centroid-tree recursion -> [Centroid hot sheet](centroid-hot-sheet.md) + [Ciel the Commander](../practice/ladders/graphs/centroid-decomposition/cielthecommander.md) + [centroid-decomposition.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/centroid-decomposition.cpp)
 - offline dynamic connectivity -> [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md) + [Dynamic Connectivity](../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md)
 - flow / cuts -> [Flow hot sheet](flow-hot-sheet.md) + [Police Chase](../practice/ladders/graphs/flow/policechase.md)
+- lower-bounded circulation -> [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md) + [Reactor Cooling](../practice/ladders/graphs/flow/reactorcooling.md) + [flow-lower-bounds.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/flow-lower-bounds.cpp)
 - min-cost transport -> [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md) + [MINCOST](../practice/ladders/graphs/flow/mincost.md)
 - matching / bipartite pairing -> [Matching hot sheet](matching-hot-sheet.md)
 - general-matching / edge-cover boundary compare point -> [QBFLOWER](../practice/ladders/graphs/matching/qbflower.md)
@@ -93,6 +97,7 @@ Use this page when the graph model is mostly clear but the algorithm family stil
 - [Centroid hot sheet](centroid-hot-sheet.md)
 - [DSU Rollback hot sheet](dsu-rollback-hot-sheet.md)
 - [Flow hot sheet](flow-hot-sheet.md)
+- [Flow With Lower Bounds hot sheet](flow-lower-bounds-hot-sheet.md)
 - [Min-Cost Flow hot sheet](min-cost-flow-hot-sheet.md)
 - [Matching hot sheet](matching-hot-sheet.md)
 - [Low-Link hot sheet](lowlink-hot-sheet.md)

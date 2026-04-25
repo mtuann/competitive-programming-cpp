@@ -120,6 +120,7 @@ nav:
           - Euler Tour / Subtree Queries: topics/graphs/euler-tour-subtree/README.md
           - Centroid Decomposition: topics/graphs/centroid-decomposition/README.md
           - Flow: topics/graphs/flow/README.md
+          - Flow With Lower Bounds: topics/graphs/flow-lower-bounds/README.md
           - Graph Modeling: topics/graphs/graph-modeling/README.md
           - Heavy-Light Decomposition: topics/graphs/hld/README.md
           - LCA: topics/graphs/lca/README.md
@@ -339,6 +340,7 @@ nav:
       - Centroid Decomposition Hot Sheet: notebook/centroid-hot-sheet.md
       - Shortest Paths Hot Sheet: notebook/shortest-paths-hot-sheet.md
       - Flow Hot Sheet: notebook/flow-hot-sheet.md
+      - Flow With Lower Bounds Hot Sheet: notebook/flow-lower-bounds-hot-sheet.md
       - Min-Cost Flow Hot Sheet: notebook/min-cost-flow-hot-sheet.md
       - Matching Hot Sheet: notebook/matching-hot-sheet.md
       - DP Cheatsheet: notebook/dp-cheatsheet.md
