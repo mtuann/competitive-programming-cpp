@@ -62,6 +62,10 @@ So the original problem becomes:
 - move `L` and `R` gradually
 - update one frequency-weighted score locally
 
+This exact rep also assumes the values live in a bounded nonnegative universe,
+so one flat `cnt[x]` array is enough. If the value range is wide or signed,
+compress or remap first before carrying the same Mo invariant over.
+
 ## Core Idea
 
 If one value `x` currently has frequency `f`, its contribution is:

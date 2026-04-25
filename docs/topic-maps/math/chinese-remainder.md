@@ -39,7 +39,7 @@ Congruence systems, gcd-consistent residue merges, and the extended-Euclid doorw
 | --- | --- |
 | [Chinese Remainder hot sheet](../../../notebook/chinese-remainder-hot-sheet.md) | `quick reference` |
 | [General Chinese Remainder](../../../practice/ladders/math/chinese-remainder/generalchineseremainder.md) | `flagship note` |
-| [Templates overview](../../../template-library.md) | `template guide` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 

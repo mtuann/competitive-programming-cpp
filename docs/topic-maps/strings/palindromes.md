@@ -39,7 +39,7 @@ Odd/even palindrome radii on one static string, with Manacher as the exact linea
 | --- | --- |
 | [Palindromes hot sheet](../../../notebook/palindromes-hot-sheet.md) | `quick reference` |
 | [Longest Palindrome note](../../../practice/ladders/strings/palindromes/longestpalindrome.md) | `flagship note` |
-| [String Hashing](../../../topics/strings/hashing/README.md) | `compare point` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 

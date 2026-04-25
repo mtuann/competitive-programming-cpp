@@ -1,11 +1,14 @@
 // Template: Eulerian path / cycle
 // Signal: use every edge exactly once in a static graph, either undirected or directed.
-// Assumes: vertices are 0-indexed; isolated vertices are ignored by existence checks;
-// querying an empty graph returns {0} when n > 0.
+// Assumes: vertices are 0-indexed; isolated vertices are ignored by existence
+// checks; this starter adopts the contest convention that an empty graph with
+// n > 0 returns {0}.
 // Exposes: EulerianUndirected with add_edge(), eulerian_path(), eulerian_cycle();
 // EulerianDirected with add_edge(), eulerian_path(), eulerian_cycle().
 // Complexity: O(n + m).
-// Main trap: checking only degree conditions and forgetting the final path-size == m + 1 guard.
+// Main trap: checking only degree conditions and forgetting the final
+// path-size == m + 1 guard, or forgetting to adapt the empty-graph convention
+// if the statement wants a different sentinel.
 // Links:
 //   Topic: topics/graphs/eulerian-path-cycle/README.md
 //   Note: practice/ladders/graphs/eulerian-path-cycle/maildelivery.md

@@ -1,8 +1,8 @@
 // Template: XOR Basis / Linear Basis
 // Signal: the task asks about xor of any subset, such as maximum subset xor or
 // whether a target value is representable by xor-ing chosen elements.
-// Assumes: values fit in signed long long and one fixed max_bit convention is
-// used across all insertions and queries.
+// Assumes: values are nonnegative bitmasks that fit within one fixed
+// 0..max_bit convention across all insertions and queries.
 // Exposes: XorBasis with insert(), can_make(), max_xor(), and dimension().
 // Complexity: O(max_bit + 1) per insertion or query.
 // Main trap: confusing subset-xor span queries with binary-trie pair-xor
@@ -16,15 +16,17 @@
 
 using namespace std;
 
+using ull = unsigned long long;
+
 struct XorBasis {
     int max_bit;
-    vector<long long> basis;
+    vector<ull> basis;
 
     explicit XorBasis(int max_bit = 60) : max_bit(max_bit), basis(max_bit + 1, 0) {}
 
-    bool insert(long long x) {
+    bool insert(ull x) {
         for (int bit = max_bit; bit >= 0; --bit) {
-            if (((x >> bit) & 1LL) == 0) {
+            if (((x >> bit) & 1ULL) == 0) {
                 continue;
             }
             if (basis[bit] == 0) {
@@ -36,9 +38,9 @@ struct XorBasis {
         return false;
     }
 
-    bool can_make(long long x) const {
+    bool can_make(ull x) const {
         for (int bit = max_bit; bit >= 0; --bit) {
-            if (((x >> bit) & 1LL) == 0) {
+            if (((x >> bit) & 1ULL) == 0) {
                 continue;
             }
             if (basis[bit] == 0) {
@@ -49,8 +51,8 @@ struct XorBasis {
         return true;
     }
 
-    long long max_xor() const {
-        long long ans = 0;
+    ull max_xor() const {
+        ull ans = 0;
         for (int bit = max_bit; bit >= 0; --bit) {
             if ((ans ^ basis[bit]) > ans) {
                 ans ^= basis[bit];
@@ -61,7 +63,7 @@ struct XorBasis {
 
     int dimension() const {
         int dim = 0;
-        for (long long x : basis) {
+        for (ull x : basis) {
             dim += (x != 0);
         }
         return dim;

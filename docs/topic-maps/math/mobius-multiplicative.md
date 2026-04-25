@@ -39,7 +39,7 @@ Divisor-structured inclusion-exclusion, Mobius cancellation, and multiplicative 
 | --- | --- |
 | [Mobius hot sheet](../../../notebook/mobius-hot-sheet.md) | `quick reference` |
 | [Counting Coprime Pairs](../../../practice/ladders/math/mobius-multiplicative/countingcoprimepairs.md) | `flagship note` |
-| [Templates overview](../../../template-library.md) | `template guide` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 

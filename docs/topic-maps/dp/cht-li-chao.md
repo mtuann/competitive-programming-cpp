@@ -38,7 +38,7 @@ Affine-DP optimization where previous states become lines and current states bec
 | --- | --- |
 | [CHT / Li Chao hot sheet](../../../notebook/cht-hot-sheet.md) | `quick reference` |
 | [Monster Game II note](../../../practice/ladders/dp/cht-li-chao/monstergame2.md) | `flagship note` |
-| [DP cheatsheet](../../../notebook/dp-cheatsheet.md) | `parent router` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 

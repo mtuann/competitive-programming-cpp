@@ -46,6 +46,8 @@ int main() {
         return x.r < y.r;
     });
 
+    // This direct-index version assumes values are bounded and nonnegative.
+    // For a wider or signed universe, compress first and keep the same Mo loop.
     vector<long long> freq(max_value + 1, 0);
     vector<long long> ans(q);
     long long cur = 0;

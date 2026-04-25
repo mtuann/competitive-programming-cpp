@@ -1,13 +1,14 @@
 // Template: flow with lower bounds
 // Signal: each directed edge has mandatory minimum and maximum flow, and the goal is one feasible circulation or one lower-bounded s-t reduction.
 // Assumes: vertices are 0-indexed; add all original edges before calling feasible_circulation(); for lower-bounded s-t flow, add the modeling edge t -> s yourself.
-// Exposes: LowerBoundFlow with add_edge(u, v, lower, upper), feasible_circulation(), edge_flow(id), and all_edge_flows().
+// Exposes: LowerBoundFlow with add_edge(u, v, lower, upper), feasible_circulation(), edge_flow(id), and all_edge_flows(); the flow accessors are only valid after feasible_circulation() has returned true.
 // Complexity: one Dinic run on the auxiliary graph; practical contest complexity is the underlying max-flow cost on O(n + m) vertices/edges.
 // Main trap: getting the balance signs backward, or forgetting that t -> s is a real modeling edge, not a residual reverse edge.
 // Links:
 //   Topic: topics/graphs/flow-lower-bounds/README.md
 //   Note: practice/ladders/graphs/flow/reactorcooling.md
 
+#include <cassert>
 #include <algorithm>
 #include <iostream>
 #include <limits>
@@ -145,6 +146,7 @@ struct LowerBoundFlow {
     }
 
     long long edge_flow(int id) const {
+        assert(solved && feasible);
         const OriginalEdge &e = edges[id];
         return e.lower + dinic.edge_flow(e.from, e.residual_idx);
     }

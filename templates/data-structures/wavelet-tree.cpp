@@ -2,7 +2,8 @@
 // Signal: one static array with many value-sensitive subarray queries such as
 // k-th smallest, count <= x, or count == x.
 // Assumes: zero-based half-open intervals [l, r); no updates after build;
-// coordinate compression is built in; kth_smallest() uses zero-based k.
+// coordinate compression is built in; kth_smallest() uses zero-based k and
+// requires 0 <= k < r - l.
 // Exposes: WaveletTree with build(a), kth_smallest(), count_leq(), and
 // count_equal().
 // Complexity: O(n log sigma) build and O(log sigma) per query, where sigma is
@@ -13,6 +14,7 @@
 //   Topic: topics/data-structures/wavelet-tree/README.md
 //   Note: practice/ladders/data-structures/wavelet-tree/mkthnum.md
 
+#include <cassert>
 #include <algorithm>
 #include <iostream>
 #include <vector>
@@ -63,6 +65,7 @@ struct WaveletTree {
         if (root == -1 || l >= r) {
             return 0;
         }
+        assert(0 <= k && k < r - l);
         return coords[kth_smallest(root, l, r, k)];
     }
 

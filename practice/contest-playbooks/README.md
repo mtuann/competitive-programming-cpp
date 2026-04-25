@@ -128,12 +128,15 @@ Canonical section set:
 - `Progress Markers`
 - `References And Repo Anchors`
 
-## Current Playbooks
+## Current Track Playbooks
 
 - [USACO](usaco.md): solo archive-based progression with strict contest-conduct rules
 - [Codeforces](codeforces.md): short-round operating manual for shipping, anti-hack, validator-first construction, and upsolve discipline
 - [IOI / OI](ioi-oi.md): proof-heavy partial-scoring workflow
 - [ICPC](icpc.md): team contest operating manual for breadth, triage, and one-machine execution
+
+## Current Source-Family Clinics And Intro Pages
+
 - [Code Jam / Kick Start Analysis-First Clinic 01](code-jam-kick-start-analysis-first-clinic-01.md): archive-based `small -> large` promotion and analysis-first solving
 - [Precision / Formatting Robustness Clinic 01](precision-formatting-robustness-clinic-01.md): archive-style numeric discipline for arithmetic regime, tolerance, and final-output formatting
 - [Distributed Decomposition Clinic 01](distributed-decomposition-clinic-01.md): archive-based local summary and merge-contract thinking

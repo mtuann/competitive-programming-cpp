@@ -40,7 +40,7 @@ Fixed-width linear recurrences and repeated small linear transitions, turned int
 | --- | --- |
 | [Linear Recurrence hot sheet](../../../notebook/linear-recurrence-hot-sheet.md) | `quick reference` |
 | [Throwing Dice](../../../practice/ladders/math/linear-recurrence/throwingdice.md) | `flagship note` |
-| [Templates overview](../../../template-library.md) | `template guide` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 

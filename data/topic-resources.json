@@ -2598,9 +2598,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "DP cheatsheet",
-        "path": "notebook/dp-cheatsheet.md",
-        "kind": "parent router"
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },
@@ -2811,9 +2811,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "Templates overview",
+        "label": "Template Library exact starter route",
         "path": "template-library.md",
-        "kind": "template guide"
+        "kind": "starter route"
       }
     ]
   },
@@ -2871,9 +2871,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "Templates overview",
+        "label": "Template Library exact starter route",
         "path": "template-library.md",
-        "kind": "template guide"
+        "kind": "starter route"
       }
     ]
   },
@@ -2931,9 +2931,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "Templates overview",
+        "label": "Template Library exact starter route",
         "path": "template-library.md",
-        "kind": "template guide"
+        "kind": "starter route"
       }
     ]
   },
@@ -2996,9 +2996,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "Templates overview",
+        "label": "Template Library exact starter route",
         "path": "template-library.md",
-        "kind": "template guide"
+        "kind": "starter route"
       }
     ]
   },
@@ -3700,9 +3700,9 @@
         "kind": "flagship note"
       },
       {
-        "label": "String Hashing",
-        "path": "topics/strings/hashing/README.md",
-        "kind": "compare point"
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },

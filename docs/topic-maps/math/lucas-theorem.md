@@ -39,7 +39,7 @@ Prime-mod binomial coefficients beyond one factorial table, using base-p digit d
 | --- | --- |
 | [Lucas Theorem hot sheet](../../../notebook/lucas-hot-sheet.md) | `quick reference` |
 | [Binomial Coefficient (Prime Mod)](../../../practice/ladders/math/lucas-theorem/binomialcoefficientprimemod.md) | `flagship note` |
-| [Templates overview](../../../template-library.md) | `template guide` |
+| [Template Library exact starter route](../../../template-library.md) | `starter route` |
 
 ## Curated External Problems
 
