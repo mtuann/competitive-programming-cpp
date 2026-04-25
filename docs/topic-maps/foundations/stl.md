@@ -28,7 +28,7 @@ Container and algorithm fluency: build the habit of reaching for `vector`, `set`
 | [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `Primary` |
 | [USACO Guide](https://usaco.guide/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

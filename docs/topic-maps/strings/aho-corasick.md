@@ -25,7 +25,7 @@ Dictionary automaton for multi-pattern matching with failure and output links.
 | [cp-algorithms Aho-Corasick](https://cp-algorithms.com/string/aho_corasick.html) | `Reference` |
 | [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

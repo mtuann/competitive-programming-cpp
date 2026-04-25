@@ -27,7 +27,7 @@ Compress directed graphs into DAGs, reason about dependencies, and detect strong
 | [cp-algorithms topological sort](https://cp-algorithms.com/graph/topological-sort.html) | `Reference` |
 | [USACO Guide SCC](https://usaco.guide/adv/SCC) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

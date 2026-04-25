@@ -26,7 +26,7 @@ Successive shortest augmenting paths, potentials, and reduced costs for transpor
 | [cp-algorithms min-cost flow](https://cp-algorithms.com/graph/min_cost_flow.html) | `Reference` |
 | [USACO Guide min-cost flow](https://usaco.guide/adv/min-cost-flow?lang=cpp) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -25,13 +25,12 @@ Reason over contiguous ranges and split points when the optimal structure is bui
 | [USACO Guide Range DP](https://usaco.guide/gold/dp-ranges) | `Reference` |
 | [OI Wiki Interval DP](https://en.oi-wiki.org/dp/interval/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [AtCoder DP N](https://atcoder.jp/contests/dp/tasks/dp_n) | `Practice` |
 | [CSES Removal Game](https://cses.fi/problemset/task/1097/) | `Practice` |
-| [USACO Guide range DP problems](https://usaco.guide/gold/dp-ranges) | `Practice` |
 
 ## Curated External Problems
 

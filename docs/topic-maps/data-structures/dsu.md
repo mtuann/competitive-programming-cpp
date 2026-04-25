@@ -26,7 +26,7 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 | [cp-algorithms DSU](https://cp-algorithms.com/data_structures/disjoint_set_union.html) | `Reference` |
 | [USACO Guide DSU](https://usaco.guide/gold/dsu) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

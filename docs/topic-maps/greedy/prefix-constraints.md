@@ -26,7 +26,7 @@ Greedy selection under prefix or feasibility quotas, usually proved with exchang
 | [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

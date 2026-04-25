@@ -973,6 +973,33 @@ def normalized_source_kind(source: dict[str, object]) -> str:
     return "Course"
 
 
+def split_follow_up_sources(sources: list[dict[str, object]]) -> tuple[list[dict[str, object]], list[dict[str, object]]]:
+    practice_like: list[dict[str, object]] = []
+    follow_up: list[dict[str, object]] = []
+    for source in sources:
+        if normalized_source_kind(source) == "Practice":
+            practice_like.append(source)
+        else:
+            follow_up.append(source)
+    return practice_like, follow_up
+
+
+def filter_duplicate_source_urls(
+    sources: list[dict[str, object]],
+    *,
+    urls_to_skip: set[str],
+) -> list[dict[str, object]]:
+    filtered: list[dict[str, object]] = []
+    seen: set[str] = set()
+    for source in sources:
+        canonical = canonical_problem_url(source.get("url", ""))
+        if canonical in urls_to_skip or canonical in seen:
+            continue
+        seen.add(canonical)
+        filtered.append(source)
+    return filtered
+
+
 def validate_repo_companion_items(label: str, items: object, issues: list[str]) -> None:
     if not isinstance(items, list):
         append_issue(issues, f"{label} must be a list of repo companion objects.")
@@ -1779,7 +1806,7 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
     index_lines = [
         "# Topic Maps",
         "",
-        "These pages collect source-backed learning references, practice and follow-up sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
+        "These pages collect source-backed learning references, exact practice sources, follow-up reading, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.",
         "",
         "Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Reference`, `Essay / Blog`, and `Practice`.",
         "",
@@ -1837,13 +1864,26 @@ def write_topic_maps(rows: list[dict], topic_resources: dict[str, dict], externa
                 lines.append(f"| [{source['label']}]({source['url']}) | `{normalized_source_kind(source)}` |")
             lines.append("")
 
-        practice_sources = entry.get("practice_sources", [])
+        learning_sources = filter_duplicate_source_urls(learning_sources, urls_to_skip=set())
+        learning_source_urls = {canonical_problem_url(source.get("url", "")) for source in learning_sources}
+        practice_sources, follow_up_sources = split_follow_up_sources(entry.get("practice_sources", []))
+        practice_sources = filter_duplicate_source_urls(practice_sources, urls_to_skip=learning_source_urls)
+        follow_up_sources = filter_duplicate_source_urls(follow_up_sources, urls_to_skip=learning_source_urls)
         if practice_sources:
-            lines.append("## Practice And Follow-Up Sources")
+            lines.append("## Practice Sources")
             lines.append("")
             lines.append("| Source | Type |")
             lines.append("| --- | --- |")
             for source in practice_sources:
+                lines.append(f"| [{source['label']}]({source['url']}) | `{normalized_source_kind(source)}` |")
+            lines.append("")
+
+        if follow_up_sources:
+            lines.append("## Follow-Up Reading")
+            lines.append("")
+            lines.append("| Source | Type |")
+            lines.append("| --- | --- |")
+            for source in follow_up_sources:
                 lines.append(f"| [{source['label']}]({source['url']}) | `{normalized_source_kind(source)}` |")
             lines.append("")
 

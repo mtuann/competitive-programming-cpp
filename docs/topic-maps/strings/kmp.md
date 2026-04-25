@@ -26,13 +26,12 @@ Prefix-function reasoning for exact pattern matching, borders, periods, and auto
 | [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `Course` |
 | [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [CSES String Matching](https://cses.fi/problemset/task/1753) | `Practice` |
 | [CSES String Functions](https://cses.fi/problemset/task/2107) | `Practice` |
-| [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Practice` |
 
 ## Curated External Problems
 

@@ -26,7 +26,7 @@ Turn many range questions into subtraction of precomputed aggregates, then layer
 | [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `Reference` |
 | [OI Wiki prefix sum and adjacent difference](https://en.oi-wiki.org/basic/prefix-sum/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

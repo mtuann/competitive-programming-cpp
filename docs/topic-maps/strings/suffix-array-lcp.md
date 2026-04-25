@@ -26,7 +26,7 @@ Sorted suffix views and LCP arrays for substring order, uniqueness, and offline 
 | [Princeton suffix arrays](https://algs4.cs.princeton.edu/63suffix/) | `Course` |
 | [USACO Guide suffix array](https://usaco.guide/adv/suffix-array?lang=cpp) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

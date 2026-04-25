@@ -27,7 +27,7 @@ Search on sorted data and on monotone answers: learn the invariant-first templat
 | [USACO Guide binary search](https://usaco.guide/silver/binary-search) | `Reference` |
 | [Codeforces EDU binary search](https://codeforces.com/blog/entry/81729) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

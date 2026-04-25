@@ -26,7 +26,7 @@ Low-level prefix structure for point updates, range sums, compressed coordinates
 | [cp-algorithms Fenwick](https://cp-algorithms.com/data_structures/fenwick.html) | `Reference` |
 | [OI Wiki Fenwick](https://en.oi-wiki.org/ds/fenwick/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

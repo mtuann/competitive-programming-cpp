@@ -26,7 +26,7 @@ Choose the state dimension and transition order that matches 0-1, complete, boun
 | [cp-algorithms knapsack](https://cp-algorithms.com/dynamic_programming/knapsack.html) | `Reference` |
 | [OI Wiki knapsack DP](https://en.oi-wiki.org/dp/knapsack/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,13 +26,12 @@ Rolling hashes for substring equality, borders, Rabin-Karp style matching, and c
 | [USACO Guide hashing](https://usaco.guide/gold/hashing) | `Reference` |
 | [Princeton substring search](https://algs4.cs.princeton.edu/53substring/) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [CSES Finding Periods](https://cses.fi/problemset/task/1733) | `Practice` |
 | [CSES Finding Borders](https://cses.fi/problemset/task/1732) | `Practice` |
-| [USACO Guide hashing problems](https://usaco.guide/gold/hashing) | `Practice` |
 
 ## Curated External Problems
 

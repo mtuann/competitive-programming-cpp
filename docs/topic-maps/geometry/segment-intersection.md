@@ -26,7 +26,7 @@ Robust orientation tests, on-segment handling, and degenerate cases for line and
 | [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `Essay / Blog` |
 | [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

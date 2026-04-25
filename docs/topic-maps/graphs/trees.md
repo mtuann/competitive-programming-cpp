@@ -26,7 +26,7 @@ Tree structure, rooting, Euler tours, diameters, and decomposition ideas that po
 | [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `Primary` |
 | [OI Wiki tree basics](https://en.oi-wiki.org/graph/tree-basic/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

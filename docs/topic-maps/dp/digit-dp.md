@@ -25,13 +25,12 @@ Count or optimize over numeric ranges by scanning digits left-to-right with tigh
 | [USACO Guide Digit DP](https://usaco.guide/gold/digit-dp) | `Reference` |
 | [OI Wiki Digit DP](https://en.oi-wiki.org/dp/number/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [AtCoder DP S](https://atcoder.jp/contests/dp/tasks/dp_s) | `Practice` |
 | [CSES Counting Numbers](https://cses.fi/problemset/task/2220/) | `Practice` |
-| [USACO Guide digit DP problems](https://usaco.guide/gold/digit-dp) | `Practice` |
 
 ## Curated External Problems
 

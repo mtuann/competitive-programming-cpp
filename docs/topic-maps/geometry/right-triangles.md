@@ -26,7 +26,7 @@ A focused counting-geometry subtopic around perpendicular vectors, normalized sl
 | [cp-algorithms oriented area](https://cp-algorithms.com/geometry/oriented-triangle-area.html) | `Reference` |
 | [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

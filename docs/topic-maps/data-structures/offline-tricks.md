@@ -26,7 +26,7 @@ Sort events, reorder queries, and use rollback or CDQ to trade interactivity for
 | [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `Reference` |
 | [OI Wiki CDQ divide and conquer](https://en.oi-wiki.org/misc/cdq-divide/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,7 +26,7 @@ A range-update perspective on prefix sums: store changes at boundaries, then rec
 | [USACO Guide more prefix sums](https://usaco.guide/silver/more-prefix-sums) | `Reference` |
 | [cppreference adjacent_difference](https://en.cppreference.com/w/cpp/algorithm/adjacent_difference) | `Primary` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

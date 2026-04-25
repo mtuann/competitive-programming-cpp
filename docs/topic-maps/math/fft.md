@@ -27,7 +27,7 @@ Polynomial multiplication and convolution with roots of unity, integer-friendly 
 | [OI Wiki FFT](https://en.oi-wiki.org/math/poly/fft/) | `Reference` |
 | [AtCoder ACL Convolution](https://atcoder.github.io/ac-library/production/document_en/convolution.html) | `Primary` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,7 +26,7 @@ Use cut and cycle properties to build minimum spanning forests with Kruskal or P
 | [cp-algorithms Kruskal](https://cp-algorithms.com/graph/mst_kruskal.html) | `Reference` |
 | [cp-algorithms Prim](https://cp-algorithms.com/graph/mst_prim.html) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -28,7 +28,7 @@ Output-sensitive problems where the main work is proving the existence and struc
 | [Tips on Constructive Algorithms](https://codeforces.com/blog/entry/80317) | `Essay / Blog` |
 | [CSES books](https://www.cses.fi/book/index.html) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

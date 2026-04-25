@@ -28,7 +28,7 @@ LP duality, convex relaxation, and the optimization language that later feeds in
 | [Boyd-Vandenberghe Convex Optimization](https://stanford.edu/~boyd/cvxbook/) | `Reference` |
 | [Stanford CS261](https://theory.stanford.edu/~tim/cs261/cs261.html) | `Course` |
 
-## Practice And Follow-Up Sources
+## Follow-Up Reading
 
 | Source | Type |
 | --- | --- |

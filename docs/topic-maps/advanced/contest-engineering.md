@@ -28,7 +28,7 @@ Operational discipline for contests: local testing, checkers, interactive handli
 | [ICPC Tools](https://tools.icpc.global/) | `Primary` |
 | [ICPC Contest Utilities](https://tools.icpc.global/contest-utils/) | `Primary` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

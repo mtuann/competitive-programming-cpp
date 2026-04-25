@@ -26,13 +26,12 @@ DP on rooted trees, rerooting, subtree merges, and local state design for hierar
 | [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `Reference` |
 | [USACO Guide Combining Subtrees](https://usaco.guide/adv/comb-sub) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [AtCoder DP P](https://atcoder.jp/contests/dp/tasks/dp_p) | `Practice` |
 | [CSES Tree Matching](https://cses.fi/problemset/task/1130/) | `Practice` |
-| [USACO Guide tree DP modules](https://usaco.guide/gold/dp-trees) | `Practice` |
 
 ## Curated External Problems
 

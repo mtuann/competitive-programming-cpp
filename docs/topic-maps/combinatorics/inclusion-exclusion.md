@@ -26,7 +26,7 @@ Count by overlaps, complements, and Möbius-style corrections when direct counti
 | [USACO Guide PIE](https://usaco.guide/plat/PIE) | `Reference` |
 | [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

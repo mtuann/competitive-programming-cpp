@@ -1,6 +1,6 @@
 # Topic Maps
 
-These pages collect source-backed learning references, practice and follow-up sources, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.
+These pages collect source-backed learning references, exact practice sources, follow-up reading, repo companion material, curated external problems, and all currently tagged repo problems for each topic/subtopic.
 
 Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Reference`, `Essay / Blog`, and `Practice`.
 

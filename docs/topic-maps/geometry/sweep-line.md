@@ -26,7 +26,7 @@ Sort events and maintain an active structure while a conceptual line moves acros
 | [USACO Guide sweep line](https://usaco.guide/plat/sweep-line?lang=cpp) | `Reference` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

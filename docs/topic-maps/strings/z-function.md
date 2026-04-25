@@ -25,7 +25,7 @@ Maintain a Z-box to measure longest prefix matches at every position and solve p
 | [cp-algorithms Z-function](https://cp-algorithms.com/string/z-function.html) | `Reference` |
 | [USACO Guide string searching](https://usaco.guide/adv/string-search) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

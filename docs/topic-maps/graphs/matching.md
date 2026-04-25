@@ -26,7 +26,7 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 | [cp-algorithms Kuhn](https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html) | `Reference` |
 | [OI Wiki augmenting path](https://en.oi-wiki.org/graph/graph-matching/augment/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

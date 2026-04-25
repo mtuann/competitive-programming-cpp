@@ -26,7 +26,7 @@ Static range query structure for idempotent operations such as RMQ and LCA reduc
 | [OI Wiki sparse table](https://en.oi-wiki.org/ds/sparse-table/) | `Reference` |
 | [USACO Guide Euler Tour / Static RMQ](https://usaco.guide/gold/tree-euler/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

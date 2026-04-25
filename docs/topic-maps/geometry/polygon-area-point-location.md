@@ -26,7 +26,7 @@ Shoelace formula, point-in-polygon logic, and careful boundary handling in plana
 | [Princeton geometric primitives](https://www.cs.princeton.edu/courses/archive/fall10/cos226/lectures/99GeometricPrimitives-2x2.pdf) | `Course` |
 | [cp-algorithms point location](https://cp-algorithms.com/geometry/point-location.html) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

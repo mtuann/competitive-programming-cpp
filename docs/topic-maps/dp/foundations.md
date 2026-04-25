@@ -27,7 +27,7 @@ State design, transitions, and the discipline of converting brute force recurren
 | [cp-algorithms intro to DP](https://cp-algorithms.com/dynamic_programming/intro-to-dp.html) | `Reference` |
 | [OI Wiki DP basics](https://en.oi-wiki.org/dp/basic/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

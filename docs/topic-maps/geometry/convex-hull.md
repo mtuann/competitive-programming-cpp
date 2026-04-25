@@ -26,12 +26,11 @@ Build hulls with monotone chain or Graham scan, then exploit hull order for rota
 | [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `Reference` |
 | [Topcoder geometry concepts part 2](https://www.topcoder.com/community/competitive-programming/tutorials/geometry-concepts-line-intersection-and-its-applications/) | `Essay / Blog` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [CSES Convex Hull](https://cses.fi/problemset/task/2195) | `Practice` |
-| [USACO Guide convex hull](https://usaco.guide/plat/convex-hull) | `Practice` |
 | [CSES Polygon Area](https://cses.fi/problemset/task/2191/) | `Practice` |
 
 ## Curated External Problems

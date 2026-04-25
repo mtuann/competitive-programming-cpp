@@ -26,12 +26,17 @@ Factorials, binomials, arrangements, stars and bars, and the basic models that r
 | [cp-algorithms binomial coefficients](https://cp-algorithms.com/combinatorics/binomial-coefficients.html) | `Reference` |
 | [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [CSES Binomial Coefficients](https://cses.fi/problemset/task/1079/) | `Practice` |
 | [CSES Distributing Apples](https://cses.fi/problemset/task/1716/) | `Practice` |
+
+## Follow-Up Reading
+
+| Source | Type |
+| --- | --- |
 | [USACO Guide Catalan Numbers](https://usaco.guide/gold/combo?lang=cpp) | `Reference` |
 
 ## Curated External Problems

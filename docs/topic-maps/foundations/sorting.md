@@ -25,7 +25,7 @@ Sorting as a modeling tool: order data to expose monotonicity, simplify sweeps, 
 | [cppreference std::sort](https://en.cppreference.com/w/cpp/algorithm/sort) | `Primary` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

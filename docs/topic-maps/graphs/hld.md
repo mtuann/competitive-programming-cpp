@@ -27,7 +27,7 @@ Decompose tree paths into logarithmically many chains so path queries and update
 | [OI Wiki HLD](https://en.oi-wiki.org/graph/hld/) | `Reference` |
 | [USACO Guide HLD](https://usaco.guide/plat/hld?lang=cpp) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

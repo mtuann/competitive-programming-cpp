@@ -27,7 +27,7 @@ Before running graph algorithms, decide what the nodes, edges, states, and weigh
 | [IOI 2025 syllabus PDF](https://ioinformatics.org/files/ioi-syllabus-2025.pdf) | `Primary` |
 | [OI Wiki graph intro](https://en.oi-wiki.org/graph/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,7 +26,7 @@ Traversal for reachability, layering, components, bipartiteness, and DFS-tree st
 | [cp-algorithms BFS](https://cp-algorithms.com/graph/breadth-first-search.html) | `Reference` |
 | [USACO Guide graph traversal](https://usaco.guide/silver/graph-traversal?lang=cpp) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,7 +26,7 @@ Lowest common ancestor as a reusable primitive for ancestor checks and path quer
 | [OI Wiki LCA](https://en.oi-wiki.org/graph/lca/) | `Reference` |
 | [USACO Guide Euler tour technique](https://usaco.guide/gold/tree-euler/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

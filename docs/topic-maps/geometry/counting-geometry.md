@@ -26,7 +26,7 @@ Count intersections, lattice points, or union areas by mixing geometry primitive
 | [cp-algorithms lattice points](https://cp-algorithms.com/geometry/lattice-points.html) | `Reference` |
 | [USACO Guide range queries with sweep line](https://usaco.guide/plat/range-sweep) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

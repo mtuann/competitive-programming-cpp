@@ -27,7 +27,7 @@ Use heaps, sets, and multisets to maintain online minima/maxima, medians, and ac
 | [cppreference set](https://en.cppreference.com/w/cpp/container/set) | `Primary` |
 | [USACO Guide sorted sets](https://usaco.guide/gold/intro-sorted-sets) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -27,7 +27,7 @@ From BFS and DAG DP to Dijkstra and Bellman-Ford, pick the shortest-path tool th
 | [MIT 6.006 Dijkstra and DAG shortest paths](https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture16.pdf) | `Course` |
 | [OI Wiki shortest path](https://en.oi-wiki.org/graph/shortest-path/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

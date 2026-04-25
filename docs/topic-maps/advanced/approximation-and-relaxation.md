@@ -28,11 +28,10 @@ Approximation ratios, LP/SDP relaxations, primal-dual methods, and the boundary 
 | [CMU 15-854 Approximation Algorithms](https://www.cs.cmu.edu/afs/cs/academic/class/15854-f05/www/) | `Course` |
 | [Williamson-Shmoys](https://www.cambridge.org/core/books/design-of-approximation-algorithms/88E0AEAEFF2382681A103EEA572B83C6) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Follow-Up Reading
 
 | Source | Type |
 | --- | --- |
-| [CMU 15-854 notes and homeworks](https://www.cs.cmu.edu/afs/cs/academic/class/15854-f05/www/) | `Course` |
 | [MIT 6.854 problem sets](https://courses.csail.mit.edu/6.854/16/) | `Course` |
 | [CMU 15-854B](https://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15854-f21/www/) | `Course` |
 

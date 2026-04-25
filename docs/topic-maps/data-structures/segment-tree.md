@@ -27,7 +27,7 @@ General range query/update structure built on monoids and lazy propagation, with
 | [cp-algorithms segment tree](https://cp-algorithms.com/data_structures/segment_tree.html) | `Reference` |
 | [OI Wiki segment tree](https://en.oi-wiki.org/ds/seg/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

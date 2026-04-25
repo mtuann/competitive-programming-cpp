@@ -26,7 +26,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 | [USACO Guide modular arithmetic](https://usaco.guide/gold/modular) | `Reference` |
 | [cp-algorithms modular inverse](https://cp-algorithms.com/algebra/module-inverse.html) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -26,7 +26,7 @@ Tree-rooted dynamic programming from local subtree states to rerooting and path 
 | [OI Wiki tree DP](https://en.oi-wiki.org/dp/tree/) | `Reference` |
 | [USACO Guide DP on trees](https://usaco.guide/gold/dp-trees) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

@@ -24,7 +24,7 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 | [MIT Gomory-Hu paper mirror](https://web.mit.edu/tabbott/www/papers/gomory-hu.pdf) | `Primary` |
 | [UC Davis advanced algorithms](https://www.cs.ucdavis.edu/~martel/222b/) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

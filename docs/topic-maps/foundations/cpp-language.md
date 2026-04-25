@@ -28,7 +28,7 @@ Core C++ contest toolkit: fast I/O, references and value semantics, STL primitiv
 | [cppreference containers](https://en.cppreference.com/w/cpp/container) | `Primary` |
 | [cppreference algorithms](https://en.cppreference.com/w/cpp/algorithm) | `Primary` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

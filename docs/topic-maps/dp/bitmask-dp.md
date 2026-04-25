@@ -26,7 +26,7 @@ Compress small subsets into bitmasks and reason about transitions over subsets, 
 | [OI Wiki state compression DP](https://en.oi-wiki.org/dp/state/) | `Reference` |
 | [USACO Guide broken profile](https://usaco.guide/adv/dp-broken-profile) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

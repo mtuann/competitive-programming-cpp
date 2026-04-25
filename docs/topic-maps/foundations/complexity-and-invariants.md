@@ -27,7 +27,7 @@ Reasoning tools for contests: estimate time honestly, define loop invariants, an
 | [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

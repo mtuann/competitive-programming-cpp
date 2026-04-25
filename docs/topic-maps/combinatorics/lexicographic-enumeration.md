@@ -26,7 +26,7 @@ Generate, count, or skip combinatorial objects in lexicographic order using rank
 | [cp-algorithms generating combinations](https://cp-algorithms.com/combinatorics/generating_combinations.html) | `Reference` |
 | [OI Wiki enumerate](https://en.oi-wiki.org/basic/enumerate/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

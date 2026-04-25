@@ -25,7 +25,7 @@ Problems where a moving window carries state, costs, or feasibility information 
 | [USACO Guide two pointers](https://usaco.guide/silver/two-pointers) | `Reference` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

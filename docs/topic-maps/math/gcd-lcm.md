@@ -26,11 +26,16 @@ Euclidean algorithm, Bézout identities, and the way gcd/lcm structure propagate
 | [OI Wiki GCD](https://en.oi-wiki.org/math/number-theory/gcd/) | `Reference` |
 | [Principles of Algorithmic Problem Solving](https://usaco.guide/PAPS.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
 | [CSES Common Divisors](https://cses.fi/problemset/task/1081/) | `Practice` |
+
+## Follow-Up Reading
+
+| Source | Type |
+| --- | --- |
 | [USACO Guide GCD on Blackboard](https://usaco.guide/problems/cf-gcd-on-blackboard/solution) | `Reference` |
 | [USACO Guide Orac and LCM](https://usaco.guide/problems/cf-orac-and-lcm/solution) | `Reference` |
 

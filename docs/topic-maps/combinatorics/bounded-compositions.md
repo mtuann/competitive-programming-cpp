@@ -27,7 +27,7 @@ Distribute sums under lower and upper bounds using stars and bars, generating fu
 | [OI Wiki combinations](https://en.oi-wiki.org/math/combinatorics/combination/) | `Reference` |
 | [OI Wiki PIE](https://en.oi-wiki.org/math/combinatorics/inclusion-exclusion/) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

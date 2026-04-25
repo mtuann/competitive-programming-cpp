@@ -27,13 +27,11 @@ Reductions, hardness classes, and the language for understanding when exact effi
 | [Computational Complexity: A Modern Approach](https://theory.cs.princeton.edu/complexity/) | `Reference` |
 | [MIT 6.006 Lecture 19 Complexity](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/lecture-19-complexity/) | `Course` |
 
-## Practice And Follow-Up Sources
+## Follow-Up Reading
 
 | Source | Type |
 | --- | --- |
-| [MIT 18.404J assignments and exams](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/) | `Course` |
 | [MIT 6.045J](https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/) | `Course` |
-| [Princeton textbook exercises](https://theory.cs.princeton.edu/complexity/) | `Reference` |
 
 ## Repo Companion Material
 

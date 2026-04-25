@@ -26,7 +26,7 @@ Divisibility, primes, totients, divisor functions, and the standard multiplicati
 | [OI Wiki number theory basics](https://en.oi-wiki.org/math/number-theory/basic/) | `Reference` |
 | [Competitive Programmer's Handbook](https://usaco.guide/CPH.pdf) | `Reference` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |

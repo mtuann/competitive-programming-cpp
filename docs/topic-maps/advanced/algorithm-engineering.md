@@ -28,7 +28,7 @@ Performance work beyond asymptotics: benchmarks, cache behavior, memory layout, 
 | [MIT OCW 6.5060](https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/) | `Course` |
 | [TU/e Algorithms Engineering](https://research.tue.nl/en/courses/algorithms-engineering/) | `Course` |
 
-## Practice And Follow-Up Sources
+## Practice Sources
 
 | Source | Type |
 | --- | --- |
