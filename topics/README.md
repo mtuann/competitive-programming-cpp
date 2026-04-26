@@ -20,22 +20,22 @@ Pick the area that matches your current bottleneck, then stay inside that family
 ### Core-first areas
 
 | Area | Tier | Start here if you need... | First stop |
-| --- | --- | --- |
-| `Foundations` | <span class="route-badge route-badge--core">Core</span> | cleaner C++, complexity habits, and bread-and-butter patterns | [Foundations](foundations/README.md) |
-| `Data Structures` | <span class="route-badge route-badge--core">Core</span> | standard tools for range queries, connectivity, and updates | [Data Structures](data-structures/README.md) |
-| `Graphs` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--bridge">Bridge</span> | modeling, traversals, shortest paths, trees, flow, and matching | [Graphs](graphs/README.md) |
-| `Dynamic Programming` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | state design, transitions, and optimization over structure | [Dynamic Programming](dp/README.md) |
-| `Math` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | modular arithmetic, combinatorics, and number theory tools | [Math](math/README.md) |
-| `Strings` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
+| --- | --- | --- | --- |
+| `Foundations` | `Core` | cleaner C++, complexity habits, and bread-and-butter patterns | [Foundations](foundations/README.md) |
+| `Data Structures` | `Core` | standard tools for range queries, connectivity, and updates | [Data Structures](data-structures/README.md) |
+| `Graphs` | `Core + Bridge` | modeling, traversals, shortest paths, trees, flow, and matching | [Graphs](graphs/README.md) |
+| `Dynamic Programming` | `Core + Deep` | state design, transitions, and optimization over structure | [Dynamic Programming](dp/README.md) |
+| `Math` | `Core + Deep` | modular arithmetic, combinatorics, and number theory tools | [Math](math/README.md) |
+| `Strings` | `Core + Deep` | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
 
 ### Extension and follow-up areas
 
 | Area | Tier | Start here if you need... | First stop |
-| --- | --- | --- |
-| `Combinatorics` | <span class="route-badge route-badge--bridge">Bridge</span> <span class="route-badge route-badge--deep">Deep</span> | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
-| `Geometry` | <span class="route-badge route-badge--deep">Deep</span> | vectors, orientation, hulls, and geometric counting | [Geometry](geometry/README.md) |
-| `Greedy` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--bridge">Bridge</span> | exchange arguments, feasibility-first thinking, and locally safe choices | [Greedy](greedy/README.md) |
-| `Advanced` | <span class="route-badge route-badge--enrichment">Enrichment</span> | randomized algorithms, approximation, complexity, and algorithm design depth | [Advanced](advanced/README.md) |
+| --- | --- | --- | --- |
+| `Combinatorics` | `Bridge + Deep` | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
+| `Geometry` | `Deep` | vectors, orientation, hulls, and geometric counting | [Geometry](geometry/README.md) |
+| `Greedy` | `Core + Bridge` | exchange arguments, feasibility-first thinking, and locally safe choices | [Greedy](greedy/README.md) |
+| `Advanced` | `Enrichment` | randomized algorithms, approximation, complexity, and algorithm design depth | [Advanced](advanced/README.md) |
 
 ## Learn -> Practice -> Retrieve
 
@@ -54,13 +54,13 @@ If you already know the weak topic and just need the next problem set, jump to [
 When one family feels wider than your mental map, reopen the bridge page first instead of clicking random leaf topics.
 
 | Family starts feeling fragmented | Tier | Reopen this bridge | Then branch into... |
-| --- | --- | --- |
-| trees | <span class="route-badge route-badge--bridge">Bridge</span> | [Trees](graphs/trees/README.md) | subtree queries, LCA, HLD, virtual tree, tree DP |
-| flow and cuts | <span class="route-badge route-badge--bridge">Bridge</span> | [Maximum Flow](graphs/flow/README.md) | lower bounds, Gomory-Hu, global min-cut, min-cost flow |
-| divisibility and congruences | <span class="route-badge route-badge--bridge">Bridge</span> | [GCD / LCM](math/gcd-lcm/README.md) | CRT, modular arithmetic, prime-exponent constructions |
-| transform-heavy algebra | <span class="route-badge route-badge--bridge">Bridge</span> | [FFT / NTT](math/fft-ntt/README.md) | polynomial / FPS |
-| bit-state techniques | <span class="route-badge route-badge--bridge">Bridge</span> | [Bit Tricks](foundations/bit-tricks/README.md) | bitmask DP, SOS, FWHT, xor basis, bit-parallelism |
-| explicit search trees | <span class="route-badge route-badge--bridge">Bridge</span> | [Recursion And Backtracking](foundations/recursion-backtracking/README.md) | bitmask DP, meet-in-the-middle, complexity triage |
-| monotone scans | <span class="route-badge route-badge--bridge">Bridge</span> | [Monotonic Stack / Queue](data-structures/monotonic-stack-queue/README.md) | nearest boundary, sliding extrema, histogram-style problems |
+| --- | --- | --- | --- |
+| trees | `Bridge` | [Trees](graphs/trees/README.md) | subtree queries, LCA, HLD, virtual tree, tree DP |
+| flow and cuts | `Bridge` | [Maximum Flow](graphs/flow/README.md) | lower bounds, Gomory-Hu, global min-cut, min-cost flow |
+| divisibility and congruences | `Bridge` | [GCD / LCM](math/gcd-lcm/README.md) | CRT, modular arithmetic, prime-exponent constructions |
+| transform-heavy algebra | `Bridge` | [FFT / NTT](math/fft-ntt/README.md) | polynomial / FPS |
+| bit-state techniques | `Bridge` | [Bit Tricks](foundations/bit-tricks/README.md) | bitmask DP, SOS, FWHT, xor basis, bit-parallelism |
+| explicit search trees | `Bridge` | [Recursion And Backtracking](foundations/recursion-backtracking/README.md) | bitmask DP, meet-in-the-middle, complexity triage |
+| monotone scans | `Bridge` | [Monotonic Stack / Queue](data-structures/monotonic-stack-queue/README.md) | nearest boundary, sliding extrema, histogram-style problems |
 
 If you want the whole non-foundational surface in one visual instead of one area at a time, use [Deep Topic Taxonomy](../docs/deep-topic-taxonomy.md).
