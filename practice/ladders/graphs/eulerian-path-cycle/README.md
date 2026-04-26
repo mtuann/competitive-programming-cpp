@@ -34,7 +34,7 @@ Target skill:
 ## Stretch
 
 - directed path with fixed endpoints -> [CSES - Teleporters Path](https://cses.fi/problemset/task/1693)
-- overlap graph / sequence reconstruction -> [CSES - De Bruijn Sequence](https://cses.fi/problemset/task/1692)
+- overlap graph / sequence reconstruction -> [De Bruijn Sequence](../de-bruijn-sequence/debruijnsequence.md)
 - compare against [Euler Tour / Subtree Queries](../../../../topics/graphs/euler-tour-subtree/README.md) so the naming boundary stays clean
 
 Target skill:
@@ -47,6 +47,7 @@ Target skill:
 - exact starter -> [eulerian-path-cycle.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/eulerian-path-cycle.cpp)
 - flagship in-lane rep -> [Mail Delivery](maildelivery.md)
 - compare point for the name clash -> [Euler Tour / Subtree Queries](../../../../topics/graphs/euler-tour-subtree/README.md)
+- hidden-overlap modeling sibling -> [De Bruijn Sequence](../de-bruijn-sequence/debruijnsequence.md)
 
 ## Repo Anchors And Compare Points
 
@@ -60,7 +61,7 @@ The strongest in-repo loop here is:
 1. learn the degree / balance split from the [topic page](../../../../topics/graphs/eulerian-path-cycle/README.md)
 2. solve or revisit [Mail Delivery](maildelivery.md) as the clean undirected flagship
 3. reopen the [Eulerian hot sheet](../../../../notebook/eulerian-hot-sheet.md) until `Hierholzer + m + 1` is automatic
-4. then move to `Teleporters Path` and `De Bruijn Sequence`
+4. then move to `Teleporters Path` and [De Bruijn Sequence](../de-bruijn-sequence/debruijnsequence.md)
 
 ## Exit Criteria
 

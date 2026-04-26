@@ -46,6 +46,7 @@ Strong anti-cues:
 - the graph has no real capacity structure
 - the statement is really bipartite matching without capacities, and matching language is cleaner
 - the graph is tiny and the real target is min-cost flow, not plain max flow
+- the graph is undirected and asks only for the cheapest disconnection cut with no designated `s` or `t` -> [Randomized / Global Min-Cut](../global-min-cut/README.md)
 
 What success looks like after studying this page:
 
@@ -53,7 +54,7 @@ What success looks like after studying this page:
 - you understand residual graphs as the real working object
 - you can explain why reverse edges are logically necessary
 - you can extract a min cut from the final residual graph
-- you know when Dinic is the right default and when the problem is really matching or min-cost flow instead
+- you know when Dinic is the right default, when push-relabel is the cleaner engine sibling, and when the problem is really matching or min-cost flow instead
 - you can tell whether the statement wants a flow value, a cut certificate, or a reduction target such as matching
 
 ## Prerequisites
@@ -64,6 +65,8 @@ What success looks like after studying this page:
 
 Helpful neighboring topics:
 
+- [Randomized / Global Min-Cut](../global-min-cut/README.md)
+- [Gomory-Hu Tree](../gomory-hu/README.md)
 - [Min-Cost Flow](../min-cost-flow/README.md)
 - [Graph Cheatsheet](../../../notebook/graph-cheatsheet.md)
 
@@ -413,7 +416,7 @@ That is the right boundary to remember:
 
 ### Example 6: Gomory-Hu Is "Many Cuts" On Top Of Max Flow
 
-[MCQUERY](../../../practice/ladders/graphs/flow/mcquery.md) is not teaching a new base flow engine.
+[MCQUERY](../../../practice/ladders/graphs/gomory-hu/mcquery.md) is the repo's first solved rep for the dedicated sibling lane [Gomory-Hu Tree](../gomory-hu/README.md), not a new base flow engine.
 
 It is teaching a meta-pattern:
 
@@ -593,8 +596,39 @@ Important next-layer topics include:
 
 - [Min-Cost Flow](../min-cost-flow/README.md)
 - [Flow With Lower Bounds](../flow-lower-bounds/README.md)
-- push-relabel implementations
+- push-relabel engine refinements
 - Gomory-Hu trees for many pairwise cuts
+
+### Engine Sibling: Dinic vs Push-Relabel
+
+For this repo, the default reopen path is still:
+
+- model the network cleanly
+- use Dinic first
+
+That default stays right when:
+
+- the graph is moderate or sparse
+- you want the cleanest residual-BFS plus blocking-flow story
+- the problem also wants a cut certificate right afterward
+
+Reopen push-relabel when:
+
+- the model is still plain static max flow
+- you want a non-augmenting-path engine based on preflow, excess, and height labels
+- you want a dense-graph or hard-benchmark sibling instead of changing the reduction itself
+
+That is an **engine refinement**, not a new modeling family. If the statement changes the model with:
+
+- edge costs
+- lower bounds
+- or many pairwise cuts
+
+then the next stop is not push-relabel, but one of:
+
+- [Min-Cost Flow](../min-cost-flow/README.md)
+- [Flow With Lower Bounds](../flow-lower-bounds/README.md)
+- [Gomory-Hu Tree](../gomory-hu/README.md)
 
 Those are valuable, but the right study order is:
 
@@ -641,16 +675,20 @@ Repo anchors:
 
 - practice ladder: [Flow ladder](../../../practice/ladders/graphs/flow/README.md)
 - practice note: [FFLOW](../../../practice/ladders/graphs/flow/fflow.md)
+- practice note: [Maximum Flow (Push-Relabel route)](../../../practice/ladders/graphs/flow/maximumflowpushrelabel.md)
 - practice note: [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
-- practice note: [MCQUERY](../../../practice/ladders/graphs/flow/mcquery.md)
+- sibling cut-tree rep: [MCQUERY](../../../practice/ladders/graphs/gomory-hu/mcquery.md)
 - practice note: [Reactor Cooling](../../../practice/ladders/graphs/flow/reactorcooling.md)
 - practice note: [MINCOST](../../../practice/ladders/graphs/flow/mincost.md)
 - starter template: [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- starter template: [push-relabel-max-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/push-relabel-max-flow.cpp)
 - notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
+- notebook refresher: [Push-Relabel hot sheet](../../../notebook/push-relabel-hot-sheet.md)
 
 ## Related Topics
 
 - [Matching](../matching/README.md)
+- [Gomory-Hu Tree](../gomory-hu/README.md)
 - [Shortest Paths](../shortest-paths/README.md)
 - [Flow With Lower Bounds](../flow-lower-bounds/README.md)
 - [Min-Cost Flow](../min-cost-flow/README.md)

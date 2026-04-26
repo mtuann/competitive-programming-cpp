@@ -14,7 +14,7 @@ Use this page when the statement wants one walk that uses every edge exactly onc
 - undirected graph, closed walk through every edge -> all non-isolated degrees even -> [`eulerian-path-cycle.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/eulerian-path-cycle.cpp)
 - undirected graph, open walk through every edge -> exactly two odd-degree vertices -> [`eulerian-path-cycle.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/eulerian-path-cycle.cpp)
 - directed graph, use every edge once from fixed source to fixed sink -> `out-in` balance plus `Hierholzer` -> reopen [Eulerian Path / Cycle](../topics/graphs/eulerian-path-cycle/README.md)
-- string reconstruction from overlaps -> build a de Bruijn graph first, then reopen [Eulerian Path / Cycle](../topics/graphs/eulerian-path-cycle/README.md)
+- string reconstruction from overlaps -> build a de Bruijn graph first -> reopen [De Bruijn Sequence](../topics/graphs/de-bruijn-sequence/README.md)
 
 ## Core Invariants
 
@@ -42,6 +42,7 @@ Use this page when the statement wants one walk that uses every edge exactly onc
 ## Reopen Paths
 
 - full feasibility split and `Hierholzer` proof -> [Eulerian Path / Cycle](../topics/graphs/eulerian-path-cycle/README.md)
+- overlap-state modeling before the traversal -> [De Bruijn Sequence hot sheet](de-bruijn-sequence-hot-sheet.md)
 - if the graph model itself is still fuzzy -> [Graph Modeling](../topics/graphs/graph-modeling/README.md)
 - if the statement is subtree-only and you only got baited by the word `Euler` -> [Subtree Queries hot sheet](subtree-queries-hot-sheet.md)
 - practice lane -> [Eulerian Path / Cycle ladder](../practice/ladders/graphs/eulerian-path-cycle/README.md)

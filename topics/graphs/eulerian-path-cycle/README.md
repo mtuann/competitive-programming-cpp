@@ -32,7 +32,7 @@ Strong contest signals:
 
 - "use every road / teleporter / domino exactly once"
 - "find a route that traverses all edges"
-- "reconstruct a sequence from overlaps" via a de Bruijn graph
+- "reconstruct a sequence from overlaps" via a de Bruijn graph, then reopen [De Bruijn Sequence](../de-bruijn-sequence/README.md)
 - the hard part is degree feasibility plus one constructive traversal
 
 Strong anti-cues:
@@ -236,7 +236,7 @@ Important compare point:
 
 Important compare point:
 
-- [CSES - De Bruijn Sequence](https://cses.fi/problemset/task/1692)
+- [De Bruijn Sequence](../de-bruijn-sequence/README.md)
 
 ## Worked Examples
 
@@ -347,7 +347,7 @@ Tradeoff summary:
 
 - undirected closed walk through all streets -> [Mail Delivery](../../../practice/ladders/graphs/eulerian-path-cycle/maildelivery.md)
 - directed path from source to sink using every edge -> [CSES - Teleporters Path](https://cses.fi/problemset/task/1693)
-- overlap graph / de Bruijn reconstruction -> [CSES - De Bruijn Sequence](https://cses.fi/problemset/task/1692)
+- overlap graph / de Bruijn reconstruction -> [De Bruijn Sequence](../de-bruijn-sequence/README.md)
 - lexicographically constrained Euler trail -> fence / postman-style variants
 
 ## References
@@ -365,5 +365,6 @@ Tradeoff summary:
 - [Mail Delivery note](../../../practice/ladders/graphs/eulerian-path-cycle/maildelivery.md)
 - Compare points:
   - [BFS And DFS](../bfs-dfs/README.md)
+  - [De Bruijn Sequence](../de-bruijn-sequence/README.md)
   - [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
   - [Graph Modeling](../graph-modeling/README.md)

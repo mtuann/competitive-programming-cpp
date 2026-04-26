@@ -86,7 +86,7 @@ So the optimal count becomes:
 
 - Topic page: [Matching](../../../../topics/graphs/matching/README.md)
 - Practice ladder: [Matching ladder](README.md)
-- Starter route: no exact blossom starter in the repo; compare [School Dance](schooldance.md) for the bipartite case, then reopen [Matching](../../../../topics/graphs/matching/README.md)
+- Starter route: exact blossom starter -> [edmonds-blossom.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/edmonds-blossom.cpp); direct sibling lane -> [Edmonds Blossom / General Matching](../../../../topics/graphs/general-matching/README.md)
 - Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
 - Carry forward: pin down whether the graph is bipartite or general before choosing a matching engine.
 - This note adds: the transformation from edge-cover language to the matching formulation used here.

@@ -1,6 +1,6 @@
 # Matching Ladder
 
-This ladder should make bipartite matching feel like a natural modeling tool and help you separate it cleanly from flow, edge cover, and general matching.
+This ladder should make bipartite matching feel like a natural modeling tool and help you separate it cleanly from flow, weighted assignment, and general matching.
 
 ## Who This Is For
 
@@ -31,6 +31,7 @@ Target skill:
 
 ## Stretch
 
+- [Edmonds Blossom / General Matching](../general-matching/README.md)
 - [QBFLOWER](qbflower.md)
 - compare matching reductions with flow reductions
 - understand where edge-cover relationships appear
@@ -43,12 +44,15 @@ Target skill:
 
 - bipartite maximum matching -> [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
 - flagship in-lane rep -> [School Dance](schooldance.md)
+- weighted sibling lane -> [Task Assignment](../hungarian-assignment/taskassignment.md)
+- non-bipartite sibling lane -> [General Matching](../general-matching/generalmatching.md)
 - when the cleaner model is actually capacity flow -> [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
 - quick reminder sheet -> [Matching hot sheet](../../../../notebook/matching-hot-sheet.md)
 
 ## Repo Anchors And Compare Points
 
 - boundary note, not the core bipartite rep -> [QBFLOWER](qbflower.md)
+- dedicated non-bipartite sibling -> [Edmonds Blossom / General Matching](../../../../topics/graphs/general-matching/README.md)
 - compare against flow modeling -> [Police Chase](../flow/policechase.md)
 - compare the teaching pages -> [Matching](../../../../topics/graphs/matching/README.md) and [Maximum Flow](../../../../topics/graphs/flow/README.md)
 - reopen the broader graph routing layer -> [Matching ladder hub](README.md) and [Graphs ladder](../README.md)
@@ -57,8 +61,8 @@ The strongest in-repo loop here is:
 
 1. learn the bipartite-first modeling cues from the [Matching topic](../../../../topics/graphs/matching/README.md)
 2. solve or revisit [School Dance](schooldance.md) as the clean in-lane `Hopcroft-Karp` rep
-3. solve or revisit [QBFLOWER](qbflower.md) only to see the boundary where blossom-level structure appears
-4. compare one matching reduction against one flow reduction before moving on
+3. compare against [General Matching](../general-matching/generalmatching.md) once the graph stops being bipartite
+4. solve or revisit [QBFLOWER](qbflower.md) only to see the transformation boundary where blossom-level structure appears
 
 ## Exit Criteria
 

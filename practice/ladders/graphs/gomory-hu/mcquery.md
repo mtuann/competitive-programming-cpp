@@ -5,7 +5,7 @@
 - Original URL: [https://vn.spoj.com/problems/MCQUERY/](https://vn.spoj.com/problems/MCQUERY/)
 - Mirror URL: [https://oj.vnoi.info/problem/mcquery](https://oj.vnoi.info/problem/mcquery)
 - Source contest: `Code Craft 09`
-- Secondary topics: `Gomory-Hu tree`, `DSU`, `All-pairs min-cut`
+- Secondary topics: `Maximum flow`, `DSU`
 - Difficulty: `hard`
 - Subtype: `Count unordered pairs with minCut(s, t) <= x`
 - Status: `solved`
@@ -13,13 +13,17 @@
 
 ## Why Practice This
 
-This is a great example of an “all-pairs cut” problem where the direct interpretation is too expensive, but a classical structure compresses everything almost perfectly.
+This is the cleanest repo rep for the moment when:
 
-The statement asks about all unordered pairs `(s, t)`, which makes naive repeated max-flow look impossible. The key observation is that for undirected weighted graphs, all pairwise min-cuts can be represented by one tree.
+- one undirected graph has many pairwise min-cut questions
+- plain max-flow is no longer the end of the story
+- the real compression is to build one cut tree and answer the rest on that tree
+
+The statement asks about **all unordered pairs** `(s, t)`, which makes naive repeated max-flow impossible. The key observation is that for undirected weighted graphs, all pairwise min-cuts can be represented by one Gomory-Hu tree.
 
 ## Recognition Cue
 
-Reach for a cut tree or compressed all-pairs structure when:
+Reach for a cut tree when:
 
 - the statement asks about min-cuts for many or all node pairs
 - direct repeated max-flow would be too expensive
@@ -94,12 +98,13 @@ This is the intended scale for the official limits.
 
 ## Reusable Pattern
 
-- Topic page: [Maximum Flow](../../../../topics/graphs/flow/README.md)
-- Practice ladder: [Maximum Flow ladder](README.md)
-- Starter template: [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
-- Notebook refresher: [Graph cheatsheet](../../../../notebook/graph-cheatsheet.md)
-- Carry forward: separate the reusable residual-network engine from the problem-specific source/sink modeling.
-- This note adds: repeated max-flow runs plus cut-tree construction on top of the base flow engine.
+- Topic page: [Gomory-Hu Tree](../../../../topics/graphs/gomory-hu/README.md)
+- Practice ladder: [Gomory-Hu ladder](README.md)
+- Starter template: [gomory-hu-tree.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/gomory-hu-tree.cpp)
+- Base flow engine compare point: [Maximum Flow](../../../../topics/graphs/flow/README.md)
+- Notebook refresher: [Gomory-Hu hot sheet](../../../../notebook/gomory-hu-hot-sheet.md)
+- Carry forward: separate the reusable max-flow primitive from the bigger cut-tree layer built on top of it.
+- This note adds: repeated max-flow runs plus cut-tree construction plus one DSU-based threshold-count layer.
 
 ## Solutions
 

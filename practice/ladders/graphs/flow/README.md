@@ -32,19 +32,25 @@ Target skill:
 
 ## Stretch
 
-- [MCQUERY](mcquery.md)
+- [Maximum Flow (Push-Relabel)](maximumflowpushrelabel.md)
+- [Minimum Cut](../global-min-cut/globalmincut.md)
+- [MCQUERY](../gomory-hu/mcquery.md)
 - [Reactor Cooling](reactorcooling.md)
 - [MINCOST](mincost.md)
 - compare bipartite matching reductions with plain flow reductions
 
 Transition note:
 
+- `Maximum Flow (Push-Relabel)` is the clean sibling rep where the model stays identical but the engine shifts from blocking-flow augmenting paths to preflow, heights, excess, and the gap heuristic
+- `Minimum Cut` is the clean handoff from one source-sink cut worldview into the dedicated [Randomized / Global Min-Cut lane](../global-min-cut/README.md), where the graph is still undirected but there is no designated pair
+- `MCQUERY` is the clean handoff from one max-flow/min-cut instance into the dedicated [Gomory-Hu ladder](../gomory-hu/README.md), where repeated cuts are compressed into one tree
 - `Reactor Cooling` is the clean handoff from plain max flow into `lower / upper bounds -> feasible circulation`
 - `MINCOST` is not just “Dinic with costs”; it switches to a min-cost-flow engine with shortest augmenting paths, reduced costs, and potentials
 
 Target skill:
 
 - see flow as a modeling language, not just one algorithm
+- recognize when the source/sink pair disappears and the right next stop is global min-cut
 - spot when lower bounds turn plain Dinic into a reduction step rather than the full solution
 - recognize when a whole family of min-cuts can be compressed into one tree
 
@@ -52,6 +58,10 @@ Target skill:
 
 - max flow / min cut route -> [Flow hot sheet](../../../../notebook/flow-hot-sheet.md)
 - clean max-flow starter -> [dinic.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/dinic.cpp)
+- preflow / height-label engine sibling -> [Push-Relabel hot sheet](../../../../notebook/push-relabel-hot-sheet.md)
+- push-relabel starter -> [push-relabel-max-flow.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/push-relabel-max-flow.cpp)
+- no-source/sink undirected cut route -> [Global Min-Cut hot sheet](../../../../notebook/global-min-cut-hot-sheet.md)
+- global cut starter -> [stoer-wagner-global-mincut.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/stoer-wagner-global-mincut.cpp)
 - lower/upper bounded circulation route -> [Flow With Lower Bounds hot sheet](../../../../notebook/flow-lower-bounds-hot-sheet.md)
 - lower-bounds starter -> [flow-lower-bounds.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/flow-lower-bounds.cpp)
 - costed flow route -> [Min-Cost Flow hot sheet](../../../../notebook/min-cost-flow-hot-sheet.md)
@@ -75,5 +85,6 @@ You are ready to move on when:
 ## Tutorial Links
 
 - [Maximum Flow](../../../../topics/graphs/flow/README.md)
+- [Randomized / Global Min-Cut](../../../../topics/graphs/global-min-cut/README.md)
 - [Flow With Lower Bounds](../../../../topics/graphs/flow-lower-bounds/README.md)
 - [Min-Cost Flow](../../../../topics/graphs/min-cost-flow/README.md)

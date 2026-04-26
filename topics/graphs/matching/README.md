@@ -18,7 +18,7 @@ This page teaches matching in the right order:
 1. **bipartite modeling first**
 2. **augmenting paths as the core theorem**
 3. **Hopcroft-Karp as the serious contest engine**
-4. **general matching / blossom only as the boundary, not the starting point**
+4. **general matching / blossom as the next sibling lane, not the starting point**
 
 ## At A Glance
 
@@ -43,6 +43,7 @@ Strong anti-cues:
 - the graph is general and odd cycles matter
 - the task is about covering every vertex, not just pairing as many as possible
 - the real structure is flow or min-cost flow, not plain cardinality matching
+- the statement is about blocking pairs and stable preferences, not compatibility-graph size
 
 What success looks like after studying this page:
 
@@ -61,6 +62,9 @@ Helpful neighboring topics:
 
 - [Maximum Flow](../flow/README.md)
 - [Min-Cost Flow](../min-cost-flow/README.md)
+- [Stable Marriage](../stable-marriage/README.md)
+- [Hungarian / Assignment Problem](../hungarian-assignment/README.md)
+- [Edmonds Blossom / General Matching](../general-matching/README.md)
 
 ## Bipartite-First Modeling Checklist
 
@@ -83,8 +87,9 @@ Common anti-cues:
 Those are signals that the real problem may be:
 
 - flow / min-cost flow
-- weighted assignment
-- or general matching instead of bipartite matching
+- [Stable Marriage](../stable-marriage/README.md)
+- [Hungarian / Assignment Problem](../hungarian-assignment/README.md)
+- or [Edmonds Blossom / General Matching](../general-matching/README.md) instead of bipartite matching
 
 ## Problem Model And Notation
 
@@ -179,7 +184,7 @@ In general graphs, odd cycles create blossoms, and the clean picture breaks.
 So the right teaching order is:
 
 - bipartite matching first
-- blossom later
+- blossom later through [Edmonds Blossom / General Matching](../general-matching/README.md)
 
 ## Core Invariant And Why It Works
 
@@ -259,7 +264,7 @@ Practical tradeoffs:
 | Kuhn / simple DFS augmentation | smaller graphs or first implementation | often fine in practice, worst-case `O(VE)` | slower on dense or larger inputs |
 | Hopcroft-Karp | serious unweighted bipartite matching | `O(E \sqrt{V})` | more machinery, but still very contest-friendly |
 | flow reduction | capacities or flow framing already exist | depends on flow engine | overkill when plain matching is enough |
-| blossom / general matching | graph is not bipartite | much heavier | wrong first tool unless odd cycles truly matter |
+| [Edmonds blossom / general matching](../general-matching/README.md) | graph is not bipartite | much heavier | wrong first tool unless odd cycles truly matter |
 
 Rule of thumb:
 
@@ -288,7 +293,7 @@ Use flow when matching is only one part of a richer capacity model.
 | Kuhn algorithm | bipartite graph, small/medium limits, simplest code desired | DFS one augmenting path at a time | can be too slow at scale |
 | Hopcroft-Karp | bipartite graph, larger serious limits | BFS layers + many shortest augmenting paths per phase | misunderstanding the BFS/DFS layering contract |
 | flow reduction | capacities or extra flow constraints already fit naturally | convert to max flow | heavier than needed for unit-capacity pairing |
-| blossom / Edmonds | graph is general, not guaranteed bipartite | shrink odd cycles | much harder than the bipartite world |
+| [Edmonds blossom](../general-matching/README.md) | graph is general, not guaranteed bipartite | shrink odd cycles | much harder than the bipartite world |
 | matching-to-edge-cover formulas | the question is actually edge cover or cover size | relate to maximum matching | easy to misuse when isolated vertices or general-graph conditions matter |
 
 ## Worked Examples
@@ -554,7 +559,7 @@ then this page is no longer the whole story.
 
 That is the signal to think about:
 
-- Hungarian-style assignment
+- [Hungarian / Assignment Problem](../hungarian-assignment/README.md)
 - or [Min-Cost Flow](../min-cost-flow/README.md)
 
 instead of plain maximum cardinality matching.
@@ -596,6 +601,7 @@ Repo anchors:
 
 - practice ladder: [Matching ladder](../../../practice/ladders/graphs/matching/README.md)
 - boundary example: [QBFLOWER](../../../practice/ladders/graphs/matching/qbflower.md)
+- dedicated sibling lane once odd cycles truly matter: [Edmonds Blossom / General Matching](../general-matching/README.md)
 - starter template: [hopcroft-karp.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/graphs/hopcroft-karp.cpp)
 - notebook refresher: [Graph cheatsheet](../../../notebook/graph-cheatsheet.md)
 
@@ -603,4 +609,5 @@ Repo anchors:
 
 - [Maximum Flow](../flow/README.md)
 - [Min-Cost Flow](../min-cost-flow/README.md)
+- [Hungarian / Assignment Problem](../hungarian-assignment/README.md)
 - [Graph Modeling](../graph-modeling/README.md)

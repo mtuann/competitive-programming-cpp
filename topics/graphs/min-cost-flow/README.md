@@ -21,6 +21,8 @@ This page is still contest-facing, but it sits one layer above plain max flow. T
   - [Maximum Flow](../flow/README.md)
   - [Shortest Paths](../shortest-paths/README.md)
   - [Optimization And Duality](../../advanced/optimization-and-duality/README.md)
+  - [Hungarian / Assignment Problem](../hungarian-assignment/README.md) as the compare route when the model is only dense square assignment
+  - [Edmonds Blossom / General Matching](../general-matching/README.md) as the compare route when the graph is undirected and not guaranteed bipartite
 - Strongest cues:
   - the problem literally asks for `minimum total cost` under a flow or matching-style model
   - augmenting one more unit has a meaningful path cost
@@ -31,6 +33,8 @@ This page is still contest-facing, but it sits one layer above plain max flow. T
   - the graph is tiny and brute-force DP over states is cleaner than building a residual network
   - the objective is really one shortest path, not repeated routing under capacities
   - you have negative costs but no clean plan for initial potentials or Bellman-Ford-style seeding
+  - the model is just a dense square assignment matrix with no extra capacities -> [Hungarian / Assignment Problem](../hungarian-assignment/README.md)
+  - the graph is undirected, unweighted, and the objective is only matching size -> [Edmonds Blossom / General Matching](../general-matching/README.md)
 - Success after studying this page:
   - you can explain why reverse residual edges carry negative cost
   - you can explain what reduced costs are preserving
