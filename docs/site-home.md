@@ -19,129 +19,73 @@
   </div>
 </div>
 
-## What This Repo Already Covers
-
-If you want one picture before choosing a route, use the taxonomy view first.
-
-[![Deep Topic Taxonomy](docs/assets/figures/deep-topic-taxonomy.svg)](docs/deep-topic-taxonomy.md)
-
-This figure groups the repo's deep topic surface by family:
-
-- `Data Structures`
-- `Graphs`
-- `Dynamic Programming`
-- `Math`
-- `Strings`
-- `Geometry`
-- `Advanced`
-
-If you want the standalone page instead of the homepage embed, open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md).
-
-## Choose Your Route
+## Start With One Door
 
 <div class="grid cards" markdown>
 
--   __New here? Start here__
+-   __I am new to CP__
 
-    Use one guided entry page instead of guessing between topics, indexes, ladders, and build-kit pages.
+    Use one guided entry page instead of choosing between topics, ladders, and tools too early.
 
     [Open Start Here](docs/start-here.md)
 
--   __Learn the core curriculum__
+-   __I know the weak topic__
 
-    Start with foundations, then move through data structures, graphs, dynamic programming, math, strings, and geometry.
+    Open the teaching-first area map, then go into one family on purpose.
 
     [Open the curriculum overview](topics/README.md)
 
--   __Train like a contestant__
+-   __I need today's next training set__
 
-    Use ladders, mixed rounds, and contest playbooks to move from reading an idea to solving targeted problems.
+    Use ladders, mixed rounds, and contest playbooks once the topic is roughly known.
 
     [Browse practice](practice/README.md)
 
--   __Build a reusable contest kit__
+-   __I know the idea but need the snippet__
 
-    Keep a compact library of templates and notebook-ready references that are easy to adapt under pressure.
+    Reopen the smallest useful retrieval layer: template, notebook, or workflow page.
 
     [Open the build kit](docs/build-kit.md)
 
--   __Go deeper when a topic clicks__
-
-    Follow links to courses, references, blogs, and official contest material when you want more theory or context.
-
-    [Open Explore](docs/explore.md)
-
 </div>
 
-## Pick Your Learner Stage
+## Default Learner Rail
 
-These stages describe learner readiness inside the repo. They are not the same as the curriculum `Level 0-5` map in the project overview.
+If you want one calm default path, use this:
 
-| Stage | Use this when... | Open first | Then |
-| --- | --- | --- | --- |
-| `Stage 1` | syntax, local loop, and first easy reps are still unstable | [Start Here](docs/start-here.md) | [Foundations](topics/foundations/README.md) |
-| `Stage 2` | you can already solve some basics and want topic-by-topic growth | [Learning Areas](topics/README.md) | the corresponding ladder and one repo note |
-| `Stage 3` | you know several families but retrieval and switching are the bottleneck | [Practice hub](practice/README.md) | [Problem Finder](docs/problem-finder.md), [Notebook](notebook/README.md), and [Build Kit](docs/build-kit.md), then [Mixed Rounds](practice/mixed-rounds/README.md) |
-| `Stage 4` | you want track-specific training or theory follow-up after the core loop is stable | [Contest Playbooks](practice/contest-playbooks/README.md) | [Explore](docs/explore.md) when the need is deeper source-backed reading, or one track page when training is the goal |
+`Start Here -> Foundations -> one ladder -> one anchored note -> Data Structures -> Graphs -> Dynamic Programming -> Math`
 
-## What Makes This Repo Different
+## The Site Has Four Jobs
 
-<div class="grid cards" markdown>
+| Job | Open this first | Use it for |
+| --- | --- | --- |
+| `Learn` | [Learning Areas](topics/README.md) | understanding the idea, invariant, and sequencing |
+| `Practice` | [Practice hub](practice/README.md) | solving targeted ladders, notes, and mixed rounds |
+| `Retrieve` | [Build Kit](docs/build-kit.md) | reopening snippets, workflows, and checklists under pressure |
+| `Track` | [Contest Playbooks](practice/contest-playbooks/README.md) | shaping practice for `ICPC`, `USACO`, or olympiad-style goals |
 
--   __Curriculum first__
+## Pick By Bottleneck
 
-    The repo is organized as a staged path from foundations to advanced topics instead of a random archive of solutions.
-
--   __Proof-aware teaching__
-
-    Topic pages are designed to answer when to use an idea, why it works, and how to code it cleanly in C++.
-
--   __Practice close to the concept__
-
-    Problems sit near the topic they train, so learning, implementation, and repetition reinforce each other.
-
--   __Source-backed reading__
-
-    The project keeps outward links to official syllabi, contest documents, and serious community references.
-
-</div>
-
-## Choose By Bottleneck
-
-<div class="grid cards" markdown>
-
--   __I need a first route__
-
-    Use one guided route instead of choosing between topics, ladders, and tools too early.
-
-    [Open Start Here](docs/start-here.md)
-
--   __I need today's next problem set__
-
-    Use filters first, then jump into a ladder, mixed round, or playbook on purpose.
-
-    [Open Problem Finder](docs/problem-finder.md)
-
--   __I know the topic but need the snippet or invariant__
-
-    Reopen the smallest useful tool: template, cheatsheet, or workflow page.
-
-    [Open Build Kit](docs/build-kit.md)
-
-</div>
+| If the real bottleneck is... | Open first | Then |
+| --- | --- | --- |
+| first route and local loop | [Start Here](docs/start-here.md) | [Foundations](topics/foundations/README.md) |
+| one weak topic family | [Learning Areas](topics/README.md) | the corresponding ladder and one note |
+| retrieval during implementation | [Build Kit](docs/build-kit.md) | [Notebook](notebook/README.md) |
+| next practice block | [Problem Finder](docs/problem-finder.md) | [Practice hub](practice/README.md) |
+| contest-format training | [Contest Playbooks](practice/contest-playbooks/README.md) | [Mixed Rounds](practice/mixed-rounds/README.md) |
 
 !!! tip "Best way to use this site"
     Read one topic page, solve one targeted problem, then write or adapt one clean C++ implementation.
     That loop is what turns reading into contest skill.
 
-## Featured Doors Into The Repo
+## What This Repo Already Covers
 
-- [Start Here](docs/start-here.md) for one guided route through the first useful pages and problems
-- [Route Map](docs/route-map.md) for the fastest level/bottleneck/track-based routing page
-- [Foundations](topics/foundations/README.md) for asymptotics, STL workflow, binary search, and proof basics
-- [Problem Finder](docs/problem-finder.md) for the fastest filtered view across repo notes and curated external practice
-- [Build Kit](docs/build-kit.md) for templates, notebook pages, and local-debug workflows
-- [Graphs](topics/graphs/README.md) for BFS, DFS, shortest paths, MST, flow, and matching
-- [Dynamic Programming](topics/dp/README.md) for state design, transitions, and classic contest patterns
-- [Practice Notes](practice/README.md) for problem classifications, judge links, and solution writeups
-- [Project Overview](project-readme.md) for the staged learning path and repo structure
+If you want one picture before choosing a route, use the taxonomy view.
+
+[![Deep Topic Taxonomy](docs/assets/figures/deep-topic-taxonomy.svg)](docs/deep-topic-taxonomy.md)
+
+Open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md) when the question is:
+
+- what families already exist in the repo
+- where one advanced lane sits relative to its siblings
+- how broad the bridge-plus-deep surface already is

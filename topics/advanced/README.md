@@ -1,21 +1,50 @@
 # Advanced
 
-This area is for topics that sit above the usual contest core: algorithm-design ideas, deeper theory, and tools that explain why many standard techniques exist.
+This area is for topics that sit above the usual contest core: algorithm-design ideas, deeper theory, and enrichment lanes that explain the wider landscape.
 
-## What This Area Covers
+## Use This Area When
 
-These topics are not the first place to spend time if your foundations, graphs, DP, strings, and geometry are still unstable.
+- your core workflow is already stable and the bottleneck is modeling judgment
+- you want stronger contest process, not just one more algorithm name
+- you need to distinguish high-ROI deep tools from theory-breadth enrichment
 
-They matter because they teach a broader way to think:
+## Start With One Route
 
-- what kinds of guarantees are realistic
-- when randomness is principled
-- why relaxations and hardness matter
-- how strong contestants turn knowledge into reliable contest process
+| If your bottleneck is... | Open first | Then |
+| --- | --- | --- |
+| process and reliable execution | [Algorithm Engineering](algorithm-engineering/README.md) | [Contest Engineering](contest-engineering/README.md) |
+| exact-search breadth | [Meet-In-The-Middle](meet-in-the-middle/README.md) | [Randomized Algorithms](randomized-algorithms/README.md), [Constructive](constructive/README.md) |
+| relaxations and optimization viewpoints | [Optimization And Duality](optimization-and-duality/README.md) | [Simplex](simplex/README.md), [Approximation And Relaxation](approximation-and-relaxation/README.md) |
+| theory-breadth enrichment | [Complexity And Hardness](complexity-and-hardness/README.md) | the corresponding breadth lane only if you intentionally want it |
 
-This section is about maturity, not early speed.
+## Core Progression
 
-## Subtopics
+1. `High-ROI first`
+- Algorithm Engineering
+- Contest Engineering
+- Constructive
+- Randomized Algorithms
+- Meet-In-The-Middle
+
+2. `Then add`
+- Online Algorithms
+- Complexity And Hardness
+- Approximation And Relaxation
+- Optimization And Duality
+
+3. `Breadth and theory later`
+- Simplex / Matroid Intersection
+- Machine Learning Algorithms / Gradient Descent
+- Quantum Algorithms / Parallel Algorithms
+
+## Good First Repo Anchors
+
+- [Minimum Euclidean Distance](../../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md)
+- [Meet in the Middle](../../practice/ladders/advanced/meet-in-the-middle/meetinthemiddle.md)
+- [Cheese, If You Please](../../practice/ladders/advanced/simplex/cheeseifyouplease.md)
+- [Pick Your Own Nim](../../practice/ladders/advanced/matroid-intersection/pickyourownnim.md)
+
+## Browse All Subtopics
 
 - [Constructive](constructive/README.md)
 - [Randomized Algorithms](randomized-algorithms/README.md)
@@ -32,68 +61,6 @@ This section is about maturity, not early speed.
 - [Simplex](simplex/README.md)
 - [Matroid Intersection](matroid-intersection/README.md)
 - [Contest Engineering](contest-engineering/README.md)
-
-## Entry
-
-- Prereqs: stable comfort with the core topic areas
-- Start here if: you want stronger modeling judgment and more reliable contest execution
-- Defer for later: this entire section if you are still building routine contest coverage
-
-## Learn In Order
-
-1. Core now
-- algorithm engineering habits
-- contest engineering habits
-- constructive habits
-- randomized algorithms
-- meet-in-the-middle when subset-like exact search is the real bottleneck
-- online competitive-analysis benchmarks
-
-2. Modeling depth
-- complexity awareness
-- hardness as a signal
-- approximation and relaxation ideas
-- optimization and duality viewpoints
-- simplex only when one small continuous LP is already the honest exact model
-- matroid intersection only when the hidden model really is two matroids on one explicit ground set
-
-3. Theory-first later
-- richer reductions
-- deeper probabilistic design techniques
-- gradient-descent breadth only if you intentionally want one fixed-step smooth-loss benchmark
-- machine-learning breadth only if you intentionally want textbook spillover beyond contest focus
-- quantum breadth only if you intentionally want one simulator-first non-classical benchmark
-- parallel breadth only if you intentionally want one work/span benchmark around scan and PRAM thinking
-- reading-heavy topics that inform, rather than dominate, contest prep
-
-## Recognition Cues
-
-- the standard toolkit works, but you want to understand the design idea behind it
-- the hard part is missing future information rather than missing offline compute power
-- the statement promises a solution and asks you to build one explicit witness
-- the problem or editorial points toward randomness, optimization relaxations, or hardness
-- your bottleneck is increasingly process, modeling, or algorithm judgment
-
-## Common Pitfalls
-
-- treating advanced theory as required before the contest core is stable
-- reading many theory topics without connecting them back to concrete problems
-- expecting every advanced topic to produce immediate contest rating gains
-- replacing practice with reading instead of letting each reinforce the other
-
-## Exit Criteria
-
-After this section, you should be able to:
-
-- place standard CP techniques inside a broader algorithm-design landscape
-- tell which deeper topics are enrichment versus high-ROI contest tools
-- reason more clearly about feasibility, randomness, relaxations, and process
-
-## Repo-Native Anchors
-
-- [Template Library](../../template-library.md)
-- [Notebook](../../notebook/README.md)
-- [Contest Playbooks](../../practice/contest-playbooks/README.md)
 
 ## Go Deeper
 

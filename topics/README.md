@@ -2,7 +2,13 @@
 
 This folder is the teaching-first layer of the repository.
 
-Start with the area that matches your current gap:
+Do not try to open all areas at once.
+
+Pick the area that matches your current bottleneck, then stay inside that family until one ladder note feels routine.
+
+## Start With One Area
+
+### Core-first areas
 
 | Area | Start here if you need... | First stop |
 | --- | --- | --- |
@@ -11,19 +17,16 @@ Start with the area that matches your current gap:
 | `Graphs` | modeling, traversals, shortest paths, trees, flow, and matching | [Graphs](graphs/README.md) |
 | `Dynamic Programming` | state design, transitions, and optimization over structure | [Dynamic Programming](dp/README.md) |
 | `Math` | modular arithmetic, combinatorics, and number theory tools | [Math](math/README.md) |
-| `Combinatorics` | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
 | `Strings` | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
+
+### Extension and follow-up areas
+
+| Area | Start here if you need... | First stop |
+| --- | --- | --- |
+| `Combinatorics` | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
 | `Geometry` | vectors, orientation, hulls, and geometric counting | [Geometry](geometry/README.md) |
 | `Greedy` | exchange arguments, feasibility-first thinking, and locally safe choices | [Greedy](greedy/README.md) |
 | `Advanced` | randomized algorithms, approximation, complexity, and algorithm design depth | [Advanced](advanced/README.md) |
-
-Each area page should help you answer:
-
-- what this area is for
-- what to learn first and what to defer
-- what problem cues should trigger it
-- what mistakes appear often
-- what to study next
 
 ## Learn -> Practice -> Retrieve
 
@@ -37,18 +40,21 @@ Use the repo layers in this order whenever possible:
 
 If you already know the weak topic and just need the next problem set, jump to [Problem Finder](../docs/problem-finder.md) instead of browsing area pages.
 
-## Best Next Area By Stage
+## High-Value Bridge Pages
 
-| If you are here because... | Start with | Then |
+When one family feels wider than your mental map, reopen the bridge page first instead of clicking random leaf topics.
+
+| Family starts feeling fragmented | Reopen this bridge | Then branch into... |
 | --- | --- | --- |
-| you are still building the first real loop | [Foundations](foundations/README.md) | one foundations ladder and one note |
-| you are ready for reusable contest tools | [Data Structures](data-structures/README.md) | [DSU](data-structures/dsu/README.md) or [Fenwick Tree](data-structures/fenwick-tree/README.md) |
-| graph problems keep feeling fuzzy or overmodeled | [Graphs](graphs/README.md) | [BFS And DFS](graphs/bfs-dfs/README.md) or [Shortest Paths](graphs/shortest-paths/README.md) |
-| you can code basics but state design is the bottleneck | [Dynamic Programming](dp/README.md) | [DP Foundations](dp/foundations/README.md) |
-| math is the real blocker, not syntax | [Math](math/README.md) | [Number Theory Basics](math/number-theory-basics/README.md) or [Modular Arithmetic](math/modular-arithmetic/README.md) |
-| you want advanced reading after the core loop already exists | [Advanced](advanced/README.md) | the corresponding deep topic, topic map, or external follow-up |
+| trees | [Trees](graphs/trees/README.md) | subtree queries, LCA, HLD, virtual tree, tree DP |
+| flow and cuts | [Maximum Flow](graphs/flow/README.md) | lower bounds, Gomory-Hu, global min-cut, min-cost flow |
+| divisibility and congruences | [GCD / LCM](math/gcd-lcm/README.md) | CRT, modular arithmetic, prime-exponent constructions |
+| transform-heavy algebra | [FFT / NTT](math/fft-ntt/README.md) | polynomial / FPS |
+| bit-state techniques | [Bit Tricks](foundations/bit-tricks/README.md) | bitmask DP, SOS, FWHT, xor basis, bit-parallelism |
+| explicit search trees | [Recursion And Backtracking](foundations/recursion-backtracking/README.md) | bitmask DP, meet-in-the-middle, complexity triage |
+| monotone scans | [Monotonic Stack / Queue](data-structures/monotonic-stack-queue/README.md) | nearest boundary, sliding extrema, histogram-style problems |
 
-## Representative Solved Notes
+## Representative Repo Anchors
 
 Use these if you want one concrete repo-native anchor before diving into a whole area:
 
@@ -60,6 +66,6 @@ Use these if you want one concrete repo-native anchor before diving into a whole
 - Greedy: [Lemonade Line](../practice/ladders/greedy/prefix-constraints/lemonadeline.md)
 - Advanced: [Minimum Euclidean Distance](../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md)
 
-Use [docs/topic-template.md](../docs/topic-template.md) as the source of truth for mature single-topic pages. The area hubs in this folder should stay lighter and focus on scope, sequencing, and navigation.
+Use [docs/topic-template.md](../docs/topic-template.md) as the source of truth for mature single-topic pages. The area hubs in this folder should stay lighter and focus on routing first.
 
 If you want the whole non-foundational surface in one visual instead of one area at a time, use [Deep Topic Taxonomy](../docs/deep-topic-taxonomy.md).

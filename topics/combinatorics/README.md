@@ -1,63 +1,51 @@
 # Combinatorics
 
-Combinatorics is the counting layer of the repo. It is where “how many?” problems stop being ad hoc and become structured: compositions, runs, inclusion-exclusion, lexicographic counting, and counting under constraints.
+Combinatorics is the counting layer of the repo. It is where "how many?" stops being ad hoc and becomes structured.
 
-## Entry
+## Use This Area When
 
-- Prereqs: [Foundations](../foundations/README.md), [Math](../math/README.md)
-- Defer for later: generating functions and heavier transform-based counting
+- the real question is counting valid arrangements rather than finding one witness
+- choices are constrained by runs, bounds, or symmetry
+- direct brute force is blocked, but the structure of the objects is regular
 
-## Subtopics
+## Start With One Route
+
+| If your bottleneck is... | Open first | Then |
+| --- | --- | --- |
+| basic counting patterns | [Counting Basics](counting-basics/README.md) | [Bounded Compositions](bounded-compositions/README.md) |
+| overcounting and cancellation | [Inclusion-Exclusion](inclusion-exclusion/README.md) | one subset-style counting anchor |
+| symmetry and orbit counting | [Burnside / Pólya / Group Actions](burnside-polya/README.md) | compare against plain counting first |
+| ranking and constructive counting | [Lexicographic Enumeration](lexicographic-enumeration/README.md) | one ranking/unranking flavored note |
+
+## Core Progression
+
+1. `Core first`
+- Counting Basics
+- Bounded Compositions
+
+2. `Then add`
+- Inclusion-Exclusion
+- Lexicographic Enumeration
+
+3. `Later`
+- Burnside / Pólya / Group Actions
+- generating functions and deeper transform-heavy counting outside the current core
+
+## Good First Repo Anchors
+
+- [Distributing Apples](../../practice/ladders/combinatorics/counting-basics/distributingapples.md)
+- [Prime Multiples](../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md)
+- [Counting Necklaces](../../practice/ladders/combinatorics/burnside-polya/countingnecklaces.md)
+- [VOSFENCE](../../practice/ladders/combinatorics/bounded-compositions/vosfence.md)
+- [VOITSORT](../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md)
+
+## Browse All Subtopics
 
 - [Counting Basics](counting-basics/README.md)
 - [Burnside / Pólya / Group Actions](burnside-polya/README.md)
 - [Inclusion-Exclusion](inclusion-exclusion/README.md)
 - [Bounded Compositions](bounded-compositions/README.md)
 - [Lexicographic Enumeration](lexicographic-enumeration/README.md)
-
-## Learn In Order
-
-1. Core now
-- permutations and combinations
-- stars and bars
-- bounded distributions
-- run counting
-
-2. Contest core
-- inclusion-exclusion
-- lexicographic ranking and counting
-- constructive counting with structure
-- orbit counting under explicit symmetries
-
-3. Advanced later
-- generating functions
-- Möbius-flavored counting transforms
-- deeper combinatorial identities
-
-## Recognition Cues
-
-- the problem is really about counting valid arrangements
-- choices are constrained by adjacency, runs, or resource limits
-- direct brute force is blocked, but the structure of the arrangements is regular
-- many raw representations become the same object after rotation or another explicit symmetry
-
-## Common Pitfalls
-
-- counting the same object multiple times under different constructions
-- using formulas without checking the assumptions
-- missing that “exactly” and “at least” often need different tools
-
-## Exit Criteria
-
-After this section, you should be able to recognize common counting patterns, break them into structured choices, and attach the right formula or DP.
-
-## Solved Examples In This Repo
-
-- [Distributing Apples](../../practice/ladders/combinatorics/counting-basics/distributingapples.md): stars and bars turned into one modular binomial coefficient
-- [Counting Necklaces](../../practice/ladders/combinatorics/burnside-polya/countingnecklaces.md): first Burnside route where cyclic shifts turn raw strings into orbit counting
-- [Prime Multiples](../../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md): direct subset inclusion-exclusion with safe product guards
-- [VOSFENCE - Xay hang rao](../../practice/ladders/combinatorics/bounded-compositions/vosfence.md): constrained run decomposition and bounded distributions
-- [VOITSORT - Sắp xếp đổi chỗ](../../practice/ladders/combinatorics/lexicographic-enumeration/voitsort.md): ranking and unranking flavored constructive counting
 
 ## Go Deeper
 
