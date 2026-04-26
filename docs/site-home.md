@@ -95,3 +95,15 @@ Open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md) when the question is:
 - what families already exist in the repo
 - where one advanced lane sits relative to its siblings
 - how broad the bridge-plus-deep surface already is
+
+## Support The Project
+
+<div class="visual-card" markdown>
+  <p class="visual-caption">
+    If this repo saves you time, helps your training, or gives you a cleaner way to learn algorithms,
+    you can support the project here.
+  </p>
+  <div class="hero-actions">
+    <a class="md-button md-button--primary" href="https://thanksalot.netlify.app/" target="_blank" rel="noopener">Support this project</a>
+  </div>
+</div>

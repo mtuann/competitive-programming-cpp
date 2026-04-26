@@ -17,6 +17,12 @@ This figure shows the repo's deep algorithm surface in one view, grouped by fami
 
 If you want the full page version with scope notes, open [Deep Topic Taxonomy](docs/deep-topic-taxonomy.md).
 
+## Support
+
+If this repo helps your training or saves you time, you can support the project here:
+
+[Support competitive-programming-cpp](https://thanksalot.netlify.app/)
+
 ## Start Here
 
 | If you are... | Start with | Goal |
