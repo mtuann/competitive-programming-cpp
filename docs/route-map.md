@@ -89,6 +89,22 @@ Use this when your question is no longer “what is this algorithm?” and is no
 | weak contest switching | [Mixed Rounds](../practice/mixed-rounds/README.md) | [Contest Playbooks](../practice/contest-playbooks/README.md) |
 | weak post-contest follow-through | [Contest Playbooks](../practice/contest-playbooks/README.md) | [Problem Finder](problem-finder.md) |
 
+## High-Value Bridge Pages
+
+These are the family pages worth reopening before you dive into a narrower
+leaf, especially when the repo starts feeling wider than your current mental
+map.
+
+| If the family feels fragmented | Reopen this bridge page first | Then branch into... |
+| --- | --- | --- |
+| tree topics | [Trees](../topics/graphs/trees/README.md) | Euler tour, LCA, tree DP, HLD, virtual tree |
+| flow and cut topics | [Maximum Flow](../topics/graphs/flow/README.md) | global min-cut, Gomory-Hu, lower bounds, min-cost flow |
+| divisibility and congruence topics | [GCD / LCM](../topics/math/gcd-lcm/README.md) | CRT, modular arithmetic, prime-exponent constructions |
+| transform topics | [FFT / NTT](../topics/math/fft-ntt/README.md) | polynomial / FPS |
+| subset-state bit work | [Bit Tricks](../topics/foundations/bit-tricks/README.md) | bitmask DP, xor basis, SOS, FWHT, bit-parallelism |
+| explicit search trees | [Recursion And Backtracking](../topics/foundations/recursion-backtracking/README.md) | bitmask DP, meet-in-the-middle, complexity triage |
+| monotone scan structures | [Monotonic Stack / Queue](../topics/data-structures/monotonic-stack-queue/README.md) | sliding-window extrema, nearest-greater/smaller, histogram boundaries |
+
 ## The Core Loop
 
 When in doubt, fall back to this:

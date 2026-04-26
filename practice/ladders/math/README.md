@@ -2,6 +2,11 @@
 
 These ladders cover arithmetic, number theory, and transform-based counting tools.
 
+Two bridge chains are especially worth keeping explicit:
+
+- [Number theory basics](number-theory-basics/README.md) -> [GCD / LCM](gcd-lcm/README.md) -> [Chinese remainder / linear congruences](chinese-remainder/README.md)
+- [FFT](fft/README.md) -> [Polynomial / formal power series](polynomial-fps/README.md)
+
 ## Recommended Order
 
 1. modular arithmetic

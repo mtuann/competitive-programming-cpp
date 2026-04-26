@@ -356,6 +356,57 @@
       "bucket": "core"
     }
   ],
+  "foundations/bit-tricks": [
+    {
+      "title": "Gray Code",
+      "url": "https://cses.fi/problemset/task/2205",
+      "source": "CSES",
+      "difficulty": "easy",
+      "tracks": [
+        "foundations/bit-tricks",
+        "CSES",
+        "Bit Manipulation"
+      ],
+      "tags": [
+        "Gray-Code",
+        "Bits",
+        "Constructive"
+      ],
+      "why_fit": "A compact bitwise-construction problem that makes binary structure feel concrete.",
+      "bucket": "warm-up",
+      "styles": [
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Binary Representation",
+        "Xor"
+      ]
+    },
+    {
+      "title": "Raising Bacteria",
+      "url": "https://codeforces.com/problemset/problem/579/A",
+      "source": "Codeforces",
+      "difficulty": "easy",
+      "tracks": [
+        "foundations/bit-tricks",
+        "Codeforces",
+        "Bit Manipulation"
+      ],
+      "tags": [
+        "Popcount",
+        "Bits",
+        "Greedy View"
+      ],
+      "why_fit": "A famous popcount benchmark and a great first reminder that bits can encode structure, not just syntax.",
+      "bucket": "core",
+      "styles": [
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Bit Counting"
+      ]
+    }
+  ],
   "foundations/complexity-and-invariants": [
     {
       "title": "Increasing Array",
@@ -1311,6 +1362,83 @@
       ]
     }
   ],
+  "foundations/recursion-backtracking": [
+    {
+      "title": "Apple Division",
+      "url": "https://cses.fi/problemset/task/1623",
+      "source": "CSES",
+      "difficulty": "easy",
+      "tracks": [
+        "foundations/recursion-backtracking",
+        "CSES",
+        "Backtracking"
+      ],
+      "tags": [
+        "Subset Search",
+        "Recursion",
+        "Brute Force"
+      ],
+      "why_fit": "A tiny subset-search benchmark that teaches clean recursive branching before heavier optimization.",
+      "bucket": "warm-up",
+      "styles": [
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Recursion"
+      ]
+    },
+    {
+      "title": "Creating Strings",
+      "url": "https://cses.fi/problemset/task/1622",
+      "source": "CSES",
+      "difficulty": "easy",
+      "tracks": [
+        "foundations/recursion-backtracking",
+        "CSES",
+        "Backtracking"
+      ],
+      "tags": [
+        "Permutations",
+        "Backtracking",
+        "Duplicates"
+      ],
+      "why_fit": "A clean permutation-generation route where choice ordering and duplicate handling are the whole lesson.",
+      "bucket": "core",
+      "styles": [
+        "Implementation"
+      ],
+      "prerequisites": [
+        "Recursion",
+        "Sorting"
+      ]
+    },
+    {
+      "title": "Chessboard and Queens",
+      "url": "https://cses.fi/problemset/task/1624",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "foundations/recursion-backtracking",
+        "CSES",
+        "Backtracking"
+      ],
+      "tags": [
+        "Backtracking",
+        "Pruning",
+        "Board Search"
+      ],
+      "why_fit": "A classic pruning benchmark where the search tree is still explicit and understandable.",
+      "bucket": "classic",
+      "styles": [
+        "Implementation",
+        "Pruning"
+      ],
+      "prerequisites": [
+        "Recursion",
+        "Constraint Checks"
+      ]
+    }
+  ],
   "data-structures/dsu": [
     {
       "title": "Building Roads",
@@ -1605,6 +1733,88 @@
         "Range Sums"
       ],
       "why_fit": "A strong benchmark for the classic two-Fenwick range-add/range-sum pattern."
+    }
+  ],
+  "data-structures/monotonic-stack-queue": [
+    {
+      "title": "Nearest Smaller Values",
+      "url": "https://cses.fi/problemset/task/1645",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/monotonic-stack-queue",
+        "CSES",
+        "Monotonic Stack"
+      ],
+      "tags": [
+        "Monotonic-Stack",
+        "Previous-Smaller",
+        "Boundary"
+      ],
+      "why_fit": "The canonical first boundary-scan problem for the monotonic-stack side of the family.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Amortized"
+      ],
+      "prerequisites": [
+        "Stacks",
+        "Indices",
+        "Strict Comparators"
+      ]
+    },
+    {
+      "title": "Advertisement",
+      "url": "https://cses.fi/problemset/task/1142",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/monotonic-stack-queue",
+        "CSES",
+        "Monotonic Stack"
+      ],
+      "tags": [
+        "Histogram",
+        "Nearest-Smaller",
+        "Rectangle Area"
+      ],
+      "why_fit": "A strong follow-up where nearest-smaller boundaries turn directly into widths.",
+      "bucket": "classic",
+      "styles": [
+        "Implementation",
+        "Geometry-On-Array"
+      ],
+      "prerequisites": [
+        "Monotonic Stack",
+        "Boundary Indices"
+      ]
+    },
+    {
+      "title": "Sliding Window Minimum",
+      "url": "https://cses.fi/problemset/task/3221",
+      "source": "CSES",
+      "difficulty": "medium",
+      "tracks": [
+        "data-structures/monotonic-stack-queue",
+        "CSES",
+        "Monotonic Deque"
+      ],
+      "tags": [
+        "Monotonic-Deque",
+        "Window-Minimum",
+        "Stream"
+      ],
+      "why_fit": "The queue-side canonical benchmark where domination pops and window expiry are both visible.",
+      "bucket": "core",
+      "styles": [
+        "Implementation",
+        "Streaming"
+      ],
+      "prerequisites": [
+        "Deque",
+        "Window Expiry",
+        "Amortized Reasoning"
+      ]
     }
   ],
   "data-structures/segment-tree": [
@@ -16655,6 +16865,86 @@
         "Combinatorics"
       ],
       "bucket": "cross-topic"
+    }
+  ],
+  "advanced/meet-in-the-middle": [
+    {
+      "title": "Meet in the Middle",
+      "url": "https://cses.fi/problemset/task/1628",
+      "source": "CSES",
+      "difficulty": "medium-hard",
+      "tracks": [
+        "advanced/meet-in-the-middle",
+        "CSES",
+        "MITM"
+      ],
+      "tags": [
+        "Meet-In-The-Middle",
+        "Subset-Sum",
+        "Counting"
+      ],
+      "why_fit": "The cleanest internal anchor for the classic half-sum enumeration route.",
+      "bucket": "core",
+      "styles": [
+        "Exact Search",
+        "Sort-And-Merge"
+      ],
+      "prerequisites": [
+        "Subset Enumeration",
+        "Binary Search"
+      ]
+    },
+    {
+      "title": "SUBSUMS",
+      "url": "https://www.spoj.com/problems/SUBSUMS/",
+      "source": "SPOJ",
+      "difficulty": "medium-hard",
+      "tracks": [
+        "advanced/meet-in-the-middle",
+        "SPOJ",
+        "MITM"
+      ],
+      "tags": [
+        "Meet-In-The-Middle",
+        "Subset-Sum",
+        "Range Counting"
+      ],
+      "why_fit": "A classic SPOJ benchmark for half-sum generation with a counting-flavored merge.",
+      "bucket": "classic",
+      "styles": [
+        "Exact Search",
+        "Counting"
+      ],
+      "prerequisites": [
+        "Subset Enumeration",
+        "Sorting"
+      ]
+    },
+    {
+      "title": "Programming Contest",
+      "url": "https://atcoder.jp/contests/abc184/tasks/abc184_f",
+      "source": "AtCoder",
+      "difficulty": "medium-hard",
+      "tracks": [
+        "advanced/meet-in-the-middle",
+        "AtCoder",
+        "MITM"
+      ],
+      "tags": [
+        "Meet-In-The-Middle",
+        "Best-Feasible-Sum",
+        "Binary Search"
+      ],
+      "why_fit": "A standard best-sum-no-more-than-S route where the merge is about best feasible complement rather than multiplicity.",
+      "bucket": "core",
+      "styles": [
+        "Exact Search",
+        "Optimization"
+      ],
+      "prerequisites": [
+        "Subset Enumeration",
+        "Binary Search"
+      ]
     }
   ],
   "advanced/online-algorithms": [

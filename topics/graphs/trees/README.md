@@ -19,7 +19,8 @@ become clean instead of messy.
 
 This page is not about one algorithm.
 
-It is the family page that teaches what tree structure gives you *before* you specialize into:
+It is the canonical `tree toolkit` bridge page that teaches what tree structure
+gives you *before* you specialize into:
 
 - [Euler Tour / Subtree Queries](../euler-tour-subtree/README.md)
 - [LCA](../lca/README.md)

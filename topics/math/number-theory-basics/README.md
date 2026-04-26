@@ -58,6 +58,12 @@ This page focuses on the contest layer built on:
 - divisor formulas
 - sieve preprocessing
 
+The most important next bridge pages after this one are:
+
+- [GCD / LCM](../gcd-lcm/README.md)
+- [Modular Arithmetic](../modular-arithmetic/README.md)
+- [Chinese Remainder / Linear Congruences](../chinese-remainder/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Treat The Number As A Black Box

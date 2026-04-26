@@ -8,6 +8,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [DSU Rollback / Offline Dynamic Connectivity](dsu-rollback/README.md)
 - [DSU On Tree / Small-To-Large](dsu-on-tree/README.md)
 - [Fenwick Tree](fenwick-tree/README.md)
+- [Monotonic Stack / Queue](monotonic-stack-queue/README.md)
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [PBDS / Order Statistics Tree](pbds-order-statistics/README.md)
 - [Balanced BSTs For Contests](balanced-bsts/README.md)
@@ -41,6 +42,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - heaps and priority queues
 - DSU for connectivity and component maintenance
 - Fenwick tree for simple prefix/range aggregation
+- monotonic stack / queue for nearest-boundary and sliding-window extrema scans
 
 2. Contest core
 - segment tree
@@ -77,6 +79,7 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - the problem asks for many updates and queries on the same array or set
 - recomputing from scratch is too slow but the operation structure is repetitive
 - connectivity or component merging is changing over time
+- the real state is one monotone active frontier or one sliding window rather than arbitrary online updates
 
 ## Common Pitfalls
 

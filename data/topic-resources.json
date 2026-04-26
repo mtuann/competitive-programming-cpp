@@ -106,6 +106,61 @@
       }
     ]
   },
+  "foundations/bit-tricks": {
+    "title": "Foundations -> Bit Tricks",
+    "summary": "Read bits as structure: masks, parity, subset iteration, and the vocabulary that later feeds bitmask DP, xor, and packed-state tricks.",
+    "topic_path": "topics/foundations/bit-tricks/README.md",
+    "ladder_path": "practice/ladders/foundations/bit-tricks/README.md",
+    "microtopics": [
+      "masks",
+      "popcount",
+      "lowbit",
+      "subset-iteration",
+      "xor",
+      "powers-of-two"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms bit manipulation",
+        "url": "https://cp-algorithms.com/algebra/bit-manipulation.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "cppreference <bit>",
+        "url": "https://en.cppreference.com/w/cpp/utility/bit",
+        "kind": "official docs"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Codeforces bitmasks tag",
+        "url": "https://codeforces.com/problemset?tags=bitmasks",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Foundations cheatsheet",
+        "path": "notebook/foundations-cheatsheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Bit-Parallelism tutorial",
+        "path": "topics/dp/bit-parallelism/README.md",
+        "kind": "related tutorial"
+      }
+    ]
+  },
   "foundations/complexity-and-invariants": {
     "title": "Foundations -> Complexity And Invariants",
     "summary": "Reasoning tools for contests: estimate time honestly, define loop invariants, and learn to justify greedy and implementation choices before coding.",
@@ -396,6 +451,56 @@
       }
     ]
   },
+  "foundations/recursion-backtracking": {
+    "title": "Foundations -> Recursion And Backtracking",
+    "summary": "Model explicit search trees cleanly, then decide when pruning is enough and when you should escalate to DP or meet-in-the-middle.",
+    "topic_path": "topics/foundations/recursion-backtracking/README.md",
+    "ladder_path": "practice/ladders/foundations/recursion-backtracking/README.md",
+    "microtopics": [
+      "dfs-generation",
+      "backtracking",
+      "pruning",
+      "branch-ordering",
+      "undo-redo",
+      "search-tree"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Jeff Erickson - Algorithms",
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/index.html",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Introductory Problems",
+        "url": "https://cses.fi/problemset/list/1/",
+        "kind": "problem set"
+      },
+      {
+        "label": "CSES Problem Set",
+        "url": "https://cses.fi/problemset",
+        "kind": "problem set"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Meet-In-The-Middle tutorial",
+        "path": "topics/advanced/meet-in-the-middle/README.md",
+        "kind": "related tutorial"
+      },
+      {
+        "label": "Bitmask DP tutorial",
+        "path": "topics/dp/bitmask-dp/README.md",
+        "kind": "related tutorial"
+      }
+    ]
+  },
   "data-structures/dsu": {
     "title": "Data Structures -> DSU",
     "summary": "Union-find for component maintenance, offline connectivity, and Kruskal-style structure building.",
@@ -479,6 +584,66 @@
         "label": "CSES Problem Set",
         "url": "https://cses.fi/problemset",
         "kind": "problem set"
+      }
+    ]
+  },
+  "data-structures/monotonic-stack-queue": {
+    "title": "Data Structures -> Monotonic Stack / Queue",
+    "summary": "One linear scan, one domination rule: use monotonic stacks for boundaries and deques for fixed-width extrema.",
+    "topic_path": "topics/data-structures/monotonic-stack-queue/README.md",
+    "ladder_path": "practice/ladders/data-structures/monotonic-stack-queue/README.md",
+    "microtopics": [
+      "previous-smaller",
+      "next-smaller",
+      "monotonic-stack",
+      "monotonic-deque",
+      "sliding-window-minmax",
+      "histogram-boundaries"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms minimum stack / minimum queue",
+        "url": "https://cp-algorithms.com/data_structures/stack_queue_modification.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Nearest Smaller Values",
+        "url": "https://cses.fi/problemset/task/1645",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Sliding Window Minimum",
+        "url": "https://cses.fi/problemset/task/3221",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Advertisement",
+        "url": "https://cses.fi/problemset/task/1142",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Monotonic Stack / Queue hot sheet",
+        "path": "notebook/monotonic-stack-queue-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Nearest Smaller Values note",
+        "path": "practice/ladders/data-structures/monotonic-stack-queue/nearestsmallervalues.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Data structures cheatsheet",
+        "path": "notebook/data-structures-cheatsheet.md",
+        "kind": "broader chooser"
       }
     ]
   },
@@ -5777,7 +5942,7 @@
   "math/number-theory-basics": {
     "title": "Math -> Number Theory Basics",
     "summary": "Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.",
-    "topic_path": "topics/math/number-theory-basics/README.md",
+    "topic_path": "topics/math/gcd-lcm/README.md",
     "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
     "microtopics": [
       "divisibility",
@@ -7606,6 +7771,71 @@
         "label": "Hashing ladder",
         "path": "practice/ladders/strings/hashing/README.md",
         "kind": "adjacent ladder"
+      }
+    ]
+  },
+  "advanced/meet-in-the-middle": {
+    "title": "Advanced -> Meet-In-The-Middle",
+    "summary": "Split a subset-like exact search into two halves, enumerate exact half summaries, and merge them faster than full 2^n brute force.",
+    "topic_path": "topics/advanced/meet-in-the-middle/README.md",
+    "ladder_path": "practice/ladders/advanced/meet-in-the-middle/README.md",
+    "microtopics": [
+      "half-enumeration",
+      "subset-sums",
+      "sort-and-merge",
+      "hash-merge",
+      "n-around-40",
+      "sqrt-state-space"
+    ],
+    "learning_sources": [
+      {
+        "label": "USACO Guide meet in the middle",
+        "url": "https://usaco.guide/gold/meet-in-the-middle?lang=cpp",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Jeff Erickson - Algorithms",
+        "url": "https://jeffe.cs.illinois.edu/teaching/algorithms/index.html",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Meet in the Middle",
+        "url": "https://cses.fi/problemset/task/1628",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ SUBSUMS",
+        "url": "https://www.spoj.com/problems/SUBSUMS/",
+        "kind": "problem"
+      },
+      {
+        "label": "AtCoder ABC184 F",
+        "url": "https://atcoder.jp/contests/abc184/tasks/abc184_f",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Meet-In-The-Middle hot sheet",
+        "path": "notebook/meet-in-the-middle-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Meet in the Middle note",
+        "path": "practice/ladders/advanced/meet-in-the-middle/meetinthemiddle.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Discrete Log note",
+        "path": "practice/ladders/math/bsgs-discrete-log/discretelogarithmmod.md",
+        "kind": "algebraic compare point"
       }
     ]
   },

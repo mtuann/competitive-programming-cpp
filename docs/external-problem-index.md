@@ -2,7 +2,7 @@
 
 This page lists curated external problems imported into the topic-map system.
 
-- Total curated external problems: `677`
+- Total curated external problems: `688`
 - Data files: [external-problem-catalog.json](../data/external-problem-catalog.json), [external-problem-catalog.csv](external-problem-catalog.csv)
 - Fastest route: [Problem Finder](problem-finder.md) when you want one filtered view across repo notes and external practice
 - Best use: open a topic map first, then pick from the external problems table that matches your current subtopic and difficulty.
@@ -17,6 +17,8 @@ This page lists curated external problems imported into the topic-map system.
 | `Foundations -> Binary Search` | `Classics` | [Factory Machines](https://cses.fi/problemset/task/1620) | `CSES` | `Medium` | - | Proof-Heavy; Math-Heavy | Binary-Search-On-Answer; Monotonicity; Counting; Monotone-Predicate; Minimize-Answer |
 | `Foundations -> Binary Search` | `Classics` | [Magic Powder - 2](https://codeforces.com/problemset/problem/670/D) | `Codeforces` | `Medium` | - | Proof-Heavy; Greedy-Heavy | Binary-Search-On-Answer; Resource-Feasibility |
 | `Foundations -> Binary Search` | `Classics` | [Maximum Median](https://codeforces.com/problemset/problem/1201/C) | `Codeforces` | `Medium` | - | Proof-Heavy; Math-Heavy | Binary-Search-On-Answer; Median |
+| `Foundations -> Bit Tricks` | `Warm-Up` | [Gray Code](https://cses.fi/problemset/task/2205) | `CSES` | `Easy` | Bit Manipulation | Implementation | Gray-Code; Constructive |
+| `Foundations -> Bit Tricks` | `Core` | [Raising Bacteria](https://codeforces.com/problemset/problem/579/A) | `Codeforces` | `Easy` | Bit Manipulation | Implementation | Popcount; Greedy View |
 | `Foundations -> C++ Language` | `Warm-Up` | [Missing Number](https://cses.fi/problemset/task/1083) | `CSES` | `Easy` | - | Implementation-Heavy | Arrays; Math; Accumulation; Scan |
 | `Foundations -> C++ Language` | `Warm-Up` | [Repetitions](https://cses.fi/problemset/task/1069) | `CSES` | `Easy` | - | Implementation-Heavy | Scanning; Runs; Run-Length; Scan |
 | `Foundations -> C++ Language` | `Warm-Up` | [Weird Algorithm](https://cses.fi/problemset/task/1068) | `CSES` | `Easy` | - | Implementation-Heavy | Simulation; Loops; I/O; Branching |
@@ -42,6 +44,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Foundations -> Prefix Sums` | `Core` | [Subarray Sums II](https://cses.fi/problemset/task/1661) | `CSES` | `Medium` | - | Implementation-Heavy; Math-Heavy | Hash-Map; Subarrays |
 | `Foundations -> Prefix Sums` | `Classics` | [Subarray Divisibility](https://cses.fi/problemset/task/1662) | `CSES` | `Medium` | - | Math-Heavy | Mod Arithmetic; Counting |
 | `Foundations -> Prefix Sums` | `Cross-Topic` | [Forest Queries](https://cses.fi/problemset/task/1652) | `CSES` | `Medium` | - | Modeling-Heavy; Query-Heavy | 2D Prefix Sums; Rectangles; Rectangle-Query; Grid |
+| `Foundations -> Recursion And Backtracking` | `Warm-Up` | [Apple Division](https://cses.fi/problemset/task/1623) | `CSES` | `Easy` | - | Implementation | Subset Search; Brute Force |
+| `Foundations -> Recursion And Backtracking` | `Core` | [Creating Strings](https://cses.fi/problemset/task/1622) | `CSES` | `Easy` | - | Implementation | Permutations; Duplicates |
+| `Foundations -> Recursion And Backtracking` | `Classics` | [Chessboard and Queens](https://cses.fi/problemset/task/1624) | `CSES` | `Medium` | - | Implementation; Pruning | Pruning; Board Search |
 | `Foundations -> STL Basics` | `Warm-Up` | [Distinct Numbers](https://cses.fi/problemset/task/1621) | `CSES` | `Easy` | - | Data-Structure-Heavy; Implementation-Heavy | Set; Deduplication; Frequency; Sort; Unique |
 | `Foundations -> STL Basics` | `Core` | [Restaurant Customers](https://cses.fi/problemset/task/1619) | `CSES` | `Easy` | - | Modeling-Heavy; Implementation-Heavy | Events; Sweep Line; Sorting |
 | `Foundations -> STL Basics` | `Core` | [Towers](https://cses.fi/problemset/task/1073) | `CSES` | `Medium` | - | - | Multiset; Lower Bound; Patience |
@@ -106,6 +111,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Data Structures -> Mo's Algorithm` | `Practice` | [Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct) | `Library Checker` | `Hard` | - | Query-Heavy; Data-Structure-Heavy | Distinct-Count; Offline |
 | `Data Structures -> Mo's Algorithm` | `Classics` | [D-query](https://www.spoj.com/problems/DQUERY/) | `SPOJ` | `Hard` | Classic | Query-Heavy; Data-Structure-Heavy | Distinct-Count; Offline Range Queries |
 | `Data Structures -> Mo's Algorithm` | `Bridge` | [Distinct Values Queries](https://cses.fi/problemset/task/1734) | `CSES` | `Hard` | Compare Point | Query-Heavy; Compare-Point | Distinct-Count; Offline |
+| `Data Structures -> Monotonic Stack / Queue` | `Core` | [Nearest Smaller Values](https://cses.fi/problemset/task/1645) | `CSES` | `Medium` | Monotonic Stack | Implementation; Amortized | Previous-Smaller; Boundary |
+| `Data Structures -> Monotonic Stack / Queue` | `Core` | [Sliding Window Minimum](https://cses.fi/problemset/task/3221) | `CSES` | `Medium` | Monotonic Deque | Implementation; Streaming | Window-Minimum; Stream |
+| `Data Structures -> Monotonic Stack / Queue` | `Classics` | [Advertisement](https://cses.fi/problemset/task/1142) | `CSES` | `Medium` | Monotonic Stack | Implementation; Geometry-On-Array | Histogram; Nearest-Smaller; Rectangle Area |
 | `Data Structures -> ODT / Chtholly` | `Core` | [896C - Willem, Chtholly and Seniorious](https://codeforces.com/problemset/problem/896/C?mobile=true) | `Codeforces` | `Hard` | Interval-Partition | Data-Structure-Heavy; Implementation; Randomized-Input | Range Assign; Ordered Set; Expected Complexity; Kth Query |
 | `Data Structures -> ODT / Chtholly` | `Bridge` | [915E - Physical Education Lessons](https://codeforces.com/problemset/problem/915/E) | `Codeforces` | `Hard` | Interval-Partition | Data-Structure-Heavy; Query-Heavy | Range Assign; Piecewise Constant; Interval Counting |
 | `Data Structures -> Offline Tricks` | `Core` | [Static Range Count Distinct](https://judge.yosupo.jp/problem/static_range_count_distinct) | `Library Checker` | `Hard` | - | - | Mo's Algorithm; Distinct-Count |
@@ -710,6 +718,9 @@ This page lists curated external problems imported into the topic-map system.
 | `Advanced -> Machine Learning Algorithms` | `Core` | [Perceptron Classification Benchmark](https://cs229.stanford.edu/notes2021fall/cs229-notes6.pdf) | `Stanford CS229` | `Theory` | Machine Learning, Perceptron | Theory Benchmark; Online Update Rule | Binary Classification; Linear Separability; Mistake-Driven Update |
 | `Advanced -> Machine Learning Algorithms` | `Stretch` | [Perceptron, convergence, and generalization](https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/resources/lec2/) | `MIT OCW 6.867` | `Theory` | Machine Learning, Margins | Lecture Notes; Theory Breadth | Perceptron; Convergence; Generalization |
 | `Advanced -> Matroid Intersection` | `Core` | [Pick Your Own Nim](https://codeforces.com/gym/102156/problem/D) | `Codeforces Gym` | `Very Hard` | Optimization | Modeling; Augmenting Path; Theory-Heavy | Partition Matroid; Linear Matroid; XOR Basis |
+| `Advanced -> Meet-In-The-Middle` | `Core` | [Meet in the Middle](https://cses.fi/problemset/task/1628) | `CSES` | `Medium-Hard` | Mitm | Exact Search; Sort-And-Merge | Subset-Sum; Counting |
+| `Advanced -> Meet-In-The-Middle` | `Core` | [Programming Contest](https://atcoder.jp/contests/abc184/tasks/abc184_f) | `AtCoder` | `Medium-Hard` | Mitm | Exact Search; Optimization | Best-Feasible-Sum; Binary Search |
+| `Advanced -> Meet-In-The-Middle` | `Classics` | [SUBSUMS](https://www.spoj.com/problems/SUBSUMS/) | `SPOJ` | `Medium-Hard` | Mitm | Exact Search; Counting | Subset-Sum; Range Counting |
 | `Advanced -> Online Algorithms` | `Core` | [Ski Rental Benchmark](https://www.cs.jhu.edu/~mdinitz/classes/IntroAlgorithms/Fall2021/Lectures/Lecture24/lecture24slides.pdf) | `JHU Intro Algorithms` | `Theory` | Competitive Analysis | Competitive Analysis; Theory Benchmark | Ski Rental; Competitive Ratio; Threshold Policy; Adversarial Future |
 | `Advanced -> Online Algorithms` | `Stretch` | [Online Algorithms Notes: Ski Rental and Paging](https://web.stanford.edu/class/cs369/files/cs369-notes.pdf) | `Stanford CS369` | `Theory` | Paging, Randomized Compare | Lecture Notes; Theory Breadth | Competitive Ratio; Randomized Adversary; List Update |
 | `Advanced -> Optimization And Duality` | `Core` | [Giant Pizza](https://cses.fi/problemset/task/1684) | `CSES` | `Medium` | - | Logical Modeling | 2-SAT; Constraint Satisfaction |

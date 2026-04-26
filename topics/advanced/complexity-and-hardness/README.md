@@ -401,9 +401,9 @@ This is why meet-in-the-middle belongs on this page:
 
 - it is a complexity compromise before it is a specific template
 
-In this repository, this branch is currently theory-backed rather than repo-backed:
+In this repository, the dedicated bridge page now lives at:
 
-- there is not yet a dedicated internal note focused on meet-in-the-middle itself
+- [Meet-In-The-Middle](../meet-in-the-middle/README.md)
 
 For external practice, use:
 

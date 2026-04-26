@@ -43,6 +43,9 @@ site_dir: site
 use_directory_urls: true
 not_in_nav: |
   /docs/topic-maps/*/*.md
+  /docs/project-readme.md
+  /notebook/meet-in-the-middle-hot-sheet.md
+  /notebook/monotonic-stack-queue-hot-sheet.md
   /practice/ladders/*/*/*.md
   !/practice/ladders/*/*/README.md
 
@@ -95,6 +98,8 @@ nav:
           - Overview: topics/foundations/README.md
           - C++ Language For Contests: topics/foundations/cpp-language/README.md
           - Reasoning And Implementation Discipline: topics/foundations/reasoning/README.md
+          - Bit Tricks: topics/foundations/bit-tricks/README.md
+          - Recursion And Backtracking: topics/foundations/recursion-backtracking/README.md
           - Sorting: topics/foundations/patterns/sorting/README.md
           - Binary Search: topics/foundations/patterns/binary-search/README.md
           - Prefix Sums: topics/foundations/patterns/prefix-sums/README.md
@@ -105,6 +110,7 @@ nav:
           - DSU: topics/data-structures/dsu/README.md
           - DSU Rollback / Offline Dynamic Connectivity: topics/data-structures/dsu-rollback/README.md
           - Fenwick Tree: topics/data-structures/fenwick-tree/README.md
+          - Monotonic Stack / Queue: topics/data-structures/monotonic-stack-queue/README.md
           - Binary Trie / XOR Queries: topics/data-structures/binary-trie-xor/README.md
           - PBDS / Order Statistics Tree: topics/data-structures/pbds-order-statistics/README.md
           - Balanced BSTs For Contests: topics/data-structures/balanced-bsts/README.md
@@ -177,6 +183,7 @@ nav:
           - Overview: topics/math/README.md
           - Modular Arithmetic: topics/math/modular-arithmetic/README.md
           - Number Theory Basics: topics/math/number-theory-basics/README.md
+          - GCD / LCM: topics/math/gcd-lcm/README.md
           - BSGS / Discrete Log: topics/math/bsgs-discrete-log/README.md
           - Modular Square Root / Discrete Root: topics/math/modular-square-root-discrete-root/README.md
           - Primitive Root: topics/math/primitive-root/README.md
@@ -233,6 +240,7 @@ nav:
           - Overview: topics/advanced/README.md
           - Constructive: topics/advanced/constructive/README.md
           - Randomized Algorithms: topics/advanced/randomized-algorithms/README.md
+          - Meet-In-The-Middle: topics/advanced/meet-in-the-middle/README.md
           - Online Algorithms: topics/advanced/online-algorithms/README.md
           - Machine Learning Algorithms: topics/advanced/machine-learning-algorithms/README.md
           - Gradient Descent: topics/advanced/gradient-descent/README.md
@@ -255,6 +263,8 @@ nav:
               - C++ Language: practice/ladders/foundations/cpp-language/README.md
               - STL Habits: practice/ladders/foundations/stl/README.md
               - Complexity And Invariants: practice/ladders/foundations/complexity-and-invariants/README.md
+              - Bit Tricks: practice/ladders/foundations/bit-tricks/README.md
+              - Recursion And Backtracking: practice/ladders/foundations/recursion-backtracking/README.md
               - Sorting: practice/ladders/foundations/sorting/README.md
               - Binary Search: practice/ladders/foundations/binary-search/README.md
               - Prefix Sums: practice/ladders/foundations/prefix-sums/README.md
@@ -265,6 +275,7 @@ nav:
               - DSU: practice/ladders/data-structures/dsu/README.md
               - DSU Rollback / Offline Dynamic Connectivity: practice/ladders/data-structures/dsu-rollback/README.md
               - Fenwick Tree: practice/ladders/data-structures/fenwick-tree/README.md
+              - Monotonic Stack / Queue: practice/ladders/data-structures/monotonic-stack-queue/README.md
               - Binary Trie / XOR Queries: practice/ladders/data-structures/binary-trie-xor/README.md
               - PBDS / Order Statistics Tree: practice/ladders/data-structures/pbds-order-statistics/README.md
               - Balanced BSTs For Contests: practice/ladders/data-structures/balanced-bsts/README.md
@@ -395,6 +406,7 @@ nav:
               - Overview: practice/ladders/advanced/README.md
               - Constructive: practice/ladders/advanced/constructive/README.md
               - Randomized Algorithms: practice/ladders/advanced/randomized-algorithms/README.md
+              - Meet-In-The-Middle: practice/ladders/advanced/meet-in-the-middle/README.md
               - Online Algorithms: practice/ladders/advanced/online-algorithms/README.md
               - Machine Learning Algorithms: practice/ladders/advanced/machine-learning-algorithms/README.md
               - Gradient Descent: practice/ladders/advanced/gradient-descent/README.md

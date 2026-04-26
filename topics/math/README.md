@@ -6,6 +6,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 
 - [Modular Arithmetic](modular-arithmetic/README.md)
 - [Number Theory Basics](number-theory-basics/README.md)
+- [GCD / LCM](gcd-lcm/README.md)
 - [BSGS / Discrete Log](bsgs-discrete-log/README.md)
 - [Modular Square Root / Discrete Root](modular-square-root-discrete-root/README.md)
 - [Primitive Root](primitive-root/README.md)
@@ -32,14 +33,15 @@ Math gives you the compact facts and transforms that keep many contest solutions
 ## Learn In Order
 
 1. Core now
-- gcd, lcm, and modular arithmetic
+- number-theory basics, then gcd/lcm as the first bridge into prime-exponent constructions
+- modular arithmetic
 - counting and combinatorics basics
 - prime tools and divisibility facts
 
 2. Contest core
 - modular inverses and binomial coefficients
 - sieve patterns
-- congruence-system merges and gcd consistency checks
+- congruence-system merges and gcd consistency checks after the [GCD / LCM](gcd-lcm/README.md) bridge feels natural
 - large binomial queries when `n` is too big for one factorial table
 - divisor-frequency counting plus Mobius cancellation for exact gcd structure
 - summatory arithmetic functions opened through one direct Dirichlet convolution
@@ -70,6 +72,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - the problem is really about arithmetic structure, divisibility, or counting
 - brute force is blocked by repeated modular or combinatorial subcomputations
 - the clean solution needs a known algebraic identity or preprocessing trick
+- the real handoff is `Number Theory Basics -> GCD / LCM -> Chinese Remainder / Modular Arithmetic`, not a random jump into deeper algebra
 
 ## Common Pitfalls
 

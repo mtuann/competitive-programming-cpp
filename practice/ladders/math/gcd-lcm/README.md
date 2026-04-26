@@ -18,6 +18,7 @@ Use this ladder when gcd/lcm problems stop being one-line formulas and start tur
 ## Retrieval Layer
 
 - one Bézout witness or composite-mod inverse -> [Modular Arithmetic hot sheet](../../../../notebook/modular-arithmetic-hot-sheet.md)
+- congruence merge after gcd-consistency reasoning -> [Chinese Remainder hot sheet](../../../../notebook/chinese-remainder-hot-sheet.md)
 - exact repo note -> [Euclid Problem](euclidproblem.md)
 - starter primitive -> [extended-gcd-diophantine.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/extended-gcd-diophantine.cpp)
 
@@ -44,4 +45,4 @@ You are ready to move on when you can:
 
 ## Tutorial Link
 
-- [Number Theory Basics](../../../../topics/math/number-theory-basics/README.md)
+- [GCD / LCM](../../../../topics/math/gcd-lcm/README.md)

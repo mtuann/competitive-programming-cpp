@@ -19,6 +19,7 @@ This section is about maturity, not early speed.
 
 - [Constructive](constructive/README.md)
 - [Randomized Algorithms](randomized-algorithms/README.md)
+- [Meet-In-The-Middle](meet-in-the-middle/README.md)
 - [Online Algorithms](online-algorithms/README.md)
 - [Machine Learning Algorithms](machine-learning-algorithms/README.md)
 - [Gradient Descent](gradient-descent/README.md)
@@ -45,6 +46,7 @@ This section is about maturity, not early speed.
 - contest engineering habits
 - constructive habits
 - randomized algorithms
+- meet-in-the-middle when subset-like exact search is the real bottleneck
 - online competitive-analysis benchmarks
 
 2. Modeling depth

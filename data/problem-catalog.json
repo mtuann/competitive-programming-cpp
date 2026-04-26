@@ -173,6 +173,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/matroid-intersection/pickyourownnim.cpp"
   },
   {
+    "code": "MEETINTHEMIDDLE",
+    "title": "Meet in the Middle",
+    "full_title": "Meet in the Middle",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1628",
+    "main_topic": "Advanced -> Meet-In-The-Middle",
+    "secondary_topics": [
+      "Subset sums",
+      "Sort + equal_range",
+      "Exact search"
+    ],
+    "difficulty": "medium-hard",
+    "status": "solved",
+    "primary_slug": "advanced/meet-in-the-middle",
+    "topic_tags": [
+      "advanced/meet-in-the-middle"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/meet-in-the-middle/meetinthemiddle.md",
+    "ladder_path": "practice/ladders/advanced/meet-in-the-middle/README.md",
+    "tutorial_path": "topics/advanced/meet-in-the-middle/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/meet-in-the-middle/meetinthemiddle.cpp"
+  },
+  {
     "code": "SKIRENTAL",
     "title": "Ski Rental",
     "full_title": "Ski Rental",
@@ -701,6 +726,31 @@
     "ladder_path": "practice/ladders/data-structures/lazy-segment-tree/README.md",
     "tutorial_path": "topics/data-structures/lazy-segment-tree/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/lazy-segment-tree/horriblequeries.cpp"
+  },
+  {
+    "code": "NEARESTSMALLERVALUES",
+    "title": "Nearest Smaller Values",
+    "full_title": "Nearest Smaller Values",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1645",
+    "main_topic": "Data Structures -> Monotonic Stack / Queue",
+    "secondary_topics": [
+      "Monotonic stack",
+      "Previous smaller",
+      "Boundary scan"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/monotonic-stack-queue",
+    "topic_tags": [
+      "data-structures/monotonic-stack-queue"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/monotonic-stack-queue/nearestsmallervalues.md",
+    "ladder_path": "practice/ladders/data-structures/monotonic-stack-queue/README.md",
+    "tutorial_path": "topics/data-structures/monotonic-stack-queue/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/monotonic-stack-queue/nearestsmallervalues.cpp"
   },
   {
     "code": "POWERFULARRAY",
@@ -4052,7 +4102,7 @@
     ],
     "note_path": "practice/ladders/math/number-theory-basics/countingdivisors.md",
     "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
-    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "tutorial_path": "topics/math/gcd-lcm/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/countingdivisors.cpp"
   },
   {
@@ -4086,7 +4136,7 @@
     ],
     "note_path": "practice/ladders/math/number-theory-basics/lamp.md",
     "ladder_path": "practice/ladders/math/number-theory-basics/README.md",
-    "tutorial_path": "topics/math/number-theory-basics/README.md",
+    "tutorial_path": "topics/math/gcd-lcm/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/number-theory-basics/lamp.cpp"
   },
   {

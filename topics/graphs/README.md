@@ -52,11 +52,11 @@ Graphs are one of the central contest areas because many problems are really abo
 - Eulerian path / cycle when edge-exhaustion walks start repeating
 - de Bruijn modeling when the hard part is hiding an Eulerian cycle inside an overlap-string construction
 - 2-SAT once SCC condensation is comfortable
-- trees, tree-isomorphism canonicalization, subtree flattening, LCA, virtual-tree compression on marked subsets, and rerooting-style thinking
+- trees as the canonical tree-toolkit bridge, then tree-isomorphism canonicalization, subtree flattening, LCA, virtual-tree compression on marked subsets, and rerooting-style thinking
 
 3. Advanced later
 - heavy-light, centroid decomposition, and dynamic-tree machinery such as link-cut trees and Euler tour trees
-- flow, global cut structure, cut-tree compression via Gomory-Hu, lower-bounded circulation, and min-cost flow
+- maximum flow as the canonical flow-family bridge, then global cut structure, cut-tree compression via Gomory-Hu, lower-bounded circulation, and min-cost flow
 - matching, stable-preference pairing, weighted assignment, and general non-bipartite pairing
 
 ## Recognition Cues

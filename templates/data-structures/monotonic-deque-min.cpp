@@ -5,7 +5,7 @@
 // Complexity: amortized O(1) per push/expire, O(1) to read the minimum.
 // Main trap: using it when the valid set is not a contiguous forward-moving window.
 // Links:
-//   Topic: topics/data-structures/heaps-and-ordered-sets/README.md
+//   Topic: topics/data-structures/monotonic-stack-queue/README.md
 //   Note: practice/ladders/dp/sliding-window/slidingwindowminimum.md
 
 #include <deque>

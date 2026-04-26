@@ -56,7 +56,7 @@ lcm: take the larger exponent
 ## Quick Anchors In This Repo
 
 - modular power / tower reasoning -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md) + [Exponentiation II](../practice/ladders/math/modular-arithmetic/exponentiation2.md)
-- gcd / divisibility -> [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md)
+- gcd / divisibility -> [GCD / LCM](../topics/math/gcd-lcm/README.md) + [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md)
 - exponent recovery modulo one contest-sized modulus -> [Discrete Log hot sheet](discrete-log-hot-sheet.md) + [Discrete Logarithm Mod](../practice/ladders/math/bsgs-discrete-log/discretelogarithmmod.md)
 - modular square-root extraction modulo one prime -> [Modular Square Root hot sheet](modular-square-root-hot-sheet.md) + [Sqrt Mod](../practice/ladders/math/modular-square-root-discrete-root/sqrtmod.md)
 - primitive-root finding modulo one prime -> [Primitive Root hot sheet](primitive-root-hot-sheet.md) + [Primitive Root](../practice/ladders/math/primitive-root/primitiveroot.md)
@@ -72,7 +72,7 @@ The most common wrong turn is treating “mod arithmetic” as if every denomina
 
 ## Reopen Paths
 
-- topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md), [BSGS / Discrete Log](../topics/math/bsgs-discrete-log/README.md), [Modular Square Root / Discrete Root](../topics/math/modular-square-root-discrete-root/README.md), [Primitive Root](../topics/math/primitive-root/README.md), [Pollard-Rho](../topics/math/pollard-rho/README.md), [Mobius And Multiplicative Counting](../topics/math/mobius-multiplicative/README.md), [Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions](../topics/math/dirichlet-prefix-sums/README.md), [Min_25 / Du Jiao](../topics/math/min25-du-jiao/README.md)
+- topic pages -> [Modular Arithmetic](../topics/math/modular-arithmetic/README.md), [Number Theory Basics](../topics/math/number-theory-basics/README.md), [GCD / LCM](../topics/math/gcd-lcm/README.md), [BSGS / Discrete Log](../topics/math/bsgs-discrete-log/README.md), [Modular Square Root / Discrete Root](../topics/math/modular-square-root-discrete-root/README.md), [Primitive Root](../topics/math/primitive-root/README.md), [Pollard-Rho](../topics/math/pollard-rho/README.md), [Mobius And Multiplicative Counting](../topics/math/mobius-multiplicative/README.md), [Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions](../topics/math/dirichlet-prefix-sums/README.md), [Min_25 / Du Jiao](../topics/math/min25-du-jiao/README.md)
 - exact quick sheet -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - exact exponent-recovery sheet -> [Discrete Log hot sheet](discrete-log-hot-sheet.md)
 - exact root-extraction sheet -> [Modular Square Root hot sheet](modular-square-root-hot-sheet.md)

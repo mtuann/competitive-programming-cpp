@@ -13,6 +13,8 @@ Use them after reading the corresponding tutorial pages in `topics/foundations/`
 - [Prefix sums](prefix-sums/README.md)
 - [Difference arrays](difference-arrays/README.md)
 - [Two pointers](two-pointers/README.md)
+- [Bit tricks](bit-tricks/README.md)
+- [Recursion and backtracking](recursion-backtracking/README.md)
 - [Complexity and invariants](complexity-and-invariants/README.md)
 
 ## How To Use These Ladders
@@ -35,6 +37,8 @@ If you want a concrete path instead of browsing randomly, use:
 6. [Prefix sums](prefix-sums/README.md)
 7. [Difference arrays](difference-arrays/README.md)
 8. [Two pointers](two-pointers/README.md)
+9. [Bit tricks](bit-tricks/README.md)
+10. [Recursion and backtracking](recursion-backtracking/README.md)
 
 Why this order works:
 
@@ -42,6 +46,8 @@ Why this order works:
 - invariants and complexity checks arrive before harder scans
 - sorting and binary search teach clean ordered reasoning early
 - prefix logic prepares you for later Fenwick and segment tree topics
+- bit tricks makes packed-state notation less mysterious before bitmask-heavy topics
+- recursion/backtracking gives a clean search-tree bridge before DP and complexity triage
 
 ## First Week Route
 

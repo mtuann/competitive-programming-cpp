@@ -3,7 +3,7 @@
 Divisibility, primes, totients, divisor functions, and the standard multiplicative toolbox of contest number theory.
 
 - Topic slug: `math/number-theory-basics`
-- Tutorial page: [Open tutorial](../../../topics/math/number-theory-basics/README.md)
+- Tutorial page: [Open tutorial](../../../topics/math/gcd-lcm/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/number-theory-basics/README.md)
 - Repo problems currently tagged here: `7`
 - Repo companion pages: `0`

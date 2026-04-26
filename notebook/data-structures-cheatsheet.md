@@ -36,9 +36,10 @@ Use this page when you know the operations but have not yet picked the lightest 
 - one live set of half-open intervals with online overlap queries -> [Interval Tree hot sheet](interval-tree-hot-sheet.md)
 - self-adjusting ordered set with rank / `k`-th, or you want the exact rotate/splay bridge into LCT -> [Splay Tree hot sheet](splay-tree-hot-sheet.md)
 - you deliberately want a textbook deterministic balanced BST and want to know whether AVL / Red-Black / Scapegoat / SBT is actually worth it -> [Balanced BST hot sheet](balanced-bst-hot-sheet.md)
+- first smaller / greater witness or histogram-style blocking boundary in one scan -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md)
 - sliding median -> [sliding-median-two-multisets.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/sliding-median-two-multisets.cpp)
 - previous value `< x` in active set -> [multiset-predecessor.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/multiset-predecessor.cpp)
-- window minimum / monotone DP -> [monotonic-deque-min.cpp](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/data-structures/monotonic-deque-min.cpp)
+- window minimum / monotone DP -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md)
 
 ## First Questions
 
@@ -61,7 +62,8 @@ Use this page when you know the operations but have not yet picked the lightest 
 
 - "largest ticket not exceeding x" -> multiset predecessor
 - "median of the current window" -> two multisets before reaching for PBDS
-- "minimum on every sliding window" -> monotonic deque, not a segment tree
+- "minimum on every sliding window" -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md), not a segment tree
+- "first smaller / greater to the left / right" -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md)
 - "all queries known first" -> [Offline Tricks hot sheet](offline-tricks-hot-sheet.md) before building a heavier online structure
 - "merge child subtree maps / sets into one surviving bag" -> [DSU On Tree hot sheet](dsu-on-tree-hot-sheet.md)
 - "one current range and symmetric add/remove are the whole story" -> [Mo's hot sheet](mos-hot-sheet.md)
@@ -106,7 +108,8 @@ Use this page when you know the operations but have not yet picked the lightest 
 - segment tree -> [Segment Tree hot sheet](segment-tree-hot-sheet.md) + [Dynamic Range Sum Queries](../practice/ladders/data-structures/segment-tree/dynamicrangesumqueries.md)
 - lazy segment tree -> [Lazy Segment Tree hot sheet](lazy-segment-tree-hot-sheet.md) + [HORRIBLE](../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md)
 - segment tree beats -> [Segment Tree Beats hot sheet](segment-tree-beats-hot-sheet.md) + [Range Chmin Chmax Add Range Sum](../practice/ladders/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.md)
-- monotone window minimum -> [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md)
+- monotone boundary scan -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md) + [Nearest Smaller Values](../practice/ladders/data-structures/monotonic-stack-queue/nearestsmallervalues.md)
+- monotone window minimum -> [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md) + [Sliding Window Minimum](../practice/ladders/dp/sliding-window/slidingwindowminimum.md)
 
 ## Common Mistakes
 
@@ -146,6 +149,7 @@ Ask:
 - [Treap / Implicit Treap hot sheet](treap-hot-sheet.md)
 - [Wavelet Tree hot sheet](wavelet-tree-hot-sheet.md)
 - [Mo's hot sheet](mos-hot-sheet.md)
+- [Monotonic Stack / Queue hot sheet](monotonic-stack-queue-hot-sheet.md)
 - [Template library](../template-library.md)
 - [Order Statistics Tree hot sheet](order-statistics-tree-hot-sheet.md)
 - [B-Tree hot sheet](b-tree-hot-sheet.md)
@@ -158,6 +162,7 @@ Ask:
 - [Skip Lists topic](../topics/data-structures/skip-lists/README.md)
 - [X-Fast / Y-Fast Tries topic](../topics/data-structures/x-fast-y-fast-tries/README.md)
 - [Balanced BSTs For Contests topic](../topics/data-structures/balanced-bsts/README.md)
+- [Monotonic Stack / Queue topic](../topics/data-structures/monotonic-stack-queue/README.md)
 - [Splay Tree hot sheet](splay-tree-hot-sheet.md)
 - [Splay Tree topic](../topics/data-structures/splay-tree/README.md)
 - [Segment Tree topic](../topics/data-structures/segment-tree/README.md)

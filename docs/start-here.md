@@ -164,3 +164,15 @@ Use this instead of guessing what "intermediate" is supposed to mean in the repo
 | `Stage 4` | train for one contest style or add deeper theory follow-up after the core loop is stable | use [Contest Playbooks](../practice/contest-playbooks/README.md) first, then [Explore](explore.md) when the gap is deeper source-backed reading |
 
 The repo does not expect you to jump from Stage 1 straight into mixed rounds. Build one stable topic loop first, then widen.
+
+## Stage Versus Curriculum Level
+
+Use this tiny crosswalk if the repo-wide `Stage 1-4` language and the
+curriculum `Level 0-5` language start feeling interchangeable.
+
+| Learner stage | Usual curriculum levels it touches | What that means in practice |
+| --- | --- | --- |
+| `Stage 1` | mostly `Level 0` | you are still stabilizing the local loop and first pattern recognition |
+| `Stage 2` | mostly `Level 1-3` | you are learning one family at a time through topic -> ladder -> note |
+| `Stage 3` | still centered on `Level 1-3`, but now using `Level 5` retrieval/workflow doors | you mostly know the ideas and need faster recall, problem choice, and implementation trust |
+| `Stage 4` | usually `Level 3-5`, with selective `Level 4` enrichment | you are training for contest format, deeper follow-up, or theory-backed extension after the core loop is stable |

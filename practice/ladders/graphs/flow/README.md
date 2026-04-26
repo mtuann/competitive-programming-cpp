@@ -2,6 +2,9 @@
 
 This ladder should build the instinct that maximum flow is mostly about modeling: once the right network is built, Dinic is often the straightforward part.
 
+Inside the repo, the tutorial-first bridge page for this whole family is
+[Maximum Flow](../../../../topics/graphs/flow/README.md).
+
 ## Who This Is For
 
 Use this ladder if:

@@ -47,6 +47,10 @@ What success looks like after studying this page:
 - [Modular Arithmetic](../modular-arithmetic/README.md)
 - [Number Theory Basics](../number-theory-basics/README.md)
 
+Helpful neighboring topics:
+
+- [Polynomial / Formal Power Series](../polynomial-fps/README.md)
+
 ## Problem Model And Notation
 
 Let

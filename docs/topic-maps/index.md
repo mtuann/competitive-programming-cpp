@@ -7,10 +7,12 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Topic | Repo Problems | Repo Companions | External Problems | Map |
 | --- | ---: | ---: | ---: | --- |
 | Foundations -> Binary Search | 1 | 0 | 6 | [Open](foundations/binary-search.md) |
+| Foundations -> Bit Tricks | 0 | 2 | 2 | [Open](foundations/bit-tricks.md) |
 | Foundations -> Complexity And Invariants | 3 | 1 | 8 | [Open](foundations/complexity-and-invariants.md) |
 | Foundations -> C++ Language | 3 | 3 | 6 | [Open](foundations/cpp-language.md) |
 | Foundations -> Difference Arrays | 1 | 0 | 5 | [Open](foundations/difference-arrays.md) |
 | Foundations -> Prefix Sums | 3 | 3 | 6 | [Open](foundations/prefix-sums.md) |
+| Foundations -> Recursion And Backtracking | 0 | 2 | 3 | [Open](foundations/recursion-backtracking.md) |
 | Foundations -> Sorting | 5 | 0 | 7 | [Open](foundations/sorting.md) |
 | Foundations -> STL Basics | 1 | 0 | 8 | [Open](foundations/stl.md) |
 | Foundations -> Two Pointers | 4 | 3 | 6 | [Open](foundations/two-pointers.md) |
@@ -24,6 +26,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Data Structures -> Heaps And Ordered Sets | 1 | 2 | 7 | [Open](data-structures/heaps-and-ordered-sets.md) |
 | Data Structures -> Interval Trees | 1 | 6 | 1 | [Open](data-structures/interval-trees.md) |
 | Data Structures -> Lazy Segment Tree | 1 | 4 | 4 | [Open](data-structures/lazy-segment-tree.md) |
+| Data Structures -> Monotonic Stack / Queue | 1 | 3 | 3 | [Open](data-structures/monotonic-stack-queue.md) |
 | Data Structures -> Mo's Algorithm | 1 | 5 | 4 | [Open](data-structures/mos-algorithm.md) |
 | Data Structures -> ODT / Chtholly | 1 | 4 | 2 | [Open](data-structures/odt-chtholly.md) |
 | Data Structures -> Offline Tricks | 2 | 0 | 7 | [Open](data-structures/offline-tricks.md) |
@@ -139,6 +142,7 @@ Source types are normalized to the repo taxonomy: `Primary`, `Course`, `Referenc
 | Advanced -> Gradient Descent | 1 | 4 | 2 | [Open](advanced/gradient-descent.md) |
 | Advanced -> Machine Learning Algorithms | 1 | 4 | 2 | [Open](advanced/machine-learning-algorithms.md) |
 | Advanced -> Matroid Intersection | 1 | 5 | 1 | [Open](advanced/matroid-intersection.md) |
+| Advanced -> Meet-In-The-Middle | 1 | 3 | 3 | [Open](advanced/meet-in-the-middle.md) |
 | Advanced -> Online Algorithms | 1 | 5 | 2 | [Open](advanced/online-algorithms.md) |
 | Advanced -> Optimization And Duality | 2 | 2 | 6 | [Open](advanced/optimization-and-duality.md) |
 | Advanced -> Parallel Algorithms | 1 | 4 | 2 | [Open](advanced/parallel-algorithms.md) |

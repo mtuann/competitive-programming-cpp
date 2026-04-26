@@ -6,6 +6,8 @@ Foundations are the entry point for the whole repo. This area is about writing c
 
 - [C++ Language For Contests](cpp-language/README.md)
 - [Reasoning And Implementation Discipline](reasoning/README.md)
+- [Bit Tricks](bit-tricks/README.md)
+- [Recursion And Backtracking](recursion-backtracking/README.md)
 - Patterns:
   - [Sorting](patterns/sorting/README.md)
   - [Binary Search](patterns/binary-search/README.md)
@@ -54,6 +56,7 @@ The supporting layers in this repo are:
 - C++ workflow, STL, and debugging habits
 - asymptotic analysis and time-complexity estimates
 - sorting, binary search, prefix sums, difference arrays, two pointers
+- bit tricks once one integer starts acting like a packed boolean state
 
 2. Contest core
 - recursion and backtracking basics
@@ -76,6 +79,8 @@ If you are new enough that even local C++ workflow still feels shaky, this is th
 5. [Prefix Sums](patterns/prefix-sums/README.md)
 6. [Difference Arrays](patterns/difference-arrays/README.md)
 7. [Two Pointers](patterns/two-pointers/README.md)
+8. [Bit Tricks](bit-tricks/README.md)
+9. [Recursion And Backtracking](recursion-backtracking/README.md)
 
 This route works well because:
 
@@ -84,6 +89,8 @@ This route works well because:
 - sorting and binary search teach order and invariants early
 - prefix sums and difference arrays teach precompute vs update thinking
 - two pointers trains monotone scans and window discipline
+- bit tricks teaches how compact boolean state is represented in contest code
+- recursion and backtracking gives the first honest search-tree bridge before deeper exact-search topics
 
 ## First Repo Notes To Open
 

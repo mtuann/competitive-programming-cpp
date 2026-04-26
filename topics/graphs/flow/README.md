@@ -22,6 +22,10 @@ and one theorem:
 
 - **max-flow min-cut**
 
+Inside this repo, this is the canonical `flow family` bridge page before you
+branch into global min-cut, Gomory-Hu, lower-bounded circulation, or min-cost
+flow.
+
 ## At A Glance
 
 Reach for maximum flow when:

@@ -8,6 +8,7 @@ These ladders connect reusable structures to focused practice.
 - [DSU Rollback / Offline Dynamic Connectivity](dsu-rollback/README.md)
 - [DSU On Tree / Small-To-Large](dsu-on-tree/README.md)
 - [Fenwick tree](fenwick-tree/README.md)
+- [Monotonic stack / queue](monotonic-stack-queue/README.md)
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [PBDS / Order Statistics Tree](pbds-order-statistics/README.md)
 - [Balanced BSTs For Contests](balanced-bsts/README.md)
@@ -37,6 +38,7 @@ These ladders connect reusable structures to focused practice.
 - [CVP00001](fenwick-tree/cvp00001.md): Fenwick-backed circular simulation with reset/capture logic
 - [Range Queries and Copies](persistent-data-structures/rangequeriesandcopies.md): exact first persistent segment-tree route for versioned point updates and old-version range sums
 - [Persistent List](persistent-treap/persistentlist.md): exact first persistent split/merge treap route for branching list versions
+- [Nearest Smaller Values](monotonic-stack-queue/nearestsmallervalues.md): exact first monotonic-stack route where one domination rule kills dead boundary candidates forever
 - [Salary Queries](treap-implicit/salaryqueries.md): exact key-based treap route for duplicate-safe rank differences under online updates
 - [Cut and Paste](treap-implicit/cutandpaste.md): exact first sequence-surgery route where split/merge by position replaces explicit index maintenance
 - [MKTHNUM - K-th Number](wavelet-tree/mkthnum.md): exact first static order-statistics route where one range is translated through value partitions
