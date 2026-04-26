@@ -13,6 +13,7 @@ This area is for the more proof-first side of greedy: feasibility invariants, ex
 ## Subtopics
 
 - [Prefix Constraints](prefix-constraints/README.md)
+- [Huffman / Data Compression](huffman-data-compression/README.md)
 
 ## Entry
 
@@ -31,6 +32,7 @@ This area is for the more proof-first side of greedy: feasibility invariants, ex
 - combine greedy with heaps or ordered sets
 - repair a local choice when a new item breaks feasibility
 - reconstruct a witness, not just the objective value
+- optimal merge trees and weighted-depth objectives like Huffman coding
 
 3. Advanced later
 - greedy with several interacting constraints
@@ -42,6 +44,7 @@ This area is for the more proof-first side of greedy: feasibility invariants, ex
 - every prefix or partial solution must stay feasible
 - one locally best choice looks plausible, but only if you can explain why
 - a heap or ordered structure can "undo" the worst currently chosen item
+- the task repeatedly merges the two lightest weights and the objective is weighted depth or merge cost
 - DP feels too heavy because the state would only encode a monotone feasibility condition
 
 ## Common Pitfalls
@@ -65,6 +68,7 @@ After this section, you should be able to:
 - [Lemonade Line](../../practice/ladders/greedy/prefix-constraints/lemonadeline.md): order tolerant cows first so the line stays as small as possible
 - [Prefix Sum Addicts](../../practice/ladders/greedy/prefix-constraints/prefixsumaddicts.md): turn sorted-prefix feasibility into monotone difference checks
 - [VODIVIDE - Chia phần](../../practice/ladders/greedy/prefix-constraints/vodivide.md): maintain the cheapest feasible chosen set under a prefix quota
+- [Huffman Coding Benchmark](../../practice/ladders/greedy/huffman-data-compression/huffmancoding.md): merge the two lightest subtrees until one optimal prefix-code tree remains
 
 ## Go Deeper
 

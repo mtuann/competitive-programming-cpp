@@ -11,6 +11,10 @@ These ladders connect reusable structures to focused practice.
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [PBDS / Order Statistics Tree](pbds-order-statistics/README.md)
 - [Balanced BSTs For Contests](balanced-bsts/README.md)
+- [B-Trees](b-trees/README.md)
+- [Skip Lists](skip-lists/README.md)
+- [X-Fast / Y-Fast Tries](x-fast-y-fast-tries/README.md)
+- [Interval Trees](interval-trees/README.md)
 - [Splay Tree](splay-tree/README.md)
 - [Pairing Heap / Leftist Heap](pairing-leftist-heap/README.md)
 - [Persistent data structures](persistent-data-structures/README.md)
@@ -40,6 +44,10 @@ These ladders connect reusable structures to focused practice.
 - [Vasiliy's Multiset](binary-trie-xor/vasiliysmultiset.md): exact first binary-trie route for live xor-max queries with duplicates
 - [ORDERSET - Order Statistic Set](pbds-order-statistics/orderset.md): exact first PBDS route for online rank and `k`-th queries on one changing ordered set
 - [Balanced BSTs For Contests](balanced-bsts/README.md): compare-note track for AVL and the other textbook balancing families the repo intentionally does not treat as first-line contest retrieval
+- [B-Tree Dictionary](b-trees/btreedictionary.md): exact first high-fanout textbook dictionary route where split-full-child is the whole insert story
+- [Skiplist Dictionary](skip-lists/skiplistdictionary.md): exact first probabilistic ordered-dictionary route where tower search and `update[]` splicing are the whole state
+- [X-Fast Dictionary](x-fast-y-fast-tries/xfastdictionary.md): exact first bounded-universe predecessor route where binary-searching the deepest existing prefix is the real idea
+- [Reservation System](interval-trees/reservationsystem.md): exact first augmented-BST route where subtree `max_r` is enough to answer online half-open overlap queries on one live interval set
 - [Ordinary Balanced Tree](splay-tree/ordinarybalancedtree.md): exact first self-adjusting ordered-set route and the direct bridge into link-cut tree machinery
 - [Mergeable Heap 1](pairing-leftist-heap/mergeableheap1.md): exact first meldable-heap route where singleton heaps keep unioning and delete-min names one item's current heap
 - [HORRIBLE](lazy-segment-tree/horriblequeries.md): exact `range add + range sum` lazy-propagation baseline

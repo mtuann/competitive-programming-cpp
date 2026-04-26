@@ -15,6 +15,7 @@ Use this page when you can already name the counting family, but still need to s
 - upper bounds per slot -> bounded compositions or inclusion-exclusion
 - count good objects by subtracting bad ones -> inclusion-exclusion
 - lexicographic generation or k-th object -> enumeration / ranking
+- count colorings or arrangements up to rotation / explicit symmetry -> reopen [Burnside / Pólya hot sheet](burnside-polya-hot-sheet.md)
 
 ## Common Moves
 
@@ -51,5 +52,5 @@ Fix those three decisions before writing any formula.
 
 ## Reopen Paths
 
-- topic pages -> [Counting Basics](../topics/combinatorics/counting-basics/README.md), [Inclusion-Exclusion](../topics/combinatorics/inclusion-exclusion/README.md)
-- repo anchors -> [Distributing Apples](../practice/ladders/combinatorics/counting-basics/distributingapples.md), [Prime Multiples](../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md)
+- topic pages -> [Counting Basics](../topics/combinatorics/counting-basics/README.md), [Burnside / Pólya / Group Actions](../topics/combinatorics/burnside-polya/README.md), [Inclusion-Exclusion](../topics/combinatorics/inclusion-exclusion/README.md)
+- repo anchors -> [Distributing Apples](../practice/ladders/combinatorics/counting-basics/distributingapples.md), [Counting Necklaces](../practice/ladders/combinatorics/burnside-polya/countingnecklaces.md), [Prime Multiples](../practice/ladders/combinatorics/inclusion-exclusion/primemultiples.md)

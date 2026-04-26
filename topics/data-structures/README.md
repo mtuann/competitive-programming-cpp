@@ -11,6 +11,10 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - [Binary Trie / XOR Queries](binary-trie-xor/README.md)
 - [PBDS / Order Statistics Tree](pbds-order-statistics/README.md)
 - [Balanced BSTs For Contests](balanced-bsts/README.md)
+- [B-Trees](b-trees/README.md)
+- [Skip Lists](skip-lists/README.md)
+- [X-Fast / Y-Fast Tries](x-fast-y-fast-tries/README.md)
+- [Interval Trees](interval-trees/README.md)
 - [Splay Tree](splay-tree/README.md)
 - [Pairing Heap / Leftist Heap](pairing-leftist-heap/README.md)
 - [Persistent Data Structures](persistent-data-structures/README.md)
@@ -46,6 +50,9 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - ordered sets and offline query habits
 - PBDS / order-statistics trees once rank or `k`-th is the real invariant and plain ordered-set logic stops being enough
 - balanced BST compare note once you want to understand where AVL / Red-Black / Scapegoat / SBT fit and why the repo still prefers PBDS / treap for most contest jobs
+- skip lists once you explicitly want the probabilistic ordered-dictionary breadth story rather than one contest-first route
+- x-fast / y-fast tries once the real parameter is one bounded integer universe and predecessor / successor is the whole lesson
+- interval trees once the real state is one live set of intervals and overlap, not one aggregate over a fixed line
 - splay tree once you explicitly want the self-adjusting ordered-set route or the direct bridge into link-cut tree
 - pairing / leftist heaps once ordinary `priority_queue` logic is right except heaps must also meld
 - binary trie once xor-max queries over one live set start appearing
@@ -58,6 +65,9 @@ This area covers the reusable tools that turn repeated work into fast queries, u
 - treap / implicit treap once mutable sequence edits or split/merge by position start appearing
 - persistent treap once both persistence and split/merge sequence surgery have become real signals at the same time
 - wavelet tree once static range order statistics or value-count queries start appearing
+- B-trees once you explicitly want the textbook high-fanout search-tree story instead of the repo's contest-first ordered-set routes
+- skip lists once you want the textbook probabilistic ordered-dictionary route outside BST balancing
+- x-fast / y-fast tries once you want bounded-universe predecessor structures and are willing to pay textbook-breadth complexity
 - ODT / Chtholly once range assigns keep collapsing equal-value runs and the true state is one interval partition rather than one worst-case range tree
 - lazy propagation variants
 - coordinate compression patterns
@@ -89,6 +99,10 @@ After this section, you should know which standard structure to reach for in com
 - [Powerful Array](../../practice/ladders/data-structures/mos-algorithm/powerfularray.md): the first exact in-repo route for current-range maintenance under Mo ordering
 - [Vasiliy's Multiset](../../practice/ladders/data-structures/binary-trie-xor/vasiliysmultiset.md): the first exact in-repo route for insert / erase-one / max-xor over one live multiset
 - [ORDERSET - Order Statistic Set](../../practice/ladders/data-structures/pbds-order-statistics/orderset.md): the first exact in-repo route for online `k`-th and rank queries on one dynamic ordered set
+- [B-Tree Dictionary](../../practice/ladders/data-structures/b-trees/btreedictionary.md): the first exact in-repo route for high-fanout ordered-dictionary search and insert through split-full-child
+- [Skiplist Dictionary](../../practice/ladders/data-structures/skip-lists/skiplistdictionary.md): the first exact in-repo route for probabilistic ordered-dictionary search / insert / erase through forward-pointer towers
+- [X-Fast Dictionary](../../practice/ladders/data-structures/x-fast-y-fast-tries/xfastdictionary.md): the first exact in-repo route for bounded-universe predecessor / successor through prefix hashing and leaf-linked order
+- [Reservation System](../../practice/ladders/data-structures/interval-trees/reservationsystem.md): the first exact in-repo route for dynamic half-open interval overlap queries through subtree `max_r` augmentation
 - [Ordinary Balanced Tree](../../practice/ladders/data-structures/splay-tree/ordinarybalancedtree.md): the first exact in-repo route for a self-adjusting ordered multiset and the direct bridge into splay-based dynamic trees
 - [Mergeable Heap 1](../../practice/ladders/data-structures/pairing-leftist-heap/mergeableheap1.md): the first exact in-repo route for meldable singleton heaps with online delete-min by heap owner
 - [HORRIBLE - Horrible Queries](../../practice/ladders/data-structures/lazy-segment-tree/horriblequeries.md): the first exact in-repo route for online `range add + range sum`

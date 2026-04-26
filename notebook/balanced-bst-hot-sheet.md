@@ -13,6 +13,7 @@ check whether AVL, Red-Black, Scapegoat, SBT, or Splay is actually the right mov
 
 - one dynamic ordered set with rank / `k`-th and GNU extensions allowed -> `PBDS`
 - self-hosted split/merge ordered set or sequence surgery -> `Treap`
+- dynamic interval overlap queries over one live set -> `Interval Tree`
 - deterministic rotation-based ordered set as an implementation exercise -> `AVL`
 - library-style balancing / `std::set` / PBDS internals curiosity -> `Red-Black`
 - rebuild-based deterministic balancing curiosity -> `Scapegoat`
@@ -77,6 +78,7 @@ deterministic textbook routes.
 ## Reopen Paths
 
 - full compare page -> [Balanced BSTs For Contests](../topics/data-structures/balanced-bsts/README.md)
+- augmented-BST overlap route -> [Interval Trees](../topics/data-structures/interval-trees/README.md)
 - ordinary ordered sets -> [Heaps And Ordered Sets](../topics/data-structures/heaps-and-ordered-sets/README.md)
 - GNU order-statistics route -> [Order Statistics Tree hot sheet](order-statistics-tree-hot-sheet.md)
 - self-hosted split/merge route -> [Treap / Implicit Treap hot sheet](treap-hot-sheet.md)

@@ -5,6 +5,7 @@ These ladders cover problems where the main work is choosing or maintaining a lo
 ## Current Ladders
 
 - [Prefix Constraints](prefix-constraints/README.md)
+- [Huffman / Data Compression](huffman-data-compression/README.md)
 
 ## Tutorial Hub
 
@@ -21,3 +22,4 @@ These ladders cover problems where the main work is choosing or maintaining a lo
 - [Lemonade Line](prefix-constraints/lemonadeline.md)
 - [Prefix Sum Addicts](prefix-constraints/prefixsumaddicts.md)
 - [VODIVIDE](prefix-constraints/vodivide.md)
+- [Huffman Coding Benchmark](huffman-data-compression/huffmancoding.md)

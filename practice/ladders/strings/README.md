@@ -10,9 +10,10 @@ Use these ladders when string problems start blurring together and you want a cl
 4. hashing
 5. trie
 6. Aho-Corasick
-7. suffix array
-8. suffix tree
-9. suffix automaton
+7. regex / finite automata
+8. suffix array
+9. suffix tree
+10. suffix automaton
 
 ## Warm Start
 
@@ -47,4 +48,5 @@ That route keeps the focus on exact prefix-style reasoning, then one clean palin
 - [Finding Periods](z-function/findingperiods.md)
 - [Longest Palindrome](palindromes/longestpalindrome.md)
 - [Distinct Palindromic Substrings](eertree/distinctpalindromicsubstrings.md)
+- [Regex Membership](regex-finite-automata/regexmembership.md)
 - [Pattern Positions](suffix-tree/patternpositions.md)

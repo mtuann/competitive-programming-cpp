@@ -42,6 +42,7 @@ Most "BST" tasks in CP are actually one of these jobs:
 
 - predecessor / successor / erase-one in one ordered set
 - online rank or `k`-th
+- one dynamic interval set with overlap queries
 - split / merge ordered sets by key
 - mutable sequence edits by position
 - dynamic-tree path queries through splay-based auxiliary trees
@@ -50,6 +51,7 @@ That is why this repo routes you to:
 
 - [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md)
 - [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
+- [Interval Trees](../interval-trees/README.md)
 - [Treap / Implicit Treap](../treap-implicit/README.md)
 - [Persistent Treap](../persistent-treap/README.md)
 - [Splay Tree](../splay-tree/README.md)
@@ -584,6 +586,7 @@ Red-Black, Scapegoat, or SBT should replace the repo's main BST routes.
 - quick recall -> [Balanced BST hot sheet](../../../notebook/balanced-bst-hot-sheet.md)
 - ordinary ordered-set route -> [Heaps And Ordered Sets](../heaps-and-ordered-sets/README.md)
 - GNU contest route -> [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
+- augmented-BST overlap route -> [Interval Trees](../interval-trees/README.md)
 - self-hosted split/merge route -> [Treap / Implicit Treap](../treap-implicit/README.md)
 - persistence follow-up -> [Persistent Treap](../persistent-treap/README.md)
 - dynamic-tree follow-up -> [Link-Cut Tree](../../graphs/link-cut-tree/README.md)
@@ -605,5 +608,6 @@ Repo anchors:
 
 - [Balanced BST hot sheet](../../../notebook/balanced-bst-hot-sheet.md)
 - [PBDS / Order Statistics Tree](../pbds-order-statistics/README.md)
+- [Interval Trees](../interval-trees/README.md)
 - [Treap / Implicit Treap](../treap-implicit/README.md)
 - [Persistent Treap](../persistent-treap/README.md)

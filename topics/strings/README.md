@@ -7,6 +7,7 @@ Strings matter because many pattern problems are really about structure in seque
 This section is about different levels of string thinking:
 
 - lightweight fingerprints and exact one-pattern tools
+- regex-language and automaton views for small pattern languages
 - palindrome-center scans on one static string
 - append-only palindrome dictionaries over one growing string
 - dictionary and automaton structures for many patterns
@@ -16,6 +17,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 
 - prefix view
 - pattern-matching view
+- regex-language / NFA view
 - palindrome-center view
 - palindrome-dictionary view
 - trie/automaton view
@@ -30,6 +32,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - [Eertree / Palindromic Tree](eertree/README.md)
 - [Trie](trie/README.md)
 - [Aho-Corasick](aho-corasick/README.md)
+- [Regular Expressions / Finite Automata](regex-finite-automata/README.md)
 - [Suffix Tree](suffix-tree/README.md)
 - [Suffix Array And LCP](suffix-array-lcp/README.md)
 - [Suffix Automaton](suffix-automaton/README.md)
@@ -55,6 +58,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 - suffix array and LCP
 
 3. Advanced later
+- regular expressions / finite automata
 - suffix tree
 - suffix automaton
 - border-heavy variants
@@ -64,6 +68,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 
 - the problem asks for repeated pattern checks, substring relations, or many string queries
 - exact matching matters more than character-by-character simulation
+- the pattern syntax itself contains operators like `|` or `*`, so the pattern is a language rather than one literal string
 - naive scanning is too slow but preprocessing one string or one pattern set could help many queries
 - the problem is about borders, prefixes, suffixes, or repeated substrings
 
@@ -79,6 +84,7 @@ The goal is not to memorize every named algorithm. It is to learn which *view of
 After this section, you should be able to:
 
 - choose between hashing, KMP, and Z for one-pattern or substring-comparison tasks
+- know when one regex language wants Thompson-style NFA simulation instead of one literal matcher or many-pattern trie automata
 - know when one static palindrome scan wants Manacher instead of hashing
 - know when a growing string wants the dictionary of distinct palindromes instead of raw radii
 - recognize when a trie or Aho-Corasick is the right many-pattern structure
