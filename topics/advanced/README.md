@@ -19,6 +19,11 @@ This section is about maturity, not early speed.
 
 - [Constructive](constructive/README.md)
 - [Randomized Algorithms](randomized-algorithms/README.md)
+- [Online Algorithms](online-algorithms/README.md)
+- [Machine Learning Algorithms](machine-learning-algorithms/README.md)
+- [Gradient Descent](gradient-descent/README.md)
+- [Quantum Algorithms](quantum-algorithms/README.md)
+- [Parallel Algorithms](parallel-algorithms/README.md)
 - [Algorithm Engineering](algorithm-engineering/README.md)
 - [Complexity And Hardness](complexity-and-hardness/README.md)
 - [Approximation And Relaxation](approximation-and-relaxation/README.md)
@@ -40,6 +45,7 @@ This section is about maturity, not early speed.
 - contest engineering habits
 - constructive habits
 - randomized algorithms
+- online competitive-analysis benchmarks
 
 2. Modeling depth
 - complexity awareness
@@ -52,11 +58,16 @@ This section is about maturity, not early speed.
 3. Theory-first later
 - richer reductions
 - deeper probabilistic design techniques
+- gradient-descent breadth only if you intentionally want one fixed-step smooth-loss benchmark
+- machine-learning breadth only if you intentionally want textbook spillover beyond contest focus
+- quantum breadth only if you intentionally want one simulator-first non-classical benchmark
+- parallel breadth only if you intentionally want one work/span benchmark around scan and PRAM thinking
 - reading-heavy topics that inform, rather than dominate, contest prep
 
 ## Recognition Cues
 
 - the standard toolkit works, but you want to understand the design idea behind it
+- the hard part is missing future information rather than missing offline compute power
 - the statement promises a solution and asks you to build one explicit witness
 - the problem or editorial points toward randomness, optimization relaxations, or hardness
 - your bottleneck is increasingly process, modeling, or algorithm judgment
