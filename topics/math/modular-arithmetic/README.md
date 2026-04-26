@@ -35,6 +35,7 @@ Strong anti-cues:
 - the task is about exact rational values, not residues
 - the modulus is composite and you were about to apply Fermat blindly
 - the main problem is number-theoretic structure rather than residue computation
+- the real difficulty is orbit counting under rotation or other symmetry, and modular arithmetic is only the helper layer
 
 What success looks like after studying this page:
 
@@ -683,3 +684,4 @@ Repo anchors:
 - [Number Theory Basics](../number-theory-basics/README.md)
 - [FFT / NTT](../fft-ntt/README.md)
 - [Combinatorics](../../combinatorics/README.md)
+- [Burnside / Pólya / Group Actions](../../combinatorics/burnside-polya/README.md)

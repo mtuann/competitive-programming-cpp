@@ -262,7 +262,7 @@ Canonical examples:
 
 - `W` is too large for `O(nW)`
 - but values are small enough for value-based DP
-- or bitset optimization fits a feasibility version
+- or [Bit-Parallelism / Bitset Optimization](../bit-parallelism/README.md) fits a feasibility version
 
 The knapsack worldview still applies, but the axis changes.
 
@@ -507,7 +507,7 @@ depends on the numeric size of `W`, not only the input length in bits.
 That is why some knapsack problems need:
 
 - value-based DP
-- bitsets
+- [Bit-Parallelism / Bitset Optimization](../bit-parallelism/README.md)
 - approximation
 
 instead of plain capacity DP.

@@ -17,6 +17,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - [Dirichlet Convolution / Prefix Sums Of Number-Theoretic Functions](dirichlet-prefix-sums/README.md)
 - [Min_25 / Du Jiao](min25-du-jiao/README.md)
 - [Linear Recurrence / Matrix Exponentiation](linear-recurrence/README.md)
+- [Berlekamp-Massey / Kitamasa](berlekamp-massey-kitamasa/README.md)
 - [XOR Basis / Linear Basis](xor-basis/README.md)
 - [Game Theory / Sprague-Grundy](game-theory/README.md)
 - [Probability](probability/README.md)
@@ -46,6 +47,7 @@ Math gives you the compact facts and transforms that keep many contest solutions
 - implicit prefix sums of `phi` / `mu` recovered on the quotient set `Q_n`
 - recurrence and matrix-exponentiation style tools
 - fixed-size linear transitions under one modulus
+- recurrence jumping through characteristic-polynomial reduction once dense matrices become too expensive
 - dense linear systems over one field by pivoting and elimination
 - xor-basis elimination over `GF(2)` for subset-xor span, representability, and maximum subset xor
 - impartial normal-play game sums through Grundy numbers, `mex`, and xor across independent components
@@ -83,6 +85,7 @@ After this section, you should be able to use modular arithmetic and standard co
 
 - [Exponentiation](../../practice/ladders/math/modular-arithmetic/exponentiation.md): the core fast-power pattern under modulo arithmetic
 - [Throwing Dice](../../practice/ladders/math/linear-recurrence/throwingdice.md): fixed-order recurrence lifted into a companion matrix
+- [K-th Term of Linearly Recurrent Sequence](../../practice/ladders/math/berlekamp-massey-kitamasa/kthtermoflinearlyrecurrentsequence.md): use Kitamasa to jump on the characteristic recurrence once the order is given
 - [Counting Divisors](../../practice/ladders/math/number-theory-basics/countingdivisors.md): divisor-count sieve for many bounded queries
 - [Common Divisors](../../practice/ladders/math/gcd-lcm/commondivisors.md): maximize pair gcd by scanning divisor frequencies
 - [GCD on Blackboard](../../practice/ladders/math/gcd-lcm/gcdonblackboard.md): all-except-one gcd via prefix/suffix aggregates

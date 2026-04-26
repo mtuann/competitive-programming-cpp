@@ -333,7 +333,7 @@ This often happens around:
 
 Then splitting into two halves may be much better than a full subset DP.
 
-### Think About [SOS DP / Subset Transforms](../sos-dp/README.md) Only After Basic Bitmask DP
+### Think About [SOS DP](../sos-dp/README.md) And [FWHT / XOR Convolution / Subset Convolution](../fwht-subset-convolution/README.md) Only After Basic Bitmask DP
 
 Some heavier techniques iterate over:
 
@@ -658,7 +658,8 @@ The core contest layer is:
 
 Important next-layer directions include:
 
-- [SOS DP / subset transforms](../sos-dp/README.md)
+- [SOS DP](../sos-dp/README.md)
+- [FWHT / XOR Convolution / Subset Convolution](../fwht-subset-convolution/README.md)
 - profile DP on grids
 - meet-in-the-middle
 - bitmask DP combined with shortest paths or BFS on state graphs
@@ -724,6 +725,7 @@ Repo anchors:
 
 - [DP Foundations](../foundations/README.md)
 - [SOS DP](../sos-dp/README.md)
+- [FWHT / XOR Convolution / Subset Convolution](../fwht-subset-convolution/README.md)
 - [Broken Profile / Plug DP](../broken-profile/README.md)
 - [Knapsack Family](../knapsack-family/README.md)
 - [Tree DP](../tree-dp/README.md)

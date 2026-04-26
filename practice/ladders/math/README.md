@@ -13,16 +13,17 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 7. dirichlet convolution / prefix sums of number-theoretic functions
 8. Min_25 / Du Jiao
 9. linear recurrence / matrix exponentiation
-10. gaussian elimination / linear algebra
-11. xor basis / linear basis
-12. game theory / Sprague-Grundy
-13. probability
-14. BSGS / discrete log
-15. modular square root / discrete root
-16. primitive root
-17. Pollard-Rho
-18. FFT
-19. polynomial / formal power series
+10. berlekamp-massey / kitamasa
+11. gaussian elimination / linear algebra
+12. xor basis / linear basis
+13. game theory / Sprague-Grundy
+14. probability
+15. BSGS / discrete log
+16. modular square root / discrete root
+17. primitive root
+18. Pollard-Rho
+19. FFT
+20. polynomial / formal power series
 
 ## Subtopic Ladders
 
@@ -40,6 +41,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Dirichlet convolution / prefix sums of number-theoretic functions](dirichlet-prefix-sums/README.md)
 - [Min_25 / Du Jiao](min25-du-jiao/README.md)
 - [Linear recurrence / matrix exponentiation](linear-recurrence/README.md)
+- [Berlekamp-Massey / Kitamasa](berlekamp-massey-kitamasa/README.md)
 - [XOR basis / linear basis](xor-basis/README.md)
 - [Game theory / Sprague-Grundy](game-theory/README.md)
 - [Probability](probability/README.md)
@@ -51,6 +53,7 @@ These ladders cover arithmetic, number theory, and transform-based counting tool
 - [Exponentiation](modular-arithmetic/exponentiation.md)
 - [Counting Divisors](number-theory-basics/countingdivisors.md)
 - [Throwing Dice](linear-recurrence/throwingdice.md)
+- [K-th Term of Linearly Recurrent Sequence](berlekamp-massey-kitamasa/kthtermoflinearlyrecurrentsequence.md)
 - [Common Divisors](gcd-lcm/commondivisors.md)
 - [GCD on Blackboard](gcd-lcm/gcdonblackboard.md)
 - [CRYPTKEY](gcd-lcm/cryptkey.md)

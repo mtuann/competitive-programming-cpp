@@ -282,9 +282,9 @@ So matrix exponentiation is the general route, not always the lightest route.
 
 - the transition is matrix-shaped but the matrix dimension is large
 - the matrix is sparse enough that a custom multiply should replace the dense `O(k^3)` multiply
-- you really need a stronger recurrence tool like Berlekamp-Massey or Kitamasa
+- you really need a stronger recurrence tool like [Berlekamp-Massey / Kitamasa](../berlekamp-massey-kitamasa/README.md)
 
-Those are later-wave topics, not this first lane.
+That is now a shipped follow-up lane, not part of this first matrix route.
 
 ## Worked Examples
 

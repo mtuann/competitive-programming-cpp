@@ -11,13 +11,15 @@ These ladders follow the DP path from state design to structured variants.
 5. digit DP
 6. interval DP
 7. SOS DP
-8. broken profile / plug DP
-9. divide and conquer DP
-10. Knuth optimization
-11. CHT / Li Chao
-12. slope trick
-13. Lagrangian relaxation / Aliens trick
-14. sliding window / mixed optimization notes
+8. FWHT / xor convolution / subset convolution
+9. bit-parallelism / bitset optimization
+10. broken profile / plug DP
+11. divide and conquer DP
+12. Knuth optimization
+13. CHT / Li Chao
+14. slope trick
+15. Lagrangian relaxation / Aliens trick
+16. sliding window / mixed optimization notes
 
 ## Subtopic Ladders
 
@@ -25,6 +27,8 @@ These ladders follow the DP path from state design to structured variants.
 - [Knapsack family](knapsack-family/README.md)
 - [Bitmask DP](bitmask-dp/README.md)
 - [SOS DP](sos-dp/README.md)
+- [FWHT / XOR Convolution / Subset Convolution](fwht-subset-convolution/README.md)
+- [Bit-Parallelism / Bitset Optimization](bit-parallelism/README.md)
 - [Tree DP](tree-dp/README.md)
 - [Digit DP](digit-dp/README.md)
 - [Interval DP](interval-dp/README.md)
@@ -43,6 +47,8 @@ These ladders follow the DP path from state design to structured variants.
 - [Knuth Division](knuth-optimization/knuthdivision.md): split-point interval DP with additive interval cost and Knuth opt windows
 - [Counting Tilings](broken-profile/countingtilings.md): frontier-mask DP on a small-width grid
 - [Compatible Numbers](sos-dp/compatiblenumbers.md): complement-mask witness propagation over all submasks of the bitwise complement
+- [Bitwise XOR Convolution](fwht-subset-convolution/bitwisexorconvolution.md): exact boolean-cube transform route once pair-combining under xor replaces one-array SOS sweeps
+- [School Excursion](bit-parallelism/schoolexcursion.md): DSU component sizes collapsed into one packed boolean reachability row
 - [Line Add Get Min](cht-li-chao/lineaddgetmin.md): direct full-domain line-container verifier inside the affine-DP family
 - [Monster Game II](cht-li-chao/monstergame2.md): affine-DP optimization via online line insertion and point queries
 - [Snuketoon](slope-trick/snuketoon.md): convex piecewise-linear DP updated by one-sided hinge penalties and bounded movement

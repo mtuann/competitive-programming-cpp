@@ -54,7 +54,7 @@ Strong anti-cues:
 
 - the DP state evolves by adding one chosen item -> [Bitmask DP](../bitmask-dp/README.md)
 - the mask is a frontier on a grid, not the whole subset cube -> [Broken Profile / Plug DP](../broken-profile/README.md)
-- the intended operation is xor convolution or another transform this lane does not advertise
+- the intended operation is xor convolution or another transform this lane does not advertise -> [FWHT / XOR Convolution / Subset Convolution](../fwht-subset-convolution/README.md)
 - the universe is too large to allocate arrays of length `1 << bits`
 
 ## Prerequisites
@@ -65,6 +65,7 @@ Strong anti-cues:
 Helpful nearby anchors:
 
 - [Broken Profile / Plug DP](../broken-profile/README.md)
+- [FWHT / XOR Convolution / Subset Convolution](../fwht-subset-convolution/README.md)
 - [DP cheatsheet](../../../notebook/dp-cheatsheet.md)
 - [XOR Basis / Linear Basis](../../math/xor-basis/README.md), when bitwise wording hides a linear-algebra task instead of a mask-cube aggregate
 

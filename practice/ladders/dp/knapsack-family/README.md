@@ -32,7 +32,7 @@ Target skill:
 
 ## Stretch
 
-- bitset subset sum
+- bitset subset sum -> [Bit-Parallelism / Bitset Optimization](../bit-parallelism/README.md)
 - value-based knapsack
 - monotone-queue bounded variants
 

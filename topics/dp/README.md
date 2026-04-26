@@ -8,6 +8,8 @@ Dynamic programming is about choosing a state that captures exactly what still m
 - [Knapsack Family](knapsack-family/README.md)
 - [Bitmask DP](bitmask-dp/README.md)
 - [SOS DP](sos-dp/README.md)
+- [FWHT / XOR Convolution / Subset Convolution](fwht-subset-convolution/README.md)
+- [Bit-Parallelism / Bitset Optimization](bit-parallelism/README.md)
 - [Broken Profile / Plug DP](broken-profile/README.md)
 - [Tree DP](tree-dp/README.md)
 - [Digit DP](digit-dp/README.md)
@@ -38,6 +40,8 @@ Dynamic programming is about choosing a state that captures exactly what still m
 
 3. Advanced later
 - SOS / subset-superset transforms on the full mask cube
+- xor / subset-style boolean-cube transforms after plain SOS sweeps stop being enough
+- one huge boolean reachability row where word-packed shift-OR beats scalar subset-sum DP
 - broken profile / frontier-mask DP on grids
 - optimization techniques such as divide-and-conquer DP
 - Knuth-style or other stronger interval / partition optimizations
@@ -67,6 +71,8 @@ After this section, you should be able to define states deliberately, justify tr
 
 - [TFIELD - Ruộng bậc thang](../../practice/ladders/dp/sliding-window/tfield.md): weighted window reasoning over sorted polygon layers
 - [Compatible Numbers](../../practice/ladders/dp/sos-dp/compatiblenumbers.md): complement-mask witness propagation over the full boolean cube
+- [Bitwise XOR Convolution](../../practice/ladders/dp/fwht-subset-convolution/bitwisexorconvolution.md): xor-combining two full mask functions by Walsh-Hadamard transform
+- [School Excursion](../../practice/ladders/dp/bit-parallelism/schoolexcursion.md): DSU component sizes reduced to one packed subset-sum reachability row
 - [Ciel and Gondolas](../../practice/ladders/dp/divide-and-conquer-dp/cielandgondolas.md): partition DP with precomputed interval cost and monotone split optimization
 - [Knuth Division](../../practice/ladders/dp/knuth-optimization/knuthdivision.md): merge-style interval DP where the split search shrinks to the Knuth window
 - [Line Add Get Min](../../practice/ladders/dp/cht-li-chao/lineaddgetmin.md): direct online line-container verifier for the full-domain branch of the affine-DP family

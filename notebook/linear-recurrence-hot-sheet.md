@@ -19,6 +19,8 @@ and the real question is whether to ship a companion matrix.
 
 - fixed-order recurrence like `f(n) = c1 f(n-1) + ... + ck f(n-k)` -> companion matrix -> [`matrix-exponentiation.cpp`](https://github.com/mtuann/competitive-programming-cpp/blob/main/templates/math/matrix-exponentiation.cpp)
 - repeated small linear transition on counts or walks -> matrix exponentiation route -> reopen the topic
+- recurrence is known, but order is large enough that `O(d^3 log k)` matrix powers feel wasteful -> reopen [Berlekamp-Massey / Kitamasa hot sheet](berlekamp-massey-kitamasa-hot-sheet.md)
+- recurrence is not given directly, but a long enough prefix is -> reopen [Berlekamp-Massey / Kitamasa hot sheet](berlekamp-massey-kitamasa-hot-sheet.md)
 - same huge-index recurrence but only Fibonacci-like structure -> compare fast doubling first before copying a full matrix starter
 - the problem is really only about modulo-safe arithmetic -> go back to [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 
@@ -45,5 +47,6 @@ and the real question is whether to ship a companion matrix.
 ## Reopen Paths
 
 - full state-vector and companion-matrix walkthrough -> [Linear Recurrence / Matrix Exponentiation](../topics/math/linear-recurrence/README.md)
+- recurrence jumping without dense matrices, or recurrence recovery from a prefix -> [Berlekamp-Massey / Kitamasa hot sheet](berlekamp-massey-kitamasa-hot-sheet.md)
 - modulo discipline and overflow sanity -> [Modular Arithmetic hot sheet](modular-arithmetic-hot-sheet.md)
 - snippet chooser -> [Template Library](../template-library.md)

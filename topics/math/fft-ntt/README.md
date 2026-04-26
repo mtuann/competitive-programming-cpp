@@ -31,7 +31,7 @@ Strong contest triggers:
 Strong anti-cues:
 
 - the data is sparse and the direct method is already small enough
-- the combination rule is not additive after indexing
+- the combination rule is not additive after indexing, especially if the real law is xor or exact subset split on the boolean cube -> [FWHT / XOR Convolution / Subset Convolution](../../dp/fwht-subset-convolution/README.md)
 - the main bottleneck is graph structure, DP state explosion, or geometry rather than pair aggregation
 - you only need one or two query values and there is a much lighter direct method
 
