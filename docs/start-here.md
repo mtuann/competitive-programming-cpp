@@ -150,29 +150,15 @@ If you want a broader chooser instead of that default handoff:
 - [Problem Finder](problem-finder.md)
 - [Build Kit](build-kit.md)
 
-## Learner Stage Plan After The First Week
+## If You Still Feel Lost After Week One
 
-These stages describe readiness inside the repo. They are different from the curriculum `Level 0-5` map in [Project Overview](../project-readme.md).
+Use the smallest next door that matches the problem:
 
-Use this instead of guessing what "intermediate" is supposed to mean in the repo.
-
-| Stage | Main goal | Best route |
-| --- | --- | --- |
-| `Stage 1` | make the local C++ loop and first recognition cues stable | stay in [Foundations ladders](../practice/ladders/foundations/README.md) until basic notes feel routine |
-| `Stage 2` | learn one family at a time and build exact topic-note-template links | use [Learning Areas](../topics/README.md), then the corresponding ladder, then one anchored note |
-| `Stage 3` | stop relearning and start retrieving under pressure | use [Practice hub](../practice/README.md), then [Problem Finder](problem-finder.md), [Notebook](../notebook/README.md), and [Build Kit](build-kit.md) together |
-| `Stage 4` | train for one contest style or add deeper theory follow-up after the core loop is stable | use [Contest Playbooks](../practice/contest-playbooks/README.md) first, then [Explore](explore.md) when the gap is deeper source-backed reading |
-
-The repo does not expect you to jump from Stage 1 straight into mixed rounds. Build one stable topic loop first, then widen.
-
-## Stage Versus Curriculum Level
-
-Use this tiny crosswalk if the repo-wide `Stage 1-4` language and the
-curriculum `Level 0-5` language start feeling interchangeable.
-
-| Learner stage | Usual curriculum levels it touches | What that means in practice |
-| --- | --- | --- |
-| `Stage 1` | mostly `Level 0` | you are still stabilizing the local loop and first pattern recognition |
-| `Stage 2` | mostly `Level 1-3` | you are learning one family at a time through topic -> ladder -> note |
-| `Stage 3` | still centered on `Level 1-3`, but now using `Level 5` retrieval/workflow doors | you mostly know the ideas and need faster recall, problem choice, and implementation trust |
-| `Stage 4` | usually `Level 3-5`, with selective `Level 4` enrichment | you are training for contest format, deeper follow-up, or theory-backed extension after the core loop is stable |
+- still shaky on basics:
+  stay in [Foundations ladders](../practice/ladders/foundations/README.md)
+- you want one new family at a time:
+  open [Learning Areas](../topics/README.md)
+- you mostly know the ideas but need better retrieval:
+  open [Build Kit](build-kit.md) and [Notebook](../notebook/README.md)
+- you want broader training blocks:
+  open [Practice hub](../practice/README.md)

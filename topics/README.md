@@ -26,7 +26,7 @@ Pick the area that matches your current bottleneck, then stay inside that family
 | `Graphs` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--bridge">Bridge</span> | modeling, traversals, shortest paths, trees, flow, and matching | [Graphs](graphs/README.md) |
 | `Dynamic Programming` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | state design, transitions, and optimization over structure | [Dynamic Programming](dp/README.md) |
 | `Math` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | modular arithmetic, combinatorics, and number theory tools | [Math](math/README.md) |
-| `Strings` | <span class="route-badge route-badge--deep">Deep</span> | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
+| `Strings` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--deep">Deep</span> | pattern matching, hashing, tries, and suffix structures | [Strings](strings/README.md) |
 
 ### Extension and follow-up areas
 
@@ -34,7 +34,7 @@ Pick the area that matches your current bottleneck, then stay inside that family
 | --- | --- | --- |
 | `Combinatorics` | <span class="route-badge route-badge--bridge">Bridge</span> <span class="route-badge route-badge--deep">Deep</span> | counting, bounded distributions, and lexicographic enumeration | [Combinatorics](combinatorics/README.md) |
 | `Geometry` | <span class="route-badge route-badge--deep">Deep</span> | vectors, orientation, hulls, and geometric counting | [Geometry](geometry/README.md) |
-| `Greedy` | <span class="route-badge route-badge--bridge">Bridge</span> | exchange arguments, feasibility-first thinking, and locally safe choices | [Greedy](greedy/README.md) |
+| `Greedy` | <span class="route-badge route-badge--core">Core</span> <span class="route-badge route-badge--bridge">Bridge</span> | exchange arguments, feasibility-first thinking, and locally safe choices | [Greedy](greedy/README.md) |
 | `Advanced` | <span class="route-badge route-badge--enrichment">Enrichment</span> | randomized algorithms, approximation, complexity, and algorithm design depth | [Advanced](advanced/README.md) |
 
 ## Learn -> Practice -> Retrieve
@@ -62,19 +62,5 @@ When one family feels wider than your mental map, reopen the bridge page first i
 | bit-state techniques | <span class="route-badge route-badge--bridge">Bridge</span> | [Bit Tricks](foundations/bit-tricks/README.md) | bitmask DP, SOS, FWHT, xor basis, bit-parallelism |
 | explicit search trees | <span class="route-badge route-badge--bridge">Bridge</span> | [Recursion And Backtracking](foundations/recursion-backtracking/README.md) | bitmask DP, meet-in-the-middle, complexity triage |
 | monotone scans | <span class="route-badge route-badge--bridge">Bridge</span> | [Monotonic Stack / Queue](data-structures/monotonic-stack-queue/README.md) | nearest boundary, sliding extrema, histogram-style problems |
-
-## Representative Repo Anchors
-
-Use these if you want one concrete repo-native anchor before diving into a whole area:
-
-- Data Structures: [CVP00001](../practice/ladders/data-structures/fenwick-tree/cvp00001.md)
-- Graphs: [QOS](../practice/ladders/graphs/shortest-paths/qos.md), [MINCOST](../practice/ladders/graphs/flow/mincost.md)
-- Dynamic Programming: [TFIELD](../practice/ladders/dp/sliding-window/tfield.md)
-- Math: [CRYPTKEY](../practice/ladders/math/gcd-lcm/cryptkey.md), [POST2](../practice/ladders/math/fft/post2.md)
-- Geometry: [PRAVO](../practice/ladders/geometry/right-triangles/pravo.md), [KINGDOMS](../practice/ladders/geometry/sweep-line/kingdoms.md)
-- Greedy: [Lemonade Line](../practice/ladders/greedy/prefix-constraints/lemonadeline.md)
-- Advanced: [Minimum Euclidean Distance](../practice/ladders/advanced/algorithm-engineering/minimumeuclideandistance.md)
-
-Use [docs/topic-template.md](../docs/topic-template.md) as the source of truth for mature single-topic pages. The area hubs in this folder should stay lighter and focus on routing first.
 
 If you want the whole non-foundational surface in one visual instead of one area at a time, use [Deep Topic Taxonomy](../docs/deep-topic-taxonomy.md).

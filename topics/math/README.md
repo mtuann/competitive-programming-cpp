@@ -7,6 +7,14 @@
 
 Math gives you the compact facts and transforms that keep many contest solutions short, fast, and correct.
 
+## The Dependency Chain That Matters Most
+
+Math is the easiest area to overlearn in the wrong order. In this repo, the most important dependency chain is:
+
+`Number Theory Basics -> GCD / LCM -> Modular Arithmetic -> CRT / Lucas -> deeper number-theory lanes`
+
+If that chain is not stable yet, do not jump early into discrete logs, Min_25, or polynomial / FPS work.
+
 ## Use This Area When
 
 - the real blocker is divisibility, modular arithmetic, counting, or transforms

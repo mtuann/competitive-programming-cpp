@@ -7,6 +7,17 @@
 
 Graphs are one of the central contest areas because many problems are really about states and transitions in disguise.
 
+## How This Family Splits
+
+This repo treats graphs as four big branches:
+
+- `modeling and traversal`: BFS, DFS, shortest paths, MST, SCC
+- `trees`: subtree structure, LCA, decomposition, and dynamic forests
+- `cuts and flow`: max-flow, lower bounds, cut trees, and min-cost flow
+- `pairing families`: matching, assignment, stable marriage, blossom
+
+If you are unsure where a problem belongs, decide the branch first and only then choose the leaf topic.
+
 ## Use This Area When
 
 - the clean model is vertices plus edges, even if the story hides that fact

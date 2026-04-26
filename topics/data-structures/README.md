@@ -6,6 +6,16 @@
 
 This area is for reusable tools that turn repeated work into fast queries, updates, merges, or ordered-set operations.
 
+## The Main Choice In This Area
+
+Most data-structure mistakes come from reaching for something heavier than the invariant actually needs.
+
+- if the state is just connected components, start with `DSU`
+- if the state is prefix-style aggregation, start with `Fenwick Tree`
+- if the state needs general segment decomposition, move to `Segment Tree`
+- if the real invariant is monotone boundaries or sliding extrema, use `Monotonic Stack / Queue`
+- if the real state is one ordered set with rank or predecessor logic, move toward `PBDS`, `treap`, or `splay`
+
 ## Use This Area When
 
 - recomputing from scratch is clearly too slow

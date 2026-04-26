@@ -78,15 +78,7 @@ If you want one calm default path, use this:
 | `Retrieve` | [Build Kit](docs/build-kit.md) | reopening snippets, workflows, and checklists under pressure |
 | `Track` | [Contest Playbooks](practice/contest-playbooks/README.md) | shaping practice for `ICPC`, `USACO`, or olympiad-style goals |
 
-## Pick By Bottleneck
-
-| If the real bottleneck is... | Open first | Then |
-| --- | --- | --- |
-| first route and local loop | [Start Here](docs/start-here.md) | [Foundations](topics/foundations/README.md) |
-| one weak topic family | [Learning Areas](topics/README.md) | the corresponding ladder and one note |
-| retrieval during implementation | [Build Kit](docs/build-kit.md) | [Notebook](notebook/README.md) |
-| next practice block | [Problem Finder](docs/problem-finder.md) | [Practice hub](practice/README.md) |
-| contest-format training | [Contest Playbooks](practice/contest-playbooks/README.md) | [Mixed Rounds](practice/mixed-rounds/README.md) |
+If you want the fuller chooser by bottleneck or contest format, open [Route Map](docs/route-map.md).
 
 !!! tip "Best way to use this site"
     Read one topic page, solve one targeted problem, then write or adapt one clean C++ implementation.
