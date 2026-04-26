@@ -1,5 +1,9 @@
 # Data Structures
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+</div>
+
 This area is for reusable tools that turn repeated work into fast queries, updates, merges, or ordered-set operations.
 
 ## Use This Area When

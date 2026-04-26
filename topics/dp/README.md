@@ -1,5 +1,10 @@
 # Dynamic Programming
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+  <span class="route-badge route-badge--deep">Deep</span>
+</div>
+
 Dynamic programming is about choosing a state that captures exactly what still matters.
 
 ## Use This Area When

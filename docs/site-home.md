@@ -55,6 +55,20 @@ If you want one calm default path, use this:
 
 `Start Here -> Foundations -> one ladder -> one anchored note -> Data Structures -> Graphs -> Dynamic Programming -> Math`
 
+## Tier Guide
+
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+  <span class="route-badge route-badge--bridge">Bridge</span>
+  <span class="route-badge route-badge--deep">Deep</span>
+  <span class="route-badge route-badge--enrichment">Enrichment</span>
+</div>
+
+- `Core`: first-wave curriculum families you should expect to revisit often
+- `Bridge`: pages that reconnect fragmented families before you dive deeper
+- `Deep`: serious later-stage lanes with heavier retrieval cost
+- `Enrichment`: breadth or theory spillover that is useful, but not the default next step
+
 ## The Site Has Four Jobs
 
 | Job | Open this first | Use it for |

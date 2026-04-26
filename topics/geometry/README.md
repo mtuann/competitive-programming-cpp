@@ -1,5 +1,9 @@
 # Geometry
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--deep">Deep</span>
+</div>
+
 Geometry becomes much easier once you treat it as a small set of trusted primitives plus a few recurring structures.
 
 ## Use This Area When

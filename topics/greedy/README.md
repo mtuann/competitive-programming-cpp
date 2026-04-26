@@ -1,5 +1,9 @@
 # Greedy
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--bridge">Bridge</span>
+</div>
+
 Greedy is where you stop asking "can I search all possibilities?" and start asking "what choice can I commit to now without breaking the future?"
 
 ## Use This Area When

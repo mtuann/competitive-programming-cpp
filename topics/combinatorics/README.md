@@ -1,5 +1,10 @@
 # Combinatorics
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--bridge">Bridge</span>
+  <span class="route-badge route-badge--deep">Deep</span>
+</div>
+
 Combinatorics is the counting layer of the repo. It is where "how many?" stops being ad hoc and becomes structured.
 
 ## Use This Area When

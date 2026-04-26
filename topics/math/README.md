@@ -1,5 +1,10 @@
 # Math
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+  <span class="route-badge route-badge--deep">Deep</span>
+</div>
+
 Math gives you the compact facts and transforms that keep many contest solutions short, fast, and correct.
 
 ## Use This Area When

@@ -1,5 +1,9 @@
 # Strings
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--deep">Deep</span>
+</div>
+
 Strings matter because many pattern problems are really about structure in sequences.
 
 ## Use This Area When

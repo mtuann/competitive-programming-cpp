@@ -1,5 +1,9 @@
 # Foundations
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+</div>
+
 Foundations are the entry point for the whole repo. This area is for stabilizing contest C++, basic proof habits, and the first patterns that later sections assume.
 
 ## Use This Area When

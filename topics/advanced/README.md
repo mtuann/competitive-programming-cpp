@@ -1,5 +1,9 @@
 # Advanced
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--enrichment">Enrichment</span>
+</div>
+
 This area is for topics that sit above the usual contest core: algorithm-design ideas, deeper theory, and enrichment lanes that explain the wider landscape.
 
 ## Use This Area When

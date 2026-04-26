@@ -1,5 +1,10 @@
 # Graphs
 
+<div class="badge-row" markdown>
+  <span class="route-badge route-badge--core">Core</span>
+  <span class="route-badge route-badge--bridge">Bridge</span>
+</div>
+
 Graphs are one of the central contest areas because many problems are really about states and transitions in disguise.
 
 ## Use This Area When

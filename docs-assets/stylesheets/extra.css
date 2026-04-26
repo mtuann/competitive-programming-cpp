@@ -184,6 +184,65 @@ body {
   background: rgba(255, 255, 255, 0.04);
 }
 
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.4rem 0 1rem;
+}
+
+.route-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.36rem 0.72rem;
+  border-radius: 999px;
+  border: 1px solid var(--site-border);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.route-badge--core {
+  color: #0f4c81;
+  background: rgba(191, 219, 254, 0.75);
+}
+
+.route-badge--bridge {
+  color: #0f766e;
+  background: rgba(204, 251, 241, 0.78);
+}
+
+.route-badge--deep {
+  color: #6d28d9;
+  background: rgba(233, 213, 255, 0.78);
+}
+
+.route-badge--enrichment {
+  color: #9a3412;
+  background: rgba(254, 215, 170, 0.82);
+}
+
+[data-md-color-scheme="slate"] .route-badge--core {
+  color: #bfd8ff;
+  background: rgba(29, 78, 216, 0.26);
+}
+
+[data-md-color-scheme="slate"] .route-badge--bridge {
+  color: #b9fff4;
+  background: rgba(13, 148, 136, 0.26);
+}
+
+[data-md-color-scheme="slate"] .route-badge--deep {
+  color: #e9d5ff;
+  background: rgba(126, 34, 206, 0.26);
+}
+
+[data-md-color-scheme="slate"] .route-badge--enrichment {
+  color: #fed7aa;
+  background: rgba(194, 65, 12, 0.24);
+}
+
 .md-typeset table:not([class]) {
   border-radius: 1rem;
   overflow: hidden;
