@@ -14,6 +14,7 @@ STATIC_FILES = {
     "docs-assets/javascripts/fenwick-visualizer.js": "assets/javascripts/fenwick-visualizer.js",
     "docs-assets/javascripts/problem-finder.js": "assets/javascripts/problem-finder.js",
     "docs-assets/javascripts/segment-tree-visualizer.js": "assets/javascripts/segment-tree-visualizer.js",
+    "docs-assets/javascripts/support-link.js": "assets/javascripts/support-link.js",
     "docs-assets/javascripts/mathjax.js": "assets/javascripts/mathjax.js",
 }
 

@@ -63,6 +63,39 @@ body {
   display: none;
 }
 
+.cp-support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 1;
+  transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
+}
+
+.cp-support-link:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.cp-support-link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+  flex: 0 0 auto;
+}
+
+.cp-support-link span {
+  white-space: nowrap;
+  font-size: 0.78rem;
+}
+
 .md-main__inner {
   margin-top: 1rem;
 }
@@ -501,6 +534,14 @@ body {
 
   .visual-surface {
     min-height: 21rem;
+  }
+
+  .cp-support-link span {
+    display: none;
+  }
+
+  .cp-support-link {
+    padding: 0.45rem;
   }
 }
 

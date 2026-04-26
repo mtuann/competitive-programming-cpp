@@ -77,6 +77,7 @@ extra_css:
 
 extra_javascript:
   - assets/javascripts/problem-finder.js
+  - assets/javascripts/support-link.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/bfs-dfs-visualizer.js
   - assets/javascripts/fenwick-visualizer.js
