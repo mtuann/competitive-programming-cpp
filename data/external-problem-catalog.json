@@ -668,6 +668,115 @@
     "why_fit": "Great later-stage interactive practice where the judge feedback is indirect."
   },
   {
+    "slug": "advanced/gradient-descent",
+    "topic": "Advanced -> Gradient Descent",
+    "title": "Linear Regression Gradient Descent Benchmark",
+    "url": "https://cs229.stanford.edu/summer2020/cs229-notes1.pdf",
+    "source": "Stanford CS229",
+    "difficulty": "theory",
+    "tracks": [
+      "Smooth Optimization"
+    ],
+    "tags": [
+      "Linear Regression",
+      "Squared Loss",
+      "Learning Rate"
+    ],
+    "styles": [
+      "Theory Benchmark",
+      "Deterministic Update Rule"
+    ],
+    "prerequisites": [
+      "Affine Models",
+      "Derivatives",
+      "Basic Algebra"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first gradient-descent benchmark for this repo because one affine model and one smooth loss make the update rule completely explicit without pretending to cover modern optimizer families."
+  },
+  {
+    "slug": "advanced/gradient-descent",
+    "topic": "Advanced -> Gradient Descent",
+    "title": "Gradient descent",
+    "url": "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B6.036%2B1T2019/courseware/Week4/gradient_descent/",
+    "source": "MIT Open Learning Library",
+    "difficulty": "theory",
+    "tracks": [
+      "Further Theory"
+    ],
+    "tags": [
+      "Convexity",
+      "Step Size",
+      "Convergence",
+      "Optimization"
+    ],
+    "styles": [
+      "Course Notes",
+      "Theory Breadth"
+    ],
+    "prerequisites": [
+      "Gradient",
+      "Learning Rate"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A good follow-up once the repo benchmark is clear and you want broader smooth-optimization intuition without widening the lane into full numerical optimization coverage."
+  },
+  {
+    "slug": "advanced/machine-learning-algorithms",
+    "topic": "Advanced -> Machine Learning Algorithms",
+    "title": "Perceptron Classification Benchmark",
+    "url": "https://cs229.stanford.edu/notes2021fall/cs229-notes6.pdf",
+    "source": "Stanford CS229",
+    "difficulty": "theory",
+    "tracks": [
+      "Machine Learning",
+      "Perceptron"
+    ],
+    "tags": [
+      "Binary Classification",
+      "Linear Separability",
+      "Mistake-Driven Update"
+    ],
+    "styles": [
+      "Theory Benchmark",
+      "Online Update Rule"
+    ],
+    "prerequisites": [
+      "Dot Product",
+      "Signs And Margins",
+      "Basic Online Updates"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest first algorithmic ML benchmark for this repo because the update rule is tiny, explicit, and honest about the separability boundary."
+  },
+  {
+    "slug": "advanced/machine-learning-algorithms",
+    "topic": "Advanced -> Machine Learning Algorithms",
+    "title": "Perceptron, convergence, and generalization",
+    "url": "https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/resources/lec2/",
+    "source": "MIT OCW 6.867",
+    "difficulty": "theory",
+    "tracks": [
+      "Machine Learning",
+      "Margins"
+    ],
+    "tags": [
+      "Perceptron",
+      "Convergence",
+      "Generalization"
+    ],
+    "styles": [
+      "Lecture Notes",
+      "Theory Breadth"
+    ],
+    "prerequisites": [
+      "Perceptron",
+      "Linear Separability"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong follow-up once the repo benchmark is clear and you want the surrounding theory without widening the lane into full modern ML."
+  },
+  {
     "slug": "advanced/matroid-intersection",
     "topic": "Advanced -> Matroid Intersection",
     "title": "Pick Your Own Nim",
@@ -694,6 +803,62 @@
     ],
     "bucket": "core",
     "why_fit": "A clean contest anchor where one choice per box forms a partition matroid and the xor-independence condition forms a linear matroid relative to Alice's fixed heaps."
+  },
+  {
+    "slug": "advanced/online-algorithms",
+    "topic": "Advanced -> Online Algorithms",
+    "title": "Ski Rental Benchmark",
+    "url": "https://www.cs.jhu.edu/~mdinitz/classes/IntroAlgorithms/Fall2021/Lectures/Lecture24/lecture24slides.pdf",
+    "source": "JHU Intro Algorithms",
+    "difficulty": "theory",
+    "tracks": [
+      "Competitive Analysis"
+    ],
+    "tags": [
+      "Ski Rental",
+      "Competitive Ratio",
+      "Threshold Policy",
+      "Adversarial Future"
+    ],
+    "styles": [
+      "Competitive Analysis",
+      "Theory Benchmark"
+    ],
+    "prerequisites": [
+      "Threshold Reasoning",
+      "Offline Optimum",
+      "Adversarial Analysis"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical first online-algorithms benchmark where the whole lesson is to compare one deterministic threshold policy against the offline optimum."
+  },
+  {
+    "slug": "advanced/online-algorithms",
+    "topic": "Advanced -> Online Algorithms",
+    "title": "Online Algorithms Notes: Ski Rental and Paging",
+    "url": "https://web.stanford.edu/class/cs369/files/cs369-notes.pdf",
+    "source": "Stanford CS369",
+    "difficulty": "theory",
+    "tracks": [
+      "Paging",
+      "Randomized Compare"
+    ],
+    "tags": [
+      "Competitive Ratio",
+      "Randomized Adversary",
+      "List Update"
+    ],
+    "styles": [
+      "Lecture Notes",
+      "Theory Breadth"
+    ],
+    "prerequisites": [
+      "Ski Rental",
+      "Competitive Ratio",
+      "Basic Randomized Algorithms"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A clean follow-up once ski rental clicks and you want the next canonical online examples plus the randomized paging contrast."
   },
   {
     "slug": "advanced/optimization-and-duality",
@@ -823,6 +988,115 @@
     ],
     "bucket": "challenge",
     "why_fit": "A textbook assignment problem with a natural dual interpretation."
+  },
+  {
+    "slug": "advanced/parallel-algorithms",
+    "topic": "Advanced -> Parallel Algorithms",
+    "title": "Parallel Prefix Sum Benchmark",
+    "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15451-s14/www/LectureNotes/PrefixSumBlelloch.pdf",
+    "source": "CMU / Blelloch",
+    "difficulty": "theory",
+    "tracks": [
+      "Scan"
+    ],
+    "tags": [
+      "Prefix Sum",
+      "Blelloch Scan",
+      "Work Span",
+      "Pram"
+    ],
+    "styles": [
+      "Theory Benchmark",
+      "Simulator"
+    ],
+    "prerequisites": [
+      "Associativity",
+      "Prefix Sums",
+      "Tree Reduction"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical first parallel benchmark for this repo because scan makes the work-vs-span lens concrete without pretending the repo already provides a full multicore runtime."
+  },
+  {
+    "slug": "advanced/parallel-algorithms",
+    "topic": "Advanced -> Parallel Algorithms",
+    "title": "Parallel algorithms notes: Brent and work-efficient scan",
+    "url": "https://courses.csail.mit.edu/6.854/16/Notes/n32-parallel.html",
+    "source": "MIT 6.854",
+    "difficulty": "theory",
+    "tracks": [
+      "Further Theory"
+    ],
+    "tags": [
+      "Brent's Theorem",
+      "Work Efficient",
+      "Pram",
+      "Parallel Prefix"
+    ],
+    "styles": [
+      "Lecture Notes",
+      "Theory Breadth"
+    ],
+    "prerequisites": [
+      "Prefix Sum",
+      "Work Span"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong follow-up once the scan route clicks and you want the first serious work-efficient simulation lens instead of only the tree mechanics."
+  },
+  {
+    "slug": "advanced/quantum-algorithms",
+    "topic": "Advanced -> Quantum Algorithms",
+    "title": "Deutsch-Jozsa Oracle Benchmark",
+    "url": "https://ocw.mit.edu/courses/6-845-quantum-complexity-theory-fall-2010/resources/mit6_845f10_lec05/",
+    "source": "MIT OCW 6.845",
+    "difficulty": "theory",
+    "tracks": [
+      "Promise Problems"
+    ],
+    "tags": [
+      "Deutsch-Jozsa",
+      "Phase Oracle",
+      "Hadamard",
+      "Constant Vs Balanced"
+    ],
+    "styles": [
+      "Theory Benchmark",
+      "Simulator"
+    ],
+    "prerequisites": [
+      "Boolean Cube",
+      "Signs"
+    ],
+    "bucket": "core",
+    "why_fit": "The canonical first quantum benchmark for this repo because one clean amplitude invariant separates the promised constant and balanced oracle families."
+  },
+  {
+    "slug": "advanced/quantum-algorithms",
+    "topic": "Advanced -> Quantum Algorithms",
+    "title": "Quantum computation notes",
+    "url": "https://cs.uwaterloo.ca/~watrous/QC-notes/",
+    "source": "Waterloo",
+    "difficulty": "theory",
+    "tracks": [
+      "Further Theory"
+    ],
+    "tags": [
+      "Grover",
+      "Shor",
+      "Quantum States",
+      "Amplitudes"
+    ],
+    "styles": [
+      "Lecture Notes",
+      "Theory Breadth"
+    ],
+    "prerequisites": [
+      "Deutsch-Jozsa",
+      "Hadamard Layers"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong follow-up once Deutsch-Jozsa is clear and you want broader theory without pretending the repo lane already covers full quantum implementation work."
   },
   {
     "slug": "advanced/randomized-algorithms",
@@ -1223,6 +1497,60 @@
     ],
     "bucket": "practice",
     "why_fit": "A good bridge from composition thinking to constrained subset counting."
+  },
+  {
+    "slug": "combinatorics/burnside-polya",
+    "topic": "Combinatorics -> Burnside / Pólya / Group Actions",
+    "title": "Counting Necklaces",
+    "url": "https://cses.fi/problemset/task/2209",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Group Actions",
+      "Orbit Counting"
+    ],
+    "tags": [
+      "Necklaces",
+      "Rotations",
+      "Mod Arithmetic"
+    ],
+    "styles": [
+      "Combinatorics",
+      "Math"
+    ],
+    "prerequisites": [
+      "Basic Counting",
+      "Modular Exponentiation",
+      "GCD"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean first Burnside problem: cyclic rotations on one n-cycle with a fixed-coloring count of m^gcd(n, r)."
+  },
+  {
+    "slug": "combinatorics/burnside-polya",
+    "topic": "Combinatorics -> Burnside / Pólya / Group Actions",
+    "title": "Counting Grids",
+    "url": "https://cses.fi/problemset/task/2210",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Rotation Symmetry"
+    ],
+    "tags": [
+      "Grids",
+      "Quarter Turns",
+      "Mod Arithmetic"
+    ],
+    "styles": [
+      "Combinatorics",
+      "Math"
+    ],
+    "prerequisites": [
+      "Burnside Lemma",
+      "Modular Exponentiation"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The next rep after necklaces: same orbit-counting worldview, but each rotation creates a different cell-cycle structure."
   },
   {
     "slug": "combinatorics/counting-basics",
@@ -1848,6 +2176,33 @@
     ],
     "bucket": "stretch",
     "why_fit": "A more specialized lexicographic ranking problem with a nice combinatorial twist."
+  },
+  {
+    "slug": "data-structures/b-trees",
+    "topic": "Data Structures -> B-Trees",
+    "title": "B-Tree Dictionary Benchmark",
+    "url": "https://opendatastructures.org/ods-cpp/14_2_B_Trees.html",
+    "source": "Open Data Structures",
+    "difficulty": "medium",
+    "tracks": [
+      "B-Tree",
+      "Textbook Breadth"
+    ],
+    "tags": [
+      "Split-Full-Child",
+      "Multiway-Search"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Implementation-Heavy"
+    ],
+    "prerequisites": [
+      "Minimum Degree",
+      "Separator Keys",
+      "Split Full Child"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest breadth-first benchmark source where search, root split, and split-full-child are the whole lesson before deletion or B+ tree variants."
   },
   {
     "slug": "data-structures/balanced-bsts",
@@ -2553,6 +2908,34 @@
     ],
     "bucket": "advanced",
     "why_fit": "A strong benchmark for maintaining order statistics with heap-like containers."
+  },
+  {
+    "slug": "data-structures/interval-trees",
+    "topic": "Data Structures -> Interval Trees",
+    "title": "Reservation System",
+    "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0360",
+    "source": "AOJ",
+    "difficulty": "easy",
+    "tracks": [
+      "Interval Tree",
+      "Interval Overlap"
+    ],
+    "tags": [
+      "Half-Open-Intervals",
+      "Overlap-Query",
+      "Augmented-Bst"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Query-Heavy"
+    ],
+    "prerequisites": [
+      "Half-Open Interval Overlap",
+      "Dynamic Interval Set",
+      "Subtree Max-Right"
+    ],
+    "bucket": "core",
+    "why_fit": "A gentle first benchmark where the real invariant is 'does the new interval overlap anything in the live set?', so subtree max-right augmentation can be practiced directly even though a lighter ordered-set route also exists."
   },
   {
     "slug": "data-structures/lazy-segment-tree",
@@ -3460,6 +3843,33 @@
     "why_fit": "The classic compare point where the same pruning mindset appears, but the exact canonical chmin/chmax/add/sum starter does not apply directly."
   },
   {
+    "slug": "data-structures/skip-lists",
+    "topic": "Data Structures -> Skip Lists",
+    "title": "Skiplist Dictionary Benchmark",
+    "url": "https://opendatastructures.org/ods-cpp/4_1_Basic_Structure.html",
+    "source": "Open Data Structures",
+    "difficulty": "medium",
+    "tracks": [
+      "Skiplist",
+      "Textbook Breadth"
+    ],
+    "tags": [
+      "Random Heights",
+      "Expected Logarithmic"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Implementation-Heavy"
+    ],
+    "prerequisites": [
+      "Random Height",
+      "Update Array",
+      "Tower Search Path"
+    ],
+    "bucket": "core",
+    "why_fit": "A clean breadth benchmark where the whole lesson is probabilistic balancing through forward-pointer towers and one update[] search path, not contest-first rank queries or split/merge."
+  },
+  {
     "slug": "data-structures/sparse-table",
     "topic": "Data Structures -> Sparse Table",
     "title": "Static Range Minimum Queries",
@@ -3781,6 +4191,89 @@
     ],
     "bucket": "classic",
     "why_fit": "A classic follow-up showing the same lane extends naturally from k-th queries to value-threshold counts."
+  },
+  {
+    "slug": "data-structures/x-fast-y-fast-tries",
+    "topic": "Data Structures -> X-Fast / Y-Fast Tries",
+    "title": "X-Fast Dictionary Benchmark",
+    "url": "https://opendatastructures.org/newhtml/ods/latex/integers.html",
+    "source": "Open Data Structures",
+    "difficulty": "hard",
+    "tracks": [
+      "X-Fast Trie",
+      "Textbook Breadth"
+    ],
+    "tags": [
+      "Bounded-Universe",
+      "Prefix-Hashing",
+      "Predecessor-Successor"
+    ],
+    "styles": [
+      "Data-Structure-Heavy",
+      "Implementation-Heavy"
+    ],
+    "prerequisites": [
+      "Bounded Universe",
+      "Deepest Existing Prefix",
+      "Leaf Linked Order"
+    ],
+    "bucket": "core",
+    "why_fit": "A clean breadth benchmark where the whole lesson is bounded-universe predecessor / successor through deepest-existing-prefix search and leaf-linked order, before y-fast bucket sampling is layered in."
+  },
+  {
+    "slug": "dp/bit-parallelism",
+    "topic": "DP -> Bit-Parallelism / Bitset Optimization",
+    "title": "School Excursion",
+    "url": "https://cses.fi/problemset/task/1706/",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Bitset DP"
+    ],
+    "tags": [
+      "Bitset",
+      "Reachability",
+      "Component Sizes",
+      "Subset Sum"
+    ],
+    "styles": [
+      "Dynamic Programming",
+      "Implementation",
+      "Graph Modeling"
+    ],
+    "prerequisites": [
+      "DSU",
+      "Boolean DP",
+      "Shift-Or Reachability"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean flagship where a light DSU reduction produces one subset-sum reachability row and the intended implementation win is packed bitset shift-OR."
+  },
+  {
+    "slug": "dp/bit-parallelism",
+    "topic": "DP -> Bit-Parallelism / Bitset Optimization",
+    "title": "Money Sums",
+    "url": "https://cses.fi/problemset/task/1745/",
+    "source": "CSES",
+    "difficulty": "easy",
+    "tracks": [
+      "Subset Sum"
+    ],
+    "tags": [
+      "Bitset",
+      "Reachable Sums",
+      "Boolean DP"
+    ],
+    "styles": [
+      "Dynamic Programming",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Boolean DP",
+      "Shift-Or Reachability"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A smaller warm-up where the same packed reachability update is already clean even if ordinary scalar DP still exists."
   },
   {
     "slug": "dp/bitmask-dp",
@@ -4855,6 +5348,63 @@
     ],
     "bucket": "state-transition-basics",
     "why_fit": "A perfect first min-cost DP with a very small transition set and clear base cases."
+  },
+  {
+    "slug": "dp/fwht-subset-convolution",
+    "topic": "DP -> FWHT / XOR Convolution / Subset Convolution",
+    "title": "Bitwise XOR Convolution",
+    "url": "https://judge.yosupo.jp/problem/bitwise_xor_convolution",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "XOR Convolution",
+      "Boolean Cube"
+    ],
+    "tags": [
+      "Walsh-Hadamard",
+      "Full Cube"
+    ],
+    "styles": [
+      "Dynamic Programming",
+      "Algebra",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Sos DP",
+      "Modular Arithmetic",
+      "Power-Of-Two Mask Space"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean first verifier where the entire task is one xor convolution on the full boolean cube and the only intended route is Walsh-Hadamard transform."
+  },
+  {
+    "slug": "dp/fwht-subset-convolution",
+    "topic": "DP -> FWHT / XOR Convolution / Subset Convolution",
+    "title": "Subset Convolution",
+    "url": "https://judge.yosupo.jp/problem/subset_convolution",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Subset Convolution",
+      "Boolean Cube"
+    ],
+    "tags": [
+      "Popcount Layers",
+      "Zeta Transform",
+      "Full Cube"
+    ],
+    "styles": [
+      "Dynamic Programming",
+      "Algebra",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Sos DP",
+      "Popcount Layering",
+      "Modular Arithmetic"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The natural stretch sibling where plain SOS sweeps are no longer enough and the exact subset split must be preserved through popcount-layered transforms."
   },
   {
     "slug": "dp/interval-dp",
@@ -9003,6 +9553,34 @@
     "why_fit": "A natural next step after exact-length counting, where the merge logic becomes the real difficulty rather than the decomposition itself."
   },
   {
+    "slug": "graphs/de-bruijn-sequence",
+    "topic": "Graphs -> De Bruijn Sequence",
+    "title": "De Bruijn Sequence",
+    "url": "https://cses.fi/problemset/task/1692",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Graph Modeling",
+      "Construction"
+    ],
+    "tags": [
+      "De Bruijn Graph",
+      "Eulerian Cycle",
+      "Bitmask States"
+    ],
+    "styles": [
+      "State Graph Modeling",
+      "Eulerian Construction",
+      "String Reconstruction"
+    ],
+    "prerequisites": [
+      "Eulerian Cycle",
+      "Bitmask States"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean binary flagship where overlap-state modeling is the whole trick, and an Eulerian cycle is only the execution engine after the graph is revealed."
+  },
+  {
     "slug": "graphs/euler-tour-subtree",
     "topic": "Graphs -> Euler Tour / Subtree Queries",
     "title": "Subtree Queries",
@@ -9257,34 +9835,6 @@
     "why_fit": "A classic Eulerian-reduction problem where statement parsing and graph support checks matter as much as the traversal itself."
   },
   {
-    "slug": "graphs/eulerian-path-cycle",
-    "topic": "Graphs -> Eulerian Path / Cycle",
-    "title": "De Bruijn Sequence",
-    "url": "https://cses.fi/problemset/task/1692",
-    "source": "CSES",
-    "difficulty": "hard",
-    "tracks": [
-      "Construction"
-    ],
-    "tags": [
-      "De Bruijn Graph",
-      "Eulerian Cycle",
-      "Bitmask States"
-    ],
-    "styles": [
-      "State Graph Modeling",
-      "Eulerian Construction",
-      "String Reconstruction"
-    ],
-    "prerequisites": [
-      "Graph Modeling",
-      "Eulerian Cycle",
-      "Bitmask States"
-    ],
-    "bucket": "stretch",
-    "why_fit": "A flagship construction problem where the whole graph model exists only to make an Eulerian cycle encode the answer string."
-  },
-  {
     "slug": "graphs/flow",
     "topic": "Graphs -> Maximum Flow",
     "title": "Download Speed",
@@ -9320,6 +9870,7 @@
     "tracks": [],
     "tags": [
       "Max Flow",
+      "Push-Relabel",
       "Dinic",
       "Network"
     ],
@@ -9526,6 +10077,160 @@
     ],
     "bucket": "advanced",
     "why_fit": "A strong official compare point showing how lower bounds and node balances grow into the costed b-flow family."
+  },
+  {
+    "slug": "graphs/general-matching",
+    "topic": "Graphs -> Edmonds Blossom / General Matching",
+    "title": "Matching on General Graph",
+    "url": "https://judge.yosupo.jp/problem/general_matching",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Blossom"
+    ],
+    "tags": [
+      "Edmonds Blossom",
+      "Odd Cycle",
+      "Maximum Matching"
+    ],
+    "styles": [
+      "Template Problem",
+      "Non-Bipartite Matching"
+    ],
+    "prerequisites": [
+      "Augmenting Paths",
+      "Alternating Forest",
+      "Matching Basics"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest direct benchmark where the graph is explicitly general and the whole task is just blossom-based maximum matching."
+  },
+  {
+    "slug": "graphs/general-matching",
+    "topic": "Graphs -> Edmonds Blossom / General Matching",
+    "title": "P6113 [Template] General Graph Maximum Matching",
+    "url": "https://www.luogu.com.cn/problem/P6113",
+    "source": "Luogu",
+    "difficulty": "hard",
+    "tracks": [
+      "Blossom"
+    ],
+    "tags": [
+      "Template",
+      "Maximum Matching"
+    ],
+    "styles": [
+      "Template Drill",
+      "Non-Bipartite Matching"
+    ],
+    "prerequisites": [
+      "Augmenting Paths",
+      "Odd Cycle Contraction"
+    ],
+    "bucket": "practice",
+    "why_fit": "A straightforward second template benchmark once the Library Checker route feels stable."
+  },
+  {
+    "slug": "graphs/general-matching",
+    "topic": "Graphs -> Edmonds Blossom / General Matching",
+    "title": "QBFLOWER - Tặng hoa",
+    "url": "https://vn.spoj.com/problems/QBFLOWER/",
+    "source": "VN SPOJ",
+    "difficulty": "medium",
+    "tracks": [
+      "Edge Cover"
+    ],
+    "tags": [
+      "Minimum Edge Cover",
+      "Graph Transformation"
+    ],
+    "styles": [
+      "Modeling",
+      "Transformation"
+    ],
+    "prerequisites": [
+      "Maximum Matching",
+      "Edge Cover Formula"
+    ],
+    "bucket": "bridge",
+    "why_fit": "A strong bridge problem where blossom is still the engine, but only after reducing the story to minimum edge cover on a general graph."
+  },
+  {
+    "slug": "graphs/global-min-cut",
+    "topic": "Graphs -> Randomized / Global Min-Cut",
+    "title": "Police Chase",
+    "url": "https://cses.fi/problemset/task/1695",
+    "source": "CSES",
+    "difficulty": "medium",
+    "tracks": [
+      "Min Cut",
+      "Edge Cut",
+      "Flow"
+    ],
+    "tags": [
+      "Roads",
+      "Certificate"
+    ],
+    "styles": [
+      "S-T Min Cut",
+      "Edge Extraction"
+    ],
+    "prerequisites": [
+      "Max Flow",
+      "Cut Extraction"
+    ],
+    "bucket": "warm-up",
+    "why_fit": "Another clean compare point: extract one cut certificate first, then move to the global family where no designated pair remains."
+  },
+  {
+    "slug": "graphs/global-min-cut",
+    "topic": "Graphs -> Randomized / Global Min-Cut",
+    "title": "Minimum Cut",
+    "url": "http://poj.org/problem?id=2914",
+    "source": "POJ",
+    "difficulty": "hard",
+    "tracks": [
+      "Undirected Cuts"
+    ],
+    "tags": [
+      "Stoer-Wagner",
+      "Cut Contraction"
+    ],
+    "styles": [
+      "Stoer-Wagner",
+      "Dense Cut Phases"
+    ],
+    "prerequisites": [
+      "Max Flow Min Cut Intuition",
+      "Undirected Weighted Graphs"
+    ],
+    "bucket": "core",
+    "why_fit": "Canonical global min-cut benchmark: no designated source/sink, parallel edges allowed, and the whole task is exactly the cut-family route."
+  },
+  {
+    "slug": "graphs/global-min-cut",
+    "topic": "Graphs -> Randomized / Global Min-Cut",
+    "title": "Sabotage",
+    "url": "https://onlinejudge.org/external/104/10480.pdf",
+    "source": "UVa",
+    "difficulty": "medium",
+    "tracks": [
+      "Min Cut",
+      "Flow"
+    ],
+    "tags": [
+      "Graph Partition"
+    ],
+    "styles": [
+      "S-T Min Cut",
+      "Cut Extraction"
+    ],
+    "prerequisites": [
+      "Max Flow",
+      "Minimum Cut"
+    ],
+    "bucket": "classic",
+    "why_fit": "Warm-up compare point: still one cut-extraction task, useful before the no-source/sink global min-cut lane."
   },
   {
     "slug": "graphs/gomory-hu",
@@ -10122,6 +10827,79 @@
     "why_fit": "Subtree filling and ancestor clearing is a famous HLD/lazy-seg hybrid."
   },
   {
+    "slug": "graphs/hungarian-assignment",
+    "topic": "Graphs -> Hungarian / Assignment Problem",
+    "title": "Task Assignment",
+    "url": "https://cses.fi/problemset/task/2129",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Weighted Matching"
+    ],
+    "tags": [
+      "Cost Matrix",
+      "Perfect Matching"
+    ],
+    "styles": [
+      "Dense Cost Matrix",
+      "Weighted Bipartite Matching"
+    ],
+    "prerequisites": [
+      "Bipartite Matching Basics",
+      "Minimum Total Cost Modeling"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest square assignment benchmark with explicit witness output."
+  },
+  {
+    "slug": "graphs/hungarian-assignment",
+    "topic": "Graphs -> Hungarian / Assignment Problem",
+    "title": "Another Assignment Problem",
+    "url": "https://www.spoj.com/problems/ASSIGN4/",
+    "source": "SPOJ",
+    "difficulty": "medium",
+    "tracks": [],
+    "tags": [
+      "Weighted Matching",
+      "Optimization"
+    ],
+    "styles": [
+      "Weighted Bipartite Matching",
+      "Assignment Matrix"
+    ],
+    "prerequisites": [
+      "Assignment Matrix",
+      "Perfect Matching"
+    ],
+    "bucket": "practice",
+    "why_fit": "Direct costed assignment practice after the flagship matrix-first route."
+  },
+  {
+    "slug": "graphs/hungarian-assignment",
+    "topic": "Graphs -> Hungarian / Assignment Problem",
+    "title": "The Great Wall Game",
+    "url": "https://www.cs.cmu.edu/~eugene/teach/acm06a/hard/05.pdf",
+    "source": "ACM regional archive",
+    "difficulty": "hard",
+    "tracks": [
+      "Geometry"
+    ],
+    "tags": [
+      "Manhattan Distance",
+      "Modeling"
+    ],
+    "styles": [
+      "Geometry To Cost Matrix",
+      "Minimum Cost Perfect Matching"
+    ],
+    "prerequisites": [
+      "Distance Cost Modeling",
+      "Hungarian Basics"
+    ],
+    "bucket": "stretch",
+    "why_fit": "A strong modeling extension where coordinates collapse cleanly into an assignment-cost matrix."
+  },
+  {
     "slug": "graphs/lca",
     "topic": "Graphs -> LCA",
     "title": "Company Queries I",
@@ -10449,6 +11227,30 @@
     ],
     "bucket": "core",
     "why_fit": "Matching plus explicit pair recovery."
+  },
+  {
+    "slug": "graphs/matching",
+    "topic": "Graphs -> Matching",
+    "title": "Stable Marriage",
+    "url": "https://www.ams.org/publicoutreach/feature-column/fc-2015-03",
+    "source": "Canonical / Gale-Shapley",
+    "difficulty": "medium",
+    "tracks": [],
+    "tags": [
+      "Stable Matching",
+      "Preferences",
+      "Blocking Pair"
+    ],
+    "styles": [
+      "Two-Sided Preferences",
+      "Deferred Acceptance"
+    ],
+    "prerequisites": [
+      "Bipartite Pairing Model",
+      "Strict Preferences"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest stability-based sibling once one-to-one pairing is no longer about size or cost."
   },
   {
     "slug": "graphs/matching",
@@ -11461,6 +12263,58 @@
     "why_fit": "A very clean verification-style shortest path problem with route restoration."
   },
   {
+    "slug": "graphs/stable-marriage",
+    "topic": "Graphs -> Stable Marriage",
+    "title": "Stable Marriage",
+    "url": "https://www.ams.org/publicoutreach/feature-column/fc-2015-03",
+    "source": "Canonical / Gale-Shapley",
+    "difficulty": "medium",
+    "tracks": [
+      "Stable Matching",
+      "Gale-Shapley"
+    ],
+    "tags": [
+      "Blocking Pair",
+      "Deferred Acceptance"
+    ],
+    "styles": [
+      "Two-Sided Preferences",
+      "Canonical Benchmark"
+    ],
+    "prerequisites": [
+      "Bipartite Pairing Model",
+      "Strict Preferences"
+    ],
+    "bucket": "core",
+    "why_fit": "The cleanest in-repo flagship route where the whole job is just Gale-Shapley on complete strict preference lists."
+  },
+  {
+    "slug": "graphs/stable-marriage",
+    "topic": "Graphs -> Stable Marriage",
+    "title": "Stable Marriage Problem",
+    "url": "https://judge.yosupo.jp/problem/stable_marriage_problem",
+    "source": "Library Checker",
+    "difficulty": "medium",
+    "tracks": [
+      "Stable Matching",
+      "Gale-Shapley"
+    ],
+    "tags": [
+      "Verify",
+      "Preferences"
+    ],
+    "styles": [
+      "Verifier-Style Problem",
+      "Stable Matching"
+    ],
+    "prerequisites": [
+      "Deferred Acceptance",
+      "Strict Preferences"
+    ],
+    "bucket": "practice",
+    "why_fit": "A natural verifier-style follow-up once the canonical Gale-Shapley route feels routine."
+  },
+  {
     "slug": "graphs/tree-dp",
     "topic": "Graphs -> Tree DP",
     "title": "Choosing Capital for Treeland",
@@ -11636,6 +12490,61 @@
     ],
     "bucket": "advanced",
     "why_fit": "A strong tree DP where subtree balances determine the answer."
+  },
+  {
+    "slug": "graphs/tree-isomorphism",
+    "topic": "Graphs -> Tree Isomorphism",
+    "title": "Tree Isomorphism I",
+    "url": "https://cses.fi/problemset/task/1700",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Canonical Encoding"
+    ],
+    "tags": [
+      "Rooted Tree",
+      "Canonical Form",
+      "Unordered Children"
+    ],
+    "styles": [
+      "Bottom-Up Canonicalization",
+      "Postorder",
+      "Structural Comparison"
+    ],
+    "prerequisites": [
+      "Rooted Tree",
+      "DFS",
+      "Parent-Child Structure"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean rooted benchmark where the whole task is comparing two unordered rooted trees by canonical subtree types."
+  },
+  {
+    "slug": "graphs/tree-isomorphism",
+    "topic": "Graphs -> Tree Isomorphism",
+    "title": "Tree Isomorphism II",
+    "url": "https://cses.fi/problemset/task/1701",
+    "source": "CSES",
+    "difficulty": "hard",
+    "tracks": [
+      "Tree Centers"
+    ],
+    "tags": [
+      "Unrooted Tree",
+      "Centers",
+      "Canonical Form"
+    ],
+    "styles": [
+      "Center Rooting",
+      "Bottom-Up Canonicalization",
+      "Structural Comparison"
+    ],
+    "prerequisites": [
+      "Tree Isomorphism I",
+      "Rooted Tree"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The natural unrooted sibling: normalize by one or two centers, then reuse the rooted canonical-encoding primitive."
   },
   {
     "slug": "graphs/trees",
@@ -12076,6 +12985,34 @@
     "why_fit": "A strong stretch rep once the build step feels automatic and the real challenge becomes choosing the right summary on the compressed tree."
   },
   {
+    "slug": "greedy/huffman-data-compression",
+    "topic": "Greedy -> Huffman / Data Compression",
+    "title": "Huffman Coding Benchmark",
+    "url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/Huffman.html",
+    "source": "Algorithms 4/e",
+    "difficulty": "medium",
+    "tracks": [
+      "Data-Compression",
+      "Prefix-Codes"
+    ],
+    "tags": [
+      "Optimal Merge",
+      "Min-Heap",
+      "Weighted Path Length"
+    ],
+    "styles": [
+      "Heap Greedy",
+      "Tree Construction"
+    ],
+    "prerequisites": [
+      "Priority Queue",
+      "Weighted Merge Cost",
+      "Prefix Code"
+    ],
+    "bucket": "core",
+    "why_fit": "Canonical textbook benchmark where the whole lesson is the two-smallest merge greedy, not a production compression container."
+  },
+  {
     "slug": "greedy/prefix-constraints",
     "topic": "Greedy -> Prefix Constraints",
     "title": "Lemonade Line",
@@ -12255,6 +13192,59 @@
     ],
     "bucket": "structured-prefix-cleanup",
     "why_fit": "A compact prefix-constraint problem where the feasibility check is driven by a simple greedy invariant."
+  },
+  {
+    "slug": "math/berlekamp-massey-kitamasa",
+    "topic": "Math -> Berlekamp-Massey / Kitamasa",
+    "title": "K-th Term of Linearly Recurrent Sequence",
+    "url": "https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Linear Recurrence"
+    ],
+    "tags": [
+      "Characteristic Polynomial",
+      "K-Th Term"
+    ],
+    "styles": [
+      "Math",
+      "Algebra",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Modular Arithmetic",
+      "Linear Recurrence Modeling"
+    ],
+    "bucket": "core",
+    "why_fit": "The clean first verifier where the recurrence is already known and the whole point is to trust the O(d^2 log k) jump instead of a dense matrix."
+  },
+  {
+    "slug": "math/berlekamp-massey-kitamasa",
+    "topic": "Math -> Berlekamp-Massey / Kitamasa",
+    "title": "Find Linear Recurrence",
+    "url": "https://judge.yosupo.jp/problem/find_linear_recurrence",
+    "source": "Library Checker",
+    "difficulty": "hard",
+    "tracks": [
+      "Berlekamp-Massey",
+      "Linear Recurrence"
+    ],
+    "tags": [
+      "Minimal Recurrence",
+      "Sequence Recovery"
+    ],
+    "styles": [
+      "Math",
+      "Algebra",
+      "Implementation"
+    ],
+    "prerequisites": [
+      "Modular Arithmetic",
+      "Discrepancy Updates"
+    ],
+    "bucket": "stretch",
+    "why_fit": "The natural sibling verifier where recurrence recovery itself is the task before any future Kitamasa-style jump."
   },
   {
     "slug": "math/bsgs-discrete-log",
@@ -14777,6 +15767,34 @@
     ],
     "bucket": "challenge",
     "why_fit": "Pushes past one longest answer into a full-radius style output problem."
+  },
+  {
+    "slug": "strings/regex-finite-automata",
+    "topic": "Strings -> Regular Expressions / Finite Automata",
+    "title": "Regex Membership Benchmark",
+    "url": "https://algs4.cs.princeton.edu/54regexp/",
+    "source": "Algorithms 4/e",
+    "difficulty": "medium",
+    "tracks": [
+      "Regular-Expressions",
+      "Finite-Automata"
+    ],
+    "tags": [
+      "Thompson Nfa",
+      "Epsilon Closure",
+      "Regex Membership"
+    ],
+    "styles": [
+      "Automaton Construction",
+      "Simulation"
+    ],
+    "prerequisites": [
+      "Implicit Concatenation",
+      "Postfix Conversion",
+      "Epsilon Closure"
+    ],
+    "bucket": "core",
+    "why_fit": "Canonical textbook benchmark where the whole lesson is regex-to-postfix, Thompson construction, and active-state-set simulation rather than library regex semantics."
   },
   {
     "slug": "strings/suffix-array-lcp",

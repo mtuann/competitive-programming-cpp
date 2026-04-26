@@ -1278,6 +1278,251 @@
       }
     ]
   },
+  "data-structures/b-trees": {
+    "title": "Data Structures -> B-Trees",
+    "summary": "High-fanout multiway search tree for textbook ordered-dictionary breadth, with search and insert taught through root splitting and split-full-child.",
+    "topic_path": "topics/data-structures/b-trees/README.md",
+    "ladder_path": "practice/ladders/data-structures/b-trees/README.md",
+    "microtopics": [
+      "minimum-degree",
+      "multiway-search",
+      "split-full-child",
+      "root-split",
+      "separator-keys",
+      "high-fanout"
+    ],
+    "learning_sources": [
+      {
+        "label": "Open Data Structures - 14.2 B-Trees",
+        "url": "https://opendatastructures.org/ods-cpp/14_2_B_Trees.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Introduction to Algorithms, 4th ed. TOC PDF",
+        "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Open Data Structures - 14.2 B-Trees",
+        "url": "https://opendatastructures.org/ods-cpp/14_2_B_Trees.html",
+        "kind": "reference"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "B-Tree hot sheet",
+        "path": "notebook/b-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "B-Tree Dictionary note",
+        "path": "practice/ladders/data-structures/b-trees/btreedictionary.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Balanced BSTs For Contests",
+        "path": "topics/data-structures/balanced-bsts/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "PBDS / Order Statistics Tree tutorial",
+        "path": "topics/data-structures/pbds-order-statistics/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "data-structures/skip-lists": {
+    "title": "Data Structures -> Skip Lists",
+    "summary": "Probabilistically balanced ordered dictionary with random-height towers, forward pointers, and one update-array search path for expected-logarithmic search / insert / erase.",
+    "topic_path": "topics/data-structures/skip-lists/README.md",
+    "ladder_path": "practice/ladders/data-structures/skip-lists/README.md",
+    "microtopics": [
+      "random-height",
+      "forward-pointer-towers",
+      "update-array",
+      "expected-logarithmic",
+      "ordered-dictionary",
+      "probabilistic-balancing"
+    ],
+    "learning_sources": [
+      {
+        "label": "Open Data Structures - 4.1 Basic Structure",
+        "url": "https://opendatastructures.org/ods-cpp/4_1_Basic_Structure.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Pugh - Skip Lists: A Probabilistic Alternative to Balanced Trees",
+        "url": "https://epaperpress.com/sortsearch/download/skiplist.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Open Data Structures - 4.1 Basic Structure",
+        "url": "https://opendatastructures.org/ods-cpp/4_1_Basic_Structure.html",
+        "kind": "reference"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Skiplist hot sheet",
+        "path": "notebook/skiplist-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Skiplist Dictionary note",
+        "path": "practice/ladders/data-structures/skip-lists/skiplistdictionary.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "PBDS / Order Statistics Tree tutorial",
+        "path": "topics/data-structures/pbds-order-statistics/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Treap / Implicit Treap tutorial",
+        "path": "topics/data-structures/treap-implicit/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "data-structures/x-fast-y-fast-tries": {
+    "title": "Data Structures -> X-Fast / Y-Fast Tries",
+    "summary": "Bounded-universe integer ordered-set family where x-fast stores all prefixes for doubly-logarithmic predecessor / successor search, and y-fast refines the family with sampled representatives and balanced buckets.",
+    "topic_path": "topics/data-structures/x-fast-y-fast-tries/README.md",
+    "ladder_path": "practice/ladders/data-structures/x-fast-y-fast-tries/README.md",
+    "microtopics": [
+      "bounded-universe",
+      "prefix-hashing",
+      "deepest-existing-prefix",
+      "leaf-linked-order",
+      "jump-pointer",
+      "y-fast-buckets"
+    ],
+    "learning_sources": [
+      {
+        "label": "Open Data Structures - Data Structures for Integers",
+        "url": "https://opendatastructures.org/newhtml/ods/latex/integers.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Open Data Structures (C++) PDF",
+        "url": "https://opendatastructures.org/versions/edition-0.1e/ods-cpp.pdf",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Open Data Structures - Data Structures for Integers",
+        "url": "https://opendatastructures.org/newhtml/ods/latex/integers.html",
+        "kind": "reference"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "X-Fast / Y-Fast hot sheet",
+        "path": "notebook/x-fast-y-fast-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "X-Fast Dictionary note",
+        "path": "practice/ladders/data-structures/x-fast-y-fast-tries/xfastdictionary.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Binary Trie / XOR Queries tutorial",
+        "path": "topics/data-structures/binary-trie-xor/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "PBDS / Order Statistics Tree tutorial",
+        "path": "topics/data-structures/pbds-order-statistics/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "data-structures/interval-trees": {
+    "title": "Data Structures -> Interval Trees",
+    "summary": "Augmented BST for one live set of half-open intervals, supporting online insert / erase and any-overlap queries through subtree max-right summaries.",
+    "topic_path": "topics/data-structures/interval-trees/README.md",
+    "ladder_path": "practice/ladders/data-structures/interval-trees/README.md",
+    "microtopics": [
+      "half-open-intervals",
+      "interval-overlap",
+      "subtree-max-right",
+      "augmented-bst",
+      "stabbing-search",
+      "dynamic-interval-set"
+    ],
+    "learning_sources": [
+      {
+        "label": "Introduction to Algorithms, 4th ed. TOC PDF",
+        "url": "https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/4e_toc.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "AOJ 0360 Reservation System",
+        "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0360",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "AOJ 0360 Reservation System",
+        "url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0360",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Interval Tree hot sheet",
+        "path": "notebook/interval-tree-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Reservation System note",
+        "path": "practice/ladders/data-structures/interval-trees/reservationsystem.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Balanced BSTs For Contests",
+        "path": "topics/data-structures/balanced-bsts/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Heaps And Ordered Sets tutorial",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "ODT / Chtholly tutorial",
+        "path": "topics/data-structures/odt-chtholly/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "data-structures/splay-tree": {
     "title": "Data Structures -> Splay Tree",
     "summary": "Self-adjusting ordered multiset with parent-pointer rotations, subtree-size order statistics, duplicate counts, and a direct bridge into link-cut tree auxiliary splay machinery.",
@@ -2112,6 +2357,71 @@
       }
     ]
   },
+  "graphs/de-bruijn-sequence": {
+    "title": "Graphs -> De Bruijn Sequence",
+    "summary": "Overlap-state modeling where length-n windows become directed edges, and one Eulerian cycle linearizes into a universal sequence.",
+    "topic_path": "topics/graphs/de-bruijn-sequence/README.md",
+    "ladder_path": "practice/ladders/graphs/de-bruijn-sequence/README.md",
+    "microtopics": [
+      "de-bruijn-graph",
+      "overlap-states",
+      "binary-order-n",
+      "eulerian-construction",
+      "implicit-state-graph",
+      "window-cover-construction"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programmer's Handbook PDF",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "CSES De Bruijn Sequence",
+        "url": "https://cses.fi/problemset/task/1692",
+        "kind": "problem"
+      },
+      {
+        "label": "CP-Algorithms Eulerian Path",
+        "url": "https://cp-algorithms.com/graph/euler_path.html",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES De Bruijn Sequence",
+        "url": "https://cses.fi/problemset/task/1692",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "De Bruijn Sequence hot sheet",
+        "path": "notebook/de-bruijn-sequence-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "De Bruijn Sequence note",
+        "path": "practice/ladders/graphs/de-bruijn-sequence/debruijnsequence.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Eulerian Path / Cycle tutorial",
+        "path": "topics/graphs/eulerian-path-cycle/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Graph Modeling tutorial",
+        "path": "topics/graphs/graph-modeling/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
   "graphs/centroid-decomposition": {
     "title": "Graphs -> Centroid Decomposition",
     "summary": "Balanced recursive tree splitting, centroid-tree ancestors, and path-through-centroid divide and conquer on static trees.",
@@ -2594,6 +2904,76 @@
       }
     ]
   },
+  "graphs/tree-isomorphism": {
+    "title": "Graphs -> Tree Isomorphism",
+    "summary": "Canonical subtree encoding for rooted unordered trees, with unrooted comparison handled by trying one or two tree centers first.",
+    "topic_path": "topics/graphs/tree-isomorphism/README.md",
+    "ladder_path": "practice/ladders/graphs/tree-isomorphism/README.md",
+    "microtopics": [
+      "rooted-tree-isomorphism",
+      "canonical-encoding",
+      "ahu-style",
+      "tree-centers",
+      "unordered-children",
+      "subtree-signatures"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programming 4 contents",
+        "url": "https://cpbook.net/details?cp=4",
+        "kind": "reference"
+      },
+      {
+        "label": "CSES Tree Isomorphism I",
+        "url": "https://cses.fi/problemset/task/1700",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Tree Isomorphism II",
+        "url": "https://cses.fi/problemset/task/1701",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Tree Isomorphism I",
+        "url": "https://cses.fi/problemset/task/1700",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Tree Isomorphism II",
+        "url": "https://cses.fi/problemset/task/1701",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Tree Isomorphism hot sheet",
+        "path": "notebook/tree-isomorphism-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Tree Isomorphism I note",
+        "path": "practice/ladders/graphs/tree-isomorphism/treeisomorphism1.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Trees tutorial",
+        "path": "topics/graphs/trees/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Graph cheatsheet",
+        "path": "notebook/graph-cheatsheet.md",
+        "kind": "quick reference"
+      }
+    ]
+  },
   "graphs/lca": {
     "title": "Graphs -> LCA",
     "summary": "Lowest common ancestor as a reusable primitive for ancestor checks and path queries on rooted trees.",
@@ -2819,9 +3199,84 @@
         "kind": "anchor note"
       },
       {
+        "label": "Maximum Flow push-relabel note",
+        "path": "practice/ladders/graphs/flow/maximumflowpushrelabel.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Push-Relabel hot sheet",
+        "path": "notebook/push-relabel-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
         "label": "Graph cheatsheet",
         "path": "notebook/graph-cheatsheet.md",
         "kind": "quick reference"
+      }
+    ]
+  },
+  "graphs/global-min-cut": {
+    "title": "Graphs -> Randomized / Global Min-Cut",
+    "summary": "One undirected weighted graph, no designated source/sink, and the cheapest global cut found first through deterministic Stoer-Wagner phases.",
+    "topic_path": "topics/graphs/global-min-cut/README.md",
+    "ladder_path": "practice/ladders/graphs/global-min-cut/README.md",
+    "microtopics": [
+      "global-min-cut",
+      "stoer-wagner",
+      "cut-contraction",
+      "maximum-adjacency-order",
+      "undirected-cuts",
+      "karger-compare"
+    ],
+    "learning_sources": [
+      {
+        "label": "Princeton GlobalMincut",
+        "url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/GlobalMincut.html",
+        "kind": "course"
+      },
+      {
+        "label": "MIT randomized algorithms minimum cut notes",
+        "url": "https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/resources/n16_min_cut/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "POJ 2914 - Minimum Cut",
+        "url": "http://poj.org/problem?id=2914",
+        "kind": "problem"
+      },
+      {
+        "label": "UVa 10480 - Sabotage",
+        "url": "https://onlinejudge.org/external/104/10480.pdf",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Global Min-Cut hot sheet",
+        "path": "notebook/global-min-cut-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Global Min-Cut starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Minimum Cut note",
+        "path": "practice/ladders/graphs/global-min-cut/globalmincut.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Maximum Flow tutorial",
+        "path": "topics/graphs/flow/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Gomory-Hu tutorial",
+        "path": "topics/graphs/gomory-hu/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -2996,6 +3451,231 @@
       }
     ]
   },
+  "graphs/stable-marriage": {
+    "title": "Graphs -> Stable Marriage",
+    "summary": "Two-sided stable matching under complete strict preferences via Gale-Shapley deferred acceptance, with proposer-optimal output and blocking-pair avoidance.",
+    "topic_path": "topics/graphs/stable-marriage/README.md",
+    "ladder_path": "practice/ladders/graphs/stable-marriage/README.md",
+    "microtopics": [
+      "stable-matching",
+      "blocking-pair",
+      "deferred-acceptance",
+      "proposer-optimal",
+      "preference-ranks",
+      "two-sided-preferences"
+    ],
+    "learning_sources": [
+      {
+        "label": "AMS stable marriage and school choice",
+        "url": "https://www.ams.org/publicoutreach/feature-column/fc-2015-03",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "CACM stable marriage problem",
+        "url": "https://cacm.acm.org/research/the-stable-marriage-problem/",
+        "kind": "reference"
+      },
+      {
+        "label": "Stable marriage interdisciplinary review",
+        "url": "https://arxiv.org/abs/2103.11458",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker stable marriage problem",
+        "url": "https://judge.yosupo.jp/problem/stable_marriage_problem",
+        "kind": "problem"
+      },
+      {
+        "label": "AMS stable marriage and school choice",
+        "url": "https://www.ams.org/publicoutreach/feature-column/fc-2015-03",
+        "kind": "reference"
+      },
+      {
+        "label": "CACM stable marriage problem",
+        "url": "https://cacm.acm.org/research/the-stable-marriage-problem/",
+        "kind": "reference"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Stable Marriage hot sheet",
+        "path": "notebook/stable-marriage-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Stable Marriage starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Stable Marriage note",
+        "path": "practice/ladders/graphs/stable-marriage/stablemarriage.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Matching tutorial",
+        "path": "topics/graphs/matching/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Hungarian tutorial",
+        "path": "topics/graphs/hungarian-assignment/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "graphs/hungarian-assignment": {
+    "title": "Graphs -> Hungarian / Assignment Problem",
+    "summary": "Dense square weighted assignment via Hungarian's O(n^3) primal-dual algorithm, with direct recovery of one minimum-cost perfect matching.",
+    "topic_path": "topics/graphs/hungarian-assignment/README.md",
+    "ladder_path": "practice/ladders/graphs/hungarian-assignment/README.md",
+    "microtopics": [
+      "assignment-matrix",
+      "weighted-bipartite-matching",
+      "potentials",
+      "reduced-slack",
+      "tight-edges",
+      "primal-dual"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Hungarian algorithm",
+        "url": "https://cp-algorithms.com/graph/hungarian-algorithm.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "KACTL WeightedMatching / Hungarian",
+        "url": "https://pages.cs.wisc.edu/~dieter/ICPC/21-22/kactl.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "OI Wiki weighted bipartite matching",
+        "url": "https://en.oi-wiki.org/graph/graph-matching/bigraph-weight-match/",
+        "kind": "trusted guide"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Task Assignment",
+        "url": "https://cses.fi/problemset/task/2129",
+        "kind": "problem"
+      },
+      {
+        "label": "SPOJ ASSIGN4",
+        "url": "https://www.spoj.com/problems/ASSIGN4/",
+        "kind": "problem"
+      },
+      {
+        "label": "The Great Wall Game",
+        "url": "https://www.cs.cmu.edu/~eugene/teach/acm06a/hard/05.pdf",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Hungarian hot sheet",
+        "path": "notebook/hungarian-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Hungarian starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Task Assignment note",
+        "path": "practice/ladders/graphs/hungarian-assignment/taskassignment.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Matching tutorial",
+        "path": "topics/graphs/matching/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Min-Cost Flow tutorial",
+        "path": "topics/graphs/min-cost-flow/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
+  "graphs/general-matching": {
+    "title": "Graphs -> Edmonds Blossom / General Matching",
+    "summary": "Maximum-cardinality matching in a general undirected graph via Edmonds blossom shrinking, with odd-cycle contraction preserving augmenting-path search.",
+    "topic_path": "topics/graphs/general-matching/README.md",
+    "ladder_path": "practice/ladders/graphs/general-matching/README.md",
+    "microtopics": [
+      "general-graph-matching",
+      "augmenting-paths",
+      "alternating-forest",
+      "blossom-shrinking",
+      "base-array",
+      "odd-cycle-contraction"
+    ],
+    "learning_sources": [
+      {
+        "label": "OI Wiki general graph maximum matching",
+        "url": "https://en.oi-wiki.org/graph/graph-matching/general-match/",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "KACTL PDF",
+        "url": "https://pages.cs.wisc.edu/~dieter/ICPC/21-22/kactl.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Edmonds blossom lecture notes",
+        "url": "https://web.eecs.utk.edu/~jplank/plank/classes/cs494/494/notes/Edmonds/",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Matching on General Graph",
+        "url": "https://judge.yosupo.jp/problem/general_matching",
+        "kind": "problem"
+      },
+      {
+        "label": "Luogu P6113",
+        "url": "https://www.luogu.com.cn/problem/P6113",
+        "kind": "problem"
+      },
+      {
+        "label": "VN SPOJ QBFLOWER",
+        "url": "https://vn.spoj.com/problems/QBFLOWER/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "General Matching hot sheet",
+        "path": "notebook/general-matching-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "General Matching starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "General Matching note",
+        "path": "practice/ladders/graphs/general-matching/generalmatching.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Matching tutorial",
+        "path": "topics/graphs/matching/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "QBFLOWER note",
+        "path": "practice/ladders/graphs/matching/qbflower.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "graphs/hld": {
     "title": "Graphs -> Heavy-Light Decomposition",
     "summary": "Decompose tree paths into logarithmically many chains so path queries and updates reduce to range structures.",
@@ -3047,9 +3727,9 @@
   },
   "graphs/gomory-hu": {
     "title": "Graphs -> Gomory-Hu Tree",
-    "summary": "Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.",
-    "topic_path": "",
-    "ladder_path": "practice/ladders/graphs/flow/README.md",
+    "summary": "Cut-tree compression for all-pairs min-cut structure in one undirected weighted graph, built with n - 1 max-flow calls.",
+    "topic_path": "topics/graphs/gomory-hu/README.md",
+    "ladder_path": "practice/ladders/graphs/gomory-hu/README.md",
     "microtopics": [
       "all-pairs-mincut",
       "cut-tree",
@@ -3072,14 +3752,46 @@
     ],
     "practice_sources": [
       {
-        "label": "Library Checker problem bank",
-        "url": "https://github.com/yosupo06/library-checker-problems",
-        "kind": "problem bank"
+        "label": "Library Checker Gomory-Hu Tree",
+        "url": "https://judge.yosupo.jp/problem/gomory_hu_tree",
+        "kind": "problem"
       },
       {
-        "label": "CSES Problem Set",
-        "url": "https://cses.fi/problemset/",
-        "kind": "problem set"
+        "label": "Codeforces 343E - Pumping Stations",
+        "url": "https://codeforces.com/problemset/problem/343/E",
+        "kind": "problem"
+      },
+      {
+        "label": "UVa 11594 - All Pairs Maximum Flow",
+        "url": "https://onlinejudge.org/external/115/11594.pdf",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Gomory-Hu hot sheet",
+        "path": "notebook/gomory-hu-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Gomory-Hu starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "MCQUERY note",
+        "path": "practice/ladders/graphs/gomory-hu/mcquery.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Maximum Flow tutorial",
+        "path": "topics/graphs/flow/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "DSU tutorial",
+        "path": "topics/data-structures/dsu/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -3360,6 +4072,146 @@
         "label": "DP cheatsheet",
         "path": "notebook/dp-cheatsheet.md",
         "kind": "quick reference"
+      }
+    ]
+  },
+  "dp/fwht-subset-convolution": {
+    "title": "DP -> FWHT / XOR Convolution / Subset Convolution",
+    "summary": "Boolean-cube transforms beyond plain zeta sweeps, starting with xor convolution via Walsh-Hadamard transform and stretching to subset convolution by popcount layering.",
+    "topic_path": "topics/dp/fwht-subset-convolution/README.md",
+    "ladder_path": "practice/ladders/dp/fwht-subset-convolution/README.md",
+    "microtopics": [
+      "fwht",
+      "walsh-hadamard",
+      "xor-convolution",
+      "subset-convolution",
+      "boolean-cube-transform",
+      "popcount-layering"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Guide to Competitive Programming",
+        "url": "https://link.springer.com/book/10.1007/978-3-031-61794-2",
+        "kind": "textbook"
+      },
+      {
+        "label": "Library Checker Bitwise XOR Convolution",
+        "url": "https://judge.yosupo.jp/problem/bitwise_xor_convolution",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker Bitwise XOR Convolution",
+        "url": "https://judge.yosupo.jp/problem/bitwise_xor_convolution",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Subset Convolution",
+        "url": "https://judge.yosupo.jp/problem/subset_convolution",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "FWHT / XOR Convolution / Subset Convolution hot sheet",
+        "path": "notebook/fwht-subset-convolution-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Bitwise XOR Convolution note",
+        "path": "practice/ladders/dp/fwht-subset-convolution/bitwisexorconvolution.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "SOS DP tutorial",
+        "path": "topics/dp/sos-dp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "FFT / NTT tutorial",
+        "path": "topics/math/fft-ntt/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "dp/bit-parallelism": {
+    "title": "DP -> Bit-Parallelism / Bitset Optimization",
+    "summary": "Pack one large boolean DP row into machine words so shift-OR reachability updates run wordwise instead of scalar O(nW) loops.",
+    "topic_path": "topics/dp/bit-parallelism/README.md",
+    "ladder_path": "practice/ladders/dp/bit-parallelism/README.md",
+    "microtopics": [
+      "bitset-dp",
+      "word-packing",
+      "shift-or-reachability",
+      "subset-sum-bitset",
+      "component-size-knapsack",
+      "packed-boolean-state"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Guide to Competitive Programming",
+        "url": "https://link.springer.com/book/10.1007/978-3-031-61794-2",
+        "kind": "textbook"
+      },
+      {
+        "label": "CSES School Excursion",
+        "url": "https://cses.fi/problemset/task/1706/",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES School Excursion",
+        "url": "https://cses.fi/problemset/task/1706/",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Money Sums",
+        "url": "https://cses.fi/problemset/task/1745/",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Bit-Parallelism / Bitset Optimization hot sheet",
+        "path": "notebook/bit-parallelism-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "School Excursion note",
+        "path": "practice/ladders/dp/bit-parallelism/schoolexcursion.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Knapsack Family tutorial",
+        "path": "topics/dp/knapsack-family/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "FWHT / XOR Convolution / Subset Convolution tutorial",
+        "path": "topics/dp/fwht-subset-convolution/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },
@@ -4642,6 +5494,66 @@
       }
     ]
   },
+  "math/berlekamp-massey-kitamasa": {
+    "title": "Math -> Berlekamp-Massey / Kitamasa",
+    "summary": "Recover the shortest linear recurrence from a prefix when needed, then jump to the k-th term by characteristic-polynomial reduction instead of dense matrix powers.",
+    "topic_path": "topics/math/berlekamp-massey-kitamasa/README.md",
+    "ladder_path": "practice/ladders/math/berlekamp-massey-kitamasa/README.md",
+    "microtopics": [
+      "berlekamp-massey",
+      "kitamasa",
+      "linear-recurrence-jump",
+      "characteristic-polynomial",
+      "discrepancy-update",
+      "kth-term"
+    ],
+    "learning_sources": [
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Guide to Competitive Programming",
+        "url": "https://link.springer.com/book/10.1007/978-3-031-61794-2",
+        "kind": "textbook"
+      },
+      {
+        "label": "Library Checker K-th Term of Linearly Recurrent Sequence",
+        "url": "https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence",
+        "kind": "problem"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Library Checker K-th Term of Linearly Recurrent Sequence",
+        "url": "https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence",
+        "kind": "problem"
+      },
+      {
+        "label": "Library Checker Find Linear Recurrence",
+        "url": "https://judge.yosupo.jp/problem/find_linear_recurrence",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Berlekamp-Massey / Kitamasa hot sheet",
+        "path": "notebook/berlekamp-massey-kitamasa-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Linear Recurrence tutorial",
+        "path": "topics/math/linear-recurrence/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
   "math/probability": {
     "title": "Math -> Probability",
     "summary": "Finite-state probability modeling with PMFs, expectation, total probability, and exact discrete-process DP.",
@@ -5130,6 +6042,66 @@
       }
     ]
   },
+  "combinatorics/burnside-polya": {
+    "title": "Combinatorics -> Burnside / Pólya / Group Actions",
+    "summary": "Count colorings up to explicit symmetry by averaging fixed representations over a group action, starting with cyclic rotations on necklaces.",
+    "topic_path": "topics/combinatorics/burnside-polya/README.md",
+    "ladder_path": "practice/ladders/combinatorics/burnside-polya/README.md",
+    "microtopics": [
+      "burnside-lemma",
+      "group-actions",
+      "orbit-counting",
+      "fixed-colorings",
+      "cyclic-rotations",
+      "cycle-index"
+    ],
+    "learning_sources": [
+      {
+        "label": "cp-algorithms Burnside / Pólya",
+        "url": "https://cp-algorithms.com/combinatorics/burnside.html",
+        "kind": "trusted guide"
+      },
+      {
+        "label": "Competitive Programmer's Handbook",
+        "url": "https://www.cses.fi/book/book.pdf",
+        "kind": "reference"
+      },
+      {
+        "label": "Guide to Competitive Programming",
+        "url": "https://link.springer.com/book/10.1007/978-3-031-61794-2",
+        "kind": "textbook"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "CSES Counting Necklaces",
+        "url": "https://cses.fi/problemset/task/2209",
+        "kind": "problem"
+      },
+      {
+        "label": "CSES Counting Grids",
+        "url": "https://cses.fi/problemset/task/2210",
+        "kind": "problem"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Burnside / Pólya hot sheet",
+        "path": "notebook/burnside-polya-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Modular Arithmetic hot sheet",
+        "path": "notebook/modular-arithmetic-hot-sheet.md",
+        "kind": "adjacent sheet"
+      },
+      {
+        "label": "Counting Basics",
+        "path": "topics/combinatorics/counting-basics/README.md",
+        "kind": "prereq topic"
+      }
+    ]
+  },
   "combinatorics/inclusion-exclusion": {
     "title": "Combinatorics -> Inclusion-Exclusion",
     "summary": "Count by overlaps, complements, and Mobius-style corrections when direct counting double-counts structure.",
@@ -5607,6 +6579,61 @@
         "label": "CSES Pattern Positions",
         "url": "https://cses.fi/problemset/task/2104",
         "kind": "problem"
+      }
+    ]
+  },
+  "strings/regex-finite-automata": {
+    "title": "Strings -> Regular Expressions / Finite Automata",
+    "summary": "Theory-breadth string lane for Thompson-style epsilon-NFA construction and full-string regex membership under a small regex syntax.",
+    "topic_path": "topics/strings/regex-finite-automata/README.md",
+    "ladder_path": "practice/ladders/strings/regex-finite-automata/README.md",
+    "microtopics": [
+      "regex-syntax",
+      "implicit-concatenation",
+      "postfix-conversion",
+      "thompson-construction",
+      "epsilon-closure",
+      "nfa-simulation"
+    ],
+    "learning_sources": [
+      {
+        "label": "Algorithms 4/e regular expressions",
+        "url": "https://algs4.cs.princeton.edu/54regexp/",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Algorithms 4/e regular expressions benchmark",
+        "url": "https://algs4.cs.princeton.edu/54regexp/",
+        "kind": "benchmark suite"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Regex / Finite Automata hot sheet",
+        "path": "notebook/regex-finite-automata-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Regex Membership note",
+        "path": "practice/ladders/strings/regex-finite-automata/regexmembership.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "KMP",
+        "path": "topics/strings/kmp/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Aho-Corasick",
+        "path": "topics/strings/aho-corasick/README.md",
+        "kind": "compare point"
       }
     ]
   },
@@ -6388,6 +7415,71 @@
       }
     ]
   },
+  "greedy/huffman-data-compression": {
+    "title": "Greedy -> Huffman / Data Compression",
+    "summary": "Binary Huffman coding as an optimal-merge greedy lane: repeatedly merge the two lightest trees, track weighted path length by merge sums, and recover deterministic prefix codes.",
+    "topic_path": "topics/greedy/huffman-data-compression/README.md",
+    "ladder_path": "practice/ladders/greedy/huffman-data-compression/README.md",
+    "microtopics": [
+      "optimal-merge",
+      "prefix-codes",
+      "weighted-path-length",
+      "min-heap-greedy",
+      "deterministic-tie-break",
+      "codeword-reconstruction"
+    ],
+    "learning_sources": [
+      {
+        "label": "Algorithms 4/e Huffman",
+        "url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/Huffman.html",
+        "kind": "course"
+      },
+      {
+        "label": "Algorithms 4/e data compression slides",
+        "url": "https://algs4.cs.princeton.edu/lectures/keynote/55DataCompression.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "Cornell CS312 heaps and Huffman coding",
+        "url": "https://www.cs.cornell.edu/courses/cs312/2002sp/lectures/lec19.asp",
+        "kind": "course notes"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Algorithms 4/e Huffman benchmark",
+        "url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/Huffman.html",
+        "kind": "benchmark suite"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Huffman / Data Compression hot sheet",
+        "path": "notebook/huffman-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      },
+      {
+        "label": "Huffman Coding Benchmark note",
+        "path": "practice/ladders/greedy/huffman-data-compression/huffmancoding.md",
+        "kind": "anchor note"
+      },
+      {
+        "label": "Greedy overview",
+        "path": "topics/greedy/README.md",
+        "kind": "family hub"
+      },
+      {
+        "label": "Heaps And Ordered Sets",
+        "path": "topics/data-structures/heaps-and-ordered-sets/README.md",
+        "kind": "compare point"
+      }
+    ]
+  },
   "advanced/constructive": {
     "title": "Advanced -> Constructive",
     "summary": "Output-sensitive problems where the main work is proving the existence and structure of a valid construction.",
@@ -6514,6 +7606,341 @@
         "label": "Hashing ladder",
         "path": "practice/ladders/strings/hashing/README.md",
         "kind": "adjacent ladder"
+      }
+    ]
+  },
+  "advanced/online-algorithms": {
+    "title": "Advanced -> Online Algorithms",
+    "summary": "Competitive analysis for decisions without future knowledge, taught first through deterministic ski-rental threshold policies and then compared against paging and randomized adversaries.",
+    "topic_path": "topics/advanced/online-algorithms/README.md",
+    "ladder_path": "practice/ladders/advanced/online-algorithms/README.md",
+    "microtopics": [
+      "competitive-ratio",
+      "online-algorithm",
+      "ski-rental",
+      "threshold-policy",
+      "adversarial-future",
+      "paging-compare",
+      "randomized-compare"
+    ],
+    "learning_sources": [
+      {
+        "label": "Stanford CS369 notes",
+        "url": "https://web.stanford.edu/class/cs369/files/cs369-notes.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT OCW lecture note on ski rental",
+        "url": "https://ocw.mit.edu/courses/6-854j-advanced-algorithms-fall-2005/resources/lec19_2003/",
+        "kind": "course notes"
+      },
+      {
+        "label": "Princeton COS 521 lecture note",
+        "url": "https://faculty.cc.gatech.edu/~ssingla7/courses/Fall20cos521/lec18.pdf",
+        "kind": "course notes"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "JHU Lecture 24: Online Algorithms",
+        "url": "https://www.cs.jhu.edu/~mdinitz/classes/IntroAlgorithms/Fall2021/Lectures/Lecture24/lecture24slides.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "Stanford CS369 notes",
+        "url": "https://web.stanford.edu/class/cs369/files/cs369-notes.pdf",
+        "kind": "course notes"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Online Algorithms hot sheet",
+        "path": "notebook/online-algorithms-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Ski Rental note",
+        "path": "practice/ladders/advanced/online-algorithms/skirental.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Randomized Algorithms tutorial",
+        "path": "topics/advanced/randomized-algorithms/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Optimization And Duality tutorial",
+        "path": "topics/advanced/optimization-and-duality/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "advanced/machine-learning-algorithms": {
+    "title": "Advanced -> Machine Learning Algorithms",
+    "summary": "Textbook-breadth algorithmic ML taught first through the perceptron update rule on linearly separable binary data.",
+    "topic_path": "topics/advanced/machine-learning-algorithms/README.md",
+    "ladder_path": "practice/ladders/advanced/machine-learning-algorithms/README.md",
+    "microtopics": [
+      "perceptron",
+      "binary-classification",
+      "linear-separability",
+      "mistake-driven-update",
+      "bias-term",
+      "online-learning-compare",
+      "gradient-descent-boundary"
+    ],
+    "learning_sources": [
+      {
+        "label": "Stanford CS229 materials",
+        "url": "https://cs229.stanford.edu/materials.html-withcomments",
+        "kind": "course"
+      },
+      {
+        "label": "Stanford CS229 notes: Perceptron",
+        "url": "https://cs229.stanford.edu/notes2021fall/cs229-notes6.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT OCW 6.867 lec2",
+        "url": "https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/resources/lec2/",
+        "kind": "course notes"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Stanford CS229 notes: Perceptron",
+        "url": "https://cs229.stanford.edu/notes2021fall/cs229-notes6.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT OCW 6.867 lec2",
+        "url": "https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/resources/lec2/",
+        "kind": "course notes"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Machine Learning hot sheet",
+        "path": "notebook/machine-learning-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Perceptron Classification Benchmark",
+        "path": "practice/ladders/advanced/machine-learning-algorithms/perceptronclassification.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Online Algorithms tutorial",
+        "path": "topics/advanced/online-algorithms/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "advanced/gradient-descent": {
+    "title": "Advanced -> Gradient Descent",
+    "summary": "Theory-breadth smooth optimization taught first through fixed-step batch gradient descent on one-feature linear regression with squared loss.",
+    "topic_path": "topics/advanced/gradient-descent/README.md",
+    "ladder_path": "practice/ladders/advanced/gradient-descent/README.md",
+    "microtopics": [
+      "gradient-descent",
+      "batch-gradient",
+      "squared-loss",
+      "linear-regression",
+      "learning-rate",
+      "epochs",
+      "smooth-optimization"
+    ],
+    "learning_sources": [
+      {
+        "label": "Stanford CS229 notes on linear regression",
+        "url": "https://cs229.stanford.edu/summer2020/cs229-notes1.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT Open Learning Library gradient descent chapter",
+        "url": "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B6.036%2B1T2019/courseware/Week4/gradient_descent/",
+        "kind": "course"
+      },
+      {
+        "label": "MIT nonlinear optimization notes on gradient descent",
+        "url": "https://www.mit.edu/~gfarina/2024/67220s24_L07_gradient_descent/",
+        "kind": "course notes"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Stanford CS229 notes on linear regression",
+        "url": "https://cs229.stanford.edu/summer2020/cs229-notes1.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT Open Learning Library gradient descent chapter",
+        "url": "https://openlearninglibrary.mit.edu/courses/course-v1%3AMITx%2B6.036%2B1T2019/courseware/Week4/gradient_descent/",
+        "kind": "course"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Gradient Descent hot sheet",
+        "path": "notebook/gradient-descent-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Linear Regression Gradient Descent Benchmark",
+        "path": "practice/ladders/advanced/gradient-descent/linearregressiongd.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Machine Learning Algorithms tutorial",
+        "path": "topics/advanced/machine-learning-algorithms/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "advanced/quantum-algorithms": {
+    "title": "Advanced -> Quantum Algorithms",
+    "summary": "Theory-breadth quantum coverage taught first through a classical simulator for the Deutsch-Jozsa promise problem and its Hadamard-layer amplitude invariant.",
+    "topic_path": "topics/advanced/quantum-algorithms/README.md",
+    "ladder_path": "practice/ladders/advanced/quantum-algorithms/README.md",
+    "microtopics": [
+      "deutsch-jozsa",
+      "promise-problem",
+      "phase-oracle",
+      "hadamard-layer",
+      "constant-vs-balanced",
+      "quantum-simulator",
+      "classical-transform-compare"
+    ],
+    "learning_sources": [
+      {
+        "label": "MIT OCW 6.845 lecture note on Deutsch-Jozsa",
+        "url": "https://ocw.mit.edu/courses/6-845-quantum-complexity-theory-fall-2010/resources/mit6_845f10_lec05/",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT 8.370x Quantum Information Science I",
+        "url": "https://www.ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/",
+        "kind": "course"
+      },
+      {
+        "label": "Watrous quantum computation notes",
+        "url": "https://cs.uwaterloo.ca/~watrous/QC-notes/",
+        "kind": "reference"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "MIT OCW 6.845 lecture note on Deutsch-Jozsa",
+        "url": "https://ocw.mit.edu/courses/6-845-quantum-complexity-theory-fall-2010/resources/mit6_845f10_lec05/",
+        "kind": "course notes"
+      },
+      {
+        "label": "Watrous quantum computation notes",
+        "url": "https://cs.uwaterloo.ca/~watrous/QC-notes/",
+        "kind": "course notes"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Quantum Algorithms hot sheet",
+        "path": "notebook/quantum-algorithms-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Deutsch-Jozsa Oracle Benchmark",
+        "path": "practice/ladders/advanced/quantum-algorithms/deutschjozsa.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "FWHT / XOR Convolution / Subset Convolution tutorial",
+        "path": "topics/dp/fwht-subset-convolution/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
+      }
+    ]
+  },
+  "advanced/parallel-algorithms": {
+    "title": "Advanced -> Parallel Algorithms",
+    "summary": "Theory-breadth parallel coverage taught first through work/span reasoning and a Blelloch exclusive-scan simulator over an explicit array.",
+    "topic_path": "topics/advanced/parallel-algorithms/README.md",
+    "ladder_path": "practice/ladders/advanced/parallel-algorithms/README.md",
+    "microtopics": [
+      "parallel-prefix-sum",
+      "blelloch-scan",
+      "work-span",
+      "brents-theorem",
+      "pram",
+      "upsweep-downsweep",
+      "exclusive-scan"
+    ],
+    "learning_sources": [
+      {
+        "label": "Blelloch, Prefix Sums and Their Applications",
+        "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15451-s14/www/LectureNotes/PrefixSumBlelloch.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "MIT 6.854 parallel algorithms notes",
+        "url": "https://courses.csail.mit.edu/6.854/16/Notes/n32-parallel.html",
+        "kind": "course notes"
+      },
+      {
+        "label": "CMU 15-210 overview",
+        "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15210-f12/www/index.html",
+        "kind": "course"
+      }
+    ],
+    "practice_sources": [
+      {
+        "label": "Blelloch, Prefix Sums and Their Applications",
+        "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15451-s14/www/LectureNotes/PrefixSumBlelloch.pdf",
+        "kind": "course notes"
+      },
+      {
+        "label": "Sebastian Wild Unit 7: Parallel Algorithms",
+        "url": "https://www.wild-inter.net/teaching/comp526/07-parallel-algorithms",
+        "kind": "course notes"
+      }
+    ],
+    "repo_companions": [
+      {
+        "label": "Parallel Algorithms hot sheet",
+        "path": "notebook/parallel-algorithms-hot-sheet.md",
+        "kind": "quick reference"
+      },
+      {
+        "label": "Parallel Prefix Sum Benchmark",
+        "path": "practice/ladders/advanced/parallel-algorithms/parallelprefixsum.md",
+        "kind": "flagship note"
+      },
+      {
+        "label": "Prefix Sums tutorial",
+        "path": "topics/foundations/patterns/prefix-sums/README.md",
+        "kind": "compare point"
+      },
+      {
+        "label": "Template Library exact starter route",
+        "path": "template-library.md",
+        "kind": "starter route"
       }
     ]
   },

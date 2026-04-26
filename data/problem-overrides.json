@@ -150,6 +150,20 @@
       "Dynamic programming"
     ]
   },
+  "COUNTINGNECKLACES": {
+    "topic_tags": [
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "burnside lemma",
+      "rotation symmetry",
+      "orbit counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ]
+  },
   "MONSTERGAME2": {
     "topic_tags": [],
     "patterns": [
@@ -595,8 +609,7 @@
   "MCQUERY": {
     "topic_tags": [
       "data-structures/dsu",
-      "graphs/trees",
-      "graphs/gomory-hu"
+      "graphs/trees"
     ],
     "patterns": [
       "all-pairs min-cut",

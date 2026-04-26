@@ -61,7 +61,7 @@ Union-find for component maintenance, offline connectivity, and Kruskal-style st
 | --- | --- | --- | --- | --- | --- | --- |
 | `C11XU` | Bộ sưu tập đồng xu | `primary` | `hard` | xor-independence; forest selection; augmenting exchange | [Note](../../../practice/ladders/data-structures/dsu/c11xu.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu/c11xu.cpp) |
 | `DYNAMICCONNECTIVITY` | Dynamic Connectivity | `secondary` | `hard` | dsu rollback; segment tree over time; offline dynamic connectivity | [Note](../../../practice/ladders/data-structures/dsu-rollback/dynamicconnectivity.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/dsu-rollback/dynamicconnectivity.cpp) |
-| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/gomory-hu/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 
 ## Regeneration
 

@@ -5,7 +5,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 - Topic slug: `math/modular-arithmetic`
 - Tutorial page: [Open tutorial](../../../topics/math/modular-arithmetic/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/math/modular-arithmetic/README.md)
-- Repo problems currently tagged here: `3`
+- Repo problems currently tagged here: `4`
 - Repo companion pages: `2`
 - Curated external problems: `8`
 
@@ -65,6 +65,7 @@ Safe modular computation: powers, inverses, congruences, and the algebra needed 
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
+| `COUNTINGNECKLACES` | Counting Necklaces | `secondary` | `hard` | burnside lemma; rotation symmetry; orbit counting | [Note](../../../practice/ladders/combinatorics/burnside-polya/countingnecklaces.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/burnside-polya/countingnecklaces.cpp) |
 | `DISTRIBUTINGAPPLES` | Distributing Apples | `secondary` | `medium` | stars and bars; single binomial query; factorial precompute | [Note](../../../practice/ladders/combinatorics/counting-basics/distributingapples.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/counting-basics/distributingapples.cpp) |
 | `EXPONENTIATION` | Exponentiation | `primary` | `easy` | binary exponentiation; repeated squaring; modular fast power | [Note](../../../practice/ladders/math/modular-arithmetic/exponentiation.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation.cpp) |
 | `EXPONENTIATION2` | Exponentiation II | `primary` | `medium` | binary exponentiation; fermat exponent reduction; zero exponent edge case | [Note](../../../practice/ladders/math/modular-arithmetic/exponentiation2.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/modular-arithmetic/exponentiation2.cpp) |

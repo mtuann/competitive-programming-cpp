@@ -7,7 +7,7 @@ Degree conditions, Hierholzer traversal, and use-every-edge-once constructions i
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/eulerian-path-cycle/README.md)
 - Repo problems currently tagged here: `1`
 - Repo companion pages: `5`
-- Curated external problems: `4`
+- Curated external problems: `3`
 
 ## Microtopics
 
@@ -58,12 +58,6 @@ Degree conditions, Hierholzer traversal, and use-every-edge-once constructions i
 | Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Play on Words](https://onlinejudge.org/external/1/10129.pdf) | `UVa` | `Medium` | Classic | Modeling; Balance Check; Connected Support | Directed Graphs; Eulerian Path Conditions; Graph Modeling | String To Graph; Directed Eulerian Path | A classic Eulerian-reduction problem where statement parsing and graph support checks matter as much as the traversal itself. |
-
-### Stretch
-
-| Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| [De Bruijn Sequence](https://cses.fi/problemset/task/1692) | `CSES` | `Hard` | Construction | State Graph Modeling; Eulerian Construction; String Reconstruction | Graph Modeling; Eulerian Cycle; Bitmask States | De Bruijn Graph; Eulerian Cycle; Bitmask States | A flagship construction problem where the whole graph model exists only to make an Eulerian cycle encode the answer string. |
 
 ## Repo Problems
 

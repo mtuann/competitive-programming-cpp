@@ -98,6 +98,56 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/constructive/vmcoins.cpp"
   },
   {
+    "code": "LINEARREGRESSIONGD",
+    "title": "Linear Regression Gradient Descent Benchmark",
+    "full_title": "Linear Regression Gradient Descent Benchmark",
+    "judge": "Canonical first-order optimization benchmark",
+    "judge_url": "https://cs229.stanford.edu/summer2020/cs229-notes1.pdf",
+    "main_topic": "Advanced -> Gradient Descent",
+    "secondary_topics": [
+      "Batch gradient descent",
+      "Squared loss",
+      "Linear regression"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/gradient-descent",
+    "topic_tags": [
+      "advanced/gradient-descent"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/gradient-descent/linearregressiongd.md",
+    "ladder_path": "practice/ladders/advanced/gradient-descent/README.md",
+    "tutorial_path": "topics/advanced/gradient-descent/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/gradient-descent/linearregressiongd.cpp"
+  },
+  {
+    "code": "PERCEPTRONCLASSIFICATION",
+    "title": "Perceptron Classification Benchmark",
+    "full_title": "Perceptron Classification Benchmark",
+    "judge": "Canonical perceptron benchmark",
+    "judge_url": "https://cs229.stanford.edu/notes2021fall/cs229-notes6.pdf",
+    "main_topic": "Advanced -> Machine Learning Algorithms",
+    "secondary_topics": [
+      "Perceptron",
+      "Linear separability",
+      "Online updates"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/machine-learning-algorithms",
+    "topic_tags": [
+      "advanced/machine-learning-algorithms"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/machine-learning-algorithms/perceptronclassification.md",
+    "ladder_path": "practice/ladders/advanced/machine-learning-algorithms/README.md",
+    "tutorial_path": "topics/advanced/machine-learning-algorithms/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/machine-learning-algorithms/perceptronclassification.cpp"
+  },
+  {
     "code": "PICKYOUROWNNIM",
     "title": "Pick Your Own Nim",
     "full_title": "Pick Your Own Nim",
@@ -121,6 +171,81 @@
     "ladder_path": "practice/ladders/advanced/matroid-intersection/README.md",
     "tutorial_path": "topics/advanced/matroid-intersection/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/matroid-intersection/pickyourownnim.cpp"
+  },
+  {
+    "code": "SKIRENTAL",
+    "title": "Ski Rental",
+    "full_title": "Ski Rental",
+    "judge": "Canonical online-algorithms benchmark",
+    "judge_url": "https://www.cs.jhu.edu/~mdinitz/classes/IntroAlgorithms/Fall2021/Lectures/Lecture24/lecture24slides.pdf",
+    "main_topic": "Advanced -> Online Algorithms",
+    "secondary_topics": [
+      "Competitive ratio",
+      "Threshold policy",
+      "Adversarial future"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/online-algorithms",
+    "topic_tags": [
+      "advanced/online-algorithms"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/online-algorithms/skirental.md",
+    "ladder_path": "practice/ladders/advanced/online-algorithms/README.md",
+    "tutorial_path": "topics/advanced/online-algorithms/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/online-algorithms/skirental.cpp"
+  },
+  {
+    "code": "PARALLELPREFIXSUM",
+    "title": "Parallel Prefix Sum Benchmark",
+    "full_title": "Parallel Prefix Sum Benchmark",
+    "judge": "Canonical parallel scan benchmark",
+    "judge_url": "https://www.cs.cmu.edu/afs/cs/academic/class/15451-s14/www/LectureNotes/PrefixSumBlelloch.pdf",
+    "main_topic": "Advanced -> Parallel Algorithms",
+    "secondary_topics": [
+      "Blelloch scan",
+      "Work / span",
+      "PRAM"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/parallel-algorithms",
+    "topic_tags": [
+      "advanced/parallel-algorithms"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/parallel-algorithms/parallelprefixsum.md",
+    "ladder_path": "practice/ladders/advanced/parallel-algorithms/README.md",
+    "tutorial_path": "topics/advanced/parallel-algorithms/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/parallel-algorithms/parallelprefixsum.cpp"
+  },
+  {
+    "code": "DEUTSCHJOZSA",
+    "title": "Deutsch-Jozsa Oracle Benchmark",
+    "full_title": "Deutsch-Jozsa Oracle Benchmark",
+    "judge": "Canonical quantum promise-problem benchmark",
+    "judge_url": "https://ocw.mit.edu/courses/6-845-quantum-complexity-theory-fall-2010/resources/mit6_845f10_lec05/",
+    "main_topic": "Advanced -> Quantum Algorithms",
+    "secondary_topics": [
+      "Deutsch-Jozsa",
+      "Phase oracle",
+      "Hadamard transform"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "advanced/quantum-algorithms",
+    "topic_tags": [
+      "advanced/quantum-algorithms"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/advanced/quantum-algorithms/deutschjozsa.md",
+    "ladder_path": "practice/ladders/advanced/quantum-algorithms/README.md",
+    "tutorial_path": "topics/advanced/quantum-algorithms/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/advanced/quantum-algorithms/deutschjozsa.cpp"
   },
   {
     "code": "CHEESEIFYOUPLEASE",
@@ -180,6 +305,39 @@
     "ladder_path": "practice/ladders/combinatorics/bounded-compositions/README.md",
     "tutorial_path": "topics/combinatorics/bounded-compositions/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/bounded-compositions/vosfence.cpp"
+  },
+  {
+    "code": "COUNTINGNECKLACES",
+    "title": "Counting Necklaces",
+    "full_title": "Counting Necklaces",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2209",
+    "main_topic": "Combinatorics -> Burnside / Pólya / Group Actions",
+    "secondary_topics": [
+      "Burnside lemma",
+      "Rotation symmetry",
+      "Modular arithmetic"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "combinatorics/burnside-polya",
+    "topic_tags": [
+      "combinatorics/burnside-polya",
+      "math/modular-arithmetic"
+    ],
+    "patterns": [
+      "burnside lemma",
+      "rotation symmetry",
+      "orbit counting"
+    ],
+    "tracks": [
+      "CSES",
+      "Mathematics"
+    ],
+    "note_path": "practice/ladders/combinatorics/burnside-polya/countingnecklaces.md",
+    "ladder_path": "practice/ladders/combinatorics/burnside-polya/README.md",
+    "tutorial_path": "topics/combinatorics/burnside-polya/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/burnside-polya/countingnecklaces.cpp"
   },
   {
     "code": "DISTRIBUTINGAPPLES",
@@ -279,6 +437,31 @@
     "ladder_path": "practice/ladders/combinatorics/lexicographic-enumeration/README.md",
     "tutorial_path": "topics/combinatorics/lexicographic-enumeration/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/combinatorics/lexicographic-enumeration/voitsort.cpp"
+  },
+  {
+    "code": "BTREEDICTIONARY",
+    "title": "B-Tree Dictionary",
+    "full_title": "B-Tree Dictionary",
+    "judge": "Canonical B-tree dictionary benchmark",
+    "judge_url": "https://opendatastructures.org/ods-cpp/14_2_B_Trees.html",
+    "main_topic": "Data Structures -> B-Trees",
+    "secondary_topics": [
+      "Multiway search tree",
+      "Split full child",
+      "High fanout"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/b-trees",
+    "topic_tags": [
+      "data-structures/b-trees"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/b-trees/btreedictionary.md",
+    "ladder_path": "practice/ladders/data-structures/b-trees/README.md",
+    "tutorial_path": "topics/data-structures/b-trees/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/b-trees/btreedictionary.cpp"
   },
   {
     "code": "VASILIYSMULTISET",
@@ -461,6 +644,31 @@
     "ladder_path": "practice/ladders/data-structures/heaps-and-ordered-sets/README.md",
     "tutorial_path": "topics/data-structures/heaps-and-ordered-sets/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/heaps-and-ordered-sets/concerttickets.cpp"
+  },
+  {
+    "code": "RESERVATIONSYSTEM",
+    "title": "Reservation System",
+    "full_title": "Reservation System",
+    "judge": "AOJ 0360",
+    "judge_url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0360",
+    "main_topic": "Data Structures -> Interval Trees",
+    "secondary_topics": [
+      "Half-open intervals",
+      "Interval overlap",
+      "Augmented BST"
+    ],
+    "difficulty": "easy",
+    "status": "solved",
+    "primary_slug": "data-structures/interval-trees",
+    "topic_tags": [
+      "data-structures/interval-trees"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/interval-trees/reservationsystem.md",
+    "ladder_path": "practice/ladders/data-structures/interval-trees/README.md",
+    "tutorial_path": "topics/data-structures/interval-trees/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/interval-trees/reservationsystem.cpp"
   },
   {
     "code": "HORRIBLEQUERIES",
@@ -754,6 +962,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/segment-tree-beats/rangechminchmaxaddrangesum.cpp"
   },
   {
+    "code": "SKIPLISTDICTIONARY",
+    "title": "Skiplist Dictionary",
+    "full_title": "Skiplist Dictionary",
+    "judge": "Canonical skiplist dictionary benchmark",
+    "judge_url": "https://opendatastructures.org/ods-cpp/4_Skiplists.html",
+    "main_topic": "Data Structures -> Skip Lists",
+    "secondary_topics": [
+      "Probabilistic balancing",
+      "Forward-pointer towers",
+      "Expected logarithmic search"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "data-structures/skip-lists",
+    "topic_tags": [
+      "data-structures/skip-lists"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/skip-lists/skiplistdictionary.md",
+    "ladder_path": "practice/ladders/data-structures/skip-lists/README.md",
+    "tutorial_path": "topics/data-structures/skip-lists/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/skip-lists/skiplistdictionary.cpp"
+  },
+  {
     "code": "STATICRANGEMINIMUMQUERIES",
     "title": "Static Range Minimum Queries",
     "full_title": "Static Range Minimum Queries",
@@ -886,6 +1119,57 @@
     "ladder_path": "practice/ladders/data-structures/wavelet-tree/README.md",
     "tutorial_path": "topics/data-structures/wavelet-tree/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/wavelet-tree/mkthnum.cpp"
+  },
+  {
+    "code": "XFASTDICTIONARY",
+    "title": "X-Fast Dictionary",
+    "full_title": "X-Fast Dictionary",
+    "judge": "Canonical x-fast predecessor benchmark",
+    "judge_url": "https://opendatastructures.org/newhtml/ods/latex/integers.html",
+    "main_topic": "Data Structures -> X-Fast / Y-Fast Tries",
+    "secondary_topics": [
+      "Prefix hashing",
+      "Leaf-linked order",
+      "Predecessor / successor",
+      "Bounded universe"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "data-structures/x-fast-y-fast-tries",
+    "topic_tags": [
+      "data-structures/x-fast-y-fast-tries"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/data-structures/x-fast-y-fast-tries/xfastdictionary.md",
+    "ladder_path": "practice/ladders/data-structures/x-fast-y-fast-tries/README.md",
+    "tutorial_path": "topics/data-structures/x-fast-y-fast-tries/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/data-structures/x-fast-y-fast-tries/xfastdictionary.cpp"
+  },
+  {
+    "code": "SCHOOLEXCURSION",
+    "title": "School Excursion",
+    "full_title": "School Excursion",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1706/",
+    "main_topic": "DP -> Bit-Parallelism / Bitset Optimization",
+    "secondary_topics": [
+      "DSU",
+      "Component sizes",
+      "Boolean reachability"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/bit-parallelism",
+    "topic_tags": [
+      "dp/bit-parallelism"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/bit-parallelism/schoolexcursion.md",
+    "ladder_path": "practice/ladders/dp/bit-parallelism/README.md",
+    "tutorial_path": "topics/dp/bit-parallelism/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/bit-parallelism/schoolexcursion.cpp"
   },
   {
     "code": "VMMARBLE",
@@ -1091,6 +1375,31 @@
     "ladder_path": "practice/ladders/dp/foundations/README.md",
     "tutorial_path": "topics/dp/foundations/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/foundations/vmscale.cpp"
+  },
+  {
+    "code": "BITWISEXORCONVOLUTION",
+    "title": "Bitwise XOR Convolution",
+    "full_title": "Bitwise XOR Convolution",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/bitwise_xor_convolution",
+    "main_topic": "DP -> FWHT / XOR Convolution / Subset Convolution",
+    "secondary_topics": [
+      "FWHT",
+      "Walsh-Hadamard",
+      "Boolean-cube transforms"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "dp/fwht-subset-convolution",
+    "topic_tags": [
+      "dp/fwht-subset-convolution"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/dp/fwht-subset-convolution/bitwisexorconvolution.md",
+    "ladder_path": "practice/ladders/dp/fwht-subset-convolution/README.md",
+    "tutorial_path": "topics/dp/fwht-subset-convolution/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/dp/fwht-subset-convolution/bitwisexorconvolution.cpp"
   },
   {
     "code": "REMOVALGAME",
@@ -2173,6 +2482,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/centroid-decomposition/cielthecommander.cpp"
   },
   {
+    "code": "DEBRUIJNSEQUENCE",
+    "title": "De Bruijn Sequence",
+    "full_title": "De Bruijn Sequence",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1692",
+    "main_topic": "Graphs -> De Bruijn Sequence",
+    "secondary_topics": [
+      "Eulerian cycle",
+      "Graph modeling",
+      "Bitmask states"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/de-bruijn-sequence",
+    "topic_tags": [
+      "graphs/de-bruijn-sequence"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/de-bruijn-sequence/debruijnsequence.md",
+    "ladder_path": "practice/ladders/graphs/de-bruijn-sequence/README.md",
+    "tutorial_path": "topics/graphs/de-bruijn-sequence/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/de-bruijn-sequence/debruijnsequence.cpp"
+  },
+  {
     "code": "SUBTREEQUERIES",
     "title": "Subtree Queries",
     "full_title": "Subtree Queries",
@@ -2289,39 +2623,29 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp"
   },
   {
-    "code": "MCQUERY",
-    "title": "MinCut Query",
-    "full_title": "MCQUERY - MinCut Query",
-    "judge": "VN SPOJ / VNOI",
-    "judge_url": "https://vn.spoj.com/problems/MCQUERY/",
+    "code": "MAXIMUMFLOWPUSHRELABEL",
+    "title": "Maximum Flow",
+    "full_title": "Maximum Flow",
+    "judge": "AOJ",
+    "judge_url": "https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_A",
     "main_topic": "Graphs -> Maximum Flow",
     "secondary_topics": [
-      "Gomory-Hu tree",
-      "DSU",
-      "All-pairs min-cut"
+      "Push-Relabel",
+      "Highest-label",
+      "Gap heuristic"
     ],
-    "difficulty": "hard",
+    "difficulty": "medium",
     "status": "solved",
     "primary_slug": "graphs/flow",
     "topic_tags": [
-      "graphs/flow",
-      "data-structures/dsu",
-      "graphs/trees",
-      "graphs/gomory-hu"
+      "graphs/flow"
     ],
-    "patterns": [
-      "all-pairs min-cut",
-      "cut tree",
-      "count pairs by threshold"
-    ],
-    "tracks": [
-      "VN SPOJ",
-      "ICPC-style"
-    ],
-    "note_path": "practice/ladders/graphs/flow/mcquery.md",
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/flow/maximumflowpushrelabel.md",
     "ladder_path": "practice/ladders/graphs/flow/README.md",
     "tutorial_path": "topics/graphs/flow/README.md",
-    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp"
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/maximumflowpushrelabel.cpp"
   },
   {
     "code": "MINCOST",
@@ -2423,6 +2747,89 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/reactorcooling.cpp"
   },
   {
+    "code": "GENERALMATCHING",
+    "title": "Matching on General Graph",
+    "full_title": "Matching on General Graph",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/general_matching",
+    "main_topic": "Graphs -> Edmonds Blossom / General Matching",
+    "secondary_topics": [
+      "Edmonds blossom",
+      "Maximum cardinality matching",
+      "Odd-cycle contraction"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/general-matching",
+    "topic_tags": [
+      "graphs/general-matching"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/general-matching/generalmatching.md",
+    "ladder_path": "practice/ladders/graphs/general-matching/README.md",
+    "tutorial_path": "topics/graphs/general-matching/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/general-matching/generalmatching.cpp"
+  },
+  {
+    "code": "GLOBALMINCUT",
+    "title": "Minimum Cut",
+    "full_title": "Minimum Cut",
+    "judge": "POJ 2914",
+    "judge_url": "http://poj.org/problem?id=2914",
+    "main_topic": "Graphs -> Randomized / Global Min-Cut",
+    "secondary_topics": [
+      "Stoer-Wagner",
+      "Global min-cut",
+      "Undirected weighted graph"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/global-min-cut",
+    "topic_tags": [
+      "graphs/global-min-cut"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/global-min-cut/globalmincut.md",
+    "ladder_path": "practice/ladders/graphs/global-min-cut/README.md",
+    "tutorial_path": "topics/graphs/global-min-cut/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/global-min-cut/globalmincut.cpp"
+  },
+  {
+    "code": "MCQUERY",
+    "title": "MinCut Query",
+    "full_title": "MCQUERY - MinCut Query",
+    "judge": "VN SPOJ / VNOI",
+    "judge_url": "https://vn.spoj.com/problems/MCQUERY/",
+    "main_topic": "Graphs -> Gomory-Hu Tree",
+    "secondary_topics": [
+      "Maximum flow",
+      "DSU"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/gomory-hu",
+    "topic_tags": [
+      "graphs/gomory-hu",
+      "data-structures/dsu",
+      "graphs/trees"
+    ],
+    "patterns": [
+      "all-pairs min-cut",
+      "cut tree",
+      "count pairs by threshold"
+    ],
+    "tracks": [
+      "VN SPOJ",
+      "ICPC-style"
+    ],
+    "note_path": "practice/ladders/graphs/gomory-hu/mcquery.md",
+    "ladder_path": "practice/ladders/graphs/gomory-hu/README.md",
+    "tutorial_path": "topics/graphs/gomory-hu/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp"
+  },
+  {
     "code": "BUILDINGROADS",
     "title": "Building Roads",
     "full_title": "Building Roads",
@@ -2520,6 +2927,31 @@
     "ladder_path": "practice/ladders/graphs/hld/README.md",
     "tutorial_path": "topics/graphs/hld/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hld/pathqueries2.cpp"
+  },
+  {
+    "code": "TASKASSIGNMENT",
+    "title": "Task Assignment",
+    "full_title": "Task Assignment",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/2129",
+    "main_topic": "Graphs -> Hungarian / Assignment Problem",
+    "secondary_topics": [
+      "Weighted bipartite matching",
+      "Assignment matrix",
+      "Perfect matching output"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/hungarian-assignment",
+    "topic_tags": [
+      "graphs/hungarian-assignment"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/hungarian-assignment/taskassignment.md",
+    "ladder_path": "practice/ladders/graphs/hungarian-assignment/README.md",
+    "tutorial_path": "topics/graphs/hungarian-assignment/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/hungarian-assignment/taskassignment.cpp"
   },
   {
     "code": "COMPANYQUERIES2",
@@ -2733,6 +3165,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/shortest-paths/qos.cpp"
   },
   {
+    "code": "STABLEMARRIAGE",
+    "title": "Stable Marriage",
+    "full_title": "Stable Marriage",
+    "judge": "Canonical Gale-Shapley benchmark",
+    "judge_url": "https://www.ams.org/publicoutreach/feature-column/fc-2015-03",
+    "main_topic": "Graphs -> Stable Marriage",
+    "secondary_topics": [
+      "Deferred acceptance",
+      "Blocking pairs",
+      "Proposer-optimal stable matching"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "graphs/stable-marriage",
+    "topic_tags": [
+      "graphs/stable-marriage"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/stable-marriage/stablemarriage.md",
+    "ladder_path": "practice/ladders/graphs/stable-marriage/README.md",
+    "tutorial_path": "topics/graphs/stable-marriage/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/stable-marriage/stablemarriage.cpp"
+  },
+  {
     "code": "VOSTRIP",
     "title": "VOSTRIP",
     "full_title": "VOSTRIP",
@@ -2765,6 +3222,31 @@
     "ladder_path": "practice/ladders/graphs/tree-dp/README.md",
     "tutorial_path": "topics/dp/tree-dp/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-dp/vostrip.cpp"
+  },
+  {
+    "code": "TREEISOMORPHISM1",
+    "title": "Tree Isomorphism I",
+    "full_title": "Tree Isomorphism I",
+    "judge": "CSES",
+    "judge_url": "https://cses.fi/problemset/task/1700",
+    "main_topic": "Graphs -> Tree Isomorphism",
+    "secondary_topics": [
+      "Rooted trees",
+      "Canonical encoding",
+      "AHU-style subtree types"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "graphs/tree-isomorphism",
+    "topic_tags": [
+      "graphs/tree-isomorphism"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/graphs/tree-isomorphism/treeisomorphism1.md",
+    "ladder_path": "practice/ladders/graphs/tree-isomorphism/README.md",
+    "tutorial_path": "topics/graphs/tree-isomorphism/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/tree-isomorphism/treeisomorphism1.cpp"
   },
   {
     "code": "MTREECOL",
@@ -2892,6 +3374,31 @@
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/virtual-tree/kingdomanditscities.cpp"
   },
   {
+    "code": "HUFFMANCODING",
+    "title": "Huffman Coding Benchmark",
+    "full_title": "Huffman Coding Benchmark",
+    "judge": "Canonical greedy prefix-code benchmark",
+    "judge_url": "https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/Huffman.html",
+    "main_topic": "Greedy -> Huffman / Data Compression",
+    "secondary_topics": [
+      "Optimal merge",
+      "Prefix codes",
+      "Weighted path length"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "greedy/huffman-data-compression",
+    "topic_tags": [
+      "greedy/huffman-data-compression"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/greedy/huffman-data-compression/huffmancoding.md",
+    "ladder_path": "practice/ladders/greedy/huffman-data-compression/README.md",
+    "tutorial_path": "topics/greedy/huffman-data-compression/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/huffman-data-compression/huffmancoding.cpp"
+  },
+  {
     "code": "LEMONADELINE",
     "title": "Lemonade Line",
     "full_title": "Lemonade Line",
@@ -2988,6 +3495,31 @@
     "ladder_path": "practice/ladders/greedy/prefix-constraints/README.md",
     "tutorial_path": "topics/greedy/prefix-constraints/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/greedy/prefix-constraints/vodivide.cpp"
+  },
+  {
+    "code": "KTHTERMOFLINEARLYRECURRENTSEQUENCE",
+    "title": "K-th Term of Linearly Recurrent Sequence",
+    "full_title": "K-th Term of Linearly Recurrent Sequence",
+    "judge": "Library Checker",
+    "judge_url": "https://judge.yosupo.jp/problem/kth_term_of_linearly_recurrent_sequence",
+    "main_topic": "Math -> Berlekamp-Massey / Kitamasa",
+    "secondary_topics": [
+      "Kitamasa",
+      "Characteristic polynomial reduction",
+      "Modular arithmetic"
+    ],
+    "difficulty": "hard",
+    "status": "solved",
+    "primary_slug": "math/berlekamp-massey-kitamasa",
+    "topic_tags": [
+      "math/berlekamp-massey-kitamasa"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/math/berlekamp-massey-kitamasa/kthtermoflinearlyrecurrentsequence.md",
+    "ladder_path": "practice/ladders/math/berlekamp-massey-kitamasa/README.md",
+    "tutorial_path": "topics/math/berlekamp-massey-kitamasa/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/math/berlekamp-massey-kitamasa/kthtermoflinearlyrecurrentsequence.cpp"
   },
   {
     "code": "DISCRETELOGARITHMMOD",
@@ -3836,6 +4368,31 @@
     "ladder_path": "practice/ladders/strings/palindromes/README.md",
     "tutorial_path": "topics/strings/palindromes/README.md",
     "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/palindromes/longestpalindrome.cpp"
+  },
+  {
+    "code": "REGEXMEMBERSHIP",
+    "title": "Regex Membership",
+    "full_title": "Regex Membership",
+    "judge": "Canonical Thompson-NFA benchmark",
+    "judge_url": "https://algs4.cs.princeton.edu/54regexp/",
+    "main_topic": "Strings -> Regular Expressions / Finite Automata",
+    "secondary_topics": [
+      "Thompson construction",
+      "Epsilon closure",
+      "Active-state-set simulation"
+    ],
+    "difficulty": "medium",
+    "status": "solved",
+    "primary_slug": "strings/regex-finite-automata",
+    "topic_tags": [
+      "strings/regex-finite-automata"
+    ],
+    "patterns": [],
+    "tracks": [],
+    "note_path": "practice/ladders/strings/regex-finite-automata/regexmembership.md",
+    "ladder_path": "practice/ladders/strings/regex-finite-automata/README.md",
+    "tutorial_path": "topics/strings/regex-finite-automata/README.md",
+    "solution_url": "https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/strings/regex-finite-automata/regexmembership.cpp"
   },
   {
     "code": "REPEATINGSUBSTRING",

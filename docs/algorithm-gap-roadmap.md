@@ -7,13 +7,23 @@
 - Status: active
 - Last reviewed: 2026-04-25
 - Update triggers: after any broad coverage audit, after any major reprioritization, or when one of the listed waves ships
-- Canonical companion docs: [Roadmap](roadmap.md), [Expansion Roadmap](expansion-roadmap.md), [Freshness Backbone](freshness-backbone.md), [Source Map](source-map.md)
+- Canonical companion docs: [Roadmap](roadmap.md), [Expansion Roadmap](expansion-roadmap.md), [Book Coverage Roadmap](book-coverage-roadmap.md), [Freshness Backbone](freshness-backbone.md), [Source Map](source-map.md)
 
 This file exists so the repo can keep expanding deliberately without losing the distinction between:
 
 - high-ROI missing canon
 - useful second-wave refinements
 - low-ROI prestige coverage
+
+The broader `which major books and PDFs still expose gaps?` audit now lives in [Book Coverage Roadmap](book-coverage-roadmap.md). This file stays as the executable algorithm backlog after that wider audit has been compressed into a smaller queue.
+
+Book-backed status note on `2026-04-25`:
+
+- [x] `Hungarian / Assignment Problem` has now shipped as a full lane
+- [x] `Edmonds Blossom / General Matching` has now shipped as a full lane
+- [x] `Gomory-Hu Tree` has now shipped as a full lane
+- [x] `Randomized / Global Min-Cut` has now shipped as a full lane
+- the current matching/cut-side book-backed queue is closed
 
 ## How To Use This File
 

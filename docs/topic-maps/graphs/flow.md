@@ -6,7 +6,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 - Tutorial page: [Open tutorial](../../../topics/graphs/flow/README.md)
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
 - Repo problems currently tagged here: `5`
-- Repo companion pages: `2`
+- Repo companion pages: `4`
 - Curated external problems: `8`
 
 ## Microtopics
@@ -39,6 +39,8 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 | Material | Type |
 | --- | --- |
 | [Police Chase note](../../../practice/ladders/graphs/flow/policechase.md) | `anchor note` |
+| [Maximum Flow push-relabel note](../../../practice/ladders/graphs/flow/maximumflowpushrelabel.md) | `anchor note` |
+| [Push-Relabel hot sheet](../../../notebook/push-relabel-hot-sheet.md) | `quick reference` |
 | [Graph cheatsheet](../../../notebook/graph-cheatsheet.md) | `quick reference` |
 
 ## Curated External Problems
@@ -48,7 +50,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 | Problem | Source | Difficulty | Context | Style | Prerequisites | Tags | Why it fits |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | [Download Speed](https://cses.fi/problemset/task/1694) | `CSES` | `Medium` | - | Dinic; S-T Max Flow | Network Flow Basics; Residual Graph | Directed Graphs; S-T Cut; Max Flow; Capacity; Network Throughput | Clean source-sink max-flow application. |
-| [Maximum Flow](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_A) | `AOJ` | `Medium` | - | - | - | Max Flow; Dinic; Network | Official max-flow baseline. |
+| [Maximum Flow](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_6_A) | `AOJ` | `Medium` | - | - | - | Max Flow; Push-Relabel; Dinic; Network | Official max-flow baseline. |
 | [Police Chase](https://cses.fi/problemset/task/1695) | `CSES` | `Medium` | - | - | - | Min Cut; Max Flow; Edge Cut | Exact minimum cut with an output certificate. |
 
 ### Classics
@@ -76,7 +78,7 @@ Residual graphs, augmenting paths, and cut structure for max-flow and min-cut mo
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
 | `FFLOW` | Fast Maximum Flow | `primary` | `medium` | maximum flow; undirected capacities; capacity scaling | [Note](../../../practice/ladders/graphs/flow/fflow.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/fflow.cpp) |
-| `MCQUERY` | MinCut Query | `primary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MAXIMUMFLOWPUSHRELABEL` | Maximum Flow | `primary` | `medium` | - | [Note](../../../practice/ladders/graphs/flow/maximumflowpushrelabel.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/maximumflowpushrelabel.cpp) |
 | `MINCOST` | Luồng với chi phí nhỏ nhất | `primary` | `hard` | transportation network; flow reconstruction; duplicate-edge overwrite | [Note](../../../practice/ladders/graphs/flow/mincost.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mincost.cpp) |
 | `POLICECHASE` | Police Chase | `primary` | `medium` | unit capacity max flow; residual reachable cut; minimum edge cut certificate | [Note](../../../practice/ladders/graphs/flow/policechase.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/policechase.cpp) |
 | `REACTORCOOLING` | Reactor Cooling | `primary` | `hard` | feasible circulation; lower bounds; flow reconstruction | [Note](../../../practice/ladders/graphs/flow/reactorcooling.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/reactorcooling.cpp) |

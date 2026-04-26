@@ -1,11 +1,12 @@
 # Graphs -> Gomory-Hu Tree
 
-Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
+Cut-tree compression for all-pairs min-cut structure in one undirected weighted graph, built with n - 1 max-flow calls.
 
 - Topic slug: `graphs/gomory-hu`
-- Ladder page: [Open ladder](../../../practice/ladders/graphs/flow/README.md)
+- Tutorial page: [Open tutorial](../../../topics/graphs/gomory-hu/README.md)
+- Ladder page: [Open ladder](../../../practice/ladders/graphs/gomory-hu/README.md)
 - Repo problems currently tagged here: `1`
-- Repo companion pages: `0`
+- Repo companion pages: `5`
 - Curated external problems: `7`
 
 ## Microtopics
@@ -28,8 +29,19 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 
 | Source | Type |
 | --- | --- |
-| [Library Checker problem bank](https://github.com/yosupo06/library-checker-problems) | `Practice` |
-| [CSES Problem Set](https://cses.fi/problemset/) | `Practice` |
+| [Library Checker Gomory-Hu Tree](https://judge.yosupo.jp/problem/gomory_hu_tree) | `Practice` |
+| [Codeforces 343E - Pumping Stations](https://codeforces.com/problemset/problem/343/E) | `Practice` |
+| [UVa 11594 - All Pairs Maximum Flow](https://onlinejudge.org/external/115/11594.pdf) | `Practice` |
+
+## Repo Companion Material
+
+| Material | Type |
+| --- | --- |
+| [Gomory-Hu hot sheet](../../../notebook/gomory-hu-hot-sheet.md) | `quick reference` |
+| [Gomory-Hu starter route](../../../template-library.md) | `starter route` |
+| [MCQUERY note](../../../practice/ladders/graphs/gomory-hu/mcquery.md) | `anchor note` |
+| [Maximum Flow tutorial](../../../topics/graphs/flow/README.md) | `compare point` |
+| [DSU tutorial](../../../topics/data-structures/dsu/README.md) | `compare point` |
 
 ## Curated External Problems
 
@@ -64,7 +76,7 @@ Advanced cut-tree technique for all-pairs min-cut queries in undirected graphs.
 
 | Code | Title | Fit | Difficulty | Pattern | Note | Solution |
 | --- | --- | --- | --- | --- | --- | --- |
-| `MCQUERY` | MinCut Query | `secondary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/flow/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
+| `MCQUERY` | MinCut Query | `primary` | `hard` | all-pairs min-cut; cut tree; count pairs by threshold | [Note](../../../practice/ladders/graphs/gomory-hu/mcquery.md) | [Code](https://github.com/mtuann/competitive-programming-cpp/blob/main/solutions/graphs/flow/mcquery.cpp) |
 
 ## Regeneration
 

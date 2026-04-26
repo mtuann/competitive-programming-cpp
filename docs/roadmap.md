@@ -7,11 +7,11 @@
 - Status: active
 - Last reviewed: 2026-04-25
 - Update triggers: after any major topic-page pass, new content layer, or roadmap reprioritization
-- Canonical companion docs: [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md), [Freshness Backbone](freshness-backbone.md), [Expansion Roadmap](expansion-roadmap.md), [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), [CRT / Lucas / Mobius Wave Plan](crt-lucas-mobius-wave-plan.md)
+- Canonical companion docs: [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md), [Freshness Backbone](freshness-backbone.md), [Expansion Roadmap](expansion-roadmap.md), [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), [Book Coverage Roadmap](book-coverage-roadmap.md), [CRT / Lucas / Mobius Wave Plan](crt-lucas-mobius-wave-plan.md)
 
 This file exists so future work does not drift into memory or scattered chat history.
 
-The current post-core algorithm backlog now lives primarily in [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), while this file stays focused on repo-wide planning and format policy.
+The current post-core algorithm backlog now lives primarily in [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), while broad source-audit synthesis now lives in [Book Coverage Roadmap](book-coverage-roadmap.md). This file stays focused on repo-wide planning and format policy.
 
 ## How To Use This File
 

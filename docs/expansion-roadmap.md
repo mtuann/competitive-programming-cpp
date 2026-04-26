@@ -7,7 +7,7 @@
 - Status: active
 - Last reviewed: 2026-04-25
 - Update triggers: after each expansion wave, after any major reprioritization, or after a new external-source audit
-- Canonical companion docs: [Roadmap](roadmap.md), [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
+- Canonical companion docs: [Roadmap](roadmap.md), [Algorithm Gap Roadmap](algorithm-gap-roadmap.md), [Book Coverage Roadmap](book-coverage-roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
 
 This file exists so future expansion work stays phased, source-backed, and small enough to preserve quality.
 

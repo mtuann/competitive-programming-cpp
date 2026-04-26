@@ -146,7 +146,7 @@ Contributor note contract lives here:
 
 - [QBFLOWER - Tặng hoa](ladders/graphs/matching/qbflower.md)
 - [FFLOW - Fast Maximum Flow](ladders/graphs/flow/fflow.md)
-- [MCQUERY - MinCut Query](ladders/graphs/flow/mcquery.md)
+- [MCQUERY - MinCut Query](ladders/graphs/gomory-hu/mcquery.md)
 - [MINCOST - Luồng với chi phí nhỏ nhất](ladders/graphs/flow/mincost.md)
 - [QOS - Chất lượng dịch vụ](ladders/graphs/shortest-paths/qos.md)
 - [MTREECOL - Color a tree](ladders/graphs/trees/mtreecol.md)
@@ -165,6 +165,7 @@ Contributor note contract lives here:
 - [POST2 - A cộng B version 2](ladders/math/fft/post2.md)
 - [CRYPTKEY - Chìa khóa mã số](ladders/math/gcd-lcm/cryptkey.md)
 - [LAMP - Dàn đèn màu](ladders/math/number-theory-basics/lamp.md)
+- [Counting Necklaces](ladders/combinatorics/burnside-polya/countingnecklaces.md)
 - [VOSFENCE - Xay hang rao](ladders/combinatorics/bounded-compositions/vosfence.md)
 - [VOITSORT - Cây hoán vị](ladders/combinatorics/lexicographic-enumeration/voitsort.md)
 

@@ -7,7 +7,7 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 - Ladder page: [Open ladder](../../../practice/ladders/graphs/matching/README.md)
 - Repo problems currently tagged here: `2`
 - Repo companion pages: `0`
-- Curated external problems: `11`
+- Curated external problems: `12`
 
 ## Microtopics
 
@@ -50,6 +50,7 @@ Augmenting-path techniques for bipartite matching and reductions to cover and as
 | [Bipartite Matching](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_7_A) | `AOJ` | `Easy` | - | - | - | Bipartite Graph; Augmenting Paths; Kuhn | Official bipartite matching baseline. |
 | [Guardian of Decency](https://onlinejudge.org/external/120/12083.pdf) | `UVa` | `Medium` | Bipartite Matching, Independent Set | Compatibility Graph; Matching To Cover | Hall/Konig Intuition | Compatibility Graph | A classic compatibility graph that reduces to maximum matching. |
 | [School Dance](https://cses.fi/problemset/task/1696) | `CSES` | `Medium` | Bipartite Matching | Augmenting Paths; Bipartite Matching | Bipartite Graph Modeling | Bipartite Graphs; Pairing; Construction | Matching plus explicit pair recovery. |
+| [Stable Marriage](https://www.ams.org/publicoutreach/feature-column/fc-2015-03) | `Canonical / Gale-Shapley` | `Medium` | - | Two-Sided Preferences; Deferred Acceptance | Bipartite Pairing Model; Strict Preferences | Stable Matching; Preferences; Blocking Pair | The cleanest stability-based sibling once one-to-one pairing is no longer about size or cost. |
 | [General Matching](https://judge.yosupo.jp/problem/general_matching) | `Library Checker` | `Hard` | - | - | - | Blossom; Non-Bipartite; Verify | Trusted general-graph matching verification task. |
 | [Task Assignment](https://cses.fi/problemset/task/2129) | `CSES` | `Hard` | - | - | - | Assignment; Weighted Matching; Bipartite Graph | Weighted bipartite matching in assignment form. |
 
