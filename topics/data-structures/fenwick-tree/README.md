@@ -69,6 +69,95 @@ For the first few indices, the stored blocks are:
 
 This table is the whole data structure in miniature. Every loop in a Fenwick tree is just moving between these blocks.
 
+## One Picture Before Code
+
+```mermaid
+flowchart LR
+  A["bit[i] stores one suffix block [i - lowbit(i) + 1, i]"]
+  A --> B["prefix(r): keep stripping the rightmost block"]
+  A --> C["add(i, delta): climb to every larger block that still contains i"]
+  B --> D["Visited blocks are disjoint and tile [1, r]"]
+  C --> E["Touched blocks all absorb the same delta"]
+```
+
+The point is not to memorize two loops separately.
+
+Both loops are traversing the same family of binary-sized suffix blocks in opposite directions.
+
+## Fenwick Playground
+
+<div class="visual-card" data-fenwick-visualizer>
+  <p class="visual-caption">
+    Prefix query moves downward by subtracting <code>lowbit</code>. Point update moves upward by adding <code>lowbit</code>.
+    Watch the exact blocks that get touched.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Prefix r
+      <select data-role="prefix-index">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6" selected>6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-prefix">Show prefix query</button>
+    <label>
+      Update index
+      <select data-role="update-index">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected>5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <label>
+      Delta
+      <select data-role="update-delta">
+        <option value="1">+1</option>
+        <option value="3" selected>+3</option>
+        <option value="-2">-2</option>
+        <option value="5">+5</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-update">Apply point update</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-cluster">
+    <div>
+      <h4>Underlying array</h4>
+      <div class="visual-strip visual-strip--eight" data-role="array-strip"></div>
+    </div>
+    <div>
+      <h4>Fenwick blocks</h4>
+      <div class="visual-strip visual-strip--eight" data-role="bit-strip"></div>
+    </div>
+    <div class="visual-ledger">
+      <div class="visual-stat">
+        <strong>Invariant</strong>
+        <div data-role="invariant"></div>
+      </div>
+      <div class="visual-stat">
+        <strong>Touched path</strong>
+        <code data-role="path"></code>
+      </div>
+      <div class="visual-stat">
+        <strong>Result</strong>
+        <code data-role="result"></code>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
 ## From Brute Force To The Right Idea
 
 Suppose we need two online operations:

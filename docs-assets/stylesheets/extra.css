@@ -349,6 +349,106 @@ body {
   color: var(--md-default-fg-color--light);
 }
 
+.visual-strip {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.visual-strip--eight {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.visual-cell {
+  padding: 0.7rem 0.55rem;
+  border: 1px solid var(--site-border);
+  border-radius: 0.9rem;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.visual-cell small {
+  display: block;
+  margin-bottom: 0.18rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.74rem;
+}
+
+.visual-cell strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.visual-cell code {
+  display: block;
+  margin-top: 0.22rem;
+  font-size: 0.78rem;
+}
+
+.visual-cell.is-highlight {
+  border-color: rgba(37, 99, 235, 0.48);
+  background: rgba(191, 219, 254, 0.55);
+  transform: translateY(-2px);
+}
+
+.visual-cell.is-secondary {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(253, 230, 138, 0.46);
+}
+
+.visual-cell.is-muted {
+  opacity: 0.55;
+}
+
+.visual-cluster {
+  display: grid;
+  gap: 1rem;
+}
+
+.visual-cluster h4,
+.visual-cluster h5 {
+  margin: 0 0 0.55rem;
+}
+
+.visual-tree {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.visual-tree-row {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.visual-tree-row--1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.visual-tree-row--2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.visual-tree-row--4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.visual-tree-row--8 {
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.visual-tree-node {
+  min-width: 0;
+}
+
+.visual-ledger {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.visual-ledger code {
+  white-space: pre-wrap;
+}
+
 .mermaid {
   text-align: center;
 }
@@ -382,6 +482,18 @@ body {
   background: rgba(255, 255, 255, 0.03);
 }
 
+[data-md-color-scheme="slate"] .visual-cell {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+[data-md-color-scheme="slate"] .visual-cell.is-highlight {
+  background: rgba(29, 78, 216, 0.26);
+}
+
+[data-md-color-scheme="slate"] .visual-cell.is-secondary {
+  background: rgba(194, 88, 24, 0.22);
+}
+
 @media screen and (max-width: 76.1875em) {
   .visual-grid {
     grid-template-columns: 1fr;
@@ -389,6 +501,15 @@ body {
 
   .visual-surface {
     min-height: 21rem;
+  }
+}
+
+@media screen and (max-width: 59.9375em) {
+  .visual-strip--eight,
+  .visual-tree-row--8,
+  .visual-tree-row--4,
+  .visual-tree-row--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

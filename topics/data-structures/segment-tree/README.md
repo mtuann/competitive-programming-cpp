@@ -96,6 +96,108 @@ for the interval `[L, R)` owned by node `v`.
 
 That one sentence is the whole data structure. Every proof and every bug check comes back to it.
 
+## One Picture Before Code
+
+```mermaid
+flowchart TD
+  A["Root stores the whole interval [0, n)"]
+  A --> B["Split every interval into left and right halves"]
+  B --> C["Query [l, r): ignore outside, take full cover, split partial overlap"]
+  B --> D["Point update: change one leaf, then repair ancestors"]
+  C --> E["Fully covered nodes form a canonical decomposition"]
+  D --> F["Only one leaf-to-root path changes"]
+```
+
+The tree is not mainly about recursion.
+
+It is about storing one stable summary per interval and then reusing those summaries whenever a query interval can be tiled by them.
+
+## Segment Tree Playground
+
+<div class="visual-card" data-segment-tree-visualizer>
+  <p class="visual-caption">
+    Query a range to see canonical decomposition, then set one position to see the single repair path back to the root.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Query l
+      <select data-role="query-l">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </label>
+    <label>
+      Query r
+      <select data-role="query-r">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7" selected>7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-query">Show range query</button>
+    <label>
+      Update index
+      <select data-role="update-index">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected>5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </label>
+    <label>
+      New value
+      <select data-role="update-value">
+        <option value="0">0</option>
+        <option value="4">4</option>
+        <option value="9" selected>9</option>
+        <option value="12">12</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-update">Apply point set</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-cluster">
+    <div>
+      <h4>Underlying array</h4>
+      <div class="visual-strip visual-strip--eight" data-role="array-strip"></div>
+    </div>
+    <div>
+      <h4>Segment tree summaries</h4>
+      <div class="visual-tree" data-role="tree"></div>
+    </div>
+    <div class="visual-ledger">
+      <div class="visual-stat">
+        <strong>Invariant</strong>
+        <div data-role="invariant"></div>
+      </div>
+      <div class="visual-stat">
+        <strong>Touched structure</strong>
+        <code data-role="path"></code>
+      </div>
+      <div class="visual-stat">
+        <strong>Result</strong>
+        <code data-role="result"></code>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

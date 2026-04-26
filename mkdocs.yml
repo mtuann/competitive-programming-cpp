@@ -79,6 +79,8 @@ extra_javascript:
   - assets/javascripts/problem-finder.js
   - assets/javascripts/mathjax.js
   - assets/javascripts/bfs-dfs-visualizer.js
+  - assets/javascripts/fenwick-visualizer.js
+  - assets/javascripts/segment-tree-visualizer.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:

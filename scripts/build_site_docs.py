@@ -11,7 +11,9 @@ STATIC_FILES = {
     "template-library.md": "template-library.md",
     "docs-assets/stylesheets/extra.css": "assets/stylesheets/extra.css",
     "docs-assets/javascripts/bfs-dfs-visualizer.js": "assets/javascripts/bfs-dfs-visualizer.js",
+    "docs-assets/javascripts/fenwick-visualizer.js": "assets/javascripts/fenwick-visualizer.js",
     "docs-assets/javascripts/problem-finder.js": "assets/javascripts/problem-finder.js",
+    "docs-assets/javascripts/segment-tree-visualizer.js": "assets/javascripts/segment-tree-visualizer.js",
     "docs-assets/javascripts/mathjax.js": "assets/javascripts/mathjax.js",
 }
 
