@@ -64,6 +64,85 @@ This is the first mental split:
 - BFS is about **levels**
 - DFS is about **search-tree structure**
 
+## One Picture Before Code
+
+```mermaid
+flowchart LR
+  Q{"What invariant does the statement actually need?"}
+  U["Fewest edges or moves in an unweighted graph"]
+  S["Search-tree structure, components, cycles, or timestamps"]
+  Q --> U --> B["Choose BFS"]
+  Q --> S --> D["Choose DFS"]
+  B --> BL["Distance layers stay correct"]
+  D --> DL["One active branch stays visible"]
+```
+
+The real choice is not "queue versus recursion."
+
+It is "which traversal preserves the thing the statement will later ask me to prove?"
+
+## Traversal Playground
+
+<div class="visual-card" data-bfs-dfs-visualizer>
+  <p class="visual-caption">
+    Use the same graph and source for both traversals, then watch how the frontier changes.
+    BFS expands by layers; DFS commits to one branch until it must backtrack.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Source
+      <select data-role="source">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-bfs">Run BFS</button>
+    <button type="button" data-role="run-dfs">Run DFS</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Current invariant</strong>
+          <div data-role="invariant">
+            Pick BFS when the statement cares about unweighted shortest distance; pick DFS when it cares about search structure.
+          </div>
+        </div>
+        <div class="visual-stat">
+          <strong>Frontier snapshot</strong>
+          <code data-role="frontier">Queue / active branch: waiting to run</code>
+        </div>
+        <div class="visual-stat">
+          <strong>Visit order</strong>
+          <code data-role="order">-</code>
+        </div>
+        <div class="visual-stat">
+          <strong>Distance or depth</strong>
+          <code data-role="metric">-</code>
+        </div>
+        <div class="visual-stat">
+          <strong>Traversal tree parent</strong>
+          <code data-role="parent">-</code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note">
+        The adjacency order is alphabetical so the BFS and DFS orders are deterministic.
+      </p>
+    </div>
+  </div>
+</div>
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Re-Search From Scratch

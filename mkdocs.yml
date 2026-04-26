@@ -66,7 +66,11 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra_css:
   - assets/stylesheets/extra.css
@@ -74,6 +78,7 @@ extra_css:
 extra_javascript:
   - assets/javascripts/problem-finder.js
   - assets/javascripts/mathjax.js
+  - assets/javascripts/bfs-dfs-visualizer.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
