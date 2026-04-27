@@ -1003,6 +1003,98 @@ body {
   font-weight: 800;
 }
 
+.broken-profile-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.broken-profile-title,
+.broken-profile-subtitle,
+.broken-profile-col-label,
+.broken-profile-row-label,
+.broken-profile-cell-value,
+.broken-profile-cell-sub,
+.broken-profile-pointer-label {
+  fill: var(--md-default-fg-color);
+}
+
+.broken-profile-title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.broken-profile-subtitle {
+  font-size: 0.82rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.broken-profile-col-label,
+.broken-profile-row-label {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.broken-profile-cell {
+  fill: rgba(255, 255, 255, 0.94);
+  stroke: rgba(22, 59, 115, 0.18);
+  stroke-width: 1.5;
+}
+
+.broken-profile-cell.is-pre-filled {
+  fill: rgba(233, 213, 255, 0.62);
+  stroke: rgba(124, 58, 237, 0.24);
+}
+
+.broken-profile-cell.is-next-filled {
+  fill: rgba(191, 219, 254, 0.74);
+  stroke: rgba(29, 78, 216, 0.3);
+}
+
+.broken-profile-cell.is-resolved {
+  stroke: rgba(5, 150, 105, 0.34);
+}
+
+.broken-profile-cell.is-pointer {
+  stroke: rgba(217, 119, 6, 0.46);
+}
+
+.broken-profile-cell-value {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.broken-profile-cell-sub {
+  font-size: 0.74rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.broken-profile-overlay {
+  stroke-width: 1.8;
+}
+
+.broken-profile-overlay.is-vertical {
+  fill: rgba(245, 158, 11, 0.18);
+  stroke: rgba(217, 119, 6, 0.38);
+}
+
+.broken-profile-overlay.is-horizontal {
+  fill: rgba(59, 130, 246, 0.14);
+  stroke: rgba(29, 78, 216, 0.34);
+}
+
+.broken-profile-pointer {
+  stroke: rgba(217, 119, 6, 0.72);
+  stroke-width: 2.2;
+  stroke-dasharray: 5 4;
+}
+
+.broken-profile-pointer-label {
+  font-size: 0.76rem;
+  font-weight: 800;
+  fill: rgba(180, 83, 9, 1);
+}
+
 .graph-visual-surface {
   min-height: 30rem;
   height: 30rem;
@@ -1277,6 +1369,56 @@ body {
 [data-md-color-scheme="slate"] .gauss-cell.is-pivot {
   fill: rgba(37, 99, 235, 0.28);
   stroke: rgba(147, 197, 253, 0.36);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-title,
+[data-md-color-scheme="slate"] .broken-profile-col-label,
+[data-md-color-scheme="slate"] .broken-profile-row-label,
+[data-md-color-scheme="slate"] .broken-profile-cell-value,
+[data-md-color-scheme="slate"] .broken-profile-pointer-label {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-subtitle,
+[data-md-color-scheme="slate"] .broken-profile-cell-sub {
+  fill: rgba(191, 219, 254, 0.86);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-cell {
+  fill: rgba(18, 27, 42, 0.92);
+  stroke: rgba(147, 197, 253, 0.16);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-cell.is-pre-filled {
+  fill: rgba(109, 40, 217, 0.24);
+  stroke: rgba(196, 181, 253, 0.24);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-cell.is-next-filled {
+  fill: rgba(37, 99, 235, 0.28);
+  stroke: rgba(147, 197, 253, 0.3);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-cell.is-resolved {
+  stroke: rgba(52, 211, 153, 0.32);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-cell.is-pointer {
+  stroke: rgba(251, 191, 36, 0.42);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-overlay.is-vertical {
+  fill: rgba(180, 83, 9, 0.22);
+  stroke: rgba(251, 191, 36, 0.36);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-overlay.is-horizontal {
+  fill: rgba(37, 99, 235, 0.18);
+  stroke: rgba(147, 197, 253, 0.32);
+}
+
+[data-md-color-scheme="slate"] .broken-profile-pointer {
+  stroke: rgba(251, 191, 36, 0.6);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

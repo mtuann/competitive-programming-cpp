@@ -29,6 +29,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Digit DP](../topics/dp/digit-dp/README.md)
 - [FFT And NTT](../topics/math/fft-ntt/README.md)
 - [Gaussian Elimination](../topics/math/gaussian-elimination/README.md)
+- [Broken Profile / Plug DP](../topics/dp/broken-profile/README.md)
 
 Those pages confirm two things:
 

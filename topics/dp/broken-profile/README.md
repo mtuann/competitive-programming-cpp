@@ -99,6 +99,85 @@ That convention is the whole lane.
 
 Everything else is just careful generation of the next frontier.
 
+## Transition Playground
+
+<div class="visual-card" data-broken-profile-visualizer>
+  <p class="visual-caption">
+    Explore how one `cur_mask` generates legal `next_mask` values for the domino-tiling starter. Here a bit `1` means
+    "this row of the current column is already occupied before we start filling it."
+  </p>
+  <div class="visual-controls">
+    <label>
+      Current mask
+      <select data-role="mask-select"></select>
+    </label>
+    <label>
+      Legal branch
+      <select data-role="branch-select"></select>
+    </label>
+    <button type="button" data-role="prev-step">Previous step</button>
+    <button type="button" data-role="next-step">Next step</button>
+    <button type="button" data-role="reset">Reset branch</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current frontier</strong>
+          <code data-role="mask"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Chosen completion</strong>
+          <code data-role="branch"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Accumulated next frontier</strong>
+          <code data-role="partial"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Latest step</strong>
+          <code data-role="result"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Branch steps</strong>
+          <ul data-role="actions"></ul>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- the scan pointer moves top to bottom, and every row above it is already fully resolved for the current column
+- a horizontal domino does not just fill the current cell; it also writes a `1` bit into `next_mask`, because that row will already be occupied in the next column
+
+Why it matters:
+
+- this is the shortest route from the abstract sentence "generate next masks by DFS" to the exact recursion the starter template uses
+- it also makes the biggest beginner trap visible: `cur_mask` describes occupancy entering the current column, while `next_mask` describes occupancy exported to the next one
+
+Code bridge:
+
+- each branch here is exactly one path through `generate_next_masks(row, height, cur_mask, next_mask, ...)`
+- `skip` matches the `if (cur_mask & (1 << row))` branch, `horizontal` matches `next_mask | (1 << row)`, and `vertical` matches the `row + 2` recursion
+
+Boundary:
+
+- this widget teaches the occupancy-mask starter only; it does not cover full plug DP where the frontier must store connectivity labels
+- the real DP still multiplies this one-column transition generator across many columns and sums all branches into `dp_next[next_mask]`
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

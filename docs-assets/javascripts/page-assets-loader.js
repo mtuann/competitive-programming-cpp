@@ -128,6 +128,7 @@
       ensureOptionalScript("[data-digit-dp-visualizer]", "digit-dp-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-fft-visualizer]", "fft-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-gaussian-visualizer]", "gaussian-elimination-visualizer.js", [ensureD3]),
+      ensureOptionalScript("[data-broken-profile-visualizer]", "broken-profile-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-lowlink-visualizer]", "lowlink-visualizer.js", [ensureCytoscape]),
       ensureOptionalScript("[data-aho-visualizer]", "aho-visualizer.js", [ensureCytoscape]),
       ensureOptionalScript("[data-max-flow-visualizer]", "max-flow-visualizer.js", [ensureCytoscape]),
