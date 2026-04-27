@@ -23,6 +23,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Euler Tour / Subtree Queries](../topics/graphs/euler-tour-subtree/README.md)
 - [Two Pointers And Sliding Window](../topics/foundations/patterns/two-pointers/README.md)
 - [Bridges, Articulation Points, And Biconnected Components](../topics/graphs/bridges-articulation/README.md)
+- [Aho-Corasick](../topics/strings/aho-corasick/README.md)
 
 Those pages confirm two things:
 

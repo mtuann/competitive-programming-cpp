@@ -93,6 +93,81 @@ The most important conceptual invariant is:
 
 So when a transition fails, the automaton does **not** restart blindly. It falls back to the longest suffix state that could still continue matching.
 
+## Automaton Playground
+
+<div class="visual-card" data-aho-visualizer>
+  <p class="visual-caption">
+    Replay the classic dictionary `{he, she, hers, his}` against the text `ushers`. The important thing to watch is that a
+    mismatch does not erase progress; the automaton falls to the longest suffix state that is still a trie prefix.
+  </p>
+  <div class="chip-row">
+    <span class="chip">Blue edge: goto transition actually taken</span>
+    <span class="chip">Purple dashed edge: failure link used on this step</span>
+    <span class="chip">Blue node: current automaton state</span>
+    <span class="chip">Gold node: output state</span>
+  </div>
+  <div class="visual-controls">
+    <button type="button" data-role="step">Step once</button>
+    <button type="button" data-role="run">Run to finish</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface graph-visual-surface" data-role="canvas"></div>
+      <h4>Text stream</h4>
+      <div class="visual-strip visual-strip--six" data-role="text-strip"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>State meaning</strong>
+          <div data-role="state-meaning"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Processed prefix</strong>
+          <code data-role="prefix"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Latest transition</strong>
+          <code data-role="transition"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Failure-link use</strong>
+          <code data-role="failure"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Outputs on this step</strong>
+          <code data-role="output"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- the current node always means one concrete suffix of the processed text: the longest suffix that is also a trie prefix
+- on the `r` in `ushers`, the automaton does not jump back to the root from `she`; it first follows the failure link to `he`, and only then continues by `r`
+
+Why it matters:
+
+- this is the shortest route from memorizing “failure links are like KMP fallback” to seeing the reuse directly on a real dictionary
+- it also shows why output propagation matters: landing on `she` should report both `she` and suffix pattern `he`
+
+Code bridge:
+
+- the widget is the standard scan loop: while there is no outgoing trie edge, follow `link[v]`; then take the goto edge if it exists
+- the output list shown on each landing state is exactly what a propagated `out[v]` field or terminal-list walk would report
+
+Boundary:
+
+- this demo is dictionary matching only; DP over generated strings reuses the same automaton states, but the outer loop is different
+- one pattern does not need this machinery at all; reopen [KMP](../kmp/README.md) when the dictionary collapses to one string
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

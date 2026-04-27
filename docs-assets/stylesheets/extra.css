@@ -391,6 +391,10 @@ body {
   grid-template-columns: repeat(8, minmax(0, 1fr));
 }
 
+.visual-strip--six {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .visual-cell {
   padding: 0.7rem 0.55rem;
   border: 1px solid var(--site-border);
@@ -427,6 +431,17 @@ body {
 .visual-cell.is-secondary {
   border-color: rgba(245, 158, 11, 0.45);
   background: rgba(253, 230, 138, 0.46);
+}
+
+.visual-cell.is-current {
+  border-color: rgba(124, 58, 237, 0.52);
+  background: rgba(233, 213, 255, 0.58);
+  transform: translateY(-2px);
+}
+
+.visual-cell.is-processed {
+  border-color: rgba(5, 150, 105, 0.36);
+  background: rgba(209, 250, 229, 0.5);
 }
 
 .visual-cell.is-muted {
@@ -974,6 +989,14 @@ body {
   background: rgba(194, 88, 24, 0.22);
 }
 
+[data-md-color-scheme="slate"] .visual-cell.is-current {
+  background: rgba(109, 40, 217, 0.26);
+}
+
+[data-md-color-scheme="slate"] .visual-cell.is-processed {
+  background: rgba(5, 150, 105, 0.22);
+}
+
 @media screen and (max-width: 76.1875em) {
   .visual-grid {
     grid-template-columns: 1fr;
@@ -999,6 +1022,7 @@ body {
 
 @media screen and (max-width: 59.9375em) {
   .visual-strip--eight,
+  .visual-strip--six,
   .visual-tree-row--8,
   .visual-tree-row--4,
   .visual-tree-row--2 {

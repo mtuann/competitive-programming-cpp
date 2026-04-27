@@ -126,6 +126,7 @@
       ensureOptionalScript("[data-euler-tour-visualizer]", "euler-tour-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-two-pointers-visualizer]", "two-pointers-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-lowlink-visualizer]", "lowlink-visualizer.js", [ensureCytoscape]),
+      ensureOptionalScript("[data-aho-visualizer]", "aho-visualizer.js", [ensureCytoscape]),
     ]);
 
     results.forEach((result) => {
