@@ -214,6 +214,77 @@ This first route intentionally does **not** try to teach all of:
 - determinant / inverse / rank as separate full lanes
 - sparse matrix engineering
 
+## Elimination Playground
+
+<div class="visual-card" data-gaussian-visualizer>
+  <p class="visual-caption">
+    Replay the same modulo-`7` micro example used on this page. The goal is to make `pivot -> normalize -> eliminate`
+    feel mechanical before you look back at the full template.
+  </p>
+  <div class="visual-controls">
+    <button type="button" data-role="prev">Previous stage</button>
+    <button type="button" data-role="next">Next stage</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current stage</strong>
+          <code data-role="stage"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Row operation</strong>
+          <code data-role="operation"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Pivot map</strong>
+          <code data-role="where"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Matrix meaning</strong>
+          <div data-role="status"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Local formulas</strong>
+          <ul data-role="formulas"></ul>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- one pivot column is processed at a time; once a pivot is chosen, the goal is to make that column `1` at the pivot row and `0` everywhere else
+- the augmented `rhs` column changes together with the coefficient columns, because row operations preserve the whole solution set, not just the left side
+
+Why it matters:
+
+- this is the shortest route from the abstract phrase "row operations preserve solutions" to the exact contest loop structure you implement
+- it also makes the prime-mod first route feel justified: normalization is safe exactly because every nonzero pivot is invertible
+
+Code bridge:
+
+- each stage is one template move: choose pivot row, optionally swap, normalize by inverse, eliminate the pivot column from other rows
+- the `where[col]` mapping in code is just the bookkeeping version of the highlighted pivot map in the widget
+
+Boundary:
+
+- this example is intentionally tiny and consistent, so it does not show row swaps, free variables, or inconsistency rows
+- those cases use the same mechanics, but after elimination you must additionally detect missing pivots and rows of the form `0 = nonzero`
+
 ## Worked Micro Example
 
 Solve modulo `7`:
