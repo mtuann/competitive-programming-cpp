@@ -473,6 +473,109 @@ body {
   min-width: 0;
 }
 
+.binary-search-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.binary-search-window {
+  fill: rgba(191, 219, 254, 0.2);
+  stroke: rgba(37, 99, 235, 0.38);
+  stroke-width: 1.5;
+  stroke-dasharray: 7 6;
+}
+
+.binary-search-cell {
+  stroke-width: 1.4;
+  transition: opacity 140ms ease;
+}
+
+.binary-search-cell.is-bad {
+  fill: rgba(253, 230, 138, 0.58);
+  stroke: rgba(217, 119, 6, 0.4);
+}
+
+.binary-search-cell.is-good {
+  fill: rgba(191, 219, 254, 0.62);
+  stroke: rgba(37, 99, 235, 0.32);
+}
+
+.binary-search-cell.is-candidate {
+  opacity: 1;
+}
+
+.binary-search-cell.is-eliminated {
+  opacity: 0.38;
+}
+
+.binary-search-cell.is-mid {
+  stroke-width: 3;
+  stroke: rgba(124, 58, 237, 0.74);
+}
+
+.binary-search-cell.is-answer {
+  filter: drop-shadow(0 0 0.38rem rgba(59, 130, 246, 0.24));
+}
+
+.binary-search-cell-value {
+  font-size: 1rem;
+  font-weight: 800;
+  fill: var(--md-default-fg-color);
+}
+
+.binary-search-cell-predicate {
+  font-size: 0.74rem;
+  font-weight: 700;
+  fill: var(--md-default-fg-color--light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.binary-search-cell-index {
+  font-size: 0.76rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.binary-search-pointer {
+  stroke-width: 2;
+}
+
+.binary-search-pointer.is-left {
+  stroke: rgba(217, 119, 6, 0.8);
+}
+
+.binary-search-pointer.is-right {
+  stroke: rgba(37, 99, 235, 0.8);
+}
+
+.binary-search-pointer.is-mid {
+  stroke: rgba(124, 58, 237, 0.88);
+}
+
+.binary-search-pointer-label {
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.binary-search-pointer-label.is-left {
+  fill: rgba(180, 83, 9, 1);
+}
+
+.binary-search-pointer-label.is-right {
+  fill: rgba(29, 78, 216, 1);
+}
+
+.binary-search-pointer-label.is-mid {
+  fill: rgba(109, 40, 217, 1);
+}
+
+.binary-search-boundary {
+  stroke: rgba(31, 111, 229, 0.34);
+  stroke-width: 2;
+  stroke-dasharray: 4 5;
+}
+
 .visual-ledger {
   display: grid;
   gap: 0.65rem;
@@ -517,6 +620,32 @@ body {
 
 [data-md-color-scheme="slate"] .visual-cell {
   background: rgba(255, 255, 255, 0.04);
+}
+
+[data-md-color-scheme="slate"] .binary-search-window {
+  fill: rgba(37, 99, 235, 0.15);
+  stroke: rgba(147, 197, 253, 0.36);
+}
+
+[data-md-color-scheme="slate"] .binary-search-cell.is-bad {
+  fill: rgba(180, 83, 9, 0.34);
+  stroke: rgba(251, 191, 36, 0.38);
+}
+
+[data-md-color-scheme="slate"] .binary-search-cell.is-good {
+  fill: rgba(37, 99, 235, 0.3);
+  stroke: rgba(147, 197, 253, 0.34);
+}
+
+[data-md-color-scheme="slate"] .binary-search-cell-value,
+[data-md-color-scheme="slate"] .binary-search-cell-predicate,
+[data-md-color-scheme="slate"] .binary-search-cell-index,
+[data-md-color-scheme="slate"] .binary-search-pointer-label {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .binary-search-boundary {
+  stroke: rgba(147, 197, 253, 0.36);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

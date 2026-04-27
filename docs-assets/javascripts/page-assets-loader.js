@@ -1,5 +1,6 @@
 (() => {
   const MATHJAX_URL = "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js";
+  const D3_URL = "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js";
   const SUPPORT_URL = "https://thanksalot.netlify.app/";
   const currentScript = document.currentScript;
   const assetBase = currentScript ? new URL(".", currentScript.src).href : "/assets/javascripts/";
@@ -86,11 +87,20 @@
     }
   }
 
-  function ensureOptionalScript(selector, filename) {
-    if (!document.querySelector(selector)) {
-      return Promise.resolve();
+  async function ensureD3() {
+    if (window.d3) {
+      return;
     }
-    return loadLocalScript(filename);
+
+    await loadScript(D3_URL);
+  }
+
+  async function ensureOptionalScript(selector, filename, dependencies = []) {
+    if (!document.querySelector(selector)) {
+      return;
+    }
+    await Promise.all(dependencies.map((dependency) => dependency()));
+    await loadLocalScript(filename);
   }
 
   async function boot() {
@@ -102,6 +112,7 @@
       ensureOptionalScript("[data-bfs-dfs-visualizer]", "bfs-dfs-visualizer.js"),
       ensureOptionalScript("[data-fenwick-visualizer]", "fenwick-visualizer.js"),
       ensureOptionalScript("[data-segment-tree-visualizer]", "segment-tree-visualizer.js"),
+      ensureOptionalScript("[data-binary-search-visualizer]", "binary-search-visualizer.js", [ensureD3]),
     ]);
 
     results.forEach((result) => {

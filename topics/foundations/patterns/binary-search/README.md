@@ -51,6 +51,79 @@ The classic discrete formulation is:
 
 This page uses that formulation as the default because it makes proof and implementation line up cleanly.
 
+## Binary Search Playground
+
+<div class="visual-card" data-binary-search-visualizer>
+  <p class="visual-caption">
+    The hidden predicate is <code>good(x) = (x &gt;= answer)</code>. Step through the search and watch how the invariant
+    keeps the first good answer trapped inside <code>(l, r]</code>.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Hidden first good
+      <select data-role="target">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6" selected>6</option>
+        <option value="9">9</option>
+        <option value="12">12</option>
+      </select>
+    </label>
+    <button type="button" data-role="step">Step once</button>
+    <button type="button" data-role="run">Run to finish</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current interval</strong>
+          <code data-role="interval"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Decision</strong>
+          <code data-role="decision"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Observed result</strong>
+          <code data-role="result"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- the search never needs to know the whole answer space at once; it only needs one bad endpoint, one good endpoint, and the guarantee that the first good answer remains inside `(l, r]`
+- each step throws away half the interval because `good(mid)` tells us which side can no longer contain the first transition
+
+Why it matters:
+
+- this is the shortest route from "I know the loop shape" to "I trust why the loop returns the first good answer"
+- it also explains why endpoint meaning matters more than memorizing one `while` condition
+
+Code bridge:
+
+- the widget is the standard first-true template with `l` bad, `r` good, `mid = floor((l + r) / 2)`, then either `r = mid` or `l = mid`
+- the final `r` is the answer because the loop stops only when the invariant has collapsed to adjacent sentinels
+
+Boundary:
+
+- this demo isolates the monotone-predicate core only; real problems still need you to design the ordered domain and prove that `good(x)` is actually monotone
+- if the predicate is not monotone, or if the domain is really continuous optimization without a boolean boundary, this exact template is not the right hammer
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Check Every Candidate
