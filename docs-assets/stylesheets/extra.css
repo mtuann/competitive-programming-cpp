@@ -803,6 +803,80 @@ body {
   fill: rgba(29, 78, 216, 1);
 }
 
+.digit-dp-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.digit-dp-link {
+  stroke-width: 2.2;
+}
+
+.digit-dp-link.is-valid {
+  stroke: rgba(37, 99, 235, 0.58);
+}
+
+.digit-dp-link.is-invalid {
+  stroke: rgba(220, 38, 38, 0.42);
+  stroke-dasharray: 6 5;
+}
+
+.digit-dp-box {
+  stroke-width: 1.5;
+}
+
+.digit-dp-box.is-current-state {
+  fill: rgba(191, 219, 254, 0.72);
+  stroke: rgba(29, 78, 216, 0.42);
+}
+
+.digit-dp-box.is-valid-choice {
+  fill: rgba(255, 255, 255, 0.92);
+  stroke: rgba(22, 59, 115, 0.18);
+}
+
+.digit-dp-box.is-invalid-choice {
+  fill: rgba(243, 244, 246, 0.86);
+  stroke: rgba(220, 38, 38, 0.18);
+}
+
+.digit-dp-box.is-terminal-state {
+  fill: rgba(209, 250, 229, 0.72);
+  stroke: rgba(5, 150, 105, 0.4);
+}
+
+.digit-dp-box-title,
+.digit-dp-box-main,
+.digit-dp-box-sub,
+.digit-dp-box-foot {
+  fill: var(--md-default-fg-color);
+}
+
+.digit-dp-box-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.digit-dp-box-main {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.digit-dp-box-sub {
+  font-size: 0.76rem;
+}
+
+.digit-dp-box-foot {
+  font-size: 0.7rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.visual-stat.is-invalid-card {
+  border-color: rgba(220, 38, 38, 0.18);
+  background: rgba(254, 242, 242, 0.82);
+}
+
 .graph-visual-surface {
   min-height: 30rem;
   height: 30rem;
@@ -979,6 +1053,36 @@ body {
 [data-md-color-scheme="slate"] .two-pointers-cell-index,
 [data-md-color-scheme="slate"] .two-pointers-cell-value {
   fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .digit-dp-box.is-current-state {
+  fill: rgba(37, 99, 235, 0.28);
+  stroke: rgba(147, 197, 253, 0.36);
+}
+
+[data-md-color-scheme="slate"] .digit-dp-box.is-valid-choice {
+  fill: rgba(18, 27, 42, 0.92);
+  stroke: rgba(147, 197, 253, 0.16);
+}
+
+[data-md-color-scheme="slate"] .digit-dp-box.is-invalid-choice {
+  fill: rgba(55, 65, 81, 0.72);
+  stroke: rgba(248, 113, 113, 0.18);
+}
+
+[data-md-color-scheme="slate"] .digit-dp-box.is-terminal-state {
+  fill: rgba(5, 150, 105, 0.22);
+  stroke: rgba(52, 211, 153, 0.34);
+}
+
+[data-md-color-scheme="slate"] .digit-dp-box-title,
+[data-md-color-scheme="slate"] .digit-dp-box-main,
+[data-md-color-scheme="slate"] .digit-dp-box-sub {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .visual-stat.is-invalid-card {
+  background: rgba(127, 29, 29, 0.22);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

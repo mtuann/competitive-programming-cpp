@@ -109,6 +109,80 @@ Examples of `extra`:
 - count of nonzero digits used so far
 - automaton state for forbidden/required patterns
 
+## State Playground
+
+<div class="visual-card" data-digit-dp-visualizer>
+  <p class="visual-caption">
+    Walk one branch of digit DP for upper bound `325` with the property "no equal adjacent real digits". The point is to see
+    exactly what `tight`, `started`, and `prev` mean before worrying about the full memo table.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Choose next digit
+      <select data-role="digit"></select>
+    </label>
+    <button type="button" data-role="take">Take digit</button>
+    <button type="button" data-role="undo">Undo</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <h4>Upper bound digits</h4>
+      <div class="visual-strip visual-strip--six" data-role="bound-strip"></div>
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current state</strong>
+          <code data-role="state"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Chosen prefix</strong>
+          <code data-role="prefix"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Digit limit at this position</strong>
+          <code data-role="limit"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Latest transition</strong>
+          <code data-role="result"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+      <div class="visual-stats" data-role="choices"></div>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- while `tight = 1`, the current position is capped by the matching bound digit; as soon as you choose a smaller digit, `tight` flips to `0` and the future becomes free
+- while `started = 0`, choosing another `0` does not create a previous real digit yet, so leading zeros do not trigger the adjacency rule
+
+Why it matters:
+
+- this is the shortest route from "digit DP state names look abstract" to "I know what real information the DP is carrying from one position to the next"
+- it also makes clear that the property state should be minimal: here `prev` is enough, because the next digit only cares about the previous real digit
+
+Code bridge:
+
+- the branch logic is the standard digit-DP transition: loop `dig` from `0` to `limit`, compute `next_tight`, compute `next_started`, and update `prev` only after the number has started
+- once the state is defined this way, memoization works because the future depends only on `(pos, tight, started, prev)`, not on the exact full prefix
+
+Boundary:
+
+- this widget teaches state meaning, not the whole counting recursion; the real DP still sums over all valid outgoing digits instead of following one branch
+- if the property were "digit sum modulo k" or "forbidden substring", the same `pos / tight / started` frame would stay, but `prev` would be replaced by a different extra state
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force
