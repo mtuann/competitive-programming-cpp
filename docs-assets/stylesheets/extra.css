@@ -877,6 +877,60 @@ body {
   background: rgba(254, 242, 242, 0.82);
 }
 
+.fft-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fft-stage-title,
+.fft-stage-subtitle,
+.fft-cell-index,
+.fft-cell-value {
+  fill: var(--md-default-fg-color);
+}
+
+.fft-stage-title {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.fft-stage-subtitle {
+  font-size: 0.82rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.fft-pair-curve {
+  fill: none;
+  stroke: rgba(29, 78, 216, 0.42);
+  stroke-width: 2.2;
+  stroke-dasharray: 6 5;
+}
+
+.fft-cell {
+  stroke-width: 1.5;
+}
+
+.fft-cell.is-reordered {
+  fill: rgba(233, 213, 255, 0.62);
+  stroke: rgba(124, 58, 237, 0.28);
+}
+
+.fft-cell.is-stage-value {
+  fill: rgba(191, 219, 254, 0.66);
+  stroke: rgba(29, 78, 216, 0.32);
+}
+
+.fft-cell-index {
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.fft-cell-value {
+  font-size: 1.06rem;
+  font-weight: 800;
+}
+
 .graph-visual-surface {
   min-height: 30rem;
   height: 30rem;
@@ -1083,6 +1137,30 @@ body {
 
 [data-md-color-scheme="slate"] .visual-stat.is-invalid-card {
   background: rgba(127, 29, 29, 0.22);
+}
+
+[data-md-color-scheme="slate"] .fft-stage-title,
+[data-md-color-scheme="slate"] .fft-cell-index,
+[data-md-color-scheme="slate"] .fft-cell-value {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .fft-stage-subtitle {
+  fill: rgba(191, 219, 254, 0.86);
+}
+
+[data-md-color-scheme="slate"] .fft-pair-curve {
+  stroke: rgba(147, 197, 253, 0.36);
+}
+
+[data-md-color-scheme="slate"] .fft-cell.is-reordered {
+  fill: rgba(109, 40, 217, 0.24);
+  stroke: rgba(196, 181, 253, 0.24);
+}
+
+[data-md-color-scheme="slate"] .fft-cell.is-stage-value {
+  fill: rgba(37, 99, 235, 0.28);
+  stroke: rgba(147, 197, 253, 0.28);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

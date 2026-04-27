@@ -27,6 +27,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Maximum Flow](../topics/graphs/flow/README.md)
 - [Suffix Automaton](../topics/strings/suffix-automaton/README.md)
 - [Digit DP](../topics/dp/digit-dp/README.md)
+- [FFT And NTT](../topics/math/fft-ntt/README.md)
 
 Those pages confirm two things:
 

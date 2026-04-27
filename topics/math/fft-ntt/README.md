@@ -92,6 +92,69 @@ $$
 
 For NTT we work in a finite field, usually $\mathbb{F}_p$, and need an element of exact order `N`.
 
+## Butterfly Playground
+
+<div class="visual-card" data-fft-visualizer>
+  <p class="visual-caption">
+    Replay a tiny length-`4` NTT modulo `17` for coefficients `[1, 2, 3, 0]`. The goal is not to memorize a library
+    implementation, but to see how local butterfly layers convert coefficient form into point-value form.
+  </p>
+  <div class="visual-controls">
+    <button type="button" data-role="prev">Previous stage</button>
+    <button type="button" data-role="next">Next stage</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current stage</strong>
+          <code data-role="stage"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Stage details</strong>
+          <ul data-role="details"></ul>
+        </div>
+        <div class="visual-stat">
+          <strong>Local butterfly formulas</strong>
+          <ul data-role="formula"></ul>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- the algorithm never mixes all four coefficients at once; each stage only combines local pairs inside one block
+- the first butterfly stage uses twiddle `1`, but later stages multiply one branch by a nontrivial root of unity before combining
+
+Why it matters:
+
+- this is the shortest route from the recursive even/odd proof to the iterative in-place code you actually write in contests
+- it also makes bit-reversal feel less magical: it is simply the layout that lets those local butterflies run in the correct order
+
+Code bridge:
+
+- each local pair in the visual is the standard rule `(u, v) -> (u + wv, u - wv)` modulo `p`
+- the iterative loops in NTT are just these butterflies repeated over `len = 2, 4, 8, ...` blocks after bit-reversal reordering
+
+Boundary:
+
+- this widget stops at the forward transform only; convolution still needs two forward transforms, one pointwise multiplication, and one inverse transform
+- for xor-style pair laws on the boolean cube, this is the wrong family entirely; reopen [FWHT / XOR Convolution / Subset Convolution](../../dp/fwht-subset-convolution/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Running Problem: Count All Pair Sums
