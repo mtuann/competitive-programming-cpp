@@ -576,6 +576,70 @@ body {
   stroke-dasharray: 4 5;
 }
 
+.lazy-tree-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lazy-tree-link {
+  stroke: rgba(22, 59, 115, 0.2);
+  stroke-width: 2;
+}
+
+.lazy-tree-node {
+  fill: rgba(255, 255, 255, 0.9);
+  stroke: rgba(22, 59, 115, 0.18);
+  stroke-width: 1.4;
+}
+
+.lazy-tree-node.is-full {
+  fill: rgba(191, 219, 254, 0.72);
+  stroke: rgba(37, 99, 235, 0.36);
+}
+
+.lazy-tree-node.is-partial {
+  fill: rgba(253, 230, 138, 0.52);
+  stroke: rgba(217, 119, 6, 0.38);
+}
+
+.lazy-tree-node.was-pushed {
+  stroke: rgba(124, 58, 237, 0.82);
+  stroke-width: 3;
+}
+
+.lazy-tree-node.was-pulled {
+  stroke: rgba(5, 150, 105, 0.82);
+  filter: drop-shadow(0 0 0.32rem rgba(16, 185, 129, 0.22));
+}
+
+.lazy-tree-node.has-lazy {
+  stroke-dasharray: 5 4;
+}
+
+.lazy-tree-interval,
+.lazy-tree-sum,
+.lazy-tree-tag {
+  fill: var(--md-default-fg-color);
+  text-anchor: middle;
+}
+
+.lazy-tree-interval {
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.lazy-tree-sum {
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.lazy-tree-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  fill: rgba(109, 40, 217, 1);
+}
+
 .visual-ledger {
   display: grid;
   gap: 0.65rem;
@@ -646,6 +710,38 @@ body {
 
 [data-md-color-scheme="slate"] .binary-search-boundary {
   stroke: rgba(147, 197, 253, 0.36);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-link {
+  stroke: rgba(147, 197, 253, 0.18);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-node {
+  fill: rgba(18, 27, 42, 0.92);
+  stroke: rgba(147, 197, 253, 0.18);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-node.is-full {
+  fill: rgba(37, 99, 235, 0.28);
+  stroke: rgba(147, 197, 253, 0.34);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-node.is-partial {
+  fill: rgba(180, 83, 9, 0.28);
+  stroke: rgba(251, 191, 36, 0.38);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-node.was-pulled {
+  stroke: rgba(52, 211, 153, 0.84);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-interval,
+[data-md-color-scheme="slate"] .lazy-tree-sum {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .lazy-tree-tag {
+  fill: rgba(216, 180, 254, 0.98);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

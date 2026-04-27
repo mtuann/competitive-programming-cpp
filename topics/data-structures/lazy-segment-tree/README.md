@@ -85,6 +85,137 @@ The key point is that the node itself can already be correct even while the chil
 
 That is the lazy-propagation contract.
 
+## Lazy Propagation Playground
+
+<div class="visual-card" data-lazy-segment-tree-visualizer>
+  <p class="visual-caption">
+    Apply a range add, then query a smaller interval inside it. The useful thing to watch is not the final number alone,
+    but which nodes absorb the tag immediately, which nodes must push before descent, and which nodes are pulled back from children.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Update l
+      <select data-role="update-l">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2" selected>2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </label>
+    <label>
+      Update r
+      <select data-role="update-r">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6" selected>6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <label>
+      Delta
+      <select data-role="update-delta">
+        <option value="1">+1</option>
+        <option value="3" selected>+3</option>
+        <option value="-2">-2</option>
+        <option value="5">+5</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-update">Apply range add</button>
+    <label>
+      Query l
+      <select data-role="query-l">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+    </label>
+    <label>
+      Query r
+      <select data-role="query-r">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5" selected>5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-query">Show range sum</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-cluster">
+    <div>
+      <h4>Logical array after applied updates</h4>
+      <div class="visual-strip visual-strip--eight" data-role="array-strip"></div>
+    </div>
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-ledger">
+      <div class="visual-stat">
+        <strong>Invariant</strong>
+        <div data-role="invariant"></div>
+      </div>
+      <div class="visual-stat">
+        <strong>Visited structure</strong>
+        <code data-role="visited"></code>
+      </div>
+      <div class="visual-stat">
+        <strong>Tag / push / pull events</strong>
+        <code data-role="lazy-events"></code>
+      </div>
+      <div class="visual-stat">
+        <strong>Active lazy tags after the operation</strong>
+        <code data-role="active-lazy"></code>
+      </div>
+      <div class="visual-stat">
+        <strong>Result</strong>
+        <code data-role="result"></code>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- a full-cover update does not descend to leaves; it repairs the covered node immediately and records deferred work in its lazy tag
+- a partial-overlap query or update forces a `push` because the children must become truthful before the algorithm can reason about them individually
+
+Why it matters:
+
+- this is the exact place where lazy propagation stops being "segment tree but faster" and becomes a real invariant discipline
+- once this contract is clear, many lazy-tree bugs become easy to spot: either the parent was never made correct, or the children were trusted before a needed push
+
+Code bridge:
+
+- `apply` is the operation that updates one node summary and one lazy tag together
+- `push` moves deferred work from a parent to its children before a partial descent
+- `pull` rebuilds a parent summary from its children after recursion returns
+- the highlighted tree state is meant to map directly onto `apply / push / pull / range_add / range_sum`
+
+Boundary:
+
+- this visual covers only `range add + range sum`
+- once tags stop being one additive number, such as `range assign` or multiple update families with precedence rules, the recursion skeleton survives but the tag algebra must be redesigned carefully
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force
