@@ -8,6 +8,7 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "docs-assets" / "mermaid"
 OUTPUT_DIR = ROOT / "docs" / "assets" / "figures" / "mermaid"
+PUPPETEER_CONFIG = ROOT / "scripts" / "mermaid-puppeteer-config.json"
 MERMAID_CLI_VERSION = "11.12.0"
 
 
@@ -25,6 +26,8 @@ def render_file(source: Path, output: Path) -> None:
         "neutral",
         "-b",
         "transparent",
+        "-p",
+        str(PUPPETEER_CONFIG),
     ]
     subprocess.run(cmd, check=True)
 
