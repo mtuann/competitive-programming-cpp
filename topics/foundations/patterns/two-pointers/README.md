@@ -62,6 +62,82 @@ All three variants rely on the same structural property:
 
 - once a pointer move discards something, that thing never needs to come back
 
+## Sliding Window Playground
+
+<div class="visual-card" data-two-pointers-visualizer>
+  <p class="visual-caption">
+    Replay the standard nonnegative sliding-window loop for `sum <= K`. The important thing to watch is when adding to the
+    right makes the window invalid, and why only moving `l` can repair it.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Limit K
+      <select data-role="limit">
+        <option value="5">5</option>
+        <option value="6" selected>6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <button type="button" data-role="step">Step once</button>
+    <button type="button" data-role="run">Run to finish</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current phase</strong>
+          <code data-role="phase"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Current window</strong>
+          <code data-role="window"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Best valid window so far</strong>
+          <code data-role="best"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Observed result</strong>
+          <code data-role="result"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- while the window is valid, `r` only moves right and the highlighted interval grows by one candidate at a time
+- once the sum exceeds `K`, the algorithm does not reconsider earlier right endpoints at all; it keeps `r` fixed and moves only `l` until the window is valid again
+
+Why it matters:
+
+- this is the shortest route from "I know the loop shape" to "I trust why the window never needs to move backward"
+- it also exposes the real proof obligation: not "there are two pointers", but "extending and shrinking affect the summary in one monotone direction"
+
+Code bridge:
+
+- the widget is the classic nonnegative window skeleton: add `a[r]`, then while `sum > K`, subtract `a[l]` and increment `l`
+- the recorded best interval is updated only after the repair loop, when `[l, r)` is valid again
+
+Boundary:
+
+- this visual is intentionally for nonnegative values only; if negative values are allowed, extending right may decrease the sum and the monotone-repair story breaks
+- sorted two-end scans and merge-style scans live in the same family, but they use a different discard argument than this variable-window demo
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Recompute Every Interval Or Pair

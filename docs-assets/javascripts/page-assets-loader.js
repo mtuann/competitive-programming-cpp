@@ -115,6 +115,7 @@
       ensureOptionalScript("[data-binary-search-visualizer]", "binary-search-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-lazy-segment-tree-visualizer]", "lazy-segment-tree-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-euler-tour-visualizer]", "euler-tour-visualizer.js", [ensureD3]),
+      ensureOptionalScript("[data-two-pointers-visualizer]", "two-pointers-visualizer.js", [ensureD3]),
     ]);
 
     results.forEach((result) => {

@@ -696,6 +696,98 @@ body {
   fill: var(--md-default-fg-color--light);
 }
 
+.two-pointers-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.two-pointers-window {
+  stroke-width: 1.8;
+  stroke-dasharray: 7 5;
+}
+
+.two-pointers-window.is-valid {
+  fill: rgba(191, 219, 254, 0.2);
+  stroke: rgba(37, 99, 235, 0.42);
+}
+
+.two-pointers-window.is-invalid {
+  fill: rgba(253, 230, 138, 0.2);
+  stroke: rgba(217, 119, 6, 0.46);
+}
+
+.two-pointers-cell {
+  stroke-width: 1.4;
+  transition: opacity 140ms ease, stroke 140ms ease, fill 140ms ease;
+}
+
+.two-pointers-cell.is-outside {
+  fill: rgba(255, 255, 255, 0.86);
+  stroke: rgba(22, 59, 115, 0.16);
+}
+
+.two-pointers-cell.is-in-window {
+  fill: rgba(191, 219, 254, 0.64);
+  stroke: rgba(37, 99, 235, 0.34);
+}
+
+.two-pointers-cell.is-in-invalid-window {
+  fill: rgba(253, 230, 138, 0.58);
+  stroke: rgba(217, 119, 6, 0.38);
+}
+
+.two-pointers-cell.is-added {
+  stroke: rgba(124, 58, 237, 0.82);
+  stroke-width: 3;
+}
+
+.two-pointers-cell.is-removed {
+  fill: rgba(229, 231, 235, 0.92);
+  stroke: rgba(107, 114, 128, 0.3);
+  opacity: 0.72;
+}
+
+.two-pointers-cell-index,
+.two-pointers-cell-value {
+  fill: var(--md-default-fg-color);
+}
+
+.two-pointers-cell-index {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.two-pointers-cell-value {
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.two-pointers-pointer {
+  stroke-width: 2.2;
+}
+
+.two-pointers-pointer.is-left {
+  stroke: rgba(217, 119, 6, 0.82);
+}
+
+.two-pointers-pointer.is-right {
+  stroke: rgba(37, 99, 235, 0.82);
+}
+
+.two-pointers-pointer-label {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.two-pointers-pointer-label.is-left {
+  fill: rgba(180, 83, 9, 1);
+}
+
+.two-pointers-pointer-label.is-right {
+  fill: rgba(29, 78, 216, 1);
+}
+
 .visual-ledger {
   display: grid;
   gap: 0.65rem;
@@ -825,6 +917,41 @@ body {
 
 [data-md-color-scheme="slate"] .euler-tour-node-label,
 [data-md-color-scheme="slate"] .euler-tour-node-value {
+  fill: rgba(236, 242, 255, 0.96);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-window.is-valid {
+  fill: rgba(37, 99, 235, 0.14);
+  stroke: rgba(147, 197, 253, 0.38);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-window.is-invalid {
+  fill: rgba(180, 83, 9, 0.18);
+  stroke: rgba(251, 191, 36, 0.42);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-cell.is-outside {
+  fill: rgba(18, 27, 42, 0.92);
+  stroke: rgba(147, 197, 253, 0.16);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-cell.is-in-window {
+  fill: rgba(37, 99, 235, 0.3);
+  stroke: rgba(147, 197, 253, 0.34);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-cell.is-in-invalid-window {
+  fill: rgba(180, 83, 9, 0.28);
+  stroke: rgba(251, 191, 36, 0.4);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-cell.is-removed {
+  fill: rgba(31, 41, 55, 0.92);
+  stroke: rgba(148, 163, 184, 0.2);
+}
+
+[data-md-color-scheme="slate"] .two-pointers-cell-index,
+[data-md-color-scheme="slate"] .two-pointers-cell-value {
   fill: rgba(236, 242, 255, 0.96);
 }
 

@@ -21,6 +21,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Binary Search](../topics/foundations/patterns/binary-search/README.md)
 - [Lazy Segment Tree](../topics/data-structures/lazy-segment-tree/README.md)
 - [Euler Tour / Subtree Queries](../topics/graphs/euler-tour-subtree/README.md)
+- [Two Pointers And Sliding Window](../topics/foundations/patterns/two-pointers/README.md)
 
 Those pages confirm two things:
 
