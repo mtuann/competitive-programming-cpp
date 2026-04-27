@@ -7,7 +7,7 @@
 - Status: active
 - Last reviewed: 2026-04-26
 - Update triggers: after any new visual wave, major site-asset change, or reprioritization of the visualization backlog
-- Canonical companion docs: [Roadmap](roadmap.md), [Expansion Roadmap](expansion-roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Source Map](source-map.md)
+- Canonical companion docs: [Roadmap](roadmap.md), [Expansion Roadmap](expansion-roadmap.md), [Content Blueprint](content-blueprint.md), [Topic Template](topic-template.md), [Visual Content Contract](visual-content-contract.md), [Source Map](source-map.md)
 
 This file exists so the repo’s visual layer grows like the curriculum does: deliberately, with clear tool choices and maintenance boundaries.
 
@@ -217,6 +217,8 @@ Every new visual should answer at least one of these questions better than prose
 - why is this chooser page splitting into these child techniques?
 
 If the visual does not clearly improve one of those, do not ship it.
+
+For the content-level quality bar, use [Visual Content Contract](visual-content-contract.md). This roadmap governs sequencing and tooling; the contract governs whether the visual itself is rich enough to teach.
 
 ### Visual Contract
 

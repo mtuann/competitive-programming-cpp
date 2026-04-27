@@ -134,6 +134,28 @@ It is "which traversal preserves the thing the statement will later ask me to pr
   </div>
 </div>
 
+### Visual Reading Guide
+
+What to notice:
+
+- BFS grows one full distance layer at a time, so the queue contents are the next shortest unresolved vertices.
+- DFS keeps one active branch alive until it is forced to backtrack, so the frontier is about ancestry, not shortest distance.
+
+Why it matters:
+
+- if the statement later asks for minimum number of edges, the BFS frontier itself is already the proof shape
+- if the statement later asks for entry/exit order, ancestor relations, or cycle structure, the DFS branch is the right structural object
+
+Code bridge:
+
+- `queue<int>` plus `dist` and `parent` are the concrete BFS counterparts of the frontier and traversal tree shown above
+- recursion or an explicit stack plus `visited`, `tin`, `tout`, or recursion-stack state are the concrete DFS counterparts of the active branch
+
+Boundary:
+
+- this visual isolates the traversal contract only; weighted shortest paths, SCC structure, bridges, and topological properties all need extra bookkeeping beyond the basic BFS / DFS shell
+- the visit order is deterministic here because adjacency is alphabetical, but contest input order can change the DFS tree shape even when the invariant stays valid
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Re-Search From Scratch

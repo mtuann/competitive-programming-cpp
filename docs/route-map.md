@@ -10,6 +10,33 @@ Use it when you need one of these instead:
 
 This page uses learner `Stage 1-4` language. If you want the content-progression map by area, use the curriculum `Level 0-5` view in [Project Overview](../project-readme.md).
 
+## One Chooser Before Doors
+
+![Route chooser by bottleneck](assets/figures/mermaid/route-map-door-chooser.svg)
+
+### How To Read This Diagram
+
+What to notice:
+
+- the first question is not "which algorithm family do I like?" but "what is actually slowing me down right now?"
+- each branch ends at one primary door, not a long list
+
+Why it matters:
+
+- this page exists to reduce routing noise; if the first decision is clean, the rest of the repo becomes much easier to use on purpose
+
+Door bridge:
+
+- `Start Here` is for full beginner routing
+- `Learning Areas` is for topic-first depth
+- `Practice hub / ladders / problem finder` is for more reps
+- `Contest Playbooks` is for format-specific training
+- `Build Kit / Notebook` is for retrieval and implementation pressure
+
+Boundary:
+
+- the diagram is a first door chooser only; once you open a door, the detailed routing tables below are still the authoritative next-step map
+
 ## Pick By Situation
 
 | If you are here because... | Start with | Then go next |

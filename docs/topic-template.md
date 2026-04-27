@@ -59,6 +59,8 @@ Use these pages to calibrate:
 - how explicit the worked examples should be
 - how to connect topic -> template -> ladder note -> references
 
+For pages that include diagrams or widgets, also follow [Visual Content Contract](visual-content-contract.md). The page still needs to read as a complete tutorial even when the visual layer is absent or temporarily broken.
+
 ## 1. At A Glance
 
 - what the technique solves
@@ -113,13 +115,29 @@ Include exactly two kinds of examples whenever possible:
 
 If you need more than two worked examples, push the extra detail into ladder notes.
 
-## 8. Algorithm And Pseudocode
+## 8. Visual Layer
+
+Visuals are optional, but when they appear they should carry real teaching load.
+
+Default visual bundle for a strong topic page:
+
+1. one orientation visual near `One Picture Before Code`
+2. one mechanism visual or interactive block
+3. one short interpretation block that states:
+   - what to notice
+   - why it matters
+   - how it maps back to code or pseudocode
+   - where the visual stops being the full story
+
+Do not add a widget just because the page is important. Add one only when the visual teaches something prose alone is struggling to make immediate.
+
+## 9. Algorithm And Pseudocode
 
 - present language-neutral pseudocode
 - make the data flow or state transitions explicit
 - keep full reusable C++ code in `templates/` and `template-library.md`
 
-## 9. Implementation Notes
+## 10. Implementation Notes
 
 - indexing policy
 - overflow and numeric type policy
@@ -127,13 +145,13 @@ If you need more than two worked examples, push the extra detail into ladder not
 - hidden pitfalls the pseudocode does not reveal
 - link the canonical repo template and the best companion note
 
-## 10. Practice Archetypes
+## 11. Practice Archetypes
 
 Use `warm-up`, `core`, and `stretch`, but annotate each problem with why it triggers this topic.
 
 The reader should leave this section knowing not only what to solve next, but why each problem belongs here.
 
-## 11. References And Repo Anchors
+## 12. References And Repo Anchors
 
 - `Primary`: original paper, official documentation, or source-closest record
 - `Course`: official lecture notes, slides, or course-primary exposition
@@ -167,7 +185,7 @@ Priority rule:
 
 References should support the page, not replace it. The page itself should carry the main teaching load.
 
-## 12. Related Topics
+## 13. Related Topics
 
 - prerequisites
 - nearby confusing alternatives

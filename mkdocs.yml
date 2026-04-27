@@ -566,6 +566,7 @@ nav:
   - Contributing:
       - Content Blueprint: docs/content-blueprint.md
       - Topic Template: docs/topic-template.md
+      - Visual Content Contract: docs/visual-content-contract.md
       - Problem Note Contract: docs/authoring/problem-note-contract.md
       - Freshness Backbone: docs/freshness-backbone.md
       - Roadmap: docs/roadmap.md

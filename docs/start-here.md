@@ -59,6 +59,30 @@ This is the smallest version of the repo-wide loop:
 
 `topic -> ladder -> note -> cheatsheet/build kit`
 
+## One Calm Beginner Rail
+
+![Default beginner rail](assets/figures/mermaid/start-here-default-rail.svg)
+
+### How To Read This Diagram
+
+What to notice:
+
+- the route is intentionally narrow at the start: one topic rail, then one note rail, then one retrieval door only when needed
+- the "ignore for now" box is part of the route, not an afterthought
+
+Why it matters:
+
+- beginners often lose momentum by opening too many good pages too early
+- this rail is designed to create one real study loop before the rest of the repo's width becomes useful
+
+Code and workflow bridge:
+
+- the first pages feed directly into one local compile/run loop, then one first note, then one retrieval layer such as the cheatsheet or build kit
+
+Boundary:
+
+- this is a default rail, not a prison; if you already know the weak topic or are returning after a break, the lighter branch in `Quick Audience Fork` is still the right choice
+
 ## First 3 Pages
 
 Open these in order:

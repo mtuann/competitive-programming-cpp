@@ -99,6 +99,33 @@ Useful recurring notation:
 - `transition`: one legal way to derive the current state from smaller states
 - `answer location`: which final state or aggregation contains the problem answer
 
+## One Picture Before The Recurrence
+
+![DP state-design pipeline](../../../docs/assets/figures/mermaid/dp-foundations-state-dag.svg)
+
+### Visual Reading Guide
+
+What to notice:
+
+- the diagram starts from many brute-force histories, then collapses them into one future-relevant summary before any recurrence is written
+- the dependency DAG appears only after the state and base cases are fixed
+
+Why it matters:
+
+- many DP failures come from writing transitions too early, before the state meaning is precise
+- this pipeline keeps the modeling order honest: compress first, then derive the recurrence, then choose evaluation order
+
+Code bridge:
+
+- the state node is what one `dp[...]` entry means
+- the transition node is the recurrence body
+- the DAG node is the reason memoization and tabulation are both legal views of the same problem
+- the final cost box is the usual `states × transitions` estimate you should make before coding
+
+Boundary:
+
+- this diagram explains the design loop, not any one specialized DP family; once the state shape is clear, you still need the right subfamily page such as [Knapsack Family](../knapsack-family/README.md), [Interval DP](../interval-dp/README.md), [Tree DP](../tree-dp/README.md), [Bitmask DP](../bitmask-dp/README.md), or [Digit DP](../digit-dp/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Remember The Whole History

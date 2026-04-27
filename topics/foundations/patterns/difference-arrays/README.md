@@ -60,6 +60,32 @@ $$
 
 This is why difference arrays and prefix sums are two sides of the same picture.
 
+## One Picture Before Endpoint Updates
+
+![Difference-array endpoint view](../../../../docs/assets/figures/mermaid/difference-arrays-endpoints.svg)
+
+### Visual Reading Guide
+
+What to notice:
+
+- one range addition is being rewritten as two boundary events
+- the final prefix scan is not extra work bolted on at the end; it is the reconstruction step that turns endpoint marks back into real values
+
+Why it matters:
+
+- this is the mental move that turns `O(length of range)` updates into `O(1)` endpoint edits
+- once this endpoint picture becomes natural, offline interval updates start feeling like line sweeps rather than array brute force
+
+Code bridge:
+
+- `diff[l] += x` starts the contribution
+- `diff[r + 1] -= x` stops it
+- the reconstruction loop is exactly one prefix accumulation over `diff`
+
+Boundary:
+
+- this picture is strictly offline; if the problem needs intermediate answers during the update stream, move to [Fenwick Tree](../../../data-structures/fenwick-tree/README.md) or [Segment Tree](../../../data-structures/segment-tree/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force: Update Every Element In The Range

@@ -83,6 +83,30 @@ Every shortest-path algorithm in this family is built around the same relaxation
 - what guarantees let you finalize an answer
 - what weight model makes that strategy sound
 
+## One Picture Before Relaxation Order
+
+![Shortest-path family chooser](../../../docs/assets/figures/mermaid/shortest-paths-chooser.svg)
+
+### Visual Reading Guide
+
+What to notice:
+
+- the first split is by the strongest guarantee in the graph model, not by personal preference for one algorithm
+- lighter tools sit higher in the tree because a stronger structural guarantee lets you finalize distances more cheaply
+
+Why it matters:
+
+- most shortest-path mistakes in contests come from reaching for a familiar tool before checking the edge model
+- this chooser is meant to make "what guarantee do I have?" feel like the first reflex
+
+Code bridge:
+
+- each leaf corresponds to a different valid relaxation schedule: queue layers for BFS, deque ordering for `0-1 BFS`, priority-queue extraction for Dijkstra, full edge passes for Bellman-Ford, and intermediate-vertex DP for Floyd-Warshall
+
+Boundary:
+
+- this chooser covers the core family only; reverse-graph tricks, bidirectional search, A*, radix-style queues, and Johnson-style all-pairs methods live outside the first-wave route
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

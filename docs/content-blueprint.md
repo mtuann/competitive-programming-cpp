@@ -15,6 +15,8 @@ Each finished topic should eventually include:
    - one `practice` link
    - one optional `essay / blog` link when it adds real insight
 
+If the topic includes visuals, those visuals should also satisfy [Visual Content Contract](visual-content-contract.md), not just exist as a decorative extra.
+
 ## Writing Rule
 
 Each mature topic page should open with a fast-scanning core path, but the full page should still be complete enough that a serious reader can learn the topic without hunting for another primary explanation.
@@ -35,6 +37,12 @@ Anchor topics should also include:
 - pseudocode plus implementation notes
 - a variant chooser
 - practice archetypes with recognition comments
+
+When a visual layer is present on an anchor topic, the default target should be:
+
+- one orientation visual
+- one mechanism visual
+- one explicit bridge from the visual back to code and boundaries
 
 Not every page has the same role:
 

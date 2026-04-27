@@ -151,6 +151,29 @@ Both loops are traversing the same family of binary-sized suffix blocks in oppos
   </div>
 </div>
 
+### Visual Reading Guide
+
+What to notice:
+
+- a prefix query keeps stripping the rightmost Fenwick block by repeatedly doing `r -= lowbit(r)`
+- a point update climbs through exactly the Fenwick blocks that contain the updated position by repeatedly doing `i += lowbit(i)`
+
+Why it matters:
+
+- this is the cleanest way to stop memorizing two separate loops and start seeing one block invariant viewed from two directions
+- once the block picture is automatic, frequency-prefix problems and range-sum problems collapse to the same implementation pattern
+
+Code bridge:
+
+- `sum(r)` is the downward walk through the highlighted `bit[x]` blocks until the index reaches `0`
+- `add(i, delta)` is the upward repair walk through all `bit[x]` blocks whose stored interval contains position `i`
+- the displayed invariant is exactly the meaning of the array `bit[]`, not just a pedagogical overlay
+
+Boundary:
+
+- this visual covers the standard additive Fenwick tree; it does not by itself justify arbitrary associative queries, lazy interval updates, or non-prefix-friendly operations
+- if the statement wants a richer interval summary than additive blocks can support naturally, the next door is usually [Segment Tree](../segment-tree/README.md), not a more complicated animation of the same `BIT`
+
 ## From Brute Force To The Right Idea
 
 Suppose we need two online operations:

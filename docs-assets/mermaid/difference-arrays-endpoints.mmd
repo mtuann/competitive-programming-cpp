@@ -1,0 +1,7 @@
+flowchart LR
+    A["Range add x on [l, r]"] --> B["Start effect: diff[l] += x"]
+    A --> C["Stop effect: diff[r + 1] -= x, if it exists"]
+    B --> D["Prefix scan carries the active total forward"]
+    C --> D
+    D --> E["Recovered final array after all offline updates"]
+    D -.-> F["Same mental model as an event sweep on a line"]

@@ -1,0 +1,8 @@
+flowchart TD
+    A["Graph or state graph with additive path cost"] --> B{"What is the strongest guarantee?"}
+    B -->|Unweighted or every move costs 1| C["BFS"]
+    B -->|Weights only 0 or 1| D["0-1 BFS"]
+    B -->|A DAG order is already available| E["Topological shortest paths"]
+    B -->|All weights are nonnegative| F["Dijkstra"]
+    B -->|Negative edges matter| G["Bellman-Ford"]
+    B -->|Need all-pairs and n is small| H["Floyd-Warshall"]

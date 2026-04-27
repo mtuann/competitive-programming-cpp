@@ -1,0 +1,9 @@
+flowchart LR
+    A["Many brute-force histories"] --> B["Keep only future-relevant information"]
+    B --> C["Define one precise state"]
+    C --> D["Write legal transitions from smaller states"]
+    C --> E["Fix base cases"]
+    D --> F["States and dependencies form a DAG"]
+    E --> F
+    F --> G["Evaluate by memoization or topological order"]
+    G --> H["Estimate cost as states × transitions"]

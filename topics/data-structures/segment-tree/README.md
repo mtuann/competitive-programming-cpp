@@ -190,6 +190,29 @@ It is about storing one stable summary per interval and then reusing those summa
   </div>
 </div>
 
+### Visual Reading Guide
+
+What to notice:
+
+- a range query does not "look at everything inside the interval"; it tiles the target by a small set of canonical node intervals
+- a point update does not rebuild the whole tree; it repairs only one leaf-to-root path because only those summaries became stale
+
+Why it matters:
+
+- canonical decomposition is the reason the query is logarithmic instead of linear
+- the repair path is the reason point update is logarithmic instead of forcing a rebuild of every overlapping interval summary
+
+Code bridge:
+
+- the highlighted query pieces are exactly the node summaries merged by recursive overlap logic or by the iterative `[l, r)` walk
+- the highlighted repair chain is exactly the sequence of parent recomputations after changing one leaf value
+- the visual assumes `op` is associative and `e` is an identity, matching the monoid contract used by contest libraries such as ACL
+
+Boundary:
+
+- this page and visual stop at the point-update core; interval updates with delayed propagation need [Lazy Segment Tree](../lazy-segment-tree/README.md)
+- if the problem is really just additive prefix work, [Fenwick Tree](../fenwick-tree/README.md) is still the lighter tool even though this tree can also solve it
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force
