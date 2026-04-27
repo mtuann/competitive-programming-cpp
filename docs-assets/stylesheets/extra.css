@@ -640,6 +640,62 @@ body {
   fill: rgba(109, 40, 217, 1);
 }
 
+.euler-tour-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.euler-tour-link {
+  stroke: rgba(22, 59, 115, 0.22);
+  stroke-width: 2.2;
+}
+
+.euler-tour-node {
+  fill: rgba(255, 255, 255, 0.92);
+  stroke: rgba(22, 59, 115, 0.18);
+  stroke-width: 1.5;
+  transition: fill 140ms ease, stroke 140ms ease, filter 140ms ease;
+}
+
+.euler-tour-node.is-subtree {
+  fill: rgba(191, 219, 254, 0.72);
+  stroke: rgba(37, 99, 235, 0.42);
+}
+
+.euler-tour-node.is-focus {
+  stroke: rgba(29, 78, 216, 0.9);
+  stroke-width: 3;
+}
+
+.euler-tour-node.is-updated {
+  fill: rgba(253, 230, 138, 0.62);
+  stroke: rgba(217, 119, 6, 0.5);
+}
+
+.euler-tour-node-label,
+.euler-tour-node-value,
+.euler-tour-node-time {
+  fill: var(--md-default-fg-color);
+  text-anchor: middle;
+}
+
+.euler-tour-node-label {
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.euler-tour-node-value {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.euler-tour-node-time {
+  font-size: 0.72rem;
+  font-weight: 700;
+  fill: var(--md-default-fg-color--light);
+}
+
 .visual-ledger {
   display: grid;
   gap: 0.65rem;
@@ -742,6 +798,34 @@ body {
 
 [data-md-color-scheme="slate"] .lazy-tree-tag {
   fill: rgba(216, 180, 254, 0.98);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-link {
+  stroke: rgba(147, 197, 253, 0.18);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-node {
+  fill: rgba(18, 27, 42, 0.92);
+  stroke: rgba(147, 197, 253, 0.18);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-node.is-subtree {
+  fill: rgba(37, 99, 235, 0.28);
+  stroke: rgba(147, 197, 253, 0.34);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-node.is-focus {
+  stroke: rgba(191, 219, 254, 0.92);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-node.is-updated {
+  fill: rgba(180, 83, 9, 0.28);
+  stroke: rgba(251, 191, 36, 0.42);
+}
+
+[data-md-color-scheme="slate"] .euler-tour-node-label,
+[data-md-color-scheme="slate"] .euler-tour-node-value {
+  fill: rgba(236, 242, 255, 0.96);
 }
 
 [data-md-color-scheme="slate"] .visual-cell.is-highlight {

@@ -83,6 +83,111 @@ If `flat[tin[u]] = value[u]`, then:
 
 This is the reduction the whole topic is built on.
 
+## Euler Tour Playground
+
+<div class="visual-card" data-euler-tour-visualizer>
+  <p class="visual-caption">
+    Highlight one subtree, then change one node value. The important thing to watch is that the same subtree shows up once as
+    blue tree nodes and once as one contiguous interval in DFS entry order.
+  </p>
+  <div class="visual-controls">
+    <label>
+      Focus node
+      <select data-role="focus-node">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <button type="button" data-role="show-subtree">Show subtree interval</button>
+    <label>
+      Update node
+      <select data-role="update-node">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6" selected>6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </label>
+    <label>
+      New value
+      <select data-role="update-value">
+        <option value="0">0</option>
+        <option value="2">2</option>
+        <option value="5">5</option>
+        <option value="9" selected>9</option>
+        <option value="12">12</option>
+      </select>
+    </label>
+    <button type="button" data-role="run-update">Apply point set</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface" data-role="canvas"></div>
+      <h4>Flattened DFS entry order</h4>
+      <div class="visual-strip visual-strip--eight" data-role="flat-strip"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current interval</strong>
+          <code data-role="interval"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Nodes inside the subtree</strong>
+          <code data-role="nodes"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Global DFS entry order</strong>
+          <code data-role="order"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Observed result</strong>
+          <code data-role="result"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- once the root is fixed, every subtree is highlighted twice in exactly the same shape: first as a connected blue region in the tree, then as one contiguous blue interval in the flattened strip
+- a point update only changes one flattened position, namely `flat[tin[u]]`; the subtree intervals themselves do not move
+
+Why it matters:
+
+- this is the whole reduction in one picture: tree query language becomes range query language because subtree membership is preserved by DFS entry order
+- it also explains why subtree queries stay much lighter than arbitrary path queries
+
+Code bridge:
+
+- the widget is the standard single-entry DFS with `tin[u] = timer`, `flat[timer] = value[u]`, recursive descent into children, then `tout[u] = timer` on the way back
+- subtree sum becomes `range_sum(tin[u], tout[u])`, and point set on node `u` becomes one point update at index `tin[u]`
+
+Boundary:
+
+- this reduction is perfect for subtree-only queries, but it does not make an arbitrary path `u -> v` contiguous; that is where [Heavy-Light Decomposition](../hld/README.md) takes over
+- this demo is vertex-valued and static; edge-valued statements or online topology changes need a different convention or a different family
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

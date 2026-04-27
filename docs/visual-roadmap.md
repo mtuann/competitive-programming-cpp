@@ -20,6 +20,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Segment Tree](../topics/data-structures/segment-tree/README.md)
 - [Binary Search](../topics/foundations/patterns/binary-search/README.md)
 - [Lazy Segment Tree](../topics/data-structures/lazy-segment-tree/README.md)
+- [Euler Tour / Subtree Queries](../topics/graphs/euler-tour-subtree/README.md)
 
 Those pages confirm two things:
 
