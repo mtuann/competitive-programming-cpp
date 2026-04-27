@@ -120,6 +120,83 @@ The whole topic turns on the relationship between:
 - a residual graph
 - an $s$-$t$ cut
 
+## Residual Network Playground
+
+<div class="visual-card" data-max-flow-visualizer>
+  <p class="visual-caption">
+    Replay a tiny flow network where the second augmentation must use a reverse residual edge. The goal is not to memorize one
+    implementation, but to see why residual graphs encode both "send more" and "undo then reroute".
+  </p>
+  <div class="chip-row">
+    <span class="chip">Solid edges: original network, labeled flow/capacity</span>
+    <span class="chip">Dashed edges: current residual capacity</span>
+    <span class="chip">Green path: residual augmentation</span>
+    <span class="chip">Purple path edge: reverse residual used to reroute</span>
+  </div>
+  <div class="visual-controls">
+    <button type="button" data-role="step">Next residual state</button>
+    <button type="button" data-role="run">Jump to min-cut witness</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface graph-visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current stage</strong>
+          <code data-role="stage"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Current flow value</strong>
+          <code data-role="value"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Augmenting path / bottleneck</strong>
+          <code data-role="path"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Reverse-edge lesson</strong>
+          <code data-role="reverse"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Cut witness</strong>
+          <code data-role="cut"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- the first augmenting path is a plain forward path, but the second one succeeds only because the residual graph exposes a reverse edge that cancels part of the earlier routing
+- at the final state there is no residual path from `s` to `t`, and the reachable side from `s` itself already certifies the minimum cut
+
+Why it matters:
+
+- this is the shortest route from "reverse edges are part of the template" to "reverse edges are logically necessary because flow choices sometimes need repair"
+- it also shows why max-flow min-cut is read from the final residual graph, not from the history of augmenting paths
+
+Code bridge:
+
+- every implementation stores forward and reverse edges together because residual capacities are updated in both directions on every augmentation
+- the final reachable set from `s` in the residual graph is exactly the set used to print a cut certificate in problems like [Police Chase](../../../practice/ladders/graphs/flow/policechase.md)
+
+Boundary:
+
+- this demo uses augmenting-path language, so it is perfect for Dinic or Edmonds-Karp intuition; [Push-Relabel](../../../practice/ladders/graphs/flow/maximumflowpushrelabel.md) keeps the same model but changes the engine entirely
+- plain max flow optimizes only throughput; once the statement also optimizes cost, reopen [Min-Cost Flow](../min-cost-flow/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force
