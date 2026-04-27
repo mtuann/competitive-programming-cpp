@@ -1,6 +1,7 @@
 (() => {
   const MATHJAX_URL = "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js";
   const D3_URL = "https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js";
+  const CYTOSCAPE_URL = "https://cdn.jsdelivr.net/npm/cytoscape@3/dist/cytoscape.min.js";
   const SUPPORT_URL = "https://thanksalot.netlify.app/";
   const currentScript = document.currentScript;
   const assetBase = currentScript ? new URL(".", currentScript.src).href : "/assets/javascripts/";
@@ -95,6 +96,14 @@
     await loadScript(D3_URL);
   }
 
+  async function ensureCytoscape() {
+    if (window.cytoscape) {
+      return;
+    }
+
+    await loadScript(CYTOSCAPE_URL);
+  }
+
   async function ensureOptionalScript(selector, filename, dependencies = []) {
     if (!document.querySelector(selector)) {
       return;
@@ -116,6 +125,7 @@
       ensureOptionalScript("[data-lazy-segment-tree-visualizer]", "lazy-segment-tree-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-euler-tour-visualizer]", "euler-tour-visualizer.js", [ensureD3]),
       ensureOptionalScript("[data-two-pointers-visualizer]", "two-pointers-visualizer.js", [ensureD3]),
+      ensureOptionalScript("[data-lowlink-visualizer]", "lowlink-visualizer.js", [ensureCytoscape]),
     ]);
 
     results.forEach((result) => {

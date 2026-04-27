@@ -60,6 +60,93 @@ The intuition is:
 - `tin[v]` says when `v` entered the DFS tree
 - `low[v]` says how high the subtree under `v` can reconnect without using the parent edge of `v`
 
+## Low-Link Playground
+
+<div class="visual-card" data-lowlink-visualizer>
+  <p class="visual-caption">
+    Inspect one DFS child subtree at a time. The point is not to replay DFS mechanically, but to see which back edge witnesses
+    a low-link escape, and when the subtree is forced to stay attached only through its parent edge.
+  </p>
+  <div class="chip-row">
+    <span class="chip">Blue nodes: current child subtree</span>
+    <span class="chip">Gold nodes: ancestor chain</span>
+    <span class="chip">Red edge: tree edge under test</span>
+    <span class="chip">Green dashed edge: witness back edge</span>
+  </div>
+  <div class="visual-controls">
+    <label>
+      Inspect DFS child
+      <select data-role="child">
+        <option value="2">child 2 under parent 1</option>
+        <option value="3">child 3 under parent 2</option>
+        <option value="4" selected>child 4 under parent 2</option>
+        <option value="5">child 5 under parent 4</option>
+        <option value="6">child 6 under parent 5</option>
+        <option value="7">child 7 under parent 4</option>
+      </select>
+    </label>
+    <button type="button" data-role="inspect">Inspect subtree</button>
+    <button type="button" data-role="reset">Reset to bridge case</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface graph-visual-surface" data-role="canvas"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current tree edge</strong>
+          <code data-role="focus"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Current subtree</strong>
+          <code data-role="subtree"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Witness back edge</strong>
+          <code data-role="witness"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Bridge test</strong>
+          <code data-role="bridge"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Articulation consequence</strong>
+          <code data-role="articulation"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- every inspection is relative to one fixed DFS tree edge `(parent, child)`; the only question is whether the blue child subtree can touch the gold ancestor chain without using that red edge
+- when a green back edge exists, `low[child]` drops to the corresponding ancestor level; when no such edge exists, the subtree is trapped and the red edge becomes a bridge
+
+Why it matters:
+
+- this is the shortest route from memorizing `low[child] > tin[parent]` to actually trusting why that inequality means the subtree has no alternate escape upward
+- it also makes the `>` versus `>=` split feel structural instead of arbitrary: bridge tests ask whether the edge survives, articulation tests ask whether the parent vertex still separates the child subtree
+
+Code bridge:
+
+- the labels on each node are the exact `tin` and `low` values produced by the low-link DFS
+- the widget is reading the same tests as the implementation: `low[to] > tin[v]` for bridges, `low[to] >= tin[v]` for non-root articulation points, and a separate root-child-count rule for the DFS root
+
+Boundary:
+
+- this visual is for undirected low-link only; directed reachability splits into [SCC](../scc-toposort/README.md), not bridge/articulation logic
+- the graph is intentionally fixed so the low-link meaning stays legible; real problems compute these values dynamically during DFS rather than selecting from precomputed cases
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

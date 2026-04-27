@@ -788,6 +788,17 @@ body {
   fill: rgba(29, 78, 216, 1);
 }
 
+.graph-visual-surface {
+  min-height: 30rem;
+  height: 30rem;
+}
+
+.graph-visual-surface > div,
+.graph-visual-surface canvas {
+  width: 100%;
+  height: 100%;
+}
+
 .visual-ledger {
   display: grid;
   gap: 0.65rem;
@@ -970,6 +981,11 @@ body {
 
   .visual-surface {
     min-height: 21rem;
+  }
+
+  .graph-visual-surface {
+    min-height: 24rem;
+    height: 24rem;
   }
 
   .cp-support-link span {
