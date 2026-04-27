@@ -128,6 +128,7 @@
       ensureOptionalScript("[data-lowlink-visualizer]", "lowlink-visualizer.js", [ensureCytoscape]),
       ensureOptionalScript("[data-aho-visualizer]", "aho-visualizer.js", [ensureCytoscape]),
       ensureOptionalScript("[data-max-flow-visualizer]", "max-flow-visualizer.js", [ensureCytoscape]),
+      ensureOptionalScript("[data-sam-visualizer]", "sam-visualizer.js", [ensureCytoscape]),
     ]);
 
     results.forEach((result) => {

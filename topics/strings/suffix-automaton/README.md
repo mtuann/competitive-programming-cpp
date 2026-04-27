@@ -92,6 +92,77 @@ $$
 
 So every non-root state represents a **contiguous interval of substring lengths**, not one substring and not an arbitrary set of lengths.
 
+## Clone Playground
+
+<div class="visual-card" data-sam-visualizer>
+  <p class="visual-caption">
+    Replay the single clone event while building the suffix automaton of `abaabb`. The important thing to watch is not the whole
+    algorithm at once, but why one existing transition becomes too long for a shorter context and must be split.
+  </p>
+  <div class="chip-row">
+    <span class="chip">Blue solid edges: transitions</span>
+    <span class="chip">Purple dashed edges: suffix links</span>
+    <span class="chip">Blue nodes: states on the current conflict path</span>
+    <span class="chip">Purple node: the clone</span>
+  </div>
+  <div class="visual-controls">
+    <button type="button" data-role="step">Show clone repair</button>
+    <button type="button" data-role="run">Jump to repaired SAM</button>
+    <button type="button" data-role="reset">Reset</button>
+  </div>
+  <div class="visual-grid">
+    <div class="visual-panel">
+      <div class="visual-surface graph-visual-surface" data-role="canvas"></div>
+      <h4>Processed text</h4>
+      <div class="visual-strip visual-strip--six" data-role="text-strip"></div>
+    </div>
+    <div class="visual-panel">
+      <h4>What to watch</h4>
+      <div class="visual-stats">
+        <div class="visual-stat">
+          <strong>Invariant</strong>
+          <div data-role="invariant"></div>
+        </div>
+        <div class="visual-stat">
+          <strong>Current stage</strong>
+          <code data-role="stage"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Conflict</strong>
+          <code data-role="conflict"></code>
+        </div>
+        <div class="visual-stat">
+          <strong>Repair</strong>
+          <code data-role="repair"></code>
+        </div>
+      </div>
+      <p class="visual-note" data-role="note"></p>
+    </div>
+  </div>
+</div>
+
+### Visual Reading Guide
+
+What to notice:
+
+- before the final `b`, the suffix-link walk reaches the root and finds an existing `b` transition into a state whose `len` is too large for the shorter context
+- after cloning, the root goes by `b` into a new state with `len = 1`, while the old state keeps the longer interval and changes its suffix link to the clone
+
+Why it matters:
+
+- this is the shortest route from "clones happen in the weird case" to seeing the precise invariant they repair
+- it also makes clear that a clone is not a new occurrence of a substring; it is a new representative for the shorter `endpos` class that used to be merged too coarsely
+
+Code bridge:
+
+- the conflict is exactly the standard branch `if len[p] + 1 < len[q]`
+- the repair shown here is the textbook clone procedure: copy transitions and suffix link of `q`, set `len[clone] = len[p] + 1`, redirect affected transitions, then set `link[q] = link[cur] = clone`
+
+Boundary:
+
+- this widget isolates one clone event only; the rest of the SAM extension loop still depends on the suffix-link walk that adds missing transitions on the way back
+- if you only need one exact pattern search, this whole structure is overkill; reopen [KMP](../kmp/README.md) or [Z-Function](../z-function/README.md)
+
 ## From Brute Force To The Right Idea
 
 ### Brute Force

@@ -25,6 +25,7 @@ The repo already has the first proof that interactive visuals are useful here:
 - [Bridges, Articulation Points, And Biconnected Components](../topics/graphs/bridges-articulation/README.md)
 - [Aho-Corasick](../topics/strings/aho-corasick/README.md)
 - [Maximum Flow](../topics/graphs/flow/README.md)
+- [Suffix Automaton](../topics/strings/suffix-automaton/README.md)
 
 Those pages confirm two things:
 
