@@ -66,23 +66,13 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
 
 extra_css:
   - assets/stylesheets/extra.css
 
 extra_javascript:
-  - assets/javascripts/problem-finder.js
-  - assets/javascripts/support-link.js
-  - assets/javascripts/mathjax.js
-  - assets/javascripts/bfs-dfs-visualizer.js
-  - assets/javascripts/fenwick-visualizer.js
-  - assets/javascripts/segment-tree-visualizer.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - assets/javascripts/page-assets-loader.js
 
 extra:
   social:
@@ -582,5 +572,6 @@ nav:
       - Expansion Roadmap: docs/expansion-roadmap.md
       - Algorithm Gap Roadmap: docs/algorithm-gap-roadmap.md
       - Book Coverage Roadmap: docs/book-coverage-roadmap.md
+      - Visual Roadmap: docs/visual-roadmap.md
       - CRT / Lucas / Mobius Wave Plan: docs/crt-lucas-mobius-wave-plan.md
       - Markdown Math Style: docs/authoring/markdown-math-style.md

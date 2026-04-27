@@ -1,8 +1,10 @@
 (function () {
+  function initProblemFinder() {
   const root = document.getElementById("problem-finder-root");
-  if (!root) {
+  if (!root || root.dataset.finderInitialized === "true") {
     return;
   }
+  root.dataset.finderInitialized = "true";
 
   const basePrefix = "../../";
   const repoCatalogUrl = `${basePrefix}data/problem-catalog.json`;
@@ -836,4 +838,15 @@
       emptyState.hidden = false;
       emptyState.textContent = `Problem Finder could not load the catalog data: ${error}`;
     });
+  }
+
+  if (typeof window.document$ !== "undefined" && typeof window.document$.subscribe === "function") {
+    window.document$.subscribe(initProblemFinder);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initProblemFinder, { once: true });
+  } else {
+    initProblemFinder();
+  }
 })();

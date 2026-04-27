@@ -71,14 +71,7 @@ This table is the whole data structure in miniature. Every loop in a Fenwick tre
 
 ## One Picture Before Code
 
-```mermaid
-flowchart LR
-  A["bit[i] stores one suffix block [i - lowbit(i) + 1, i]"]
-  A --> B["prefix(r): keep stripping the rightmost block"]
-  A --> C["add(i, delta): climb to every larger block that still contains i"]
-  B --> D["Visited blocks are disjoint and tile [1, r]"]
-  C --> E["Touched blocks all absorb the same delta"]
-```
+![Fenwick tree block logic](../../../docs/assets/figures/mermaid/fenwick-blocks.svg)
 
 The point is not to memorize two loops separately.
 

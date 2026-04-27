@@ -1,0 +1,8 @@
+flowchart LR
+  Q{"What invariant does the statement actually need?"}
+  U["Fewest edges or moves in an unweighted graph"]
+  S["Search-tree structure, components, cycles, or timestamps"]
+  Q --> U --> B["Choose BFS"]
+  Q --> S --> D["Choose DFS"]
+  B --> BL["Distance layers stay correct"]
+  D --> DL["One active branch stays visible"]

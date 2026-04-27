@@ -66,16 +66,7 @@ This is the first mental split:
 
 ## One Picture Before Code
 
-```mermaid
-flowchart LR
-  Q{"What invariant does the statement actually need?"}
-  U["Fewest edges or moves in an unweighted graph"]
-  S["Search-tree structure, components, cycles, or timestamps"]
-  Q --> U --> B["Choose BFS"]
-  Q --> S --> D["Choose DFS"]
-  B --> BL["Distance layers stay correct"]
-  D --> DL["One active branch stays visible"]
-```
+![BFS versus DFS chooser](../../../docs/assets/figures/mermaid/bfs-dfs-chooser.svg)
 
 The real choice is not "queue versus recursion."
 

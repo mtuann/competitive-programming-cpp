@@ -98,15 +98,7 @@ That one sentence is the whole data structure. Every proof and every bug check c
 
 ## One Picture Before Code
 
-```mermaid
-flowchart TD
-  A["Root stores the whole interval [0, n)"]
-  A --> B["Split every interval into left and right halves"]
-  B --> C["Query [l, r): ignore outside, take full cover, split partial overlap"]
-  B --> D["Point update: change one leaf, then repair ancestors"]
-  C --> E["Fully covered nodes form a canonical decomposition"]
-  D --> F["Only one leaf-to-root path changes"]
-```
+![Segment tree interval summary logic](../../../docs/assets/figures/mermaid/segment-tree-canonical-decomposition.svg)
 
 The tree is not mainly about recursion.
 

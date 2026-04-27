@@ -1,0 +1,7 @@
+flowchart TD
+  A["Root stores the whole interval [0, n)"]
+  A --> B["Split every interval into left and right halves"]
+  B --> C["Query [l, r): ignore outside, take full cover, split partial overlap"]
+  B --> D["Point update: change one leaf, then repair ancestors"]
+  C --> E["Fully covered nodes form a canonical decomposition"]
+  D --> F["Only one leaf-to-root path changes"]

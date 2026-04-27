@@ -9,13 +9,6 @@ STATIC_FILES = {
     "README.md": "project-readme.md",
     "docs/site-home.md": "index.md",
     "template-library.md": "template-library.md",
-    "docs-assets/stylesheets/extra.css": "assets/stylesheets/extra.css",
-    "docs-assets/javascripts/bfs-dfs-visualizer.js": "assets/javascripts/bfs-dfs-visualizer.js",
-    "docs-assets/javascripts/fenwick-visualizer.js": "assets/javascripts/fenwick-visualizer.js",
-    "docs-assets/javascripts/problem-finder.js": "assets/javascripts/problem-finder.js",
-    "docs-assets/javascripts/segment-tree-visualizer.js": "assets/javascripts/segment-tree-visualizer.js",
-    "docs-assets/javascripts/support-link.js": "assets/javascripts/support-link.js",
-    "docs-assets/javascripts/mathjax.js": "assets/javascripts/mathjax.js",
 }
 
 DIRECTORIES = [
@@ -26,6 +19,11 @@ DIRECTORIES = [
     "notebook",
     "templates",
 ]
+
+ASSET_DIRECTORIES = {
+    "docs-assets/stylesheets": "assets/stylesheets",
+    "docs-assets/javascripts": "assets/javascripts",
+}
 
 
 def copy_file(src_rel: str, dst_rel: str) -> None:
@@ -41,6 +39,9 @@ def main() -> None:
 
     for src_rel, dst_rel in STATIC_FILES.items():
         copy_file(src_rel, dst_rel)
+
+    for src_rel, dst_rel in ASSET_DIRECTORIES.items():
+        shutil.copytree(ROOT / src_rel, SITE_DOCS / dst_rel)
 
     for directory in DIRECTORIES:
         src_dir = ROOT / directory
